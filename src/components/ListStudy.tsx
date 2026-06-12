@@ -120,11 +120,6 @@ function WordCell({
       }`}
     >
       <span className={hidden ? "select-none blur-[7px]" : ""}>{value}</span>
-      {hidden && (
-        <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-[#a99684]">
-          TAP
-        </span>
-      )}
     </button>
   );
 }
