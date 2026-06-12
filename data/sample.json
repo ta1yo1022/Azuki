@@ -1,0 +1,16 @@
+{
+  "name": "はじめての英単語",
+  "description": "毎日の会話でよく使う基本単語10語",
+  "words": [
+    { "id": "w001", "en": "improve", "ja": "改善する" },
+    { "id": "w002", "en": "demand", "ja": "需要" },
+    { "id": "w003", "en": "achieve", "ja": "達成する" },
+    { "id": "w004", "en": "provide", "ja": "提供する" },
+    { "id": "w005", "en": "likely", "ja": "ありそうな" },
+    { "id": "w006", "en": "increase", "ja": "増加する" },
+    { "id": "w007", "en": "require", "ja": "必要とする" },
+    { "id": "w008", "en": "available", "ja": "利用できる" },
+    { "id": "w009", "en": "consider", "ja": "検討する" },
+    { "id": "w010", "en": "opportunity", "ja": "機会" }
+  ]
+}
