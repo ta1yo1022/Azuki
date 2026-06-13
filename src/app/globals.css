@@ -74,22 +74,6 @@ button {
   color: #972d31;
 }
 
-.azuki-mark {
-  display: inline-flex;
-  width: 36px;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50% 48% 52% 46%;
-  background: #972d31;
-  color: white;
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 900;
-  transform: rotate(-7deg);
-  box-shadow: inset -4px -5px 0 rgba(80, 10, 15, 0.13);
-}
-
 .primary-button,
 .secondary-button,
 .text-button {
