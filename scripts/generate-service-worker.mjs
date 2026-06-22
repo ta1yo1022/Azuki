@@ -59,10 +59,33 @@ const PRECACHE_URLS = ${JSON.stringify(cacheUrls, null, 2)};
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches
-      .open(CACHE_NAME)
-      .then((cache) => cache.addAll(PRECACHE_URLS))
-      .then(() => self.skipWaiting()),
+    caches.open(CACHE_NAME).then(async (cache) => {
+      const results = await Promise.allSettled(
+        PRECACHE_URLS.map(async (url) => {
+          const response = await fetch(url, { cache: "reload" });
+          if (!response.ok) {
+            throw new Error(
+              "Failed to cache " + url + ": " + response.status,
+            );
+          }
+          await cache.put(url, response);
+        }),
+      );
+
+      const failedCount = results.filter(
+        (result) => result.status === "rejected",
+      ).length;
+      if (failedCount > 0) {
+        console.warn("Azuki precache skipped " + failedCount + " files.");
+      }
+
+      const homePage = await cache.match("/");
+      if (!homePage) {
+        throw new Error("Azuki offline install failed to cache the home page.");
+      }
+
+      await self.skipWaiting();
+    }),
   );
 });
 
