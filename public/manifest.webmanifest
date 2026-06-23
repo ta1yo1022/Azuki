@@ -1,7 +1,7 @@
 {
-  "name": "Azuki 英単語学習",
+  "name": "Azuki - 英単語学習ツール",
   "short_name": "Azuki",
-  "description": "シンプルで続けやすい、個人用の英単語学習アプリ。",
+  "description": "英単語をカードとリストで学べる、シンプルな学習ツール。",
   "id": "/",
   "start_url": "/",
   "scope": "/",

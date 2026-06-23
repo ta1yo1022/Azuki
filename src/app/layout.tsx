@@ -4,10 +4,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Azuki | 英単語学習",
-    template: "%s | Azuki",
+    default: "Azuki - 英単語学習ツール",
+    template: "Azuki - %s",
   },
-  description: "シンプルで続けやすい、個人用の英単語学習アプリ。",
+  description: "英単語をカードとリストで学べる、シンプルな学習ツール。",
   applicationName: "Azuki",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
