@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   CardsIcon,
   ChevronRightIcon,
@@ -93,7 +92,7 @@ function StudyLink({
   accent?: boolean;
 }) {
   return (
-    <Link
+    <a
       href={href}
       className={`flex min-h-20 items-center gap-4 rounded-[22px] border p-4 transition active:scale-[0.985] ${
         accent
@@ -121,6 +120,6 @@ function StudyLink({
         </span>
       </span>
       <ChevronRightIcon className="h-6 w-6" />
-    </Link>
+    </a>
   );
 }

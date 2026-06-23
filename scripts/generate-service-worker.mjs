@@ -3,6 +3,13 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const outputDirectory = path.join(process.cwd(), "out");
+const rootAssets = new Set([
+  "apple-touch-icon.png",
+  "favicon-32.png",
+  "icon-192.png",
+  "icon-512.png",
+  "manifest.webmanifest",
+]);
 
 async function listFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -29,9 +36,13 @@ function toCacheUrl(relativePath) {
 const files = (await listFiles(outputDirectory))
   .filter((filePath) => {
     const relativePath = path.relative(outputDirectory, filePath);
+    const isPage =
+      relativePath === "index.html" || relativePath.endsWith(`${path.sep}index.html`);
+    const isNextAsset = relativePath.startsWith(`_next${path.sep}static${path.sep}`);
+    const isRootAsset = rootAssets.has(relativePath);
+
     return (
-      path.basename(filePath) !== "sw.js" &&
-      relativePath !== "404.html" &&
+      (isPage || isNextAsset || isRootAsset) &&
       !relativePath.startsWith(`404${path.sep}`) &&
       !relativePath.startsWith(`_not-found${path.sep}`)
     );
@@ -53,37 +64,48 @@ const cacheUrls = [
     ),
   ),
 ];
+const navigationUrls = cacheUrls.filter(
+  (url) => url === "/" || url.endsWith("/"),
+);
 
 const serviceWorker = `const CACHE_NAME = ${JSON.stringify(cacheName)};
 const PRECACHE_URLS = ${JSON.stringify(cacheUrls, null, 2)};
+const NAVIGATION_URLS = new Set(${JSON.stringify(navigationUrls, null, 2)});
+
+function normalizeNavigationUrl(requestUrl) {
+  const url = new URL(requestUrl);
+  let pathname = url.pathname;
+  if (pathname !== "/" && !pathname.endsWith("/")) {
+    pathname += "/";
+  }
+  return pathname;
+}
+
+async function fetchAndCache(cache, url) {
+  let lastError;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const response = await fetch(url, { cache: "reload" });
+      if (!response.ok) {
+        throw new Error(
+          "Failed to cache " + url + ": " + response.status,
+        );
+      }
+      await cache.put(url, response);
+      return;
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError;
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
-      const results = await Promise.allSettled(
-        PRECACHE_URLS.map(async (url) => {
-          const response = await fetch(url, { cache: "reload" });
-          if (!response.ok) {
-            throw new Error(
-              "Failed to cache " + url + ": " + response.status,
-            );
-          }
-          await cache.put(url, response);
-        }),
+      await Promise.all(
+        PRECACHE_URLS.map((url) => fetchAndCache(cache, url)),
       );
-
-      const failedCount = results.filter(
-        (result) => result.status === "rejected",
-      ).length;
-      if (failedCount > 0) {
-        console.warn("Azuki precache skipped " + failedCount + " files.");
-      }
-
-      const homePage = await cache.match("/");
-      if (!homePage) {
-        throw new Error("Azuki offline install failed to cache the home page.");
-      }
-
       await self.skipWaiting();
     }),
   );
@@ -114,7 +136,11 @@ self.addEventListener("fetch", (event) => {
 
   event.respondWith(
     caches.open(CACHE_NAME).then(async (cache) => {
-      const cached = await cache.match(request, { ignoreSearch: true });
+      const cacheKey =
+        request.mode === "navigate"
+          ? normalizeNavigationUrl(request.url)
+          : url.pathname;
+      const cached = await cache.match(cacheKey);
       if (cached) {
         return cached;
       }
@@ -122,12 +148,15 @@ self.addEventListener("fetch", (event) => {
       try {
         const response = await fetch(request);
         if (response.ok && response.type === "basic") {
-          await cache.put(request, response.clone());
+          await cache.put(cacheKey, response.clone());
         }
         return response;
       } catch {
         if (request.mode === "navigate") {
-          return cache.match("/");
+          return (
+            (NAVIGATION_URLS.has(cacheKey) && (await cache.match(cacheKey))) ||
+            cache.match("/")
+          );
         }
         return new Response("Offline", { status: 503 });
       }

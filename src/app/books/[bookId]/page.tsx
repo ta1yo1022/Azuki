@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeftIcon } from "@/components/Icons";
 import { BookDetail } from "@/components/BookDetail";
@@ -32,7 +31,7 @@ export default async function BookPage({ params }: PageProps) {
 
   return (
     <main className="app-shell min-h-[100svh] py-5 pb-[max(36px,env(safe-area-inset-bottom))]">
-      <Link
+      <a
         href="/"
         className="mb-5 inline-flex min-h-11 items-center gap-2 rounded-full pr-4 text-sm font-bold text-muted"
       >
@@ -40,7 +39,7 @@ export default async function BookPage({ params }: PageProps) {
           <ArrowLeftIcon className="h-5 w-5" />
         </span>
         単語帳一覧
-      </Link>
+      </a>
       <BookDetail book={book} />
     </main>
   );

@@ -1,10 +1,9 @@
-import Link from "next/link";
 import { ChevronRightIcon } from "@/components/Icons";
 import type { Book } from "@/lib/types";
 
 export function BookCard({ book, index }: { book: Book; index: number }) {
   return (
-    <Link
+    <a
       href={`/books/${book.id}/`}
       className="group block rounded-[28px] border border-[#e9ded2] bg-white p-5 shadow-[0_10px_35px_rgba(59,42,25,0.06)] transition active:scale-[0.985] sm:p-6"
     >
@@ -32,6 +31,6 @@ export function BookCard({ book, index }: { book: Book; index: number }) {
           {book.words.length} WORDS
         </span>
       </div>
-    </Link>
+    </a>
   );
 }

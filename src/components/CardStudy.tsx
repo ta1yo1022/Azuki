@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState, useSyncExternalStore } from "react";
 import { ArrowLeftIcon, CardsIcon } from "@/components/Icons";
@@ -87,9 +86,9 @@ function CardSession({ book, mode }: { book: Book; mode: CardMode }) {
             <button type="button" onClick={restart} className="primary-button">
               もう一周する
             </button>
-            <Link href={`/books/${book.id}/`} className="secondary-button">
+            <a href={`/books/${book.id}/`} className="secondary-button">
               詳細に戻る
-            </Link>
+            </a>
           </div>
         </div>
       </main>
@@ -103,13 +102,13 @@ function CardSession({ book, mode }: { book: Book; mode: CardMode }) {
   return (
     <main className="app-shell flex min-h-[100svh] flex-col py-5">
       <header className="flex items-center gap-3">
-        <Link
+        <a
           href={`/books/${book.id}/`}
           className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-ink shadow-sm"
           aria-label="学習を中断して戻る"
         >
           <ArrowLeftIcon className="h-5 w-5" />
-        </Link>
+        </a>
         <div className="min-w-0 flex-1">
           <div className="flex items-center justify-between text-xs font-black text-muted">
             <span className="truncate">{book.name}</span>
@@ -190,9 +189,9 @@ function StudyMessage({
       <div className="w-full max-w-md rounded-[30px] bg-white p-7 text-center shadow-sm">
         <h1 className="font-display text-2xl font-black text-ink">{title}</h1>
         <p className="mt-3 text-sm leading-6 text-muted">{text}</p>
-        <Link href={`/books/${bookId}/`} className="secondary-button mt-6">
+        <a href={`/books/${bookId}/`} className="secondary-button mt-6">
           詳細に戻る
-        </Link>
+        </a>
       </div>
     </main>
   );

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeftIcon } from "@/components/Icons";
 import type { Book, ListDisplayMode } from "@/lib/types";
@@ -35,13 +34,13 @@ export function ListStudy({ book }: { book: Book }) {
   return (
     <main className="app-shell min-h-[100svh] py-5 pb-[max(28px,env(safe-area-inset-bottom))]">
       <header className="flex items-center gap-3">
-        <Link
+        <a
           href={`/books/${book.id}/`}
           className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-ink shadow-sm"
           aria-label="詳細に戻る"
         >
           <ArrowLeftIcon className="h-5 w-5" />
-        </Link>
+        </a>
         <div>
           <p className="section-label">Word list</p>
           <h1 className="font-display text-xl font-black text-ink">{book.name}</h1>
