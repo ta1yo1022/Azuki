@@ -1,6 +1,6 @@
 {
-  "name": "Lesson 3",
-  "description": "Lesson 3で学習する英単語・熟語",
+  "name": "Lesson 3 (Part 1)",
+  "description": "Lesson 3 前半で学習する英単語・熟語",
   "words": [
     { "id": "w001", "en": "Melati", "ja": "メラティ（人名）" },
     { "id": "w002", "en": "Isabel", "ja": "イザベル（人名）" },
