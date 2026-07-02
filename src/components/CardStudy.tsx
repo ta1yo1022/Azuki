@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
 import { ArrowLeftIcon, CardsIcon } from "@/components/Icons";
 import type { Book, CardMode, Word } from "@/lib/types";
 
@@ -46,10 +46,30 @@ function CardSession({ book, mode }: { book: Book; mode: CardMode }) {
   const currentWord = deck[index];
   const finished = deck.length > 0 && index >= deck.length;
 
-  function nextCard() {
+  const nextCard = useCallback(() => {
     setFlipped(false);
-    setIndex((current) => current + 1);
-  }
+    setIndex((current) => (current >= deck.length ? current : current + 1));
+  }, [deck.length]);
+
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      const target = event.target;
+      const isEditableTarget =
+        target instanceof HTMLElement &&
+        (target.isContentEditable ||
+          ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName));
+
+      if (event.key !== "Enter" || event.repeat || isEditableTarget) {
+        return;
+      }
+
+      event.preventDefault();
+      nextCard();
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [nextCard]);
 
   function restart() {
     setDeck(shuffle(book.words));
