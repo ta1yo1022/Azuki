@@ -1,0 +1,13 @@
+{
+  "name": "Wr Lesson 2",
+  "description": "Wr Lesson 2で学習する英単語・熟語",
+  "words": [
+    { "id": "w001", "en": "stay up late", "ja": "夜更かしする" },
+    { "id": "w002", "en": "take a nap", "ja": "昼寝をする" },
+    { "id": "w003", "en": "procrastinate", "ja": "後回しにする、先延ばしにする" },
+    { "id": "w004", "en": "skip a meal", "ja": "食事を抜く" },
+    { "id": "w005", "en": "be sleep-deprived", "ja": "寝不足である" },
+    { "id": "w006", "en": "last-minute", "ja": "ギリギリの、直前の" },
+    { "id": "w007", "en": "a vicious cycle", "ja": "悪循環" }
+  ]
+}
