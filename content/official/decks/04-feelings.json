@@ -1,0 +1,4015 @@
+{
+  "schemaVersion": 1,
+  "title": "気持ちを伝える英単語 500",
+  "description": "感情、人柄、人との関わり、心の状態を表す500語。気持ちの細かな違いを言葉にします。",
+  "textbookTags": [
+    {
+      "name": "気持ち・人柄"
+    },
+    {
+      "name": "英語語彙"
+    }
+  ],
+  "words": [
+    {
+      "word": "happy",
+      "meaning": "幸せな・うれしい",
+      "example": "I am happy to see you.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "sad",
+      "meaning": "悲しい",
+      "example": "I felt sad when the trip ended.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "angry",
+      "meaning": "怒っている",
+      "example": "He was angry about the delay.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "afraid",
+      "meaning": "怖がっている",
+      "example": "She is afraid of spiders.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "worried",
+      "meaning": "心配している",
+      "example": "I am worried about tomorrow's test.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "excited",
+      "meaning": "わくわくした・興奮した",
+      "example": "We are excited about the trip.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "tired",
+      "meaning": "疲れた",
+      "example": "I feel tired after work.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "sleepy",
+      "meaning": "眠い",
+      "example": "I get sleepy after lunch.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "relax",
+      "meaning": "くつろぐ・緊張をほぐす",
+      "example": "I like to relax with a book.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "calm",
+      "meaning": "落ち着いた",
+      "example": "Try to stay calm.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "proud",
+      "meaning": "誇りに思っている",
+      "example": "I am proud of my sister.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "shy",
+      "meaning": "恥ずかしがり屋の・内気な",
+      "example": "I was shy when I was a child.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "lonely",
+      "meaning": "寂しい・孤独な",
+      "example": "I feel lonely when I eat alone.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "surprised",
+      "meaning": "驚いた",
+      "example": "I was surprised by the news.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "anxious",
+      "meaning": "不安な",
+      "example": "I feel anxious before a big test.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "nervous",
+      "meaning": "緊張した・不安な",
+      "example": "I am nervous about the interview.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "kind",
+      "meaning": "親切な",
+      "example": "It was kind of you to help.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "friendly",
+      "meaning": "親しみやすい・友好的な",
+      "example": "Our new neighbor is very friendly.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "polite",
+      "meaning": "礼儀正しい・丁寧な",
+      "example": "It is polite to say thank you.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "honest",
+      "meaning": "正直な",
+      "example": "Please be honest with me.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "brave",
+      "meaning": "勇敢な",
+      "example": "The brave child asked for help.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "patient",
+      "meaning": "辛抱強い",
+      "example": "Thank you for being patient with me.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "careful",
+      "meaning": "注意深い・慎重な",
+      "example": "Be careful when you cross the road.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "gentle",
+      "meaning": "優しい・穏やかな",
+      "example": "She spoke in a gentle voice.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "cheerful",
+      "meaning": "明るい・陽気な",
+      "example": "He always has a cheerful smile.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "quiet",
+      "meaning": "静かな",
+      "example": "We found a quiet place to talk.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "serious",
+      "meaning": "真剣な・まじめな",
+      "example": "I am serious about learning English.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "curious",
+      "meaning": "好奇心の強い",
+      "example": "Children are curious about the world.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "confident",
+      "meaning": "自信のある",
+      "example": "I feel more confident now.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "grateful",
+      "meaning": "感謝している",
+      "example": "I am grateful for your help.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "hopeful",
+      "meaning": "希望に満ちた",
+      "example": "We are hopeful about the future.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "upset",
+      "meaning": "動揺した・気が乱れた",
+      "example": "She was upset by the bad news.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "disappointed",
+      "meaning": "がっかりした",
+      "example": "I was disappointed with the result.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "ashamed",
+      "meaning": "恥じている",
+      "example": "He felt ashamed of his rude words.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "pleased",
+      "meaning": "喜んでいる・満足した",
+      "example": "I am pleased with my progress.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "comfortable",
+      "meaning": "快適な・心地よい",
+      "example": "This chair is very comfortable.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "healthy",
+      "meaning": "健康な",
+      "example": "I want to stay healthy.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "ill",
+      "meaning": "病気で・具合が悪くて",
+      "example": "I felt ill yesterday.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "busy",
+      "meaning": "忙しい",
+      "example": "Are you busy this afternoon?",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "free",
+      "meaning": "時間が空いている",
+      "example": "I am free after six.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "ready",
+      "meaning": "準備ができた",
+      "example": "Are you ready to go?",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "sure",
+      "meaning": "確信している",
+      "example": "I am sure this is the right way.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "easy",
+      "meaning": "簡単な",
+      "example": "This question is easy.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "difficult",
+      "meaning": "難しい",
+      "example": "This word is difficult to pronounce.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "important",
+      "meaning": "大切な・重要な",
+      "example": "Your health is important.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "interesting",
+      "meaning": "おもしろい・興味深い",
+      "example": "That is an interesting idea.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "useful",
+      "meaning": "役に立つ",
+      "example": "This map is very useful.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "beautiful",
+      "meaning": "美しい",
+      "example": "What a beautiful view!",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "favorite",
+      "meaning": "お気に入りの",
+      "example": "This is my favorite song.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "smile",
+      "meaning": "ほほえむ",
+      "example": "She smiled when she saw us.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "joy",
+      "meaning": "(大きな)喜び,歓喜,うれしさ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her visit filled me with joy."
+    },
+    {
+      "word": "delight",
+      "meaning": "大喜び,歓喜",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The children shouted with delight."
+    },
+    {
+      "word": "pleasure",
+      "meaning": "(…の)喜び,楽しみ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It was a pleasure to meet you."
+    },
+    {
+      "word": "bliss",
+      "meaning": "無上の幸福,この上ない喜び",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A quiet afternoon felt like pure bliss."
+    },
+    {
+      "word": "satisfaction",
+      "meaning": "(…を)満足させること",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Helping others brings her great satisfaction."
+    },
+    {
+      "word": "excitement",
+      "meaning": "興奮,動揺",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I could hardly sleep from excitement."
+    },
+    {
+      "word": "eagerness",
+      "meaning": "熱心",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His eagerness to learn impressed the teacher."
+    },
+    {
+      "word": "hope",
+      "meaning": "希望",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The good news gave us hope."
+    },
+    {
+      "word": "confidence",
+      "meaning": "自信・信頼",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Practice helped build my confidence."
+    },
+    {
+      "word": "courage",
+      "meaning": "勇気,度胸",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It took courage to ask for help."
+    },
+    {
+      "word": "bravery",
+      "meaning": "勇敢,勇気",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Everyone admired the firefighter's bravery."
+    },
+    {
+      "word": "comfort",
+      "meaning": "慰め・安心感",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her kind words brought me comfort."
+    },
+    {
+      "word": "serenity",
+      "meaning": "平穏,落ち着き",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The garden gave us a sense of serenity."
+    },
+    {
+      "word": "tranquility",
+      "meaning": "平穏,平静",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We enjoyed the tranquility of the quiet lake."
+    },
+    {
+      "word": "gratitude",
+      "meaning": "(…に対する)感謝[の気持ち]",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I expressed my gratitude in a letter."
+    },
+    {
+      "word": "affection",
+      "meaning": "(…に対する)愛情,好意,恋情",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He shows his affection through small acts."
+    },
+    {
+      "word": "love",
+      "meaning": "(…に対する)愛,愛情",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her letter was full of love."
+    },
+    {
+      "word": "warmth",
+      "meaning": "温かさ・思いやり",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They welcomed us with genuine warmth."
+    },
+    {
+      "word": "tenderness",
+      "meaning": "優しさ・思いやり",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She held the baby with tenderness."
+    },
+    {
+      "word": "compassion",
+      "meaning": "(…に対する)あわれみ,深い同情(sympathy)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He treated the frightened child with compassion."
+    },
+    {
+      "word": "empathy",
+      "meaning": "(心理学で)感情移入,共感",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Listening carefully helps us show empathy."
+    },
+    {
+      "word": "pity",
+      "meaning": "(…に対する)あわれみ,同情",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She felt pity for the injured bird."
+    },
+    {
+      "word": "respect",
+      "meaning": "(…に対する)尊敬,敬意",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We treat each other with respect."
+    },
+    {
+      "word": "wonder",
+      "meaning": "驚き・不思議に思う気持ち",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The children looked at the stars in wonder."
+    },
+    {
+      "word": "curiosity",
+      "meaning": "好奇心,物好き",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Curiosity led me to open the old box."
+    },
+    {
+      "word": "surprise",
+      "meaning": "驚き",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "To my surprise, everyone remembered my birthday."
+    },
+    {
+      "word": "amazement",
+      "meaning": "たいへんな驚き,びっくりぎょうてん(astonishment)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We watched the performance in amazement."
+    },
+    {
+      "word": "awe",
+      "meaning": "畏敬(いけい),畏怖",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The mountains filled us with awe."
+    },
+    {
+      "word": "fear",
+      "meaning": "恐れ,恐怖(dread)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He overcame his fear of swimming."
+    },
+    {
+      "word": "anxiety",
+      "meaning": "(…についての)心配,不安,気がかり",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She felt anxiety before the interview."
+    },
+    {
+      "word": "concern",
+      "meaning": "心配・気遣い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Thank you for your concern."
+    },
+    {
+      "word": "tension",
+      "meaning": "緊張",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A joke helped ease the tension."
+    },
+    {
+      "word": "panic",
+      "meaning": "あわてふためき,恐慌,ろうばい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt a moment of panic."
+    },
+    {
+      "word": "horror",
+      "meaning": "恐怖,身の毛のよだつ思い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She stared at the damage in horror."
+    },
+    {
+      "word": "alarm",
+      "meaning": "不安・驚き",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He looked at the smoke with alarm."
+    },
+    {
+      "word": "fright",
+      "meaning": "(突然の激しい)恐怖,驚き",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The sudden noise gave me a fright."
+    },
+    {
+      "word": "insecurity",
+      "meaning": "不安",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She spoke openly about her insecurity."
+    },
+    {
+      "word": "uncertainty",
+      "meaning": "確信のなさ;疑わしさ;変わりやすさ;不明確さ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The delay caused a lot of uncertainty."
+    },
+    {
+      "word": "suspicion",
+      "meaning": "(…の)疑い,疑惑,嫌疑",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His strange excuse raised my suspicion."
+    },
+    {
+      "word": "jealousy",
+      "meaning": "(…に対する)しっと,ねたみ,羨(せん)望",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Jealousy damaged their friendship."
+    },
+    {
+      "word": "envy",
+      "meaning": "(…に対する)ねたみ,羨望(せんぼう)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt a little envy of her talent."
+    },
+    {
+      "word": "bitterness",
+      "meaning": "苦々しい気持ち・恨み",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He spoke about the past without bitterness."
+    },
+    {
+      "word": "rage",
+      "meaning": "激怒,憤激",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She struggled to control her rage."
+    },
+    {
+      "word": "fury",
+      "meaning": "(抑えきれないほどの)激しい怒り,激怒",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His face showed his fury."
+    },
+    {
+      "word": "irritation",
+      "meaning": "いらだち;立腹,かんしゃく",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She sighed in irritation at the noise."
+    },
+    {
+      "word": "frustration",
+      "meaning": "いら立ち・挫折感",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He expressed his frustration calmly."
+    },
+    {
+      "word": "impatience",
+      "meaning": "じれったさ,もどかしさ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I could hear impatience in her voice."
+    },
+    {
+      "word": "sadness",
+      "meaning": "悲嘆(sorrow)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A wave of sadness came over me."
+    },
+    {
+      "word": "grief",
+      "meaning": "(…についての)深い悲しみ,悲嘆",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Friends supported her through her grief."
+    },
+    {
+      "word": "misery",
+      "meaning": "惨めさ・苦しみ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Loneliness added to his misery."
+    },
+    {
+      "word": "loneliness",
+      "meaning": "寂しさ;孤独",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Calling a friend eased my loneliness."
+    },
+    {
+      "word": "isolation",
+      "meaning": "孤立;隔離,分離",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She found the isolation difficult."
+    },
+    {
+      "word": "apathy",
+      "meaning": "(…に対する)無感動,冷淡(indifference)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The proposal was met with apathy."
+    },
+    {
+      "word": "despair",
+      "meaning": "絶望,失望",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We must not give in to despair."
+    },
+    {
+      "word": "hopelessness",
+      "meaning": "望みのないこと(状態),絶望",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He described a feeling of hopelessness."
+    },
+    {
+      "word": "guilt",
+      "meaning": "罪悪感",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt guilt about breaking my promise."
+    },
+    {
+      "word": "embarrassment",
+      "meaning": "困惑,当惑;きまりの悪さ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My face turned red with embarrassment."
+    },
+    {
+      "word": "humiliation",
+      "meaning": "辱めること;辱めを受けること;辱め,屈辱[感]",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He never forgot the humiliation of being mocked."
+    },
+    {
+      "word": "remorse",
+      "meaning": "(悪事や不正に対する)後悔,良心のかしゃく,自責",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She showed genuine remorse for her mistake."
+    },
+    {
+      "word": "longing",
+      "meaning": "あこがれ,熱望",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His letter expressed a longing for home."
+    },
+    {
+      "word": "homesickness",
+      "meaning": "ホームシック,郷愁",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A familiar meal eased her homesickness."
+    },
+    {
+      "word": "passion",
+      "meaning": "激しい感情,情念,熱情",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He has a passion for music."
+    },
+    {
+      "word": "devotion",
+      "meaning": "(…への)深い愛情",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her devotion to her family is clear."
+    },
+    {
+      "word": "sincerity",
+      "meaning": "誠実,偽りのないこと,正直",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I could hear sincerity in his apology."
+    },
+    {
+      "word": "generosity",
+      "meaning": "寛大さ,心の広さ;気前のよさ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Thank you for your kindness and generosity."
+    },
+    {
+      "word": "patience",
+      "meaning": "(苦しみに耐える)忍耐,忍耐力,しんぼう",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Learning this skill requires patience."
+    },
+    {
+      "word": "understanding",
+      "meaning": "(…の)理解,意味をつかむこと",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The conversation deepened our understanding of each other."
+    },
+    {
+      "word": "forgiveness",
+      "meaning": "(…を)許すこと,容赦",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He asked for her forgiveness."
+    },
+    {
+      "word": "encouragement",
+      "meaning": "激励,奨励",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Your encouragement helped me keep going."
+    },
+    {
+      "word": "inspiration",
+      "meaning": "霊感,インスピレーション",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The garden became a source of inspiration."
+    },
+    {
+      "word": "determination",
+      "meaning": "決心,決意,決断力",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She approached the task with determination."
+    },
+    {
+      "word": "perseverance",
+      "meaning": "粘り強さ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His perseverance finally paid off."
+    },
+    {
+      "word": "resilience",
+      "meaning": "立ち直る力・回復力",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She showed resilience after the setback."
+    },
+    {
+      "word": "responsibility",
+      "meaning": "責任",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I accept responsibility for my mistake."
+    },
+    {
+      "word": "independence",
+      "meaning": "(…からの)独立,自立,独立心",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Living alone taught him independence."
+    },
+    {
+      "word": "dignity",
+      "meaning": "尊厳,威厳,気高さ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She faced criticism with dignity."
+    },
+    {
+      "word": "modesty",
+      "meaning": "謙そん;控え目なこと,つつましさ;しとやかさ;質素",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He accepted the award with modesty."
+    },
+    {
+      "word": "courtesy",
+      "meaning": "礼儀,丁重,丁寧さ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The staff treated us with courtesy."
+    },
+    {
+      "word": "vulnerability",
+      "meaning": "傷つきやすいこと,(批判・皮肉などに)弱いこと,脆弱性",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Sharing his fears revealed his vulnerability."
+    },
+    {
+      "word": "stability",
+      "meaning": "安定,確固,不動;安定性",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A familiar routine gives her stability."
+    },
+    {
+      "word": "harmony",
+      "meaning": "(色など)調和;(意見などの)一致,和合;(…との)調和",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The neighbors live in harmony."
+    },
+    {
+      "word": "friendship",
+      "meaning": "友情,親交",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Our friendship began at school."
+    },
+    {
+      "word": "companionship",
+      "meaning": "交際,交わり;友情",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She enjoys the companionship of her friends."
+    },
+    {
+      "word": "connection",
+      "meaning": "(…と…との)関係,つながり,(…間の)関係",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt an immediate connection with her."
+    },
+    {
+      "word": "partnership",
+      "meaning": "提携,協力",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Their partnership is based on trust."
+    },
+    {
+      "word": "marriage",
+      "meaning": "結婚,縁組",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They celebrated twenty years of marriage."
+    },
+    {
+      "word": "divorce",
+      "meaning": "離婚,離縁",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The family adjusted after the divorce."
+    },
+    {
+      "word": "separation",
+      "meaning": "分離,分割,別離・(…の)分離(分割)した箇所",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The long separation was difficult for them."
+    },
+    {
+      "word": "romance",
+      "meaning": "恋愛・ロマンス",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Their friendship slowly developed into romance."
+    },
+    {
+      "word": "attachment",
+      "meaning": "愛着",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She has a strong attachment to this house."
+    },
+    {
+      "word": "belonging",
+      "meaning": "所属・帰属意識",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The club gave me a sense of belonging."
+    },
+    {
+      "word": "exclusion",
+      "meaning": "(…を…から)除外すること",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His exclusion from the group hurt him."
+    },
+    {
+      "word": "approval",
+      "meaning": "(…に対する)賛成,是認",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She smiled in approval."
+    },
+    {
+      "word": "disapproval",
+      "meaning": "不賛成,不承認",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He shook his head in disapproval."
+    },
+    {
+      "word": "praise",
+      "meaning": "(…を)ほめること,(…の)賞賛",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The children responded well to praise."
+    },
+    {
+      "word": "blame",
+      "meaning": "非難する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Please don't blame yourself."
+    },
+    {
+      "word": "insult",
+      "meaning": "〈人・物など〉を侮辱する,はずかしめる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "There is no need to insult anyone."
+    },
+    {
+      "word": "apology",
+      "meaning": "(…に対する)わび,謝罪;言い訳,弁解",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I owe you an apology."
+    },
+    {
+      "word": "excuse",
+      "meaning": "言い訳・弁解",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Being tired is no excuse for rudeness."
+    },
+    {
+      "word": "conflict",
+      "meaning": "(比較的長期にわたる)(…との)争い,闘争,戦闘",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They resolved the conflict through discussion."
+    },
+    {
+      "word": "argument",
+      "meaning": "口論・議論",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We had an argument about the plans."
+    },
+    {
+      "word": "quarrel",
+      "meaning": "(人との,人々間の)口げんか,(…のことでの)言い争い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The quarrel ended with an apology."
+    },
+    {
+      "word": "rivalry",
+      "meaning": "(…における)競争,対抗,対立関係,(…との)競争,(…間の)競争",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Their friendly rivalry pushed them to improve."
+    },
+    {
+      "word": "cooperation",
+      "meaning": "協力,協同",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The project depends on everyone's cooperation."
+    },
+    {
+      "word": "collaboration",
+      "meaning": "(…との)共同,協力;共作,合作,共著",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Our collaboration produced some great ideas."
+    },
+    {
+      "word": "agreement",
+      "meaning": "(意見・感情などの)(…についての)一致,調和,同意",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We finally reached agreement on the plan."
+    },
+    {
+      "word": "communication",
+      "meaning": "意思疎通",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Honest communication helps build trust."
+    },
+    {
+      "word": "expression",
+      "meaning": "(思想・意見・考えなどを)言葉で表すこと,(…の)表現",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Writing gives her a means of expression."
+    },
+    {
+      "word": "mood",
+      "meaning": "(ある時の,一時的な)気分,機嫌",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I am in a good mood today."
+    },
+    {
+      "word": "feeling",
+      "meaning": "気持ち・感情",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I had a strange feeling about the place."
+    },
+    {
+      "word": "temperament",
+      "meaning": "(特に個人の思考・感情・行動に影響を与える)気質,気性,性分",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The twins have very different temperaments."
+    },
+    {
+      "word": "character",
+      "meaning": "(人の)性格,人格",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her kindness shows her true character."
+    },
+    {
+      "word": "attitude",
+      "meaning": "(人・物に対する)姿勢,身構え,感じ方,(特に精神的な)傾向,性向",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A positive attitude helped him through the day."
+    },
+    {
+      "word": "conduct",
+      "meaning": "(人の)行為,行動,品行",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His rude conduct upset the guests."
+    },
+    {
+      "word": "trait",
+      "meaning": "特性・特徴",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Patience is one of her strongest traits."
+    },
+    {
+      "word": "nature",
+      "meaning": "生まれつきの性質",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It is not in his nature to complain."
+    },
+    {
+      "word": "self-esteem",
+      "meaning": "自尊心・自己評価",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Learning a new skill improved her self-esteem."
+    },
+    {
+      "word": "self-control",
+      "meaning": "自制,自制心",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He showed self-control during the argument."
+    },
+    {
+      "word": "self-interest",
+      "meaning": "私利,私欲;利己主義(selfishness) = self interest",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Their decision was driven by self-interest."
+    },
+    {
+      "word": "selfless",
+      "meaning": "私心(私欲)のない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her selfless actions helped many people."
+    },
+    {
+      "word": "generous",
+      "meaning": "気前のよい;心が大きい,寛容な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It was generous of you to help."
+    },
+    {
+      "word": "stingy",
+      "meaning": "けちな,しみったれの;(…を)出し惜しみする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He is stingy with his praise."
+    },
+    {
+      "word": "rude",
+      "meaning": "(人・人の行為が)失礼な,無作法な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Interrupting her was rude."
+    },
+    {
+      "word": "considerate",
+      "meaning": "思いやりのある",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It was considerate of you to call."
+    },
+    {
+      "word": "thoughtful",
+      "meaning": "思いやりのある,配慮の行き届いた,親切な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Thank you for the thoughtful gift."
+    },
+    {
+      "word": "loving",
+      "meaning": "(人を)愛する,愛情深い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She grew up in a loving family."
+    },
+    {
+      "word": "lovable",
+      "meaning": "愛らしい,人好きのする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The puppy is small and lovable."
+    },
+    {
+      "word": "pleasant",
+      "meaning": "(物事が)人に喜びを与える,楽しい,心地よい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We had a pleasant conversation."
+    },
+    {
+      "word": "agreeable",
+      "meaning": "気持ちのよい,快い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His calm manner made him agreeable company."
+    },
+    {
+      "word": "disagreeable",
+      "meaning": "不愉快な,いやな(unpleasant)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The argument was a disagreeable experience."
+    },
+    {
+      "word": "outgoing",
+      "meaning": "(人か)外向的な,社交的な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My sister is friendly and outgoing."
+    },
+    {
+      "word": "reserved",
+      "meaning": "控えめな・遠慮がちな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He is reserved around new people."
+    },
+    {
+      "word": "talkative",
+      "meaning": "おしゃべりな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She becomes talkative when she feels comfortable."
+    },
+    {
+      "word": "timid",
+      "meaning": "おくびょうな,びくびく(おどおど)した",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The timid child hid behind his mother."
+    },
+    {
+      "word": "bold",
+      "meaning": "大胆な,恐れを知らない(fearless)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It was a bold decision to move abroad."
+    },
+    {
+      "word": "fearless",
+      "meaning": "恐れを知らない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The fearless climber continued upward."
+    },
+    {
+      "word": "cowardly",
+      "meaning": "おくびょうな;ひきょうな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Blaming someone else was a cowardly act."
+    },
+    {
+      "word": "insecure",
+      "meaning": "自信が持てない・不安な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt insecure in the new group."
+    },
+    {
+      "word": "uncertain",
+      "meaning": "(人が)確信が持てない,はっきり分からない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She was uncertain about what to say."
+    },
+    {
+      "word": "negative",
+      "meaning": "否定的な・悲観的な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His negative comments discouraged the team."
+    },
+    {
+      "word": "optimistic",
+      "meaning": "楽天主義の;楽観的な,のんきな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I am optimistic about the future."
+    },
+    {
+      "word": "hopeless",
+      "meaning": "希望を失った",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He felt hopeless after another rejection."
+    },
+    {
+      "word": "helpless",
+      "meaning": "無力な・どうすることもできない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt helpless when I heard the news."
+    },
+    {
+      "word": "thankful",
+      "meaning": "(人が)感謝している;(心・言動が)感謝に満ちた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We are thankful for your support."
+    },
+    {
+      "word": "affectionate",
+      "meaning": "愛情のこもった,優しい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She gave her brother an affectionate hug."
+    },
+    {
+      "word": "devoted",
+      "meaning": "献身的な,忠実な;熱愛している",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He is a devoted friend."
+    },
+    {
+      "word": "faithful",
+      "meaning": "忠実な,誠実な;貞節な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The dog remained a faithful companion."
+    },
+    {
+      "word": "reliable",
+      "meaning": "信頼できる,あてになる,確実な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She is a reliable person to ask."
+    },
+    {
+      "word": "unreliable",
+      "meaning": "当てにならない,信頼できない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His promises proved unreliable."
+    },
+    {
+      "word": "trustworthy",
+      "meaning": "(人・言明など)信頼に値する,信頼できる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I need advice from someone trustworthy."
+    },
+    {
+      "word": "truthful",
+      "meaning": "(人が)真実をいう,誠実な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Please give me a truthful answer."
+    },
+    {
+      "word": "untruthful",
+      "meaning": "真実性に欠ける,事実に反する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His account of the conversation was untruthful."
+    },
+    {
+      "word": "insincere",
+      "meaning": "誠意のない,不まじめな,偽善的な(hypocritical)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The apology sounded insincere."
+    },
+    {
+      "word": "genuine",
+      "meaning": "本物の,真の",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her concern for us was genuine."
+    },
+    {
+      "word": "fake",
+      "meaning": "偽りの・本物でない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He forced a fake smile."
+    },
+    {
+      "word": "humble",
+      "meaning": "謙虚な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She remained humble after her success."
+    },
+    {
+      "word": "arrogant",
+      "meaning": "〈人・態度などが〉傲慢な,おうへいな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His arrogant attitude annoyed everyone."
+    },
+    {
+      "word": "boastful",
+      "meaning": "高慢な;(…を)自慢する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The boastful remarks made us uncomfortable."
+    },
+    {
+      "word": "jealous",
+      "meaning": "(人・言動などが)しっと深い;しっとによる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt jealous of his success."
+    },
+    {
+      "word": "envious",
+      "meaning": "うらやましそうな,ねたましげな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She gave my new bicycle an envious look."
+    },
+    {
+      "word": "bitter",
+      "meaning": "つらい・苦々しい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The failure was a bitter disappointment."
+    },
+    {
+      "word": "sympathetic",
+      "meaning": "同情的な,思いやりのある",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My friend was sympathetic when I explained."
+    },
+    {
+      "word": "unsympathetic",
+      "meaning": "思いやりがない;(…に)同情しない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His unsympathetic response made her feel worse."
+    },
+    {
+      "word": "heartless",
+      "meaning": "無情な,冷酷な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It was a heartless thing to say."
+    },
+    {
+      "word": "cruel",
+      "meaning": "(人・行動が)残酷な,無慈悲な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Laughing at her mistake was cruel."
+    },
+    {
+      "word": "tender",
+      "meaning": "優しい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He gave her a tender smile."
+    },
+    {
+      "word": "cold",
+      "meaning": "冷淡な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her reply sounded cold and distant."
+    },
+    {
+      "word": "cool",
+      "meaning": "冷静な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Try to stay cool under pressure."
+    },
+    {
+      "word": "serene",
+      "meaning": "(生活・風景などが)穏やかな,平穏な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The quiet garden felt serene."
+    },
+    {
+      "word": "restless",
+      "meaning": "落ち着かない,不安な(uneasy)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt restless before the journey."
+    },
+    {
+      "word": "tense",
+      "meaning": "緊張した",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Everyone was tense before the announcement."
+    },
+    {
+      "word": "fearful",
+      "meaning": "恐れている・恐ろしい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The child gave us a fearful glance."
+    },
+    {
+      "word": "delighted",
+      "meaning": "うれしい,喜んだ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I am delighted to see you."
+    },
+    {
+      "word": "joyful",
+      "meaning": "うれしい,喜びに満ちた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We shared a joyful reunion."
+    },
+    {
+      "word": "glad",
+      "meaning": "うれしい,楽しい,喜んで",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I'm glad you could come."
+    },
+    {
+      "word": "merry",
+      "meaning": "陽気な,愉快な,快活な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We heard merry laughter from the kitchen."
+    },
+    {
+      "word": "ecstatic",
+      "meaning": "有頂天の,無我夢中の;(…に)夢中で",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She was ecstatic about winning the prize."
+    },
+    {
+      "word": "contented",
+      "meaning": "満足した,満足そうな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The dog gave a contented sigh."
+    },
+    {
+      "word": "satisfied",
+      "meaning": "(人が)満足した,満ち足りた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Are you satisfied with the result?"
+    },
+    {
+      "word": "unhappy",
+      "meaning": "悲しい,気の滅入る",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He looked unhappy after the meeting."
+    },
+    {
+      "word": "sorrowful",
+      "meaning": "(人が)悲しんでいる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She gave him a sorrowful smile."
+    },
+    {
+      "word": "mournful",
+      "meaning": "悲しみに沈んだ,悲嘆にくれた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The song had a mournful sound."
+    },
+    {
+      "word": "gloomy",
+      "meaning": "暗い,薄暗い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The room looked gloomy without sunlight."
+    },
+    {
+      "word": "melancholy",
+      "meaning": "物悲しい気分・憂うつ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A feeling of melancholy settled over him."
+    },
+    {
+      "word": "tearful",
+      "meaning": "涙ぐんだ,涙でいっぱいの",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They shared a tearful goodbye."
+    },
+    {
+      "word": "homesick",
+      "meaning": "ホームシックの,自分の家(国)をなつかしがる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt homesick during my first week away."
+    },
+    {
+      "word": "nostalgic",
+      "meaning": "郷愁の,郷愁に満ちた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "This song makes me feel nostalgic."
+    },
+    {
+      "word": "emotional",
+      "meaning": "感情の,情緒の",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The experience had a strong emotional effect."
+    },
+    {
+      "word": "insensitive",
+      "meaning": "(精神的・感情的に)鈍感な,感受性の鈍い;(…に)鈍感な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "That was an insensitive comment."
+    },
+    {
+      "word": "sensible",
+      "meaning": "分別(良識)がある,ものの分かる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Taking a break was a sensible decision."
+    },
+    {
+      "word": "wise",
+      "meaning": "(人・行為などが)賢い,賢明な,思慮分別のある",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She gave me some wise advice."
+    },
+    {
+      "word": "smart",
+      "meaning": "頭の回転が速い・賢い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He is smart enough to find a solution."
+    },
+    {
+      "word": "intelligent",
+      "meaning": "理解力のある,そう明な,知能の高い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She asked an intelligent question."
+    },
+    {
+      "word": "brilliant",
+      "meaning": "非常に優秀な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "That was a brilliant idea."
+    },
+    {
+      "word": "stupid",
+      "meaning": "(人が)ばかな,愚かな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I made a stupid mistake."
+    },
+    {
+      "word": "dull",
+      "meaning": "鈍い・退屈な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The long speech was rather dull."
+    },
+    {
+      "word": "knowledgeable",
+      "meaning": "博識の,物知りの",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Our guide was knowledgeable about local history."
+    },
+    {
+      "word": "reflective",
+      "meaning": "よく考える・内省的な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She grew quiet and reflective."
+    },
+    {
+      "word": "creative",
+      "meaning": "創造力のある",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We need a creative solution."
+    },
+    {
+      "word": "original",
+      "meaning": "独創的な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His story contains many original ideas."
+    },
+    {
+      "word": "practical",
+      "meaning": "実用的な・現実的な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She offered some practical advice."
+    },
+    {
+      "word": "idealistic",
+      "meaning": "理想主義の,観念論的な;現実的でない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His plans were hopeful but idealistic."
+    },
+    {
+      "word": "reasonable",
+      "meaning": "(人が)理性的な,分別のある",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Let's try to be reasonable."
+    },
+    {
+      "word": "unreasonable",
+      "meaning": "(人・行為などが)理性を欠く,無分別な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The demand seemed unreasonable to everyone."
+    },
+    {
+      "word": "illogical",
+      "meaning": "非論理的な,不合理な;もの分かりの悪い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His explanation was completely illogical."
+    },
+    {
+      "word": "subjective",
+      "meaning": "(思想や感情が)主観的な,主観による",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Our impressions of beauty are subjective."
+    },
+    {
+      "word": "skeptical",
+      "meaning": "疑い深い,懐疑的な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I was skeptical of his explanation."
+    },
+    {
+      "word": "suspicious",
+      "meaning": "(人物・話などが)疑わしい,怪しい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The message looked suspicious."
+    },
+    {
+      "word": "trusting",
+      "meaning": "信頼する,信用する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She has a trusting nature."
+    },
+    {
+      "word": "naive",
+      "meaning": "(若き・経験不足から)〈人・言葉などが〉無邪気な,天真らんまんな,世間知らずな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I was naive to believe that promise."
+    },
+    {
+      "word": "mature",
+      "meaning": "成熟した,十分に成長した,熟成した",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He showed a mature attitude to criticism."
+    },
+    {
+      "word": "immature",
+      "meaning": "(人・動物・果実などが)未[成]熟な,円熟(成熟)していない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His response was immature."
+    },
+    {
+      "word": "childlike",
+      "meaning": "(よい意味で)子供らしい,あどけない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She watched the snow with childlike wonder."
+    },
+    {
+      "word": "elderly",
+      "meaning": "かなり年配の,初老の",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "An elderly neighbor joined us for tea."
+    },
+    {
+      "word": "adult",
+      "meaning": "おとなの,成人した,成熟した",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Adult learners often bring useful life experience."
+    },
+    {
+      "word": "irresponsible",
+      "meaning": "(人・行為・意見などが)無責任な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Leaving without telling anyone was irresponsible."
+    },
+    {
+      "word": "rash",
+      "meaning": "(人・行動などが)向こう見ずな,無分別な(reckless);性急な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Don't make a rash decision."
+    },
+    {
+      "word": "reckless",
+      "meaning": "(人・行為が)向こう見ずな,無謀な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His reckless behavior worried his friends."
+    },
+    {
+      "word": "alert",
+      "meaning": "油断のない,用心深い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Stay alert when crossing this road."
+    },
+    {
+      "word": "attentive",
+      "meaning": "注意深い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The teacher was patient and attentive."
+    },
+    {
+      "word": "watchful",
+      "meaning": "警戒する,油断のない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She kept a watchful eye on the children."
+    },
+    {
+      "word": "unaware",
+      "meaning": "気づかない,知らない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He was unaware of my worries."
+    },
+    {
+      "word": "conscious",
+      "meaning": "気づいている,知っている,意識している",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I was conscious of everyone watching me."
+    },
+    {
+      "word": "impatient",
+      "meaning": "我慢しきれない,もどかしそうな,性急な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She grew impatient with the delay."
+    },
+    {
+      "word": "intolerant",
+      "meaning": "(人が)偏狭な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He was intolerant of other people's opinions."
+    },
+    {
+      "word": "flexible",
+      "meaning": "柔軟に対応できる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We can be flexible about the time."
+    },
+    {
+      "word": "adaptable",
+      "meaning": "順応できる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She is adaptable in unfamiliar situations."
+    },
+    {
+      "word": "obstinate",
+      "meaning": "頑固な,強情な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He was too obstinate to change his mind."
+    },
+    {
+      "word": "persistent",
+      "meaning": "(反対・困難にもくじけず)あくまでもやり抜く,ねばり強い,執ような",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her persistent efforts finally succeeded."
+    },
+    {
+      "word": "resolute",
+      "meaning": "決心の堅い,断固たる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She remained resolute despite the criticism."
+    },
+    {
+      "word": "indecisive",
+      "meaning": "優柔不断の,煮えきらない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I become indecisive when there are many choices."
+    },
+    {
+      "word": "hesitant",
+      "meaning": "ちゅうちょする;(…を)ためらう",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He was hesitant to ask for help."
+    },
+    {
+      "word": "willing",
+      "meaning": "喜んで(快く)する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I am willing to try again."
+    },
+    {
+      "word": "unwilling",
+      "meaning": "気が進まない,いやいやながらの,不本意の",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She seemed unwilling to discuss it."
+    },
+    {
+      "word": "keen",
+      "meaning": "熱心な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He is keen to learn new skills."
+    },
+    {
+      "word": "apathetic",
+      "meaning": "無感動な;無関心の,冷淡な(indifferent)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The students seemed apathetic about the election."
+    },
+    {
+      "word": "indifferent",
+      "meaning": "(人が)関心のない,むとんじゃくな,冷淡な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She was indifferent to their praise."
+    },
+    {
+      "word": "idle",
+      "meaning": "(人が)働いていない(unemployed),(機械などが)使われていない,(時間が)空いている",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He felt uneasy while sitting idle."
+    },
+    {
+      "word": "energetic",
+      "meaning": "精力的な,元気旺盛な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The children were energetic after lunch."
+    },
+    {
+      "word": "dynamic",
+      "meaning": "活力のある",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She is a dynamic team leader."
+    },
+    {
+      "word": "vigorous",
+      "meaning": "(人が)精力的な,元気な;(行動などが)活気がある,力強い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He gave a vigorous wave."
+    },
+    {
+      "word": "exhausted",
+      "meaning": "疲れ果てた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I was exhausted after the long walk."
+    },
+    {
+      "word": "weary",
+      "meaning": "疲れた,疲れはてた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The weary travelers stopped to rest."
+    },
+    {
+      "word": "awake",
+      "meaning": "目が覚めている",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I was still awake at midnight."
+    },
+    {
+      "word": "asleep",
+      "meaning": "眠って;永眠して",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The baby is already asleep."
+    },
+    {
+      "word": "unwell",
+      "meaning": "(特に短い時間)体の具合が悪い,気分がすぐれない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She felt unwell and went home."
+    },
+    {
+      "word": "faint",
+      "meaning": "気が遠くなるような",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt faint in the crowded room."
+    },
+    {
+      "word": "dizzy",
+      "meaning": "(人が)めまいがする,ふらふらする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The spinning ride made me dizzy."
+    },
+    {
+      "word": "breathless",
+      "meaning": "息切れした,息もつけない;息を殺した",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We were breathless after climbing the stairs."
+    },
+    {
+      "word": "strong",
+      "meaning": "(身体的に)力の強い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She is strong enough to lift the box."
+    },
+    {
+      "word": "fragile",
+      "meaning": "傷つきやすい・もろい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His confidence felt fragile after the setback."
+    },
+    {
+      "word": "robust",
+      "meaning": "たくましい;強壮な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He remained robust well into old age."
+    },
+    {
+      "word": "unfit",
+      "meaning": "体調がよくない・適さない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt unfit after months without exercise."
+    },
+    {
+      "word": "sore",
+      "meaning": "(傷・患部が)痛い,触って痛い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My legs are sore from yesterday's walk."
+    },
+    {
+      "word": "painless",
+      "meaning": "痛みのない,苦しみのない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The procedure was almost painless."
+    },
+    {
+      "word": "numb",
+      "meaning": "麻痺(まひ)した,感覚を失った,しびれた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My fingers felt numb in the cold."
+    },
+    {
+      "word": "shaky",
+      "meaning": "(体・声などが)揺れる,震える",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His voice was shaky with nerves."
+    },
+    {
+      "word": "thirsty",
+      "meaning": "(人が)のどの渇いた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I feel thirsty after the walk."
+    },
+    {
+      "word": "full",
+      "meaning": "満腹の",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "No more cake, thanks; I'm full."
+    },
+    {
+      "word": "uncomfortable",
+      "meaning": "(物が)心地よくない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "This chair is uncomfortable."
+    },
+    {
+      "word": "bashful",
+      "meaning": "(特に子供が)はにかみやの,内気な(very shy)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The bashful child gave a small smile."
+    },
+    {
+      "word": "amused",
+      "meaning": "おもしろがった",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She looked amused by the joke."
+    },
+    {
+      "word": "boring",
+      "meaning": "退屈な,うんざりする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The lecture was boring."
+    },
+    {
+      "word": "exciting",
+      "meaning": "(物事が)興奮させる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Starting a new job can be exciting."
+    },
+    {
+      "word": "frightening",
+      "meaning": "ぎょっとさせる,恐ろしい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The sudden noise was frightening."
+    },
+    {
+      "word": "disappointing",
+      "meaning": "失望させるような,意外につまらない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The result was disappointing."
+    },
+    {
+      "word": "amazing",
+      "meaning": "驚くべき,びっくりさせるような",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Your progress is amazing."
+    },
+    {
+      "word": "worrying",
+      "meaning": "悩みの種となる,やっかいな",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The lack of news is worrying."
+    },
+    {
+      "word": "confusing",
+      "meaning": "混乱させる[ような],当惑させる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "These instructions are confusing."
+    },
+    {
+      "word": "embarrassing",
+      "meaning": "(人を)まごつかせる,困惑させる,きまり悪がらせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Forgetting his name was embarrassing."
+    },
+    {
+      "word": "satisfying",
+      "meaning": "満足を与える,満足な,申し分のない",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Finishing the puzzle was satisfying."
+    },
+    {
+      "word": "shocking",
+      "meaning": "びっくりさせる,ぞっとする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The news was shocking."
+    },
+    {
+      "word": "inspired",
+      "meaning": "刺激を受けた・ひらめきを得た",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt inspired after hearing her story."
+    },
+    {
+      "word": "encouraging",
+      "meaning": "元気付ける,励ましとなる,奨励する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The teacher's comments were encouraging."
+    },
+    {
+      "word": "assured",
+      "meaning": "自信のある",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She spoke in an assured voice."
+    },
+    {
+      "word": "secure",
+      "meaning": "安心している・安定した",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I feel secure with people I trust."
+    },
+    {
+      "word": "unsafe",
+      "meaning": "危険な(dangerous)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The dark staircase looked unsafe."
+    },
+    {
+      "word": "vulnerable",
+      "meaning": "(身体的に)傷つきやすい",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The small animals are vulnerable to the cold."
+    },
+    {
+      "word": "wounded",
+      "meaning": "(特に戦争で)負傷した;(感情などが)傷つけられた",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His wounded pride made him quiet."
+    },
+    {
+      "word": "disturbed",
+      "meaning": "心が乱れた・不安な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She was disturbed by the strange message."
+    },
+    {
+      "word": "overjoyed",
+      "meaning": "(…で)大喜びの",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We were overjoyed to hear the news."
+    },
+    {
+      "word": "adore",
+      "meaning": "〈人〉を深く愛する,敬愛する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I adore spending time with my grandparents."
+    },
+    {
+      "word": "approve",
+      "meaning": "〈事〉をよいと認める,に賛成する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My friends approve of the idea."
+    },
+    {
+      "word": "assure",
+      "meaning": "〈人・自分〉に確信させる,保証する,分からせて安心させる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I assure you that everything is ready."
+    },
+    {
+      "word": "believe",
+      "meaning": "(現実・真実であると)〈事〉を信じる,信用する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I believe what you told me."
+    },
+    {
+      "word": "care",
+      "meaning": "気に掛ける・気遣い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I care about how you feel."
+    },
+    {
+      "word": "cherish",
+      "meaning": "〈子供など〉を大事にする,かわいがる,いつくしむ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We cherish our children."
+    },
+    {
+      "word": "convince",
+      "meaning": "〈人〉を納得させる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Your explanation will convince them."
+    },
+    {
+      "word": "criticize",
+      "meaning": "…を非難する,酷評する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It is easy to criticize from a distance."
+    },
+    {
+      "word": "distrust",
+      "meaning": "不信,疑惑",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "There was distrust between the two groups."
+    },
+    {
+      "word": "encourage",
+      "meaning": "〈人〉を勇気づける,励ます",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Your words encourage me to keep trying."
+    },
+    {
+      "word": "excite",
+      "meaning": "〈人〉を興奮させる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "New ideas always excite her."
+    },
+    {
+      "word": "frighten",
+      "meaning": "(突然)…をひどく驚かせる,おびえさせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Sudden noises frighten the cat."
+    },
+    {
+      "word": "hate",
+      "meaning": "…を憎む,ひどくきらう;…をいやだと思う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I hate being late."
+    },
+    {
+      "word": "impress",
+      "meaning": "(…で)…を感銘させる,に印象づける",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His kindness will impress you."
+    },
+    {
+      "word": "irritate",
+      "meaning": "…を怒らせる,いらだたせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Repeated interruptions irritate me."
+    },
+    {
+      "word": "like",
+      "meaning": "…を好む,が好きである",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I like your sense of humor."
+    },
+    {
+      "word": "miss",
+      "meaning": "恋しく思う・いなくて寂しく思う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I miss my family when I travel."
+    },
+    {
+      "word": "offend",
+      "meaning": "感情を傷つける・怒らせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I did not mean to offend you."
+    },
+    {
+      "word": "please",
+      "meaning": "〈人〉を喜ばせる,満足させる,の気に入る",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The surprise should please her."
+    },
+    {
+      "word": "relieve",
+      "meaning": "〈物事が〉〈苦痛・悩みなど〉を和らげる,軽減する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Talking helped relieve some of my worries."
+    },
+    {
+      "word": "resent",
+      "meaning": "…に腹を立てる,憤慨する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I resent being ignored."
+    },
+    {
+      "word": "satisfy",
+      "meaning": "〈物事が〉〈人〉を満足させる,喜ばせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Nothing seemed to satisfy him."
+    },
+    {
+      "word": "soothe",
+      "meaning": "〈人・神経など〉をなだめる,静める",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her gentle voice helped soothe the child."
+    },
+    {
+      "word": "sympathize",
+      "meaning": "(…のことで…に)同情する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I sympathize with your disappointment."
+    },
+    {
+      "word": "tease",
+      "meaning": "〈人・動物〉をいじめる,からかう",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Please don't tease him about his mistake."
+    },
+    {
+      "word": "thrill",
+      "meaning": "わくわくする気持ち",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt a thrill when my name was called."
+    },
+    {
+      "word": "yearn",
+      "meaning": "憧れる・強く望む",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They yearn for a peaceful life."
+    },
+    {
+      "word": "rejoice",
+      "meaning": "(…を)喜ぶ,うれしがる(delight)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We rejoice in your success."
+    },
+    {
+      "word": "celebrate",
+      "meaning": "(儀式・祝典などを行って)…を祝う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Let's celebrate your achievement."
+    },
+    {
+      "word": "empathize",
+      "meaning": "(…に)感情移入する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I can empathize with your situation."
+    },
+    {
+      "word": "disappoint",
+      "meaning": "〈人〉を失望させる,がっかりさせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I didn't want to disappoint you."
+    },
+    {
+      "word": "annoy",
+      "meaning": "〈物事が〉…を困らせる,悩ませる,いらいらさせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Those loud noises annoy me."
+    },
+    {
+      "word": "fascinate",
+      "meaning": "…を魅惑する,魅了する,うっとりさせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Stories about space fascinate him."
+    },
+    {
+      "word": "astonish",
+      "meaning": "…をびっくりさせる,驚かせる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her memory never fails to astonish me."
+    },
+    {
+      "word": "confuse",
+      "meaning": "(…と)を混同する,取り違える",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I often confuse the two brothers."
+    },
+    {
+      "word": "disturb",
+      "meaning": "…をかき乱す,騒がしくする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Please don't disturb the quiet atmosphere."
+    },
+    {
+      "word": "despise",
+      "meaning": "(…のことで)…を軽べつする,さげすむ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They despise dishonest behavior."
+    },
+    {
+      "word": "repent",
+      "meaning": "(…を)後悔する,悔い改める",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He began to repent of his actions."
+    },
+    {
+      "word": "tolerate",
+      "meaning": "…に寛大な態度をとる,を黙認する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We should tolerate differences of opinion."
+    },
+    {
+      "word": "bear",
+      "meaning": "耐える・我慢する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I cannot bear the thought of leaving."
+    },
+    {
+      "word": "withstand",
+      "meaning": "…に抵抗して耐える,持ちこたえる,をがまんする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Their friendship could withstand the disagreement."
+    },
+    {
+      "word": "cope",
+      "meaning": "対抗する;(難局に)対処する,打ち勝つ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We are learning to cope with change."
+    },
+    {
+      "word": "recover",
+      "meaning": "回復する・立ち直る",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It took time to recover from the shock."
+    },
+    {
+      "word": "heal",
+      "meaning": "〈傷など〉を直す",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Time helped heal their emotional wounds."
+    },
+    {
+      "word": "accept",
+      "meaning": "(喜んで)〈物〉を受け取る,〈事〉を受け入れる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I accept your apology."
+    },
+    {
+      "word": "reconcile",
+      "meaning": "(…と)…を和解させる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She tried to reconcile the two friends."
+    },
+    {
+      "word": "deny",
+      "meaning": "…を否定する,否認する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I cannot deny that I was upset."
+    },
+    {
+      "word": "confess",
+      "meaning": "〈罪・秘密など〉を白状する,打ち明ける",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I must confess that I was nervous."
+    },
+    {
+      "word": "apologize",
+      "meaning": "(人に…について)わびる,あやまる;言い訳する,弁解する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I want to apologize for my rude comment."
+    },
+    {
+      "word": "betray",
+      "meaning": "(敵に)〈国・味方など〉を裏切る・売る",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I would never betray your trust."
+    },
+    {
+      "word": "lie",
+      "meaning": "うそをつく",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Please don't lie to me."
+    },
+    {
+      "word": "cheat",
+      "meaning": "〈人〉をだます,欺く",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It is wrong to cheat people."
+    },
+    {
+      "word": "conceal",
+      "meaning": "〈物〉を隠す",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He tried to conceal the broken vase."
+    },
+    {
+      "word": "express",
+      "meaning": "(言葉で)〈思想・感情など〉を表現する,言い表す,述べる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It is hard to express my feelings."
+    },
+    {
+      "word": "share",
+      "meaning": "気持ちを分かち合う・共有する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "You can share your worries with me."
+    },
+    {
+      "word": "hear",
+      "meaning": "〈音〉が聞こえる,を聞く(進行形にできない)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I can hear laughter in the next room."
+    },
+    {
+      "word": "speak",
+      "meaning": "話す,しゃべる,物を言う,口をきく",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We need to speak honestly."
+    },
+    {
+      "word": "discuss",
+      "meaning": "…を論ずる,討議する,検討する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Let's discuss this when we are calmer."
+    },
+    {
+      "word": "disagree",
+      "meaning": "〈物事が〉(…と)一致しない,食い違う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Our accounts of the event disagree."
+    },
+    {
+      "word": "confront",
+      "meaning": "〈人が〉〈危険・問題・相手など〉に立ち向かう,ぶつかっていく",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She decided to confront her fears."
+    },
+    {
+      "word": "mock",
+      "meaning": "〈人,人の言動〉をあざける,ばかにする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Don't mock someone for asking a question."
+    },
+    {
+      "word": "bully",
+      "meaning": "いじめる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "No one has the right to bully you."
+    },
+    {
+      "word": "threaten",
+      "meaning": "(…で)〈人〉を脅す,脅迫する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He tried to threaten us into silence."
+    },
+    {
+      "word": "persuade",
+      "meaning": "〈人〉を説得する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I hope to persuade her to stay."
+    },
+    {
+      "word": "scold",
+      "meaning": "〈人〉をしかる,に小言を言う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "There is no need to scold him."
+    },
+    {
+      "word": "complain",
+      "meaning": "(人に…について)不平を言う,泣きごとを言う,訴える",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "You can complain without being rude."
+    },
+    {
+      "word": "object",
+      "meaning": "反対する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I object to being treated unfairly."
+    },
+    {
+      "word": "avoid",
+      "meaning": "〈危険・いやなもの〉を避ける,回避する(keep away from)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I try to avoid unnecessary arguments."
+    },
+    {
+      "word": "escape",
+      "meaning": "(危うく…から)逃げ出す,脱走する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She wanted to escape the noisy crowd."
+    },
+    {
+      "word": "approach",
+      "meaning": "〈ある時間・場所・状態〉に近づく,接近する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He was afraid to approach the group."
+    },
+    {
+      "word": "interact",
+      "meaning": "(…と)相互に作用する,影響し合う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The game helps children interact with each other."
+    },
+    {
+      "word": "engage",
+      "meaning": "関わる・引き付ける",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Good stories engage our emotions."
+    },
+    {
+      "word": "cooperate",
+      "meaning": "協力する,共同する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We must cooperate to solve this problem."
+    },
+    {
+      "word": "compete",
+      "meaning": "(…と…を)競う,競争する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The siblings often compete for attention."
+    },
+    {
+      "word": "assist",
+      "meaning": "〈人〉を手伝う,助力する,助ける",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I'm happy to assist you."
+    },
+    {
+      "word": "donate",
+      "meaning": "(…に)…を寄贈する,寄付する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They donate their spare clothes to charity."
+    },
+    {
+      "word": "sacrifice",
+      "meaning": "犠牲・犠牲にする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She made a sacrifice for her family."
+    },
+    {
+      "word": "protect",
+      "meaning": "(危険・損害などから)…を守る,保護する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We want to protect the children from harm."
+    },
+    {
+      "word": "rescue",
+      "meaning": "(危険などから)…を救う,救助(救出)する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The neighbors helped rescue the trapped dog."
+    },
+    {
+      "word": "welcome",
+      "meaning": "歓迎する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We welcome you with open hearts."
+    },
+    {
+      "word": "hug",
+      "meaning": "(特に愛情を持って)…を抱き締める;(両腕・ひざなどで)…をぎゅっと締めつける",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I wanted to hug my friend."
+    },
+    {
+      "word": "kiss",
+      "meaning": "…に口づけする,キスする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She leaned over to kiss his cheek."
+    },
+    {
+      "word": "caress",
+      "meaning": "優しくなでる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He reached out to caress the dog's head."
+    },
+    {
+      "word": "wink",
+      "meaning": "(合図として)(…に)目くばせする,ウインクする",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She would wink at me after each joke."
+    },
+    {
+      "word": "nod",
+      "meaning": "(承諾・あいさつ・合図などで)うなずく,会釈する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I saw him nod in agreement."
+    },
+    {
+      "word": "salute",
+      "meaning": "(挙手・礼砲などで)…に敬礼する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The soldiers salute their commander."
+    },
+    {
+      "word": "gesture",
+      "meaning": "(気持ちや考えを表現するときの)身ぶり,手まね,しぐさ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She thanked us with a simple gesture."
+    },
+    {
+      "word": "grin",
+      "meaning": "歯を見せて笑う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The good news made him grin."
+    },
+    {
+      "word": "scowl",
+      "meaning": "顔をしかめる,怒った(不きげんな)顔をする;(…を)にらむ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He began to scowl at the interruption."
+    },
+    {
+      "word": "stare",
+      "meaning": "(…を)(目を大きく開いて)じっと見つめる,じろじろ見る,凝視する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Please don't stare at me."
+    },
+    {
+      "word": "gaze",
+      "meaning": "(…を)じっと見つめる,凝視する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They gaze quietly at the stars."
+    },
+    {
+      "word": "blush",
+      "meaning": "(当惑・恥ずかしさのために)顔を赤らめる,赤面する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Compliments always make me blush."
+    },
+    {
+      "word": "beam",
+      "meaning": "にっこり笑う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She began to beam with pride."
+    },
+    {
+      "word": "weep",
+      "meaning": "涙を流す,泣く",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The sad ending made her weep."
+    },
+    {
+      "word": "cry",
+      "meaning": "(喜び・悲しみ・苦痛などで)泣く,涙を流す",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "It's all right to cry."
+    },
+    {
+      "word": "gasp",
+      "meaning": "(…に)(驚き・恐怖・怒りなどで)はっと息をのむ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The surprise made everyone gasp."
+    },
+    {
+      "word": "tremble",
+      "meaning": "(恐怖・興奮・寒さなどで)〈身体・声などが〉震える",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My hands tremble when I feel nervous."
+    },
+    {
+      "word": "shake",
+      "meaning": "(前後・上下・左右などに)…を振る,揺り動かす,揺する",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She began to shake her head."
+    },
+    {
+      "word": "quiver",
+      "meaning": "(通例小刻みに,またはわずかに)震える",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His lips began to quiver."
+    },
+    {
+      "word": "heartbeat",
+      "meaning": "心臓の鼓動",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I could feel my heartbeat getting faster."
+    },
+    {
+      "word": "laughter",
+      "meaning": "笑い,笑い声",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The room filled with laughter."
+    },
+    {
+      "word": "giggle",
+      "meaning": "くすくす笑う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The children began to giggle."
+    },
+    {
+      "word": "snicker",
+      "meaning": "(人をばかにした)忍び笑い[擬声語]",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I heard a snicker behind me."
+    },
+    {
+      "word": "groan",
+      "meaning": "(苦痛・悲嘆などで出す)うなり声,うめき声",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He let out a groan of disappointment."
+    },
+    {
+      "word": "moan",
+      "meaning": "(悲しみ・苦痛などの)うめき[声]",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A quiet moan came from the injured man."
+    },
+    {
+      "word": "shout",
+      "meaning": "叫ぶ,大声を出す,どなる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Please don't shout at me."
+    },
+    {
+      "word": "murmur",
+      "meaning": "(流れる水・そよぐ葉などの)ざわめき,かすかな音;(人の声の)ささやき,ぼそぼそいう声",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "A murmur of surprise spread through the room."
+    },
+    {
+      "word": "silence",
+      "meaning": "静けさ,音がしないこと",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We sat together in comfortable silence."
+    },
+    {
+      "word": "tone",
+      "meaning": "声の調子",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her tone was gentle and reassuring."
+    },
+    {
+      "word": "posture",
+      "meaning": "(一般的な)姿勢;(特定の)姿勢,(モデルなどのとる)ポーズ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His relaxed posture made me feel welcome."
+    },
+    {
+      "word": "smirk",
+      "meaning": "(…を)にやにや(にたにた)笑う",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He began to smirk at my mistake."
+    },
+    {
+      "word": "sulk",
+      "meaning": "すねる,ふくれる",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He would sulk whenever he lost a game."
+    },
+    {
+      "word": "brood",
+      "meaning": "くよくよ考える",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Try not to brood over the argument."
+    },
+    {
+      "word": "fantasy",
+      "meaning": "想像,空想",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The story mixes everyday life with fantasy."
+    },
+    {
+      "word": "nightmare",
+      "meaning": "悪夢",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I woke up after a nightmare."
+    },
+    {
+      "word": "memory",
+      "meaning": "記憶[力]",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My memory of that day is clear."
+    },
+    {
+      "word": "recollection",
+      "meaning": "(…を)思い出すこと,(…の)記憶",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She has a vivid recollection of their first meeting."
+    },
+    {
+      "word": "opinion",
+      "meaning": "意見・考え",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I value your opinion."
+    },
+    {
+      "word": "belief",
+      "meaning": "信念,確信,所信",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her belief in me gave me confidence."
+    },
+    {
+      "word": "idea",
+      "meaning": "(心に浮かんだ)考え,思考;考えること",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I have an idea that might help."
+    },
+    {
+      "word": "insight",
+      "meaning": "洞察[力],眼識;(…を)見通す力",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The conversation gave me insight into his feelings."
+    },
+    {
+      "word": "instinct",
+      "meaning": "本能",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My first instinct was to help."
+    },
+    {
+      "word": "creativity",
+      "meaning": "独創性",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The activity encourages creativity."
+    },
+    {
+      "word": "judgment",
+      "meaning": "判断・判断力",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I trust your judgment."
+    },
+    {
+      "word": "intelligence",
+      "meaning": "知能,知力,理解力;知恵,そう明",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her intelligence impressed everyone."
+    },
+    {
+      "word": "attention",
+      "meaning": "(…に対する)注意,注意力",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The child wanted his father's attention."
+    },
+    {
+      "word": "awareness",
+      "meaning": "(…に)気づいていること,(…であることに)気づいていること",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The workshop increased our awareness of others' feelings."
+    },
+    {
+      "word": "reflection",
+      "meaning": "熟考・振り返り",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "After some reflection, I changed my mind."
+    },
+    {
+      "word": "spirituality",
+      "meaning": "(物欲に対し)精神的であること,精神性",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She finds meaning through art and spirituality."
+    },
+    {
+      "word": "conscience",
+      "meaning": "良心,道義心,善悪を判断する力",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My conscience told me to apologize."
+    },
+    {
+      "word": "ethic",
+      "meaning": "倫理,道徳律",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "An ethic of kindness guides their actions."
+    },
+    {
+      "word": "virtue",
+      "meaning": "美徳,徳;高潔",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Patience is an important virtue."
+    },
+    {
+      "word": "honor",
+      "meaning": "(自分の信念・行為に対する)道義心,誠実,高潔",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His sense of honor kept him honest."
+    },
+    {
+      "word": "decency",
+      "meaning": "(言動・服装などが)きちんとしていること",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She treated everyone with basic decency."
+    },
+    {
+      "word": "fairness",
+      "meaning": "公平さ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The children care deeply about fairness."
+    },
+    {
+      "word": "equality",
+      "meaning": "(数量・程度・価値・大きさなどで)等しいこと,均等;(特に,権利・責任などにおいて)(…間の…の)平等",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They believe in equality for everyone."
+    },
+    {
+      "word": "bias",
+      "meaning": "偏り・偏見",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Personal bias can affect our judgment."
+    },
+    {
+      "word": "prejudice",
+      "meaning": "(…に対する不当な)先入観,偏見;(…に好意的な)先入観,えこひいき",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Getting to know people can challenge prejudice."
+    },
+    {
+      "word": "hatred",
+      "meaning": "(…に対する)憎しみ,憎悪,大嫌い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He refused to let hatred control him."
+    },
+    {
+      "word": "aggression",
+      "meaning": "攻撃的な態度",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His aggression made the conversation difficult."
+    },
+    {
+      "word": "violence",
+      "meaning": "暴力,乱暴",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They spoke out against violence."
+    },
+    {
+      "word": "malice",
+      "meaning": "(…に対する)(強い)悪意,敵意,恨み",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "There was no malice in her words."
+    },
+    {
+      "word": "spite",
+      "meaning": "悪意,意地悪",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He hid the letter out of spite."
+    },
+    {
+      "word": "vengeance",
+      "meaning": "復しゅう,仕返し",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She chose forgiveness instead of vengeance."
+    },
+    {
+      "word": "obligation",
+      "meaning": "(法律・社会・道徳上の)義務,約束",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I felt an obligation to help."
+    },
+    {
+      "word": "duty",
+      "meaning": "(道徳・法律上の)義務,本分,義理",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He felt it was his duty to tell the truth."
+    },
+    {
+      "word": "promise",
+      "meaning": "約束,誓い",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I will keep my promise to you."
+    },
+    {
+      "word": "intention",
+      "meaning": "意図,考え,目的",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "My intention was to help, not upset you."
+    },
+    {
+      "word": "purpose",
+      "meaning": "(人の抱く)目的,目標,意図",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Helping others gives her a sense of purpose."
+    },
+    {
+      "word": "fulfillment",
+      "meaning": "(義務・約束などの)遂行;(夢・希望などの)実現",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The project marked the fulfillment of a dream."
+    },
+    {
+      "word": "accomplishment",
+      "meaning": "完成,成就(じょうじゅ)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We celebrated the accomplishment of our goal."
+    },
+    {
+      "word": "success",
+      "meaning": "成功,好結果,上首尾",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She was proud of her friend's success."
+    },
+    {
+      "word": "loss",
+      "meaning": "(…を)失うこと,紛失",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He struggled with the loss of his friend."
+    },
+    {
+      "word": "defeat",
+      "meaning": "敗北",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "They accepted defeat with dignity."
+    },
+    {
+      "word": "triumph",
+      "meaning": "勝利・大きな喜び",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Finishing the race was a personal triumph."
+    },
+    {
+      "word": "obstacle",
+      "meaning": "(…に対する)障害[物],邪魔[物]",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Fear became an obstacle to trying again."
+    },
+    {
+      "word": "hardship",
+      "meaning": "辛苦,苦難,難儀",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The family supported each other through hardship."
+    },
+    {
+      "word": "burden",
+      "meaning": "重荷・負担",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Sharing the problem eased the burden."
+    },
+    {
+      "word": "strain",
+      "meaning": "緊張・心身の負担",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The long wait put a strain on everyone."
+    },
+    {
+      "word": "trauma",
+      "meaning": "心の深い傷・トラウマ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "She spoke carefully about the trauma she experienced."
+    },
+    {
+      "word": "anguish",
+      "meaning": "(…に対する)(心身の)激しい苦しみ,苦悶(くもん)",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "His voice revealed his anguish."
+    },
+    {
+      "word": "discomfort",
+      "meaning": "不快",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "I noticed her discomfort during the conversation."
+    },
+    {
+      "word": "displeasure",
+      "meaning": "不満,不きげん,腹立たしさ",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He made his displeasure clear."
+    },
+    {
+      "word": "disillusionment",
+      "meaning": "迷いから覚めること(覚めた状態);幻滅",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "The broken promise led to disillusionment."
+    },
+    {
+      "word": "skepticism",
+      "meaning": "懐疑,懐疑論;無神論",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her claim was met with skepticism."
+    },
+    {
+      "word": "cynic",
+      "meaning": "(人間の善良さを信じない)皮肉屋,冷笑家",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Even a cynic could see their kindness."
+    },
+    {
+      "word": "earnest",
+      "meaning": "まじめな,真剣な",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "He made an earnest effort to apologize."
+    },
+    {
+      "word": "seriousness",
+      "meaning": "まじめ,本気",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "Her expression showed the seriousness of her concern."
+    },
+    {
+      "word": "solemnity",
+      "meaning": "厳粛,荘厳",
+      "tags": [
+        "気持ち・人柄"
+      ],
+      "example": "We were moved by the ceremony's solemnity."
+    }
+  ]
+}

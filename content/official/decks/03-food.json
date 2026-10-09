@@ -1,0 +1,4015 @@
+{
+  "schemaVersion": 1,
+  "title": "食べものとカフェの英単語 500",
+  "description": "食材、飲みもの、味、調理法、キッチンの道具まで。食事の場面を広くカバーする500語です。",
+  "textbookTags": [
+    {
+      "name": "食事・カフェ"
+    },
+    {
+      "name": "英語語彙"
+    }
+  ],
+  "words": [
+    {
+      "word": "bread",
+      "meaning": "パン",
+      "example": "Would you like some bread?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "rice",
+      "meaning": "米・ご飯",
+      "example": "We eat rice with dinner.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "pasta",
+      "meaning": "パスタ",
+      "example": "I would like the pasta with tomato sauce.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "noodle",
+      "meaning": "麺",
+      "example": "These noodles are delicious.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "soup",
+      "meaning": "スープ",
+      "example": "The soup is still hot.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "salad",
+      "meaning": "サラダ",
+      "example": "I made a salad for lunch.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "sandwich",
+      "meaning": "サンドイッチ",
+      "example": "Can I have a cheese sandwich?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "cheese",
+      "meaning": "チーズ",
+      "example": "Would you like some cheese on your pasta?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "egg",
+      "meaning": "卵",
+      "example": "I had an egg for breakfast.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "chicken",
+      "meaning": "鶏肉",
+      "example": "I will have the chicken with rice.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "beef",
+      "meaning": "牛肉",
+      "example": "This soup contains beef.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "pork",
+      "meaning": "豚肉",
+      "example": "Does this dish contain pork?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "fish",
+      "meaning": "魚・魚肉",
+      "example": "We had fish for dinner.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "vegetable",
+      "meaning": "野菜",
+      "example": "I eat vegetables every day.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "fruit",
+      "meaning": "果物",
+      "example": "There is fresh fruit on the table.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "apple",
+      "meaning": "リンゴ",
+      "example": "I put an apple in my bag.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "banana",
+      "meaning": "バナナ",
+      "example": "This banana is ripe.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "orange",
+      "meaning": "オレンジ",
+      "example": "Would you like an orange?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "lemon",
+      "meaning": "レモン",
+      "example": "I like lemon in my tea.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "tomato",
+      "meaning": "トマト",
+      "example": "Please slice the tomato.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "potato",
+      "meaning": "ジャガイモ",
+      "example": "I baked a potato for lunch.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "onion",
+      "meaning": "タマネギ",
+      "example": "Add one onion to the soup.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "carrot",
+      "meaning": "ニンジン",
+      "example": "Cut the carrot into small pieces.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "mushroom",
+      "meaning": "キノコ",
+      "example": "This pasta has mushrooms in it.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "milk",
+      "meaning": "牛乳・ミルク",
+      "example": "Do you take milk in your coffee?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "water",
+      "meaning": "水",
+      "example": "Could I have a glass of water?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "coffee",
+      "meaning": "コーヒー",
+      "example": "I drink coffee in the morning.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "tea",
+      "meaning": "お茶・紅茶",
+      "example": "Would you like a cup of tea?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "juice",
+      "meaning": "ジュース",
+      "example": "I ordered a glass of orange juice.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "breakfast",
+      "meaning": "朝食",
+      "example": "Breakfast is served from seven.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "lunch",
+      "meaning": "昼食",
+      "example": "Let's have lunch together.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "dinner",
+      "meaning": "夕食",
+      "example": "What would you like for dinner?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "meal",
+      "meaning": "食事",
+      "example": "Thank you for the lovely meal.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "menu",
+      "meaning": "メニュー・献立表",
+      "example": "Could we see the menu, please?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "restaurant",
+      "meaning": "レストラン",
+      "example": "This restaurant serves fresh fish.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "waiter",
+      "meaning": "ウエーター・給仕係",
+      "example": "The waiter brought us some water.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "bill",
+      "meaning": "勘定書・会計伝票",
+      "example": "Could we have the bill, please?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "order",
+      "meaning": "注文する",
+      "example": "Are you ready to order?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "taste",
+      "meaning": "味",
+      "example": "I like the taste of this soup.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "sweet",
+      "meaning": "甘い",
+      "example": "This cake is very sweet.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "sour",
+      "meaning": "酸っぱい",
+      "example": "The lemon tastes sour.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "salty",
+      "meaning": "塩辛い",
+      "example": "This soup is a little salty.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "bitter",
+      "meaning": "苦い",
+      "example": "The coffee tastes bitter.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "fresh",
+      "meaning": "新鮮な",
+      "example": "We buy fresh vegetables every morning.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "ripe",
+      "meaning": "熟した",
+      "example": "These tomatoes are ripe.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "hungry",
+      "meaning": "空腹の",
+      "example": "I am hungry after the long walk.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "thirsty",
+      "meaning": "喉が渇いた",
+      "example": "Are you thirsty?",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "delicious",
+      "meaning": "おいしい",
+      "example": "This sandwich is delicious.",
+      "tags": [
+        "形容詞"
+      ]
+    },
+    {
+      "word": "ingredient",
+      "meaning": "材料・原料",
+      "example": "What ingredients do we need for this soup?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "dessert",
+      "meaning": "デザート",
+      "example": "Would you like some fruit for dessert?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "almond",
+      "meaning": "アーモンド",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She placed an almond on each cookie."
+    },
+    {
+      "word": "peanut",
+      "meaning": "落花生,南京(なんきん)豆,ピーナッツ(groundnut)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This sauce contains peanut butter."
+    },
+    {
+      "word": "hazelnut",
+      "meaning": "ハシバミの実",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I ordered a hazelnut cake."
+    },
+    {
+      "word": "cashew",
+      "meaning": "カシューナッツ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Try this creamy cashew sauce."
+    },
+    {
+      "word": "pecan",
+      "meaning": "ペカンナッツ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He brought a pecan pie."
+    },
+    {
+      "word": "coconut",
+      "meaning": "ココヤシの実",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add coconut milk to the soup."
+    },
+    {
+      "word": "sesame",
+      "meaning": "ゴマ;ゴマの種",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Sprinkle sesame seeds over the noodles."
+    },
+    {
+      "word": "sunflower",
+      "meaning": "ヒマワリ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We harvest seeds from the sunflower."
+    },
+    {
+      "word": "seed",
+      "meaning": "種",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Remove the large seed before eating."
+    },
+    {
+      "word": "date",
+      "meaning": "ナツメヤシの実・デーツ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A dried date tastes very sweet."
+    },
+    {
+      "word": "fig",
+      "meaning": "イチジク",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She sliced a fresh fig in half."
+    },
+    {
+      "word": "apricot",
+      "meaning": "アンズ;アンズの木",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I spread apricot jam on my toast."
+    },
+    {
+      "word": "peach",
+      "meaning": "モモ(桃)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This peach is ripe and juicy."
+    },
+    {
+      "word": "plum",
+      "meaning": "西洋スモモ;西洋スモモの木",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Remove the stone from the plum."
+    },
+    {
+      "word": "cherry",
+      "meaning": "サクランボ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Each dessert has a cherry on top."
+    },
+    {
+      "word": "raspberry",
+      "meaning": "ラズベリー",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We made raspberry jam this morning."
+    },
+    {
+      "word": "blackberry",
+      "meaning": "ブラックベリー",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The blackberry pie is still warm."
+    },
+    {
+      "word": "cranberry",
+      "meaning": "クランベリー",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We served cranberry sauce with the turkey."
+    },
+    {
+      "word": "melon",
+      "meaning": "メロン[の実];メロンの果肉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Cut the melon into small pieces."
+    },
+    {
+      "word": "watermelon",
+      "meaning": "スイカ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Cold watermelon is refreshing in summer."
+    },
+    {
+      "word": "mango",
+      "meaning": "マンゴー",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I added mango to the fruit salad."
+    },
+    {
+      "word": "papaya",
+      "meaning": "パパイヤ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Scoop the seeds out of the papaya."
+    },
+    {
+      "word": "lychee",
+      "meaning": "ライチ(果物)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Peel the lychee before eating it."
+    },
+    {
+      "word": "walnut",
+      "meaning": "クルミ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A walnut adds crunch to the salad."
+    },
+    {
+      "word": "lime",
+      "meaning": "ライム",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Squeeze some lime over the fish."
+    },
+    {
+      "word": "tangerine",
+      "meaning": "ミカン;ミカンの木",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She packed a tangerine for lunch."
+    },
+    {
+      "word": "nectarine",
+      "meaning": "ネクタリン,ツバイモモ(モモの一種)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This nectarine has smooth skin."
+    },
+    {
+      "word": "persimmon",
+      "meaning": "柿",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We shared a ripe persimmon."
+    },
+    {
+      "word": "avocado",
+      "meaning": "アボカド(熱帯アメリカ産の果実で,サラダなどに用いる);アボカドの木",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Spread mashed avocado on the toast."
+    },
+    {
+      "word": "cucumber",
+      "meaning": "キュウリ,キュウリの実",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Slice the cucumber thinly."
+    },
+    {
+      "word": "lettuce",
+      "meaning": "レタス,チシャ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Wash the lettuce before serving."
+    },
+    {
+      "word": "spinach",
+      "meaning": "ホウレンソウ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Stir the spinach into the soup."
+    },
+    {
+      "word": "kale",
+      "meaning": "ケール",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We added chopped kale to the stew."
+    },
+    {
+      "word": "cauliflower",
+      "meaning": "カリフラワー,花キャベツ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Roast the cauliflower until golden."
+    },
+    {
+      "word": "celery",
+      "meaning": "セロリ,オランダミツバ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Chop the celery into small pieces."
+    },
+    {
+      "word": "garlic",
+      "meaning": "ニンニク",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The kitchen smells of fried garlic."
+    },
+    {
+      "word": "ginger",
+      "meaning": "ショウガ(ショウガ科の多年生植物),ショウガの根茎",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Fresh ginger gives the soup a sharp flavor."
+    },
+    {
+      "word": "turnip",
+      "meaning": "カブ(アブラナ科の植物)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Peel the turnip before cooking it."
+    },
+    {
+      "word": "beet",
+      "meaning": "ビーツ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The beet turned the salad pink."
+    },
+    {
+      "word": "squash",
+      "meaning": "カボチャの一種",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We roasted squash with olive oil."
+    },
+    {
+      "word": "pumpkin",
+      "meaning": "カボチャ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She made a pot of pumpkin soup."
+    },
+    {
+      "word": "eggplant",
+      "meaning": "ナス",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Cut the eggplant into thick slices."
+    },
+    {
+      "word": "aubergine",
+      "meaning": "ナス（イギリス英語）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We grilled the aubergine with tomatoes."
+    },
+    {
+      "word": "chili",
+      "meaning": "チリとうがらし",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add a little chili for heat."
+    },
+    {
+      "word": "pea",
+      "meaning": "エンドウ;エンドウ豆",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A pea rolled off my plate."
+    },
+    {
+      "word": "lentil",
+      "meaning": "ヒラマメ,レンズマメ(平たい両凸レンズ状の種子を持つ;食用)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We had lentil soup for lunch."
+    },
+    {
+      "word": "soybean",
+      "meaning": "大豆(だいず)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A soybean can be used to make tofu."
+    },
+    {
+      "word": "corn",
+      "meaning": "(米,カナダ,オーストラリアで)とうもろこし;とうもろこしの実(おもにmaize, Indian corn)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We grilled corn for the picnic."
+    },
+    {
+      "word": "barley",
+      "meaning": "大麦",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add barley to the vegetable soup."
+    },
+    {
+      "word": "wheat",
+      "meaning": "小麦",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This bread is made from wheat."
+    },
+    {
+      "word": "rye",
+      "meaning": "ライ麦",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I bought a loaf of rye bread."
+    },
+    {
+      "word": "millet",
+      "meaning": "キビ,アワ(粟)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Cook the millet until tender."
+    },
+    {
+      "word": "bran",
+      "meaning": "ふすま,ぬか",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She adds bran to her breakfast cereal."
+    },
+    {
+      "word": "cereal",
+      "meaning": "穀物,穀類",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Wheat is a widely grown cereal."
+    },
+    {
+      "word": "flour",
+      "meaning": "小麦粉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Sift the flour into a bowl."
+    },
+    {
+      "word": "starch",
+      "meaning": "でんぷん",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Mix the starch with cold water."
+    },
+    {
+      "word": "batter",
+      "meaning": "小麦粉に卵や牛乳を混ぜた生地",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Pour the batter into the pan."
+    },
+    {
+      "word": "yeast",
+      "meaning": "イースト,酵母(パン種・ビール醸造用などに使う)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The yeast helps the dough rise."
+    },
+    {
+      "word": "baking soda",
+      "meaning": "重曹",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add a teaspoon of baking soda."
+    },
+    {
+      "word": "sugar",
+      "meaning": "砂糖",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Would you like sugar in your tea?"
+    },
+    {
+      "word": "honey",
+      "meaning": "はちみつ;花のみつ,糖みつ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Drizzle honey over the yogurt."
+    },
+    {
+      "word": "molasses",
+      "meaning": "糖蜜",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Molasses gives these cookies a deep flavor."
+    },
+    {
+      "word": "caramel",
+      "meaning": "焼き砂糖,カラメル",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The dessert has a caramel topping."
+    },
+    {
+      "word": "cocoa",
+      "meaning": "ココア",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Mix cocoa with the warm milk."
+    },
+    {
+      "word": "vanilla",
+      "meaning": "バニラ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add a little vanilla to the cream."
+    },
+    {
+      "word": "nutmeg",
+      "meaning": "ナツメグ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Grate some nutmeg over the sauce."
+    },
+    {
+      "word": "clove",
+      "meaning": "クローブ・丁子",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Remove the whole clove before serving."
+    },
+    {
+      "word": "coriander",
+      "meaning": "コリアンダー・パクチー",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Sprinkle fresh coriander over the curry."
+    },
+    {
+      "word": "cumin",
+      "meaning": "クミン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The recipe calls for ground cumin."
+    },
+    {
+      "word": "paprika",
+      "meaning": "パプリカ(アマトウガラシから作った粉末香辛料)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Paprika gives the sauce a red color."
+    },
+    {
+      "word": "saffron",
+      "meaning": "サフラン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A little saffron colors the rice."
+    },
+    {
+      "word": "horseradish",
+      "meaning": "西洋ワサビ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This horseradish sauce tastes sharp."
+    },
+    {
+      "word": "herb",
+      "meaning": "ハーブ・香草",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Basil is my favorite herb."
+    },
+    {
+      "word": "seasoning",
+      "meaning": "(塩・こしょうなどの)調味料,薬味",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Taste the soup and adjust the seasoning."
+    },
+    {
+      "word": "parsley",
+      "meaning": "パセリ,オランダゼリ(セリ科の植物;食用)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Finish the dish with chopped parsley."
+    },
+    {
+      "word": "mint",
+      "meaning": "ハッカ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Fresh mint makes the drink refreshing."
+    },
+    {
+      "word": "thyme",
+      "meaning": "タイム(ハッカの類の植物;芳香のある葉を香味料にする)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We roasted the vegetables with thyme."
+    },
+    {
+      "word": "sage",
+      "meaning": "セージ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add sage leaves to the butter."
+    },
+    {
+      "word": "dill",
+      "meaning": "イノンド(セリ科の植物で,種子は薬品やピクルスの香料に用いる)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Dill goes well with this fish."
+    },
+    {
+      "word": "fennel",
+      "meaning": "フェンネル・ウイキョウ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Slice the fennel for the salad."
+    },
+    {
+      "word": "bay leaf",
+      "meaning": "ベイリーフ(香味料として用いる月桂樹の乾燥葉)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Remove the bay leaf before serving."
+    },
+    {
+      "word": "sauce",
+      "meaning": "ソース",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Pour the sauce over the pasta."
+    },
+    {
+      "word": "dressing",
+      "meaning": "ドレッシング",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Serve the dressing in a separate bowl."
+    },
+    {
+      "word": "mayonnaise",
+      "meaning": "マヨネーズ;マヨネーズ料理",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Spread mayonnaise on the sandwich."
+    },
+    {
+      "word": "vinegar",
+      "meaning": "酢,食用酢",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add vinegar to the salad dressing."
+    },
+    {
+      "word": "oil",
+      "meaning": "油;油状物",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Heat the oil in a frying pan."
+    },
+    {
+      "word": "margarine",
+      "meaning": "マーガリン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "You can spread margarine on the bread."
+    },
+    {
+      "word": "yogurt",
+      "meaning": "ヨーグルト",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I eat yogurt with fruit."
+    },
+    {
+      "word": "curd",
+      "meaning": "凝乳,カード(チーズの原料)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cheese maker separated the curd from the liquid."
+    },
+    {
+      "word": "custard",
+      "meaning": "カスタード(牛乳・卵・砂糖を混ぜ合わせて作った菓子)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Pour warm custard over the cake."
+    },
+    {
+      "word": "pudding",
+      "meaning": "プディング(小麦粉に果実・牛乳・卵などを混ぜて焼いた食後の甘い菓子;日本でいうプリンはcustard puddingでpuddingの一種)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We shared a bread pudding after dinner."
+    },
+    {
+      "word": "jam",
+      "meaning": "ジャム",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This jam is made from strawberries."
+    },
+    {
+      "word": "marmalade",
+      "meaning": "マーマレード(オレンジなどを皮ごと煮て作ったジャム)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He likes marmalade on his toast."
+    },
+    {
+      "word": "pickle",
+      "meaning": "(野菜,特にキュウリの)ピクルス",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The sandwich comes with a pickle."
+    },
+    {
+      "word": "relish",
+      "meaning": "薬味・レリッシュ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add some tomato relish to the burger."
+    },
+    {
+      "word": "puree",
+      "meaning": "ピューレ(野菜・果物などを煮て裏ごしした食物・スープ)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Blend the cooked carrots into a puree."
+    },
+    {
+      "word": "paste",
+      "meaning": "ペースト",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Stir the tomato paste into the sauce."
+    },
+    {
+      "word": "dip",
+      "meaning": "ディップ・つけて食べるソース",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Serve the vegetables with a yogurt dip."
+    },
+    {
+      "word": "topping",
+      "meaning": "トッピング",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Choose one topping for your ice cream."
+    },
+    {
+      "word": "frosting",
+      "meaning": "(ケーキにかける)砂糖の衣",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Spread the frosting over the cooled cake."
+    },
+    {
+      "word": "icing",
+      "meaning": "(菓子などの)糖衣",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cake has white icing."
+    },
+    {
+      "word": "broth",
+      "meaning": "薄いスープ,(肉・さかなの)煮つゆ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Simmer the vegetables in chicken broth."
+    },
+    {
+      "word": "stew",
+      "meaning": "シチュー・煮込み料理",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The beef stew cooked slowly all afternoon."
+    },
+    {
+      "word": "chowder",
+      "meaning": "チャウダー(魚貝類に野菜などを加えて作る濃いスープ)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We ordered a bowl of clam chowder."
+    },
+    {
+      "word": "oatmeal",
+      "meaning": "オートミール(あらくひいたカラスムギ)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I make oatmeal with warm milk."
+    },
+    {
+      "word": "risotto",
+      "meaning": "リゾット(チーズ・玉ネギ・鶏肉などを使ったイタリア風たき込みご飯)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Stir the risotto gently as it cooks."
+    },
+    {
+      "word": "curry",
+      "meaning": "カレー粉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add a spoonful of curry powder."
+    },
+    {
+      "word": "casserole",
+      "meaning": "(ふた付きまたは陶器製の)蒸し焼なべ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Put the covered casserole in the oven."
+    },
+    {
+      "word": "macaroni",
+      "meaning": "マカロニ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Boil the macaroni until just tender."
+    },
+    {
+      "word": "spaghetti",
+      "meaning": "スパゲッティ(マカロニより細く,中が空になっていない)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We served spaghetti with tomato sauce."
+    },
+    {
+      "word": "dumpling",
+      "meaning": "蒸しだんご",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Steam the dumpling before serving it."
+    },
+    {
+      "word": "wonton",
+      "meaning": "(中華料理の)ワンタン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "There is a wonton in my soup."
+    },
+    {
+      "word": "waffle",
+      "meaning": "ワッフル(格子形の刻み目の付いた卵入り薄焼きのケーキ;おもに朝食用)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She topped her waffle with fresh fruit."
+    },
+    {
+      "word": "crepe",
+      "meaning": "クレープ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Fold the crepe around the filling."
+    },
+    {
+      "word": "quiche",
+      "meaning": "キシュ(フランス料理の一種のパイ料理)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The spinach quiche is ready to serve."
+    },
+    {
+      "word": "souffle",
+      "meaning": "スフレ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Serve the souffle straight from the oven."
+    },
+    {
+      "word": "pie",
+      "meaning": "パイ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The apple pie smells wonderful."
+    },
+    {
+      "word": "croissant",
+      "meaning": "クロワッサン(三日月形のパン)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I bought a croissant for breakfast."
+    },
+    {
+      "word": "muffin",
+      "meaning": "マフィン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This blueberry muffin is still warm."
+    },
+    {
+      "word": "biscuit",
+      "meaning": "小型パン(ふくらし粉かソーダを用いて焼いたもの;scone)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He split the warm biscuit and added butter."
+    },
+    {
+      "word": "cookie",
+      "meaning": "クッキー( biscuit)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Would you like a chocolate cookie?"
+    },
+    {
+      "word": "pretzel",
+      "meaning": "プレッツェル(ねじり巻きにしたひもを結んだ形にして焼いた塩のきいたビスケット;ビールのつまみにする)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She bought a salty pretzel at the bakery."
+    },
+    {
+      "word": "bagel",
+      "meaning": "ベーグル",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Toast the bagel before adding cream cheese."
+    },
+    {
+      "word": "roll",
+      "meaning": "ロールパン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Each soup comes with a bread roll."
+    },
+    {
+      "word": "bun",
+      "meaning": "ロールパン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Put the burger inside the bun."
+    },
+    {
+      "word": "baguette",
+      "meaning": "バゲット(フランスの細長いパン)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We shared a fresh baguette at lunch."
+    },
+    {
+      "word": "doughnut",
+      "meaning": "ドーナツ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The doughnut has a chocolate coating."
+    },
+    {
+      "word": "cheesecake",
+      "meaning": "チーズケーキ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I'd like a slice of cheesecake."
+    },
+    {
+      "word": "shortbread",
+      "meaning": "ショートブレッド",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We served shortbread with tea."
+    },
+    {
+      "word": "meringue",
+      "meaning": "メレンゲ(砂糖と卵の白身を混ぜて作った軽焼き);その菓子",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The meringue is crisp on the outside."
+    },
+    {
+      "word": "marshmallow",
+      "meaning": "マシュマロ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She dropped a marshmallow into her hot chocolate."
+    },
+    {
+      "word": "confectionery",
+      "meaning": "(キャンデー・砂糖づけなどの)菓子類・菓子店・菓子製造業",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The shop sells handmade confectionery."
+    },
+    {
+      "word": "fudge",
+      "meaning": "ファッジ(砂糖・ミルク・バター・チョコレートに香料を入れて柔らかに固めて作ったキャンデー)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We cut the chocolate fudge into squares."
+    },
+    {
+      "word": "nougat",
+      "meaning": "ヌガー(木の実がはいった砂糖菓子)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This nougat contains roasted almonds."
+    },
+    {
+      "word": "lollipop",
+      "meaning": "棒付きキャンディー",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The child chose a strawberry lollipop."
+    },
+    {
+      "word": "ice cream",
+      "meaning": "アイスクリーム",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The ice cream is starting to melt."
+    },
+    {
+      "word": "sherbet",
+      "meaning": "シャーベット",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We ordered lemon sherbet for dessert."
+    },
+    {
+      "word": "sundae",
+      "meaning": "サンデー(チョコレート・シロップ・ナッツ・果物などをかけたアイスクリームの一種)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The sundae comes with chocolate sauce."
+    },
+    {
+      "word": "mousse",
+      "meaning": "ムース(クリーム・卵の白身などで作った冷凍菓子)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The chocolate mousse is light and smooth."
+    },
+    {
+      "word": "trifle",
+      "meaning": "トライフル（スポンジ・果物・クリームなどを重ねた菓子）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The trifle has layers of fruit and cream."
+    },
+    {
+      "word": "sponge cake",
+      "meaning": "スポンジケーキ[カステラ風のケーキの一種]",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Let the sponge cake cool completely."
+    },
+    {
+      "word": "pound cake",
+      "meaning": "パウンドケーキ[バター,卵,小麦粉,砂糖を1ポンドずつ用いて作ったことから](Madeira cake)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We served pound cake with berries."
+    },
+    {
+      "word": "shepherd's pie",
+      "meaning": "シェパードパイ(ひき肉をマッシュポテトの衣で包んで焼いたパイの一種)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The shepherd's pie has a golden potato topping."
+    },
+    {
+      "word": "cream puff",
+      "meaning": "シュークリーム",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The bakery filled each cream puff by hand."
+    },
+    {
+      "word": "sour cream",
+      "meaning": "サワークリーム(クリームに乳酸菌を加えて発酵させたもの;スープ・サラダ・肉料理に使う)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add sour cream just before serving."
+    },
+    {
+      "word": "cottage cheese",
+      "meaning": "コテージチーズ(白くて柔らかいチーズ)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She ate cottage cheese with sliced fruit."
+    },
+    {
+      "word": "blue cheese",
+      "meaning": "ブルーチーズ(牛乳からつくる青かびチーズ)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The salad contains a little blue cheese."
+    },
+    {
+      "word": "parmesan",
+      "meaning": "パルメザンチーズ(イタリア産の堅く乾いたチーズ)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Grate parmesan over the pasta."
+    },
+    {
+      "word": "gouda",
+      "meaning": "ゴーダチーズ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We sliced gouda for the sandwiches."
+    },
+    {
+      "word": "buttermilk",
+      "meaning": "バターミルク(バターを取り去った牛乳)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The pancake recipe uses buttermilk."
+    },
+    {
+      "word": "condensed milk",
+      "meaning": "練乳",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Stir condensed milk into the coffee."
+    },
+    {
+      "word": "lactose",
+      "meaning": "乳糖",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This carton says the milk contains no lactose."
+    },
+    {
+      "word": "protein",
+      "meaning": "蛋白(たんぱく)質",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The label lists the amount of protein."
+    },
+    {
+      "word": "vitamin",
+      "meaning": "ビタミン,栄養素(身体の正常な機能を維持するために少量ながら必要な有機化合物)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The packet shows its vitamin content."
+    },
+    {
+      "word": "mineral",
+      "meaning": "ミネラル・無機質",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Calcium is a mineral found in milk."
+    },
+    {
+      "word": "fat",
+      "meaning": "脂肪,脂肪分",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Trim the extra fat from the meat."
+    },
+    {
+      "word": "calorie",
+      "meaning": "カロリー・熱量の単位",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A calorie is a unit of energy."
+    },
+    {
+      "word": "diet",
+      "meaning": "食事・食生活",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Vegetables are part of my daily diet."
+    },
+    {
+      "word": "portion",
+      "meaning": "一人前・一盛り",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I'd like a smaller portion, please."
+    },
+    {
+      "word": "helping",
+      "meaning": "一盛り・一杯分",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He asked for another helping of rice."
+    },
+    {
+      "word": "digestion",
+      "meaning": "消化[作用]",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The textbook explains how digestion works."
+    },
+    {
+      "word": "allergy",
+      "meaning": "アレルギー,異常過敏症",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Please tell the waiter about your allergy."
+    },
+    {
+      "word": "vegetarian",
+      "meaning": "ベジタリアン・菜食主義者",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "My sister is a vegetarian."
+    },
+    {
+      "word": "vegan",
+      "meaning": "ヴィーガン・動物性食品をとらない人",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The menu has several choices for a vegan."
+    },
+    {
+      "word": "natural",
+      "meaning": "自然のままの,自然にある,自然が作る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The fruit gives the drink a natural sweetness."
+    },
+    {
+      "word": "whole-wheat",
+      "meaning": "(ふすまを取り去らない)完全小麦粉の,あらい小麦粉の(wholemeal)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I chose whole-wheat bread for my sandwich."
+    },
+    {
+      "word": "raw",
+      "meaning": "(食物が)生の,料理されていない",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Keep the raw meat in a separate container."
+    },
+    {
+      "word": "fried",
+      "meaning": "揚げた・炒めた",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We ordered fried rice for lunch."
+    },
+    {
+      "word": "dried",
+      "meaning": "乾燥させた",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add dried fruit to the mixture."
+    },
+    {
+      "word": "frozen",
+      "meaning": "冷凍した",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The recipe works with frozen peas."
+    },
+    {
+      "word": "unripe",
+      "meaning": "(果実などが)未熟の",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This banana is still unripe."
+    },
+    {
+      "word": "stale",
+      "meaning": "(食物などが)新鮮でない,腐り始めた;(酒などが)気の抜けた;(空気などが)むっとする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The bread tastes stale."
+    },
+    {
+      "word": "rotten",
+      "meaning": "腐敗した,腐朽した",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Throw away the rotten tomato."
+    },
+    {
+      "word": "edible",
+      "meaning": "(毒性がなく)食用になる,食べられる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Check whether the flowers are edible."
+    },
+    {
+      "word": "poisonous",
+      "meaning": "有毒な,毒を含む",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Some wild mushrooms are poisonous."
+    },
+    {
+      "word": "wholesome",
+      "meaning": "体によい,健康によい;健康そうな",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She prepared a wholesome homemade lunch."
+    },
+    {
+      "word": "nourishing",
+      "meaning": "滋養に富んだ,栄養のある",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We enjoyed a warm, nourishing meal."
+    },
+    {
+      "word": "unhealthy",
+      "meaning": "(人が)健康でない,病弱の;健康でないことを示す",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He looked unhealthy after weeks without proper meals."
+    },
+    {
+      "word": "lean",
+      "meaning": "脂肪の少ない",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use lean beef for this dish."
+    },
+    {
+      "word": "oily",
+      "meaning": "油の;油のような",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The sauce left an oily mark."
+    },
+    {
+      "word": "greasy",
+      "meaning": "油だらけの;油を塗った",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The chips were too greasy for me."
+    },
+    {
+      "word": "creamy",
+      "meaning": "クリーム状の",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This soup has a creamy texture."
+    },
+    {
+      "word": "crispy",
+      "meaning": "カリッとした",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The potatoes are golden and crispy."
+    },
+    {
+      "word": "chewy",
+      "meaning": "かみ応えのある",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "These cookies have a chewy center."
+    },
+    {
+      "word": "tender",
+      "meaning": "柔らかい",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Cook the meat until tender."
+    },
+    {
+      "word": "soft",
+      "meaning": "(押されて形を変えるほど)柔らかい",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cheese is soft enough to spread."
+    },
+    {
+      "word": "hard",
+      "meaning": "(物体が)堅い,(手触りが)堅固な,しっかりした",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This candy is very hard."
+    },
+    {
+      "word": "thick",
+      "meaning": "濃い・とろみのある",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The soup is rich and thick."
+    },
+    {
+      "word": "thin",
+      "meaning": "薄い・さらっとした",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add water to make a thin sauce."
+    },
+    {
+      "word": "dry",
+      "meaning": "乾いた,乾燥した",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cake is a little dry."
+    },
+    {
+      "word": "watery",
+      "meaning": "水っぽい",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The soup tastes watery."
+    },
+    {
+      "word": "rich",
+      "meaning": "こくのある・濃厚な",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This chocolate cake is very rich."
+    },
+    {
+      "word": "bland",
+      "meaning": "薄味の",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The rice tastes bland without seasoning."
+    },
+    {
+      "word": "spicy",
+      "meaning": "香辛料のきいた",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Is this dish very spicy?"
+    },
+    {
+      "word": "pungent",
+      "meaning": "舌(鼻)を刺激する,ぴりっとする,つーんとする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cheese has a pungent smell."
+    },
+    {
+      "word": "aromatic",
+      "meaning": "かおりの高い,かんばしい",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The kitchen filled with aromatic steam."
+    },
+    {
+      "word": "savory",
+      "meaning": "風味のよい・塩味の",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I prefer savory snacks to sweet ones."
+    },
+    {
+      "word": "appetizing",
+      "meaning": "食欲をそそる,うまそうな;欲しくなるような",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The fresh bread looks appetizing."
+    },
+    {
+      "word": "lukewarm",
+      "meaning": "(液体が)なまぬるい,微温の(tepid)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "My coffee is only lukewarm."
+    },
+    {
+      "word": "fizzy",
+      "meaning": "泡立つ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She ordered a fizzy orange drink."
+    },
+    {
+      "word": "carbonated",
+      "meaning": "炭酸ガスを含む",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Would you like carbonated water?"
+    },
+    {
+      "word": "instant",
+      "meaning": "すぐに用意できる・インスタントの",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We keep instant coffee in the cupboard."
+    },
+    {
+      "word": "liquid",
+      "meaning": "液体,流体",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Pour the hot liquid carefully."
+    },
+    {
+      "word": "powder",
+      "meaning": "粉,粉末",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add the cocoa powder slowly."
+    },
+    {
+      "word": "cube",
+      "meaning": "角切り・立方体",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Drop a sugar cube into the cup."
+    },
+    {
+      "word": "piece",
+      "meaning": "(全体から分離した)部分,断片,破片",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Would you like a piece of cake?"
+    },
+    {
+      "word": "chunk",
+      "meaning": "(…の)厚切り,厚いかたまり",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add a chunk of cheese to the plate."
+    },
+    {
+      "word": "wedge",
+      "meaning": "くさび形の一切れ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Serve the fish with a lemon wedge."
+    },
+    {
+      "word": "pinch",
+      "meaning": "ひとつまみ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add a pinch of salt."
+    },
+    {
+      "word": "tablespoon",
+      "meaning": "(料理をよそうための)食卓用スプーン,大さじ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use a tablespoon to serve the sauce."
+    },
+    {
+      "word": "teaspoon",
+      "meaning": "(紅茶・コーヒー用などの)茶さじ,スプーン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Stir your tea with a teaspoon."
+    },
+    {
+      "word": "pint",
+      "meaning": "パイント（容量の単位。英米で量が異なる）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He bought a pint of milk."
+    },
+    {
+      "word": "quart",
+      "meaning": "クォート（容量の単位。英米で量が異なる）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The jug holds a quart of water."
+    },
+    {
+      "word": "ounce",
+      "meaning": "オンス（重さの単位）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Weigh out one ounce of chocolate."
+    },
+    {
+      "word": "pound",
+      "meaning": "ポンド（重さの単位）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We bought a pound of apples."
+    },
+    {
+      "word": "kilogram",
+      "meaning": "キログラム(kg.,kg)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The bag contains one kilogram of flour."
+    },
+    {
+      "word": "liter",
+      "meaning": "リットル(メートル法の容量の単位l.,lit)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add one liter of water."
+    },
+    {
+      "word": "dozen",
+      "meaning": "ダース,12個の組(doz.,dz.)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We bought a dozen eggs."
+    },
+    {
+      "word": "quarter",
+      "meaning": "(…の)4分の1",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use a quarter of the onion."
+    },
+    {
+      "word": "kilo",
+      "meaning": "キログラム(kilogram)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I'd like a kilo of potatoes."
+    },
+    {
+      "word": "imperial",
+      "meaning": "ヤード・ポンド法の",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This recipe uses imperial measurements."
+    },
+    {
+      "word": "dash",
+      "meaning": "少量・ひと振り",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add a dash of vinegar."
+    },
+    {
+      "word": "mouthful",
+      "meaning": "口1杯(分の…),1口(分の…);(口にはいる程度の)少量",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Take a small mouthful first."
+    },
+    {
+      "word": "bite",
+      "meaning": "…をかむ,かじる,くわえる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Let the bread cool before you bite it."
+    },
+    {
+      "word": "gulp",
+      "meaning": "〈飲み物・食べ物〉を急いでごくりと飲む,ぐっと飲む",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Don't gulp your soup so quickly."
+    },
+    {
+      "word": "chew",
+      "meaning": "〈食物〉をかむ,かみくだく",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Chew each mouthful slowly."
+    },
+    {
+      "word": "nibble",
+      "meaning": "(…を)少しずつかじる,少しずつ食べる,つつく",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We nibble crackers while dinner cooks."
+    },
+    {
+      "word": "lick",
+      "meaning": "(舌で)…をなめる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The child began to lick the ice cream."
+    },
+    {
+      "word": "slurp",
+      "meaning": "…を音をたてて飲む(食べる)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He likes to slurp his noodles."
+    },
+    {
+      "word": "crunch",
+      "meaning": "…をカリカリ(ボリボリ)かむ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I could hear her crunch the apple."
+    },
+    {
+      "word": "gnaw",
+      "meaning": "〈動物が〉…をかじる;…をかじり取る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The puppy likes to gnaw on a bone."
+    },
+    {
+      "word": "eat",
+      "meaning": "…を食べる;〈食事〉をする;〈スープ〉を飲む",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We eat lunch together on Sundays."
+    },
+    {
+      "word": "dine",
+      "meaning": "(一日のおもな食事として)正餐(晩餐)をとる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We plan to dine at the new restaurant."
+    },
+    {
+      "word": "snack",
+      "meaning": "(特に食事と食事の間にとる)軽食,スナック",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I packed a small snack for later."
+    },
+    {
+      "word": "savor",
+      "meaning": "味わう",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Take time to savor the flavor."
+    },
+    {
+      "word": "devour",
+      "meaning": "…をむさぼり食う,がつがつ食う",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The hungry children devour their sandwiches."
+    },
+    {
+      "word": "consume",
+      "meaning": "〈物・時間・金など〉を消費する,消耗する,使い果たす",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The bakery will consume several bags of flour."
+    },
+    {
+      "word": "fast",
+      "meaning": "断食する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Some people fast for religious reasons."
+    },
+    {
+      "word": "starve",
+      "meaning": "餓死する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Without enough food, animals can starve."
+    },
+    {
+      "word": "nourish",
+      "meaning": "…を養う;…に栄養を与える",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A balanced meal can nourish the body."
+    },
+    {
+      "word": "cook",
+      "meaning": "料理する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I like to cook for my friends."
+    },
+    {
+      "word": "boil",
+      "meaning": "沸く",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Wait for the water to boil."
+    },
+    {
+      "word": "simmer",
+      "meaning": "〈スープ・肉などが〉(たぎらない程度で)ぐつぐつ煮える",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Let the soup simmer gently."
+    },
+    {
+      "word": "blanch",
+      "meaning": "さっとゆでる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Blanch the vegetables briefly before cooling them."
+    },
+    {
+      "word": "braise",
+      "meaning": "(肉や野菜)を少量の液体でとろとろ煮込む調理法",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We will braise the beef slowly."
+    },
+    {
+      "word": "roast",
+      "meaning": "(オーブンまたは直接火で)〈肉など〉を焼く,あぶる,蒸し焼きにする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Roast the potatoes until golden."
+    },
+    {
+      "word": "grill",
+      "meaning": "焼き網で焼く",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We grill the vegetables outside."
+    },
+    {
+      "word": "barbecue",
+      "meaning": "バーベキュー,バーベキューパーティー(園遊会)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We invited our neighbors to a barbecue."
+    },
+    {
+      "word": "saute",
+      "meaning": "少量の油でさっと炒める",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Saute the mushrooms in a little oil."
+    },
+    {
+      "word": "deep-fry",
+      "meaning": "〈食品〉をたっぷりした油で揚げる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The chef will deep-fry the battered fish."
+    },
+    {
+      "word": "heat",
+      "meaning": "加熱する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Heat the milk in a saucepan."
+    },
+    {
+      "word": "warm",
+      "meaning": "温める",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Please warm the plates before serving."
+    },
+    {
+      "word": "chill",
+      "meaning": "冷やす",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Chill the dessert before serving it."
+    },
+    {
+      "word": "freeze",
+      "meaning": "凍る;冷凍される",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The water will freeze overnight."
+    },
+    {
+      "word": "defrost",
+      "meaning": "解凍する・霜を取る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I need to defrost the freezer."
+    },
+    {
+      "word": "thaw",
+      "meaning": "〈氷・雪などが〉解ける",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The ice will thaw in the warm room."
+    },
+    {
+      "word": "soften",
+      "meaning": "〈革など〉を柔らかにする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Warm the butter gently to soften it."
+    },
+    {
+      "word": "harden",
+      "meaning": "〈物〉を堅くする,固める",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Let the chocolate harden before decorating."
+    },
+    {
+      "word": "whisk",
+      "meaning": "泡立て器・泡立てる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use a whisk to mix the sauce."
+    },
+    {
+      "word": "beat",
+      "meaning": "かき混ぜる・泡立てる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Beat the eggs in a bowl."
+    },
+    {
+      "word": "mix",
+      "meaning": "〈複数のもの〉を混ぜ合わせる,混合する,混同する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Mix the dry ingredients first."
+    },
+    {
+      "word": "combine",
+      "meaning": "…を結合する,合同する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Combine the flour and sugar."
+    },
+    {
+      "word": "fold",
+      "meaning": "さっくり混ぜ込む",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Gently fold the cream into the mixture."
+    },
+    {
+      "word": "strain",
+      "meaning": "こす",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Strain the sauce through a fine sieve."
+    },
+    {
+      "word": "drain",
+      "meaning": "(液体を)…から排出する;(…から)〈液体〉を排出する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Drain the beans before adding them."
+    },
+    {
+      "word": "wash",
+      "meaning": "…を洗う,洗濯する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Wash the apples before slicing them."
+    },
+    {
+      "word": "peel",
+      "meaning": "皮をむく",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Peel the carrots with this tool."
+    },
+    {
+      "word": "dice",
+      "meaning": "さいの目に切る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Dice the onion into small pieces."
+    },
+    {
+      "word": "mince",
+      "meaning": "(ナイフで)〈特に肉〉を細かく切る,刻む",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Mince the meat with a sharp knife."
+    },
+    {
+      "word": "shred",
+      "meaning": "細切りにする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Shred the cabbage for the salad."
+    },
+    {
+      "word": "crush",
+      "meaning": "…を押しつぶす,ぺしゃんこにする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Crush the crackers into small crumbs."
+    },
+    {
+      "word": "mash",
+      "meaning": "つぶして柔らかくする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Mash the potatoes until smooth."
+    },
+    {
+      "word": "squeeze",
+      "meaning": "…を絞る,圧搾する,押しつぶす",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Squeeze the lemon over the salad."
+    },
+    {
+      "word": "zest",
+      "meaning": "柑橘類の皮の表面",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add grated lemon zest to the batter."
+    },
+    {
+      "word": "skin",
+      "meaning": "皮をむく・皮",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The peach has soft, fuzzy skin."
+    },
+    {
+      "word": "stuff",
+      "meaning": "詰め物をする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Stuff the peppers with cooked rice."
+    },
+    {
+      "word": "wrap",
+      "meaning": "(人・物に)…を巻きつける,掛ける",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Wrap the sandwiches in paper."
+    },
+    {
+      "word": "coat",
+      "meaning": "衣やソースをまぶす",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Coat the fish in flour."
+    },
+    {
+      "word": "sprinkle",
+      "meaning": "〈液体・粉末など〉を振りかける,まく;(…に)…を振りかける",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Sprinkle sugar over the berries."
+    },
+    {
+      "word": "dust",
+      "meaning": "粉を振りかける",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Dust the cake with icing sugar."
+    },
+    {
+      "word": "rub",
+      "meaning": "〈物の表面など〉をこする,さする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Rub the bowl with a clean cloth."
+    },
+    {
+      "word": "soak",
+      "meaning": "浸す・漬ける",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Soak the beans in water overnight."
+    },
+    {
+      "word": "ferment",
+      "meaning": "発酵する・発酵させる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The mixture will ferment in the jar."
+    },
+    {
+      "word": "brew",
+      "meaning": "醸造する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This small company will brew its own beer."
+    },
+    {
+      "word": "steep",
+      "meaning": "浸して成分を出す",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Let the tea steep before pouring."
+    },
+    {
+      "word": "season",
+      "meaning": "味付けする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Season the soup with salt and pepper."
+    },
+    {
+      "word": "decorate",
+      "meaning": "(…で)…を飾る,飾り立てる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We decorate the cake with fresh fruit."
+    },
+    {
+      "word": "serve",
+      "meaning": "料理を出す",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Serve the soup while it is hot."
+    },
+    {
+      "word": "plate",
+      "meaning": "(通例各人用の丸い)平皿",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Put the sandwich on a plate."
+    },
+    {
+      "word": "present",
+      "meaning": "盛り付けて出す・差し出す",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The chef will present the dessert on a white plate."
+    },
+    {
+      "word": "carve",
+      "meaning": "肉などを切り分ける",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Would you carve the roast for us?"
+    },
+    {
+      "word": "measure",
+      "meaning": "量る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Measure the flour carefully."
+    },
+    {
+      "word": "weigh",
+      "meaning": "…の重さを計る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Weigh the ingredients before mixing them."
+    },
+    {
+      "word": "reduce",
+      "meaning": "煮詰める・減らす",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Simmer the sauce to reduce it."
+    },
+    {
+      "word": "thicken",
+      "meaning": "…を厚くする;…を濃くする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A little flour will thicken the gravy."
+    },
+    {
+      "word": "scrub",
+      "meaning": "(たわし・ブラシなどで)…をごしごしする(洗う)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Scrub the potatoes under running water."
+    },
+    {
+      "word": "grease",
+      "meaning": "油を塗る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Grease the cake tin with butter."
+    },
+    {
+      "word": "burn",
+      "meaning": "〈火・家などが〉燃える,焼ける",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The logs burn in the kitchen fireplace."
+    },
+    {
+      "word": "scorch",
+      "meaning": "…を焦がす",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Too much heat can scorch the milk."
+    },
+    {
+      "word": "spoil",
+      "meaning": "傷む・腐る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Fresh food can spoil in warm weather."
+    },
+    {
+      "word": "curdle",
+      "meaning": "〈牛乳が〉固まる;〈血などが〉凝固する",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The milk may curdle when you add lemon."
+    },
+    {
+      "word": "dissolve",
+      "meaning": "…を溶かす,溶液にする",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Dissolve the sugar in warm water."
+    },
+    {
+      "word": "bubble",
+      "meaning": "泡立つ・泡",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The sauce began to bubble."
+    },
+    {
+      "word": "skim",
+      "meaning": "〈液体〉から上澄みを取る,浮遊物をすくい取る",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Skim the foam from the broth."
+    },
+    {
+      "word": "sizzle",
+      "meaning": "(油で揚げるときのように)ジュージュー(シューシュー)いう",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Listen to the onions sizzle in the pan."
+    },
+    {
+      "word": "rise",
+      "meaning": "生地が膨らむ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Leave the dough to rise."
+    },
+    {
+      "word": "freezer",
+      "meaning": "冷凍器,フリーザー,冷凍室,冷凍庫",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Put the ice cream in the freezer."
+    },
+    {
+      "word": "refrigerator",
+      "meaning": "冷蔵庫;冷凍室(またfridge,icebox)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The milk is in the refrigerator."
+    },
+    {
+      "word": "oven",
+      "meaning": "天火,かまど,オーブン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Preheat the oven before baking."
+    },
+    {
+      "word": "stove",
+      "meaning": "調理用こんろ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The soup is on the stove."
+    },
+    {
+      "word": "range",
+      "meaning": "レンジ・調理用こんろ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The kitchen has a large gas range."
+    },
+    {
+      "word": "toaster",
+      "meaning": "トースター",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The bread is in the toaster."
+    },
+    {
+      "word": "mixer",
+      "meaning": "ミキサー(ジュース・コンクリートなどの混合器)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use the mixer to beat the cream."
+    },
+    {
+      "word": "processor",
+      "meaning": "食品加工器・プロセッサー",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "A food processor can chop these vegetables."
+    },
+    {
+      "word": "saucepan",
+      "meaning": "(長い柄のついた)シチューなべ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Melt the butter in a saucepan."
+    },
+    {
+      "word": "pot",
+      "meaning": "鍋",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Put a lid on the pot."
+    },
+    {
+      "word": "wok",
+      "meaning": "中華なべ(中国料理で使う丸底の深いなべ)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Heat the oil in a wok."
+    },
+    {
+      "word": "skillet",
+      "meaning": "フライパン(frying pan)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Cook the eggs in a skillet."
+    },
+    {
+      "word": "bowl",
+      "meaning": "どんぶり,はち;わん,茶わん,ボール",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Pour the soup into a bowl."
+    },
+    {
+      "word": "mug",
+      "meaning": "マグカップ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This mug keeps my tea warm."
+    },
+    {
+      "word": "glass",
+      "meaning": "グラス",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I'd like a glass of water."
+    },
+    {
+      "word": "tumbler",
+      "meaning": "タンブラー・平底のコップ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She filled the tumbler with juice."
+    },
+    {
+      "word": "jug",
+      "meaning": "(陶製・ガラス製などでコルク栓の付いた取っ手付きの細口の)水入れ,かめ,つぼ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The jug is full of milk."
+    },
+    {
+      "word": "bottle",
+      "meaning": "びん;1びんの量",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Open a bottle of sparkling water."
+    },
+    {
+      "word": "jar",
+      "meaning": "(広口の)つぼ,かめ,びん,ジャー",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Keep the jam in a clean jar."
+    },
+    {
+      "word": "tin",
+      "meaning": "缶（イギリス英語）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We opened a tin of tomatoes."
+    },
+    {
+      "word": "carton",
+      "meaning": "カートン,段ボールの箱;カートン1杯(の…)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "There is a carton of milk on the shelf."
+    },
+    {
+      "word": "package",
+      "meaning": "(あまり大きくない)包み,梱包(こんぽう);詰め合わせ品",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Open the package of crackers."
+    },
+    {
+      "word": "bag",
+      "meaning": "袋",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She carried a bag of groceries."
+    },
+    {
+      "word": "basket",
+      "meaning": "かご,バスケット",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Put the bread in the basket."
+    },
+    {
+      "word": "container",
+      "meaning": "容器,入れ物(箱・かんなど);(貨物輸送用の)コンテナ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Store the leftovers in a sealed container."
+    },
+    {
+      "word": "cork",
+      "meaning": "コルク[質]",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cork broke as he opened the bottle."
+    },
+    {
+      "word": "cap",
+      "meaning": "ふた・キャップ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Screw the cap back on the bottle."
+    },
+    {
+      "word": "funnel",
+      "meaning": "じょうご",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use a funnel to fill the bottle."
+    },
+    {
+      "word": "colander",
+      "meaning": "(料理用の)水こし器,水切り",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Drain the pasta in a colander."
+    },
+    {
+      "word": "strainer",
+      "meaning": "こし器,ろか器",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Pour the tea through a strainer."
+    },
+    {
+      "word": "peeler",
+      "meaning": "(野菜などの)皮むきナイフ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use a peeler to remove the skin."
+    },
+    {
+      "word": "knife",
+      "meaning": "ナイフ,小刀;包丁;短刀",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This knife is very sharp."
+    },
+    {
+      "word": "spoon",
+      "meaning": "スプーン,さじ;さじ状のもの",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Stir the soup with a spoon."
+    },
+    {
+      "word": "ladle",
+      "meaning": "ひしゃく",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use a ladle to serve the soup."
+    },
+    {
+      "word": "tongs",
+      "meaning": "ものをはさむ道具,…はさみ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Turn the vegetables with tongs."
+    },
+    {
+      "word": "toothpick",
+      "meaning": "つまようじ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She picked up an olive with a toothpick."
+    },
+    {
+      "word": "rolling pin",
+      "meaning": "(両側に握りのついた)めん棒,のし棒",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Flatten the dough with a rolling pin."
+    },
+    {
+      "word": "frying pan",
+      "meaning": "フライパン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Heat the frying pan before adding oil."
+    },
+    {
+      "word": "teapot",
+      "meaning": "(紅茶を入れるときに使う)きゅうす,ティーポット",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Warm the teapot before adding tea."
+    },
+    {
+      "word": "corkscrew",
+      "meaning": "(らせん状の)コルク栓抜き",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We need a corkscrew to open this bottle."
+    },
+    {
+      "word": "dining room",
+      "meaning": "食堂",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Dinner is ready in the dining room."
+    },
+    {
+      "word": "dining table",
+      "meaning": "食卓",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Set the plates on the dining table."
+    },
+    {
+      "word": "napkin",
+      "meaning": "ナプキン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Place the napkin beside your plate."
+    },
+    {
+      "word": "coaster",
+      "meaning": "コースター",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Put a coaster under the glass."
+    },
+    {
+      "word": "sink",
+      "meaning": "流し台",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Leave the dirty dishes in the sink."
+    },
+    {
+      "word": "faucet",
+      "meaning": "(たる・水道の)飲み口,蛇口(じゃぐち),コック",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Turn off the faucet after washing up."
+    },
+    {
+      "word": "cupboard",
+      "meaning": "食器だな",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cups are in the cupboard."
+    },
+    {
+      "word": "shelf",
+      "meaning": "たな",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Put the jars on the top shelf."
+    },
+    {
+      "word": "drawer",
+      "meaning": "引き出し",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The spoons are in this drawer."
+    },
+    {
+      "word": "apron",
+      "meaning": "エプロン,前掛け",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Wear an apron while cooking."
+    },
+    {
+      "word": "potholder",
+      "meaning": "(布製の)なべつかみ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use a potholder to lift the hot pan."
+    },
+    {
+      "word": "detergent",
+      "meaning": "洗剤",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add a little detergent to the water."
+    },
+    {
+      "word": "dishcloth",
+      "meaning": "(またdishrag)皿洗い用ふきん",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Rinse the dishcloth after washing the plates."
+    },
+    {
+      "word": "cutlery",
+      "meaning": "ナイフ・フォークなどの食卓用具",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The waiter brought clean cutlery."
+    },
+    {
+      "word": "crockery",
+      "meaning": "陶器の食器類",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Please handle the crockery carefully."
+    },
+    {
+      "word": "silverware",
+      "meaning": "銀食器・食卓用金物",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We polished the silverware before dinner."
+    },
+    {
+      "word": "glassware",
+      "meaning": "ガラス製品,(特に)ガラスの食器",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Pack the glassware in soft paper."
+    },
+    {
+      "word": "porcelain",
+      "meaning": "(材料としての)磁器",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "These cups are made of porcelain."
+    },
+    {
+      "word": "ceramic",
+      "meaning": "陶器の;製陶術の",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Serve the soup in a ceramic bowl."
+    },
+    {
+      "word": "plastic",
+      "meaning": "プラスチック;プラスチック製品",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This container is made of plastic."
+    },
+    {
+      "word": "wood",
+      "meaning": "木材",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cutting board is made of wood."
+    },
+    {
+      "word": "wooden",
+      "meaning": "木製の,木造の",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Use a wooden spoon to stir."
+    },
+    {
+      "word": "disposable",
+      "meaning": "使い捨てにできる",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We avoided disposable cups at the picnic."
+    },
+    {
+      "word": "thermos",
+      "meaning": "魔法瓶",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I filled a thermos with hot tea."
+    },
+    {
+      "word": "takeaway",
+      "meaning": "持ち帰り用の食事（イギリス英語）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We ordered a takeaway for dinner."
+    },
+    {
+      "word": "delivery",
+      "meaning": "(…への)(手紙・荷物などの)配達,便;配達品",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The food delivery arrived at noon."
+    },
+    {
+      "word": "cafeteria",
+      "meaning": "カフェテリア(セルフサービスの簡易食堂)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We had lunch in the school cafeteria."
+    },
+    {
+      "word": "canteen",
+      "meaning": "食堂",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The staff canteen serves hot meals."
+    },
+    {
+      "word": "bistro",
+      "meaning": "ビストロ・小さなレストラン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We found a small bistro near the station."
+    },
+    {
+      "word": "brasserie",
+      "meaning": "ビヤレストラン,ビヤホール",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The brasserie serves beer and simple meals."
+    },
+    {
+      "word": "coffeehouse",
+      "meaning": "コーヒー店,喫茶店(欧州や昔の英国で,コーヒーなどの飲物や軽食を出し内輪の会合などを開くことのできた店)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We met at the neighborhood coffeehouse."
+    },
+    {
+      "word": "bar",
+      "meaning": "バー・酒場",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "They ordered drinks at the bar."
+    },
+    {
+      "word": "tavern",
+      "meaning": "居酒屋",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The old tavern serves local beer."
+    },
+    {
+      "word": "buffet",
+      "meaning": "ビュッフェ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The buffet offers several vegetable dishes."
+    },
+    {
+      "word": "banquet",
+      "meaning": "(公式の)宴会",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The hotel prepared a banquet for the guests."
+    },
+    {
+      "word": "supper",
+      "meaning": "夕食(一般に一日の最後にとる食事);(夜遅くとる)夜食,軽食",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We had soup and bread for supper."
+    },
+    {
+      "word": "luncheon",
+      "meaning": "昼食",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The guests gathered for a formal luncheon."
+    },
+    {
+      "word": "appetizer",
+      "meaning": "食欲を促す食物(飲物);前菜,食前酒",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We shared an appetizer before the main course."
+    },
+    {
+      "word": "starter",
+      "meaning": "前菜",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I'd like soup as a starter."
+    },
+    {
+      "word": "side dish",
+      "meaning": "(主料理に対し)添え料理",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The meal includes a vegetable side dish."
+    },
+    {
+      "word": "beverage",
+      "meaning": "飲み物,飲料(drink)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Choose a hot or cold beverage."
+    },
+    {
+      "word": "lemonade",
+      "meaning": "レモン水,レモネード(レモンの汁に水と砂糖を加えた飲料)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We made fresh lemonade for the picnic."
+    },
+    {
+      "word": "soda",
+      "meaning": "炭酸水・ソーダ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She ordered soda with a slice of lemon."
+    },
+    {
+      "word": "tonic",
+      "meaning": "トニックウォーター",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He added tonic to his drink."
+    },
+    {
+      "word": "mineral water",
+      "meaning": "鉱泉,鉱水",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Could we have some mineral water?"
+    },
+    {
+      "word": "beer",
+      "meaning": "ビール;コップ1杯(びん1本)のビール",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This cafe serves local beer."
+    },
+    {
+      "word": "ale",
+      "meaning": "エール(色が薄いビールの一種;米国では普通のビールより苦くアルコール含有量の多いものをいう)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He ordered a glass of ale."
+    },
+    {
+      "word": "stout",
+      "meaning": "スタウト（濃色のビール）",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The menu lists a dark stout."
+    },
+    {
+      "word": "champagne",
+      "meaning": "シャンパン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "They opened champagne to celebrate."
+    },
+    {
+      "word": "brandy",
+      "meaning": "ブランデー(ぶどう酒から造る強い酒)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The recipe includes a little brandy."
+    },
+    {
+      "word": "rum",
+      "meaning": "ラム酒(サトウキビから作ったアルコール飲料)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The cake contains rum."
+    },
+    {
+      "word": "gin",
+      "meaning": "ジン(無色透明の強い蒸留酒)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "This cocktail is made with gin."
+    },
+    {
+      "word": "sake",
+      "meaning": "日本酒",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The restaurant serves sake with dinner."
+    },
+    {
+      "word": "sherry",
+      "meaning": "シェリー酒(南スペイン原産の強い白ぶどう酒)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She added sherry to the sauce."
+    },
+    {
+      "word": "liqueur",
+      "meaning": "リキュール酒",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The dessert contains orange liqueur."
+    },
+    {
+      "word": "aperitif",
+      "meaning": "食前酒,アペリチフ(食欲増進のため食前に飲むベルモットやシェリー酒など)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "They enjoyed an aperitif before dinner."
+    },
+    {
+      "word": "mocha",
+      "meaning": "モカコーヒー(もとYemenのMocha港から送り出された上等品)(mocha coffee);モカ香味料",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I ordered a cup of mocha coffee."
+    },
+    {
+      "word": "black tea",
+      "meaning": "紅茶",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Would you prefer black tea or green tea?"
+    },
+    {
+      "word": "milkshake",
+      "meaning": "ミルクセーキ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He ordered a strawberry milkshake."
+    },
+    {
+      "word": "strawberry",
+      "meaning": "イチゴ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "There is a strawberry on the cake."
+    },
+    {
+      "word": "turkey",
+      "meaning": "七面鳥の肉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We served roast turkey for dinner."
+    },
+    {
+      "word": "goose",
+      "meaning": "ガチョウ;ガチョウの雌",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The farmer keeps a goose beside the pond."
+    },
+    {
+      "word": "lamb",
+      "meaning": "子羊の肉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The stew contains lamb and vegetables."
+    },
+    {
+      "word": "veal",
+      "meaning": "子牛の肉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The chef prepared veal with mushrooms."
+    },
+    {
+      "word": "venison",
+      "meaning": "(食用の)シカ肉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The restaurant serves venison in winter."
+    },
+    {
+      "word": "ham",
+      "meaning": "(豚肉の)ハム",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I'd like a ham sandwich."
+    },
+    {
+      "word": "bacon",
+      "meaning": "ベーコン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The bacon is crisp and golden."
+    },
+    {
+      "word": "salami",
+      "meaning": "サラミ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She added sliced salami to the plate."
+    },
+    {
+      "word": "frankfurter",
+      "meaning": "フランクフルトソーセージ(牛肉または牛肉と豚肉で作る)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He put a frankfurter in a bun."
+    },
+    {
+      "word": "hamburger",
+      "meaning": "ハンバーガー・牛ひき肉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The hamburger comes with a salad."
+    },
+    {
+      "word": "steak",
+      "meaning": "ステーキ,(特に)ビフテキ(beefsteak);(料理用の肉・魚の)厚い切り身",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "How would you like your steak cooked?"
+    },
+    {
+      "word": "fillet",
+      "meaning": "骨を除いた切り身",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Season the fish fillet before cooking."
+    },
+    {
+      "word": "rib",
+      "meaning": "あばら肉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The pork rib has a sweet glaze."
+    },
+    {
+      "word": "liver",
+      "meaning": "レバー・肝臓",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The menu includes fried liver with onions."
+    },
+    {
+      "word": "kidney",
+      "meaning": "腎臓・食用の腎臓",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The pie contains beef and kidney."
+    },
+    {
+      "word": "tripe",
+      "meaning": "(牛の)第一胃(食用)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The stew contains thinly sliced tripe."
+    },
+    {
+      "word": "mussel",
+      "meaning": "ムール貝",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Remove the mussel from its shell."
+    },
+    {
+      "word": "clam",
+      "meaning": "ハマグリ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "There is a clam in the seafood soup."
+    },
+    {
+      "word": "shrimp",
+      "meaning": "(食用の)小エビ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We ordered shrimp fried rice."
+    },
+    {
+      "word": "prawn",
+      "meaning": "テナガエビ,クルマエビ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She placed a cooked prawn on the salad."
+    },
+    {
+      "word": "crab",
+      "meaning": "カニ;カニの肉",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The soup contains fresh crab meat."
+    },
+    {
+      "word": "crayfish",
+      "meaning": "ザリガニ;(オーストラリア産)大えび",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We saw a crayfish beside the stream."
+    },
+    {
+      "word": "octopus",
+      "meaning": "タコ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The salad contains cooked octopus."
+    },
+    {
+      "word": "tuna",
+      "meaning": "(また tunny)マグロ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "I made a tuna sandwich."
+    },
+    {
+      "word": "trout",
+      "meaning": "マス(鱒)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We cooked the trout with lemon."
+    },
+    {
+      "word": "cod",
+      "meaning": "タラ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The restaurant serves baked cod."
+    },
+    {
+      "word": "herring",
+      "meaning": "ニシン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "He tried pickled herring for lunch."
+    },
+    {
+      "word": "sardine",
+      "meaning": "イワシ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "She placed a sardine on the toast."
+    },
+    {
+      "word": "mackerel",
+      "meaning": "サバ;サバ類の魚",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We grilled mackerel for dinner."
+    },
+    {
+      "word": "sole",
+      "meaning": "舌平目",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The chef served sole with butter sauce."
+    },
+    {
+      "word": "plaice",
+      "meaning": "カレイ・ヒラメの類",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We ordered plaice with potatoes."
+    },
+    {
+      "word": "seaweed",
+      "meaning": "海草,海の藻",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The soup contains dried seaweed."
+    },
+    {
+      "word": "kelp",
+      "meaning": "ケルプ(コンブ・アラメなど大形の海草の総称)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We used kelp to make the stock."
+    },
+    {
+      "word": "roe",
+      "meaning": "魚卵,はららご",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The sushi is topped with fish roe."
+    },
+    {
+      "word": "scallion",
+      "meaning": "青ネギ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Chop a scallion for the noodles."
+    },
+    {
+      "word": "yam",
+      "meaning": "ヤム(熱帯産のつる植物);その根(食用)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Peel the yam before cooking it."
+    },
+    {
+      "word": "artichoke",
+      "meaning": "(またglobe artichoke)チョウセンアザミ;そのつぼみ",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The steamed artichoke came with a dip."
+    },
+    {
+      "word": "Brussels sprout",
+      "meaning": "芽キャベツ,コモチカンラン",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Cut each Brussels sprout in half."
+    },
+    {
+      "word": "watercress",
+      "meaning": "オランダガラシ(サラダなどに用いる)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Add watercress to the salad."
+    },
+    {
+      "word": "chicory",
+      "meaning": "チコリ(ヨーロッパ産の植物;葉はサラダに用いる)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The salad contains crisp chicory leaves."
+    },
+    {
+      "word": "okra",
+      "meaning": "オクラ(アオイ科の植物;粘りけのあるさやを食用にする)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Slice the okra for the stew."
+    },
+    {
+      "word": "rutabaga",
+      "meaning": "カブハボタン(根が黄色で食用となる植物)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "We mashed the rutabaga with butter."
+    },
+    {
+      "word": "shallot",
+      "meaning": "エシャロット",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "Finely chop one shallot."
+    },
+    {
+      "word": "chanterelle",
+      "meaning": "アンズタケ(黄色の食用キノコ)",
+      "tags": [
+        "食事・カフェ"
+      ],
+      "example": "The chef added a chanterelle to the sauce."
+    }
+  ]
+}

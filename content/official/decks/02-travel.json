@@ -1,0 +1,4015 @@
+{
+  "schemaVersion": 1,
+  "title": "旅先で使う英単語 500",
+  "description": "空港、ホテル、街歩き、移動、天気や時間の表現まで。旅先で役立つ500語です。",
+  "textbookTags": [
+    {
+      "name": "旅行"
+    },
+    {
+      "name": "英語語彙"
+    }
+  ],
+  "words": [
+    {
+      "word": "airport",
+      "meaning": "空港",
+      "example": "We arrived at the airport early.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "passport",
+      "meaning": "パスポート・旅券",
+      "example": "Please show me your passport.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "ticket",
+      "meaning": "切符・チケット",
+      "example": "I need a ticket to Kyoto.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "flight",
+      "meaning": "飛行機の便",
+      "example": "Our flight leaves at noon.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "luggage",
+      "meaning": "手荷物・旅行かばん類",
+      "example": "Where can I leave my luggage?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "suitcase",
+      "meaning": "スーツケース",
+      "example": "This suitcase is very heavy.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "hotel",
+      "meaning": "ホテル",
+      "example": "Our hotel is near the beach.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "reservation",
+      "meaning": "予約",
+      "example": "I have a reservation for two nights.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "reception",
+      "meaning": "受付",
+      "example": "Please leave your key at reception.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "elevator",
+      "meaning": "エレベーター",
+      "example": "The elevator is on your right.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "lobby",
+      "meaning": "ロビー",
+      "example": "Let's meet in the hotel lobby.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "key",
+      "meaning": "鍵",
+      "example": "I left my key in the room.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "map",
+      "meaning": "地図",
+      "example": "Can you show me on the map?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "station",
+      "meaning": "駅",
+      "example": "The station is a short walk from here.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "train",
+      "meaning": "電車・列車",
+      "example": "This train goes to the airport.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "bus",
+      "meaning": "バス",
+      "example": "We can take a bus to the museum.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "taxi",
+      "meaning": "タクシー",
+      "example": "Could you call a taxi for me?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "subway",
+      "meaning": "地下鉄",
+      "example": "The subway is faster than the bus.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "platform",
+      "meaning": "駅のホーム",
+      "example": "The train leaves from platform three.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "seat",
+      "meaning": "座席",
+      "example": "Is this seat free?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "arrive",
+      "meaning": "到着する",
+      "example": "We will arrive in Tokyo tonight.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "leave",
+      "meaning": "出発する・去る",
+      "example": "We leave the hotel at nine.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "depart",
+      "meaning": "出発する",
+      "example": "The next train departs at ten.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "return",
+      "meaning": "帰る・戻る",
+      "example": "We return home on Sunday.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "travel",
+      "meaning": "旅行する",
+      "example": "I like to travel by train.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "trip",
+      "meaning": "旅行",
+      "example": "How was your trip to Japan?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "journey",
+      "meaning": "旅・旅程",
+      "example": "The journey takes about two hours.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "destination",
+      "meaning": "目的地",
+      "example": "Our final destination is Osaka.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "direction",
+      "meaning": "方向",
+      "example": "Are we going in the right direction?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "street",
+      "meaning": "通り",
+      "example": "There is a cafe on this street.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "road",
+      "meaning": "道路",
+      "example": "This road leads to the beach.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "corner",
+      "meaning": "角・曲がり角",
+      "example": "Turn right at the next corner.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "bridge",
+      "meaning": "橋",
+      "example": "Walk across the bridge.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "traffic",
+      "meaning": "交通・交通量",
+      "example": "There is a lot of traffic today.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "entrance",
+      "meaning": "入口",
+      "example": "The main entrance is over there.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "exit",
+      "meaning": "出口",
+      "example": "Please use the exit on your left.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "left",
+      "meaning": "左へ・左に",
+      "example": "Turn left at the next street.",
+      "tags": [
+        "副詞"
+      ]
+    },
+    {
+      "word": "right",
+      "meaning": "右へ・右に",
+      "example": "Turn right after the bridge.",
+      "tags": [
+        "副詞"
+      ]
+    },
+    {
+      "word": "straight",
+      "meaning": "まっすぐに",
+      "example": "Go straight for two blocks.",
+      "tags": [
+        "副詞"
+      ]
+    },
+    {
+      "word": "near",
+      "meaning": "近くに",
+      "example": "The station is quite near.",
+      "tags": [
+        "副詞"
+      ]
+    },
+    {
+      "word": "far",
+      "meaning": "遠くに",
+      "example": "We did not walk very far.",
+      "tags": [
+        "副詞"
+      ]
+    },
+    {
+      "word": "north",
+      "meaning": "北",
+      "example": "The mountains are to the north.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "south",
+      "meaning": "南",
+      "example": "The beach is to the south.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "east",
+      "meaning": "東",
+      "example": "The sun rises in the east.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "west",
+      "meaning": "西",
+      "example": "The sun sets in the west.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "beach",
+      "meaning": "浜辺・海岸",
+      "example": "We spent the afternoon at the beach.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "museum",
+      "meaning": "博物館・美術館",
+      "example": "The museum opens at ten.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "park",
+      "meaning": "公園",
+      "example": "Let's have lunch in the park.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "market",
+      "meaning": "市場",
+      "example": "We bought fruit at the local market.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "guide",
+      "meaning": "案内人・ガイド",
+      "example": "Our guide showed us around the city.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "accommodation",
+      "meaning": "宿泊;(旅館などの)宿泊設備",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We found affordable accommodation near the station."
+    },
+    {
+      "word": "arrival",
+      "meaning": "到着",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our arrival is scheduled for noon."
+    },
+    {
+      "word": "passenger",
+      "meaning": "乗客,旅客;船客",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Each passenger may carry one small bag."
+    },
+    {
+      "word": "tourist",
+      "meaning": "[観光]旅行者,観光客",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A tourist asked me for directions."
+    },
+    {
+      "word": "tourism",
+      "meaning": "観光旅行",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Tourism brings many visitors to this island."
+    },
+    {
+      "word": "visitor",
+      "meaning": "訪問者・観光客",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Every visitor receives a free map."
+    },
+    {
+      "word": "holiday",
+      "meaning": "休日,休業日,祝祭日,公休日",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The museum is closed on this holiday."
+    },
+    {
+      "word": "vacation",
+      "meaning": "休暇,休み(holiday)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We are taking a vacation in July."
+    },
+    {
+      "word": "adventure",
+      "meaning": "冒険",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our mountain trip was a wonderful adventure."
+    },
+    {
+      "word": "itinerary",
+      "meaning": "旅程,旅行日程",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The guide sent us a detailed itinerary."
+    },
+    {
+      "word": "voyage",
+      "meaning": "(…への,を巡る)(遠距離の)航海,航行",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The voyage across the ocean took weeks."
+    },
+    {
+      "word": "cruise",
+      "meaning": "クルーズ・船旅",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We booked a cruise around the islands."
+    },
+    {
+      "word": "ferry",
+      "meaning": "渡し船,連絡船(ferryboat),連絡船の便",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The ferry leaves every thirty minutes."
+    },
+    {
+      "word": "port",
+      "meaning": "港",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our ship arrived at the port early."
+    },
+    {
+      "word": "terminal",
+      "meaning": "ターミナル・発着所",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Your flight leaves from the north terminal."
+    },
+    {
+      "word": "runway",
+      "meaning": "(飛行場の)滑走路",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The plane waited at the runway."
+    },
+    {
+      "word": "pilot",
+      "meaning": "パイロット・操縦士",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The pilot welcomed us on board."
+    },
+    {
+      "word": "crew",
+      "meaning": "乗組員・乗務員",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The crew helped passengers find their seats."
+    },
+    {
+      "word": "captain",
+      "meaning": "船長・機長",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The captain announced our arrival time."
+    },
+    {
+      "word": "visa",
+      "meaning": "(旅券の)査証,ビザ,入国出国許可",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I need a visa for this trip."
+    },
+    {
+      "word": "permit",
+      "meaning": "許可証",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You need a permit to enter this area."
+    },
+    {
+      "word": "identity",
+      "meaning": "身元・本人であること",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They checked my identity at the border."
+    },
+    {
+      "word": "consulate",
+      "meaning": "領事館",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She contacted the consulate about her lost passport."
+    },
+    {
+      "word": "border",
+      "meaning": "国境",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We crossed the border by train."
+    },
+    {
+      "word": "currency",
+      "meaning": "通貨,貨幣",
+      "tags": [
+        "旅行"
+      ],
+      "example": "What currency do they use here?"
+    },
+    {
+      "word": "cash",
+      "meaning": "現金,正金,銀行券,硬貨",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This small shop only accepts cash."
+    },
+    {
+      "word": "coin",
+      "meaning": "(1枚の)硬貨(金貨・銀貨・銅貨・ニッケル貨など);貨幣,硬貨",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I found a coin under the seat."
+    },
+    {
+      "word": "wallet",
+      "meaning": "(折りたたみ式で通例皮製の)紙入れ,財布",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Keep your wallet in a safe place."
+    },
+    {
+      "word": "purse",
+      "meaning": "財布・ハンドバッグ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She put the receipt in her purse."
+    },
+    {
+      "word": "receipt",
+      "meaning": "領収書(証)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Could I have a receipt, please?"
+    },
+    {
+      "word": "fee",
+      "meaning": "料金・手数料",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The entrance fee includes a guided tour."
+    },
+    {
+      "word": "tax",
+      "meaning": "(…に対する)税,税金",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Does this price include tax?"
+    },
+    {
+      "word": "tip",
+      "meaning": "チップ・心付け",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We left a tip for the waiter."
+    },
+    {
+      "word": "deposit",
+      "meaning": "預かり金・前金",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The hotel requires a small deposit."
+    },
+    {
+      "word": "refund",
+      "meaning": "〈金など〉を返済する,払い戻す",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They will refund the unused ticket."
+    },
+    {
+      "word": "discount",
+      "meaning": "(手形・商品の)割引[額]",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Students receive a discount on admission."
+    },
+    {
+      "word": "souvenir",
+      "meaning": "(人・場所・でき事などを思い出させる)記念品,みやげ,形見",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I bought a small souvenir for my sister."
+    },
+    {
+      "word": "postcard",
+      "meaning": "郵便はがき",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She sent me a postcard from Rome."
+    },
+    {
+      "word": "camera",
+      "meaning": "カメラ,写真機",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Don't forget to charge your camera."
+    },
+    {
+      "word": "scenery",
+      "meaning": "風景,景色",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The mountain scenery was beautiful."
+    },
+    {
+      "word": "landscape",
+      "meaning": "(土地の)風景,ながめ,けしき",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Snow covered the entire landscape."
+    },
+    {
+      "word": "view",
+      "meaning": "眺め・景色",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our room has a sea view."
+    },
+    {
+      "word": "monument",
+      "meaning": "(人物・事件などの)記念碑,記念像,記念建造物",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This monument honors the town's founders."
+    },
+    {
+      "word": "castle",
+      "meaning": "城,とりで",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We visited a castle on the hill."
+    },
+    {
+      "word": "cathedral",
+      "meaning": "大聖堂",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The cathedral has colorful glass windows."
+    },
+    {
+      "word": "temple",
+      "meaning": "寺院・神殿",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please remove your shoes inside the temple."
+    },
+    {
+      "word": "shrine",
+      "meaning": "(聖者の遺骨,神の霊などを祭った)聖堂,神社,神殿",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We walked through the gate of the shrine."
+    },
+    {
+      "word": "tower",
+      "meaning": "塔,タワー",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You can see the tower from here."
+    },
+    {
+      "word": "square",
+      "meaning": "広場",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Let's meet in the main square."
+    },
+    {
+      "word": "fountain",
+      "meaning": "噴水",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Children gathered around the fountain."
+    },
+    {
+      "word": "gallery",
+      "meaning": "美術館・画廊",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The gallery displays paintings by local artists."
+    },
+    {
+      "word": "theater",
+      "meaning": "劇場,映画館",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The theater opens an hour before the show."
+    },
+    {
+      "word": "cinema",
+      "meaning": "映画館(movie theater)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "There is a cinema beside our hotel."
+    },
+    {
+      "word": "festival",
+      "meaning": "祭り,祝い,祭典",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The music festival lasts three days."
+    },
+    {
+      "word": "parade",
+      "meaning": "行進,行列;示威行進,団体行進",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The parade passes through the town center."
+    },
+    {
+      "word": "exhibition",
+      "meaning": "展示会・展覧会",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We visited an exhibition of old photographs."
+    },
+    {
+      "word": "aquarium",
+      "meaning": "水族館",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The aquarium has a large shark tank."
+    },
+    {
+      "word": "garden",
+      "meaning": "庭,庭園",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We had tea in the garden."
+    },
+    {
+      "word": "mountain",
+      "meaning": "山",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The mountain was hidden by clouds."
+    },
+    {
+      "word": "valley",
+      "meaning": "谷,谷間",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A river runs through the valley."
+    },
+    {
+      "word": "forest",
+      "meaning": "(広い地域にわたる)森林,山林",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Stay on the path through the forest."
+    },
+    {
+      "word": "wood",
+      "meaning": "森・林",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A small wood lies behind the village."
+    },
+    {
+      "word": "river",
+      "meaning": "川",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We crossed the river by boat."
+    },
+    {
+      "word": "stream",
+      "meaning": "小川,流れ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A narrow stream flows beside the campsite."
+    },
+    {
+      "word": "island",
+      "meaning": "島",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You can reach the island by ferry."
+    },
+    {
+      "word": "peninsula",
+      "meaning": "半島",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We drove around the southern peninsula."
+    },
+    {
+      "word": "coast",
+      "meaning": "海岸,沿岸;海岸地域",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The train follows the coast."
+    },
+    {
+      "word": "cave",
+      "meaning": "ほら穴,(特に)横穴",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A guide led us into the cave."
+    },
+    {
+      "word": "desert",
+      "meaning": "砂ばく,荒れ地,乾ききった不毛の土地",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The desert gets cold at night."
+    },
+    {
+      "word": "plain",
+      "meaning": "平原・平野",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The road crosses a wide plain."
+    },
+    {
+      "word": "farm",
+      "meaning": "農場,農園(通例住宅・納屋などを伴い,しばしば家畜も飼育される)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We stayed on a small farm."
+    },
+    {
+      "word": "countryside",
+      "meaning": "いなか,地方,田園",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We spent the weekend in the countryside."
+    },
+    {
+      "word": "village",
+      "meaning": "村,村落",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The village has one small shop."
+    },
+    {
+      "word": "city",
+      "meaning": "(特に行政権を持っている)都市,都会,規模の大きい町",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This city is easy to explore on foot."
+    },
+    {
+      "word": "capital",
+      "meaning": "首都",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We spent two days in the capital."
+    },
+    {
+      "word": "suburb",
+      "meaning": "(都市の近くの住宅地区としての)郊外,近郊",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our hotel is in a quiet suburb."
+    },
+    {
+      "word": "neighborhood",
+      "meaning": "近所,近隣",
+      "tags": [
+        "旅行"
+      ],
+      "example": "There are several cafes in this neighborhood."
+    },
+    {
+      "word": "downtown",
+      "meaning": "(都市の中心の)商業地区へ(で),町の中心街へ(で)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We took a bus downtown."
+    },
+    {
+      "word": "avenue",
+      "meaning": "大通り",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Trees line the wide avenue."
+    },
+    {
+      "word": "path",
+      "meaning": "(自然にできた)小道,細道;庭内の道",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Follow the path to the lake."
+    },
+    {
+      "word": "pavement",
+      "meaning": "歩道（主にイギリス英語）",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please keep your bicycle off the pavement."
+    },
+    {
+      "word": "crossing",
+      "meaning": "横断,横切ること;渡航",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The sea crossing took two hours."
+    },
+    {
+      "word": "intersection",
+      "meaning": "(特に道路の)交差点",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Turn left at the next intersection."
+    },
+    {
+      "word": "roundabout",
+      "meaning": "環状交差点",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Take the second exit at the roundabout."
+    },
+    {
+      "word": "freeway",
+      "meaning": "(平面交差のない,多車線式の)高速道路",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We left the freeway near the airport."
+    },
+    {
+      "word": "motorway",
+      "meaning": "高速道路（イギリス英語）",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Traffic on the motorway was slow."
+    },
+    {
+      "word": "tunnel",
+      "meaning": "トンネル,地下道,坑道",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The train went through a long tunnel."
+    },
+    {
+      "word": "railroad",
+      "meaning": "鉄道,鉄道線路",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The railroad connects the two towns."
+    },
+    {
+      "word": "carriage",
+      "meaning": "鉄道の客車（イギリス英語）",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We found seats in the last carriage."
+    },
+    {
+      "word": "compartment",
+      "meaning": "区画,仕切り",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our train compartment had six seats."
+    },
+    {
+      "word": "timetable",
+      "meaning": "時間表,時間割り;(鉄道の)時刻表",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please check the latest train timetable."
+    },
+    {
+      "word": "delay",
+      "meaning": "…を延期する,延ばす",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Bad weather may delay our flight."
+    },
+    {
+      "word": "cancellation",
+      "meaning": "取り消し・運休",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The cancellation left us without a flight."
+    },
+    {
+      "word": "transfer",
+      "meaning": "乗り換える・移す",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We need to transfer at the next station."
+    },
+    {
+      "word": "route",
+      "meaning": "道筋,路線,ルート",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This route avoids the busy city center."
+    },
+    {
+      "word": "stop",
+      "meaning": "停留所・停止",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Get off at the next stop."
+    },
+    {
+      "word": "kilometer",
+      "meaning": "キロメートル(km.,km)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The beach is one kilometer away."
+    },
+    {
+      "word": "mile",
+      "meaning": "マイル(長さの単位;1609メートル)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We walked another mile before stopping."
+    },
+    {
+      "word": "meter",
+      "meaning": "メートル・計器",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The path is about one meter wide."
+    },
+    {
+      "word": "address",
+      "meaning": "あて名,住所",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please write down the hotel's address."
+    },
+    {
+      "word": "sign",
+      "meaning": "標識・看板",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The sign points toward the station."
+    },
+    {
+      "word": "petrol",
+      "meaning": "ガソリン（イギリス英語）",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We need to buy more petrol."
+    },
+    {
+      "word": "gasoline",
+      "meaning": "ガソリン,揮発油(petrol)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The car is almost out of gasoline."
+    },
+    {
+      "word": "fuel",
+      "meaning": "燃料;(特定の種類の)燃料",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The boat stopped to take on fuel."
+    },
+    {
+      "word": "tire",
+      "meaning": "タイヤ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our bicycle has a flat tire."
+    },
+    {
+      "word": "wheel",
+      "meaning": "車輪",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The front wheel needs repair."
+    },
+    {
+      "word": "engine",
+      "meaning": "エンジン,発動機,機関",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The engine made a strange noise."
+    },
+    {
+      "word": "bicycle",
+      "meaning": "(2輪の)自転車",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You can rent a bicycle here."
+    },
+    {
+      "word": "motorcycle",
+      "meaning": "オートバイ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "He traveled across the country by motorcycle."
+    },
+    {
+      "word": "scooter",
+      "meaning": "スクーター",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She parked her scooter outside the cafe."
+    },
+    {
+      "word": "truck",
+      "meaning": "トラック",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A truck was blocking the narrow road."
+    },
+    {
+      "word": "coach",
+      "meaning": "長距離バス・客車",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We took a coach to the airport."
+    },
+    {
+      "word": "ambulance",
+      "meaning": "救急車",
+      "tags": [
+        "旅行"
+      ],
+      "example": "An ambulance arrived within minutes."
+    },
+    {
+      "word": "parking",
+      "meaning": "駐車",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Free parking is available behind the hotel."
+    },
+    {
+      "word": "garage",
+      "meaning": "(自動車の)車庫",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We left the car in the garage."
+    },
+    {
+      "word": "rental",
+      "meaning": "賃借・レンタル",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The bicycle rental costs ten dollars."
+    },
+    {
+      "word": "license",
+      "meaning": "(法的な)許可,免許,認可",
+      "tags": [
+        "旅行"
+      ],
+      "example": "May I see your driver's license?"
+    },
+    {
+      "word": "accident",
+      "meaning": "事故",
+      "tags": [
+        "旅行"
+      ],
+      "example": "An accident delayed the morning traffic."
+    },
+    {
+      "word": "police",
+      "meaning": "警察",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We reported the missing bag to the police."
+    },
+    {
+      "word": "hospital",
+      "meaning": "病院",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The nearest hospital is two streets away."
+    },
+    {
+      "word": "pharmacy",
+      "meaning": "薬局",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Is there a pharmacy near here?"
+    },
+    {
+      "word": "doctor",
+      "meaning": "(通例,歯医者・獣医などを含めて)医者",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I need to see a doctor."
+    },
+    {
+      "word": "clinic",
+      "meaning": "診療所",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The clinic opens at nine."
+    },
+    {
+      "word": "pain",
+      "meaning": "(肉体のある部分の)苦痛,痛み",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She felt a sharp pain in her ankle."
+    },
+    {
+      "word": "medicine",
+      "meaning": "薬",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Keep your medicine in your hand luggage."
+    },
+    {
+      "word": "fever",
+      "meaning": "(身体の異常な)熱,発熱",
+      "tags": [
+        "旅行"
+      ],
+      "example": "He stayed at the hotel with a fever."
+    },
+    {
+      "word": "prescription",
+      "meaning": "処方箋",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The pharmacist asked for my prescription."
+    },
+    {
+      "word": "safety",
+      "meaning": "(…からの)安全,無事",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Your safety is our first concern."
+    },
+    {
+      "word": "danger",
+      "meaning": "危険,おそれ(peril)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The sign warns of falling-rock danger."
+    },
+    {
+      "word": "caution",
+      "meaning": "用心,注意,慎重さ,用心深さ(prudence)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please use caution on the wet steps."
+    },
+    {
+      "word": "flood",
+      "meaning": "洪水,大水;(川の)はんらん",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The flood closed the main road."
+    },
+    {
+      "word": "storm",
+      "meaning": "あらし,暴風[雨],荒天",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We stayed indoors during the storm."
+    },
+    {
+      "word": "thunder",
+      "meaning": "雷鳴",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We heard thunder in the distance."
+    },
+    {
+      "word": "snow",
+      "meaning": "雪",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Fresh snow covered the rooftops."
+    },
+    {
+      "word": "rain",
+      "meaning": "雨,雨降り,降雨",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Heavy rain continued all afternoon."
+    },
+    {
+      "word": "fog",
+      "meaning": "霧,もや",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Thick fog delayed the ferry."
+    },
+    {
+      "word": "mist",
+      "meaning": "かすみ,もや,霧",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Morning mist covered the lake."
+    },
+    {
+      "word": "wind",
+      "meaning": "風",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The strong wind made walking difficult."
+    },
+    {
+      "word": "sunlight",
+      "meaning": "日光(sunshine)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Sunlight filled the hotel room."
+    },
+    {
+      "word": "shade",
+      "meaning": "(光がさえぎられてできる)陰;日陰",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Let's rest in the shade."
+    },
+    {
+      "word": "shadow",
+      "meaning": "陰,暗がり,物陰;夕やみ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We waited in the shadow of the tower."
+    },
+    {
+      "word": "weather",
+      "meaning": "(ある時間・ある一定期間の)天気,天候",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The weather looks good for tomorrow."
+    },
+    {
+      "word": "forecast",
+      "meaning": "天気予報・予測",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The forecast says it will rain."
+    },
+    {
+      "word": "temperature",
+      "meaning": "温度,気温",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The temperature drops quickly after sunset."
+    },
+    {
+      "word": "season",
+      "meaning": "季,季節(春夏秋冬の4季節のそれぞれ)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Summer is the busiest travel season."
+    },
+    {
+      "word": "spring",
+      "meaning": "春",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The gardens are lovely in spring."
+    },
+    {
+      "word": "summer",
+      "meaning": "夏",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We visit the coast every summer."
+    },
+    {
+      "word": "winter",
+      "meaning": "冬,冬季",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The mountain road closes in winter."
+    },
+    {
+      "word": "dry",
+      "meaning": "乾いた,乾燥した",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Keep your passport in a dry bag."
+    },
+    {
+      "word": "wet",
+      "meaning": "ぬれた,湿った,乾いていない",
+      "tags": [
+        "旅行"
+      ],
+      "example": "My shoes are still wet."
+    },
+    {
+      "word": "cold",
+      "meaning": "寒い,冷たい;冷えた,冷やした",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The water is too cold for swimming."
+    },
+    {
+      "word": "warm",
+      "meaning": "(気候が適度に)暖かい,温暖な",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Bring a warm jacket for the evening."
+    },
+    {
+      "word": "cool",
+      "meaning": "涼しい,ひんやりとする",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The cave stays cool all year."
+    },
+    {
+      "word": "humid",
+      "meaning": "(空気・天候などが)湿気のある,湿っぽい(damp)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The air feels very humid today."
+    },
+    {
+      "word": "icy",
+      "meaning": "氷の,氷で覆われた",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Be careful on the icy pavement."
+    },
+    {
+      "word": "crowded",
+      "meaning": "(人で)込み合った,満員の;(物事で)ぎっしり詰まった,いっぱいの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The train was crowded this morning."
+    },
+    {
+      "word": "empty",
+      "meaning": "からの,中に何もない(だれも居ない)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We found an empty seat near the window."
+    },
+    {
+      "word": "busy",
+      "meaning": "忙しい,多忙な",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The receptionist is busy at the moment."
+    },
+    {
+      "word": "noisy",
+      "meaning": "(人・声などが)やかましい,騒々しい,(場所が)騒音に満ちている",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our room faced a noisy street."
+    },
+    {
+      "word": "calm",
+      "meaning": "(海・湖などが)穏やかな,静かな;(天候などが)穏やかな",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The sea was calm this morning."
+    },
+    {
+      "word": "convenient",
+      "meaning": "(物事が)便利な,使いやすい",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This hotel is convenient for the station."
+    },
+    {
+      "word": "clean",
+      "meaning": "汚れのない,清潔な",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The room was bright and clean."
+    },
+    {
+      "word": "dirty",
+      "meaning": "汚い,汚れた,不潔な;泥だらけの,泥んこの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "My boots are dirty from the hike."
+    },
+    {
+      "word": "cheap",
+      "meaning": "値段が安い,料金が安い,安く売る",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We found a cheap flight online."
+    },
+    {
+      "word": "local",
+      "meaning": "一地方の,ある土地の,(特に)自分の住んでいる土地の;地方に特有な",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Try some food at the local market."
+    },
+    {
+      "word": "foreign",
+      "meaning": "外国の;外国からの;外国との",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She enjoys learning foreign languages."
+    },
+    {
+      "word": "international",
+      "meaning": "国際的な",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Follow the signs for international departures."
+    },
+    {
+      "word": "available",
+      "meaning": "利用できる,役に立つ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Are any rooms available tonight?"
+    },
+    {
+      "word": "full",
+      "meaning": "いっぱいの,満ちた",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The last bus was completely full."
+    },
+    {
+      "word": "single",
+      "meaning": "一人用の・一つの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I'd like a single room, please."
+    },
+    {
+      "word": "twin",
+      "meaning": "二つが一組の・双子の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We booked a twin room with two beds."
+    },
+    {
+      "word": "suite",
+      "meaning": "スイートルーム",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The suite has a separate sitting room."
+    },
+    {
+      "word": "motel",
+      "meaning": "モーテル(街道沿にある自動車旅行者の宿泊所)[motorとhotelの合成語]",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We stayed at a motel beside the highway."
+    },
+    {
+      "word": "inn",
+      "meaning": "宿屋,小さな旅館",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The old inn serves breakfast until ten."
+    },
+    {
+      "word": "campsite",
+      "meaning": "キャンプ場(ふつう炊事施設がある)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The campsite is beside a small lake."
+    },
+    {
+      "word": "caravan",
+      "meaning": "キャンピングトレーラー（イギリス英語）",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They towed a caravan to the coast."
+    },
+    {
+      "word": "backpack",
+      "meaning": "背のう(リュックサック・ナップサックなど)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I packed a jacket in my backpack."
+    },
+    {
+      "word": "rucksack",
+      "meaning": "リュックサック,背嚢(はいのう)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "His rucksack was too heavy to carry."
+    },
+    {
+      "word": "baggage",
+      "meaning": "(旅行用)手荷物(luggage)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please collect your baggage downstairs."
+    },
+    {
+      "word": "label",
+      "meaning": "(品名・製造元などを示す)はり札,ラベル;(小包などの)荷札",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Put your name on the luggage label."
+    },
+    {
+      "word": "locker",
+      "meaning": "ロッカー,錠つき戸だな",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You can leave your bag in a locker."
+    },
+    {
+      "word": "towel",
+      "meaning": "タオル,手ぬぐい,手ふき",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Could I have another towel?"
+    },
+    {
+      "word": "blanket",
+      "meaning": "毛布",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I asked for an extra blanket."
+    },
+    {
+      "word": "pillow",
+      "meaning": "まくら",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This pillow is very comfortable."
+    },
+    {
+      "word": "soap",
+      "meaning": "石けん",
+      "tags": [
+        "旅行"
+      ],
+      "example": "There is soap beside the sink."
+    },
+    {
+      "word": "shampoo",
+      "meaning": "洗髪剤,シャンプー",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I forgot to pack my shampoo."
+    },
+    {
+      "word": "toothbrush",
+      "meaning": "歯ブラシ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I bought a toothbrush at the airport."
+    },
+    {
+      "word": "bath",
+      "meaning": "入浴・風呂",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A warm bath helped after the hike."
+    },
+    {
+      "word": "bathroom",
+      "meaning": "浴室,ふろ場",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our room has a private bathroom."
+    },
+    {
+      "word": "restroom",
+      "meaning": "(公共施設の)手洗所",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Where is the nearest restroom?"
+    },
+    {
+      "word": "washroom",
+      "meaning": "(特に公共施設の中の)洗面所,便所",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The washroom is at the end of the hall."
+    },
+    {
+      "word": "laundry",
+      "meaning": "洗濯[物]",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The hotel offers a laundry service."
+    },
+    {
+      "word": "buffet",
+      "meaning": "ビュッフェ・セルフサービスの食事",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Breakfast is served as a buffet."
+    },
+    {
+      "word": "floor",
+      "meaning": "床",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please keep your bags off the floor."
+    },
+    {
+      "word": "corridor",
+      "meaning": "(片側また両側に部屋が並んでいる)廊下",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our room is at the end of the corridor."
+    },
+    {
+      "word": "air-conditioning",
+      "meaning": "(室内の)空気調節,冷暖房",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The room has air-conditioning."
+    },
+    {
+      "word": "heating",
+      "meaning": "加熱;暖房[装置]",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Could you turn on the heating?"
+    },
+    {
+      "word": "fan",
+      "meaning": "扇風機",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A small fan stood beside the bed."
+    },
+    {
+      "word": "adapter",
+      "meaning": "(電気・機械の)接続変換器,アダプター",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I need an adapter for this plug."
+    },
+    {
+      "word": "plug",
+      "meaning": "電源プラグ・栓",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This plug does not fit the socket."
+    },
+    {
+      "word": "socket",
+      "meaning": "(物を差し込む)穴,受け口,ソケット",
+      "tags": [
+        "旅行"
+      ],
+      "example": "There is a socket beside the bed."
+    },
+    {
+      "word": "wireless",
+      "meaning": "無線,無線電信",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The ship uses wireless communication."
+    },
+    {
+      "word": "telephone",
+      "meaning": "電話機",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The telephone is beside the bed."
+    },
+    {
+      "word": "mobile",
+      "meaning": "持ち運びできる・移動式の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A mobile clinic visits the village weekly."
+    },
+    {
+      "word": "battery",
+      "meaning": "電池・バッテリー",
+      "tags": [
+        "旅行"
+      ],
+      "example": "My camera battery is nearly empty."
+    },
+    {
+      "word": "screen",
+      "meaning": "画面",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Your departure time appears on the screen."
+    },
+    {
+      "word": "guidebook",
+      "meaning": "案内書,旅行案内",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This guidebook includes walking maps."
+    },
+    {
+      "word": "leaflet",
+      "meaning": "(広告などの)ちらし,びら",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The leaflet lists nearby attractions."
+    },
+    {
+      "word": "tour",
+      "meaning": "観光旅行・ツアー",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The walking tour starts at ten."
+    },
+    {
+      "word": "hike",
+      "meaning": "ハイキング(徒歩旅行)する",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We plan to hike through the forest."
+    },
+    {
+      "word": "trek",
+      "meaning": "長くつらい旅をする",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They will trek across the remote mountains."
+    },
+    {
+      "word": "climb",
+      "meaning": "…をよじ登る,登る",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We hope to climb the hill tomorrow."
+    },
+    {
+      "word": "surf",
+      "meaning": "サーフィンをする",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You can learn to surf here."
+    },
+    {
+      "word": "dive",
+      "meaning": "(…から水中などに)頭から飛び込む",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Watch the swimmers dive into the pool."
+    },
+    {
+      "word": "ski",
+      "meaning": "スキー",
+      "tags": [
+        "旅行"
+      ],
+      "example": "One ski came loose from the roof rack."
+    },
+    {
+      "word": "picnic",
+      "meaning": "ピクニック,(野外の食事を伴う)遠足",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We had a picnic beside the river."
+    },
+    {
+      "word": "camp",
+      "meaning": "(軍隊・登山隊・探検隊などの)野営地",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We returned to camp before dark."
+    },
+    {
+      "word": "explore",
+      "meaning": "〈未知・未調査の場所〉を探検する,実地調査する",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Let's explore the island on foot."
+    },
+    {
+      "word": "rest",
+      "meaning": "休息,休憩,休養;休息の時間(期間);(…から)解放されて休むこと",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We stopped for a short rest."
+    },
+    {
+      "word": "enjoy",
+      "meaning": "を楽しむ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I hope you enjoy your stay."
+    },
+    {
+      "word": "discover",
+      "meaning": "〈今まで知らなかった物・場所〉を発見する,見付ける",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You can discover quiet beaches along this coast."
+    },
+    {
+      "word": "book",
+      "meaning": "予約する",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I'd like to book a room."
+    },
+    {
+      "word": "reserve",
+      "meaning": "(特定の人・目的などのために)…を別にしておく,取っておく;…を予約する",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Can we reserve two seats?"
+    },
+    {
+      "word": "cancel",
+      "meaning": "〈約束や注文など〉を取り消す,無効にする",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I need to cancel my reservation."
+    },
+    {
+      "word": "boarding pass",
+      "meaning": "搭乗券",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please show your boarding pass at the gate."
+    },
+    {
+      "word": "first class",
+      "meaning": "一等・ファーストクラス",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They traveled first class on the train."
+    },
+    {
+      "word": "window",
+      "meaning": "窓;(銀行などの)窓口;(店の)飾り窓",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I would like a seat near the window."
+    },
+    {
+      "word": "aisle seat",
+      "meaning": "(乗り物・劇場などの)通路側の席",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Could I have an aisle seat?"
+    },
+    {
+      "word": "one-way",
+      "meaning": "一方向だけの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I bought a one-way ticket to London."
+    },
+    {
+      "word": "direct",
+      "meaning": "まっすぐな,一直線の(straight),直進する",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This is the most direct route home."
+    },
+    {
+      "word": "indirect",
+      "meaning": "(道などが)真っすぐでない,回り道の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We took an indirect route through the hills."
+    },
+    {
+      "word": "transit",
+      "meaning": "通過,通行",
+      "tags": [
+        "旅行"
+      ],
+      "example": "My suitcase was damaged in transit."
+    },
+    {
+      "word": "layover",
+      "meaning": "途中下車,立ち寄り(stopover)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We have a two-hour layover in Seoul."
+    },
+    {
+      "word": "track",
+      "meaning": "線路",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our train departs from track six."
+    },
+    {
+      "word": "gate",
+      "meaning": "搭乗口・門",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Boarding begins at gate twelve."
+    },
+    {
+      "word": "desk",
+      "meaning": "机,勉強机,事務机",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Ask for a map at the information desk."
+    },
+    {
+      "word": "receptionist",
+      "meaning": "(ホテル・病院・事務所などの)受付係",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The receptionist gave us our room key."
+    },
+    {
+      "word": "porter",
+      "meaning": "荷物を運ぶ係",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The porter carried our heavy bags."
+    },
+    {
+      "word": "attendant",
+      "meaning": "係員",
+      "tags": [
+        "旅行"
+      ],
+      "example": "An attendant showed us to our seats."
+    },
+    {
+      "word": "security",
+      "meaning": "安全,無事(safety)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Better lighting improves security around the station."
+    },
+    {
+      "word": "guard",
+      "meaning": "見張り,番人;歩哨(ほしょう),番兵;護衛兵",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The guard checked our tickets."
+    },
+    {
+      "word": "x-ray",
+      "meaning": "X線,レントゲン線",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The doctor requested an x-ray of my ankle."
+    },
+    {
+      "word": "queue",
+      "meaning": "列・順番待ちの列",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We joined the queue for tickets."
+    },
+    {
+      "word": "zebra crossing",
+      "meaning": "(黒と白のしま模様に塗られた)横断歩道",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Use the zebra crossing outside the school."
+    },
+    {
+      "word": "stoplight",
+      "meaning": "交通信号",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Turn right after the stoplight."
+    },
+    {
+      "word": "signpost",
+      "meaning": "道しるべ,道標;看板柱",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The signpost points toward the village."
+    },
+    {
+      "word": "bus stop",
+      "meaning": "バス停留所",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The bus stop is outside the hotel."
+    },
+    {
+      "word": "package tour",
+      "meaning": "セット旅行(業者が仕立てた旅行;交通費・宿泊費を含む)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The package tour includes flights and accommodation."
+    },
+    {
+      "word": "travel agency",
+      "meaning": "旅行案内所(代理店)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The travel agency arranged our flights."
+    },
+    {
+      "word": "waiting room",
+      "meaning": "待合室",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please sit in the waiting room."
+    },
+    {
+      "word": "guesthouse",
+      "meaning": "ゲストハウス・宿泊施設",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We stayed in a family-run guesthouse."
+    },
+    {
+      "word": "youth hostel",
+      "meaning": "ユースホステル",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The youth hostel has a shared kitchen."
+    },
+    {
+      "word": "exchange rate",
+      "meaning": "為替相場",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Check the exchange rate before changing money."
+    },
+    {
+      "word": "credit card",
+      "meaning": "クレジットカード",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Can I pay by credit card?"
+    },
+    {
+      "word": "post office",
+      "meaning": "郵便局",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The post office sells international stamps."
+    },
+    {
+      "word": "fire station",
+      "meaning": "消防署",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The fire station is beside the library."
+    },
+    {
+      "word": "shopping center",
+      "meaning": "ショッピングセンター(郊外の一区画に多数の商店を集めたもので,駐車場などが完備している)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We spent an hour at the shopping center."
+    },
+    {
+      "word": "department store",
+      "meaning": "百貨店,デパート",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The department store sells travel bags upstairs."
+    },
+    {
+      "word": "supermarket",
+      "meaning": "スーパーマーケット(食料品や家庭用品などを売るセルフサービス式の大型小売店)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "There is a supermarket near our apartment."
+    },
+    {
+      "word": "bakery",
+      "meaning": "パン製造所,パン屋",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The bakery opens early every morning."
+    },
+    {
+      "word": "butcher",
+      "meaning": "肉屋",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We bought sausages at the butcher's shop."
+    },
+    {
+      "word": "bookstore",
+      "meaning": "書店",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I found a local map in the bookstore."
+    },
+    {
+      "word": "duty-free",
+      "meaning": "関税のかからない,免税の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We visited the duty-free shop before boarding."
+    },
+    {
+      "word": "water bottle",
+      "meaning": "(ガラス製の)飲料水容器",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Fill your water bottle before the walk."
+    },
+    {
+      "word": "raincoat",
+      "meaning": "レインコート",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Bring a raincoat in case it rains."
+    },
+    {
+      "word": "umbrella",
+      "meaning": "傘(かさ),こうもり傘,雨傘,日傘",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I left my umbrella on the bus."
+    },
+    {
+      "word": "swimsuit",
+      "meaning": "水泳着,水着",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Don't forget your swimsuit for the pool."
+    },
+    {
+      "word": "shorts",
+      "meaning": "半ズボン,ショートパンツ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I packed shorts for the warm weather."
+    },
+    {
+      "word": "boot",
+      "meaning": "ブーツ・長靴",
+      "tags": [
+        "旅行"
+      ],
+      "example": "One boot was full of water."
+    },
+    {
+      "word": "jacket",
+      "meaning": "上着,ジャケット(特殊な目的で上半身をおおう)胴着",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You will need a jacket tonight."
+    },
+    {
+      "word": "sweater",
+      "meaning": "セーター",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I wore a sweater on the plane."
+    },
+    {
+      "word": "shirt",
+      "meaning": "(えり付きの男物)シャツ,ワイシャツ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This shirt dries quickly after washing."
+    },
+    {
+      "word": "skirt",
+      "meaning": "(女性用の)スカート",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She bought a skirt at the market."
+    },
+    {
+      "word": "dress",
+      "meaning": "ワンピース・服装",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She packed a dress for the evening party."
+    },
+    {
+      "word": "hat",
+      "meaning": "(回りに縁のついた)帽子",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Wear a hat in the strong sun."
+    },
+    {
+      "word": "scarf",
+      "meaning": "スカーフ,えり巻き",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I wrapped a scarf around my neck."
+    },
+    {
+      "word": "belt",
+      "meaning": "ベルト,バンド,帯",
+      "tags": [
+        "旅行"
+      ],
+      "example": "He bought a leather belt as a gift."
+    },
+    {
+      "word": "watch",
+      "meaning": "腕時計",
+      "tags": [
+        "旅行"
+      ],
+      "example": "My watch still shows the time back home."
+    },
+    {
+      "word": "luggage rack",
+      "meaning": "(列車・バスの)網だな",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Put your small bag on the luggage rack."
+    },
+    {
+      "word": "trolley",
+      "meaning": "(2輪または4輪の)手押し車",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We used a trolley for our suitcases."
+    },
+    {
+      "word": "lift",
+      "meaning": "エレベーター（イギリス英語）",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Take the lift to the third floor."
+    },
+    {
+      "word": "staircase",
+      "meaning": "(手すりを含めた一続きの)階段,はしご段",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A narrow staircase leads to the tower."
+    },
+    {
+      "word": "rail",
+      "meaning": "(かきね・柵(さく)などの)横棒,横木;手すり,らんかん,柵,かき",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Hold the rail as you climb the steps."
+    },
+    {
+      "word": "fence",
+      "meaning": "(通例,木材・鉄線・針金などでできた)囲い,垣根,柵(さく),へい",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please stay behind the fence."
+    },
+    {
+      "word": "wall",
+      "meaning": "(石・れんがなどの)壁,へい",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A stone wall surrounds the garden."
+    },
+    {
+      "word": "roof",
+      "meaning": "屋根;屋上;家,家庭",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Snow covered the station roof."
+    },
+    {
+      "word": "door",
+      "meaning": "(家・部屋・家具の)扉",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please close the door quietly."
+    },
+    {
+      "word": "courtyard",
+      "meaning": "中庭",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We ate breakfast in the courtyard."
+    },
+    {
+      "word": "terrace",
+      "meaning": "バルコニー",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our hotel room opens onto a terrace."
+    },
+    {
+      "word": "alley",
+      "meaning": "小路(こうじ),路地",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A small cafe stands in the alley."
+    },
+    {
+      "word": "canal",
+      "meaning": "運河",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We followed the canal through the city."
+    },
+    {
+      "word": "embankment",
+      "meaning": "堤防,土手",
+      "tags": [
+        "旅行"
+      ],
+      "example": "People were walking along the river embankment."
+    },
+    {
+      "word": "bay",
+      "meaning": "湾,入り江",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Small boats filled the quiet bay."
+    },
+    {
+      "word": "gulf",
+      "meaning": "湾",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The ship crossed the gulf overnight."
+    },
+    {
+      "word": "ocean",
+      "meaning": "大洋,大海",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We could see the ocean from our room."
+    },
+    {
+      "word": "dock",
+      "meaning": "波止場,埠頭(ふとう)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The fishing boat returned to the dock."
+    },
+    {
+      "word": "pier",
+      "meaning": "船着き場,さん橋(さんばし),埠頭(ふとう)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The ferry leaves from this pier."
+    },
+    {
+      "word": "quay",
+      "meaning": "はとば,埠頭(ふとう)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We walked along the quay at sunset."
+    },
+    {
+      "word": "marina",
+      "meaning": "マリーナ(モーターボート・ヨットなど小船舶用の港)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We rented a boat at the marina."
+    },
+    {
+      "word": "sailboat",
+      "meaning": "(小型の)帆船,ヨット(sailing boat)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A white sailboat crossed the bay."
+    },
+    {
+      "word": "canoe",
+      "meaning": "カヌー,丸木舟",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We rented a canoe for the afternoon."
+    },
+    {
+      "word": "kayak",
+      "meaning": "カヤック",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She paddled her kayak along the shore."
+    },
+    {
+      "word": "raft",
+      "meaning": "いかだ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The raft floated slowly downstream."
+    },
+    {
+      "word": "ship",
+      "meaning": "(おもに大洋を航行する)船,大型船",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our ship leaves the harbor tonight."
+    },
+    {
+      "word": "vessel",
+      "meaning": "(比較的大型の)船",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The vessel carried passengers and cargo."
+    },
+    {
+      "word": "liner",
+      "meaning": "(特に大洋航路の)定期船;定期航空機",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The ocean liner arrived early this morning."
+    },
+    {
+      "word": "diver",
+      "meaning": "水に飛び込む人",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The diver entered the water headfirst."
+    },
+    {
+      "word": "lifeguard",
+      "meaning": "水難救助員・監視員",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A lifeguard watches the swimming area."
+    },
+    {
+      "word": "checkpoint",
+      "meaning": "検問所",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We showed our passports at the checkpoint."
+    },
+    {
+      "word": "tollbooth",
+      "meaning": "有料道路料金徴収所",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Have some cash ready at the tollbooth."
+    },
+    {
+      "word": "roadblock",
+      "meaning": "(警察などによる)道路封鎖物",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The police set up a roadblock."
+    },
+    {
+      "word": "detour",
+      "meaning": "回り道,遠回り",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We followed a detour around the bridge."
+    },
+    {
+      "word": "cyclist",
+      "meaning": "自転車(三輪車,オートバイ)に乗る人",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A cyclist passed us on the hill."
+    },
+    {
+      "word": "driver",
+      "meaning": "運転手",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The driver helped us with our bags."
+    },
+    {
+      "word": "trucker",
+      "meaning": "トラック運転手",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The trucker stopped at a roadside cafe."
+    },
+    {
+      "word": "hitchhike",
+      "meaning": "通りがかりの自動車に無料で便乗して旅行する,ヒッチハイクする",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They decided to hitchhike across the country."
+    },
+    {
+      "word": "luggage van",
+      "meaning": "(貨車の)荷物車",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The bicycles were loaded into the luggage van."
+    },
+    {
+      "word": "sleeper",
+      "meaning": "寝台車",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We booked a sleeper for the overnight journey."
+    },
+    {
+      "word": "express",
+      "meaning": "急行列車・急行の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We caught the morning express to the capital."
+    },
+    {
+      "word": "expressway",
+      "meaning": "(通例中央分離帯のある)高速道路(motorway;expwy)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The expressway connects the airport and downtown."
+    },
+    {
+      "word": "tram",
+      "meaning": "路面電車",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Take the tram to the museum."
+    },
+    {
+      "word": "streetcar",
+      "meaning": "市街電車(tram, tramcar)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The streetcar stops outside the market."
+    },
+    {
+      "word": "monorail",
+      "meaning": "モノレール",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The monorail connects the airport terminals."
+    },
+    {
+      "word": "gondola",
+      "meaning": "ゴンドラ(Veniceの運河特有の平底船)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We rode a gondola through the canals."
+    },
+    {
+      "word": "funicular",
+      "meaning": "ケーブルカー",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The funicular climbs the steep hillside."
+    },
+    {
+      "word": "helicopter",
+      "meaning": "ヘリコプター",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A helicopter flew over the mountain."
+    },
+    {
+      "word": "aircraft",
+      "meaning": "(一般に)航空機",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The aircraft landed safely."
+    },
+    {
+      "word": "airplane",
+      "meaning": "飛行機(aeroplane)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We watched an airplane take off."
+    },
+    {
+      "word": "aeroplane",
+      "meaning": "飛行機（イギリス英語）",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The aeroplane flew above the clouds."
+    },
+    {
+      "word": "propeller",
+      "meaning": "(船・飛行機の)推進器,プロペラ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The boat's propeller needed repair."
+    },
+    {
+      "word": "parachute",
+      "meaning": "パラシュート,落下傘",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Her parachute opened above the field."
+    },
+    {
+      "word": "cockpit",
+      "meaning": "(飛行機の)操縦室;(スポーツカーなどの)運転席",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The pilot returned to the cockpit."
+    },
+    {
+      "word": "turbulence",
+      "meaning": "乱気流",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The plane encountered turbulence over the mountains."
+    },
+    {
+      "word": "landing",
+      "meaning": "上陸,着陸,着水",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please remain seated during landing."
+    },
+    {
+      "word": "altitude",
+      "meaning": "高さ(height)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The aircraft reached a higher altitude."
+    },
+    {
+      "word": "longitude",
+      "meaning": "経度(long.)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The map shows latitude and longitude."
+    },
+    {
+      "word": "latitude",
+      "meaning": "緯度(lat.)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This island lies at a high latitude."
+    },
+    {
+      "word": "equator",
+      "meaning": "(地球・天体の)赤道",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The ship crossed the equator yesterday."
+    },
+    {
+      "word": "northbound",
+      "meaning": "北方行きの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We boarded a northbound train."
+    },
+    {
+      "word": "southbound",
+      "meaning": "南へ向かう,南行きの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The southbound bus leaves at noon."
+    },
+    {
+      "word": "westbound",
+      "meaning": "西へ向かう",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Westbound traffic is moving slowly."
+    },
+    {
+      "word": "northern",
+      "meaning": "北の・北部の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We explored the northern coast."
+    },
+    {
+      "word": "southern",
+      "meaning": "南の,南[部]にある;南へ向かう",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The southern beaches are quieter."
+    },
+    {
+      "word": "western",
+      "meaning": "西の;西へ向かう;(風などが)西からの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our hotel is on the western shore."
+    },
+    {
+      "word": "northeast",
+      "meaning": "北東(NE,N.E.)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The village lies to the northeast."
+    },
+    {
+      "word": "northwest",
+      "meaning": "北西(NW,N.W.)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We drove northwest toward the mountains."
+    },
+    {
+      "word": "southwest",
+      "meaning": "南西(SW,D.W.,s.w.)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The wind comes from the southwest."
+    },
+    {
+      "word": "uphill",
+      "meaning": "上りの,上り坂の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The uphill walk was tiring."
+    },
+    {
+      "word": "downhill",
+      "meaning": "丘の下へ,坂の下へ,下の方へ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We cycled downhill toward the town."
+    },
+    {
+      "word": "downstairs",
+      "meaning": "階下へ(に),下の階へ(で),(特に)1階へ(で)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Breakfast is served downstairs."
+    },
+    {
+      "word": "forward",
+      "meaning": "前方へ,前方に",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please move forward a little."
+    },
+    {
+      "word": "ahead",
+      "meaning": "(空間的に)前方に,前に(へ)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The station is just ahead."
+    },
+    {
+      "word": "behind",
+      "meaning": "…の後ろに,の陰に[隠れて]",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The taxi waited behind the bus."
+    },
+    {
+      "word": "nearby",
+      "meaning": "すぐ近くの,そばの(close by)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We found a nearby cafe."
+    },
+    {
+      "word": "across",
+      "meaning": "〜を横切って・〜の向こう側に",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The hotel is across the street."
+    },
+    {
+      "word": "along",
+      "meaning": "…をたどって,…に沿って",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Walk along the river to the bridge."
+    },
+    {
+      "word": "through",
+      "meaning": "〜を通って",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The path goes through the forest."
+    },
+    {
+      "word": "around",
+      "meaning": "…の周りに(を),…の周囲に(を),…をぐるっと取り巻いて",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We walked around the lake."
+    },
+    {
+      "word": "beyond",
+      "meaning": "…を越えて,の向こうに(へ)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The campsite is beyond the village."
+    },
+    {
+      "word": "between",
+      "meaning": "…の間に",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The bank is between two restaurants."
+    },
+    {
+      "word": "beneath",
+      "meaning": "…の下に",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We sheltered beneath a large tree."
+    },
+    {
+      "word": "underneath",
+      "meaning": "…の下に(を)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "My bag is underneath the seat."
+    },
+    {
+      "word": "above",
+      "meaning": "…の上方へ,より高いところへ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Birds flew above the harbor."
+    },
+    {
+      "word": "inside",
+      "meaning": "(物事の)内部,内側;内面",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The inside of the castle was cool."
+    },
+    {
+      "word": "outside",
+      "meaning": "外側,外部,外面",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The outside of the building is white."
+    },
+    {
+      "word": "indoors",
+      "meaning": "室内に(で),屋内に(で)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We ate lunch indoors because of the rain."
+    },
+    {
+      "word": "inland",
+      "meaning": "内陸の,奥地の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We visited an inland village."
+    },
+    {
+      "word": "overseas",
+      "meaning": "海を越えて,外国へ(abroad)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She travels overseas every summer."
+    },
+    {
+      "word": "abroad",
+      "meaning": "海外へ(で),外国に(で)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This is my first trip abroad."
+    },
+    {
+      "word": "offshore",
+      "meaning": "沖に向かう",
+      "tags": [
+        "旅行"
+      ],
+      "example": "An offshore wind pushed the boat away."
+    },
+    {
+      "word": "afar",
+      "meaning": "遠くに,はるかに",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We could see the mountain from afar."
+    },
+    {
+      "word": "anywhere",
+      "meaning": "どこかへ(に),どこへも(にも)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "You can sit anywhere you like."
+    },
+    {
+      "word": "somewhere",
+      "meaning": "どこかに(で),どこかへ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Let's stop somewhere for lunch."
+    },
+    {
+      "word": "nowhere",
+      "meaning": "どこにも(どこへも,どこでも)…ない",
+      "tags": [
+        "旅行"
+      ],
+      "example": "There was nowhere to park."
+    },
+    {
+      "word": "position",
+      "meaning": "位置;場所;所在地",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The map shows our current position."
+    },
+    {
+      "word": "region",
+      "meaning": "(地理的な)地域,地帯;(特に広大な)地方",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This region is famous for its lakes."
+    },
+    {
+      "word": "province",
+      "meaning": "(国の行政区画としての)州,省,県",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We traveled across the province by train."
+    },
+    {
+      "word": "state",
+      "meaning": "州",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They drove from one state to another."
+    },
+    {
+      "word": "territory",
+      "meaning": "(広い)地域,地方",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The expedition crossed unfamiliar territory."
+    },
+    {
+      "word": "frontier",
+      "meaning": "国境,国境地方",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The train stopped near the frontier."
+    },
+    {
+      "word": "nation",
+      "meaning": "国・国家",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Visitors come from every nation."
+    },
+    {
+      "word": "continent",
+      "meaning": "大陸",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They traveled across the continent by rail."
+    },
+    {
+      "word": "Europe",
+      "meaning": "ヨーロッパ,欧州",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We spent a month traveling around Europe."
+    },
+    {
+      "word": "Africa",
+      "meaning": "アフリカ(Afr.)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She hopes to visit Africa next year."
+    },
+    {
+      "word": "America",
+      "meaning": "アメリカ合衆国,米国,アメリカ(Am.,Amer.)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "My cousins live in America."
+    },
+    {
+      "word": "Australia",
+      "meaning": "オーストラリア,豪州(首都はCanberra)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We flew to Australia in December."
+    },
+    {
+      "word": "Asian",
+      "meaning": "アジアの,アジアに住む人々の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The museum has a collection of Asian art."
+    },
+    {
+      "word": "African",
+      "meaning": "アフリカの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The festival celebrates African music."
+    },
+    {
+      "word": "Australian",
+      "meaning": "オーストラリアの,豪州の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We met an Australian family on the train."
+    },
+    {
+      "word": "Japanese",
+      "meaning": "日本の・日本人の・日本語の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This restaurant serves Japanese food."
+    },
+    {
+      "word": "British",
+      "meaning": "英国の;英国人の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The British visitors arrived yesterday."
+    },
+    {
+      "word": "German",
+      "meaning": "ドイツの;ドイツ人の;ドイツ語の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She bought a German phrasebook."
+    },
+    {
+      "word": "Italian",
+      "meaning": "イタリアの・イタリア人の・イタリア語の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We listened to Italian music at the cafe."
+    },
+    {
+      "word": "Spanish",
+      "meaning": "スペインの・スペイン人の・スペイン語の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The guide gave us a Spanish map."
+    },
+    {
+      "word": "Korean",
+      "meaning": "韓国の・韓国語の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She ordered food from a Korean menu."
+    },
+    {
+      "word": "Indian",
+      "meaning": "インドの,インド人の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We found an Indian restaurant nearby."
+    },
+    {
+      "word": "Canadian",
+      "meaning": "カナダの;カナダ人の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our Canadian guide knew the trail well."
+    },
+    {
+      "word": "Brazilian",
+      "meaning": "ブラジルの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We heard Brazilian music in the square."
+    },
+    {
+      "word": "Egyptian",
+      "meaning": "エジプトの;エジプト人(語)の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The gallery displays Egyptian paintings."
+    },
+    {
+      "word": "Greek",
+      "meaning": "ギリシャの・ギリシャ人の・ギリシャ語の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We stayed on a Greek island."
+    },
+    {
+      "word": "Turkish",
+      "meaning": "トルコの;トルコ人(語)の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "They served us Turkish tea."
+    },
+    {
+      "word": "Thai",
+      "meaning": "タイの・タイ語の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I am learning a few Thai phrases."
+    },
+    {
+      "word": "Vietnamese",
+      "meaning": "ベトナムの・ベトナム語の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The cafe serves Vietnamese coffee."
+    },
+    {
+      "word": "Malaysian",
+      "meaning": "マレーシアの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We tried Malaysian food at the market."
+    },
+    {
+      "word": "language",
+      "meaning": "言語,言葉",
+      "tags": [
+        "旅行"
+      ],
+      "example": "What language do people speak here?"
+    },
+    {
+      "word": "dictionary",
+      "meaning": "辞書,辞典,字引き",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I checked the word in my dictionary."
+    },
+    {
+      "word": "phrase",
+      "meaning": "句・短い言い回し",
+      "tags": [
+        "旅行"
+      ],
+      "example": "This phrase is useful when ordering food."
+    },
+    {
+      "word": "accent",
+      "meaning": "アクセント・なまり",
+      "tags": [
+        "旅行"
+      ],
+      "example": "She speaks English with a French accent."
+    },
+    {
+      "word": "communication",
+      "meaning": "意思疎通・コミュニケーション",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Simple pictures can help with communication."
+    },
+    {
+      "word": "misunderstanding",
+      "meaning": "(…を)誤解すること",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A misunderstanding led us to the wrong gate."
+    },
+    {
+      "word": "gesture",
+      "meaning": "(気持ちや考えを表現するときの)身ぶり,手まね,しぐさ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "He welcomed us with a friendly gesture."
+    },
+    {
+      "word": "thanks",
+      "meaning": "ありがとう",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Thanks for showing us the way."
+    },
+    {
+      "word": "apology",
+      "meaning": "(…に対する)わび,謝罪;言い訳,弁解",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The hotel offered an apology for the delay."
+    },
+    {
+      "word": "excuse",
+      "meaning": "許す・大目に見る",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please excuse my poor pronunciation."
+    },
+    {
+      "word": "welcome",
+      "meaning": "(…へ)ようこそ;いらっしゃい",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Welcome to our city!"
+    },
+    {
+      "word": "hello",
+      "meaning": "(電話の応答で)もしもし;(あいさつ・呼びかけ・驚きの声などに用いて)こんにちは,やあ,おい,ちょっと,おや,まあ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Hello, is this the hotel reception?"
+    },
+    {
+      "word": "goodbye",
+      "meaning": "さようなら,ごきげんよう",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We waved goodbye to our guide."
+    },
+    {
+      "word": "no",
+      "meaning": "いいえ・〜でない",
+      "tags": [
+        "旅行"
+      ],
+      "example": "No, this is not my suitcase."
+    },
+    {
+      "word": "help",
+      "meaning": "〈人が〉〈人〉を手伝う,助ける,の役に立つ",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Could you help me find the station?"
+    },
+    {
+      "word": "beware",
+      "meaning": "…に気をつける,注意する",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Beware of slippery steps."
+    },
+    {
+      "word": "lightweight",
+      "meaning": "軽量の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "I bought a lightweight suitcase."
+    },
+    {
+      "word": "portable",
+      "meaning": "持ち運びのできる,携帯用の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We packed a portable charger."
+    },
+    {
+      "word": "spare",
+      "meaning": "予備の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Keep a spare key in your bag."
+    },
+    {
+      "word": "early",
+      "meaning": "(時間・時期が)早い,初期の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We caught an early train."
+    },
+    {
+      "word": "late",
+      "meaning": "(定刻・通常・予定の時間より)遅れた,遅い",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The last bus was late."
+    },
+    {
+      "word": "weekly",
+      "meaning": "毎週の・週に一度の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The weekly market is held on Sundays."
+    },
+    {
+      "word": "monthly",
+      "meaning": "月1回の,毎月の,月ぎめの",
+      "tags": [
+        "旅行"
+      ],
+      "example": "A monthly pass is cheaper for regular travelers."
+    },
+    {
+      "word": "annual",
+      "meaning": "1年の,1年間の",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The annual festival attracts many visitors."
+    },
+    {
+      "word": "midnight",
+      "meaning": "真夜中,夜の12時",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our flight arrives just before midnight."
+    },
+    {
+      "word": "noon",
+      "meaning": "(またnoonday,noontide,noontime)正午;真昼(midday)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We must leave the room by noon."
+    },
+    {
+      "word": "dawn",
+      "meaning": "夜明け,暁(daybreak)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We started our hike at dawn."
+    },
+    {
+      "word": "sunrise",
+      "meaning": "日の出",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We watched the sunrise from the beach."
+    },
+    {
+      "word": "sunset",
+      "meaning": "日没,日の入り",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The boat returns before sunset."
+    },
+    {
+      "word": "morning",
+      "meaning": "朝,午前(午前0時または夜明けから正午まで)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The streets are quiet in the morning."
+    },
+    {
+      "word": "evening",
+      "meaning": "夕方,夕刻,晩(日没から就寝時までの間)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We explored the market in the evening."
+    },
+    {
+      "word": "night",
+      "meaning": "夜,晩,夜間",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The city looks different at night."
+    },
+    {
+      "word": "weekend",
+      "meaning": "週末(通例金曜日の夕方から日曜日の夜まで);週末休暇",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We are visiting friends this weekend."
+    },
+    {
+      "word": "today",
+      "meaning": "きょう[は],本日[は]",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The museum is open today."
+    },
+    {
+      "word": "tomorrow",
+      "meaning": "明日[に],あした",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We will leave tomorrow morning."
+    },
+    {
+      "word": "yesterday",
+      "meaning": "きのう,昨日",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We arrived in the city yesterday."
+    },
+    {
+      "word": "hour",
+      "meaning": "(60分としての)1時間(h,H,hr,複hrs)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The journey takes about an hour."
+    },
+    {
+      "word": "day",
+      "meaning": "日・一日",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We spent a day at the beach."
+    },
+    {
+      "word": "month",
+      "meaning": "(またcalendar month)(暦の上の1月から12月までのそれぞれの)月",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The pass is valid for one month."
+    },
+    {
+      "word": "year",
+      "meaning": "(グレゴリオ暦で1月1日に始まり12月31日に終わる)年,暦年(calendar year)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "We visit this town every year."
+    },
+    {
+      "word": "century",
+      "meaning": "1世紀,100年間",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The castle was built over a century ago."
+    },
+    {
+      "word": "schedule",
+      "meaning": "(列車などの)時間表,時刻表;(授業などの)時間割り",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Please check the ferry schedule."
+    },
+    {
+      "word": "duration",
+      "meaning": "(時間の)持続,存続,継続",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The flight duration is about three hours."
+    },
+    {
+      "word": "interval",
+      "meaning": "(事と事の)間の時間,合い間;(物と物の)間の空間,間隔",
+      "tags": [
+        "旅行"
+      ],
+      "example": "There is a short interval between tours."
+    },
+    {
+      "word": "time zone",
+      "meaning": "時間帯・標準時の地域",
+      "tags": [
+        "旅行"
+      ],
+      "example": "Our destination is in a different time zone."
+    },
+    {
+      "word": "daylight saving time",
+      "meaning": "夏時間DST,D.S.T.(summer time)",
+      "tags": [
+        "旅行"
+      ],
+      "example": "The clocks change for daylight saving time."
+    }
+  ]
+}

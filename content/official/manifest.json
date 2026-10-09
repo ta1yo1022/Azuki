@@ -1,0 +1,97 @@
+{
+  "version": 3,
+  "source": {
+    "id": "ejdict",
+    "name": "EJDict / ejdict-hand",
+    "url": "https://github.com/kujirahand/EJDict",
+    "commit": "9663055d59a8cb1a35078a71db7a09ff39305828",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "retrievedAt": "2026-10-05T12:59:46.496387+00:00",
+    "files": {
+      "src/w.txt": "cb7de2de0d35d213d37bacfed7c5865901cb7eb72c45de89c4d6eb90996327b8",
+      "src/b.txt": "4fbf0e979a5c2e7186081fa169d92a9439010d732c2be48e892615de50797598",
+      "src/d.txt": "004ded7711a06e491fde0f565d4d302491ffb7d0913fb57e7949957dfe244fa0",
+      "src/o.txt": "fc4aeab64ae15dcb61b5a42ea58a4ea3756347a1727d1ad1b1a90dda430e6079",
+      "src/c.txt": "62eb55c61ee2f7425ac8546924e25202bcfbff9e430263b1b0e3f4b4477836c4",
+      "src/r.txt": "e5df18c8fc41510a51a1daec289f1c2b2ed3284efa905257b9a18b83b628b077",
+      "src/l.txt": "6091151eea48c942e197d0671501aa3a542e38319f6be2a5d655cb2e0177f2f2",
+      "src/s.txt": "150607935c835b2bf3d7a1c4ba9b49e9b036aeec3af6f2e30d2dbdd861656587",
+      "src/a.txt": "1cd9bc081d6d87f1ed0757294eab1958a3a603a1348f64d50acf8752aec04015",
+      "src/t.txt": "5c7f9aeb8c35f692fc6dd7a9a5be65aeb168383c4342f268e9a080a8063d06d3",
+      "src/p.txt": "b5f5c0fadd7830d3e4f3f9b3df6e38ece22945fe26b12dcf709e6f9ad50f64f1",
+      "src/f.txt": "2faae68995ed1116c7829064320a4cda5965df9dc0a06820118bc13ba01bdfbe",
+      "src/u.txt": "e1459458ee52cc737d7d1f541f70ba6511fed098f2347eec5679c28102895333",
+      "src/h.txt": "ffdee1494e6afdf0ee4e3b54bb83fac137269a489c2c071777de45f48d684e4c",
+      "src/n.txt": "62fb1ea6ff2d249f49f9cfcaf8adca8d00b5971a6368a6cc487eac59c92d1876",
+      "src/m.txt": "14c445ebe5df985c8a6978f6564116b8bd4b62ef1911c81ba5198b5fe3abaa29",
+      "src/v.txt": "c58f41c5ee90f6bca2a77c415675aaf2c24cb1badb13280c212525ce1329947a",
+      "src/g.txt": "50a0a262b258fdc159c5ea4dbe52e70ea979994750fd131b600fb43cec7092e1",
+      "src/k.txt": "20468de6b05b309a924465c04daca077377e57e64c222c51bf6d5e0132ee1d8f",
+      "src/e.txt": "431dde8338c01fa41fd43ba14e480f25f51ec38af17722fbd4e616b6bca3267c",
+      "src/i.txt": "27e3f1d0f2a83cfa457c714030af9a315e336b50e995b006573834b26add8c83",
+      "src/j.txt": "18c6c40c9bdd09d35869b623023104645245d9cb757b7c14ca44e3e4ea79ed91",
+      "src/y.txt": "3ef6335676a78922073700d0d6a59b06949cc319c5e02699466aca7ebb1fdc21",
+      "src/z.txt": "eafb461cfcaeb9a36e4d7d2cae967fa2b1f61bc0c2ab61c70f26fa06424c1f87",
+      "src/q.txt": "e1d590faacecaa4967f485e9cdeac035e1f6413e46781c62278941738cbc07a5",
+      "src/x.txt": "f5ef77ff89d6530721110eb13d9136af4c1c4586aa7d30b0e6943c9333c40129"
+    }
+  },
+  "editorialNote": "EJDictの見出し語と語義を抽出し、テーマに合う語義を選択。日本語の記法を整理し、必要に応じて現代の用法を補足。全2,500語にAzuki向けに作成した英語例文を収録。初回250語の例文は保持し、第3版で追加2,250語の例文を補完。レベルは単語帳全体の語彙の広さと専門性を基にしたAzuki独自の目安で、試験やCEFRへの対応は示さない。",
+  "decks": [
+    {
+      "id": "azuki-official-daily-v1",
+      "file": "decks/01-daily.json",
+      "title": "毎日の動詞 500",
+      "wordCount": 500,
+      "sha256": "ea1d12140af73d8506f809d2cec00172e07ec9740aa014ad1e27349220372139",
+      "level": "intermediate",
+      "exampleCount": 500
+    },
+    {
+      "id": "azuki-official-travel-v1",
+      "file": "decks/02-travel.json",
+      "title": "旅先で使う英単語 500",
+      "wordCount": 500,
+      "sha256": "40595e1459dc4f57b1703f01a4469999dc6e4b18072ba17a56b65aae6709ef52",
+      "level": "beginner",
+      "exampleCount": 500
+    },
+    {
+      "id": "azuki-official-food-v1",
+      "file": "decks/03-food.json",
+      "title": "食べものとカフェの英単語 500",
+      "wordCount": 500,
+      "sha256": "055743e6eb4946ec94cbdf1e6874fe78af19fa806b99f011917709d3d0733e45",
+      "level": "intermediate",
+      "exampleCount": 500
+    },
+    {
+      "id": "azuki-official-feelings-v1",
+      "file": "decks/04-feelings.json",
+      "title": "気持ちを伝える英単語 500",
+      "wordCount": 500,
+      "sha256": "4b91de15e04e57340f41ae0a0703d9c18cca8b6388a17ffafd3e377b20632a57",
+      "level": "intermediate",
+      "exampleCount": 500
+    },
+    {
+      "id": "azuki-official-work-v1",
+      "file": "decks/05-work.json",
+      "title": "仕事のやりとり英単語 500",
+      "wordCount": 500,
+      "sha256": "1564a33c1a46f9565583d7d94bf7306dbcc9eae7e0d33f5dcd1fc45645289659",
+      "level": "advanced",
+      "exampleCount": 500
+    }
+  ],
+  "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+  "examples": {
+    "source": "Azuki original editorial examples",
+    "language": "en",
+    "count": 2500,
+    "addedInRevision3": 2250,
+    "preservesOriginalExamples": true,
+    "note": "登録済みの日本語訳・品詞・テーマに合わせた短い例文。EJDictからの引用ではなく、Azuki向けの新規作成。"
+  }
+}

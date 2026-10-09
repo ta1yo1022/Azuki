@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "azuki-api",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-05",
+  "vars": {
+    "FIREBASE_PROJECT_ID": "azuki-eed67",
+    "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173,https://azuki-4ti.pages.dev,https://azuki.mame-app.com",
+    "ALLOW_IMPORTS": "true",
+    "ADMIN_EMAILS": "taiyo.mizuno.main@gmail.com",
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "azuki-db",
+      "database_id": "781793ef-ad7d-474f-b7cf-87585e1b561a",
+      "migrations_dir": "migrations",
+    },
+  ],
+}

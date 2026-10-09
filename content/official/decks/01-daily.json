@@ -1,0 +1,4015 @@
+{
+  "schemaVersion": 1,
+  "title": "毎日の動詞 500",
+  "description": "身近な動作から、考えや行動を詳しく表す動詞まで。毎日使いたい500語を集めました。",
+  "textbookTags": [
+    {
+      "name": "日常生活"
+    },
+    {
+      "name": "英語語彙"
+    }
+  ],
+  "words": [
+    {
+      "word": "wake",
+      "meaning": "目を覚ます",
+      "example": "I wake up at seven every morning.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "wash",
+      "meaning": "洗う",
+      "example": "Please wash your hands before lunch.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "brush",
+      "meaning": "ブラシで磨く・とかす",
+      "example": "I brush my teeth after breakfast.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "dress",
+      "meaning": "服を着る",
+      "example": "We dress quickly in the morning.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "wear",
+      "meaning": "身に着けている",
+      "example": "I wear a warm coat in winter.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "open",
+      "meaning": "開ける",
+      "example": "Please open the window.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "close",
+      "meaning": "閉める",
+      "example": "Please close the door quietly.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "read",
+      "meaning": "読む",
+      "example": "I read a book before bed.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "write",
+      "meaning": "書く",
+      "example": "Please write your name here.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "listen",
+      "meaning": "耳を傾けて聞く",
+      "example": "I listen to music on the bus.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "speak",
+      "meaning": "話す",
+      "example": "Can you speak more slowly?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "ask",
+      "meaning": "尋ねる・質問する",
+      "example": "Can I ask you a question?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "answer",
+      "meaning": "答える",
+      "example": "Please answer the question.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "learn",
+      "meaning": "学ぶ・身に付ける",
+      "example": "I learn a new word every day.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "teach",
+      "meaning": "教える",
+      "example": "My sister teaches English.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "study",
+      "meaning": "勉強する",
+      "example": "We study together after school.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "practice",
+      "meaning": "練習する",
+      "example": "I practice speaking English every day.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "remember",
+      "meaning": "覚えている・思い出す",
+      "example": "I remember your name.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "forget",
+      "meaning": "忘れる",
+      "example": "Do not forget your umbrella.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "understand",
+      "meaning": "理解する",
+      "example": "I understand this sentence.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "start",
+      "meaning": "始める",
+      "example": "Let's start the lesson.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "finish",
+      "meaning": "終える",
+      "example": "I finish my homework before dinner.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "wait",
+      "meaning": "待つ",
+      "example": "Please wait here for a minute.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "help",
+      "meaning": "手伝う・助ける",
+      "example": "Can you help me with this bag?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "use",
+      "meaning": "使う",
+      "example": "May I use your pen?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "need",
+      "meaning": "必要とする",
+      "example": "We need more time.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "want",
+      "meaning": "欲しいと思う",
+      "example": "I want a new notebook.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "like",
+      "meaning": "好きである",
+      "example": "I like this song.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "love",
+      "meaning": "大好きである・愛する",
+      "example": "I love spending time with my family.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "live",
+      "meaning": "住む・暮らす",
+      "example": "I live near the station.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "walk",
+      "meaning": "歩く",
+      "example": "I walk to school every day.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "run",
+      "meaning": "走る",
+      "example": "We run in the park on Sundays.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "sit",
+      "meaning": "座る",
+      "example": "Please sit next to me.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "stand",
+      "meaning": "立つ",
+      "example": "We stand in line for the bus.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "sleep",
+      "meaning": "眠る",
+      "example": "I sleep for eight hours each night.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "work",
+      "meaning": "働く",
+      "example": "I work at a bookstore.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "play",
+      "meaning": "遊ぶ",
+      "example": "The children play in the garden.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "meet",
+      "meaning": "会う",
+      "example": "Let's meet at the cafe.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "call",
+      "meaning": "電話をかける",
+      "example": "I will call you tonight.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "visit",
+      "meaning": "訪ねる",
+      "example": "We visit our grandparents on weekends.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "buy",
+      "meaning": "買う",
+      "example": "I buy fruit at the market.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "pay",
+      "meaning": "支払う",
+      "example": "Can I pay by card?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "choose",
+      "meaning": "選ぶ",
+      "example": "Please choose one color.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "bring",
+      "meaning": "持ってくる",
+      "example": "Please bring your notebook tomorrow.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "take",
+      "meaning": "持っていく",
+      "example": "Take an umbrella with you.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "give",
+      "meaning": "あげる・渡す",
+      "example": "Please give this note to your teacher.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "find",
+      "meaning": "見つける",
+      "example": "I cannot find my keys.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "keep",
+      "meaning": "取っておく・保持する",
+      "example": "You can keep this book.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "clean",
+      "meaning": "掃除する・きれいにする",
+      "example": "I clean my room on Saturdays.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "cook",
+      "meaning": "料理する",
+      "example": "We cook dinner together.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "accept",
+      "meaning": "(喜んで)〈物〉を受け取る,〈事〉を受け入れる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please accept this small gift."
+    },
+    {
+      "word": "act",
+      "meaning": "行動する・演じる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We must act before it rains."
+    },
+    {
+      "word": "adjust",
+      "meaning": "…を調節する;(…に)…を合わせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You can adjust the seat height."
+    },
+    {
+      "word": "admire",
+      "meaning": "…に感嘆する,感嘆して見とれる,を賞賛する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I admire your patience with children."
+    },
+    {
+      "word": "adopt",
+      "meaning": "〈考え・習慣など〉を取り入れる,採用する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's adopt a simpler approach."
+    },
+    {
+      "word": "afford",
+      "meaning": "〈金・時間〉の余裕がある",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We cannot afford a new car."
+    },
+    {
+      "word": "allow",
+      "meaning": "〈事〉を許す,〈人〉に許可を与える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They allow dogs in this cafe."
+    },
+    {
+      "word": "apologize",
+      "meaning": "(人に…について)わびる,あやまる;言い訳する,弁解する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I apologize for arriving so late."
+    },
+    {
+      "word": "appear",
+      "meaning": "姿を現す,出現する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Stars appear after the sun sets."
+    },
+    {
+      "word": "appreciate",
+      "meaning": "ありがたく思う・価値を認める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I really appreciate your help today."
+    },
+    {
+      "word": "approve",
+      "meaning": "〈事〉をよいと認める,に賛成する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "My parents approve of the plan."
+    },
+    {
+      "word": "arrange",
+      "meaning": "…を整理する,整える;…を配置する,配列する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please arrange the books by size."
+    },
+    {
+      "word": "attack",
+      "meaning": "…を襲う,攻撃する;(ゲームで)…を攻める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Some insects attack young plants."
+    },
+    {
+      "word": "attend",
+      "meaning": "…に出席する,参列する,〈学校など〉に通う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I will attend the meeting tomorrow."
+    },
+    {
+      "word": "attract",
+      "meaning": "(物理的な力で)…を引きつける,引き寄せる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Magnets attract small pieces of iron."
+    },
+    {
+      "word": "bake",
+      "meaning": "(特にオーブンで)〈食物〉を焼く,焼いて料理する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's bake some bread together."
+    },
+    {
+      "word": "bathe",
+      "meaning": "〈子供など〉を入浴させる(bath)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We bathe the baby before bed."
+    },
+    {
+      "word": "become",
+      "meaning": "(…と)なる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She wants to become a teacher."
+    },
+    {
+      "word": "believe",
+      "meaning": "(現実・真実であると)〈事〉を信じる,信用する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I believe your story."
+    },
+    {
+      "word": "belong",
+      "meaning": "(…の)所有である",
+      "tags": [
+        "動詞"
+      ],
+      "example": "These keys belong to my sister."
+    },
+    {
+      "word": "bet",
+      "meaning": "賭ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "He likes to bet on horse races."
+    },
+    {
+      "word": "blame",
+      "meaning": "〈事〉を非難する,とがめる;(…のことで)〈人〉を非難する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't blame yourself for the delay."
+    },
+    {
+      "word": "blow",
+      "meaning": "〈風が〉吹く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Strong winds blow across the lake."
+    },
+    {
+      "word": "borrow",
+      "meaning": "借りる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "May I borrow your umbrella?"
+    },
+    {
+      "word": "bounce",
+      "meaning": "〈ボールなどが〉はずむ,はる返る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Watch the ball bounce across the floor."
+    },
+    {
+      "word": "break",
+      "meaning": "…を壊す,割る,砕く;…を折る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Be careful not to break the glass."
+    },
+    {
+      "word": "build",
+      "meaning": "〈物〉を組み立てる,造る,建造する,建築する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They plan to build a new library."
+    },
+    {
+      "word": "burst",
+      "meaning": "破裂する,爆発する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The balloon might burst in the heat."
+    },
+    {
+      "word": "calculate",
+      "meaning": "…を見積もる,算定する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please calculate the total cost."
+    },
+    {
+      "word": "care",
+      "meaning": "気に掛ける・世話をする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I care about your happiness."
+    },
+    {
+      "word": "carve",
+      "meaning": "…を刻んで作る,彫る,彫刻する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "He can carve animals from wood."
+    },
+    {
+      "word": "celebrate",
+      "meaning": "(儀式・祝典などを行って)…を祝う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's celebrate your birthday on Saturday."
+    },
+    {
+      "word": "chat",
+      "meaning": "おしゃべりする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We often chat after class."
+    },
+    {
+      "word": "cheer",
+      "meaning": "歓声を上げる・応援する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Fans cheer when their team scores."
+    },
+    {
+      "word": "chew",
+      "meaning": "〈食物〉をかむ,かみくだく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please chew your food slowly."
+    },
+    {
+      "word": "clear",
+      "meaning": "片付ける・取り除く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's clear the table after dinner."
+    },
+    {
+      "word": "collect",
+      "meaning": "(趣味として)…を集める,収集する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I collect postcards from different countries."
+    },
+    {
+      "word": "come",
+      "meaning": "〈相手が〉(話し手の方へ)来る,やって来る;〈話し手が〉(相手の方へ)行く,伺う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please come to my house tomorrow."
+    },
+    {
+      "word": "compete",
+      "meaning": "(…と…を)競う,競争する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Eight teams will compete for the cup."
+    },
+    {
+      "word": "compose",
+      "meaning": "作曲する・構成する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She likes to compose music at night."
+    },
+    {
+      "word": "concentrate",
+      "meaning": "(…に)〈光線・注意など〉を集中する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I cannot concentrate with the television on."
+    },
+    {
+      "word": "conclude",
+      "meaning": "〈演説・論文・会合〉を終わりにする,終える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will conclude the meeting at five."
+    },
+    {
+      "word": "confuse",
+      "meaning": "(…と)を混同する,取り違える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "People often confuse these two words."
+    },
+    {
+      "word": "consider",
+      "meaning": "(決定・決意のために)…をよく考える,熟慮する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please consider all the options."
+    },
+    {
+      "word": "contain",
+      "meaning": "(それ自身の中に内容として)〈物〉を含む,入れている",
+      "tags": [
+        "動詞"
+      ],
+      "example": "These cookies contain nuts."
+    },
+    {
+      "word": "continue",
+      "meaning": "〈物事〉を続ける,持続する;(中断後)…をまた始める,継続する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's continue our walk after lunch."
+    },
+    {
+      "word": "correct",
+      "meaning": "直す・訂正する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please correct the spelling mistakes."
+    },
+    {
+      "word": "count",
+      "meaning": "(一つ一つ順に)〈数〉を数える,〈物〉を数え上げる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you count the stars?"
+    },
+    {
+      "word": "crash",
+      "meaning": "衝突する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The car could crash on this ice."
+    },
+    {
+      "word": "cross",
+      "meaning": "横切る・渡る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Look both ways before you cross."
+    },
+    {
+      "word": "crush",
+      "meaning": "…を押しつぶす,ぺしゃんこにする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Crush the garlic with a spoon."
+    },
+    {
+      "word": "cure",
+      "meaning": "〈病気・病人〉を治療する,なおす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The treatment helped cure his illness."
+    },
+    {
+      "word": "dance",
+      "meaning": "(…に合わせて)踊る,舞う,ダンスをする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We love to dance together."
+    },
+    {
+      "word": "deal",
+      "meaning": "対処する・取り扱う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I can deal with this problem."
+    },
+    {
+      "word": "decrease",
+      "meaning": "…を減らす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We need to decrease our spending."
+    },
+    {
+      "word": "defend",
+      "meaning": "(…から)…を守る,保護する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The walls helped defend the city."
+    },
+    {
+      "word": "depend",
+      "meaning": "〈人が〉頼る,依存する,当てにする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Young children depend on their parents."
+    },
+    {
+      "word": "design",
+      "meaning": "設計する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She will design our new kitchen."
+    },
+    {
+      "word": "detect",
+      "meaning": "〈物事の存在〉を感知する,気付く,認める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "This alarm can detect smoke."
+    },
+    {
+      "word": "disappear",
+      "meaning": "見えなくなる,消える,姿を消す,消滅する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The mountains disappear into the fog."
+    },
+    {
+      "word": "divide",
+      "meaning": "(部分・断片・グループなどに)…を分ける,分割する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Divide the cake into eight pieces."
+    },
+    {
+      "word": "doubt",
+      "meaning": "疑う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I doubt that he will agree."
+    },
+    {
+      "word": "draw",
+      "meaning": "描く・引く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you draw a picture of a cat?"
+    },
+    {
+      "word": "drink",
+      "meaning": "〈飲み物〉を飲む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I drink tea every morning."
+    },
+    {
+      "word": "drop",
+      "meaning": "落とす・落ちる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't drop your phone in the water."
+    },
+    {
+      "word": "earn",
+      "meaning": "(正業で働いて)〈金など〉をかせぐ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She works weekends to earn extra money."
+    },
+    {
+      "word": "eat",
+      "meaning": "…を食べる;〈食事〉をする;〈スープ〉を飲む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We usually eat dinner at seven."
+    },
+    {
+      "word": "enjoy",
+      "meaning": "を楽しむ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I enjoy walking by the river."
+    },
+    {
+      "word": "escape",
+      "meaning": "(危うく…から)逃げ出す,脱走する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The bird managed to escape its cage."
+    },
+    {
+      "word": "exchange",
+      "meaning": "…を取り替える;(…と)…を取り替える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can I exchange this shirt for another?"
+    },
+    {
+      "word": "exist",
+      "meaning": "存在する,実在する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Do these animals still exist?"
+    },
+    {
+      "word": "expand",
+      "meaning": "(…にまで)拡大する,膨張する,広がる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The metal will expand when heated."
+    },
+    {
+      "word": "experience",
+      "meaning": "経験する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Visitors can experience life on a farm."
+    },
+    {
+      "word": "face",
+      "meaning": "直面する・向き合う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We must face the problem together."
+    },
+    {
+      "word": "fall",
+      "meaning": "落下する,落ちる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Leaves fall from the trees in autumn."
+    },
+    {
+      "word": "feed",
+      "meaning": "〈人・動物〉に食物を与える,を養う;(…で)〈人・動物〉を育てる,飼育する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please feed the cat before you leave."
+    },
+    {
+      "word": "feel",
+      "meaning": "感じる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I feel much better today."
+    },
+    {
+      "word": "fight",
+      "meaning": "〈両者・数人が〉戦う,格闘する,殴り合い(取っ組み合い)のけんかをする;激しく口論する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The brothers often fight over their toys."
+    },
+    {
+      "word": "fix",
+      "meaning": "直す・固定する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you fix this broken chair?"
+    },
+    {
+      "word": "fly",
+      "meaning": "〈鳥などが〉飛ぶ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Birds fly south for the winter."
+    },
+    {
+      "word": "follow",
+      "meaning": "…の後について行く;…の後に続く(来る)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please follow me to your table."
+    },
+    {
+      "word": "force",
+      "meaning": "強制する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't force the children to eat."
+    },
+    {
+      "word": "freeze",
+      "meaning": "凍る;冷凍される",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The lake may freeze tonight."
+    },
+    {
+      "word": "fry",
+      "meaning": "…を油で揚げる,油でいためる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Fry the onions until they soften."
+    },
+    {
+      "word": "gaze",
+      "meaning": "(…を)じっと見つめる,凝視する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We gaze at the stars together."
+    },
+    {
+      "word": "glance",
+      "meaning": "ちらっと見る,一目見る;(…を)ちらっと見る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I glance at the clock."
+    },
+    {
+      "word": "grab",
+      "meaning": "つかむ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Grab your coat and come outside."
+    },
+    {
+      "word": "greet",
+      "meaning": "〈人など〉にあいさつする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We greet our neighbors every morning."
+    },
+    {
+      "word": "guess",
+      "meaning": "(十分な根拠なしに)…を推測する,推量する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you guess my favorite color?"
+    },
+    {
+      "word": "handle",
+      "meaning": "扱う・対処する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please handle these plates carefully."
+    },
+    {
+      "word": "happen",
+      "meaning": "〈でき事が〉起こる,発生する,生ずる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Accidents can happen anywhere."
+    },
+    {
+      "word": "hear",
+      "meaning": "〈音〉が聞こえる,を聞く(進行形にできない)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I can hear someone singing."
+    },
+    {
+      "word": "heat",
+      "meaning": "温める・熱する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Heat the soup in a small pan."
+    },
+    {
+      "word": "hit",
+      "meaning": "〈人・物〉を打つ,なぐる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The ball hit the window."
+    },
+    {
+      "word": "hope",
+      "meaning": "…を望む,期待する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I hope you enjoy your trip."
+    },
+    {
+      "word": "hurry",
+      "meaning": "急ぐ,あわてて行く(する)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We must hurry to catch the train."
+    },
+    {
+      "word": "identify",
+      "meaning": "〈人・物〉を見分ける,〈物事〉を確認する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you identify this bird?"
+    },
+    {
+      "word": "ignore",
+      "meaning": "…を無視する,顧みない",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please don't ignore my question."
+    },
+    {
+      "word": "include",
+      "meaning": "…を含む,包含する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The price will include breakfast."
+    },
+    {
+      "word": "influence",
+      "meaning": "影響を与える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Friends can influence our choices."
+    },
+    {
+      "word": "insist",
+      "meaning": "…と強く要求する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I insist that we check the facts."
+    },
+    {
+      "word": "introduce",
+      "meaning": "〈人〉を紹介する,引き合わせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let me introduce my brother."
+    },
+    {
+      "word": "invent",
+      "meaning": "…を発明する,考え出す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She hopes to invent a useful tool."
+    },
+    {
+      "word": "iron",
+      "meaning": "アイロンをかける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I need to iron my shirt."
+    },
+    {
+      "word": "joke",
+      "meaning": "冗談を言う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We often joke about our cooking."
+    },
+    {
+      "word": "jump",
+      "meaning": "(地面などから)跳ぶ,跳躍する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The dog can jump over the fence."
+    },
+    {
+      "word": "kiss",
+      "meaning": "…に口づけする,キスする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She leaned down to kiss the baby."
+    },
+    {
+      "word": "knit",
+      "meaning": "〈織物・服など〉を編む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "My grandmother can knit warm socks."
+    },
+    {
+      "word": "knock",
+      "meaning": "(音がするくらい強く)…をたたく,打つ,なぐる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please knock before you enter."
+    },
+    {
+      "word": "lack",
+      "meaning": "…を欠く,がない(受動態にできない)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We lack enough space for another desk."
+    },
+    {
+      "word": "last",
+      "meaning": "続く・長持ちする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "These shoes should last for years."
+    },
+    {
+      "word": "lay",
+      "meaning": "置く・横たえる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Lay the blanket on the grass."
+    },
+    {
+      "word": "lean",
+      "meaning": "傾く・寄り掛かる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't lean against the wet wall."
+    },
+    {
+      "word": "lend",
+      "meaning": "貸す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Could you lend me a pen?"
+    },
+    {
+      "word": "lie",
+      "meaning": "横たわる,横になる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I want to lie on the sofa."
+    },
+    {
+      "word": "light",
+      "meaning": "明かりをつける・火をつける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's light a candle."
+    },
+    {
+      "word": "link",
+      "meaning": "つなぐ・関連付ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The bridge will link the two villages."
+    },
+    {
+      "word": "lock",
+      "meaning": "鍵を掛ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Remember to lock the front door."
+    },
+    {
+      "word": "look",
+      "meaning": "目を向ける,眺める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Look at the rainbow!"
+    },
+    {
+      "word": "lower",
+      "meaning": "下げる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please lower your voice."
+    },
+    {
+      "word": "manage",
+      "meaning": "…を管理する,運営する;…を処理する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She helps manage the family shop."
+    },
+    {
+      "word": "marry",
+      "meaning": "結婚する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They plan to marry in June."
+    },
+    {
+      "word": "measure",
+      "meaning": "測る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Measure the window before buying curtains."
+    },
+    {
+      "word": "melt",
+      "meaning": "(熱・水などによって)溶ける,溶解する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The butter will melt in the pan."
+    },
+    {
+      "word": "mind",
+      "meaning": "気にする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Do you mind if I sit here?"
+    },
+    {
+      "word": "mix",
+      "meaning": "〈複数のもの〉を混ぜ合わせる,混合する,混同する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Mix the flour and water together."
+    },
+    {
+      "word": "name",
+      "meaning": "名付ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will name the puppy Max."
+    },
+    {
+      "word": "obey",
+      "meaning": "〈人〉に服従する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Drivers must obey the traffic rules."
+    },
+    {
+      "word": "occur",
+      "meaning": "起こる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Delays often occur during heavy snow."
+    },
+    {
+      "word": "order",
+      "meaning": "注文する・命じる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I'd like to order some tea."
+    },
+    {
+      "word": "owe",
+      "meaning": "…を借りている,借金している",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I owe you ten dollars."
+    },
+    {
+      "word": "pack",
+      "meaning": "荷物を詰める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I need to pack my suitcase."
+    },
+    {
+      "word": "park",
+      "meaning": "駐車する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You can park beside the library."
+    },
+    {
+      "word": "pause",
+      "meaning": "一時止まる・間を置く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's pause for a short break."
+    },
+    {
+      "word": "perform",
+      "meaning": "行う・演じる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The children will perform a short play."
+    },
+    {
+      "word": "persuade",
+      "meaning": "〈人〉を説得する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you persuade him to join us?"
+    },
+    {
+      "word": "place",
+      "meaning": "置く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Place your bag under the seat."
+    },
+    {
+      "word": "pour",
+      "meaning": "〈液体〉を注ぐ,つぐ,流す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Pour the milk into the bowl."
+    },
+    {
+      "word": "pray",
+      "meaning": "(神に…を)祈る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They pray for peace every day."
+    },
+    {
+      "word": "predict",
+      "meaning": "(知識・経験・推論などで)…を予報する,予言する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "It is hard to predict the weather."
+    },
+    {
+      "word": "press",
+      "meaning": "(力・重量をかけて)…を押す,圧する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Press the green button to start."
+    },
+    {
+      "word": "promise",
+      "meaning": "約束する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I promise to call you tonight."
+    },
+    {
+      "word": "prove",
+      "meaning": "…を証明する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We need evidence to prove our claim."
+    },
+    {
+      "word": "pull",
+      "meaning": "〈物〉を引く,引っ張る,引いて動かす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Pull the door toward you."
+    },
+    {
+      "word": "punch",
+      "meaning": "こぶしで殴る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The boxer learned to punch the bag."
+    },
+    {
+      "word": "put",
+      "meaning": "(ある場所・位置に)…を置く,載せる,すえる,付ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Put your keys on the shelf."
+    },
+    {
+      "word": "raise",
+      "meaning": "…を上げる,持ち上げる;〈倒れた物〉を起こす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please raise your hand to answer."
+    },
+    {
+      "word": "realize",
+      "meaning": "…を完全に理解する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I realize how important this is."
+    },
+    {
+      "word": "recommend",
+      "meaning": "…を推薦する,推奨する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you recommend a good restaurant?"
+    },
+    {
+      "word": "record",
+      "meaning": "記録する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "May I record this conversation?"
+    },
+    {
+      "word": "refuse",
+      "meaning": "…を断る,拒む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You can refuse the invitation politely."
+    },
+    {
+      "word": "regret",
+      "meaning": "…を後悔する;…を残念に思う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I regret missing your concert."
+    },
+    {
+      "word": "release",
+      "meaning": "(束縛・義務などから)〈人・動物など〉を自由にする,解放する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They will release the bird tomorrow."
+    },
+    {
+      "word": "remain",
+      "meaning": "残る,存続する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please remain in your seat."
+    },
+    {
+      "word": "remove",
+      "meaning": "(…から)…を取り去る,持ち去る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Remove your shoes at the entrance."
+    },
+    {
+      "word": "rent",
+      "meaning": "借りる・貸す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We plan to rent a small apartment."
+    },
+    {
+      "word": "repeat",
+      "meaning": "〈自分がすでに一度言ったこと〉を繰り返して言う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Could you repeat the question?"
+    },
+    {
+      "word": "reply",
+      "meaning": "(…に)答える,返事する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please reply before Friday."
+    },
+    {
+      "word": "rescue",
+      "meaning": "(危険などから)…を救う,救助(救出)する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The firefighters helped rescue the family."
+    },
+    {
+      "word": "ride",
+      "meaning": "(馬・自転車・電車などに)乗って行く,乗っている;乗馬をする,馬に乗る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I ride my bike to school."
+    },
+    {
+      "word": "ring",
+      "meaning": "鳴る・鳴らす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The school bell will ring soon."
+    },
+    {
+      "word": "roll",
+      "meaning": "〈球などが〉転がる,転がって行く;〈車輪などが〉回る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The ball began to roll downhill."
+    },
+    {
+      "word": "rush",
+      "meaning": "急ぐ・急いで行く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't rush through your homework."
+    },
+    {
+      "word": "save",
+      "meaning": "救う・蓄える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I save a little money each month."
+    },
+    {
+      "word": "scare",
+      "meaning": "…をおびえさせる,こわがらせる(frighten)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Loud noises scare the puppy."
+    },
+    {
+      "word": "scratch",
+      "meaning": "(つめなど,とがった物で)…をひっかく,にひっかき傷をつける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The branches might scratch the paint."
+    },
+    {
+      "word": "search",
+      "meaning": "(…を求めて)〈ある場所・人の体など〉をくまなく捜す,徹底的に捜す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's search the room for your keys."
+    },
+    {
+      "word": "seek",
+      "meaning": "…を捜し求める,捜す;捜し出す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Many travelers seek quiet places."
+    },
+    {
+      "word": "sell",
+      "meaning": "…を売る,売却する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They sell fresh bread here."
+    },
+    {
+      "word": "set",
+      "meaning": "置く・設定する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Set your alarm for seven."
+    },
+    {
+      "word": "shake",
+      "meaning": "(前後・上下・左右などに)…を振る,揺り動かす,揺する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Shake the bottle before opening it."
+    },
+    {
+      "word": "shoot",
+      "meaning": "撃つ・撮影する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will shoot a short film here."
+    },
+    {
+      "word": "shout",
+      "meaning": "叫ぶ,大声を出す,どなる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You don't need to shout."
+    },
+    {
+      "word": "shut",
+      "meaning": "(…に対して)〈ドア・窓など〉を閉める,閉じる(close)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please shut the gate behind you."
+    },
+    {
+      "word": "sink",
+      "meaning": "沈む・沈める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Heavy stones sink in water."
+    },
+    {
+      "word": "ski",
+      "meaning": "スキーをする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We learned to ski last winter."
+    },
+    {
+      "word": "slide",
+      "meaning": "滑る,滑って進む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The children slide down the snowy hill."
+    },
+    {
+      "word": "smell",
+      "meaning": "(調べたりするために)…をかぐ,のにおいをかぐ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Stop and smell the flowers."
+    },
+    {
+      "word": "solve",
+      "meaning": "〈問題など〉を解く,解明する,解決する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you solve this puzzle?"
+    },
+    {
+      "word": "sound",
+      "meaning": "音が鳴る・〜のように聞こえる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Your plans sound exciting."
+    },
+    {
+      "word": "spend",
+      "meaning": "(…に)〈金〉を使う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I try to spend less on clothes."
+    },
+    {
+      "word": "spill",
+      "meaning": "(特に,うっかりして)〈液体・粉など〉をこぼす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Be careful not to spill your coffee."
+    },
+    {
+      "word": "spread",
+      "meaning": "〈たたんだ物など〉を広げる,伸ばす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Spread the blanket on the floor."
+    },
+    {
+      "word": "stay",
+      "meaning": "とどまる,いる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You can stay with us tonight."
+    },
+    {
+      "word": "step",
+      "meaning": "足を踏み出す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please step away from the edge."
+    },
+    {
+      "word": "stir",
+      "meaning": "…をかき混ぜる,かき回す;…を(…に入れて)かき混ぜる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Stir the soup with a wooden spoon."
+    },
+    {
+      "word": "stop",
+      "meaning": "〈動いているもの〉を止める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Stop the car at the red light."
+    },
+    {
+      "word": "strike",
+      "meaning": "〈人〉をなぐる;〈物〉をたたく,打つ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Strike the drum with this stick."
+    },
+    {
+      "word": "succeed",
+      "meaning": "〈計画などが〉成功する,うまくいく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "With practice, you can succeed."
+    },
+    {
+      "word": "suggest",
+      "meaning": "〈考え・計画など〉を提案する,言い出す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I suggest taking an earlier train."
+    },
+    {
+      "word": "support",
+      "meaning": "…を支える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "These wooden posts support the roof."
+    },
+    {
+      "word": "suppose",
+      "meaning": "(議論のために)…と仮定する,考えてみる;…であるとする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Suppose we miss the last bus."
+    },
+    {
+      "word": "surround",
+      "meaning": "…を囲む,取り巻く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Tall trees surround the house."
+    },
+    {
+      "word": "swallow",
+      "meaning": "飲み込む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "It hurts to swallow food."
+    },
+    {
+      "word": "swim",
+      "meaning": "泳ぐ,水泳をする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you swim across the pool?"
+    },
+    {
+      "word": "switch",
+      "meaning": "切り替える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's switch to a quieter room."
+    },
+    {
+      "word": "talk",
+      "meaning": "話す,しゃべる,物を言う,口を利く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We need to talk about tomorrow."
+    },
+    {
+      "word": "tear",
+      "meaning": "裂く・破る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't tear the paper."
+    },
+    {
+      "word": "thank",
+      "meaning": "(…のことで)〈人〉に感謝する,礼を言う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I want to thank everyone for coming."
+    },
+    {
+      "word": "throw",
+      "meaning": "…を投げる,ほうる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Throw the ball to me."
+    },
+    {
+      "word": "touch",
+      "meaning": "〈人が〉(手・指などで)…をさわる,に触れる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please don't touch the wet paint."
+    },
+    {
+      "word": "translate",
+      "meaning": "(ある言語から他の言語へ)〈話・文章〉を翻訳する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you translate this letter into English?"
+    },
+    {
+      "word": "treat",
+      "meaning": "扱う・治療する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please treat everyone with respect."
+    },
+    {
+      "word": "try",
+      "meaning": "試みる・やってみる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's try a different route."
+    },
+    {
+      "word": "type",
+      "meaning": "文字を入力する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Type your name in this box."
+    },
+    {
+      "word": "unite",
+      "meaning": "一つにする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Music can unite people from different backgrounds."
+    },
+    {
+      "word": "update",
+      "meaning": "…を最新のものにする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please update your contact details."
+    },
+    {
+      "word": "upset",
+      "meaning": "…をひっくり返す,転覆させる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "A sudden gust could upset the small boat."
+    },
+    {
+      "word": "value",
+      "meaning": "大切にする・評価する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I value the time we spend together."
+    },
+    {
+      "word": "vote",
+      "meaning": "投票する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You can vote at the town hall."
+    },
+    {
+      "word": "waste",
+      "meaning": "(…に)〈金・時間・労力など〉をむだに使う,浪費する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't waste water while brushing your teeth."
+    },
+    {
+      "word": "wave",
+      "meaning": "(前後左右・上下に)揺れる,ひらめく,ひらひらする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The flags wave in the wind."
+    },
+    {
+      "word": "weigh",
+      "meaning": "…の重さを計る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please weigh the apples on this scale."
+    },
+    {
+      "word": "whisper",
+      "meaning": "ささやく,ひそひそ話す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We whisper because the baby is sleeping."
+    },
+    {
+      "word": "wish",
+      "meaning": "…であればよいのにと思う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I wish I could stay longer."
+    },
+    {
+      "word": "worry",
+      "meaning": "心配する,くよくよする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't worry about being late."
+    },
+    {
+      "word": "yield",
+      "meaning": "…を産出する,生ずる(produce);〈利益など〉を生む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "These trees yield plenty of fruit."
+    },
+    {
+      "word": "zoom",
+      "meaning": "〈飛行機が〉急上昇する;(一般に)急上昇する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We watched the plane zoom into the sky."
+    },
+    {
+      "word": "accompany",
+      "meaning": "〈人など〉に同行する,随行する,ついて行く(go with)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "May I accompany you to the station?"
+    },
+    {
+      "word": "accuse",
+      "meaning": "(…の罪で)〈人〉を告発する,告訴する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You should not accuse anyone without evidence."
+    },
+    {
+      "word": "address",
+      "meaning": "話し掛ける・取り組む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We need to address this issue soon."
+    },
+    {
+      "word": "affect",
+      "meaning": "影響を与える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Heavy rain can affect train services."
+    },
+    {
+      "word": "amuse",
+      "meaning": "(…で)〈人,自分自身〉を楽しませる,おかしがらせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The clown tried to amuse the children."
+    },
+    {
+      "word": "appeal",
+      "meaning": "訴える,呼びかける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We appeal to everyone to save water."
+    },
+    {
+      "word": "assess",
+      "meaning": "評価する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The teacher will assess our progress."
+    },
+    {
+      "word": "assume",
+      "meaning": "仮定する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't assume that everyone agrees."
+    },
+    {
+      "word": "astonish",
+      "meaning": "…をびっくりさせる,驚かせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "His magic tricks never fail to astonish me."
+    },
+    {
+      "word": "bat",
+      "meaning": "バットで打つ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "It's your turn to bat."
+    },
+    {
+      "word": "bloom",
+      "meaning": "花が咲く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "These flowers bloom in early spring."
+    },
+    {
+      "word": "broadcast",
+      "meaning": "(ラジオ・テレビで)〈情報・音楽など〉を放送する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They will broadcast the concert live."
+    },
+    {
+      "word": "capture",
+      "meaning": "〈動物・犯人・敵兵など〉を捕える,つかまえる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The rescuers managed to capture the injured bird."
+    },
+    {
+      "word": "charge",
+      "meaning": "請求する・充電する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I need to charge my phone."
+    },
+    {
+      "word": "choke",
+      "meaning": "…を息を止める,を窒息させる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Thick smoke can choke anyone inside."
+    },
+    {
+      "word": "claim",
+      "meaning": "〈人が〉(当然の権利として)…を要求する,請求する,を自分の物だと主張する;(…から)…を要求する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please claim your prize at the desk."
+    },
+    {
+      "word": "click",
+      "meaning": "クリックする・カチッと音がする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Click the blue button to continue."
+    },
+    {
+      "word": "collapse",
+      "meaning": "〈家・いすなどが〉つぶれる,陥没する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The old roof might collapse."
+    },
+    {
+      "word": "command",
+      "meaning": "…を命令する,命じる;…に命令する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The officer will command the soldiers to halt."
+    },
+    {
+      "word": "communicate",
+      "meaning": "〈知識・情報・思想など〉を伝える,伝達する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Pictures can communicate ideas without words."
+    },
+    {
+      "word": "consult",
+      "meaning": "(…についての意見,情報などを)…に頼る,求める,相談する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please consult the guide before you start."
+    },
+    {
+      "word": "contribute",
+      "meaning": "貢献する・寄付する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Everyone can contribute to the discussion."
+    },
+    {
+      "word": "convince",
+      "meaning": "〈人〉を納得させる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The results will convince you."
+    },
+    {
+      "word": "cope",
+      "meaning": "対抗する;(難局に)対処する,打ち勝つ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She learned to cope with stress."
+    },
+    {
+      "word": "create",
+      "meaning": "(神・自分などが)…を創造する,産み出す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's create a garden behind the school."
+    },
+    {
+      "word": "creep",
+      "meaning": "〈動物・昆虫などが〉はう,〈赤ん坊などが〉腹ばいにはう",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We watched a beetle creep across a leaf."
+    },
+    {
+      "word": "damage",
+      "meaning": "損害を与える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Too much sunlight can damage the fabric."
+    },
+    {
+      "word": "decide",
+      "meaning": "決める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We must decide where to meet."
+    },
+    {
+      "word": "define",
+      "meaning": "定義する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you define this word?"
+    },
+    {
+      "word": "deny",
+      "meaning": "…を否定する,否認する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "He did not deny making the mistake."
+    },
+    {
+      "word": "deserve",
+      "meaning": "〈賞罰・評価など〉に値する,を受ける価値がある(進行形にできない)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You deserve a break after all that work."
+    },
+    {
+      "word": "develop",
+      "meaning": "発展させる・開発する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They hope to develop a better battery."
+    },
+    {
+      "word": "direct",
+      "meaning": "指示する・案内する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "A sign will direct you to reception."
+    },
+    {
+      "word": "disappoint",
+      "meaning": "〈人〉を失望させる,がっかりさせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I don't want to disappoint my team."
+    },
+    {
+      "word": "display",
+      "meaning": "〈物〉を展示する,陳列する(exhibit)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They display local paintings in the cafe."
+    },
+    {
+      "word": "dive",
+      "meaning": "(…から水中などに)頭から飛び込む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We watched the swimmers dive into the pool."
+    },
+    {
+      "word": "drain",
+      "meaning": "(液体を)…から排出する;(…から)〈液体〉を排出する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Drain the pasta before adding the sauce."
+    },
+    {
+      "word": "educate",
+      "meaning": "…を教育する,教え込む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Museums help educate people about history."
+    },
+    {
+      "word": "embrace",
+      "meaning": "(愛情の表れとして)…を抱きしめる,抱擁する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She ran to embrace her sister."
+    },
+    {
+      "word": "employ",
+      "meaning": "(…として)〈人〉を雇う(hire)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The shop will employ two new assistants."
+    },
+    {
+      "word": "end",
+      "meaning": "終わる・終える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's end the meeting here."
+    },
+    {
+      "word": "enforce",
+      "meaning": "〈法律など〉を実施する,施行する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The staff enforce the safety rules."
+    },
+    {
+      "word": "enhance",
+      "meaning": "高める・向上させる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Fresh herbs enhance the flavor."
+    },
+    {
+      "word": "establish",
+      "meaning": "…を設立する,創設する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They hope to establish a community library."
+    },
+    {
+      "word": "evaluate",
+      "meaning": "…を評価する,の数量を見積る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will evaluate the results tomorrow."
+    },
+    {
+      "word": "explore",
+      "meaning": "〈未知・未調査の場所〉を探検する,実地調査する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's explore the old town."
+    },
+    {
+      "word": "extend",
+      "meaning": "(…まで)〈距離・期間など〉を延ばす,延長する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can we extend our stay by one night?"
+    },
+    {
+      "word": "focus",
+      "meaning": "集中する・焦点を合わせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please focus on one task at a time."
+    },
+    {
+      "word": "function",
+      "meaning": "機能する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The machine cannot function without electricity."
+    },
+    {
+      "word": "guarantee",
+      "meaning": "保証する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We guarantee that the parts will fit."
+    },
+    {
+      "word": "heal",
+      "meaning": "治す・癒やす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The cut will take time to heal."
+    },
+    {
+      "word": "hesitate",
+      "meaning": "ためらう,ちゅうちょする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please don't hesitate to ask questions."
+    },
+    {
+      "word": "illustrate",
+      "meaning": "…を説明する,例証する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "This picture will illustrate my point."
+    },
+    {
+      "word": "improve",
+      "meaning": "…をもっとよくする,改良する,改善する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Daily practice can improve your writing."
+    },
+    {
+      "word": "injure",
+      "meaning": "…を傷つける,に損害を与える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Broken glass can injure your feet."
+    },
+    {
+      "word": "inspect",
+      "meaning": "…を検査する,念入りに調べる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We inspect the equipment every morning."
+    },
+    {
+      "word": "interrupt",
+      "meaning": "(行動や話の途中で)〈人〉をさえぎる,妨げる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please don't interrupt while she is speaking."
+    },
+    {
+      "word": "involve",
+      "meaning": "(必然的に)…を伴う,引き起こす,含む(受動態にできない)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The repairs will involve some extra work."
+    },
+    {
+      "word": "jog",
+      "meaning": "ゆっくり走る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I jog around the park each morning."
+    },
+    {
+      "word": "leak",
+      "meaning": "漏れる・漏らす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The old pipe may leak again."
+    },
+    {
+      "word": "maintain",
+      "meaning": "〈ある状態・動作〉を維持する,続ける,保つ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We need to maintain a steady speed."
+    },
+    {
+      "word": "march",
+      "meaning": "行進する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The band will march through the town."
+    },
+    {
+      "word": "mend",
+      "meaning": "…を直す,修繕する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you mend this torn pocket?"
+    },
+    {
+      "word": "motivate",
+      "meaning": "〈物事〉の動機となる,を動機づけする;〈人〉に動機を与える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Clear goals help motivate the team."
+    },
+    {
+      "word": "observe",
+      "meaning": "…を観察する,注意して見る;…を見て気づく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We observe the birds from a distance."
+    },
+    {
+      "word": "oppose",
+      "meaning": "…に反対する,抵抗する(object to)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Many residents oppose the new road."
+    },
+    {
+      "word": "participate",
+      "meaning": "(…に)参加する,加わる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Everyone is welcome to participate in the game."
+    },
+    {
+      "word": "peel",
+      "meaning": "皮をむく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Peel the potatoes before boiling them."
+    },
+    {
+      "word": "plant",
+      "meaning": "植える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will plant a tree this weekend."
+    },
+    {
+      "word": "pop",
+      "meaning": "ポンと音がする;ポンとはじける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The bubbles pop when you touch them."
+    },
+    {
+      "word": "postpone",
+      "meaning": "…を延期する,延ばす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We may postpone the picnic until Sunday."
+    },
+    {
+      "word": "preserve",
+      "meaning": "(損傷・危害などから)…を守る,保護する(save)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The museum helps preserve local history."
+    },
+    {
+      "word": "pretend",
+      "meaning": "…のふりをする,に見せかける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's pretend we are on the moon."
+    },
+    {
+      "word": "process",
+      "meaning": "処理する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The office will process your application."
+    },
+    {
+      "word": "progress",
+      "meaning": "進歩する・前進する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Students progress at different speeds."
+    },
+    {
+      "word": "propose",
+      "meaning": "…を提案する,申し出る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I propose a short break."
+    },
+    {
+      "word": "pump",
+      "meaning": "ポンプでくみ上げる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They pump water from the well."
+    },
+    {
+      "word": "purchase",
+      "meaning": "…を買う,購入する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You can purchase tickets at the entrance."
+    },
+    {
+      "word": "question",
+      "meaning": "質問する・疑問を持つ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't be afraid to question the decision."
+    },
+    {
+      "word": "recall",
+      "meaning": "…を思い出す,…が思い出される",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I cannot recall his name."
+    },
+    {
+      "word": "recycle",
+      "meaning": "〈廃物など〉を再利用する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We recycle paper and glass."
+    },
+    {
+      "word": "reflect",
+      "meaning": "〈光・熱・音など〉を反射する,はね返す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Mirrors reflect light."
+    },
+    {
+      "word": "register",
+      "meaning": "登録する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You can register for the class online."
+    },
+    {
+      "word": "relax",
+      "meaning": "〈緊張・力など〉をゆるめる,和らげる(loosen)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Take a deep breath and relax."
+    },
+    {
+      "word": "renew",
+      "meaning": "…を新しくする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I need to renew my library card."
+    },
+    {
+      "word": "research",
+      "meaning": "調査する・研究する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will research the history of this building."
+    },
+    {
+      "word": "resolve",
+      "meaning": "…を決心する,決意する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I resolve to practice every day."
+    },
+    {
+      "word": "retain",
+      "meaning": "…を持ち続ける,保持する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "This bottle helps retain the heat."
+    },
+    {
+      "word": "retire",
+      "meaning": "(…から)引退する,退職する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She plans to retire next year."
+    },
+    {
+      "word": "review",
+      "meaning": "…を調べ直す,再検討する;〈学科など〉を復習する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's review yesterday's lesson."
+    },
+    {
+      "word": "rinse",
+      "meaning": "…をすすぎ(ゆすぎ)洗いする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Rinse the cup with clean water."
+    },
+    {
+      "word": "rotate",
+      "meaning": "回転する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The wheels rotate smoothly."
+    },
+    {
+      "word": "select",
+      "meaning": "(最高・最適のものとして)…を選ぶ,選抜する,選出する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please select your preferred language."
+    },
+    {
+      "word": "separate",
+      "meaning": "…を分離する,引き分ける;(…から)…を引き分ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Separate the white clothes from the colored ones."
+    },
+    {
+      "word": "sew",
+      "meaning": "縫い物をする,ミシンをかける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "My father taught me to sew."
+    },
+    {
+      "word": "shave",
+      "meaning": "〈ひげなど〉をそる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "He needs to shave his beard."
+    },
+    {
+      "word": "shift",
+      "meaning": "〈人・場所・位置など〉を移し替える,置き換える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's shift the sofa toward the window."
+    },
+    {
+      "word": "sign",
+      "meaning": "署名する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please sign your name here."
+    },
+    {
+      "word": "simplify",
+      "meaning": "…を簡単にする,平易にする,単純にする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We should simplify these instructions."
+    },
+    {
+      "word": "smash",
+      "meaning": "打ち砕く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The falling branch could smash the window."
+    },
+    {
+      "word": "spare",
+      "meaning": "割く・取っておく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you spare a few minutes?"
+    },
+    {
+      "word": "speed",
+      "meaning": "急ぐ・加速する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't speed on this narrow road."
+    },
+    {
+      "word": "stare",
+      "meaning": "(…を)(目を大きく開いて)じっと見つめる,じろじろ見る,凝視する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "It is rude to stare at strangers."
+    },
+    {
+      "word": "stress",
+      "meaning": "強調する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I want to stress the importance of practice."
+    },
+    {
+      "word": "submit",
+      "meaning": "提出する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please submit your essay by Friday."
+    },
+    {
+      "word": "summon",
+      "meaning": "呼び出す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Ring the bell to summon an attendant."
+    },
+    {
+      "word": "tend",
+      "meaning": "〜する傾向がある",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I tend to wake up early."
+    },
+    {
+      "word": "threaten",
+      "meaning": "(…で)〈人〉を脅す,脅迫する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Storms threaten the coastal villages."
+    },
+    {
+      "word": "tickle",
+      "meaning": "〈人・身体の一部など〉をくすぐる,むずむずさせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't tickle my feet!"
+    },
+    {
+      "word": "tidy",
+      "meaning": "片付ける・整える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Let's tidy the room before dinner."
+    },
+    {
+      "word": "transfer",
+      "meaning": "(…から…へ)〈人・物〉を移す,移転させる,乗り換えさせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Transfer the photos to your computer."
+    },
+    {
+      "word": "transport",
+      "meaning": "(ある場所からある場所へ)…を輸送する,運搬する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Trucks transport vegetables to the market."
+    },
+    {
+      "word": "tremble",
+      "meaning": "(恐怖・興奮・寒さなどで)〈身体・声などが〉震える",
+      "tags": [
+        "動詞"
+      ],
+      "example": "My hands tremble when I am nervous."
+    },
+    {
+      "word": "trim",
+      "meaning": "(切ったり刈ったりして)…の形を整える,をこぎれいにする,手入れする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please trim the hedge beside the gate."
+    },
+    {
+      "word": "trouble",
+      "meaning": "困らせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I don't want to trouble you again."
+    },
+    {
+      "word": "undo",
+      "meaning": "〈結び目など〉を開く,ゆるめる,〈ボタンなど〉をはずす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Can you undo this tight knot?"
+    },
+    {
+      "word": "vacuum",
+      "meaning": "掃除機をかける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I vacuum the carpet every Saturday."
+    },
+    {
+      "word": "vary",
+      "meaning": "(…から…に)変わる,変化する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Prices vary from shop to shop."
+    },
+    {
+      "word": "volunteer",
+      "meaning": "進んで申し出る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I will volunteer to help with lunch."
+    },
+    {
+      "word": "wander",
+      "meaning": "あてもなく歩き回る,さまよう",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We wander through the narrow streets."
+    },
+    {
+      "word": "water",
+      "meaning": "水をやる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please water the plants while I'm away."
+    },
+    {
+      "word": "wipe",
+      "meaning": "〈物など〉をふく,ぬぐう",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Wipe the table with a damp cloth."
+    },
+    {
+      "word": "witness",
+      "meaning": "目撃する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Did anyone witness the accident?"
+    },
+    {
+      "word": "yawn",
+      "meaning": "あくびをする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I always yawn during late meetings."
+    },
+    {
+      "word": "ache",
+      "meaning": "(継続的に鈍く)〈人が〉痛みを感じる,〈身体が〉痛む,うずく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "My feet ache after the long walk."
+    },
+    {
+      "word": "activate",
+      "meaning": "…を活動的にする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Press this button to activate the alarm."
+    },
+    {
+      "word": "arise",
+      "meaning": "〈問題・事件などが〉起こる,現れる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "New questions may arise during the discussion."
+    },
+    {
+      "word": "await",
+      "meaning": "〈人が〉…を待つ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We await your reply."
+    },
+    {
+      "word": "bind",
+      "meaning": "(ひもで)…をしばる,を束ねる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Bind the sticks together with string."
+    },
+    {
+      "word": "board",
+      "meaning": "乗り物に乗る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will board the plane soon."
+    },
+    {
+      "word": "border",
+      "meaning": "接する・縁取る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Flower beds border the path."
+    },
+    {
+      "word": "breed",
+      "meaning": "〈動物が〉子を生む,繁殖する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "These birds breed near the lake."
+    },
+    {
+      "word": "browse",
+      "meaning": "漫然とながめる,ざっと目を通す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I like to browse the shelves here."
+    },
+    {
+      "word": "calm",
+      "meaning": "落ち着かせる・落ち着く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Music helps calm the baby."
+    },
+    {
+      "word": "cast",
+      "meaning": "…を投げる,ほうる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The fisherman will cast his net again."
+    },
+    {
+      "word": "check",
+      "meaning": "確認する・点検する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please check the address before leaving."
+    },
+    {
+      "word": "clip",
+      "meaning": "留める・刈り込む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Clip the papers together."
+    },
+    {
+      "word": "comb",
+      "meaning": "くしでとかす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I comb my hair after washing it."
+    },
+    {
+      "word": "copy",
+      "meaning": "写す・複写する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please copy this sentence into your notebook."
+    },
+    {
+      "word": "crown",
+      "meaning": "王冠をかぶせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They will crown the new king tomorrow."
+    },
+    {
+      "word": "curl",
+      "meaning": "巻く・丸まる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The dry leaves begin to curl."
+    },
+    {
+      "word": "cycle",
+      "meaning": "自転車に乗る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We cycle to the beach on Sundays."
+    },
+    {
+      "word": "dash",
+      "meaning": "突進する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I had to dash to catch the bus."
+    },
+    {
+      "word": "defeat",
+      "meaning": "(戦いや試合で)〈相手〉を負かす,打ち破る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Our team hopes to defeat the champions."
+    },
+    {
+      "word": "desert",
+      "meaning": "見捨てる・立ち去る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "A loyal friend will not desert you."
+    },
+    {
+      "word": "differ",
+      "meaning": "違う,異なる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Our opinions differ on this issue."
+    },
+    {
+      "word": "dim",
+      "meaning": "暗くする・薄暗くなる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please dim the lights for the film."
+    },
+    {
+      "word": "double",
+      "meaning": "倍にする・倍になる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You can double the recipe for eight people."
+    },
+    {
+      "word": "drown",
+      "meaning": "…を溺死(できし)させる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The flood threatened to drown the trapped animals."
+    },
+    {
+      "word": "dust",
+      "meaning": "ほこりを払う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I dust the shelves every week."
+    },
+    {
+      "word": "elbow",
+      "meaning": "ひじで押し分けて進む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "He tried to elbow his way through the crowd."
+    },
+    {
+      "word": "empty",
+      "meaning": "空にする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please empty the bin."
+    },
+    {
+      "word": "encounter",
+      "meaning": "…に偶然出会う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You may encounter deer along this trail."
+    },
+    {
+      "word": "equip",
+      "meaning": "備え付ける・装備する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will equip the room with new computers."
+    },
+    {
+      "word": "explode",
+      "meaning": "〈火薬など爆発物が〉爆発する,破裂する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The fireworks explode above the river."
+    },
+    {
+      "word": "fancy",
+      "meaning": "欲しいと思う・空想する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Do you fancy a cup of tea?"
+    },
+    {
+      "word": "filter",
+      "meaning": "ろ過する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "This device can filter the water."
+    },
+    {
+      "word": "flap",
+      "meaning": "〈帆・旗などが〉はためく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The flags flap in the wind."
+    },
+    {
+      "word": "flee",
+      "meaning": "(…から)逃げる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The rabbits flee when they hear us."
+    },
+    {
+      "word": "flicker",
+      "meaning": "〈火・炎・光が〉ゆらめく,ちらちらする,明滅する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The candles flicker in the breeze."
+    },
+    {
+      "word": "flow",
+      "meaning": "〈気体・液体・電気などが〉流れる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Small streams flow into the lake."
+    },
+    {
+      "word": "flush",
+      "meaning": "〈顔が〉赤らむ,〈人が〉赤面する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Her cheeks flush when she feels embarrassed."
+    },
+    {
+      "word": "frame",
+      "meaning": "枠にはめる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I want to frame this photograph."
+    },
+    {
+      "word": "fund",
+      "meaning": "資金を提供する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The town will fund the new playground."
+    },
+    {
+      "word": "glue",
+      "meaning": "のりで貼る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Glue the two pieces together."
+    },
+    {
+      "word": "grind",
+      "meaning": "(粉などに)〈穀物など〉をひく,細かく砕く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Grind the coffee beans just before brewing."
+    },
+    {
+      "word": "grip",
+      "meaning": "しっかり握る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Grip the handle firmly."
+    },
+    {
+      "word": "hand",
+      "meaning": "手渡す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please hand me the towel."
+    },
+    {
+      "word": "hire",
+      "meaning": "〈人〉を雇う",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We need to hire another teacher."
+    },
+    {
+      "word": "import",
+      "meaning": "(…から)…を輸入する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They import coffee from Brazil."
+    },
+    {
+      "word": "inject",
+      "meaning": "(…に)〈液体など〉を注射する,注入する;(…を)…に注射する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The nurse will inject the medicine slowly."
+    },
+    {
+      "word": "install",
+      "meaning": "〈装置など〉を取り付ける,設備する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They will install a new oven tomorrow."
+    },
+    {
+      "word": "invest",
+      "meaning": "(…に)〈金など〉を投資する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The company will invest in better equipment."
+    },
+    {
+      "word": "jam",
+      "meaning": "詰め込む・詰まらせる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't jam too many papers into the drawer."
+    },
+    {
+      "word": "level",
+      "meaning": "平らにする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We need to level the ground first."
+    },
+    {
+      "word": "loosen",
+      "meaning": "…を緩める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Loosen the knot a little."
+    },
+    {
+      "word": "mask",
+      "meaning": "覆い隠す",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The loud music could mask the alarm."
+    },
+    {
+      "word": "matter",
+      "meaning": "重要である",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Your opinions matter to us."
+    },
+    {
+      "word": "misunderstand",
+      "meaning": "…を誤解する,思い違いをする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "It is easy to misunderstand a short message."
+    },
+    {
+      "word": "nail",
+      "meaning": "くぎで打ち付ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Nail the board to the wooden frame."
+    },
+    {
+      "word": "nest",
+      "meaning": "巣を作る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Swallows nest under our roof."
+    },
+    {
+      "word": "nurse",
+      "meaning": "看護する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She helped nurse the injured bird."
+    },
+    {
+      "word": "object",
+      "meaning": "反対する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I object to the extra charge."
+    },
+    {
+      "word": "omit",
+      "meaning": "(…から)…を省略する,省く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You may omit the optional questions."
+    },
+    {
+      "word": "overturn",
+      "meaning": "…をひっくり返す(turn over)",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Strong waves could overturn the boat."
+    },
+    {
+      "word": "paddle",
+      "meaning": "パドルでこぐ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We paddle quietly across the lake."
+    },
+    {
+      "word": "pedal",
+      "meaning": "ペダルをこぐ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "You must pedal harder going uphill."
+    },
+    {
+      "word": "pin",
+      "meaning": "ピンで留める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Pin the notice to the board."
+    },
+    {
+      "word": "pipe",
+      "meaning": "管で送る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "They pipe water from the reservoir."
+    },
+    {
+      "word": "plan",
+      "meaning": "計画する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We plan to visit Kyoto in April."
+    },
+    {
+      "word": "plug",
+      "meaning": "栓をする・差し込む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Plug the cable into your computer."
+    },
+    {
+      "word": "poke",
+      "meaning": "(とがったもので)…を突く,つつく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't poke the sleeping dog."
+    },
+    {
+      "word": "pose",
+      "meaning": "(絵や写真のモデルとして)姿勢をとる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The family will pose for a photograph."
+    },
+    {
+      "word": "prick",
+      "meaning": "(…で)…をちくりと刺す,突く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "A sharp thorn can prick your finger."
+    },
+    {
+      "word": "protest",
+      "meaning": "抗議する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Residents plan to protest against the closure."
+    },
+    {
+      "word": "race",
+      "meaning": "競走する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The children race across the field."
+    },
+    {
+      "word": "rank",
+      "meaning": "順位を付ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please rank these options by importance."
+    },
+    {
+      "word": "recharge",
+      "meaning": "〈バッテリー〉に再充電する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I need to recharge the battery."
+    },
+    {
+      "word": "recite",
+      "meaning": "(人の前で)…を暗唱する,朗読する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She can recite the poem from memory."
+    },
+    {
+      "word": "resist",
+      "meaning": "…をこらえる,がまんする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I cannot resist fresh bread."
+    },
+    {
+      "word": "return",
+      "meaning": "(…から元の場所・状態などに)帰る,戻る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We will return before sunset."
+    },
+    {
+      "word": "revise",
+      "meaning": "〈本など〉を改訂する,修正する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please revise the final paragraph."
+    },
+    {
+      "word": "rip",
+      "meaning": "…を裂く,破る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Be careful not to rip the bag."
+    },
+    {
+      "word": "rock",
+      "meaning": "揺れる・揺らす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The waves gently rock the boat."
+    },
+    {
+      "word": "rule",
+      "meaning": "支配する・統治する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The king will rule the country."
+    },
+    {
+      "word": "scrape",
+      "meaning": "(堅い物などにぶつかって)…にすり傷をつける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I don't want to scrape my knee again."
+    },
+    {
+      "word": "screw",
+      "meaning": "ねじで留める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Screw the bracket to the wall."
+    },
+    {
+      "word": "shiver",
+      "meaning": "(寒さ・恐れなどで)震える,おののく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I shiver in the cold wind."
+    },
+    {
+      "word": "shrink",
+      "meaning": "〈布などが〉縮む",
+      "tags": [
+        "動詞"
+      ],
+      "example": "This shirt may shrink in hot water."
+    },
+    {
+      "word": "signal",
+      "meaning": "合図する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Raise your hand to signal for help."
+    },
+    {
+      "word": "slam",
+      "meaning": "〈戸・窓など〉をピシャリ(バタン)と閉める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please don't slam the door."
+    },
+    {
+      "word": "smile",
+      "meaning": "ほほえむ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Your letters always make me smile."
+    },
+    {
+      "word": "sniff",
+      "meaning": "(…を)かぐ,〈犬が〉(…を)くんくんかぐ",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The dogs sniff the ground."
+    },
+    {
+      "word": "snore",
+      "meaning": "いびきをかく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I sometimes snore when I am tired."
+    },
+    {
+      "word": "sow",
+      "meaning": "…の種をまく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We sow carrot seeds in spring."
+    },
+    {
+      "word": "splash",
+      "meaning": "水などをはねかける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Don't splash water on my book."
+    },
+    {
+      "word": "spring",
+      "meaning": "跳ぶ,跳ねる,跳躍する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The cat can spring onto the wall."
+    },
+    {
+      "word": "stamp",
+      "meaning": "〈地面・床など〉を踏みつける;〈足〉を踏み鳴らす;…を踏みにじる,踏みつぶす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The dancers stamp their feet in rhythm."
+    },
+    {
+      "word": "steer",
+      "meaning": "〈船・車・飛行機など〉のかじをとる,を操縦する;〈人〉を操る",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Steer the boat toward the shore."
+    },
+    {
+      "word": "stroll",
+      "meaning": "ぶらぶら歩く,散歩する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "We stroll through the park after dinner."
+    },
+    {
+      "word": "suit",
+      "meaning": "似合う・適する",
+      "tags": [
+        "動詞"
+      ],
+      "example": "That blue shirt will suit you."
+    },
+    {
+      "word": "tap",
+      "meaning": "…の(…を)軽く打つ;(…に)…をトントン(コツコツ)と打ちつける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Tap the screen twice to open it."
+    },
+    {
+      "word": "thaw",
+      "meaning": "〈氷・雪などが〉解ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The snow will thaw in the sunshine."
+    },
+    {
+      "word": "tip",
+      "meaning": "傾ける・傾く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Tip the bottle gently to pour."
+    },
+    {
+      "word": "toast",
+      "meaning": "こんがり焼く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "I toast my bread until golden."
+    },
+    {
+      "word": "tow",
+      "meaning": "(ロープや鎖で)〈自動車など〉を引く,引っ張って行く",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The truck will tow our broken car."
+    },
+    {
+      "word": "trap",
+      "meaning": "わなに掛ける",
+      "tags": [
+        "動詞"
+      ],
+      "example": "The rescuers need to trap the injured cat."
+    },
+    {
+      "word": "twist",
+      "meaning": "〈糸・なわなど〉をよる,より合わせる,(糸・なわなどに)…をよる",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Twist the threads together to make a cord."
+    },
+    {
+      "word": "untie",
+      "meaning": "〈結び目・包みなど〉を解く,ほどく",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Please untie the ribbon carefully."
+    },
+    {
+      "word": "wag",
+      "meaning": "〈頭・尾など〉を振る,揺り動かす",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Dogs often wag their tails when happy."
+    },
+    {
+      "word": "wink",
+      "meaning": "(合図として)(…に)目くばせする,ウインクする",
+      "tags": [
+        "動詞"
+      ],
+      "example": "She would wink at me after each joke."
+    },
+    {
+      "word": "zip",
+      "meaning": "ファスナーを閉める",
+      "tags": [
+        "動詞"
+      ],
+      "example": "Zip your jacket before going outside."
+    }
+  ]
+}

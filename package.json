@@ -1,26 +1,43 @@
 {
   "name": "azuki",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && node scripts/generate-service-worker.mjs",
-    "start": "npx serve out",
-    "lint": "eslint ."
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "test": "vitest run",
+    "dev:api": "wrangler dev --config wrangler.api.jsonc --port 8787",
+    "db:local": "wrangler d1 migrations apply azuki-db --local --config wrangler.api.jsonc",
+    "db:remote": "wrangler d1 migrations apply azuki-db --remote --config wrangler.api.jsonc",
+    "deploy:api": "wrangler deploy --config wrangler.api.jsonc",
+    "deploy:web": "npm run build && wrangler pages deploy dist --project-name azuki --branch main",
+    "content:build": "node --experimental-strip-types scripts/build-official-seed.mjs",
+    "content:local": "npm run content:build && wrangler d1 execute azuki-db --local --config wrangler.api.jsonc --file content/official/seed.sql",
+    "content:remote": "npm run content:build && wrangler d1 execute azuki-db --remote --config wrangler.api.jsonc --file content/official/seed.sql"
   },
   "dependencies": {
-    "next": "^16.2.2",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "firebase": "^12.19.0",
+    "jose": "^6.2.12",
+    "lucide-react": "^1.52.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.14",
-    "@types/node": "^24.10.0",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "eslint": "^9.39.1",
-    "eslint-config-next": "^16.2.2",
-    "tailwindcss": "^4.1.14",
-    "typescript": "^5.9.3"
+    "@cloudflare/workers-types": "^5.20261005.1",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "happy-dom": "^20.14.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3",
+    "wrangler": "^4.147.0"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.13.6"
   }
 }

@@ -1,0 +1,4015 @@
+{
+  "schemaVersion": 1,
+  "title": "仕事のやりとり英単語 500",
+  "description": "会議や予定調整から、契約、会計、組織、業務の道具まで。仕事の語彙を広げる500語です。",
+  "textbookTags": [
+    {
+      "name": "仕事"
+    },
+    {
+      "name": "英語語彙"
+    }
+  ],
+  "words": [
+    {
+      "word": "office",
+      "meaning": "事務所・オフィス",
+      "example": "Our office is near the station.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "company",
+      "meaning": "会社",
+      "example": "She works for a small company.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "colleague",
+      "meaning": "同僚",
+      "example": "I had lunch with a colleague.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "customer",
+      "meaning": "顧客・お客さま",
+      "example": "The customer has a question.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "manager",
+      "meaning": "管理者・支配人",
+      "example": "Please ask the manager.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "team",
+      "meaning": "チーム・一緒に働く仲間",
+      "example": "We work well as a team.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "meeting",
+      "meaning": "会議・会合",
+      "example": "The meeting starts at ten.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "schedule",
+      "meaning": "予定・スケジュール",
+      "example": "Let me check my schedule.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "appointment",
+      "meaning": "会う約束",
+      "example": "I have an appointment at two.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "deadline",
+      "meaning": "締め切り",
+      "example": "The deadline is Friday.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "project",
+      "meaning": "計画・プロジェクト",
+      "example": "We are working on a new project.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "task",
+      "meaning": "作業・任された仕事",
+      "example": "This task takes about an hour.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "plan",
+      "meaning": "計画",
+      "example": "What is the plan for tomorrow?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "report",
+      "meaning": "報告・報告書",
+      "example": "Please read the report before the meeting.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "document",
+      "meaning": "文書・書類",
+      "example": "Please sign this document.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "file",
+      "meaning": "書類をまとめたファイル",
+      "example": "Put these papers in the file.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "letter",
+      "meaning": "手紙",
+      "example": "We received a letter from a customer.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "message",
+      "meaning": "メッセージ・伝言",
+      "example": "Could you leave a message?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "reply",
+      "meaning": "返事をする",
+      "example": "Please reply by Friday.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "contact",
+      "meaning": "連絡する",
+      "example": "You can contact me by phone.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "discuss",
+      "meaning": "話し合う・検討する",
+      "example": "Let's discuss the plan tomorrow.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "explain",
+      "meaning": "説明する",
+      "example": "Could you explain this part again?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "suggest",
+      "meaning": "提案する",
+      "example": "I suggest taking a short break.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "agree",
+      "meaning": "同意する",
+      "example": "I agree with your idea.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "decide",
+      "meaning": "決める",
+      "example": "We need to decide today.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "prepare",
+      "meaning": "準備する",
+      "example": "I will prepare the documents.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "check",
+      "meaning": "確認する・点検する",
+      "example": "Please check these numbers.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "complete",
+      "meaning": "終える・完成させる",
+      "example": "We can complete the task today.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "improve",
+      "meaning": "改善する・よくする",
+      "example": "We want to improve our service.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "change",
+      "meaning": "変える",
+      "example": "Can we change the meeting time?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "solve",
+      "meaning": "解決する",
+      "example": "Let's solve this problem together.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "create",
+      "meaning": "作り出す",
+      "example": "We want to create something useful.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "develop",
+      "meaning": "発展させる・伸ばす",
+      "example": "This job helps me develop new skills.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "organize",
+      "meaning": "整理する・系統立てる",
+      "example": "I need to organize these documents.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "share",
+      "meaning": "共有する",
+      "example": "Please share your ideas with the team.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "send",
+      "meaning": "送る",
+      "example": "I will send you the report today.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "receive",
+      "meaning": "受け取る",
+      "example": "Did you receive my message?",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "request",
+      "meaning": "依頼・要請",
+      "example": "We received a request for more information.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "confirm",
+      "meaning": "確認する",
+      "example": "Please confirm the date of the meeting.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "cancel",
+      "meaning": "取り消す・中止する",
+      "example": "We had to cancel the meeting.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "deliver",
+      "meaning": "届ける・配達する",
+      "example": "We will deliver the package tomorrow.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "offer",
+      "meaning": "提供する・申し出る",
+      "example": "We offer free delivery.",
+      "tags": [
+        "動詞"
+      ]
+    },
+    {
+      "word": "price",
+      "meaning": "価格・値段",
+      "example": "What is the price of this item?",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "cost",
+      "meaning": "費用",
+      "example": "The cost includes delivery.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "budget",
+      "meaning": "予算",
+      "example": "We have a small budget for this project.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "salary",
+      "meaning": "給料",
+      "example": "The company pays my salary every month.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "business",
+      "meaning": "仕事・商売",
+      "example": "She runs a small business.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "goal",
+      "meaning": "目標",
+      "example": "Our goal is to finish by Friday.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "success",
+      "meaning": "成功",
+      "example": "The event was a success.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "information",
+      "meaning": "情報",
+      "example": "Thank you for the information.",
+      "tags": [
+        "名詞"
+      ]
+    },
+    {
+      "word": "employee",
+      "meaning": "雇い人,従業員",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Each employee receives a security badge."
+    },
+    {
+      "word": "employment",
+      "meaning": "(人の)雇用",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The contract confirms the terms of employment."
+    },
+    {
+      "word": "occupation",
+      "meaning": "職業,仕事",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please state your occupation on the form."
+    },
+    {
+      "word": "profession",
+      "meaning": "専門職;(一般に)職業",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Teaching is a demanding profession."
+    },
+    {
+      "word": "job",
+      "meaning": "仕事",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She starts her new job on Monday."
+    },
+    {
+      "word": "role",
+      "meaning": "役割",
+      "tags": [
+        "仕事"
+      ],
+      "example": "My role is to coordinate the team."
+    },
+    {
+      "word": "responsibility",
+      "meaning": "責任があること",
+      "tags": [
+        "仕事"
+      ],
+      "example": "I take responsibility for the final report."
+    },
+    {
+      "word": "staff",
+      "meaning": "職員・スタッフ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The staff meet every Monday morning."
+    },
+    {
+      "word": "workforce",
+      "meaning": "労働人口,全労働力",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company has a skilled workforce."
+    },
+    {
+      "word": "labor",
+      "meaning": "(肉体的・精神的な)労働;苦労",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The project requires skilled labor."
+    },
+    {
+      "word": "supervisor",
+      "meaning": "監督者,管理人",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please ask your supervisor for approval."
+    },
+    {
+      "word": "executive",
+      "meaning": "経営幹部",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The executive reviewed our proposal."
+    },
+    {
+      "word": "chairman",
+      "meaning": "議長,委員長;主席",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The chairman opened the meeting."
+    },
+    {
+      "word": "chairperson",
+      "meaning": "議長",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The chairperson invited questions from the audience."
+    },
+    {
+      "word": "leader",
+      "meaning": "指導者,先導者,主将",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Our team leader explained the plan."
+    },
+    {
+      "word": "leadership",
+      "meaning": "指導者の地位(任務)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She took over the leadership of the department."
+    },
+    {
+      "word": "administration",
+      "meaning": "管理・運営",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She works in hospital administration."
+    },
+    {
+      "word": "assistant",
+      "meaning": "助手,補佐役;店員",
+      "tags": [
+        "仕事"
+      ],
+      "example": "My assistant will arrange the meeting."
+    },
+    {
+      "word": "receptionist",
+      "meaning": "(ホテル・病院・事務所などの)受付係",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The receptionist called to announce our visitor."
+    },
+    {
+      "word": "accountant",
+      "meaning": "会計係,会計士,計理士",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The accountant checked the expense report."
+    },
+    {
+      "word": "lawyer",
+      "meaning": "弁護士;法律学者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We asked a lawyer to review the contract."
+    },
+    {
+      "word": "attorney",
+      "meaning": "弁護士;法律学者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Their attorney attended the meeting."
+    },
+    {
+      "word": "adviser",
+      "meaning": "忠告者,助言者;顧問",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The adviser suggested a simpler approach."
+    },
+    {
+      "word": "architect",
+      "meaning": "建築家,建築技師",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The architect showed us the building plans."
+    },
+    {
+      "word": "developer",
+      "meaning": "開発者,啓発者;宅地開発(造成)業者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The developer fixed the software problem."
+    },
+    {
+      "word": "analyst",
+      "meaning": "(状況などの)分析者,解説者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The analyst studied the sales data."
+    },
+    {
+      "word": "scientist",
+      "meaning": "科学者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The scientist presented her findings."
+    },
+    {
+      "word": "technician",
+      "meaning": "(科学・職業上の)専門家,専門技術者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "A technician will inspect the equipment."
+    },
+    {
+      "word": "electrician",
+      "meaning": "電気技師,電気工",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We called an electrician to check the wiring."
+    },
+    {
+      "word": "carpenter",
+      "meaning": "大工(だいく)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The carpenter built a new reception desk."
+    },
+    {
+      "word": "freelancer",
+      "meaning": "フリーランス・独立して働く人",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She works as a freelancer for several clients."
+    },
+    {
+      "word": "founder",
+      "meaning": "創設者,設立者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The founder still visits the office regularly."
+    },
+    {
+      "word": "shareholder",
+      "meaning": "株主",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Each shareholder received an annual report."
+    },
+    {
+      "word": "stakeholder",
+      "meaning": "利害関係者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Every stakeholder should understand the proposed change."
+    },
+    {
+      "word": "partnership",
+      "meaning": "提携,協力",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The two firms formed a partnership."
+    },
+    {
+      "word": "enterprise",
+      "meaning": "(特に勇気を要したり困難を伴う)事業,企て(project);大仕事",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Starting the new enterprise required careful planning."
+    },
+    {
+      "word": "agency",
+      "meaning": "代理店,取扱店;周旋所;代理人",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The agency handles our advertising."
+    },
+    {
+      "word": "institution",
+      "meaning": "機関・団体",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She works for a research institution."
+    },
+    {
+      "word": "union",
+      "meaning": "労働組合",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The union requested a meeting with management."
+    },
+    {
+      "word": "board",
+      "meaning": "取締役会",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The board approved the expansion."
+    },
+    {
+      "word": "division",
+      "meaning": "部門",
+      "tags": [
+        "仕事"
+      ],
+      "example": "He works in the sales division."
+    },
+    {
+      "word": "headquarters",
+      "meaning": "本部,(軍隊の)司令部,(警察の)本署",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company moved its headquarters last year."
+    },
+    {
+      "word": "affiliate",
+      "meaning": "関連会社",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Our overseas affiliate handles local sales."
+    },
+    {
+      "word": "cooperative",
+      "meaning": "協同組合・協力的な",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The farmers formed a cooperative."
+    },
+    {
+      "word": "charity",
+      "meaning": "博愛,慈愛,思いやり;(キリスト教の)愛",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She treats people in need with charity."
+    },
+    {
+      "word": "industry",
+      "meaning": "(一般に)産業",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The industry is changing rapidly."
+    },
+    {
+      "word": "service",
+      "meaning": "(…に対する)奉仕,尽力,貢献",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We thanked her for her years of service."
+    },
+    {
+      "word": "construction",
+      "meaning": "(…の)組立て,建築,建造;その工事,作業",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Construction of the new office begins tomorrow."
+    },
+    {
+      "word": "commerce",
+      "meaning": "(…との)商業,通商,貿易(trade)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new port increased regional commerce."
+    },
+    {
+      "word": "retail",
+      "meaning": "小売り",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She has ten years of experience in retail."
+    },
+    {
+      "word": "distribution",
+      "meaning": "(…への)配分,分配,配布,配達",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We improved the distribution of our products."
+    },
+    {
+      "word": "logistics",
+      "meaning": "物流",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The logistics team arranged the shipment."
+    },
+    {
+      "word": "transportation",
+      "meaning": "輸送,運送;輸送(交通)機関",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Transportation costs have increased this month."
+    },
+    {
+      "word": "delivery",
+      "meaning": "(…への)(手紙・荷物などの)配達,便;配達品",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The delivery is due tomorrow morning."
+    },
+    {
+      "word": "demand",
+      "meaning": "需要",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Demand for this product is growing."
+    },
+    {
+      "word": "vendor",
+      "meaning": "販売業者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We asked the vendor for a quotation."
+    },
+    {
+      "word": "producer",
+      "meaning": "生産者;産出地",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The producer supplies several local shops."
+    },
+    {
+      "word": "distributor",
+      "meaning": "分配する人(物),配分者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Our distributor will handle the shipment."
+    },
+    {
+      "word": "wholesaler",
+      "meaning": "卸し売り業者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The wholesaler sells goods to smaller shops."
+    },
+    {
+      "word": "consumer",
+      "meaning": "(…の)消費者,(…を)消費(浪費)する物(事)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The survey asked each consumer about quality."
+    },
+    {
+      "word": "clientele",
+      "meaning": "常連客",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The cafe has a loyal clientele."
+    },
+    {
+      "word": "seller",
+      "meaning": "売る人,売り手",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The seller agreed to a lower price."
+    },
+    {
+      "word": "visitor",
+      "meaning": "(…からの)訪問者,泊り客,見物人,(…への)訪問者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please give each visitor a name badge."
+    },
+    {
+      "word": "guest",
+      "meaning": "来客・招待客",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Our guest arrived before the meeting."
+    },
+    {
+      "word": "membership",
+      "meaning": "会員資格",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Your membership expires next month."
+    },
+    {
+      "word": "agent",
+      "meaning": "代理人;周旋人",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Our agent will contact you tomorrow."
+    },
+    {
+      "word": "dealer",
+      "meaning": "商人;(…の)業者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The dealer showed us several office printers."
+    },
+    {
+      "word": "officer",
+      "meaning": "公務員,役人(会社などの)役員,幹部",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company's financial officer reviewed the budget."
+    },
+    {
+      "word": "authority",
+      "meaning": "(地位の持つ,また職能上与えられた)権威,権力,権限,権能",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Only the manager has authority to approve this."
+    },
+    {
+      "word": "promotion",
+      "meaning": "昇進,進級",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She received a promotion last month."
+    },
+    {
+      "word": "transfer",
+      "meaning": "異動・移転",
+      "tags": [
+        "仕事"
+      ],
+      "example": "He requested a transfer to another department."
+    },
+    {
+      "word": "retirement",
+      "meaning": "(…からの)引退,退職",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We held a party for her retirement."
+    },
+    {
+      "word": "redundancy",
+      "meaning": "人員整理（主にイギリス英語）",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The closure put several jobs at risk of redundancy."
+    },
+    {
+      "word": "recruitment",
+      "meaning": "採用・募集",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Recruitment for the new team starts next week."
+    },
+    {
+      "word": "applicant",
+      "meaning": "(…に対する)志願者,応募者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Each applicant must submit a resume."
+    },
+    {
+      "word": "application",
+      "meaning": "応募・申請",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We received your application yesterday."
+    },
+    {
+      "word": "qualification",
+      "meaning": "資格を与えること,資格があること,資格,能力;免許状,資格証明書",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The job requires a teaching qualification."
+    },
+    {
+      "word": "diploma",
+      "meaning": "(大学・専門学校などの)卒業証書,修了証書",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please attach a copy of your diploma."
+    },
+    {
+      "word": "education",
+      "meaning": "(一般に)教育",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Her education prepared her for the role."
+    },
+    {
+      "word": "internship",
+      "meaning": "インターンとしての勤務期間",
+      "tags": [
+        "仕事"
+      ],
+      "example": "He completed an internship at our office."
+    },
+    {
+      "word": "experience",
+      "meaning": "(…の)経験,体験",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Do you have experience in customer service?"
+    },
+    {
+      "word": "skill",
+      "meaning": "(…の)熟練,技量,腕",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Clear writing is an important skill."
+    },
+    {
+      "word": "competence",
+      "meaning": "能力,適性,力量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The interview will assess your technical competence."
+    },
+    {
+      "word": "talent",
+      "meaning": "(特に生まれながらの優れた)(…の)才能,技量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She has a talent for solving problems."
+    },
+    {
+      "word": "performance",
+      "meaning": "業績・仕事ぶり",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We review employee performance every year."
+    },
+    {
+      "word": "efficiency",
+      "meaning": "能率,(仕事をする)能力",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new process improved efficiency."
+    },
+    {
+      "word": "quantity",
+      "meaning": "量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please confirm the quantity you need."
+    },
+    {
+      "word": "standard",
+      "meaning": "標準,基準,水準,規範",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Every product must meet our quality standard."
+    },
+    {
+      "word": "specification",
+      "meaning": "仕様",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The product meets the customer's specification."
+    },
+    {
+      "word": "objective",
+      "meaning": "目的・目標",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Our objective is to reduce waiting times."
+    },
+    {
+      "word": "timetable",
+      "meaning": "時間表,時間割り;(鉄道の)時刻表",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The training timetable is on the noticeboard."
+    },
+    {
+      "word": "calendar",
+      "meaning": "暦,カレンダー",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please add the meeting to your calendar."
+    },
+    {
+      "word": "urgency",
+      "meaning": "さし迫ったこと,切迫,緊急",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The manager emphasized the urgency of the request."
+    },
+    {
+      "word": "assignment",
+      "meaning": "割り当てられた仕事(持ち場,任務);(学校の)宿題",
+      "tags": [
+        "仕事"
+      ],
+      "example": "My first assignment is to review the records."
+    },
+    {
+      "word": "initiative",
+      "meaning": "自発性・新たな取り組み",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She showed initiative by proposing a solution."
+    },
+    {
+      "word": "operation",
+      "meaning": "(…)作用,働き;(機械などを)動かすこと,操作,(企業などの)運営",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The manual explains the machine's operation."
+    },
+    {
+      "word": "process",
+      "meaning": "工程・手順",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We need to simplify the approval process."
+    },
+    {
+      "word": "system",
+      "meaning": "(関連した部分から成る)体系,系統,組織[網],装置",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new system stores customer records securely."
+    },
+    {
+      "word": "technique",
+      "meaning": "(科学・芸術などの)技巧,技術",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This technique saves time during assembly."
+    },
+    {
+      "word": "strategy",
+      "meaning": "戦略",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We discussed our strategy for next year."
+    },
+    {
+      "word": "guideline",
+      "meaning": "(未来の行動の)指針,指標",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This guideline explains how to submit expenses."
+    },
+    {
+      "word": "rule",
+      "meaning": "規則,規定;法則",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Everyone must follow the safety rule."
+    },
+    {
+      "word": "manual",
+      "meaning": "手引き・マニュアル",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please read the manual before using the equipment."
+    },
+    {
+      "word": "protocol",
+      "meaning": "手順・取り決め",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We followed the agreed protocol."
+    },
+    {
+      "word": "governance",
+      "meaning": "組織の管理・統治",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The report examines corporate governance."
+    },
+    {
+      "word": "ethics",
+      "meaning": "倫理学",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She teaches a course in business ethics."
+    },
+    {
+      "word": "confidentiality",
+      "meaning": "秘密[性],内密",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The agreement protects client confidentiality."
+    },
+    {
+      "word": "security",
+      "meaning": "安全,無事(safety)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Better lighting improves security around the office."
+    },
+    {
+      "word": "risk",
+      "meaning": "危険;危害(損害)を受ける可能性",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We need to assess the risk first."
+    },
+    {
+      "word": "insurance",
+      "meaning": "保険, 保険契約",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company provides travel insurance."
+    },
+    {
+      "word": "warranty",
+      "meaning": "(売り渡し品の)保証",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The printer comes with a two-year warranty."
+    },
+    {
+      "word": "liability",
+      "meaning": "負債・法的責任",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The contract describes each party's liability."
+    },
+    {
+      "word": "contract",
+      "meaning": "(売買,請負などの)契約,約定(agreement),請負",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Both companies signed the contract."
+    },
+    {
+      "word": "arrangement",
+      "meaning": "手配・取り決め",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We confirmed the delivery arrangement in writing."
+    },
+    {
+      "word": "term",
+      "meaning": "条件・期間",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The contract term is twelve months."
+    },
+    {
+      "word": "signature",
+      "meaning": "署名",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Your signature is required on the last page."
+    },
+    {
+      "word": "permission",
+      "meaning": "許可,承諾",
+      "tags": [
+        "仕事"
+      ],
+      "example": "You need permission to enter this room."
+    },
+    {
+      "word": "approval",
+      "meaning": "(…に対する)賛成,是認",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The purchase is waiting for approval."
+    },
+    {
+      "word": "license",
+      "meaning": "(法的な)許可,免許,認可",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company renewed its software license."
+    },
+    {
+      "word": "trademark",
+      "meaning": "商標",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The logo is a registered trademark."
+    },
+    {
+      "word": "ownership",
+      "meaning": "所有者であること,所有;所有権",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Ownership of the building changed last year."
+    },
+    {
+      "word": "receipt",
+      "meaning": "領収書(証)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please keep the receipt for your expenses."
+    },
+    {
+      "word": "quotation",
+      "meaning": "見積もり",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We requested a quotation for the repairs."
+    },
+    {
+      "word": "estimate",
+      "meaning": "見積もり・見積もる",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The estimate includes materials and labor."
+    },
+    {
+      "word": "bid",
+      "meaning": "入札・入札する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The firm submitted a bid for the project."
+    },
+    {
+      "word": "order",
+      "meaning": "注文",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Your order will be ready on Friday."
+    },
+    {
+      "word": "procurement",
+      "meaning": "(…の)入手,獲得,調達",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The procurement team compares supplier prices."
+    },
+    {
+      "word": "pay",
+      "meaning": "賃金・支払う",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new role offers higher pay."
+    },
+    {
+      "word": "income",
+      "meaning": "(一定の)収入,所得",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Her monthly income covers her living expenses."
+    },
+    {
+      "word": "earnings",
+      "meaning": "収入,[勤労]所得;(会社などの)利益",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company reported higher earnings this year."
+    },
+    {
+      "word": "profit",
+      "meaning": "利益,もうけ,収益",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The shop made a small profit."
+    },
+    {
+      "word": "expense",
+      "meaning": "支出,出費",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Travel was our largest expense this month."
+    },
+    {
+      "word": "overhead",
+      "meaning": "間接経費・諸経費",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Rent is a major overhead for the business."
+    },
+    {
+      "word": "investment",
+      "meaning": "(…を…へ)投資すること,出資",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new equipment requires a large investment."
+    },
+    {
+      "word": "asset",
+      "meaning": "資産",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The building is the company's largest asset."
+    },
+    {
+      "word": "equity",
+      "meaning": "自己資本・持ち分",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The founders hold most of the company's equity."
+    },
+    {
+      "word": "bond",
+      "meaning": "債券",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company issued a bond to raise funds."
+    },
+    {
+      "word": "interest",
+      "meaning": "利息・利子",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The bank pays interest on this account."
+    },
+    {
+      "word": "debt",
+      "meaning": "借金;負債",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company plans to reduce its debt."
+    },
+    {
+      "word": "debit",
+      "meaning": "(簿記で)借り方,借り方記入",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Record the payment as a debit."
+    },
+    {
+      "word": "bank",
+      "meaning": "銀行",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The bank opens at nine."
+    },
+    {
+      "word": "banking",
+      "meaning": "銀行業務(経営)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She has worked in banking for years."
+    },
+    {
+      "word": "cash",
+      "meaning": "現金,正金,銀行券,硬貨",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We keep a small amount of cash here."
+    },
+    {
+      "word": "deposit",
+      "meaning": "預金・預け入れ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "I made a deposit into the business account."
+    },
+    {
+      "word": "balance",
+      "meaning": "残高",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please check the account balance."
+    },
+    {
+      "word": "accounting",
+      "meaning": "会計,経理",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She is responsible for accounting."
+    },
+    {
+      "word": "audit",
+      "meaning": "会計検査(監査)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The annual audit begins next week."
+    },
+    {
+      "word": "taxation",
+      "meaning": "課税,徴税;税制",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The course covers international taxation."
+    },
+    {
+      "word": "tariff",
+      "meaning": "(…に掛かる)関税",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The tariff increases the cost of imported goods."
+    },
+    {
+      "word": "fee",
+      "meaning": "(弁護士などの専門家に払う)(…に対する)料金,謝礼,報酬,手数料",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The consultation fee is listed on the website."
+    },
+    {
+      "word": "commission",
+      "meaning": "手数料",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The agent receives a commission on each sale."
+    },
+    {
+      "word": "benefit",
+      "meaning": "福利厚生・利益",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Health insurance is an employee benefit."
+    },
+    {
+      "word": "incentive",
+      "meaning": "刺激,動機,誘因",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The bonus provides an incentive to improve."
+    },
+    {
+      "word": "allowance",
+      "meaning": "割り当て;(定期的な)手当,こづかい",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Employees receive a travel allowance."
+    },
+    {
+      "word": "premium",
+      "meaning": "保険料",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The insurance premium is paid annually."
+    },
+    {
+      "word": "grant",
+      "meaning": "助成金・交付する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The research team received a grant."
+    },
+    {
+      "word": "contribution",
+      "meaning": "(…を…に)寄付(寄与)すること",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We appreciate your contribution to the project."
+    },
+    {
+      "word": "refund",
+      "meaning": "〈金など〉を返済する,払い戻す",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We will refund the full purchase price."
+    },
+    {
+      "word": "rebate",
+      "meaning": "(代金の一部の)払い戻し,割引",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The supplier offered a rebate on large orders."
+    },
+    {
+      "word": "surcharge",
+      "meaning": "追加料金,積み増し金",
+      "tags": [
+        "仕事"
+      ],
+      "example": "There is a surcharge for express delivery."
+    },
+    {
+      "word": "fine",
+      "meaning": "罰金",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company paid a fine for the violation."
+    },
+    {
+      "word": "insolvency",
+      "meaning": "支払い不能,破産",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The report warned of possible insolvency."
+    },
+    {
+      "word": "acquisition",
+      "meaning": "(…を)取得(習得)すること",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The acquisition of new equipment took months."
+    },
+    {
+      "word": "negotiation",
+      "meaning": "(物事についての人との)取り決め,交渉,話し合い",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The price is still under negotiation."
+    },
+    {
+      "word": "settlement",
+      "meaning": "決済・解決",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The two parties reached a settlement."
+    },
+    {
+      "word": "arbitration",
+      "meaning": "仲裁,裁定;仲裁裁判",
+      "tags": [
+        "仕事"
+      ],
+      "example": "They agreed to resolve the dispute through arbitration."
+    },
+    {
+      "word": "litigation",
+      "meaning": "訴訟",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company wants to avoid lengthy litigation."
+    },
+    {
+      "word": "judgment",
+      "meaning": "判断・判決",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The court issued its judgment yesterday."
+    },
+    {
+      "word": "claim",
+      "meaning": "請求・要求",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please submit your expense claim this week."
+    },
+    {
+      "word": "dispute",
+      "meaning": "紛争・意見の対立",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The dispute concerns the delivery date."
+    },
+    {
+      "word": "violation",
+      "meaning": "(約束・法律などの)違反,無視",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The inspection found a safety violation."
+    },
+    {
+      "word": "fraud",
+      "meaning": "詐欺,ごまかし",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The audit uncovered evidence of fraud."
+    },
+    {
+      "word": "bribery",
+      "meaning": "贈賄(ぞうわい);収賄",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The policy strictly prohibits bribery."
+    },
+    {
+      "word": "misconduct",
+      "meaning": "非行,不品行,(特に)不義",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company investigated the allegation of misconduct."
+    },
+    {
+      "word": "competition",
+      "meaning": "(…との…の)競争",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Competition in this market is intense."
+    },
+    {
+      "word": "competitive",
+      "meaning": "競争の,競争による",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The firm offers competitive prices."
+    },
+    {
+      "word": "market",
+      "meaning": "市場",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We are entering a new market."
+    },
+    {
+      "word": "marketplace",
+      "meaning": "市の開かれる広場(建物)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Local sellers gathered in the marketplace."
+    },
+    {
+      "word": "advertising",
+      "meaning": "広告;広告業",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We increased our advertising budget."
+    },
+    {
+      "word": "publicity",
+      "meaning": "広く知られていること,周知;評判",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The event generated positive publicity."
+    },
+    {
+      "word": "brand",
+      "meaning": "ブランド・商標",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Customers recognize our brand immediately."
+    },
+    {
+      "word": "image",
+      "meaning": "印象・イメージ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Reliable service improves the company's image."
+    },
+    {
+      "word": "campaign",
+      "meaning": "販促活動・キャンペーン",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The campaign promotes our new product."
+    },
+    {
+      "word": "audience",
+      "meaning": "(音楽会などの)聴衆,(劇・映画などの)観衆,観客,(行事などの)見物人",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The audience asked several questions."
+    },
+    {
+      "word": "niche",
+      "meaning": "専門的な小規模市場",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company serves a small but profitable niche."
+    },
+    {
+      "word": "trend",
+      "meaning": "(…に向かう)傾向,すう勢,流行",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The chart shows an upward trend."
+    },
+    {
+      "word": "questionnaire",
+      "meaning": "質問表,アンケート",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please complete this short questionnaire."
+    },
+    {
+      "word": "analysis",
+      "meaning": "(内容・状況などの)分析,分解;(詳細な)検討",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The analysis revealed several useful patterns."
+    },
+    {
+      "word": "statistics",
+      "meaning": "統計,統計資料,統計表",
+      "tags": [
+        "仕事"
+      ],
+      "example": "These statistics summarize last month's sales."
+    },
+    {
+      "word": "data",
+      "meaning": "資料,事実;情報",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We checked the data before presenting it."
+    },
+    {
+      "word": "fact",
+      "meaning": "事実,実際にある(あった)事",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please separate each fact from your opinion."
+    },
+    {
+      "word": "number",
+      "meaning": "(数えて得られる)数,数量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The number of orders increased."
+    },
+    {
+      "word": "proportion",
+      "meaning": "(…に対する…の)割合,比率",
+      "tags": [
+        "仕事"
+      ],
+      "example": "A large proportion of customers returned."
+    },
+    {
+      "word": "rate",
+      "meaning": "割合,率",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The response rate was higher than expected."
+    },
+    {
+      "word": "median",
+      "meaning": "中央値",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The median is shown on the chart."
+    },
+    {
+      "word": "maximum",
+      "meaning": "(量・数・程度の)最大限",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The maximum order size is fifty units."
+    },
+    {
+      "word": "range",
+      "meaning": "(価格・気温などの変動の)幅",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The products cover a wide price range."
+    },
+    {
+      "word": "sum",
+      "meaning": "(数・量の)合計,総計(sum total)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Check the sum at the bottom."
+    },
+    {
+      "word": "volume",
+      "meaning": "量・取引量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Sales volume increased last quarter."
+    },
+    {
+      "word": "valuation",
+      "meaning": "(金銭的な)評価,見積り",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We requested an independent valuation of the property."
+    },
+    {
+      "word": "projection",
+      "meaning": "予測・見通し",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Our projection assumes stable demand."
+    },
+    {
+      "word": "prediction",
+      "meaning": "予報(予言)すること",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Her prediction proved accurate."
+    },
+    {
+      "word": "outcome",
+      "meaning": "(…の)結果,成り行き(result)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We are pleased with the outcome."
+    },
+    {
+      "word": "input",
+      "meaning": "投入,投入量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The project requires significant input of time."
+    },
+    {
+      "word": "decline",
+      "meaning": "減少・低下",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We noticed a decline in sales."
+    },
+    {
+      "word": "reduction",
+      "meaning": "(…を)減らすこと,減少,縮小,格下げ,(…の)割り引き",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The change led to a reduction in costs."
+    },
+    {
+      "word": "decrease",
+      "meaning": "…を減らす",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We need to decrease waste."
+    },
+    {
+      "word": "development",
+      "meaning": "発達,発展,発育,成長;開発;進化",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The plan supports regional development."
+    },
+    {
+      "word": "invention",
+      "meaning": "(…の)発明",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The invention made the process easier."
+    },
+    {
+      "word": "improvement",
+      "meaning": "(…の,…における)改良,改善,進歩,上達",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new results show a clear improvement."
+    },
+    {
+      "word": "transformation",
+      "meaning": "変形,変質;変身",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company is undergoing a digital transformation."
+    },
+    {
+      "word": "progress",
+      "meaning": "(…に向かう)前進",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We made good progress this week."
+    },
+    {
+      "word": "accomplishment",
+      "meaning": "完成,成就(じょうじゅ)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The team celebrated the accomplishment of its goal."
+    },
+    {
+      "word": "failure",
+      "meaning": "(…における)失敗,不成功",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The machine failure delayed production."
+    },
+    {
+      "word": "problem",
+      "meaning": "(特に解決の容易でない)問題,やっかいな事態",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We need to solve this problem today."
+    },
+    {
+      "word": "challenge",
+      "meaning": "挑戦,試合の申し込み;挑戦状",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Meeting the deadline will be a challenge."
+    },
+    {
+      "word": "difficulty",
+      "meaning": "難しさ,困難",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We had difficulty finding the right supplier."
+    },
+    {
+      "word": "possibility",
+      "meaning": "可能性,実現性;可能なこと,ありうること,起こりそうなこと",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We discussed the possibility of expanding."
+    },
+    {
+      "word": "alternative",
+      "meaning": "代替案・選択肢",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Is there a cheaper alternative?"
+    },
+    {
+      "word": "choice",
+      "meaning": "(…を)選択,えり好み",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We have a choice of three suppliers."
+    },
+    {
+      "word": "conclusion",
+      "meaning": "結論,決定,判断;(三段論法の)断案",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The report explains our conclusion."
+    },
+    {
+      "word": "suggestion",
+      "meaning": "提案,提案すること",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Thank you for your helpful suggestion."
+    },
+    {
+      "word": "feedback",
+      "meaning": "意見・反応・フィードバック",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We welcome feedback from customers."
+    },
+    {
+      "word": "comment",
+      "meaning": "(…についての)論評,解説,注釈,意見",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please add your comment below."
+    },
+    {
+      "word": "evaluation",
+      "meaning": "(物・行為などの)評価;(物の)見積り",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The evaluation will take two weeks."
+    },
+    {
+      "word": "assessment",
+      "meaning": "評価,査定;(環境などの)状況判定",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We completed the initial risk assessment."
+    },
+    {
+      "word": "inspection",
+      "meaning": "検査,点検;視察",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The equipment passed its safety inspection."
+    },
+    {
+      "word": "investigation",
+      "meaning": "(…の)調査,取り調べ,研究",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The investigation is still ongoing."
+    },
+    {
+      "word": "query",
+      "meaning": "質問・問い合わせ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please send your query by email."
+    },
+    {
+      "word": "answer",
+      "meaning": "(質問・要求に対する)答え,回答(reply),(手紙に対する)返事",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We need an answer by Friday."
+    },
+    {
+      "word": "clarification",
+      "meaning": "明確にすること・説明",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Could you provide clarification on this point?"
+    },
+    {
+      "word": "confirmation",
+      "meaning": "(陳述・所信などの)確認;(情報などの)確証;(条約などの)承認;(…であるという)確証,確認",
+      "tags": [
+        "仕事"
+      ],
+      "example": "You will receive confirmation by email."
+    },
+    {
+      "word": "reservation",
+      "meaning": "(劇場の座席・ホテルなどの)予約,指定;予約されたもの(こと)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "I made a reservation for the meeting room."
+    },
+    {
+      "word": "notice",
+      "meaning": "通知・お知らせ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please read the notice on the board."
+    },
+    {
+      "word": "memorandum",
+      "meaning": "メモ,覚え書き",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The memorandum outlines the new policy."
+    },
+    {
+      "word": "correspondence",
+      "meaning": "文書のやりとり・通信",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Keep all correspondence about the project."
+    },
+    {
+      "word": "telephone",
+      "meaning": "電話機",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The telephone is on the desk."
+    },
+    {
+      "word": "phone",
+      "meaning": "電話;電話機,受話器",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please answer the phone."
+    },
+    {
+      "word": "conversation",
+      "meaning": "(…との打ち解けた)会話,談話,座談",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Our conversation clarified the next steps."
+    },
+    {
+      "word": "presentation",
+      "meaning": "発表・プレゼンテーション",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Her presentation lasted twenty minutes."
+    },
+    {
+      "word": "lecture",
+      "meaning": "(…についての)講義,講演(speech)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We attended a lecture on design."
+    },
+    {
+      "word": "convention",
+      "meaning": "(宗教上や政治上など特別の目的の)会議,協議会;党大会(大統領候補者の指名・綱領決定などをする)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The annual convention attracts industry leaders."
+    },
+    {
+      "word": "workshop",
+      "meaning": "参加型の研修・ワークショップ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The workshop includes practical exercises."
+    },
+    {
+      "word": "symposium",
+      "meaning": "シンポジウム(ある特定の問題について何人かがいろいろな角度から意見を述べあう討論会)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She presented her research at the symposium."
+    },
+    {
+      "word": "session",
+      "meaning": "会議・活動の一区切り",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The next training session starts at two."
+    },
+    {
+      "word": "debate",
+      "meaning": "討論(discussion);論争(dispute)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The proposal led to a lively debate."
+    },
+    {
+      "word": "reception",
+      "meaning": "受付",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please leave the package at reception."
+    },
+    {
+      "word": "fair",
+      "meaning": "見本市・展示会",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We displayed our products at the trade fair."
+    },
+    {
+      "word": "demonstration",
+      "meaning": "実演・デモンストレーション",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The demonstration showed how the machine works."
+    },
+    {
+      "word": "display",
+      "meaning": "〈物〉を展示する,陳列する(exhibit)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We display new products near the entrance."
+    },
+    {
+      "word": "ceremony",
+      "meaning": "儀式",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The opening ceremony begins at noon."
+    },
+    {
+      "word": "launch",
+      "meaning": "発売する・開始する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We plan to launch the product next month."
+    },
+    {
+      "word": "publication",
+      "meaning": "(書籍・雑誌などの)出版,発行",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The report is ready for publication."
+    },
+    {
+      "word": "media",
+      "meaning": "報道媒体・メディア",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The event attracted attention from the media."
+    },
+    {
+      "word": "journal",
+      "meaning": "日誌,日記(diary)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She records her daily tasks in a journal."
+    },
+    {
+      "word": "magazine",
+      "meaning": "雑誌",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The magazine published an interview with our founder."
+    },
+    {
+      "word": "bulletin",
+      "meaning": "公報;速報",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The weekly bulletin lists important updates."
+    },
+    {
+      "word": "leaflet",
+      "meaning": "(広告などの)ちらし,びら",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The leaflet explains our services."
+    },
+    {
+      "word": "poster",
+      "meaning": "ポスター,びら",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We put a poster in the window."
+    },
+    {
+      "word": "catalog",
+      "meaning": "目録,カタログ,(大学などの)案内書,説明書",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please choose a model from the catalog."
+    },
+    {
+      "word": "folder",
+      "meaning": "紙ばさみ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Keep the signed papers in this folder."
+    },
+    {
+      "word": "record",
+      "meaning": "(…の)記録,(…を)記録すること",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We keep a record of every order."
+    },
+    {
+      "word": "abstract",
+      "meaning": "要約",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please write a short abstract of the report."
+    },
+    {
+      "word": "draft",
+      "meaning": "下絵,スケッチ,設計図;草稿,草案",
+      "tags": [
+        "仕事"
+      ],
+      "example": "I will send you the first draft."
+    },
+    {
+      "word": "original",
+      "meaning": "原本",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Keep the original and send a copy."
+    },
+    {
+      "word": "revision",
+      "meaning": "(…の)改正(改訂)校閲",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The document needs one final revision."
+    },
+    {
+      "word": "proof",
+      "meaning": "校正刷り・証拠",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please check the printer's proof carefully."
+    },
+    {
+      "word": "print",
+      "meaning": "…を印刷する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Could you print two copies?"
+    },
+    {
+      "word": "photocopier",
+      "meaning": "写真複写機",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The photocopier is beside the door."
+    },
+    {
+      "word": "scanner",
+      "meaning": "スキャナー・読み取り装置",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Use the scanner to copy the document."
+    },
+    {
+      "word": "notebook",
+      "meaning": "ノート,筆記帳",
+      "tags": [
+        "仕事"
+      ],
+      "example": "I wrote the details in my notebook."
+    },
+    {
+      "word": "monitor",
+      "meaning": "モニター・監視する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The monitor displays the current results."
+    },
+    {
+      "word": "keyboard",
+      "meaning": "(ピアノ・タイプライターなどの)鍵盤(けんばん)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This keyboard is comfortable to use."
+    },
+    {
+      "word": "mouse",
+      "meaning": "マウス（コンピューターの入力機器）",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Move the mouse to select the file."
+    },
+    {
+      "word": "icon",
+      "meaning": "アイコン",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Click the folder icon."
+    },
+    {
+      "word": "window",
+      "meaning": "ウィンドウ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Close the extra window on your screen."
+    },
+    {
+      "word": "hardware",
+      "meaning": "ハードウェア・機器類",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We need to replace the old hardware."
+    },
+    {
+      "word": "interface",
+      "meaning": "接続部分・操作画面",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new interface is easier to use."
+    },
+    {
+      "word": "server",
+      "meaning": "サーバー",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The server stores our shared files."
+    },
+    {
+      "word": "cable",
+      "meaning": "ケーブル",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Check that the cable is connected."
+    },
+    {
+      "word": "wireless",
+      "meaning": "無線,無線電信",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This device supports wireless communication."
+    },
+    {
+      "word": "access",
+      "meaning": "利用・接続する権利",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Only authorized staff have access to these files."
+    },
+    {
+      "word": "backup",
+      "meaning": "バックアップ・予備",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Make a backup before changing the data."
+    },
+    {
+      "word": "memory",
+      "meaning": "メモリー・記憶容量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The computer needs more memory."
+    },
+    {
+      "word": "drive",
+      "meaning": "ドライブ・記憶装置",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Save the file to the shared drive."
+    },
+    {
+      "word": "worksheet",
+      "meaning": "作業票",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Complete the worksheet before the meeting."
+    },
+    {
+      "word": "row",
+      "meaning": "(人や物の)(特にまっすぐな)列,並び",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Enter the total in the last row."
+    },
+    {
+      "word": "chart",
+      "meaning": "図表・グラフ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The chart compares monthly sales."
+    },
+    {
+      "word": "diagram",
+      "meaning": "説明図,略図;図表,予定表,グラフ;図解",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The diagram shows how the parts connect."
+    },
+    {
+      "word": "list",
+      "meaning": "(…の)表,一覧表,目録,明細書;名簿,カタログ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please check the list of participants."
+    },
+    {
+      "word": "template",
+      "meaning": "ひな形・テンプレート",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Use this template for your report."
+    },
+    {
+      "word": "format",
+      "meaning": "(書籍の)体裁,型,判",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The publisher changed the book's format."
+    },
+    {
+      "word": "design",
+      "meaning": "(形式・構造などの)略図,見取り図,設計図",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The design shows the new office layout."
+    },
+    {
+      "word": "typeface",
+      "meaning": "(字の)活字づら",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Choose a clear typeface for the notice."
+    },
+    {
+      "word": "paragraph",
+      "meaning": "(文章の一つの)区切り,節,項,段落",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please shorten the final paragraph."
+    },
+    {
+      "word": "content",
+      "meaning": "(容器などにはいっている)中身,内容物,(記録・書物などの)目次",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Check the contents of the box."
+    },
+    {
+      "word": "photograph",
+      "meaning": "写真,(…の)写真",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Attach a photograph of the damaged product."
+    },
+    {
+      "word": "video",
+      "meaning": "テレビの映像",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The technician adjusted the video signal."
+    },
+    {
+      "word": "microphone",
+      "meaning": "マイクロフォン,拡声器",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please speak into the microphone."
+    },
+    {
+      "word": "headphone",
+      "meaning": "ヘッドホン",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Check the headphone cable."
+    },
+    {
+      "word": "camera",
+      "meaning": "カメラ,写真機",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The camera is ready for the interview."
+    },
+    {
+      "word": "charger",
+      "meaning": "充電器",
+      "tags": [
+        "仕事"
+      ],
+      "example": "I left my charger at the office."
+    },
+    {
+      "word": "socket",
+      "meaning": "(物を差し込む)穴,受け口,ソケット",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Plug the printer into this socket."
+    },
+    {
+      "word": "outlet",
+      "meaning": "コンセント・販売店",
+      "tags": [
+        "仕事"
+      ],
+      "example": "There is an electrical outlet under the desk."
+    },
+    {
+      "word": "electricity",
+      "meaning": "電気;電流",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The building uses less electricity now."
+    },
+    {
+      "word": "power",
+      "meaning": "電力",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The machine lost power suddenly."
+    },
+    {
+      "word": "lighting",
+      "meaning": "照明,点火",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Better lighting made the office more comfortable."
+    },
+    {
+      "word": "heating",
+      "meaning": "加熱;暖房[装置]",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The heating is not working today."
+    },
+    {
+      "word": "furniture",
+      "meaning": "家具・備品",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new office furniture arrives tomorrow."
+    },
+    {
+      "word": "desk",
+      "meaning": "机,勉強机,事務机",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please leave the report on my desk."
+    },
+    {
+      "word": "cabinet",
+      "meaning": "キャビネット(引出し・たな・仕切などのある箱・戸だな)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The contracts are in the filing cabinet."
+    },
+    {
+      "word": "shelf",
+      "meaning": "たな",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Put the manuals on the shelf."
+    },
+    {
+      "word": "cupboard",
+      "meaning": "食器だな",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Clean cups are in the kitchen cupboard."
+    },
+    {
+      "word": "safe",
+      "meaning": "金庫",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Keep important documents in the safe."
+    },
+    {
+      "word": "trash",
+      "meaning": "価値のないもの,役に立たないもの",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This broken packaging is just trash."
+    },
+    {
+      "word": "waste",
+      "meaning": "廃棄物・無駄",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We aim to reduce office waste."
+    },
+    {
+      "word": "stationery",
+      "meaning": "文房具",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The stationery cupboard needs more pens."
+    },
+    {
+      "word": "envelope",
+      "meaning": "封筒",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Put the letter in this envelope."
+    },
+    {
+      "word": "postcard",
+      "meaning": "郵便はがき",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We sent a postcard to each customer."
+    },
+    {
+      "word": "parcel",
+      "meaning": "(…の)包み,小包,小荷物",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The parcel arrived this morning."
+    },
+    {
+      "word": "box",
+      "meaning": "箱",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The box contains printer paper."
+    },
+    {
+      "word": "tape",
+      "meaning": "(細長い紙・布などの荷造り用)テープ,ひも",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Seal the box with tape."
+    },
+    {
+      "word": "stapler",
+      "meaning": "製本機,針金つづり機,ホッチキス",
+      "tags": [
+        "仕事"
+      ],
+      "example": "May I borrow your stapler?"
+    },
+    {
+      "word": "paperclip",
+      "meaning": "書類留め",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Use a paperclip to hold these pages together."
+    },
+    {
+      "word": "pin",
+      "meaning": "ピン・留め針・ピンの働きをする物",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Attach the notice with a pin."
+    },
+    {
+      "word": "eraser",
+      "meaning": "消しゴム,黒板ふき,インク消しなど",
+      "tags": [
+        "仕事"
+      ],
+      "example": "There is an eraser beside the pencil."
+    },
+    {
+      "word": "pen",
+      "meaning": "ペン",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Could I borrow a pen?"
+    },
+    {
+      "word": "marker",
+      "meaning": "印をつける人(道具)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Use a marker to label the box."
+    },
+    {
+      "word": "diary",
+      "meaning": "日記,日記帳,日誌",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She keeps a diary of her work."
+    },
+    {
+      "word": "calculator",
+      "meaning": "計算機",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Use a calculator to check the total."
+    },
+    {
+      "word": "cutter",
+      "meaning": "カッター・切断器",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Keep your fingers clear of the paper cutter."
+    },
+    {
+      "word": "blackboard",
+      "meaning": "黒板",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The trainer wrote the plan on the blackboard."
+    },
+    {
+      "word": "binder",
+      "meaning": "バインダー",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Store the training notes in this binder."
+    },
+    {
+      "word": "clipboard",
+      "meaning": "クリップボード(書類をはさむ長方形の堅い板)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The inspector carried a clipboard."
+    },
+    {
+      "word": "organizer",
+      "meaning": "主催者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The organizer confirmed the venue."
+    },
+    {
+      "word": "overtime",
+      "meaning": "超過勤務[時間]",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We worked overtime to finish the order."
+    },
+    {
+      "word": "permanent",
+      "meaning": "永久の,不変の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She accepted a permanent position."
+    },
+    {
+      "word": "seasonal",
+      "meaning": "季節の,季節的,季節ごとの",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company hires seasonal workers in summer."
+    },
+    {
+      "word": "remote",
+      "meaning": "遠隔の・離れた場所の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company has several remote offices."
+    },
+    {
+      "word": "hybrid",
+      "meaning": "複合型の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We use a hybrid model of remote and office work."
+    },
+    {
+      "word": "break",
+      "meaning": "休憩",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Let's take a short break."
+    },
+    {
+      "word": "sick leave",
+      "meaning": "病気休暇",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She is on sick leave today."
+    },
+    {
+      "word": "holiday",
+      "meaning": "休日,休業日,祝祭日,公休日",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The office is closed for the holiday."
+    },
+    {
+      "word": "attendance",
+      "meaning": "(…への)出席,参列;出席回数",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Attendance at the training is required."
+    },
+    {
+      "word": "punctuality",
+      "meaning": "時間厳守",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company values punctuality."
+    },
+    {
+      "word": "lateness",
+      "meaning": "遅いこと,遅れ,遅刻",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Repeated lateness caused problems for the team."
+    },
+    {
+      "word": "morale",
+      "meaning": "(軍隊・国民の)士気,風紀",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The good news improved staff morale."
+    },
+    {
+      "word": "cooperation",
+      "meaning": "協力,協同",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Thank you for your cooperation."
+    },
+    {
+      "word": "coordination",
+      "meaning": "調整・連携",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The event requires careful coordination."
+    },
+    {
+      "word": "delegation",
+      "meaning": "権限の委譲",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Effective delegation gives managers time to plan."
+    },
+    {
+      "word": "adaptability",
+      "meaning": "適応性,順応性",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The role requires adaptability."
+    },
+    {
+      "word": "flexibility",
+      "meaning": "柔軟性,しなやかさ;適応性,融通性",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We appreciate your flexibility about the schedule."
+    },
+    {
+      "word": "integrity",
+      "meaning": "誠実さ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She is known for her integrity."
+    },
+    {
+      "word": "diligence",
+      "meaning": "勤勉,不断の努力",
+      "tags": [
+        "仕事"
+      ],
+      "example": "His diligence helped prevent mistakes."
+    },
+    {
+      "word": "courtesy",
+      "meaning": "礼儀,丁重,丁寧さ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please treat every customer with courtesy."
+    },
+    {
+      "word": "strategic",
+      "meaning": "(比較変化なし)戦略の,計略の;戦略上重要な",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This is an important strategic decision."
+    },
+    {
+      "word": "interpersonal",
+      "meaning": "人と人との間の,人間関係の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The role requires strong interpersonal skills."
+    },
+    {
+      "word": "practical",
+      "meaning": "実際上の,実地の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The course includes practical training."
+    },
+    {
+      "word": "administrative",
+      "meaning": "行政上の;管理の,経営の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She handles the administrative work."
+    },
+    {
+      "word": "managerial",
+      "meaning": "経営上の;経営者の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "He has several years of managerial experience."
+    },
+    {
+      "word": "financial",
+      "meaning": "財政上の;財界の;金融上の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The financial report is ready."
+    },
+    {
+      "word": "industrial",
+      "meaning": "産業(工業)の,産業(工業)による",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The area has several industrial buildings."
+    },
+    {
+      "word": "legal",
+      "meaning": "法律の,法律上",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We need legal advice before signing."
+    },
+    {
+      "word": "ethical",
+      "meaning": "倫理の,道徳の;倫理学",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The decision raised ethical questions."
+    },
+    {
+      "word": "efficient",
+      "meaning": "能率的な,効率のいい",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new system is more efficient."
+    },
+    {
+      "word": "productive",
+      "meaning": "生産的な,好ましい結果を生み出す",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We had a productive meeting."
+    },
+    {
+      "word": "precise",
+      "meaning": "正確な,的確な,明確な",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please provide precise measurements."
+    },
+    {
+      "word": "valid",
+      "meaning": "(理論・理由などが)妥当な,しっかりした根拠のある",
+      "tags": [
+        "仕事"
+      ],
+      "example": "That is a valid reason for the delay."
+    },
+    {
+      "word": "appropriate",
+      "meaning": "適切な",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please use appropriate language in the report."
+    },
+    {
+      "word": "suitable",
+      "meaning": "適当な,ふさわしい,好都合な",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We found a suitable meeting room."
+    },
+    {
+      "word": "necessary",
+      "meaning": "(物事が)必要な,なくてはならない",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Is another meeting necessary?"
+    },
+    {
+      "word": "optional",
+      "meaning": "選択が自由の,随意の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The afternoon workshop is optional."
+    },
+    {
+      "word": "urgent",
+      "meaning": "急を要する,緊急の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This request is urgent."
+    },
+    {
+      "word": "critical",
+      "meaning": "非常に重要な",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Accurate data is critical to the project."
+    },
+    {
+      "word": "daily",
+      "meaning": "毎日の,日々の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We hold a short daily meeting."
+    },
+    {
+      "word": "weekly",
+      "meaning": "毎週の,1週間(分)の;1週1度の・毎週;1週1回・週刊雑誌(新聞)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The weekly report is due on Friday."
+    },
+    {
+      "word": "quarterly",
+      "meaning": "年4回の,3か月ごとの",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We review our targets at quarterly meetings."
+    },
+    {
+      "word": "annual",
+      "meaning": "1年の,1年間の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The annual report is available online."
+    },
+    {
+      "word": "occasional",
+      "meaning": "時たまの,時おりの",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The role requires occasional travel."
+    },
+    {
+      "word": "immediate",
+      "meaning": "即座の,即時の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The problem needs immediate attention."
+    },
+    {
+      "word": "timely",
+      "meaning": "時宜を得た",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Your timely advice helped us finish."
+    },
+    {
+      "word": "late",
+      "meaning": "(定刻・通常・予定の時間より)遅れた,遅い",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The delivery was late."
+    },
+    {
+      "word": "outstanding",
+      "meaning": "目立つ,顕著な,傑出して",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She did outstanding work on the project."
+    },
+    {
+      "word": "finished",
+      "meaning": "仕上がった,完成した",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please send the finished report."
+    },
+    {
+      "word": "successful",
+      "meaning": "成功した,好結果の,上首尾の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The product launch was successful."
+    },
+    {
+      "word": "accepted",
+      "meaning": "一般に認められた,受け入れられた",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This is the generally accepted procedure."
+    },
+    {
+      "word": "received",
+      "meaning": "受け取った（receiveの過去・過去分詞）",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We received your message this morning."
+    },
+    {
+      "word": "sent",
+      "meaning": "送った（sendの過去・過去分詞）",
+      "tags": [
+        "仕事"
+      ],
+      "example": "I sent the report yesterday."
+    },
+    {
+      "word": "checked",
+      "meaning": "確認した（checkの過去・過去分詞）",
+      "tags": [
+        "仕事"
+      ],
+      "example": "She checked every figure twice."
+    },
+    {
+      "word": "public",
+      "meaning": "公の,公共の,公衆の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The report is available to the public."
+    },
+    {
+      "word": "internal",
+      "meaning": "内側の,内部にある",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This document is for internal use."
+    },
+    {
+      "word": "domestic",
+      "meaning": "国内の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Domestic sales increased this year."
+    },
+    {
+      "word": "global",
+      "meaning": "世界規模の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company serves a global market."
+    },
+    {
+      "word": "local",
+      "meaning": "一地方の,ある土地の,(特に)自分の住んでいる土地の;地方に特有な",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We work with local suppliers."
+    },
+    {
+      "word": "national",
+      "meaning": "国民の;国家の",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The campaign received national attention."
+    },
+    {
+      "word": "overseas",
+      "meaning": "海を越えて,外国へ(abroad)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The company sells its products overseas."
+    },
+    {
+      "word": "export",
+      "meaning": "(外国へ)〈商品〉を輸出する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We export furniture to several countries."
+    },
+    {
+      "word": "exporter",
+      "meaning": "輸出業者",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The exporter arranged the shipping documents."
+    },
+    {
+      "word": "cargo",
+      "meaning": "(船・飛行機の)積荷,貨物",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The ship carries valuable cargo."
+    },
+    {
+      "word": "freight",
+      "meaning": "貨物運送",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The goods travel by rail freight."
+    },
+    {
+      "word": "warehouse",
+      "meaning": "倉庫",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The products are stored in our warehouse."
+    },
+    {
+      "word": "stockpile",
+      "meaning": "(非常時に備えて原料・弾薬・武器などの)備蓄,貯蔵",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The factory maintains a stockpile of spare parts."
+    },
+    {
+      "word": "stocktaking",
+      "meaning": "在庫調べ,たなおろし",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The shop will close for stocktaking."
+    },
+    {
+      "word": "dispatch",
+      "meaning": "(…へ)〈電報・手紙など〉を送る,〈使者・軍隊など〉を急送する,特派する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We will dispatch the documents today."
+    },
+    {
+      "word": "courier",
+      "meaning": "配達業者・宅配便",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The courier collected the parcel."
+    },
+    {
+      "word": "port",
+      "meaning": "港",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The shipment arrived at the port."
+    },
+    {
+      "word": "depot",
+      "meaning": "(鉄道の)駅,(バスの)発着所",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The buses return to the depot at night."
+    },
+    {
+      "word": "facility",
+      "meaning": "設備・施設",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new facility can handle larger orders."
+    },
+    {
+      "word": "factory",
+      "meaning": "工場,製作所",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The factory produces kitchen equipment."
+    },
+    {
+      "word": "production line",
+      "meaning": "(工場での)流れ作業(assembly line)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The production line stopped for maintenance."
+    },
+    {
+      "word": "machine",
+      "meaning": "機械",
+      "tags": [
+        "仕事"
+      ],
+      "example": "This machine cuts the metal sheets."
+    },
+    {
+      "word": "tool",
+      "meaning": "(金づち・スパナー・のこぎりなど大工・指物仕事をするための)道具,工具",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Use the right tool for the job."
+    },
+    {
+      "word": "instrument",
+      "meaning": "器具・計器",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The instrument measures temperature accurately."
+    },
+    {
+      "word": "appliance",
+      "meaning": "(特に家庭で用いる)器具,機械,装置",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The appliance comes with an instruction manual."
+    },
+    {
+      "word": "part",
+      "meaning": "(全体を構成する)部分",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We need to replace this broken part."
+    },
+    {
+      "word": "resource",
+      "meaning": "(国の)資源,物資,資産,財源",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Water is an important natural resource."
+    },
+    {
+      "word": "commodity",
+      "meaning": "日用品,必需品;商品",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Coffee is a widely traded commodity."
+    },
+    {
+      "word": "product",
+      "meaning": "産物;製品",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The product is ready for testing."
+    },
+    {
+      "word": "goods",
+      "meaning": "商品",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Check the goods when they arrive."
+    },
+    {
+      "word": "unit",
+      "meaning": "構成単位;(学習の)単元;(全体を構成する)部門,部隊",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Each unit is tested before shipment."
+    },
+    {
+      "word": "lot",
+      "meaning": "ひとまとまり・ロット",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The entire lot passed inspection."
+    },
+    {
+      "word": "prototype",
+      "meaning": "(…の)原型;典型,模範",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The team built a working prototype."
+    },
+    {
+      "word": "defect",
+      "meaning": "欠点,弱点,欠陥",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The inspection found a small defect."
+    },
+    {
+      "word": "fault",
+      "meaning": "欠点,短所(defect)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "A wiring fault stopped the machine."
+    },
+    {
+      "word": "mistake",
+      "meaning": "誤り,間違い;誤解,思い違い",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We corrected the mistake immediately."
+    },
+    {
+      "word": "repair",
+      "meaning": "…を修繕する,修理する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "A technician will repair the printer."
+    },
+    {
+      "word": "replacement",
+      "meaning": "置き換わること,取り替えること,元へ戻すこと;返済・置き換わる物(人),代理;補充員;補充物",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The supplier sent a replacement part."
+    },
+    {
+      "word": "reuse",
+      "meaning": "…を再使用する,再生する",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We reuse these containers."
+    },
+    {
+      "word": "environment",
+      "meaning": "環境,周囲の状況;自然環境",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The project aims to protect the environment."
+    },
+    {
+      "word": "emission",
+      "meaning": "(光・熱・液体などの)放射,放出",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The filter reduces the emission of dust."
+    },
+    {
+      "word": "conservation",
+      "meaning": "保存,(特に自然環境の)保護",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The plan supports water conservation."
+    },
+    {
+      "word": "automation",
+      "meaning": "オートメーション,自動操作",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Automation reduced repetitive work."
+    },
+    {
+      "word": "machine learning",
+      "meaning": "機械学習(人工知能における研究課題の一つ)",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The team uses machine learning to classify images."
+    },
+    {
+      "word": "code",
+      "meaning": "コード・規則",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Please follow the company's code of conduct."
+    },
+    {
+      "word": "support",
+      "meaning": "…を支える",
+      "tags": [
+        "仕事"
+      ],
+      "example": "These beams support the factory roof."
+    },
+    {
+      "word": "upgrade",
+      "meaning": "性能を向上させる・更新",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We plan to upgrade the equipment."
+    },
+    {
+      "word": "installation",
+      "meaning": "(装置などの)取り付け,据え付け",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Installation will take two days."
+    },
+    {
+      "word": "integration",
+      "meaning": "統合,集成,完成",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The integration of the two systems is complete."
+    },
+    {
+      "word": "conversion",
+      "meaning": "(性質・形・機能などの)(…から…への)転換,変換,変化",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The file conversion finished successfully."
+    },
+    {
+      "word": "verification",
+      "meaning": "立証,証明",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The results require independent verification."
+    },
+    {
+      "word": "certification",
+      "meaning": "証明,保証,認可,検定;証明書の交付",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The equipment passed the certification process."
+    },
+    {
+      "word": "standardization",
+      "meaning": "標準化,規格化,統一",
+      "tags": [
+        "仕事"
+      ],
+      "example": "Standardization makes the parts easier to replace."
+    },
+    {
+      "word": "benchmark",
+      "meaning": "比較の基準",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We use last year's results as a benchmark."
+    },
+    {
+      "word": "trial",
+      "meaning": "試験・試行",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The trial will run for one month."
+    },
+    {
+      "word": "feasibility",
+      "meaning": "実行できること;ありそうなこと,もっともらしさ",
+      "tags": [
+        "仕事"
+      ],
+      "example": "We are studying the feasibility of the plan."
+    },
+    {
+      "word": "capacity",
+      "meaning": "能力・容量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The warehouse is nearly at full capacity."
+    },
+    {
+      "word": "accessibility",
+      "meaning": "近づきやすさ,到達可能性",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new entrance improves accessibility."
+    },
+    {
+      "word": "capability",
+      "meaning": "能力,才能,手腕;素質,可能性",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The machine has the capability to handle larger parts."
+    },
+    {
+      "word": "throughput",
+      "meaning": "一定時間に処理できる量",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The new equipment increased daily throughput."
+    },
+    {
+      "word": "synchronization",
+      "meaning": "同時であること,同時に起こること,時間を合わせること;同時性",
+      "tags": [
+        "仕事"
+      ],
+      "example": "The system checks the synchronization of the clocks."
+    }
+  ]
+}

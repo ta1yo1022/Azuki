@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "title": "はじめての英単語",
+  "description": "サンプルJSONを取り込んでみよう。",
+  "textbookTags": [
+    {
+      "name": "サンプル教材",
+      "chapter": "Lesson 1"
+    }
+  ],
+  "words": [
+    {
+      "word": "hello",
+      "meaning": "こんにちは",
+      "example": "Hello, nice to meet you.",
+      "tags": ["あいさつ"]
+    },
+    {
+      "word": "explore",
+      "meaning": "探検する・探究する",
+      "example": "Let us explore the city.",
+      "tags": ["動詞"]
+    },
+    {
+      "word": "inspire",
+      "meaning": "刺激する・奮い立たせる",
+      "example": "Your story inspires me.",
+      "tags": ["動詞"]
+    }
+  ]
+}
