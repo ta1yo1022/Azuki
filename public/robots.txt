@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /library
+Disallow: /demo
+Disallow: /admin
+
+Sitemap: https://azuki.mame-app.com/sitemap.xml
