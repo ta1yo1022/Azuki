@@ -230,3 +230,16 @@ node --experimental-strip-types scripts/backfill-lineage.mjs --remote
 ## 日次登録枠の調整
 
 `0008_daily_capacity.sql`で個人の日次登録枠を5,000語、全体の日次登録枠を10,000語に変更しました。20冊・保存中5,000語、全体100,000語、保存容量の上限は維持します。削除しても日次カウンターは減らず、UTC日付が変わる日本時間9時にリセットされます。APIは上限別の説明とエラーコードを返します。
+
+## GitHubからCloudflareへ自動公開
+
+`.github/workflows/cloudflare.yml` は `main` へのpushでテスト・ビルド後、D1の未適用マイグレーション、Worker、Pagesの順に公開します。PRではテスト・ビルドだけを実行します。手動実行も `main` のみ公開します。
+
+既存のPagesはDirect Uploadのため、GitHub Actionsから同じ`azuki`プロジェクトへアップロードします。ドメインは`https://azuki.mame-app.com`のままです。Pagesの管理画面で「No Git connection」と表示されても、Actionsが公開を担います。
+
+GitHubのActions設定に次を登録します。
+
+- Secret `CLOUDFLARE_API_TOKEN`: 対象CloudflareアカウントのPages編集・Workers Scripts編集・D1編集を許可したデプロイ専用トークン。
+- Variables `CLOUDFLARE_ACCOUNT_ID`、`VITE_FIREBASE_API_KEY`、`VITE_FIREBASE_AUTH_DOMAIN`、`VITE_FIREBASE_PROJECT_ID`、`VITE_FIREBASE_APP_ID`。FirebaseのWebアプリ識別情報は公開設定であり、サービスアカウントの秘密鍵は登録しません。
+
+GitHubのActionsで結果を確認でき、Deploymentsにも公開先が表示されます。トークンはリポジトリのファイルに保存しません。失敗時は後続の公開を止めますが、先に成功したDB変更・API公開は自動で戻りません。マイグレーションは旧画面・旧APIとの互換性を保って追加してください。
