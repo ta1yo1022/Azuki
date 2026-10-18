@@ -58,8 +58,22 @@ async function queue(id:string){await call('/admin/emails/'+id+'/test','POST',{}
 beforeEach(()=>{db=new DatabaseSync(':memory:');for(const name of readdirSync(new URL('../migrations',import.meta.url)).sort()){db.exec(readFileSync(new URL('../migrations/'+name,import.meta.url),'utf8'));}env={DB:sqliteD1(db),FIREBASE_PROJECT_ID:'test',ALLOWED_ORIGINS:'https://azuki.example.com',ALLOW_IMPORTS:'true',ADMIN_EMAILS:admin.email,BREVO_API_KEY:'test-key',EMAIL_ENABLED:'true',EMAIL_FROM:'sender@example.com',EMAIL_API_URL:'https://api.example.com/api/email/unsubscribe',EMAIL_DAILY_LIMIT:'290'};});
 afterEach(()=>{db.close();vi.restoreAllMocks();});
 describe('update emails',()=>{
- it('defaults off; verified opt-in stores only the identity address and remains idempotent',async()=>{
+ it('initializes existing library users once and preserves opt-outs on subsequent visits',async()=>{
+   await call('/decks','GET',undefined,'user');
+   expect(db.prepare('SELECT enabled,consent_version FROM email_subscribers').get()).toMatchObject({enabled:1,consent_version:'updates-default-v1'});
+   await call('/email/preferences','PUT',{enabled:false},'user');
+   await call('/decks','GET',undefined,'user');
    expect(await (await call('/email/preferences','GET',undefined,'user')).json()).toMatchObject({enabled:false});
+ });
+ it('persists an opt-out before the first preferences read and excludes unverified identities',async()=>{
+   await call('/decks','GET',undefined,'unverified');
+   expect(db.prepare('SELECT count(*) n FROM email_subscribers').get()!.n).toBe(0);
+   await call('/email/preferences','PUT',{enabled:false},'user');
+   expect(await (await call('/email/preferences','GET',undefined,'user')).json()).toMatchObject({enabled:false});
+ });
+
+ it('defaults on; verified opt-in stores only the identity address and remains idempotent',async()=>{
+   expect(await (await call('/email/preferences','GET',undefined,'user')).json()).toMatchObject({enabled:true});
    expect((await call('/email/preferences','PUT',{enabled:true,consentVersion:EMAIL_CONSENT_VERSION},'unverified')).status).toBe(403);
    expect((await call('/email/preferences','PUT',{enabled:true,email:'attacker@example.com',consentVersion:EMAIL_CONSENT_VERSION},'user')).status).toBe(200);
    const initial=db.prepare('SELECT * FROM email_subscribers').get();await subscribe();expect(db.prepare('SELECT * FROM email_subscribers').get()).toMatchObject({email:user.email,consent_at:initial!.consent_at});

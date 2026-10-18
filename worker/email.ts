@@ -32,8 +32,18 @@ function verifiedEmail(identity: VerifiedIdentity) {
   if (!identity.emailVerified || !identity.email || !emailPattern.test(identity.email)) return null;
   return identity.email.toLowerCase();
 }
+// Defaults are recorded separately from an explicit opt-in; never overwrite an opt-out.
+export async function ensureDefaultEmailPreference(env: Env, identity: VerifiedIdentity) {
+  const email = verifiedEmail(identity);
+  if (!email) return;
+  const now = new Date().toISOString();
+  await env.DB.prepare(`INSERT OR IGNORE INTO email_subscribers(user_id,email,enabled,consent_version,consent_at,unsubscribe_token,updated_at)
+    VALUES(?,?,1,'updates-default-v1',?,?,?)`)
+    .bind(identity.uid,email,now,crypto.randomUUID()+crypto.randomUUID(),now).run();
+}
 export async function preferencesRoute(request: Request, env: Env, identity: VerifiedIdentity) {
   if (request.method === 'GET') {
+    await ensureDefaultEmailPreference(env, identity);
     const row = await env.DB.prepare('SELECT enabled,email FROM email_subscribers WHERE user_id=?').bind(identity.uid).first<{ enabled: number; email: string }>();
     return json({ enabled: !!row?.enabled, email: row?.email ?? verifiedEmail(identity), available: !!verifiedEmail(identity) });
   }
@@ -41,6 +51,7 @@ export async function preferencesRoute(request: Request, env: Env, identity: Ver
   const data = await body(request);
   if (typeof data.enabled !== 'boolean') throw new ValidationError('受信設定を指定してください。');
   if (!data.enabled) {
+    await ensureDefaultEmailPreference(env, identity);
     await env.DB.prepare('UPDATE email_subscribers SET enabled=0,updated_at=? WHERE user_id=?').bind(new Date().toISOString(), identity.uid).run();
     return json({ enabled: false });
   }

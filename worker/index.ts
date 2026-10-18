@@ -1,4 +1,4 @@
-import { emailAdminRoute, preferencesRoute, processEmailQueue, unsubscribeRoute } from './email';
+import { ensureDefaultEmailPreference, emailAdminRoute, preferencesRoute, processEmailQueue, unsubscribeRoute } from './email';
 import { standardDeck } from "../shared/standardDecks";
 import { LIMITS, parseDeck, ValidationError, type Deck } from "../shared/model";
 import { verifyFirebaseIdentity, type VerifiedIdentity } from "./auth";
@@ -89,6 +89,7 @@ async function route(
   if (uid === OFFICIAL_OWNER_ID)
     return json({ error: "このアカウントでは操作できません。" }, 403);
   if (url.pathname === "/api/decks" && request.method === "GET") {
+    await ensureDefaultEmailPreference(env, identity);
     const result = await env.DB.prepare(
       `${deckSelect} WHERE d.owner_id = ? ORDER BY d.created_at DESC, d.id DESC LIMIT 20`,
     )
