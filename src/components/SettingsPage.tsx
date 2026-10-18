@@ -1,3 +1,4 @@
+import { EmailPreferences } from './EmailPreferences';
 import { AdminLink } from "./AdminReports";
 import { CookieControls } from "./CookieControls";
 import { LegalLinks } from "./LegalPage";
@@ -5,7 +6,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import { readStudyPreferences, saveStudyPreferences } from "../lib/studyPreferences";
 
-export function SettingsPage({ onClose, onTutorial }: { onClose: () => void; onTutorial?: () => void }) {
+export function SettingsPage({ onClose, onTutorial, demo = false }: { demo?: boolean; onClose: () => void; onTutorial?: () => void }) {
   const [draft, setDraft] = useState(readStudyPreferences);
   const [message, setMessage] = useState("");
   const [failed, setFailed] = useState(false);
@@ -38,6 +39,7 @@ export function SettingsPage({ onClose, onTutorial }: { onClose: () => void; onT
       </section>
       {onTutorial && <section className="study-setup" aria-labelledby="tutorial-settings-title"><h2 id="tutorial-settings-title">Azukiの使い方</h2><p>画面の案内を見ながら、単語帳の追加や学習の始め方を確認できます。</p><button className="button secondary" onClick={onTutorial}>チュートリアルを見る</button></section>}
       <section className="study-setup"><h2>Cookieとアクセス解析</h2><p>サービス改善のためのアクセス解析を選べます。このブラウザに適用され、許可しなくても単語帳は使えます。</p><CookieControls /><a className="text-button" href="/privacy">詳しくはプライバシーポリシーへ</a></section>
+      {!demo && <EmailPreferences />}
       <AdminLink />
       <LegalLinks />
     </main>

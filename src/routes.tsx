@@ -1,3 +1,5 @@
+import { EmailDesignPreview } from './components/EmailComposer';
+import { AdminEmails } from './components/AdminEmails';
 import { AdminReports } from "./components/AdminReports";
 import { useEffect } from "react";
 import { Link, Navigate, Route, Routes, useLocation } from "react-router-dom";
@@ -35,15 +37,18 @@ export function AzukiRoutes() {
       <RouteScroll />
       <Routes>
         <Route path="/" element={<Home />} />
-        {["library", "demo"].flatMap((base) => ["", "/settings", "/import", "/decks/:deckId", "/decks/:deckId/study", "/decks/:deckId/share"].map((path) =>
+        {["library", "demo"].flatMap((base) => ["", "/settings", "/import", "/decks/:deckId", "/decks/:deckId/study", "/decks/:deckId/book", "/decks/:deckId/share"].map((path) =>
           <Route key={base + path} path={`/${base}${path}`} element={<App key={base} demo={base === "demo"} />} />
         ))}
         <Route path="/guide/create" element={<CreateGuide />} />
+        {import.meta.env.DEV && <Route path="/dev/email-preview" element={<EmailDesignPreview />} />}
+        <Route path="/admin/emails" element={<AdminEmails />} />
         <Route path="/admin/reports" element={<AdminReports />} />
         <Route path="/privacy" element={<LegalPage kind="privacy" />} />
         <Route path="/terms" element={<LegalPage kind="terms" />} />
         <Route path="/explore" element={<PublicLibrary />} />
         <Route path="/shared/:deckId" element={<PublicLibrary />} />
+        <Route path="/shared/:deckId/book" element={<PublicLibrary book />} />
         <Route path="/shared/:deckId/study" element={<PublicLibrary study />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

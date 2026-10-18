@@ -1,3 +1,5 @@
+import { BookStudyPage } from "./BookStudyPage";
+import { PublicDeckCard } from "./PublicDeckCard";
 import { ForkDialog } from "./ForkDialog";
 import { WordDetails } from "./WordDetails";
 import { findStandardDecks } from "../../shared/standardDecks";
@@ -27,17 +29,17 @@ import { publicRepository, sharedDeckUrl } from "../lib/repository";
 import { DeckLineage } from "./DeckLineage";
 import { DeckVariants } from "./DeckVariants";
 import { StudyPage } from "./StudyPage";
-import { DeckCredit, OfficialBadge, OfficialLevelBadge, OfficialPublisher } from "./DeckCredit";
+import { DeckCredit, OfficialBadge, OfficialPublisher } from "./DeckCredit";
 
 const message = (e: unknown) =>
   e instanceof Error
     ? e.message
     : "読み込めませんでした。もう一度お試しください。";
 
-export function PublicLibrary({ study = false }: { study?: boolean }) {
+export function PublicLibrary({ study = false, book = false }: { study?: boolean; book?: boolean }) {
   const { deckId: id } = useParams();
   return id ? (
-    <PublicDeck key={id} id={id} studying={study} />
+    <PublicDeck key={id} id={id} studying={study || book} bookMode={book} />
   ) : (
     <PublicLayout>
       <Discover />
@@ -55,7 +57,7 @@ function PublicLayout({ children }: { children: ReactNode }) {
         <Link className="brand" to="/" aria-label="Azukiのホームへ">
           <img src="/favicon.svg" alt="" />
           <span>
-            azuki<span className="brand-period">.</span>
+            azuki
           </span>
         </Link>
         <nav aria-label="公開ライブラリのナビゲーション">
@@ -204,45 +206,7 @@ function Discover() {
       )}
       <div className="deck-grid public-deck-grid">
         {decks.map((deck, index) => (
-          <div className="public-family-card" key={deck.id}><Link
-            className={`deck-card palette-${index % 3}${deck.isOfficial ? " official-deck-card" : ""}`}
-            key={deck.id}
-            to={`/shared/${encodeURIComponent(deck.id)}`}
-          >
-            <div className="deck-cover">
-              <span className="cover-top">
-                {deck.isOfficial ? <OfficialBadge /> : <><BookOpenText size={20} /><span>公開単語帳</span></>}
-                <span className="cover-index">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-              </span>
-              <div className="cover-title">
-                <h2>{deck.title}</h2>
-                <p>{deck.description || "公開された単語帳"}</p>
-              </div>
-              <span className="cover-bottom">
-                <span>
-                  {deck.wordCount}
-                  <small> words</small>
-                </span>
-                <span className="cover-monogram">Aa</span>
-              </span>
-            </div>
-            <div className="deck-meta">
-              <span className="deck-tags">
-                <Tag size={13} />
-                {deck.textbookTags.map((t) => t.name).join("・") ||
-                  "教材タグなし"}
-              </span>
-              <div>
-                {deck.isOfficial ? <OfficialLevelBadge deck={deck} /> : <span>
-                  <Globe size={13} />
-                  公開
-                </span>}
-                <span>単語帳を読む →</span>
-              </div>
-            </div>
-          </Link>
+          <div className="public-family-card" key={deck.id}><PublicDeckCard deck={deck} index={index} />
           {!!deck.variantCount && <Link className="family-variants-link" to={`/shared/${encodeURIComponent(deck.id)}?variants=1`}>派生版を見る（{deck.variantCount}冊）</Link>}
           </div>
         ))}
@@ -291,7 +255,7 @@ function Discover() {
   );
 }
 
-function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
+function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean; bookMode: boolean }) {
   const navigate = useNavigate();
   const location = useLocation();
   const detailPath = `/shared/${encodeURIComponent(id)}`;
@@ -430,6 +394,7 @@ function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
       setCopyError("アドレスバーのURLをコピーして共有してください。");
     }
   }
+  if (bookMode && deck) return <BookStudyPage key={deck.id} deck={deck} reader={publicRepository} onClose={() => navigate(detailPath + location.search)} />;
   if (studying && deck) {
     return (
       <StudyPage
@@ -488,6 +453,7 @@ function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
               </div>
             </div>
             <div className="owner-deck-actions">
+              <button className="button secondary" onClick={() => navigate(`${detailPath}/book${location.search}`)}>単語帳で学習</button>
               <button
                 className="button primary"
                 onClick={() => navigate(`${detailPath}/study${location.search}`)}
@@ -495,10 +461,10 @@ function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
                 <Layers size={17} />
                 カードで学習
               </button>
-              {!deck.standard && <button className="button secondary" onClick={() => void save()} disabled={saving || !authReady || !auth}>
+              <button className="button secondary" onClick={() => void save()} disabled={saving || !authReady || !auth}>
                 <BookmarkPlus size={17} />
-                {saving ? "保存しています…" : user ? "自分の単語帳に保存" : "Googleでログインして保存"}
-              </button>}
+                {saving ? "追加しています…" : "マイライブラリに追加"}
+              </button>
               <button className="button secondary" onClick={()=>setForkOpen(true)}>JSONを編集してフォーク</button>
               <button className="button secondary" onClick={() => void copy()}>
                 <Copy size={17} />
@@ -506,17 +472,18 @@ function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
               </button>
             </div>
           </div>
-          {forkOpen && <ForkDialog key={deck.id} deck={deck} onClose={()=>setForkOpen(false)} onSave={async input=>{
+          {forkOpen && <ForkDialog key={`fork-${deck.id}`} deck={deck} onClose={()=>setForkOpen(false)} onSave={async input=>{
             if(!auth?.currentUser)await googleSignIn();
             const saved=await publicRepository.fork(deck.id,input);
             navigate(`/library/decks/${encodeURIComponent(saved.id)}`);
           }}/>}
-          <ReportButton key={deck.id} id={deck.id} title={deck.title} />
+          <ReportButton key={`report-${deck.id}`} id={deck.id} title={deck.title} />
           <OfficialPublisher deck={deck} />
           <DeckCredit deck={deck} />
           <DeckLineage deck={deck} />
           <DeckVariants deck={deck} />
-          <p className="public-save-note">{deck.standard ? "標準単語帳は保存せずに利用できます。個人の保存上限には含まれません。" : "保存すると、自分専用の非公開コピーになります。元の単語帳の変更は反映されません。保存したままのコピーは再公開できません。"}</p>
+          <p className="public-save-note">{deck.standard ? "標準単語帳はそのまま学習できます。「マイライブラリに追加」では非公開コピーを保存し、個人の保存上限に含まれます。" : "保存すると、自分専用の非公開コピーになります。元の単語帳の変更は反映されません。保存したままのコピーは再公開できません。"}</p>
+          {deck.contentSource==='cefrj' && <p className="public-save-note">コピーには代表的な意味と例文が含まれます。その他の意味・用法注記は元の単語帳で確認できます。</p>}
           {saveError && <p role="alert" className="error-box">{saveError}</p>}
           {copyError && (
             <p role="status" className="muted">

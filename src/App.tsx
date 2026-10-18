@@ -1,5 +1,5 @@
+import { BookStudyPage } from "./components/BookStudyPage";
 import { ForkDialog } from "./components/ForkDialog";
-import { StandardLibrary } from "./components/StandardLibrary";
 import { Tutorial } from "./components/Tutorial";
 import { SearchInput } from "./components/SearchInput";
 import { Brand } from "./components/Brand";
@@ -39,7 +39,7 @@ import { LandingPage } from "./components/LandingPage";
 import { DeckLineage } from "./components/DeckLineage";
 import { WordEditor } from "./components/WordEditor";
 import { DeckCredit } from "./components/DeckCredit";
-import type { Deck, DeckInput, Word } from "../shared/model";
+import { LIMITS, type Deck, type DeckInput, type Word } from "../shared/model";
 const formatDate = (value: string) =>
   new Intl.DateTimeFormat("ja-JP", { month: "numeric", day: "numeric" }).format(
     new Date(value),
@@ -87,7 +87,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
   const detailPath = `${base}/decks/${encodeURIComponent(deckId ?? "")}`;
   const importing = location.pathname.endsWith("/import");
   const sharing = location.pathname.endsWith("/share");
-  const studying = location.pathname.endsWith("/study");
+  const bookMode = location.pathname.endsWith("/book");
+  const studying = location.pathname.endsWith("/study") || bookMode;
   const [, setParams] = useSearchParams();
   const [user, setUser] = useState<User | null>(null);
   const [authReady, setAuthReady] = useState(!auth);
@@ -333,8 +334,9 @@ export default function App({ demo = false }: { demo?: boolean }) {
       </>
     </div>
   );
-  if (location.pathname === `${base}/settings`) return <SettingsPage onClose={() => navigate(base)} onTutorial={() => navigate(`${base}?tutorial=1`)} />;
+  if (location.pathname === `${base}/settings`) return <SettingsPage demo={demo} onClose={() => navigate(base)} onTutorial={() => navigate(`${base}?tutorial=1`)} />;
 
+  if (bookMode && selected) return <BookStudyPage key={selected.id} deck={selected} reader={repository} onClose={() => navigate(detailPath + location.search)} />;
   if (studying && selected) {
     return (
       <StudyPage
@@ -412,10 +414,10 @@ export default function App({ demo = false }: { demo?: boolean }) {
               <ShieldCheck size={16} />
               保存できる単語数
             </span>
-            <p>{totalWords.toLocaleString()} / 5,000 語</p>
+            <p>{totalWords.toLocaleString()} / {LIMITS.userWords.toLocaleString()} 語</p>
             <div className="usage-track">
               <span
-                style={{ width: `${Math.max((totalWords / 5000) * 100, 1)}%` }}
+                style={{ width: `${Math.min(100, Math.max((totalWords / LIMITS.userWords) * 100, 1))}%` }}
               />
             </div>
           </div>
@@ -687,7 +689,6 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   </button>
                 </div>
               )}
-              <StandardLibrary />
               <footer className="library-footer">
                 <span>
                   <LockKeyhole size={14} />
@@ -736,6 +737,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   </div>
                 </div>
                 <div className="owner-deck-actions">
+                  <button className="button secondary" onClick={() => navigate(`${detailPath}/book${location.search}`)}>単語帳で学習</button>
                   {!demo && <button className="button secondary" onClick={()=>setForkOpen(true)}>JSONを編集してフォーク</button>}
                   <button
                     className="button primary"

@@ -29,6 +29,7 @@ vi.mock("../src/lib/firebase", () => ({
   googleSignIn: mocks.login,
 }));
 vi.mock("../src/lib/repository", () => ({
+  emailRepository: { preferences: async () => ({enabled:false,email:"bob@example.com",available:true}) },
   reportRepository: { access: async () => ({isAdmin:false}) },
   demoRepository: { list: async () => [mocks.deck], words: async () => mocks.page },
   cloudRepository: { list: async () => [mocks.owned], words: async () => mocks.page },
@@ -80,6 +81,33 @@ afterEach(async () => {
   vi.unstubAllGlobals();
 });
 describe("URL navigation", () => {
+  it("adds a book from its details after login and shows save errors inline",async()=>{
+    await mount('/shared/demo-deck');
+    mocks.save.mockRejectedValueOnce(new Error('登録上限に達しました。'));
+    await click('マイライブラリに追加');
+    expect(mocks.login).toHaveBeenCalledTimes(1);
+    expect(container.querySelector('[role="alert"]')?.textContent).toContain('登録上限');
+    expect(currentURL).toBe('/shared/demo-deck');
+    await click('マイライブラリに追加');
+    expect(currentURL).toBe('/library/decks/saved-deck');
+    expect(mocks.login).toHaveBeenCalledTimes(1);
+  });
+
+  it("closes and reopens the public fork dialog with X, Cancel, and Escape", async () => {
+    await mount("/shared/demo-deck");
+    for (const action of ["close", "cancel", "escape"]) {
+      await click("JSONを編集してフォーク");
+      expect(container.querySelectorAll(".fork-dialog")).toHaveLength(1);
+      await act(async () => {
+        const dialog = container.querySelector<HTMLDialogElement>(".fork-dialog")!;
+        if (action === "close") dialog.querySelector<HTMLButtonElement>('[aria-label="閉じる"]')!.click();
+        else if (action === "cancel") button("キャンセル").click();
+        else dialog.dispatchEvent(new Event("cancel", { cancelable: true }));
+      });
+      expect(container.querySelector(".fork-dialog")).toBeNull();
+      expect(container.querySelector("h1")?.textContent).toBe("日常のことば");
+    }
+  });
   it("opens a study deep link directly, and restores details through Back and Forward", async () => {
     await mount("/demo/decks/demo-deck/?q=curious");
     await settle(280);
@@ -113,7 +141,7 @@ describe("URL navigation", () => {
     await move("/demo?tag=教科書&sort=name&q=ことば");
     expect(container.querySelector<HTMLInputElement>('[aria-label="単語帳を検索"]')?.value).toBe("ことば");
     expect(container.querySelector("select")?.value).toBe("name");
-    expect(container.querySelectorAll("a.deck-card")).toHaveLength(1);
+    expect([...container.querySelectorAll("a.deck-card")].filter(card => !card.closest(".standard-library"))).toHaveLength(1);
   });
   it("routes import and share settings, redirects legacy demo links, and handles missing pages", async () => {
     await mount("/?demo=1");
@@ -140,7 +168,7 @@ describe("URL navigation", () => {
 describe("saving a public deck", () => {
   it("signs in once, saves once, and opens the saved private deck", async () => {
     await mount("/shared/demo-deck");
-    await click("Googleでログインして保存");
+    await click("マイライブラリに追加");
     expect(mocks.login).toHaveBeenCalledTimes(1);
     expect(mocks.save).toHaveBeenCalledExactlyOnceWith("demo-deck");
     expect(currentURL).toBe("/library/decks/saved-deck");
@@ -151,7 +179,7 @@ describe("saving a public deck", () => {
     mocks.save.mockImplementationOnce(() => new Promise((resolve) => { finish = resolve; }));
     await mount("/shared/demo-deck");
     await act(async () => {
-      const control = button("Googleでログインして保存");
+      const control = button("マイライブラリに追加");
       control.click();
       control.click();
     });
@@ -165,11 +193,11 @@ describe("saving a public deck", () => {
   it("keeps the public page available after login cancellation or a failed save", async () => {
     await mount("/shared/demo-deck");
     mocks.login.mockRejectedValueOnce({ code: "auth/popup-closed-by-user" });
-    await click("Googleでログインして保存");
+    await click("マイライブラリに追加");
     expect(mocks.save).not.toHaveBeenCalled();
     expect(container.querySelector('[role="alert"]')).toBeNull();
     mocks.save.mockRejectedValueOnce(new Error("登録上限に達しました。"));
-    await click("Googleでログインして保存");
+    await click("マイライブラリに追加");
     expect(currentURL).toBe("/shared/demo-deck");
     expect(container.querySelector('[role="alert"]')?.textContent).toContain("登録上限");
   });
@@ -187,9 +215,9 @@ describe("official publisher and deck-level difficulty", () => {
     expect(container.querySelector(".official-publisher")?.textContent).toContain("Azukiが編集した単語帳です。");
     expect(container.querySelector(".level-guide")?.textContent).toContain("Azuki独自の目安");
     expect(container.querySelectorAll(".level-guide dt")).toHaveLength(3);
-    await click("Googleでログインして保存");
+    await click("マイライブラリに追加");
     expect(currentURL).toBe("/library/decks/saved-deck");
-    expect(container.querySelector(".official-badge")).toBeNull();
+    expect(container.querySelector(".public-family-card .official-badge")).toBeNull();
     expect(container.querySelector(".official-level")).toBeNull();
     expect(container.querySelector(".official-publisher")).toBeNull();
   });
@@ -197,8 +225,8 @@ describe("official publisher and deck-level difficulty", () => {
     mocks.deck.officialLevel = "advanced";
     await mount("/explore");
     await settle(280);
-    expect(container.querySelector(".official-badge")).toBeNull();
-    expect(container.querySelector(".public-deck-grid .official-level")).toBeNull();
+    expect(container.querySelector(".public-family-card .official-badge")).toBeNull();
+    expect(container.querySelector(".public-family-card .official-level")).toBeNull();
     await move("/shared/demo-deck");
     expect(container.querySelector(".official-publisher")).toBeNull();
     expect(container.querySelector(".official-level")).toBeNull();
@@ -216,6 +244,11 @@ it("opens the public creation guide and returns to the demo JSON paste tab", asy
   vi.stubGlobal('navigator', { clipboard: { writeText: copy } });
   await click('プロンプトをコピー');
   expect(copy).toHaveBeenCalledWith(expect.stringContaining('"words": ['));
+  expect(container.querySelector('#own-examples-title')?.textContent).toBe('オリジナルの単語と例文を登録する');
+  await click('例文付きJSONをコピー');
+  const sample = JSON.parse(copy.mock.calls.at(-1)![0]);
+  expect(sample.words).toHaveLength(2);
+  expect(sample.words.every((word: any) => word.word && word.meaning && word.example)).toBe(true);
   const paste = container.querySelector<HTMLAnchorElement>('a[href="/demo/import?tab=paste"]')!;
   await act(async () => paste.click()); await settle();
   expect(currentURL).toBe('/demo/import?tab=paste');
@@ -241,7 +274,10 @@ it('shows the tutorial after login, remembers dismissal, and replays it from set
   await move('/library/settings');
   await click('チュートリアルを見る');
   expect(container.querySelector('#tutorial-title')?.textContent).toBe('Azukiへようこそ');
-  for (let i=0;i<4;i++) await click('次へ');
+  await click('次へ');
+  await click('次へ');
+  expect(container.querySelector('#tutorial-title')?.textContent).toBe('自分の例文も登録できます');
+  for (let i=0;i<3;i++) await click('次へ');
   await click('はじめる');
   expect(container.querySelector('.tutorial-overlay')).toBeNull();
   expect(currentURL).toBe('/library');

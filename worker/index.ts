@@ -1,3 +1,4 @@
+import { emailAdminRoute, preferencesRoute, processEmailQueue, unsubscribeRoute } from './email';
 import { standardDeck } from "../shared/standardDecks";
 import { LIMITS, parseDeck, ValidationError, type Deck } from "../shared/model";
 import { verifyFirebaseIdentity, type VerifiedIdentity } from "./auth";
@@ -14,6 +15,11 @@ export interface Env {
   ALLOWED_ORIGINS: string;
   ALLOW_IMPORTS: string;
   ADMIN_EMAILS?: string;
+  BREVO_API_KEY?: string;
+  EMAIL_ENABLED?: string;
+  EMAIL_FROM?: string;
+  EMAIL_API_URL?: string;
+  EMAIL_DAILY_LIMIT?: string;
 }
 type Verify = (token: string, projectId: string) => Promise<string | VerifiedIdentity>;
 const json = (data: unknown, status = 200) => Response.json(data, { status });
@@ -46,6 +52,7 @@ async function route(
   verify: Verify,
 ): Promise<Response> {
   const url = new URL(request.url);
+  if (url.pathname === "/api/email/unsubscribe") return unsubscribeRoute(request, env);
   if (url.pathname === "/api/health" && request.method === "GET")
     return json({ ok: true });
   if (url.pathname.startsWith("/api/public/")) return publicRoute(request, env);
@@ -76,6 +83,8 @@ async function route(
       401,
     );
   }
+  if (url.pathname === "/api/email/preferences") return preferencesRoute(request, env, identity);
+  if (url.pathname === "/api/admin/emails" || url.pathname.startsWith("/api/admin/emails/")) return emailAdminRoute(request, env, identity);
   if (url.pathname.startsWith("/api/admin/") || /^\/api\/decks\/[^/]+\/report$/.test(url.pathname)) return reportsRoute(request, env, identity);
   if (uid === OFFICIAL_OWNER_ID)
     return json({ error: "このアカウントでは操作できません。" }, 403);
@@ -249,7 +258,7 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
       .split(",")
       .map((s) => s.trim())
       .filter(Boolean);
-    if (origin && !allowed.includes(origin))
+    if (origin && !allowed.includes(origin) && new URL(request.url).pathname !== "/api/email/unsubscribe")
       return json({ error: "このアクセス元は許可されていません。" }, 403);
     let response: Response;
     try {
@@ -267,7 +276,7 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
             error: message.includes("AZUKI_DECK_LIMIT")
               ? "単語帳の上限（20冊）に達しました。不要な単語帳を削除してから保存してください。"
               : message.includes("AZUKI_WORD_LIMIT")
-                ? "保存できる単語数（合計5,000語）を超えます。不要な単語帳を削除してから保存してください。"
+                ? "保存できる単語数（合計2,000語）を超えます。不要な単語帳を削除してから保存してください。"
                 : message.includes("AZUKI_DAILY_LIMIT")
                   ? "1日の登録上限（5,000語）を超えます。削除した分も当日分に含まれます。日本時間9時にリセットされます。"
                   : message.includes("AZUKI_APP_DAILY_LIMIT")
@@ -300,9 +309,9 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
     );
     response.headers.set(
       "Access-Control-Allow-Methods",
-      "GET, POST, PATCH, DELETE, OPTIONS",
+      "GET, POST, PUT, PATCH, DELETE, OPTIONS",
     );
     return response;
   };
 }
-export default { fetch: createHandler() };
+export default { fetch: createHandler(), scheduled(_event: ScheduledController, env: Env, ctx: ExecutionContext) { ctx.waitUntil(processEmailQueue(env)); } };

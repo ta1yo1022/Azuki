@@ -836,14 +836,17 @@ describe("owner isolation and atomic D1 imports", () => {
     ).toBe(0);
     expect((await call("/decks", "POST", sample(1))).status).toBe(429);
   });
-  it("allows another 500-word save after 502 words were registered and deleted, and fits five official books", async () => {
+  it("allows another 500-word save after 502 words were registered and deleted, and caps storage at four 500-word books", async () => {
     db.exec(officialSeed);
     db.exec("INSERT INTO users(id,daily_words,import_day) VALUES ('alice',502,date('now'))");
     db.exec("UPDATE app_usage SET daily_words=daily_words+502");
-    for(const item of officialManifest.decks) {
+    for(const item of officialManifest.decks.slice(0,4)) {
       expect((await call(`/decks/${item.id}/save`,"POST")).status).toBe(201);
     }
-    expect(db.prepare("SELECT deck_count,word_count,daily_words FROM users WHERE id='alice'").get()).toEqual({deck_count:5,word_count:2500,daily_words:3002});
+    expect(db.prepare("SELECT deck_count,word_count,daily_words FROM users WHERE id='alice'").get()).toEqual({deck_count:4,word_count:2000,daily_words:2502});
+    const blocked=await call(`/decks/${officialManifest.decks[4].id}/save`,"POST");
+    expect(blocked.status).toBe(429);
+    expect(await blocked.json()).toMatchObject({code:'AZUKI_WORD_LIMIT'});
   });
   it("explains each user quota separately", async () => {
     await call("/decks","POST",sample(1));
@@ -852,7 +855,7 @@ describe("owner isolation and atomic D1 imports", () => {
     expect(await response.json()).toMatchObject({code:"AZUKI_DAILY_LIMIT",error:expect.stringContaining("削除した分")});
     db.exec("UPDATE users SET daily_words=1,word_count=5000 WHERE id='alice'");
     response=await call("/decks","POST",sample(1));
-    expect(await response.json()).toMatchObject({code:"AZUKI_WORD_LIMIT",error:expect.stringContaining("合計5,000語")});
+    expect(await response.json()).toMatchObject({code:"AZUKI_WORD_LIMIT",error:expect.stringContaining("合計2,000語")});
     db.exec("UPDATE users SET word_count=1,deck_count=20 WHERE id='alice'");
     response=await call("/decks","POST",sample(1));
     expect(await response.json()).toMatchObject({code:"AZUKI_DECK_LIMIT",error:expect.stringContaining("20冊")});

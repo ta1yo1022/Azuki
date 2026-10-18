@@ -7,8 +7,13 @@
     "FIREBASE_PROJECT_ID": "azuki-eed67",
     "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173,https://azuki-4ti.pages.dev,https://azuki.mame-app.com",
     "ALLOW_IMPORTS": "true",
+    "EMAIL_ENABLED": "false",
+    "EMAIL_DAILY_LIMIT": "290",
+    "EMAIL_FROM": "support@volta.jp",
+    "EMAIL_API_URL": "",
     "ADMIN_EMAILS": "taiyo.mizuno.main@gmail.com",
   },
+  "triggers": { "crons": ["*/5 * * * *"] },
   "d1_databases": [
     {
       "binding": "DB",

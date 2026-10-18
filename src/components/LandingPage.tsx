@@ -25,7 +25,7 @@ const sampleBooks = [
   { id: "sample-2", number: "03", title: "Reading\nNotes", label: "読書で出会う単語", words: 8, color: "sand" },
 ];
 function LandingBrand() {
-  return <span className="brand"><img src="/favicon.svg" alt="" /><span>azuki<span className="brand-period">.</span></span></span>;
+  return <span className="brand"><img src="/favicon.svg" alt="" /><span>azuki</span></span>;
 }
 function PreviewCard() {
   const [index, setIndex] = useState(0);
@@ -62,7 +62,7 @@ function PreviewCard() {
             <span className="landing-card-top"><span>英語・例文</span><BookOpenText size={21} strokeWidth={1.5} /></span>
             <span className="landing-card-answer">{word.word}</span>
             <span className="landing-card-example">{word.example}</span>
-            <span className="landing-card-translation">{word.translation}</span>
+
             <span className="landing-card-bottom"><span>タップして日本語に戻る</span><RotateCw size={17} /></span>
           </span>
         </span>
@@ -109,24 +109,44 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
             {error && <p role="alert" className="error-box landing-login-error">{error}</p>}
           </div>
         </div>
-        <PreviewCard />
+        <div className="landing-product-stage">
+          <div className="landing-stage-caption"><span>YOUR WORDS, YOUR WAY.</span><span>まずは、一枚めくってみる。</span></div>
+          <div className="landing-mini-book" aria-hidden="true">
+            <span className="landing-mini-label">MY WORDBOOK / 01</span>
+            <h2>旅先で出会う、<br />新しいことば。</h2>
+            <span className="landing-mini-tag">旅行・ホテル</span>
+            <div><strong>reservation</strong><span>予約</span></div>
+            <div><strong>destination</strong><span>目的地</span></div>
+            <div><strong>discover</strong><span>発見する</span></div>
+            <small>覚えたい単語を、自分の一冊に。</small>
+          </div>
+          <PreviewCard />
+          <div className="landing-stage-note"><Layers size={18} /><span>読む。めくる。覚える。</span><span>スマホでも、パソコンでも。</span></div>
+        </div>
       </section>
       <section className="landing-about" id="about" aria-labelledby="about-title">
         <div className="landing-container">
           <div className="landing-section-heading">
-            <div><h2 id="about-title">Azukiでできること</h2></div>
+            <div><span className="landing-eyebrow">MAKE IT YOURS</span><h2 id="about-title">覚えたいことばを、<br />覚えやすいかたちに。</h2></div>
             <p>パソコンでもスマートフォンでも。<br />Googleアカウントで単語帳を同期できます。</p>
           </div>
           <div className="landing-features" id="how-to">
-            <article><div className="landing-feature-top"><span>01</span><FileJson size={28} strokeWidth={1.4} /></div><h3>JSONからまとめて登録</h3><p>ファイルを選ぶか、内容を貼り付けて登録。単語と意味を確認してから保存できます。</p><span className="landing-feature-caption">教材名や章のタグも付けられます。</span></article>
+            <article><div className="landing-feature-top"><span>01</span><FileJson size={28} strokeWidth={1.4} /></div><h3>JSONからまとめて登録</h3><p>AIで作った単語リストも、手元のJSONも。内容を確認して、名前を付ければ自分の一冊に。</p><Link className="landing-inline-link" to="/guide/create">単語帳の作り方を見る <ArrowUpRight size={15} /></Link></article>
             <article><div className="landing-feature-top"><span>02</span><Layers size={28} strokeWidth={1.4} /></div><h3>カードをめくって練習</h3><p>日本語を見て、英語で答える練習から。英語から日本語への切り替えもできます。</p><span className="landing-feature-caption">順番どおりでも、シャッフルでも。</span></article>
             <article><div className="landing-feature-top"><span>03</span><Globe size={28} strokeWidth={1.4} /></div><h3>単語帳を探して保存</h3><p>単語帳名や教材タグで検索。気に入った単語帳を保存すると、自分用の非公開コピーになります。</p><Link className="landing-inline-link" to="/explore">公開単語帳を探す <ArrowUpRight size={15} /></Link></article>
           </div>
         </div>
       </section>
+      <section className="landing-reading landing-container" aria-labelledby="reading-title">
+        <div className="landing-reading-copy"><span className="landing-eyebrow">A LITTLE MORE FAMILIAR</span><h2 id="reading-title">本をひらくように。<br />ことばに触れる。</h2><p>英単語、意味、例文をひとつの見開きに。<br />ページをめくりながら読み進める、<br />単語帳モードもあります。</p><Link className="landing-inline-link" to="/shared/azuki-cefrj-a1-1-v1/book">単語帳モードを試す <ArrowUpRight size={17} /></Link></div>
+        <div className="landing-open-book" aria-label="単語帳モードの表示イメージ">
+          <div className="landing-paper"><span>MY ENGLISH NOTES</span><h3>ことばを、ひとつずつ。</h3>{previewWords.map((word, i) => <div className="landing-paper-row" key={word.word}><small>0{i + 1}</small><strong>{word.word}</strong><span>{word.meaning}</span></div>)}<small className="landing-page-number">01</small></div>
+          <div className="landing-paper landing-paper-right"><span>WORDS IN CONTEXT</span><h3>例文で、使い方まで。</h3>{previewWords.map((word) => <div className="landing-paper-row" key={word.word}><p>{word.example}</p></div>)}<small className="landing-page-number">02</small></div>
+        </div>
+      </section>
       <section className="landing-samples landing-container" aria-labelledby="samples-title">
         <div className="landing-section-heading">
-          <div><h2 id="samples-title">サンプルで試す</h2></div>
+          <div><span className="landing-eyebrow">TAKE A LOOK INSIDE</span><h2 id="samples-title">はじめの一冊を、<br />ひらいてみよう。</h2></div>
           <p>ログインせずにカード学習を試せます。</p>
         </div>
         <div className="landing-books">
@@ -145,8 +165,8 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
       <section className="landing-invitation landing-container" aria-labelledby="invitation-title">
         <div className="landing-invitation-mark" aria-hidden="true"><img src="/favicon.svg" alt="" /></div>
         <span className="landing-eyebrow">公開ライブラリ</span>
-        <h2 id="invitation-title">みんなの単語帳から、<br />学びたいものを。</h2>
-        <p>運営やユーザーが公開した単語帳を探せます。<br />気に入った単語帳は、自分用に保存できます。</p>
+        <h2 id="invitation-title">自分の学びが、<br />誰かの一冊にもなる。</h2>
+        <p>テストに向けて作った単語帳を、クラスの友達にも。<br />公開してリンクを送れば、同じ単語帳で学べます。</p>
         <Link className="landing-final-button" to="/explore">公開単語帳を探す <ArrowUpRight size={18} /></Link>
         <span className="landing-invitation-note"><Check size={14} />ログインなしで読めます。</span>
       </section>

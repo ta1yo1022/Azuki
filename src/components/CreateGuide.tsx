@@ -52,6 +52,11 @@ export const IMAGE_PROMPT = `添付した画像から英単語を読み取り、
 
 ${OUTPUT_RULES}`;
 
+const EXAMPLE_JSON = JSON.stringify({ words: [
+  { word: "discover", meaning: "発見する", example: "I discovered a small cafe near my school." },
+  { word: "improve", meaning: "上達する", example: "My English improves with practice." },
+] }, null, 2);
+
 export function CreateGuide() {
   const [params] = useSearchParams();
   const importPath = params.get("mode") === "demo" ? "/demo/import" : "/library/import";
@@ -59,6 +64,8 @@ export function CreateGuide() {
   const [drafts, setDrafts] = useState({ words: DECK_PROMPT, image: IMAGE_PROMPT });
   const prompt = drafts[method];
   const [message, setMessage] = useState("");
+  const exampleInput = useRef<HTMLTextAreaElement>(null);
+  const [exampleMessage, setExampleMessage] = useState("");
   const input = useRef<HTMLTextAreaElement>(null);
   useEffect(() => { document.title = "オリジナル英単語帳の作り方 — Azuki"; }, []);
   async function copy() {
@@ -70,11 +77,21 @@ export function CreateGuide() {
       setMessage("自動でコピーできませんでした。選択された文章をコピーしてください。");
     }
   }
+  async function copyExample() {
+    try {
+      await navigator.clipboard.writeText(EXAMPLE_JSON);
+      setExampleMessage("例文付きJSONをコピーしました。自分の単語と例文に書き換えて使えます。");
+    } catch {
+      exampleInput.current?.focus(); exampleInput.current?.select();
+      setExampleMessage("選択されたJSONをコピーしてください。");
+    }
+  }
   return <div className="create-guide">
     <header className="guide-header"><Link to="/" aria-label="Azukiのホームへ"><Brand /></Link><Link className="text-button" to={importPath}><ArrowLeft size={16} />作成画面に戻る</Link></header>
     <main>
       <h1>オリジナル英単語帳の作り方</h1>
       <p className="guide-intro">ChatGPTやGeminiで単語帳のデータを作り、Azukiに貼り付けて登録できます。単語帳の名前とカテゴリは、登録画面で設定します。</p>
+      <a className="text-button" href="#own-examples">自分で考えた単語・例文を登録する →</a>
       <section aria-labelledby="guide-step-1">
         <span className="eyebrow">STEP 01</span><h2 id="guide-step-1">プロンプトをコピーする</h2>
         <div className="guide-methods" role="group" aria-label="単語帳の作り方">
@@ -99,6 +116,20 @@ export function CreateGuide() {
         <p>作成画面の「JSONを貼り付け」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版も入力できます。</p>
         <p>AIが作った意味や例文には誤りが含まれることがあります。登録後も単語一覧から確認・編集できます。新しい単語帳は非公開で保存されます。</p>
         <Link className="button primary" to={`${importPath}?tab=paste`}>JSONを貼り付ける<ArrowRight size={17} /></Link>
+      </section>
+      <section id="own-examples" aria-labelledby="own-examples-title">
+        <span className="eyebrow">自分で作る</span><h2 id="own-examples-title">オリジナルの単語と例文を登録する</h2>
+        <p>覚えたい英単語に、自分の経験や身近な場面を使った英文を付けて登録できます。下のJSONをひな形にしてください。</p>
+        <ol className="guide-example-steps">
+          <li><strong>英単語・意味・例文を用意する</strong><p><code>word</code>に英単語、<code>meaning</code>に覚えたい日本語の意味、<code>example</code>にその意味で使う英語の例文を入れます。たとえば「discover／発見する」なら、「学校の近くで小さなカフェを見つけた」という場面を英文にします。</p></li>
+          <li><strong>JSONをコピーして書き換える</strong><p>下のひな形をコピーし、作成画面の「JSONを貼り付け」に貼ります。単語・意味・例文の文字列を書き換えてください。単語を増やす場合は、1語分のオブジェクトをカンマで区切って追加します。</p></li>
+          <li><strong>確認して保存する</strong><p>「内容を確認」を押し、単語帳の名前とカテゴリを設定して登録します。保存後は単語一覧の行をタップすると例文を確認できます。カード学習では、日本語から英語に裏返すと英単語と例文が表示されます。</p></li>
+        </ol>
+        <label htmlFor="example-json">例文付きJSONのひな形</label>
+        <textarea id="example-json" ref={exampleInput} value={EXAMPLE_JSON} readOnly spellCheck={false} />
+        <div className="guide-ai-links"><button className="button secondary" onClick={() => void copyExample()}><Copy size={17} />例文付きJSONをコピー</button><Link className="button primary" to={`${importPath}?tab=paste`}>作成画面で登録する<ArrowRight size={17} /></Link></div>
+        {exampleMessage && <p role="status">{exampleMessage}</p>}
+        <p>例文は英語で入力します。英文が不安なときは、AIに「この単語をこの意味で使えているか、文法も確認して」と頼み、内容を確認してから登録してください。</p>
       </section>
       <aside className="guide-trouble"><h2>うまく登録できないとき</h2><p>回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとJSONをAIに送り、「このエラーを直して、JSON全体を出力して」と頼めます。</p><p>1回の登録は500語・512KBまでです。保存上限のエラーが出た場合は、単語帳を減らすなど、表示された案内に従ってください。</p></aside>
     </main>

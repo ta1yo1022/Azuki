@@ -14,7 +14,7 @@ export function AdminLink() {
     const unsub=onAuthStateChanged(auth,user=>{const current=++version;setAllowed(false);if(user)void reportRepository.access().then(r=>{if(version===current)setAllowed(r.isAdmin);}).catch(()=>{});});
     return ()=>{version++;unsub();};
   },[]);
-  return allowed ? <section className="study-setup"><h2>運営管理</h2><Link className="button secondary" to="/admin/reports">単語帳の通報を確認</Link></section> : null;
+  return allowed ? <section className="study-setup"><h2>運営管理</h2><Link className="button secondary" to="/admin/reports">単語帳の通報を確認</Link> <Link className="button secondary" to="/admin/emails">アップデート通知を配信</Link></section> : null;
 }
 export function AdminReports() {
   const [user,setUser]=useState<User|null>(auth?.currentUser??null);const [ready,setReady]=useState(!auth);

@@ -3,7 +3,7 @@ export function Brand() {
     <span className="brand">
       <img src="/favicon.svg" alt="" />
       <span>
-        azuki<span className="brand-period">.</span>
+        azuki
       </span>
     </span>
   );

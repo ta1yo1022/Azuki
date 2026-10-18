@@ -22,3 +22,21 @@ it('widens book capacity without losing existing content, tags, lineage or quota
   expect(db.prepare("SELECT word_count FROM users WHERE id='owner'").get()?.word_count).toBe(0);
   db.close();
 });
+
+it('keeps existing over-limit books editable while rejecting additional words after the 2,000-word migration',()=>{
+  const db=new DatabaseSync(':memory:');
+  try {
+    for(const file of readdirSync('migrations').filter(f=>f.endsWith('.sql') && f<'0013_user_word_limit.sql').sort())db.exec(readFileSync(`migrations/${file}`,'utf8'));
+    db.exec("INSERT INTO users(id) VALUES ('owner'); INSERT INTO decks(id,owner_id,title,word_count,created_at,updated_at,data_bytes) VALUES ('book','owner','保存済み',2500,'now','now',100)");
+    const before=db.prepare('SELECT * FROM decks').all();
+    db.exec(readFileSync('migrations/0013_user_word_limit.sql','utf8'));
+    expect(db.prepare('SELECT * FROM decks').all()).toEqual(before);
+    expect(()=>db.exec("UPDATE decks SET data_bytes=110 WHERE id='book'")).not.toThrow();
+    expect(()=>db.exec("UPDATE decks SET word_count=2501 WHERE id='book'")).toThrow('AZUKI_WORD_LIMIT');
+    db.exec("UPDATE decks SET word_count=2000 WHERE id='book'");
+    expect(()=>db.exec("INSERT INTO decks(id,owner_id,title,word_count,created_at,updated_at) VALUES ('extra','owner','追加',1,'now','now')")).toThrow('AZUKI_WORD_LIMIT');
+    db.exec("UPDATE decks SET word_count=1999 WHERE id='book'");
+    db.exec("INSERT INTO decks(id,owner_id,title,word_count,created_at,updated_at) VALUES ('extra','owner','追加',1,'now','now')");
+    expect(db.prepare("SELECT word_count FROM users WHERE id='owner'").get()?.word_count).toBe(2000);
+  } finally {db.close();}
+});

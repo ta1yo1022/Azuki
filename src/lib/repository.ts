@@ -95,7 +95,7 @@ export const demoRepository: Repository = {
       store.decks.length >= LIMITS.decks ||
       total + input.words.length > LIMITS.userWords
     )
-      throw new Error("1人20冊・合計5,000語まで登録できます。");
+      throw new Error("1人20冊・合計2,000語まで登録できます。");
     const today = store.importDay === day ? store.dailyWords : 0;
     if (today + input.words.length > LIMITS.dailyWords)
       throw new Error("1日の登録上限（5,000語）に達しました。削除した分も当日分に含まれます。日本時間9時にリセットされます。");
@@ -209,7 +209,21 @@ export const publicRepository = {
   fork: async (id:string,input:DeckInput) => (await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/fork`, {method:"POST",body:JSON.stringify(input)})).deck,
   variants: (id:string, cursor:string|null = null, signal?:AbortSignal) => request<DeckPage>(`/public/decks/${encodeURIComponent(id)}/variants${cursor ? `?cursor=${encodeURIComponent(cursor)}` : ""}`, {signal}, true),
   save: async (id: string) => {
-    if (standardDeck(id)) throw new Error("標準単語帳は保存せずにそのまま学習できます。");
+    const standard=standardDeck(id);
+    if(standard) {
+      const existing=(await cloudRepository.list()).find(deck=>deck.sourceDeck?.id===id);
+      if(existing)return existing;
+      const words:Word[]=[];
+      let cursor:number|null=0;
+      while(cursor!==null) {
+        const page=await standardWords(id,'',cursor);
+        if(!page.words.length || (page.nextCursor!==null && page.nextCursor<=cursor))throw new Error('単語を読み込めませんでした。もう一度お試しください。');
+        words.push(...page.words);cursor=page.nextCursor;
+      }
+      if(words.length!==standard.wordCount)throw new Error('単語帳が更新されました。開き直してください。');
+      const input:DeckInput={schemaVersion:1,title:standard.title,description:standard.description,textbookTags:standard.textbookTags,words:words.map(({word,meaning,example,tags})=>({word,meaning,example,tags}))};
+      return (await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/fork`,{method:'POST',body:JSON.stringify(input)})).deck;
+    }
     return (await request<{ deck: Deck; alreadySaved: boolean }>(
     `/decks/${encodeURIComponent(id)}/save`, { method: "POST" },
   )).deck;
@@ -243,4 +257,12 @@ export const reportRepository = {
   access: () => request<{isAdmin:boolean}>("/admin/access"),
   list: (status: string, cursor: string | null = null) => request<{reports:import("../../shared/reports").DeckReport[];nextCursor:string|null}>(`/admin/reports?status=${encodeURIComponent(status)}${cursor ? `&cursor=${encodeURIComponent(cursor)}` : ""}`),
   update: (id: string, status: string, adminNote: string) => request<{ok:boolean}>(`/admin/reports/${encodeURIComponent(id)}`,{method:"PATCH",body:JSON.stringify({status,adminNote})}),
+};
+
+export const emailRepository = {
+  preferences: () => request<{enabled:boolean;email:string|null;available:boolean}>('/email/preferences'),
+  setPreferences: (enabled:boolean) => request<{enabled:boolean}>('/email/preferences',{method:'PUT',body:JSON.stringify({enabled,consentVersion:'updates-v1'})}),
+  dashboard: () => request<import('../../shared/email').EmailDashboard>('/admin/emails'),
+  create: (id:string,subject:string,body:string) => request<{id:string}>('/admin/emails',{method:'POST',body:JSON.stringify({id,subject,body})}),
+  action: (id:string,action:'start'|'test'|'cancel') => request<{ok:boolean}>(`/admin/emails/${id}/${action}`,{method:'POST',body:JSON.stringify({confirm:action==='start'?'send-to-subscribers':undefined})}),
 };
