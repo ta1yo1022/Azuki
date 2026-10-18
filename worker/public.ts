@@ -1,3 +1,5 @@
+import {standardDeck, standardDecks, standardAssetPath} from "../shared/standardDecks";
+import type {Word} from "../shared/model";
 import { ValidationError } from "../shared/model";
 import {
   deckSelect,
@@ -47,8 +49,8 @@ export async function publicRoute(
     const q = searchQuery(url);
     const pattern = likePattern(q);
     const cursor = parseCursor(url.searchParams.get("cursor"));
-    const clauses = ["d.visibility='public'", "d.id IN (SELECT id FROM public_families WHERE family_rank=1)"];
-    const params: string[] = [];
+    const clauses = [`d.id NOT IN (${standardDecks.map(() => "?").join(",")})`, "d.visibility='public'", "d.id IN (SELECT id FROM public_families WHERE family_rank=1)"];
+    const params: string[] = standardDecks.map(d=>d.id);
     if (q) {
       clauses.push(`EXISTS (SELECT 1 FROM decks member WHERE member.visibility='public' AND COALESCE(member.root_deck_id,member.id)=COALESCE(d.root_deck_id,d.id) AND (member.title LIKE ? ESCAPE '\\' OR member.description LIKE ? ESCAPE '\\' OR EXISTS (
         SELECT 1 FROM deck_textbook_tags dt JOIN textbook_tags t ON t.id=dt.tag_id
@@ -75,6 +77,25 @@ export async function publicRoute(
     url.pathname,
   );
   if (path) {
+    const standard = standardDeck(path[1]);
+    if (standard) {
+      if (!path[2]) return Response.json({deck:standard});
+      if (path[2] === '/words') {
+        const raw = url.searchParams.get('cursor') ?? '0';
+        if (!/^\d{1,6}$/.test(raw)) throw new ValidationError('ページの指定が正しくありません。');
+        const q = searchQuery(url).toLocaleLowerCase();
+        // Content is published by Pages; never accept a client-supplied origin or path.
+        const response = await fetch(`https://azuki.mame-app.com${standardAssetPath(standard)}`);
+        if (!response.ok) return Response.json({error:'標準単語帳を読み込めませんでした。'},{status:503});
+        const words = await response.json() as Word[];
+        if (!Array.isArray(words) || words.length !== standard.wordCount) return Response.json({error:'標準単語帳の更新中です。'},{status:503});
+        const matches = words.filter(w=>w.ordinal>=Number(raw) && `${w.word} ${w.meaning} ${(w.otherMeanings ?? []).join(' ')} ${w.tags.join(' ')}`.toLocaleLowerCase().includes(q));
+        return Response.json({words:matches.slice(0,50),nextCursor:matches.length>50 ? matches[50].ordinal : null});
+      }
+      const cursor = parseCursor(url.searchParams.get('cursor'));
+      const result = await env.DB.prepare(`${deckSelect} WHERE d.visibility='public' AND d.root_deck_id=? AND d.content_hash<>? ${cursor ? 'AND (d.created_at,d.id)<(?,?)' : ''} ORDER BY d.created_at DESC,d.id DESC LIMIT 21`).bind(standard.id,standard.contentHash,...(cursor ?? [])).all<DeckRow>();
+      return Response.json({decks:result.results.slice(0,20).map(deckResult),nextCursor:result.results.length>20 ? cursorFor(result.results[19]) : null});
+    }
     const row = await env.DB.prepare(
       `${deckSelect} WHERE d.id=? AND d.visibility='public'`,
     )

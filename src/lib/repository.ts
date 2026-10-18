@@ -1,3 +1,5 @@
+import { standardDeck } from "../../shared/standardDecks";
+import { standardWords } from "./standardRepository";
 import { auth } from "./firebase";
 import { samples } from "./samples";
 import {
@@ -204,10 +206,14 @@ export const cloudRepository: Repository = {
 };
 
 export const publicRepository = {
+  fork: async (id:string,input:DeckInput) => (await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/fork`, {method:"POST",body:JSON.stringify(input)})).deck,
   variants: (id:string, cursor:string|null = null, signal?:AbortSignal) => request<DeckPage>(`/public/decks/${encodeURIComponent(id)}/variants${cursor ? `?cursor=${encodeURIComponent(cursor)}` : ""}`, {signal}, true),
-  save: async (id: string) => (await request<{ deck: Deck; alreadySaved: boolean }>(
+  save: async (id: string) => {
+    if (standardDeck(id)) throw new Error("標準単語帳は保存せずにそのまま学習できます。");
+    return (await request<{ deck: Deck; alreadySaved: boolean }>(
     `/decks/${encodeURIComponent(id)}/save`, { method: "POST" },
-  )).deck,
+  )).deck;
+  },
   list: (q: string, cursor: string | null = null, signal?: AbortSignal) =>
     request<DeckPage>(
       `/public/decks?q=${encodeURIComponent(q)}${cursor ? `&cursor=${encodeURIComponent(cursor)}` : ""}`,
@@ -215,7 +221,7 @@ export const publicRepository = {
       true,
     ),
   get: async (id: string, signal?: AbortSignal) =>
-    (
+    standardDeck(id) ?? (
       await request<{ deck: Deck }>(
         `/public/decks/${encodeURIComponent(id)}`,
         { signal },
@@ -223,7 +229,7 @@ export const publicRepository = {
       )
     ).deck,
   words: (id: string, q: string, cursor: number, signal?: AbortSignal) =>
-    request<WordPage>(
+    standardDeck(id) ? standardWords(id, q, cursor, signal) : request<WordPage>(
       `/public/decks/${encodeURIComponent(id)}/words?q=${encodeURIComponent(q)}&cursor=${cursor}`,
       { signal },
       true,

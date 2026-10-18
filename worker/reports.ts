@@ -1,3 +1,4 @@
+import { standardDeck } from "../shared/standardDecks";
 import { limitedBody, type Env } from "./index";
 import type { VerifiedIdentity } from "./auth";
 import { REPORT_REASONS, type DeckReport } from "../shared/reports";
@@ -25,7 +26,7 @@ export async function reportsRoute(request: Request, env: Env, identity: Verifie
       if (cursor) { try { const c = JSON.parse(cursor); if (!Array.isArray(c) || c.length !== 2 || c.some(v => typeof v !== "string" || v.length > 80)) throw new Error(); [time,id] = c; } catch { throw new ValidationError("ページの指定が正しくありません。"); } }
       const rows = await env.DB.prepare(`SELECT r.id,r.deck_id,r.deck_title,r.reason,r.details,r.status,r.created_at,r.updated_at,r.admin_note,d.visibility AS current_visibility FROM deck_reports r LEFT JOIN decks d ON d.id=r.deck_id WHERE r.status=? AND (r.created_at<? OR (r.created_at=? AND r.id<?)) ORDER BY r.created_at DESC,r.id DESC LIMIT 51`).bind(status,time,time,id).all<DeckReport>();
       const reports = rows.results.slice(0,50), last = reports.at(-1);
-      return json({ reports, nextCursor: rows.results.length > 50 && last ? JSON.stringify([last.created_at,last.id]) : null });
+      return json({ reports: reports.map(report => standardDeck(report.deck_id) ? {...report, current_visibility: "public"} : report), nextCursor: rows.results.length > 50 && last ? JSON.stringify([last.created_at,last.id]) : null });
     }
     const match = /^\/api\/admin\/reports\/([a-zA-Z0-9-]{1,80})$/.exec(url.pathname);
     if (match && request.method === "PATCH") {
@@ -46,6 +47,11 @@ export async function reportsRoute(request: Request, env: Env, identity: Verifie
   if (existing) return json({ok:true,duplicate:true});
   const now = new Date().toISOString();
   try {
+    const builtin = standardDeck(match[1]);
+    if (builtin) {
+      await env.DB.prepare("INSERT INTO deck_reports(id,deck_id,deck_title,reporter_id,reason,details,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)").bind(crypto.randomUUID(),builtin.id,builtin.title,identity.uid,data.reason,details,now,now).run();
+      return json({ok:true},201);
+    }
     const result = await env.DB.prepare("INSERT INTO deck_reports(id,deck_id,deck_title,reporter_id,reason,details,created_at,updated_at) SELECT ?,id,title,?,?,?,?,? FROM decks WHERE id=? AND visibility='public' RETURNING id").bind(crypto.randomUUID(),identity.uid,data.reason,details,now,now,match[1]).first();
     return result ? json({ok:true},201) : json({error:"この単語帳は公開されていません。"},404);
   } catch (error) {

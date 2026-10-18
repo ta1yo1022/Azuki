@@ -294,10 +294,9 @@ export function StudyPage({
                     <span className="study-card-body">
                       {revealed ? (
                         <>
-                          {direction === "ja-en" ? <>
+                          {direction === "ja-en" ? (
                             <span className="study-word" lang="en">{word.word}</span>
-                            <span className="study-meaning" lang="ja">{word.meaning}</span>
-                          </> : <>
+                          ) : <>
                             <span className="study-answer-word" lang="en">{word.word}</span>
                             <span className="study-meaning" lang="ja">{word.meaning}</span>
                           </>}
@@ -313,7 +312,7 @@ export function StudyPage({
                           {direction === "ja-en" ? word.meaning : word.word}
                         </span>
                       )}
-                      {revealed && word.tags.length > 0 && (
+                      {((revealed && direction === "en-ja") || (!revealed && deck.standard)) && word.tags.length > 0 && (
                         <span className="study-tags">
                           {word.tags.map((tag) => (
                             <span className="tag" key={tag}>

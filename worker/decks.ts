@@ -1,3 +1,4 @@
+import { standardDeck } from "../shared/standardDecks";
 import { ValidationError, type Deck, type TextbookTag } from "../shared/model";
 import { OFFICIAL_OWNER_ID } from "./official";
 export type DeckRow = {
@@ -25,7 +26,7 @@ export function deckResult(row: DeckRow): Deck {
   const official = row.owner_id === OFFICIAL_OWNER_ID;
   const level = row.official_level;
   return {
-    ...(row.source_deck_id ? { sourceDeck: { id: row.source_deck_id, title: row.source_title || "コピー元の単語帳", available: Boolean(row.source_available) }, unchangedCopy: !row.source_hash || row.content_hash === row.source_hash } : {}),
+    ...(row.source_deck_id ? { sourceDeck: { id: row.source_deck_id, title: row.source_title || "コピー元の単語帳", available: Boolean(row.source_available || standardDeck(row.source_deck_id)) }, unchangedCopy: !row.source_hash || row.content_hash === row.source_hash } : {}),
     variantCount: row.variant_count ?? 0,
     schemaVersion: 1,
     id: row.id,
@@ -39,7 +40,7 @@ export function deckResult(row: DeckRow): Deck {
     isOfficial: official,
     ...(official && (level === "beginner" || level === "intermediate" || level === "advanced")
       ? { officialLevel: level } : {}),
-    ...(row.content_source === "ejdict" ? { contentSource: "ejdict" as const } : {}),
+    ...(row.root_deck_id && standardDeck(row.root_deck_id) ? {contentSource:standardDeck(row.root_deck_id)!.contentSource} : row.content_source === "ejdict" ? { contentSource: "ejdict" as const } : {}),
   };
 }
 

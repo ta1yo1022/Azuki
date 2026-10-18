@@ -1,3 +1,7 @@
+import { ForkDialog } from "./ForkDialog";
+import { WordDetails } from "./WordDetails";
+import { findStandardDecks } from "../../shared/standardDecks";
+import { StandardLibrary } from "./StandardLibrary";
 import { ReportButton } from "./ReportButton";
 import { SearchInput } from "./SearchInput";
 import { useEffect, useRef, useState, type ReactNode } from "react";
@@ -176,6 +180,7 @@ function Discover() {
           </button>
         )}
       </div>
+      <StandardLibrary query={query} />
       <div className="public-results-label">
         <span>
           {query.trim()
@@ -247,7 +252,7 @@ function Discover() {
           単語帳を探しています…
         </p>
       )}
-      {!loading && !error && !decks.length && (
+      {!loading && !error && !decks.length && !findStandardDecks(query).length && (
         <div className="empty-state public-empty">
           <BookOpenText size={42} strokeWidth={1.3} />
           <h2>
@@ -293,6 +298,7 @@ function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
   const [user, setUser] = useState<User | null>(auth?.currentUser ?? null);
   const [authReady, setAuthReady] = useState(!auth);
   const [saving, setSaving] = useState(false);
+  const [forkOpen,setForkOpen]=useState(false);
   const [saveError, setSaveError] = useState("");
   const saveVersion = useRef(0);
   const saveBusy = useRef(false);
@@ -489,22 +495,28 @@ function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
                 <Layers size={17} />
                 カードで学習
               </button>
-              <button className="button secondary" onClick={() => void save()} disabled={saving || !authReady || !auth}>
+              {!deck.standard && <button className="button secondary" onClick={() => void save()} disabled={saving || !authReady || !auth}>
                 <BookmarkPlus size={17} />
                 {saving ? "保存しています…" : user ? "自分の単語帳に保存" : "Googleでログインして保存"}
-              </button>
+              </button>}
+              <button className="button secondary" onClick={()=>setForkOpen(true)}>JSONを編集してフォーク</button>
               <button className="button secondary" onClick={() => void copy()}>
                 <Copy size={17} />
                 {copied ? "コピーしました" : "リンクをコピー"}
               </button>
             </div>
           </div>
+          {forkOpen && <ForkDialog key={deck.id} deck={deck} onClose={()=>setForkOpen(false)} onSave={async input=>{
+            if(!auth?.currentUser)await googleSignIn();
+            const saved=await publicRepository.fork(deck.id,input);
+            navigate(`/library/decks/${encodeURIComponent(saved.id)}`);
+          }}/>}
           <ReportButton key={deck.id} id={deck.id} title={deck.title} />
           <OfficialPublisher deck={deck} />
           <DeckCredit deck={deck} />
           <DeckLineage deck={deck} />
           <DeckVariants deck={deck} />
-          <p className="public-save-note">保存すると、自分専用の非公開コピーになります。元の単語帳の変更は反映されません。保存したままのコピーは再公開できません。</p>
+          <p className="public-save-note">{deck.standard ? "標準単語帳は保存せずに利用できます。個人の保存上限には含まれません。" : "保存すると、自分専用の非公開コピーになります。元の単語帳の変更は反映されません。保存したままのコピーは再公開できません。"}</p>
           {saveError && <p role="alert" className="error-box">{saveError}</p>}
           {copyError && (
             <p role="status" className="muted">
@@ -536,7 +548,7 @@ function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
           <div className="word-list">
             <div className="word-list-head">
               <span>WORD / MEANING</span>
-              <span>タップして例文を表示</span>
+              <span>{deck.standard ? "タップして意味・例文を表示" : "タップして例文を表示"}</span>
             </div>
             {words.map((word) => (
               <details className="word-item" key={word.id}>
@@ -555,10 +567,7 @@ function PublicDeck({ id, studying }: { id: string; studying: boolean }) {
                   </span>
                   <ChevronDown className="word-expand" size={17} />
                 </summary>
-                <div className="word-detail">
-                  <span className="eyebrow">例文</span>
-                  <p>{word.example || "例文はまだ登録されていません。"}</p>
-                </div>
+                <WordDetails word={word} />
               </details>
             ))}
           </div>

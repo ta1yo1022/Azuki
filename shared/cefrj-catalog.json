@@ -1,0 +1,178 @@
+[
+  {
+    "id": "azuki-cefrj-a1-1-v1",
+    "schemaVersion": 1,
+    "title": "CEFR-J A1 前編",
+    "description": "CEFR-J WordlistのA1を原典の掲載順で二分した前編です。代表的な意味・例文付き。",
+    "textbookTags": [
+      {
+        "name": "CEFR-J",
+        "edition": "Wordlist 1.6"
+      }
+    ],
+    "visibility": "public",
+    "wordCount": 583,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "isOfficial": true,
+    "contentSource": "cefrj",
+    "cefrLevel": "A1",
+    "standard": true,
+    "contentHash": "baceaf448589065e1a9ca1a839154423a701bb193e1b29368547dc105a6013fd",
+    "file": "azuki-cefrj-a1-1-v1.0c4b7e3b34182027.json"
+  },
+  {
+    "id": "azuki-cefrj-a1-2-v1",
+    "schemaVersion": 1,
+    "title": "CEFR-J A1 後編",
+    "description": "CEFR-J WordlistのA1を原典の掲載順で二分した後編です。代表的な意味・例文付き。",
+    "textbookTags": [
+      {
+        "name": "CEFR-J",
+        "edition": "Wordlist 1.6"
+      }
+    ],
+    "visibility": "public",
+    "wordCount": 583,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "isOfficial": true,
+    "contentSource": "cefrj",
+    "cefrLevel": "A1",
+    "standard": true,
+    "contentHash": "02ed633d838d8f729c79821b1f3c06c25557ee80e2565ececd818134fab3d2eb",
+    "file": "azuki-cefrj-a1-2-v1.56cefa6cb500797b.json"
+  },
+  {
+    "id": "azuki-cefrj-a2-1-v1",
+    "schemaVersion": 1,
+    "title": "CEFR-J A2 前編",
+    "description": "CEFR-J WordlistのA2を原典の掲載順で二分した前編です。代表的な意味・例文付き。",
+    "textbookTags": [
+      {
+        "name": "CEFR-J",
+        "edition": "Wordlist 1.6"
+      }
+    ],
+    "visibility": "public",
+    "wordCount": 706,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "isOfficial": true,
+    "contentSource": "cefrj",
+    "cefrLevel": "A2",
+    "standard": true,
+    "contentHash": "fb6693a72bce1ee9efe05b42a5b624e8f744edba37a2a707a62bf76882dc7ccb",
+    "file": "azuki-cefrj-a2-1-v1.651832383249ad03.json"
+  },
+  {
+    "id": "azuki-cefrj-a2-2-v1",
+    "schemaVersion": 1,
+    "title": "CEFR-J A2 後編",
+    "description": "CEFR-J WordlistのA2を原典の掲載順で二分した後編です。代表的な意味・例文付き。",
+    "textbookTags": [
+      {
+        "name": "CEFR-J",
+        "edition": "Wordlist 1.6"
+      }
+    ],
+    "visibility": "public",
+    "wordCount": 705,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "isOfficial": true,
+    "contentSource": "cefrj",
+    "cefrLevel": "A2",
+    "standard": true,
+    "contentHash": "8f785d3dafd6e4ffc5ac65e001d0a554322831b1b92db529c7c97fe8721e1281",
+    "file": "azuki-cefrj-a2-2-v1.18eac088b6536914.json"
+  },
+  {
+    "id": "azuki-cefrj-b1-1-v1",
+    "schemaVersion": 1,
+    "title": "CEFR-J B1 前編",
+    "description": "CEFR-J WordlistのB1を原典の掲載順で二分した前編です。代表的な意味・例文付き。",
+    "textbookTags": [
+      {
+        "name": "CEFR-J",
+        "edition": "Wordlist 1.6"
+      }
+    ],
+    "visibility": "public",
+    "wordCount": 1223,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "isOfficial": true,
+    "contentSource": "cefrj",
+    "cefrLevel": "B1",
+    "standard": true,
+    "contentHash": "d909b6daf034bfc9a68ddca083b505d59ab7fc01ae01211637f052e04875f8c1",
+    "file": "azuki-cefrj-b1-1-v1.a1903e0899b8f412.json"
+  },
+  {
+    "id": "azuki-cefrj-b1-2-v1",
+    "schemaVersion": 1,
+    "title": "CEFR-J B1 後編",
+    "description": "CEFR-J WordlistのB1を原典の掲載順で二分した後編です。代表的な意味・例文付き。",
+    "textbookTags": [
+      {
+        "name": "CEFR-J",
+        "edition": "Wordlist 1.6"
+      }
+    ],
+    "visibility": "public",
+    "wordCount": 1222,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "isOfficial": true,
+    "contentSource": "cefrj",
+    "cefrLevel": "B1",
+    "standard": true,
+    "contentHash": "db477220cf279bfb6b89f0e75e9d3817e7a94cd3d1b0ca0a0ffaff97b15647d0",
+    "file": "azuki-cefrj-b1-2-v1.5be5b611e9597cdf.json"
+  },
+  {
+    "id": "azuki-cefrj-b2-1-v1",
+    "schemaVersion": 1,
+    "title": "CEFR-J B2 前編",
+    "description": "CEFR-J WordlistのB2を原典の掲載順で二分した前編です。代表的な意味・例文付き。",
+    "textbookTags": [
+      {
+        "name": "CEFR-J",
+        "edition": "Wordlist 1.6"
+      }
+    ],
+    "visibility": "public",
+    "wordCount": 1390,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "isOfficial": true,
+    "contentSource": "cefrj",
+    "cefrLevel": "B2",
+    "standard": true,
+    "contentHash": "a224c60a829df06739562cacb4b42bbe31a46c42459e8549e5ca81ab0cab031c",
+    "file": "azuki-cefrj-b2-1-v1.d9edae0e78bbdd9d.json"
+  },
+  {
+    "id": "azuki-cefrj-b2-2-v1",
+    "schemaVersion": 1,
+    "title": "CEFR-J B2 後編",
+    "description": "CEFR-J WordlistのB2を原典の掲載順で二分した後編です。代表的な意味・例文付き。",
+    "textbookTags": [
+      {
+        "name": "CEFR-J",
+        "edition": "Wordlist 1.6"
+      }
+    ],
+    "visibility": "public",
+    "wordCount": 1389,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "isOfficial": true,
+    "contentSource": "cefrj",
+    "cefrLevel": "B2",
+    "standard": true,
+    "contentHash": "ce09a6b235934edded33b080a124a0a5dae395691c9c73e78297aeb8e31ee313",
+    "file": "azuki-cefrj-b2-2-v1.5491ae330555139c.json"
+  }
+]

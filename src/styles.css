@@ -3145,3 +3145,34 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .admin-report { padding: 24px; margin: 20px 0; border: 1px solid var(--border); border-radius: 18px; background: #fff; overflow-wrap: anywhere; }
 .admin-report-meta { display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between; font-size:12px; color:var(--muted); }
 .report-details { white-space: pre-wrap; padding: 16px; background: var(--paper); border-radius: 10px; }
+
+.standard-library { margin-block: 40px; padding-block: 28px; border-block: 1px solid #e7d5c4; }
+.standard-library-heading { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; margin-bottom: 20px; }
+.standard-library-heading h2 { margin: 8px 0 0; font-size: clamp(20px, 2vw, 28px); }
+.standard-library-heading p, .standard-library-note { color: #6a625b; font-size: 14px; line-height: 1.7; }
+.standard-library-heading p { margin: 0; }
+.standard-library-note { margin: 16px 0 0; }
+.standard-deck-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.standard-deck { display: flex; align-items: center; gap: 16px; padding: 20px; border: 1px solid #e7d5c4; border-radius: 20px; background: #fffaf3; color: #302923; text-decoration: none; transition: border-color .2s, transform .2s; }
+.standard-deck:hover { border-color: #972d31; transform: translateY(-2px); }
+.standard-deck > span:last-child { margin-left: auto; color: #972d31; }
+.standard-deck strong, .standard-deck small { display: block; }
+.standard-deck small { margin-top: 6px; color: #6a625b; }
+.cefrj-credit { line-height: 1.8; }
+@media(max-width: 640px) { .standard-deck-grid { grid-template-columns: 1fr; } .standard-deck { padding: 16px; } }
+
+.word-detail > section + section { margin-top: 20px; }
+.word-other-senses { padding-top: 18px; border-top: 1px solid var(--border); }
+.word-other-senses ul { margin: 10px 0 0; padding-left: 1.4em; line-height: 1.9; }
+.word-other-senses li + li { margin-top: 4px; }
+.word-detail .word-usage-note { margin-top: 20px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+
+.fork-dialog { width: min(850px, calc(100vw - 32px)); max-height: 90dvh; padding: 0; }
+.fork-header, .fork-footer { padding: 24px 32px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.fork-header h2 { margin: 8px 0 0; }
+.fork-body { padding: 0 32px 28px; }
+.fork-body label { display: grid; gap: 9px; margin-top: 20px; font-weight: 700; }
+.fork-body input, .fork-body textarea, .fork-body select { width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface, #fffaf4); color: var(--text); font: inherit; box-sizing: border-box; }
+.fork-body .fork-json { font-family: monospace; font-size: 14px; line-height: 1.6; resize: vertical; }
+.fork-footer { border-top: 1px solid var(--border); }
+@media(max-width:600px) { .fork-header,.fork-footer {padding:20px;} .fork-body {padding:0 20px 24px;} .fork-footer {flex-wrap:wrap;} }

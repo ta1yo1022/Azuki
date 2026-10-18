@@ -1,0 +1,4544 @@
+[
+  {
+    "word": "spokesman",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "男性の広報担当者",
+    "example": "A spokesman for the airline confirmed the delay.",
+    "otherMeanings": [
+      "男性の代弁者"
+    ]
+  },
+  {
+    "word": "spokeswoman",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "女性の広報担当者",
+    "example": "The company spokeswoman answered questions about the new factory.",
+    "otherMeanings": [
+      "女性の代弁者"
+    ]
+  },
+  {
+    "word": "sponsor",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "資金を提供して支援する",
+    "example": "A local bank agreed to sponsor our school concert.",
+    "otherMeanings": [
+      "保証人になる"
+    ]
+  },
+  {
+    "word": "spot",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "見つける、見分ける",
+    "example": "Can you spot the spelling mistake in this sentence?",
+    "otherMeanings": [
+      "染みをつける"
+    ]
+  },
+  {
+    "word": "spray",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "しぶき",
+    "example": "We felt the sea spray on our faces.",
+    "otherMeanings": [
+      "噴霧器",
+      "小枝"
+    ]
+  },
+  {
+    "word": "spray",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "吹きかける",
+    "example": "Spray a little water on the leaves each morning.",
+    "otherMeanings": [
+      "飛び散る"
+    ]
+  },
+  {
+    "word": "spread",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "広がる、広める",
+    "example": "News of the discovery spread quickly through the village.",
+    "otherMeanings": [
+      "広げる",
+      "塗る"
+    ]
+  },
+  {
+    "word": "spreadsheet",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "表計算シート",
+    "example": "Enter each month's expenses in the spreadsheet.",
+    "otherMeanings": []
+  },
+  {
+    "word": "sprint",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "短距離走、全力疾走",
+    "example": "The race ended with a sprint to the finish line.",
+    "otherMeanings": []
+  },
+  {
+    "word": "spur",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "刺激、励み",
+    "example": "Her success was a spur to my own efforts.",
+    "otherMeanings": [
+      "拍車",
+      "山の支脈"
+    ]
+  },
+  {
+    "word": "squad",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "チーム、部隊",
+    "example": "The coach selected twenty players for the national squad.",
+    "otherMeanings": []
+  },
+  {
+    "word": "squash",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "スカッシュ（球技）",
+    "example": "They play squash at the sports center every Friday.",
+    "otherMeanings": [
+      "カボチャの一種",
+      "果汁を薄めた飲料"
+    ]
+  },
+  {
+    "word": "squash",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "押しつぶす",
+    "example": "Be careful not to squash the berries in your bag.",
+    "otherMeanings": [
+      "狭い所に押し込む",
+      "抑え込む"
+    ]
+  },
+  {
+    "word": "squeeze",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "絞る",
+    "example": "Squeeze half a lemon over the fish.",
+    "otherMeanings": [
+      "強く握る",
+      "狭い所に押し込む"
+    ]
+  },
+  {
+    "word": "stab",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "突き刺す",
+    "example": "She used a fork to stab a piece of potato.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stability",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "安定、安定性",
+    "example": "The wide base gives the table extra stability.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stack",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "積み重ねた山",
+    "example": "There is a stack of clean towels beside the sink.",
+    "otherMeanings": [
+      "書架",
+      "煙突"
+    ]
+  },
+  {
+    "word": "stagger",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "よろめき",
+    "example": "After a sudden stagger, he regained his balance.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stain",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "染み",
+    "example": "Coffee left a brown stain on my shirt.",
+    "otherMeanings": [
+      "汚点",
+      "木材用着色剤"
+    ]
+  },
+  {
+    "word": "stain",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "染みをつける",
+    "example": "Red wine can stain a white tablecloth.",
+    "otherMeanings": [
+      "着色する",
+      "名誉を傷つける"
+    ]
+  },
+  {
+    "word": "stake",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "利害関係、出資持分",
+    "example": "She owns a small stake in the company.",
+    "otherMeanings": [
+      "杭",
+      "賭け金"
+    ]
+  },
+  {
+    "word": "stammer",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "口ごもる、言葉につまる",
+    "example": "He began to stammer when asked the unexpected question.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stamp",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "判を押す",
+    "example": "Please stamp each envelope with today's date.",
+    "otherMeanings": [
+      "足を踏み鳴らす",
+      "踏みつける"
+    ]
+  },
+  {
+    "word": "standard",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "標準の、通常の",
+    "example": "The standard ticket includes admission to the museum.",
+    "otherMeanings": []
+  },
+  {
+    "word": "standby",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "予備の、待機中の",
+    "example": "A standby generator supplies power during an outage.",
+    "otherMeanings": []
+  },
+  {
+    "word": "standstill",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "停止状態",
+    "example": "Heavy snow brought traffic to a standstill.",
+    "otherMeanings": [
+      "行き詰まり"
+    ]
+  },
+  {
+    "word": "stanza",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "詩の連",
+    "example": "Each stanza of the poem has four lines.",
+    "otherMeanings": []
+  },
+  {
+    "word": "startle",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "ぎょっとさせる",
+    "example": "The sudden alarm may startle the baby.",
+    "otherMeanings": []
+  },
+  {
+    "word": "starvation",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "飢餓",
+    "example": "Emergency food supplies saved many families from starvation.",
+    "otherMeanings": []
+  },
+  {
+    "word": "starve",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "飢える、餓死する",
+    "example": "Without fresh supplies, the trapped animals would starve.",
+    "otherMeanings": [
+      "切望する"
+    ]
+  },
+  {
+    "word": "starving",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "ひどく空腹の",
+    "example": "I'm starving after that long walk.",
+    "otherMeanings": [
+      "飢餓状態の"
+    ]
+  },
+  {
+    "word": "state",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "国の、州の",
+    "example": "She works for a state agency that protects forests.",
+    "otherMeanings": []
+  },
+  {
+    "word": "state",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "はっきり述べる",
+    "example": "Please state your name at the beginning of the recording.",
+    "otherMeanings": []
+  },
+  {
+    "word": "statesman",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "政治家（特に指導力のある人物）",
+    "example": "The veteran statesman helped negotiate a lasting peace.",
+    "otherMeanings": []
+  },
+  {
+    "word": "statewide",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "州全体で",
+    "example": "The new recycling program will operate statewide.",
+    "otherMeanings": []
+  },
+  {
+    "word": "statistics",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "統計、統計資料",
+    "example": "The latest statistics show a fall in road accidents.",
+    "otherMeanings": [
+      "統計学"
+    ]
+  },
+  {
+    "word": "steely",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "鋼のように強い、冷徹な",
+    "example": "She faced the challenge with steely determination.",
+    "otherMeanings": [
+      "鋼色の"
+    ]
+  },
+  {
+    "word": "steer",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "操縦する、方向を変える",
+    "example": "Steer the boat away from the rocks.",
+    "otherMeanings": [
+      "話などを誘導する"
+    ]
+  },
+  {
+    "word": "steering wheel",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "車のハンドル",
+    "example": "Keep both hands on the steering wheel.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stepfather",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "継父",
+    "example": "My stepfather taught me how to ride a bicycle.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stepmother",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "継母",
+    "example": "Her stepmother helped her prepare for the exam.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stereotype",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "固定観念",
+    "example": "The film challenges the stereotype of the lonely scientist.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stern",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "厳しい",
+    "example": "The teacher gave us a stern warning about cheating.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stew",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "シチュー、煮込み料理",
+    "example": "We cooked a vegetable stew for dinner.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stick",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "棒、枝",
+    "example": "The dog carried a stick back to its owner.",
+    "otherMeanings": [
+      "杖",
+      "棒状のもの"
+    ]
+  },
+  {
+    "word": "stiff",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "硬い、こわばった",
+    "example": "My legs feel stiff after sitting for so long.",
+    "otherMeanings": [
+      "厳しい",
+      "堅苦しい"
+    ]
+  },
+  {
+    "word": "stimulant",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "刺激物、興奮作用のある物質",
+    "example": "Caffeine is a stimulant found in coffee and tea.",
+    "otherMeanings": [
+      "刺激となるもの"
+    ]
+  },
+  {
+    "word": "stimulate",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "刺激する、活発にする",
+    "example": "Open questions stimulate discussion in the classroom.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stimulation",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "刺激",
+    "example": "Young children need mental stimulation as well as exercise.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stingy",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "けちな",
+    "example": "He is generous with advice but stingy with money.",
+    "otherMeanings": [
+      "量が少ない"
+    ]
+  },
+  {
+    "word": "stink",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "悪臭がする",
+    "example": "Those wet shoes stink after a week in the bag.",
+    "otherMeanings": [
+      "ひどく質が悪い"
+    ]
+  },
+  {
+    "word": "stitch",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "縫い目、一針",
+    "example": "Make each stitch small enough to hold the fabric firmly.",
+    "otherMeanings": [
+      "わき腹の差し込み"
+    ]
+  },
+  {
+    "word": "stock",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "在庫",
+    "example": "The shop has no winter coats left in stock.",
+    "otherMeanings": [
+      "株式",
+      "だし汁",
+      "家畜"
+    ]
+  },
+  {
+    "word": "stock market",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "株式市場",
+    "example": "Prices on the stock market fell sharply this morning.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stockpile",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "備蓄",
+    "example": "The town keeps a stockpile of emergency food.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stonework",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "石造部分、石細工",
+    "example": "Workers repaired the damaged stonework around the entrance.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stool",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "背もたれのない腰掛け",
+    "example": "She sat on a wooden stool beside the counter.",
+    "otherMeanings": [
+      "便"
+    ]
+  },
+  {
+    "word": "stopover",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "途中滞在、乗り継ぎ滞在",
+    "example": "Our flight includes a two-hour stopover in Singapore.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stopwatch",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ストップウォッチ",
+    "example": "The coach used a stopwatch to time each runner.",
+    "otherMeanings": []
+  },
+  {
+    "word": "store",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "保管する",
+    "example": "Store the flour in a cool, dry place.",
+    "otherMeanings": [
+      "情報を記憶する"
+    ]
+  },
+  {
+    "word": "straighten",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "まっすぐにする",
+    "example": "Straighten your back before lifting the box.",
+    "otherMeanings": [
+      "整理する"
+    ]
+  },
+  {
+    "word": "straightforward",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "簡単で分かりやすい",
+    "example": "The instructions are straightforward and easy to follow.",
+    "otherMeanings": [
+      "率直な"
+    ]
+  },
+  {
+    "word": "strain",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "痛める、無理な負担をかける",
+    "example": "You could strain your back by lifting that heavy box.",
+    "otherMeanings": [
+      "液体をこす",
+      "力いっぱい使う"
+    ]
+  },
+  {
+    "word": "strait",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "海峡",
+    "example": "Ships pass through the narrow strait every day.",
+    "otherMeanings": [
+      "苦境"
+    ]
+  },
+  {
+    "word": "strand",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "糸や髪などの一本",
+    "example": "A strand of hair had fallen across her face.",
+    "otherMeanings": [
+      "話などの一要素",
+      "岸辺"
+    ]
+  },
+  {
+    "word": "strangle",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "首を絞める、締めつける",
+    "example": "The tight collar seemed to strangle him.",
+    "otherMeanings": [
+      "活動などを抑圧する"
+    ]
+  },
+  {
+    "word": "stress",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "強調する",
+    "example": "The guide stressed the importance of staying together.",
+    "otherMeanings": [
+      "強勢を置く",
+      "ストレスを与える"
+    ]
+  },
+  {
+    "word": "strictly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "厳格に",
+    "example": "The school strictly enforces its safety rules.",
+    "otherMeanings": [
+      "厳密に",
+      "もっぱら"
+    ]
+  },
+  {
+    "word": "stride",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "大股で歩く",
+    "example": "She strode across the room to greet us.",
+    "otherMeanings": [
+      "またぎ越す"
+    ]
+  },
+  {
+    "word": "striking",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "目立つ、印象的な",
+    "example": "There is a striking contrast between the two paintings.",
+    "otherMeanings": []
+  },
+  {
+    "word": "strip",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "はがす、取り除く",
+    "example": "We need to strip the old paint from the door.",
+    "otherMeanings": [
+      "服を脱ぐ",
+      "権利を奪う"
+    ]
+  },
+  {
+    "word": "strive",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "懸命に努力する",
+    "example": "We strive to make our classes welcoming to everyone.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stroke",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "脳卒中",
+    "example": "He needed months of therapy after a stroke.",
+    "otherMeanings": [
+      "一打ち",
+      "泳ぎのひとかき",
+      "ひとなで"
+    ]
+  },
+  {
+    "word": "stroke",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "優しくなでる",
+    "example": "She gently stroked the sleeping cat's back.",
+    "otherMeanings": []
+  },
+  {
+    "word": "struggle",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "苦労して取り組む",
+    "example": "Many students struggle to understand this grammar rule.",
+    "otherMeanings": [
+      "もがく",
+      "争う"
+    ]
+  },
+  {
+    "word": "stubbornly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "頑固に",
+    "example": "He stubbornly refused to ask for directions.",
+    "otherMeanings": []
+  },
+  {
+    "word": "stuff",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "詰め込む",
+    "example": "Don't stuff all your clothes into one small bag.",
+    "otherMeanings": [
+      "料理に詰め物をする"
+    ]
+  },
+  {
+    "word": "stylist",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "服装や髪形を整える専門家",
+    "example": "The stylist chose a jacket for the photo shoot.",
+    "otherMeanings": [
+      "文章家"
+    ]
+  },
+  {
+    "word": "subcontinent",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "亜大陸",
+    "example": "The Indian subcontinent includes several different countries.",
+    "otherMeanings": []
+  },
+  {
+    "word": "subculture",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "サブカルチャー、下位文化",
+    "example": "The documentary explores the city's skateboarding subculture.",
+    "otherMeanings": []
+  },
+  {
+    "word": "subdivision",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "細分、下位区分",
+    "example": "Each chapter has a subdivision devoted to practical examples.",
+    "otherMeanings": [
+      "区画された住宅地"
+    ]
+  },
+  {
+    "word": "subjunctive",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "仮定法",
+    "example": "The subjunctive appears in the phrase \"if I were you.\"",
+    "otherMeanings": []
+  },
+  {
+    "word": "submit",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "提出する",
+    "example": "Please submit your application before Friday.",
+    "otherMeanings": [
+      "服従する"
+    ]
+  },
+  {
+    "word": "subplot",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "副筋、脇筋",
+    "example": "A romantic subplot runs through the detective story.",
+    "otherMeanings": []
+  },
+  {
+    "word": "subside",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "弱まる、静まる",
+    "example": "The pain began to subside after a few minutes.",
+    "otherMeanings": [
+      "水が引く",
+      "地盤が沈む"
+    ]
+  },
+  {
+    "word": "substance",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "物質",
+    "example": "The laboratory tested the unknown substance.",
+    "otherMeanings": [
+      "要旨",
+      "実質"
+    ]
+  },
+  {
+    "word": "substitute",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "代わりに使う",
+    "example": "You can substitute yogurt for cream in this recipe.",
+    "otherMeanings": [
+      "代役を務める"
+    ]
+  },
+  {
+    "word": "subtitle",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "字幕",
+    "example": "I watched the French film with English subtitles.",
+    "otherMeanings": [
+      "副題"
+    ]
+  },
+  {
+    "word": "subtle",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "微妙な、かすかな",
+    "example": "There is a subtle difference between these two colors.",
+    "otherMeanings": [
+      "巧妙な",
+      "鋭い"
+    ]
+  },
+  {
+    "word": "subtract",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "引き算をする",
+    "example": "Subtract five from twelve to get seven.",
+    "otherMeanings": []
+  },
+  {
+    "word": "suburb",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "郊外の住宅地",
+    "example": "They moved to a quiet suburb outside the city.",
+    "otherMeanings": []
+  },
+  {
+    "word": "successive",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "連続した",
+    "example": "The team won three successive matches.",
+    "otherMeanings": []
+  },
+  {
+    "word": "suck",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "吸う、しゃぶる",
+    "example": "The baby began to suck her thumb.",
+    "otherMeanings": [
+      "吸い込む"
+    ]
+  },
+  {
+    "word": "sue",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "訴える、訴訟を起こす",
+    "example": "The residents decided to sue the company for damages.",
+    "otherMeanings": []
+  },
+  {
+    "word": "suffering",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "苦しみ、苦痛",
+    "example": "The charity works to reduce suffering after natural disasters.",
+    "otherMeanings": []
+  },
+  {
+    "word": "sufficiently",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "十分に",
+    "example": "The soup has cooled sufficiently to eat.",
+    "otherMeanings": []
+  },
+  {
+    "word": "suitably",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "適切に、ふさわしく",
+    "example": "Make sure you are suitably dressed for the interview.",
+    "otherMeanings": []
+  },
+  {
+    "word": "sulfur/sulphur",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "硫黄",
+    "example": "Sulfur is a yellow element used in some fertilizers.",
+    "otherMeanings": []
+  },
+  {
+    "word": "sunbeam",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "一筋の太陽光",
+    "example": "A sunbeam lit up the dusty room.",
+    "otherMeanings": []
+  },
+  {
+    "word": "superb",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "素晴らしい",
+    "example": "The restaurant served a superb meal.",
+    "otherMeanings": []
+  },
+  {
+    "word": "superintendent",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "監督者、管理責任者",
+    "example": "The building superintendent arranged repairs to the elevator.",
+    "otherMeanings": []
+  },
+  {
+    "word": "supernatural",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "超自然的な",
+    "example": "The story describes a house with supernatural powers.",
+    "otherMeanings": []
+  },
+  {
+    "word": "supervise",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "監督する",
+    "example": "An experienced teacher will supervise the science experiment.",
+    "otherMeanings": []
+  },
+  {
+    "word": "supervision",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "監督、管理",
+    "example": "Children must use these tools under adult supervision.",
+    "otherMeanings": []
+  },
+  {
+    "word": "supervisor",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "監督者、上司",
+    "example": "Ask your supervisor before changing your work schedule.",
+    "otherMeanings": []
+  },
+  {
+    "word": "supplement",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "補足、補助的なもの",
+    "example": "The newspaper includes a weekend travel supplement.",
+    "otherMeanings": [
+      "栄養補助食品"
+    ]
+  },
+  {
+    "word": "supplier",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "供給業者",
+    "example": "Our supplier delivers fresh vegetables every morning.",
+    "otherMeanings": []
+  },
+  {
+    "word": "supply",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "供給する",
+    "example": "The farm supplies milk to local schools.",
+    "otherMeanings": []
+  },
+  {
+    "word": "suppress",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "抑える、抑制する",
+    "example": "She tried to suppress a laugh during the ceremony.",
+    "otherMeanings": [
+      "鎮圧する",
+      "情報を隠す"
+    ]
+  },
+  {
+    "word": "surge",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "急増",
+    "example": "The hot weather caused a surge in ice cream sales.",
+    "otherMeanings": [
+      "押し寄せる波",
+      "感情の高まり"
+    ]
+  },
+  {
+    "word": "surrender",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "降伏する、引き渡す",
+    "example": "The soldiers agreed to surrender their weapons.",
+    "otherMeanings": [
+      "権利などを放棄する"
+    ]
+  },
+  {
+    "word": "surroundings",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "周囲の環境",
+    "example": "It took the puppy a week to enjoy its new surroundings.",
+    "otherMeanings": []
+  },
+  {
+    "word": "surveillance",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "監視",
+    "example": "The entrance is under constant video surveillance.",
+    "otherMeanings": []
+  },
+  {
+    "word": "suspect",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "疑う、～ではないかと思う",
+    "example": "I suspect that someone left the window open.",
+    "otherMeanings": [
+      "容疑をかける"
+    ]
+  },
+  {
+    "word": "suspend",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "一時停止する",
+    "example": "The airline suspended flights during the storm.",
+    "otherMeanings": [
+      "つるす",
+      "停学や停職にする"
+    ]
+  },
+  {
+    "word": "suspicious",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "疑わしい、不審な",
+    "example": "She reported a suspicious package near the entrance.",
+    "otherMeanings": [
+      "疑っている"
+    ]
+  },
+  {
+    "word": "suspiciously",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "疑わしそうに、怪しく",
+    "example": "The guard looked suspiciously at the damaged lock.",
+    "otherMeanings": []
+  },
+  {
+    "word": "sustain",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "維持する、持続させる",
+    "example": "Regular meals help sustain your energy throughout the day.",
+    "otherMeanings": [
+      "損害や負傷を受ける",
+      "支える"
+    ]
+  },
+  {
+    "word": "swan",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "白鳥",
+    "example": "A white swan glided across the lake.",
+    "otherMeanings": []
+  },
+  {
+    "word": "sweep",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "掃く",
+    "example": "Please sweep the kitchen floor after cooking.",
+    "otherMeanings": [
+      "一気に押し流す",
+      "広く見渡す"
+    ]
+  },
+  {
+    "word": "swift",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "素早い",
+    "example": "The firefighters' swift response prevented further damage.",
+    "otherMeanings": [
+      "流れの速い"
+    ]
+  },
+  {
+    "word": "swing",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ブランコ",
+    "example": "The child asked for another push on the swing.",
+    "otherMeanings": [
+      "揺れ",
+      "変動"
+    ]
+  },
+  {
+    "word": "swing",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "揺れる、揺らす",
+    "example": "The lantern swung gently in the evening breeze.",
+    "otherMeanings": [
+      "方向を変える"
+    ]
+  },
+  {
+    "word": "syllable",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "音節",
+    "example": "The word \"banana\" has three syllables.",
+    "otherMeanings": []
+  },
+  {
+    "word": "symbolic",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "象徴的な",
+    "example": "The dove has a symbolic meaning of peace.",
+    "otherMeanings": []
+  },
+  {
+    "word": "sympathetic",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "同情的な、思いやりのある",
+    "example": "My teacher was sympathetic when I explained the problem.",
+    "otherMeanings": [
+      "賛同する"
+    ]
+  },
+  {
+    "word": "sympathize/sympathise",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "同情する",
+    "example": "I sympathize with anyone who has lost a pet.",
+    "otherMeanings": [
+      "賛同する"
+    ]
+  },
+  {
+    "word": "synonym",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "同義語、類義語",
+    "example": "\"Large\" is a synonym for \"big.\"",
+    "otherMeanings": []
+  },
+  {
+    "word": "tablecloth",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "テーブルクロス",
+    "example": "She spread a clean tablecloth over the dining table.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tabloid",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "タブロイド紙の、大衆紙的な",
+    "example": "The story appeared in several tabloid newspapers.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tabloid",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "タブロイド紙、大衆紙",
+    "example": "A tabloid printed the actor's photograph on its front page.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tack",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "びょうなどで留める",
+    "example": "We tacked a notice to the wooden board.",
+    "otherMeanings": [
+      "帆船の針路を変える",
+      "仮縫いする"
+    ]
+  },
+  {
+    "word": "tackle",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "問題に取り組む",
+    "example": "The council must tackle the shortage of affordable housing.",
+    "otherMeanings": [
+      "タックルする"
+    ]
+  },
+  {
+    "word": "tactile",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "触覚の、触って分かる",
+    "example": "The museum offers tactile exhibits for visitors with visual impairments.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tag",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "札、ラベル",
+    "example": "Write your name on the luggage tag.",
+    "otherMeanings": [
+      "鬼ごっこ",
+      "電子的な分類用ラベル"
+    ]
+  },
+  {
+    "word": "tail",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "尾、しっぽ",
+    "example": "The dog wagged its tail when we came home.",
+    "otherMeanings": [
+      "後部",
+      "硬貨の裏側"
+    ]
+  },
+  {
+    "word": "tame",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "飼いならされた",
+    "example": "The deer are so tame that they approach visitors.",
+    "otherMeanings": [
+      "退屈な"
+    ]
+  },
+  {
+    "word": "tan",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "日焼けした肌の色",
+    "example": "He came back from the beach with a deep tan.",
+    "otherMeanings": [
+      "黄褐色"
+    ]
+  },
+  {
+    "word": "tanned",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "日焼けした",
+    "example": "Her arms were tanned after a summer of gardening.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tap",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "軽くたたく",
+    "example": "Tap the screen twice to open the photo.",
+    "otherMeanings": [
+      "資源などを利用する",
+      "盗聴する"
+    ]
+  },
+  {
+    "word": "tatter",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ぼろ切れ",
+    "example": "A tatter of cloth hung from the broken fence.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tattoo",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "入れ墨",
+    "example": "She has a small flower tattoo on her wrist.",
+    "otherMeanings": [
+      "軍楽の演奏行事"
+    ]
+  },
+  {
+    "word": "taunt",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "あざけりの言葉",
+    "example": "He ignored the taunts from the opposing team's fans.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tease",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "からかう",
+    "example": "Please don't tease her about her new glasses.",
+    "otherMeanings": [
+      "髪を逆立てる"
+    ]
+  },
+  {
+    "word": "teaspoon",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "小さじ、ティースプーン",
+    "example": "Add one teaspoon of sugar to the tea.",
+    "otherMeanings": []
+  },
+  {
+    "word": "technical",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "技術的な、専門的な",
+    "example": "The manual explains the camera's technical features.",
+    "otherMeanings": []
+  },
+  {
+    "word": "technically",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "技術的に",
+    "example": "The new design is technically possible but expensive to build.",
+    "otherMeanings": [
+      "厳密に言えば"
+    ]
+  },
+  {
+    "word": "telescope",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "望遠鏡",
+    "example": "We used a telescope to look at the moon.",
+    "otherMeanings": []
+  },
+  {
+    "word": "temperate",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "温暖な",
+    "example": "Grapes grow well in this temperate climate.",
+    "otherMeanings": [
+      "節度のある"
+    ]
+  },
+  {
+    "word": "temporarily",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "一時的に",
+    "example": "The museum is temporarily closed for repairs.",
+    "otherMeanings": []
+  },
+  {
+    "word": "temptation",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "誘惑",
+    "example": "I resisted the temptation to eat another slice of cake.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tender",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "柔らかい",
+    "example": "Cook the vegetables until they are tender.",
+    "otherMeanings": [
+      "優しい",
+      "触ると痛む"
+    ]
+  },
+  {
+    "word": "tenderly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "優しく、愛情を込めて",
+    "example": "She tenderly kissed her sleeping child's forehead.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tenderness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "優しさ、愛情",
+    "example": "He spoke about his grandmother with great tenderness.",
+    "otherMeanings": [
+      "柔らかさ",
+      "押したときの痛み"
+    ]
+  },
+  {
+    "word": "terrace",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "テラス",
+    "example": "We had breakfast on the terrace overlooking the garden.",
+    "otherMeanings": [
+      "段状の土地",
+      "連続した家並み"
+    ]
+  },
+  {
+    "word": "terrifying",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "恐ろしい",
+    "example": "Being lost in the forest was a terrifying experience.",
+    "otherMeanings": []
+  },
+  {
+    "word": "territory",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "領土、縄張り",
+    "example": "The birds defend their territory during the breeding season.",
+    "otherMeanings": [
+      "担当区域",
+      "分野"
+    ]
+  },
+  {
+    "word": "test",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "検査する、試す",
+    "example": "Test the microphone before the audience arrives.",
+    "otherMeanings": []
+  },
+  {
+    "word": "testify",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "証言する",
+    "example": "The witness agreed to testify in court.",
+    "otherMeanings": [
+      "証明する"
+    ]
+  },
+  {
+    "word": "testimony",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "証言",
+    "example": "Her testimony helped the court understand what happened.",
+    "otherMeanings": [
+      "証拠"
+    ]
+  },
+  {
+    "word": "that",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "それほど、そんなに",
+    "example": "I didn't realize the station was that far away.",
+    "otherMeanings": []
+  },
+  {
+    "word": "theme",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "主題、テーマ",
+    "example": "Friendship is the main theme of the novel.",
+    "otherMeanings": [
+      "主旋律"
+    ]
+  },
+  {
+    "word": "theorist",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "理論家",
+    "example": "The political theorist published a book about democracy.",
+    "otherMeanings": []
+  },
+  {
+    "word": "therapist",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "療法士、治療の専門家",
+    "example": "A speech therapist helped him regain his speaking skills.",
+    "otherMeanings": []
+  },
+  {
+    "word": "therapy",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "治療、療法",
+    "example": "Physical therapy helped her walk again after the injury.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thereafter",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "その後",
+    "example": "He moved to Paris and lived there for years thereafter.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thermometer",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "温度計",
+    "example": "Use a thermometer to check the water temperature.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thesis",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "学位論文",
+    "example": "She is writing her thesis on language learning.",
+    "otherMeanings": [
+      "主張、論題"
+    ]
+  },
+  {
+    "word": "thickly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "厚く、密に",
+    "example": "She spread the butter thickly on the bread.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thickness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "厚さ",
+    "example": "Measure the thickness of the wood before cutting it.",
+    "otherMeanings": [
+      "濃さ",
+      "層"
+    ]
+  },
+  {
+    "word": "thigh",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "太もも",
+    "example": "He injured his thigh during football practice.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thinker",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "思想家、思索する人",
+    "example": "The philosopher was an influential thinker of her time.",
+    "otherMeanings": []
+  },
+  {
+    "word": "third person",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "第三人称",
+    "example": "The story is written in the third person.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thirdly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "第三に",
+    "example": "Thirdly, we need to decide who will lead the project.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thirst",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "喉の渇き",
+    "example": "Cold water relieved my thirst after the hike.",
+    "otherMeanings": [
+      "渇望"
+    ]
+  },
+  {
+    "word": "thoroughly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "徹底的に、十分に",
+    "example": "Wash the vegetables thoroughly before cooking them.",
+    "otherMeanings": []
+  },
+  {
+    "word": "though",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "もっとも、しかしながら",
+    "example": "The coat is expensive. It is very warm, though.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thoughtful",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "思いやりのある",
+    "example": "It was thoughtful of you to bring her some soup.",
+    "otherMeanings": [
+      "深く考えている",
+      "よく考えられた"
+    ]
+  },
+  {
+    "word": "thoughtless",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "思いやりのない",
+    "example": "His thoughtless remark hurt her feelings.",
+    "otherMeanings": [
+      "軽率な"
+    ]
+  },
+  {
+    "word": "thread",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "糸",
+    "example": "I need some blue thread to mend this shirt.",
+    "otherMeanings": [
+      "話の筋道",
+      "オンラインの一連の投稿"
+    ]
+  },
+  {
+    "word": "threaten",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "脅かす、脅す",
+    "example": "Rising sea levels threaten homes along the coast.",
+    "otherMeanings": [
+      "悪いことの前兆となる"
+    ]
+  },
+  {
+    "word": "thrill",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "わくわくする気持ち",
+    "example": "She felt a thrill when her name was announced.",
+    "otherMeanings": [
+      "興奮させる体験"
+    ]
+  },
+  {
+    "word": "thrilled",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "大喜びの、わくわくした",
+    "example": "We were thrilled to hear that our team had won.",
+    "otherMeanings": []
+  },
+  {
+    "word": "thrilling",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "わくわくさせる",
+    "example": "The final minutes of the match were thrilling.",
+    "otherMeanings": []
+  },
+  {
+    "word": "throat",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "喉",
+    "example": "My throat feels sore after all that singing.",
+    "otherMeanings": [
+      "狭くなった部分"
+    ]
+  },
+  {
+    "word": "tickle",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "くすぐる",
+    "example": "Don't tickle my feet while I'm trying to sleep.",
+    "otherMeanings": [
+      "楽しませる"
+    ]
+  },
+  {
+    "word": "tight",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "しっかりと",
+    "example": "Hold tight to the rope while I pull you up.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tightrope",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "綱渡り用の綱",
+    "example": "The performer balanced carefully on the tightrope.",
+    "otherMeanings": [
+      "危険な綱渡りの状況"
+    ]
+  },
+  {
+    "word": "time",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "時間を測る",
+    "example": "Use your watch to time how long the journey takes.",
+    "otherMeanings": [
+      "時機を合わせる"
+    ]
+  },
+  {
+    "word": "timeless",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "時代を超えた",
+    "example": "The simple design has a timeless beauty.",
+    "otherMeanings": []
+  },
+  {
+    "word": "timeliness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "時機の適切さ",
+    "example": "The report's timeliness made it useful for the budget meeting.",
+    "otherMeanings": []
+  },
+  {
+    "word": "times",
+    "pos": "preposition",
+    "level": "B2",
+    "meaning": "～掛ける",
+    "example": "Six times four equals twenty-four.",
+    "otherMeanings": []
+  },
+  {
+    "word": "timing",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "時機、時間の調整",
+    "example": "The timing of your announcement could affect people's reactions.",
+    "otherMeanings": [
+      "所要時間の測定"
+    ]
+  },
+  {
+    "word": "tip",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "傾ける、傾く",
+    "example": "Tip the bowl slowly to pour out the water.",
+    "otherMeanings": [
+      "チップを渡す",
+      "先端に付ける"
+    ]
+  },
+  {
+    "word": "tiptoe",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "つま先でそっと歩く",
+    "example": "She tiptoed past the sleeping baby.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tiredness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "疲れ",
+    "example": "A good night's sleep relieved my tiredness.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tiresome",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "退屈でうんざりする",
+    "example": "Filling out the same form repeatedly is tiresome.",
+    "otherMeanings": [
+      "厄介な"
+    ]
+  },
+  {
+    "word": "toenail",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "足の爪",
+    "example": "He cut his toenails before putting on his socks.",
+    "otherMeanings": []
+  },
+  {
+    "word": "toil",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "骨を折って働く",
+    "example": "They toiled in the fields from dawn until sunset.",
+    "otherMeanings": [
+      "苦労して進む"
+    ]
+  },
+  {
+    "word": "tolerant",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "寛容な",
+    "example": "She is tolerant of opinions that differ from her own.",
+    "otherMeanings": [
+      "耐性のある"
+    ]
+  },
+  {
+    "word": "tolerate",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "我慢する、容認する",
+    "example": "We will not tolerate bullying in our classroom.",
+    "otherMeanings": [
+      "耐性がある"
+    ]
+  },
+  {
+    "word": "toll",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "通行料",
+    "example": "Drivers pay a toll to cross the bridge.",
+    "otherMeanings": [
+      "犠牲者数",
+      "ゆっくり鳴る鐘の音"
+    ]
+  },
+  {
+    "word": "tomb",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "墓",
+    "example": "Archaeologists discovered a sealed tomb beneath the temple.",
+    "otherMeanings": []
+  },
+  {
+    "word": "ton",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "トン（重量の単位）",
+    "example": "The truck can carry more than a ton of sand.",
+    "otherMeanings": [
+      "大量"
+    ]
+  },
+  {
+    "word": "tonne",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "メートルトン（1,000キログラム）",
+    "example": "The shipment weighs exactly one tonne.",
+    "otherMeanings": []
+  },
+  {
+    "word": "torch",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "懐中電灯",
+    "example": "Take a torch so you can see inside the cave.",
+    "otherMeanings": [
+      "たいまつ",
+      "作業用バーナー"
+    ]
+  },
+  {
+    "word": "tortoiseshell",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "べっ甲",
+    "example": "The antique comb was made of tortoiseshell.",
+    "otherMeanings": [
+      "まだら模様の猫",
+      "タテハチョウの一種"
+    ]
+  },
+  {
+    "word": "torture",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "拷問する、ひどく苦しめる",
+    "example": "The dictator's guards tortured prisoners for information.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tough",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "難しい、厳しい",
+    "example": "Choosing between the two jobs was a tough decision.",
+    "otherMeanings": [
+      "丈夫な",
+      "肉などが硬い"
+    ]
+  },
+  {
+    "word": "toxic",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "有毒な",
+    "example": "The factory must dispose of toxic waste safely.",
+    "otherMeanings": [
+      "有害な"
+    ]
+  },
+  {
+    "word": "trace",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "跡をたどる",
+    "example": "Researchers traced the river back to its mountain source.",
+    "otherMeanings": [
+      "書き写す",
+      "原因を突き止める"
+    ]
+  },
+  {
+    "word": "track",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "追跡する",
+    "example": "The scientists tracked the whale using a small device.",
+    "otherMeanings": [
+      "進捗を記録する"
+    ]
+  },
+  {
+    "word": "trade",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "売買する、交換する",
+    "example": "The two countries trade food and manufactured goods.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trader",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "商人、取引業者",
+    "example": "A spice trader brought cinnamon to the market.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trail",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "後をついていく",
+    "example": "The tired child trailed behind the rest of the group.",
+    "otherMeanings": [
+      "引きずる",
+      "得点などで負けている"
+    ]
+  },
+  {
+    "word": "trailer",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "トレーラー、けん引式の荷車",
+    "example": "They loaded the furniture onto a trailer behind the truck.",
+    "otherMeanings": [
+      "映画の予告編",
+      "移動式の住居"
+    ]
+  },
+  {
+    "word": "trainee",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "研修生、見習い",
+    "example": "Each trainee works alongside an experienced nurse.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trainer",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "指導者、トレーナー",
+    "example": "My trainer showed me how to lift weights safely.",
+    "otherMeanings": [
+      "運動靴",
+      "調教師"
+    ]
+  },
+  {
+    "word": "trait",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "特徴、特性",
+    "example": "Patience is a useful trait for a teacher.",
+    "otherMeanings": []
+  },
+  {
+    "word": "traitor",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "裏切り者",
+    "example": "The spy was condemned as a traitor to his country.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tramp",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "長く歩くこと",
+    "example": "We went for a long tramp through the woods.",
+    "otherMeanings": [
+      "放浪者",
+      "重い足音"
+    ]
+  },
+  {
+    "word": "trample",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "踏みつける音や動作",
+    "example": "We heard the trample of horses on the wooden bridge.",
+    "otherMeanings": []
+  },
+  {
+    "word": "transcript",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "発言の記録、文字起こし",
+    "example": "A transcript of the interview is available online.",
+    "otherMeanings": [
+      "成績証明書",
+      "写し"
+    ]
+  },
+  {
+    "word": "transfer",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "移動、移転",
+    "example": "The transfer of patients to the new hospital took two days.",
+    "otherMeanings": [
+      "振り込み",
+      "乗り換え"
+    ]
+  },
+  {
+    "word": "transfusion",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "輸血",
+    "example": "The injured patient needed an urgent blood transfusion.",
+    "otherMeanings": []
+  },
+  {
+    "word": "transient",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "一時的な、つかの間の",
+    "example": "The drug may cause transient changes in your sense of taste.",
+    "otherMeanings": [
+      "短期滞在の"
+    ]
+  },
+  {
+    "word": "transistor",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "トランジスター",
+    "example": "A transistor controls the flow of current in this circuit.",
+    "otherMeanings": [
+      "トランジスターラジオ"
+    ]
+  },
+  {
+    "word": "transition",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "移行、移り変わり",
+    "example": "Starting school is a major transition for young children.",
+    "otherMeanings": []
+  },
+  {
+    "word": "transitive",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "他動詞の",
+    "example": "A transitive verb takes a direct object.",
+    "otherMeanings": []
+  },
+  {
+    "word": "translation",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "翻訳、訳文",
+    "example": "This translation keeps the humor of the original story.",
+    "otherMeanings": []
+  },
+  {
+    "word": "translator",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "翻訳者",
+    "example": "The translator worked on the novel for two years.",
+    "otherMeanings": []
+  },
+  {
+    "word": "transmission",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "伝達、送信",
+    "example": "Bad weather interrupted the transmission of the radio signal.",
+    "otherMeanings": [
+      "感染",
+      "変速装置"
+    ]
+  },
+  {
+    "word": "transmit",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "伝える、送信する",
+    "example": "The satellite transmits images of the earth.",
+    "otherMeanings": [
+      "感染させる",
+      "遺伝によって伝える"
+    ]
+  },
+  {
+    "word": "transparent",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "透明な",
+    "example": "The transparent lid lets you see the food inside.",
+    "otherMeanings": [
+      "明白な",
+      "情報が公開された"
+    ]
+  },
+  {
+    "word": "transport",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "輸送する",
+    "example": "Refrigerated trucks transport milk to the city.",
+    "otherMeanings": [
+      "夢中にさせる"
+    ]
+  },
+  {
+    "word": "traverse",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "横断、山腹の横移動",
+    "example": "The climbers made a careful traverse across the icy slope.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tray",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "盆、トレー",
+    "example": "She carried the cups to our table on a tray.",
+    "otherMeanings": [
+      "書類などの受け皿"
+    ]
+  },
+  {
+    "word": "tread",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "踏む、踏んで歩く",
+    "example": "Be careful not to tread on the flowers.",
+    "otherMeanings": []
+  },
+  {
+    "word": "treat",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "扱う",
+    "example": "Treat other people with respect, even when you disagree.",
+    "otherMeanings": [
+      "治療する",
+      "ごちそうする"
+    ]
+  },
+  {
+    "word": "treaty",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "条約",
+    "example": "The two nations signed a treaty to protect the river.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trek",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "長く苦労する徒歩の旅",
+    "example": "The trek through the mountains took five days.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tremendously",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "非常に、大いに",
+    "example": "Your advice helped me tremendously.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tremor",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "小さな揺れ、震え",
+    "example": "We felt a slight tremor beneath our feet.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trial",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "裁判",
+    "example": "The trial lasted three weeks before a verdict was reached.",
+    "otherMeanings": [
+      "試験的な使用",
+      "試練"
+    ]
+  },
+  {
+    "word": "triangle",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "三角形",
+    "example": "Draw a triangle with three equal sides.",
+    "otherMeanings": [
+      "トライアングル（楽器）",
+      "三角関係"
+    ]
+  },
+  {
+    "word": "tribe",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "部族",
+    "example": "The book describes the history of the tribe.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trick",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "だます",
+    "example": "The caller tricked him into revealing his password.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tricky",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "難しく注意を要する",
+    "example": "Parking in this narrow street can be tricky.",
+    "otherMeanings": [
+      "ずるい"
+    ]
+  },
+  {
+    "word": "trio",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "三人組、三重奏団",
+    "example": "A jazz trio played quietly in the restaurant.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trip",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "つまずく",
+    "example": "Watch the cable so you don't trip over it.",
+    "otherMeanings": [
+      "つまずかせる",
+      "装置を作動させる"
+    ]
+  },
+  {
+    "word": "trivial",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "ささいな、取るに足らない",
+    "example": "We shouldn't argue about such a trivial mistake.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trolley",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "手押し車、台車",
+    "example": "Put the suitcases on a luggage trolley.",
+    "otherMeanings": [
+      "路面電車"
+    ]
+  },
+  {
+    "word": "troop",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "隊、群れ",
+    "example": "A troop of monkeys crossed the path ahead of us.",
+    "otherMeanings": [
+      "軍隊"
+    ]
+  },
+  {
+    "word": "trophy",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "優勝杯、トロフィー",
+    "example": "The captain raised the trophy above her head.",
+    "otherMeanings": [
+      "戦利品"
+    ]
+  },
+  {
+    "word": "tropic",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "熱帯の",
+    "example": "Bright flowers flourished in the tropic heat.",
+    "otherMeanings": []
+  },
+  {
+    "word": "troublesome",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "厄介な",
+    "example": "The old printer has become increasingly troublesome.",
+    "otherMeanings": []
+  },
+  {
+    "word": "trunk",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "木の幹",
+    "example": "The tree's trunk is too wide to reach around.",
+    "otherMeanings": [
+      "象の鼻",
+      "車の荷物入れ",
+      "旅行用大型かばん"
+    ]
+  },
+  {
+    "word": "trust",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "信頼",
+    "example": "It takes time to build trust between strangers.",
+    "otherMeanings": [
+      "信託",
+      "財産管理団体"
+    ]
+  },
+  {
+    "word": "trusty",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "頼りになる",
+    "example": "He took his trusty old bicycle on another long journey.",
+    "otherMeanings": []
+  },
+  {
+    "word": "truthful",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "正直な、真実を述べる",
+    "example": "Please give a truthful account of what happened.",
+    "otherMeanings": []
+  },
+  {
+    "word": "truthfulness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "正直さ、真実性",
+    "example": "The teacher praised her truthfulness about the broken window.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tub",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "浴槽、おけ",
+    "example": "The children splashed happily in the tub.",
+    "otherMeanings": [
+      "小型の容器"
+    ]
+  },
+  {
+    "word": "tuberculosis",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "結核",
+    "example": "The clinic screens patients for tuberculosis.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tug",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ぐいと引くこと",
+    "example": "A gentle tug opened the stuck drawer.",
+    "otherMeanings": [
+      "引き船"
+    ]
+  },
+  {
+    "word": "tuition",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "授業料",
+    "example": "The scholarship covers tuition but not living expenses.",
+    "otherMeanings": [
+      "個別指導、教授"
+    ]
+  },
+  {
+    "word": "tulip",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "チューリップ",
+    "example": "A red tulip opened beside the garden path.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tumor/tumour",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "腫瘍",
+    "example": "The surgeon removed a small tumor from his arm.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tunnel",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "トンネル",
+    "example": "The train entered a tunnel beneath the mountain.",
+    "otherMeanings": []
+  },
+  {
+    "word": "turbulent",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "荒れた、激動の",
+    "example": "The boat struggled through the turbulent water.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tutor",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "家庭教師、個別指導の先生",
+    "example": "A math tutor helped her prepare for the exam.",
+    "otherMeanings": []
+  },
+  {
+    "word": "twinkle",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "きらめき",
+    "example": "There was a playful twinkle in his eyes.",
+    "otherMeanings": []
+  },
+  {
+    "word": "twisted",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "ねじれた、ゆがんだ",
+    "example": "We couldn't open the gate because its frame was twisted.",
+    "otherMeanings": [
+      "心がねじ曲がった"
+    ]
+  },
+  {
+    "word": "typhoid",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "腸チフス",
+    "example": "Clean drinking water helps prevent typhoid.",
+    "otherMeanings": []
+  },
+  {
+    "word": "tyranny",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "圧政、専制政治",
+    "example": "The people struggled for freedom from tyranny.",
+    "otherMeanings": [
+      "横暴"
+    ]
+  },
+  {
+    "word": "tyrant",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "暴君",
+    "example": "The tyrant imprisoned anyone who criticized his rule.",
+    "otherMeanings": []
+  },
+  {
+    "word": "ultimate",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "最終的な、究極の",
+    "example": "Our ultimate goal is to make the river safe for swimming.",
+    "otherMeanings": [
+      "最高の"
+    ]
+  },
+  {
+    "word": "ultimately",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "最終的に",
+    "example": "After several delays, the project ultimately succeeded.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unacceptable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "受け入れられない",
+    "example": "Leaving children alone beside the pool is unacceptable.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unashamedly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "恥じることなく",
+    "example": "She unashamedly admitted that she loved romantic comedies.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unattractive",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "魅力のない",
+    "example": "The high price makes this offer unattractive.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unauthorized/unauthorised",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "許可されていない",
+    "example": "Unauthorized vehicles are not allowed through this gate.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unavailable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "利用できない、不在の",
+    "example": "The doctor is unavailable until tomorrow morning.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unaware",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "気づいていない",
+    "example": "We were unaware that the museum closed so early.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unbearable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "耐えられない",
+    "example": "The heat inside the crowded bus was unbearable.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unbeatable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "打ち負かせない、最高の",
+    "example": "The team seemed unbeatable after ten straight victories.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unchanged",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "変わっていない",
+    "example": "The village has remained almost unchanged for decades.",
+    "otherMeanings": []
+  },
+  {
+    "word": "uncharacteristic",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "その人や物らしくない",
+    "example": "Her uncharacteristic silence made us worry.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unclearly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "不明瞭に",
+    "example": "He spoke unclearly, so I asked him to repeat the address.",
+    "otherMeanings": []
+  },
+  {
+    "word": "uncomfortably",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "不快なほどに、居心地悪そうに",
+    "example": "The room became uncomfortably hot in the afternoon.",
+    "otherMeanings": []
+  },
+  {
+    "word": "uncommon",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "珍しい",
+    "example": "Snow is uncommon in this coastal town.",
+    "otherMeanings": [
+      "並外れた"
+    ]
+  },
+  {
+    "word": "unconcerned",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "心配していない、無関心な",
+    "example": "He seemed unconcerned about the approaching deadline.",
+    "otherMeanings": [
+      "関係のない"
+    ]
+  },
+  {
+    "word": "unconscious",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "意識を失った",
+    "example": "The injured driver was unconscious when help arrived.",
+    "otherMeanings": [
+      "無意識の",
+      "気づいていない"
+    ]
+  },
+  {
+    "word": "underestimate",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "過小評価する",
+    "example": "Don't underestimate how much time this task will take.",
+    "otherMeanings": []
+  },
+  {
+    "word": "undergraduate",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "学部学生",
+    "example": "She studied biology as an undergraduate.",
+    "otherMeanings": []
+  },
+  {
+    "word": "underground",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "地下の",
+    "example": "The hotel has an underground car park.",
+    "otherMeanings": [
+      "秘密活動の",
+      "前衛的な"
+    ]
+  },
+  {
+    "word": "underground",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "地下に",
+    "example": "The cables run underground beneath the road.",
+    "otherMeanings": [
+      "秘密裏に"
+    ]
+  },
+  {
+    "word": "underneath",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "下に",
+    "example": "Lift the mat and check underneath.",
+    "otherMeanings": []
+  },
+  {
+    "word": "undersea",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "海中の、海底の",
+    "example": "An undersea cable connects the island to the mainland.",
+    "otherMeanings": []
+  },
+  {
+    "word": "understandable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "理解できる",
+    "example": "Her disappointment is understandable after so much effort.",
+    "otherMeanings": [
+      "分かりやすい"
+    ]
+  },
+  {
+    "word": "understanding",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "理解のある、思いやりのある",
+    "example": "My manager was understanding when I needed time off.",
+    "otherMeanings": []
+  },
+  {
+    "word": "understanding",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "理解",
+    "example": "The course gave me a better understanding of climate change.",
+    "otherMeanings": [
+      "合意",
+      "思いやり"
+    ]
+  },
+  {
+    "word": "undertake",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "引き受ける、着手する",
+    "example": "The university will undertake a study of local wildlife.",
+    "otherMeanings": [
+      "約束する"
+    ]
+  },
+  {
+    "word": "underwater",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "水中で、水面下に",
+    "example": "The camera works underwater as well as on land.",
+    "otherMeanings": []
+  },
+  {
+    "word": "underwear",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "下着",
+    "example": "Pack clean underwear for each day of the trip.",
+    "otherMeanings": []
+  },
+  {
+    "word": "undoubtedly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "疑いなく",
+    "example": "This is undoubtedly the best meal we have had here.",
+    "otherMeanings": []
+  },
+  {
+    "word": "undreamed",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "夢にも思わなかった",
+    "example": "The discovery opened up possibilities previously undreamed of.",
+    "otherMeanings": []
+  },
+  {
+    "word": "undressed",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "服を脱いだ",
+    "example": "He got undressed and stepped into the shower.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unease",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "不安",
+    "example": "A sense of unease spread through the crowd.",
+    "otherMeanings": []
+  },
+  {
+    "word": "uneasily",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "不安そうに",
+    "example": "She glanced uneasily at the dark clouds overhead.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unenthusiastic",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "乗り気でない、熱意のない",
+    "example": "They were unenthusiastic about working late on Friday.",
+    "otherMeanings": []
+  },
+  {
+    "word": "uneven",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "でこぼこの、均一でない",
+    "example": "Walk carefully on the uneven pavement.",
+    "otherMeanings": [
+      "むらのある",
+      "不公平な"
+    ]
+  },
+  {
+    "word": "unfamiliar",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "なじみのない",
+    "example": "The unfamiliar sound made the dog bark.",
+    "otherMeanings": [
+      "よく知らない"
+    ]
+  },
+  {
+    "word": "unfashionable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "流行遅れの",
+    "example": "His old coat may be unfashionable, but it is warm.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unforeseen",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "予期しなかった",
+    "example": "Unforeseen problems delayed the opening of the bridge.",
+    "otherMeanings": []
+  },
+  {
+    "word": "ungodly",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "とんでもない（時刻などが）",
+    "example": "We had to leave at an ungodly hour to catch the flight.",
+    "otherMeanings": [
+      "不信心な"
+    ]
+  },
+  {
+    "word": "unhappiness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "不幸、不満な気持ち",
+    "example": "She spoke openly about her unhappiness at work.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unhelpful",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "役に立たない、非協力的な",
+    "example": "The vague instructions were unhelpful when we assembled the desk.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unimaginable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "想像できない",
+    "example": "The earthquake caused damage on an unimaginable scale.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unimaginably",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "想像できないほど",
+    "example": "Space is unimaginably vast compared with our planet.",
+    "otherMeanings": []
+  },
+  {
+    "word": "united",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "団結した",
+    "example": "The team remained united despite the difficult season.",
+    "otherMeanings": [
+      "連合した"
+    ]
+  },
+  {
+    "word": "universal",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "普遍的な、万人共通の",
+    "example": "Music can express emotions that seem universal.",
+    "otherMeanings": [
+      "全世界の"
+    ]
+  },
+  {
+    "word": "unjustly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "不当に",
+    "example": "She felt she had been unjustly blamed for the mistake.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unkind",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "不親切な、意地悪な",
+    "example": "It was unkind to laugh at his mistake.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unlike",
+    "pos": "preposition",
+    "level": "B2",
+    "meaning": "～とは違って",
+    "example": "Unlike her brother, Maya enjoys getting up early.",
+    "otherMeanings": [
+      "～らしくない"
+    ]
+  },
+  {
+    "word": "unlimited",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "無制限の",
+    "example": "The ticket allows unlimited travel for one day.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unload",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "荷物を降ろす",
+    "example": "They unloaded the boxes from the van.",
+    "otherMeanings": [
+      "銃の弾を抜く",
+      "負担を押しつける"
+    ]
+  },
+  {
+    "word": "unlock",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "鍵を開ける",
+    "example": "Use this key to unlock the back door.",
+    "otherMeanings": [
+      "利用可能にする",
+      "謎を解く"
+    ]
+  },
+  {
+    "word": "unmistakable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "間違えようのない、明白な",
+    "example": "We heard the unmistakable sound of a helicopter.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unmistakably",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "紛れもなく",
+    "example": "The voice on the recording was unmistakably hers.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unnatural",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "不自然な",
+    "example": "His smile looked unnatural in the photograph.",
+    "otherMeanings": [
+      "人工的な"
+    ]
+  },
+  {
+    "word": "unofficial",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "非公式の",
+    "example": "An unofficial report suggested that the plans had changed.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unpopular",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "人気のない、不評な",
+    "example": "The decision to close the pool was deeply unpopular.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unrealistic",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "非現実的な",
+    "example": "Finishing the entire project today is unrealistic.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unreasonable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "不合理な、無理な",
+    "example": "It is unreasonable to expect one person to do everything.",
+    "otherMeanings": [
+      "法外な"
+    ]
+  },
+  {
+    "word": "unreliable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "頼りにならない",
+    "example": "The old bus service was slow and unreliable.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unrest",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "社会的不安、騒乱",
+    "example": "Rising food prices led to widespread unrest.",
+    "otherMeanings": [
+      "心の落ち着かなさ"
+    ]
+  },
+  {
+    "word": "unsafe",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "安全でない",
+    "example": "The damaged bridge is unsafe for heavy vehicles.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unsatisfactory",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "満足できない、不十分な",
+    "example": "The repair was unsatisfactory, so we contacted the company again.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unselfish",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "利己的でない、思いやりのある",
+    "example": "Giving up her seat was an unselfish gesture.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unstoppable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "止められない",
+    "example": "The team looked unstoppable in the final quarter.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unsuccessful",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "成功しなかった",
+    "example": "Our first attempt to repair the engine was unsuccessful.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unsuitable",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "適していない",
+    "example": "These thin shoes are unsuitable for walking in snow.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unsure",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "確信が持てない",
+    "example": "I'm unsure which bus goes to the airport.",
+    "otherMeanings": []
+  },
+  {
+    "word": "untalented",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "才能に恵まれない",
+    "example": "He felt untalented at drawing, but practice helped him improve.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unthinkably",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "考えられないほど",
+    "example": "Losing every copy of the research would be unthinkably costly.",
+    "otherMeanings": []
+  },
+  {
+    "word": "untie",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "結び目をほどく",
+    "example": "Untie your shoelaces before taking off your boots.",
+    "otherMeanings": [
+      "解放する"
+    ]
+  },
+  {
+    "word": "unto",
+    "pos": "preposition",
+    "level": "B2",
+    "meaning": "～に、～へ（古風な表現）",
+    "example": "The king spoke unto his people from the palace balcony.",
+    "otherMeanings": []
+  },
+  {
+    "word": "untreated",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "治療されていない",
+    "example": "An untreated infection can become serious.",
+    "otherMeanings": [
+      "加工されていない"
+    ]
+  },
+  {
+    "word": "untrimmed",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "刈り込まれていない",
+    "example": "The untrimmed hedge blocked the view of the path.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unusualness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "珍しさ、普通でないこと",
+    "example": "The unusualness of the design attracted many visitors.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unwilling",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "気が進まない",
+    "example": "He was unwilling to leave without saying goodbye.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unwise",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "賢明でない",
+    "example": "It would be unwise to drive through the floodwater.",
+    "otherMeanings": []
+  },
+  {
+    "word": "unworldly",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "世慣れていない",
+    "example": "The unworldly scholar found everyday business difficult.",
+    "otherMeanings": [
+      "俗世を離れた"
+    ]
+  },
+  {
+    "word": "upbringing",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "育てられ方、しつけ",
+    "example": "Her upbringing taught her to respect different opinions.",
+    "otherMeanings": []
+  },
+  {
+    "word": "update",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "最新情報、更新",
+    "example": "The manager gave us an update on the repairs.",
+    "otherMeanings": []
+  },
+  {
+    "word": "upgrade",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "改良、上位版への変更",
+    "example": "The software upgrade fixed several security problems.",
+    "otherMeanings": [
+      "昇格"
+    ]
+  },
+  {
+    "word": "upgrade",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "改良する、上位版にする",
+    "example": "We need to upgrade the computers in the library.",
+    "otherMeanings": [
+      "昇格させる"
+    ]
+  },
+  {
+    "word": "upright",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "直立した",
+    "example": "Keep the bottle in an upright position.",
+    "otherMeanings": [
+      "正直な"
+    ]
+  },
+  {
+    "word": "upright",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "まっすぐに",
+    "example": "She sat upright when she heard her name.",
+    "otherMeanings": []
+  },
+  {
+    "word": "upset",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "動揺させる、悲しませる",
+    "example": "The news of his departure upset the children.",
+    "otherMeanings": [
+      "ひっくり返す",
+      "計画を狂わせる"
+    ]
+  },
+  {
+    "word": "upside down",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "逆さまの",
+    "example": "The picture on the wall was upside down.",
+    "otherMeanings": []
+  },
+  {
+    "word": "upside down",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "逆さまに",
+    "example": "She held the map upside down without noticing.",
+    "otherMeanings": []
+  },
+  {
+    "word": "urban",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "都市の",
+    "example": "Urban parks provide space for exercise and relaxation.",
+    "otherMeanings": []
+  },
+  {
+    "word": "urge",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "強く促す",
+    "example": "Doctors urge people to seek help if the pain continues.",
+    "otherMeanings": [
+      "強く主張する"
+    ]
+  },
+  {
+    "word": "urgently",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "緊急に",
+    "example": "The shelter urgently needs blankets and clean water.",
+    "otherMeanings": []
+  },
+  {
+    "word": "user",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "利用者",
+    "example": "Each user must choose a secure password.",
+    "otherMeanings": []
+  },
+  {
+    "word": "usher",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "案内する",
+    "example": "The host ushered us into the dining room.",
+    "otherMeanings": [
+      "到来を告げる"
+    ]
+  },
+  {
+    "word": "utility",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "公共サービス、公益事業",
+    "example": "Electricity and water are essential utilities.",
+    "otherMeanings": [
+      "有用性",
+      "補助プログラム"
+    ]
+  },
+  {
+    "word": "utilize/utilise",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "利用する、活用する",
+    "example": "The factory utilizes waste heat to warm nearby buildings.",
+    "otherMeanings": []
+  },
+  {
+    "word": "utter",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "言葉や声を発する",
+    "example": "He was too surprised to utter a word.",
+    "otherMeanings": []
+  },
+  {
+    "word": "utterly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "まったく、完全に",
+    "example": "The two proposals are utterly different.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vacant",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "空いている",
+    "example": "There are three vacant seats near the front.",
+    "otherMeanings": [
+      "欠員のある",
+      "ぼんやりした"
+    ]
+  },
+  {
+    "word": "vaccine",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ワクチン",
+    "example": "Scientists developed a vaccine against the disease.",
+    "otherMeanings": []
+  },
+  {
+    "word": "valentine",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "バレンタインのカード",
+    "example": "She made a valentine with red paper and ribbon.",
+    "otherMeanings": [
+      "バレンタインの恋人"
+    ]
+  },
+  {
+    "word": "valid",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "有効な",
+    "example": "Your ticket is valid until the end of the month.",
+    "otherMeanings": [
+      "妥当な"
+    ]
+  },
+  {
+    "word": "value",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "大切にする、高く評価する",
+    "example": "I value your advice because you speak honestly.",
+    "otherMeanings": [
+      "価値を見積もる"
+    ]
+  },
+  {
+    "word": "vanish",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "消える",
+    "example": "The sun vanished behind a thick cloud.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vanity",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "虚栄心、うぬぼれ",
+    "example": "His vanity made it difficult for him to accept criticism.",
+    "otherMeanings": [
+      "空しさ"
+    ]
+  },
+  {
+    "word": "variation",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "変化、ばらつき",
+    "example": "There is considerable variation in the size of these seeds.",
+    "otherMeanings": [
+      "変形",
+      "変奏"
+    ]
+  },
+  {
+    "word": "varied",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "変化に富んだ、さまざまな",
+    "example": "A varied diet includes many different kinds of food.",
+    "otherMeanings": []
+  },
+  {
+    "word": "venture",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "新しい事業、冒険的な企て",
+    "example": "Opening a bakery was their first business venture.",
+    "otherMeanings": []
+  },
+  {
+    "word": "venue",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "会場、開催地",
+    "example": "We need a larger venue for the concert.",
+    "otherMeanings": []
+  },
+  {
+    "word": "verbal",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "言葉による、口頭の",
+    "example": "They reached a verbal agreement after the meeting.",
+    "otherMeanings": [
+      "動詞の"
+    ]
+  },
+  {
+    "word": "verbally",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "口頭で",
+    "example": "She explained the changes verbally before sending a written summary.",
+    "otherMeanings": []
+  },
+  {
+    "word": "verse",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "韻文、詩",
+    "example": "He wrote a short piece of verse for her birthday.",
+    "otherMeanings": [
+      "詩の連",
+      "聖書の節"
+    ]
+  },
+  {
+    "word": "verse",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "精通させる、詳しく学ばせる",
+    "example": "She versed herself in local customs before the journey.",
+    "otherMeanings": [
+      "詩にする"
+    ],
+    "usageNote": "この動詞の用法はまれです。通常は well versed in（〜に詳しい）の形で使われます。"
+  },
+  {
+    "word": "version",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "版、改訂版",
+    "example": "Download the latest version of the application.",
+    "otherMeanings": [
+      "説明の仕方",
+      "翻訳"
+    ]
+  },
+  {
+    "word": "versus",
+    "pos": "preposition",
+    "level": "B2",
+    "meaning": "～対～",
+    "example": "Tonight's match is Japan versus Canada.",
+    "otherMeanings": [
+      "～と比較して"
+    ]
+  },
+  {
+    "word": "very",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "まさにその",
+    "example": "This is the very book I was looking for.",
+    "otherMeanings": []
+  },
+  {
+    "word": "veteran",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "熟練者、ベテラン",
+    "example": "A veteran of the industry offered us valuable advice.",
+    "otherMeanings": [
+      "退役軍人"
+    ]
+  },
+  {
+    "word": "vibrate",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "振動する",
+    "example": "My phone vibrated inside my pocket.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vibration",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "振動",
+    "example": "The vibration from the engine shook the windows.",
+    "otherMeanings": []
+  },
+  {
+    "word": "viewer",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "視聴者",
+    "example": "The program attracted millions of viewers.",
+    "otherMeanings": [
+      "見る人",
+      "画像を見る装置"
+    ]
+  },
+  {
+    "word": "vigor/vigour",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "活力、精力",
+    "example": "After a short rest, she returned to work with renewed vigor.",
+    "otherMeanings": [
+      "力強さ"
+    ]
+  },
+  {
+    "word": "vigorous",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "活発な、精力的な",
+    "example": "The proposal led to a vigorous debate.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vigorously",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "力強く、活発に",
+    "example": "Stir the mixture vigorously until it becomes smooth.",
+    "otherMeanings": []
+  },
+  {
+    "word": "villa",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "別荘",
+    "example": "They rented a villa near the coast for the summer.",
+    "otherMeanings": [
+      "郊外住宅"
+    ]
+  },
+  {
+    "word": "villager",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "村人",
+    "example": "The villagers gathered to repair the old bridge.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vinegar",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "酢",
+    "example": "Add a little vinegar to the salad dressing.",
+    "otherMeanings": []
+  },
+  {
+    "word": "violate",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "違反する、侵害する",
+    "example": "Publishing the private letters would violate her privacy.",
+    "otherMeanings": []
+  },
+  {
+    "word": "virtual reality",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "仮想現実",
+    "example": "The museum uses virtual reality to recreate an ancient city.",
+    "otherMeanings": []
+  },
+  {
+    "word": "virtually",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "ほとんど、事実上",
+    "example": "The two designs are virtually identical.",
+    "otherMeanings": [
+      "仮想空間で"
+    ]
+  },
+  {
+    "word": "virtue",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "美徳",
+    "example": "Patience is a virtue when you are teaching young children.",
+    "otherMeanings": [
+      "長所"
+    ]
+  },
+  {
+    "word": "visibly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "目に見えて、明らかに",
+    "example": "She was visibly relieved when the test ended.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vital",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "極めて重要な",
+    "example": "Clean water is vital for good health.",
+    "otherMeanings": [
+      "生命に関する",
+      "活力に満ちた"
+    ]
+  },
+  {
+    "word": "vitamin",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ビタミン",
+    "example": "Oranges are a good source of vitamin C.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vocalist",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "歌手、ボーカル担当者",
+    "example": "The band's new vocalist has a powerful voice.",
+    "otherMeanings": []
+  },
+  {
+    "word": "volunteer",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ボランティア、志願者",
+    "example": "A volunteer helped us find the registration desk.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vomit",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "吐いた物",
+    "example": "The nurse cleaned the vomit from the floor.",
+    "otherMeanings": []
+  },
+  {
+    "word": "voter",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "有権者、投票者",
+    "example": "Voters will choose a new mayor next month.",
+    "otherMeanings": []
+  },
+  {
+    "word": "vow",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "誓い",
+    "example": "They exchanged wedding vows in front of their families.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wage",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "賃金",
+    "example": "The factory increased the hourly wage for all workers.",
+    "otherMeanings": []
+  },
+  {
+    "word": "waist",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "腰回り、ウエスト",
+    "example": "Measure your waist before ordering the trousers.",
+    "otherMeanings": []
+  },
+  {
+    "word": "waistcoat",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ベスト、チョッキ",
+    "example": "He wore a waistcoat under his suit jacket.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wait",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "待ち時間",
+    "example": "There was a twenty-minute wait for a table.",
+    "otherMeanings": []
+  },
+  {
+    "word": "walkabout",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "歩いて人々と交流する視察",
+    "example": "The mayor met residents during a walkabout in the town center.",
+    "otherMeanings": [
+      "徒歩の旅"
+    ]
+  },
+  {
+    "word": "walker",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "歩く人",
+    "example": "The muddy path was busy with walkers.",
+    "otherMeanings": [
+      "歩行補助器"
+    ]
+  },
+  {
+    "word": "wallboard",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "壁用の板材",
+    "example": "They fixed sheets of wallboard to the wooden frame.",
+    "otherMeanings": []
+  },
+  {
+    "word": "walnut",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "クルミ",
+    "example": "She sprinkled chopped walnuts over the cake.",
+    "otherMeanings": [
+      "クルミの木",
+      "クルミ材"
+    ]
+  },
+  {
+    "word": "want",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "不足、欠乏",
+    "example": "The plants died for want of water.",
+    "otherMeanings": [
+      "欲しいもの"
+    ]
+  },
+  {
+    "word": "warship",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "軍艦",
+    "example": "The warship sailed out of the harbor at dawn.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wartime",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "戦時",
+    "example": "Many families grew their own vegetables during wartime.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wasp",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ハチ（主にスズメバチなど）",
+    "example": "A wasp flew around the open jar of jam.",
+    "otherMeanings": []
+  },
+  {
+    "word": "water",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "水をやる",
+    "example": "Please water the plants while I am away.",
+    "otherMeanings": [
+      "涙が出る",
+      "薄める"
+    ]
+  },
+  {
+    "word": "waterproof",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "防水の",
+    "example": "Wear a waterproof jacket if it rains.",
+    "otherMeanings": []
+  },
+  {
+    "word": "weaken",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "弱める、弱くなる",
+    "example": "The long illness weakened his muscles.",
+    "otherMeanings": []
+  },
+  {
+    "word": "weakly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "弱々しく",
+    "example": "She smiled weakly and asked for some water.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wealthy",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "裕福な",
+    "example": "A wealthy donor paid for the new library.",
+    "otherMeanings": [
+      "豊富な"
+    ]
+  },
+  {
+    "word": "wearisome",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "退屈で疲れさせる",
+    "example": "The long, repetitive lecture became wearisome.",
+    "otherMeanings": []
+  },
+  {
+    "word": "weary",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "疲れ切った",
+    "example": "The weary hikers rested beside the stream.",
+    "otherMeanings": [
+      "うんざりした"
+    ]
+  },
+  {
+    "word": "weave",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "織り方、織り目",
+    "example": "The tight weave makes this fabric strong.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wed",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "結婚する",
+    "example": "The couple plan to wed in a small village church.",
+    "otherMeanings": []
+  },
+  {
+    "word": "weed",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "雑草",
+    "example": "We pulled weeds from between the vegetables.",
+    "otherMeanings": []
+  },
+  {
+    "word": "welcome",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "歓迎",
+    "example": "The visitors received a warm welcome from the students.",
+    "otherMeanings": []
+  },
+  {
+    "word": "welfare",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "福祉、幸福",
+    "example": "The organization works to improve children's welfare.",
+    "otherMeanings": [
+      "生活保護"
+    ]
+  },
+  {
+    "word": "well-balanced",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "バランスのよい",
+    "example": "A well-balanced meal includes vegetables and a source of protein.",
+    "otherMeanings": [
+      "情緒の安定した"
+    ]
+  },
+  {
+    "word": "well-built",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "体格のよい",
+    "example": "The tall, well-built athlete easily lifted the heavy bag.",
+    "otherMeanings": [
+      "頑丈に造られた"
+    ]
+  },
+  {
+    "word": "well-organized/well-organised",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "よく整理された",
+    "example": "The well-organized schedule left time for questions.",
+    "otherMeanings": []
+  },
+  {
+    "word": "well-paid",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "給料のよい",
+    "example": "She left a well-paid job to start her own business.",
+    "otherMeanings": []
+  },
+  {
+    "word": "western",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "西の、西部の",
+    "example": "The storm reached the western coast this morning.",
+    "otherMeanings": [
+      "西洋の"
+    ]
+  },
+  {
+    "word": "wheat",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "小麦",
+    "example": "The farmer planted wheat in the large field.",
+    "otherMeanings": []
+  },
+  {
+    "word": "whereas",
+    "pos": "conjunction",
+    "level": "B2",
+    "meaning": "一方で、～なのに対して",
+    "example": "My brother likes coffee, whereas I prefer tea.",
+    "otherMeanings": []
+  },
+  {
+    "word": "whichever",
+    "pos": "pronoun",
+    "level": "B2",
+    "meaning": "どちらでも、どれでも",
+    "example": "Both seats are free, so choose whichever you prefer.",
+    "otherMeanings": []
+  },
+  {
+    "word": "whip",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "泡立てる",
+    "example": "Whip the cream until it forms soft peaks.",
+    "otherMeanings": [
+      "むちで打つ",
+      "素早く動かす"
+    ]
+  },
+  {
+    "word": "whiskey/whisky",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ウイスキー",
+    "example": "The distillery stores whisky in wooden barrels.",
+    "otherMeanings": []
+  },
+  {
+    "word": "whisper",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "ささやく",
+    "example": "Please whisper so you don't wake the baby.",
+    "otherMeanings": []
+  },
+  {
+    "word": "whistle",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "口笛を吹く",
+    "example": "He whistled a cheerful tune as he walked home.",
+    "otherMeanings": [
+      "笛を鳴らす",
+      "鋭い音を立てる"
+    ]
+  },
+  {
+    "word": "widen",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "広げる、広がる",
+    "example": "The council plans to widen the narrow road.",
+    "otherMeanings": []
+  },
+  {
+    "word": "widow",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "夫を亡くした女性",
+    "example": "The widow kept the letters her husband had written.",
+    "otherMeanings": []
+  },
+  {
+    "word": "width",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "幅",
+    "example": "Measure the width of the doorway before buying a sofa.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wilderness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "人の手が入っていない自然地域",
+    "example": "They spent a week hiking through the wilderness.",
+    "otherMeanings": [
+      "荒野"
+    ]
+  },
+  {
+    "word": "will",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "意志",
+    "example": "Her strong will helped her continue despite the setbacks.",
+    "otherMeanings": [
+      "遺言",
+      "望み"
+    ]
+  },
+  {
+    "word": "willing",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "進んで～する",
+    "example": "I'm willing to help if you show me what to do.",
+    "otherMeanings": [
+      "乗り気の"
+    ]
+  },
+  {
+    "word": "willingly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "喜んで、進んで",
+    "example": "She willingly shared her notes with the absent student.",
+    "otherMeanings": []
+  },
+  {
+    "word": "win",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "勝利",
+    "example": "The team celebrated its first win of the season.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wind",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "巻く",
+    "example": "Wind the string around the wooden spool.",
+    "otherMeanings": [
+      "曲がりくねって進む",
+      "ぜんまいを巻く"
+    ]
+  },
+  {
+    "word": "winding",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "曲がりくねった",
+    "example": "A winding path led us through the forest.",
+    "otherMeanings": []
+  },
+  {
+    "word": "windshield",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "車のフロントガラス",
+    "example": "Rain covered the windshield as we drove home.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wink",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ウインク、目配せ",
+    "example": "She gave me a wink to show she was joking.",
+    "otherMeanings": [
+      "一瞬"
+    ]
+  },
+  {
+    "word": "wipe",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "拭く",
+    "example": "Wipe the table with a damp cloth.",
+    "otherMeanings": [
+      "消去する"
+    ]
+  },
+  {
+    "word": "wire",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "配線する",
+    "example": "An electrician wired the new kitchen lights.",
+    "otherMeanings": [
+      "電信送金する",
+      "針金で固定する"
+    ]
+  },
+  {
+    "word": "wit",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "機知、とんち",
+    "example": "Her quick wit made the whole audience laugh.",
+    "otherMeanings": [
+      "機知に富む人",
+      "判断力"
+    ]
+  },
+  {
+    "word": "withdraw",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "引き出す",
+    "example": "I need to withdraw some cash from the bank.",
+    "otherMeanings": [
+      "撤回する",
+      "撤退する"
+    ]
+  },
+  {
+    "word": "withdrawal",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "引き出し",
+    "example": "The bank charges a small fee for each cash withdrawal.",
+    "otherMeanings": [
+      "撤退",
+      "撤回",
+      "禁断症状"
+    ]
+  },
+  {
+    "word": "witness",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "目撃者、証人",
+    "example": "A witness described the car to the police.",
+    "otherMeanings": []
+  },
+  {
+    "word": "witty",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "機知に富んだ",
+    "example": "His witty reply made everyone at the table laugh.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wolf",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "オオカミ",
+    "example": "A lone wolf stood at the edge of the forest.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wondrous",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "驚くほど素晴らしい",
+    "example": "The children listened to tales of wondrous creatures.",
+    "otherMeanings": []
+  },
+  {
+    "word": "woodcarving",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "木彫り、木彫作品",
+    "example": "The museum displays delicate woodcarvings of birds.",
+    "otherMeanings": []
+  },
+  {
+    "word": "wordlessly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "無言で",
+    "example": "She nodded wordlessly and handed him the letter.",
+    "otherMeanings": []
+  },
+  {
+    "word": "workaholic",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "仕事に熱中しすぎる",
+    "example": "His workaholic habits left little time for relaxation.",
+    "otherMeanings": []
+  },
+  {
+    "word": "workbench",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "作業台",
+    "example": "The carpenter laid his tools on the workbench.",
+    "otherMeanings": []
+  },
+  {
+    "word": "workman",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "作業員、職人",
+    "example": "A workman repaired the broken window frame.",
+    "otherMeanings": []
+  },
+  {
+    "word": "worktable",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "作業用の机",
+    "example": "She spread the fabric across her worktable.",
+    "otherMeanings": []
+  },
+  {
+    "word": "worldly",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "世慣れた",
+    "example": "Her worldly advice helped him adjust to city life.",
+    "otherMeanings": [
+      "世俗の",
+      "物質的な"
+    ]
+  },
+  {
+    "word": "worldview",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "世界観",
+    "example": "Travel changed her worldview and challenged many assumptions.",
+    "otherMeanings": []
+  },
+  {
+    "word": "worldwide",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "世界的な",
+    "example": "The organization launched a worldwide campaign against hunger.",
+    "otherMeanings": []
+  },
+  {
+    "word": "worm",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "細長い虫、ミミズ",
+    "example": "A worm wriggled through the damp soil.",
+    "otherMeanings": [
+      "寄生虫",
+      "自己増殖する不正プログラム"
+    ]
+  },
+  {
+    "word": "wornout/worn out/worn-out",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "使い古した、擦り切れた",
+    "example": "He replaced his worn-out boots before the next hike.",
+    "otherMeanings": [
+      "疲れ切った"
+    ]
+  },
+  {
+    "word": "worrying",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "心配させる",
+    "example": "The sudden drop in attendance is worrying.",
+    "otherMeanings": []
+  },
+  {
+    "word": "worse",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "より悪いこと、悪化した状態",
+    "example": "Her condition took a turn for the worse overnight.",
+    "otherMeanings": []
+  },
+  {
+    "word": "worsen",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "悪化する、悪化させる",
+    "example": "The weather began to worsen as evening approached.",
+    "otherMeanings": []
+  },
+  {
+    "word": "worship",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "礼拝、崇拝",
+    "example": "The church is open for worship every Sunday.",
+    "otherMeanings": [
+      "熱烈な敬愛"
+    ]
+  },
+  {
+    "word": "worst",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "最もひどく",
+    "example": "The coastal villages were worst affected by the storm.",
+    "otherMeanings": []
+  },
+  {
+    "word": "worthless",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "価値のない",
+    "example": "The expired tickets were worthless after the event had ended.",
+    "otherMeanings": [
+      "役に立たない"
+    ]
+  },
+  {
+    "word": "wound",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "負傷させる",
+    "example": "Flying glass wounded several people near the window.",
+    "otherMeanings": [
+      "感情を傷つける"
+    ]
+  },
+  {
+    "word": "wreck",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "大破した乗り物、残骸",
+    "example": "Divers explored the wreck of an old cargo ship.",
+    "otherMeanings": [
+      "ひどく疲れた人",
+      "破壊"
+    ]
+  },
+  {
+    "word": "wrongly",
+    "pos": "adverb",
+    "level": "B2",
+    "meaning": "誤って、不当に",
+    "example": "I wrongly assumed that the shop was open on Sundays.",
+    "otherMeanings": []
+  },
+  {
+    "word": "X-ray",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "エックス線写真、エックス線検査",
+    "example": "The X-ray showed a small fracture in her wrist.",
+    "otherMeanings": [
+      "エックス線"
+    ]
+  },
+  {
+    "word": "yacht",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ヨット",
+    "example": "The yacht sailed slowly across the calm bay.",
+    "otherMeanings": []
+  },
+  {
+    "word": "yawn",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "あくび",
+    "example": "He tried to hide a yawn during the long meeting.",
+    "otherMeanings": []
+  },
+  {
+    "word": "yawn",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "あくびをする",
+    "example": "I kept yawning after staying up so late.",
+    "otherMeanings": [
+      "大きく口を開ける"
+    ]
+  },
+  {
+    "word": "yearn",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "切望する、憧れる",
+    "example": "After months abroad, she yearned to see her family.",
+    "otherMeanings": []
+  },
+  {
+    "word": "yell",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "大声で叫ぶ",
+    "example": "He yelled for help when he saw the smoke.",
+    "otherMeanings": []
+  },
+  {
+    "word": "yield",
+    "pos": "verb",
+    "level": "B2",
+    "meaning": "生み出す",
+    "example": "The experiment yielded some surprising results.",
+    "otherMeanings": [
+      "譲る",
+      "屈する"
+    ]
+  },
+  {
+    "word": "youthful",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "若々しい",
+    "example": "Her youthful energy kept the whole team motivated.",
+    "otherMeanings": [
+      "若い頃の"
+    ]
+  },
+  {
+    "word": "yummy",
+    "pos": "adjective",
+    "level": "B2",
+    "meaning": "おいしい",
+    "example": "These warm cookies are really yummy.",
+    "otherMeanings": []
+  },
+  {
+    "word": "zebra",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "シマウマ",
+    "example": "A herd of zebras grazed on the open plain.",
+    "otherMeanings": []
+  },
+  {
+    "word": "zip",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ファスナー",
+    "example": "The zip on my jacket is stuck.",
+    "otherMeanings": [
+      "勢い、元気",
+      "ゼロ"
+    ]
+  },
+  {
+    "word": "zoom",
+    "pos": "noun",
+    "level": "B2",
+    "meaning": "ズーム、拡大機能",
+    "example": "Use the camera's zoom to see the distant birds clearly.",
+    "otherMeanings": [
+      "急上昇"
+    ]
+  }
+]

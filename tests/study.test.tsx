@@ -7,7 +7,7 @@ import { SettingsPage } from "../src/components/SettingsPage";
 import { StudyPage } from "../src/components/StudyPage";
 import type { Deck, Word, WordPage } from "../shared/model";
 let root: Root, container: HTMLDivElement;
-const words: Word[] = Array.from({ length: 53 }, (_, i) => ({ id: `w${i}`, ordinal: i, word: `english-${i}`, meaning: `日本語-${i}`, example: `An example for word ${i}.`, tags: [] }));
+const words: Word[] = Array.from({ length: 53 }, (_, i) => ({ id: `w${i}`, ordinal: i, word: `english-${i}`, meaning: `日本語-${i}`, example: `An example for word ${i}.`, otherMeanings: [`別の意味-${i}`], tags: [] }));
 const deck: Deck = { id: "book", schemaVersion: 1, title: "テスト", description: "", textbookTags: [], visibility: "public", wordCount: 53, createdAt: "", updatedAt: "" };
 const reader = { words: vi.fn<(id: string, query: string, cursor: number) => Promise<WordPage>>() };
 async function mount(start = true) { await act(async () => root.render(<StudyPage deck={deck} reader={reader} onClose={() => {}} />)); if(start && container.querySelector(".study-setup")) await click("学習をはじめる"); }
@@ -34,7 +34,7 @@ afterEach(async () => { await act(async () => root.unmount()); container.remove(
 it('defaults to Japanese first, hides the English answer and example, and applies direction changes on the next session', async () => {
   await mount();
   expect(face()).toContain('日本語-0'); expect(face()).not.toContain('english-0'); expect(face()).not.toContain('An example');
-  await click('タップして英語を見る'); expect(face()).toContain('english-0'); expect(face()).toContain('An example for word 0.');
+  await click('タップして英語を見る'); expect(face()).toContain('english-0'); expect(face()).toContain('An example for word 0.'); expect(face()).not.toContain('日本語-0'); expect(face()).not.toContain('別の意味');
   await click('次の単語'); expect(face()).toContain('日本語-1'); expect(face()).not.toContain('english-1');
   await choose('カードの向き','en-ja'); expect(face()).toContain('english-0'); expect(face()).not.toContain('日本語-0');
   await click('タップして日本語を見る'); expect(face()).toContain('日本語-0');

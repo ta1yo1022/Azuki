@@ -1,4 +1,5 @@
-import { parseDeck, ValidationError, type Word } from "../shared/model";
+import {standardDecks} from "../shared/standardDecks";
+import { LIMITS, parseDeck, ValidationError, type Word } from "../shared/model";
 import { contentHash } from "../shared/content";
 import { deckResult, deckSelect, type DeckRow } from "./decks";
 import type { Env } from "./index";
@@ -7,6 +8,8 @@ export async function setVisibility(env: Env, uid: string, row: DeckRow, visibil
   const conflict = async () => {
     if (row.source_deck_id && (!row.source_hash || row.source_hash === row.content_hash))
       return Response.json({ error: "保存したままのコピーは公開できません。単語・意味・例文を編集すると、派生版として公開できます。", code: "unchanged_copy", ...(row.source_available ? { existingDeckId: row.source_deck_id } : {}) }, { status: 409 });
+    const official = standardDecks.find(deck => deck.contentHash === row.content_hash);
+    if (official) return Response.json({error:"同じ内容の運営単語帳が公開されています。",code:"duplicate_content",existingDeckId:official.id},{status:409});
     const duplicate = await env.DB.prepare("SELECT id FROM decks WHERE visibility='public' AND content_hash=? AND id<>? ORDER BY (owner_id='azuki:official') DESC,created_at,id LIMIT 1").bind(row.content_hash, row.id).first<{ id: string }>();
     if (duplicate) return Response.json({ error: "同じ単語・意味・例文の単語帳がすでに公開されています。公開中の単語帳をご利用ください。", code: "duplicate_content", existingDeckId: duplicate.id }, { status: 409 });
     return null;
@@ -43,7 +46,7 @@ export async function editWord(env: Env, uid: string, id: string, wordId: string
     return Response.json({ error: "この単語は更新されています。画面を読み込み直してください。" }, { status: 409 });
   if (data.word === old.word && data.meaning === old.meaning && (data.example ?? "") === old.example) return Response.json({ deck: deckResult(row), word: {...old, tags: JSON.parse(old.tags)} });
   const words = result.results.map(w => w.id === wordId ? { ...data, tags: JSON.parse(old.tags) } : { word: w.word, meaning: w.meaning, example: w.example, tags: JSON.parse(w.tags) });
-  const parsed = parseDeck(JSON.stringify({ title: row.title, description: row.description, textbookTags: JSON.parse(row.textbook_tags), words }));
+  const parsed = parseDeck(JSON.stringify({ title: row.title, description: row.description, textbookTags: JSON.parse(row.textbook_tags), words }), {maxWords:LIMITS.forkWords,allowExampleVariants:true});
   const hash = await contentHash(parsed.words);
   const bytes = new TextEncoder().encode(JSON.stringify(parsed)).length;
   const now = new Date().toISOString();

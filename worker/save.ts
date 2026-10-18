@@ -4,7 +4,7 @@ import type { Env } from "./index";
 
 export async function savePublicDeck(env: Env, uid: string, sourceId: string) {
   const existing = () => env.DB.prepare(
-    `${deckSelect} WHERE d.owner_id=? AND (d.id=? OR d.source_deck_id=?) LIMIT 1`,
+    `${deckSelect} WHERE d.owner_id=? AND (d.id=? OR (d.source_deck_id=? AND d.is_fork=0)) LIMIT 1`,
   ).bind(uid, sourceId, sourceId).first<DeckRow>();
   const saved = await existing();
   if (saved) return Response.json({ deck: deckResult(saved), alreadySaved: true });

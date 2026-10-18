@@ -1,0 +1,122 @@
+[
+  {
+    "schemaVersion": 1,
+    "title": "毎日の動詞 500",
+    "description": "身近な動作から、考えや行動を詳しく表す動詞まで。毎日使いたい500語を集めました。",
+    "textbookTags": [
+      {
+        "name": "日常生活"
+      },
+      {
+        "name": "英語語彙"
+      }
+    ],
+    "id": "azuki-official-daily-v1",
+    "visibility": "public",
+    "wordCount": 500,
+    "createdAt": "2026-10-05T00:00:00.000Z",
+    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "isOfficial": true,
+    "officialLevel": "intermediate",
+    "contentSource": "ejdict",
+    "standard": true,
+    "file": "azuki-official-daily-v1.c4b52c6dbbcee401.json",
+    "contentHash": "f94ce510fe2fd80fd219254327ab64aee6cb77300f81c454dc37b5df54fbefc8"
+  },
+  {
+    "schemaVersion": 1,
+    "title": "旅先で使う英単語 500",
+    "description": "空港、ホテル、街歩き、移動、天気や時間の表現まで。旅先で役立つ500語です。",
+    "textbookTags": [
+      {
+        "name": "旅行"
+      },
+      {
+        "name": "英語語彙"
+      }
+    ],
+    "id": "azuki-official-travel-v1",
+    "visibility": "public",
+    "wordCount": 500,
+    "createdAt": "2026-10-05T00:00:00.000Z",
+    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "isOfficial": true,
+    "officialLevel": "beginner",
+    "contentSource": "ejdict",
+    "standard": true,
+    "file": "azuki-official-travel-v1.49a38407b785b672.json",
+    "contentHash": "f5a9826ce705c7beda1c305927861068b9722520459f354b938fa1d47f6632cd"
+  },
+  {
+    "schemaVersion": 1,
+    "title": "食べものとカフェの英単語 500",
+    "description": "食材、飲みもの、味、調理法、キッチンの道具まで。食事の場面を広くカバーする500語です。",
+    "textbookTags": [
+      {
+        "name": "食事・カフェ"
+      },
+      {
+        "name": "英語語彙"
+      }
+    ],
+    "id": "azuki-official-food-v1",
+    "visibility": "public",
+    "wordCount": 500,
+    "createdAt": "2026-10-05T00:00:00.000Z",
+    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "isOfficial": true,
+    "officialLevel": "intermediate",
+    "contentSource": "ejdict",
+    "standard": true,
+    "file": "azuki-official-food-v1.395d131a7ea0abbf.json",
+    "contentHash": "86e1d00dfb96f45e647e08e39286f6fb99f8e0af14dc79e8b1dc0373404a0a1e"
+  },
+  {
+    "schemaVersion": 1,
+    "title": "気持ちを伝える英単語 500",
+    "description": "感情、人柄、人との関わり、心の状態を表す500語。気持ちの細かな違いを言葉にします。",
+    "textbookTags": [
+      {
+        "name": "気持ち・人柄"
+      },
+      {
+        "name": "英語語彙"
+      }
+    ],
+    "id": "azuki-official-feelings-v1",
+    "visibility": "public",
+    "wordCount": 500,
+    "createdAt": "2026-10-05T00:00:00.000Z",
+    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "isOfficial": true,
+    "officialLevel": "intermediate",
+    "contentSource": "ejdict",
+    "standard": true,
+    "file": "azuki-official-feelings-v1.f64ac16377745363.json",
+    "contentHash": "f98a4a6694c228baaf20b701d9d3800b3483b21fc2b6e2ffe6694e0be8e36c17"
+  },
+  {
+    "schemaVersion": 1,
+    "title": "仕事のやりとり英単語 500",
+    "description": "会議や予定調整から、契約、会計、組織、業務の道具まで。仕事の語彙を広げる500語です。",
+    "textbookTags": [
+      {
+        "name": "仕事"
+      },
+      {
+        "name": "英語語彙"
+      }
+    ],
+    "id": "azuki-official-work-v1",
+    "visibility": "public",
+    "wordCount": 500,
+    "createdAt": "2026-10-05T00:00:00.000Z",
+    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "isOfficial": true,
+    "officialLevel": "advanced",
+    "contentSource": "ejdict",
+    "standard": true,
+    "file": "azuki-official-work-v1.289b783b6e859ced.json",
+    "contentHash": "059390d9382f135c6bd5d8fc49d49d2af9f9c894275cdfdc61fb7bad2720b953"
+  }
+]

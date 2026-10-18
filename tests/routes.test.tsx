@@ -198,7 +198,7 @@ describe("official publisher and deck-level difficulty", () => {
     await mount("/explore");
     await settle(280);
     expect(container.querySelector(".official-badge")).toBeNull();
-    expect(container.querySelector(".official-level")).toBeNull();
+    expect(container.querySelector(".public-deck-grid .official-level")).toBeNull();
     await move("/shared/demo-deck");
     expect(container.querySelector(".official-publisher")).toBeNull();
     expect(container.querySelector(".official-level")).toBeNull();

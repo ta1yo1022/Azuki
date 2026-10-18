@@ -13,9 +13,11 @@
     "db:remote": "wrangler d1 migrations apply azuki-db --remote --config wrangler.api.jsonc",
     "deploy:api": "wrangler deploy --config wrangler.api.jsonc",
     "deploy:web": "npm run build && wrangler pages deploy dist --project-name azuki --branch main",
-    "content:build": "node --experimental-strip-types scripts/build-official-seed.mjs",
-    "content:local": "npm run content:build && wrangler d1 execute azuki-db --local --config wrangler.api.jsonc --file content/official/seed.sql",
-    "content:remote": "npm run content:build && wrangler d1 execute azuki-db --remote --config wrangler.api.jsonc --file content/official/seed.sql"
+    "content:build": "npm run content:official && npm run content:cefrj",
+    "content:cefrj": "node --experimental-strip-types scripts/build-cefrj.mjs",
+    "content:official": "node --experimental-strip-types scripts/build-official-static.mjs",
+    "pretest": "npm run content:build",
+    "prebuild": "npm run content:build"
   },
   "dependencies": {
     "firebase": "^12.19.0",

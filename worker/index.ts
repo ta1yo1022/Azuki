@@ -1,3 +1,4 @@
+import { standardDeck } from "../shared/standardDecks";
 import { LIMITS, parseDeck, ValidationError, type Deck } from "../shared/model";
 import { verifyFirebaseIdentity, type VerifiedIdentity } from "./auth";
 import { reportsRoute } from "./reports";
@@ -86,7 +87,8 @@ async function route(
       .all<DeckRow>();
     return json({ decks: result.results.map(deckResult) });
   }
-  if (url.pathname === "/api/decks" && request.method === "POST") {
+  const forkPath = /^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/fork$/.exec(url.pathname);
+  if ((url.pathname === "/api/decks" || forkPath) && request.method === "POST") {
     if (env.ALLOW_IMPORTS !== "true")
       return json(
         {
@@ -95,26 +97,37 @@ async function route(
         },
         503,
       );
-    const data = parseDeck(await limitedBody(request));
+    const data = parseDeck(await limitedBody(request), {maxWords:forkPath ? LIMITS.forkWords : LIMITS.importWords,allowExampleVariants:Boolean(forkPath)});
+    let source: {id:string;title:string;hash:string;root:string;contentSource:string;standard:boolean} | undefined;
+    if (forkPath) {
+      const original = standardDeck(forkPath[1]);
+      if (original) source = {id:original.id,title:original.title,hash:original.contentHash,root:original.id,contentSource:original.contentSource === "ejdict" ? "ejdict" : "",standard:true};
+      else {
+        const row = await env.DB.prepare("SELECT * FROM decks WHERE id=? AND (visibility='public' OR owner_id=?)").bind(forkPath[1],uid).first<DeckRow>();
+        if (!row) return json({error:"コピー元の単語帳が見つからないか、公開されていません。"},404);
+        const words = await env.DB.prepare("SELECT word,meaning,example FROM words WHERE deck_id=?").bind(row.id).all<{word:string;meaning:string;example:string}>();
+        source={id:row.id,title:row.title,hash:await contentHash(words.results),root:row.root_deck_id || row.id,contentSource:row.content_source,standard:false};
+      }
+    }
     const id = crypto.randomUUID();
     const now = new Date().toISOString();
     const dataBytes = new TextEncoder().encode(JSON.stringify(data)).length;
     const statements = [
       env.DB.prepare("INSERT OR IGNORE INTO users(id) VALUES (?)").bind(uid),
       env.DB.prepare(
-        "INSERT INTO decks(id,owner_id,title,description,visibility,word_count,created_at,updated_at,data_bytes,content_hash) VALUES (?,?,?,?,'private',?,?,?,?,?)",
-      ).bind(
-        id,
-        uid,
-        data.title,
-        data.description,
-        data.words.length,
-        now,
-        now,
-        dataBytes,
-        await contentHash(data.words),
-      ),
+        `INSERT INTO decks(id,owner_id,title,description,visibility,word_count,created_at,updated_at,data_bytes,content_hash,source_deck_id,source_title,source_hash,root_deck_id,content_source,is_fork)
+         SELECT ?,?,?,?,'private',?,?,?,?,?,?,?,?,?,?,?
+         WHERE ?='' OR ?=1 OR EXISTS(SELECT 1 FROM decks WHERE id=? AND (visibility='public' OR owner_id=?))`,
+      ).bind(id,uid,data.title,data.description,data.words.length,now,now,dataBytes,await contentHash(data.words),source?.id ?? null,source?.title ?? "",source?.hash ?? "",source?.root ?? null,source?.contentSource ?? "",source ? 1 : 0,source?.id ?? "",source?.standard ? 1 : 0,source?.id ?? "",uid),
     ];
+    if (source) {
+      // JSON batches keep full-book forks within D1's statement and bind limits.
+      for(let offset=0;offset<data.words.length;offset+=250) {
+        const chunk=data.words.slice(offset,offset+250).map((word,i)=>({...word,id:crypto.randomUUID(),ordinal:offset+i}));
+        statements.push(env.DB.prepare(`INSERT INTO words(id,deck_id,ordinal,word,meaning,example,tags)
+          SELECT json_extract(value,'$.id'),?,json_extract(value,'$.ordinal'),json_extract(value,'$.word'),json_extract(value,'$.meaning'),COALESCE(json_extract(value,'$.example'),''),json_extract(value,'$.tags') FROM json_each(?)`).bind(id,JSON.stringify(chunk)));
+      }
+    } else {
     // D1 Free permits 50 queries per invocation and 100 bound parameters/query.
     for (let offset = 0; offset < data.words.length; offset += 14) {
       const chunk = data.words.slice(offset, offset + 14);
@@ -133,6 +146,7 @@ async function route(
           ]),
         ),
       );
+    }
     }
     if (data.textbookTags.length) {
       statements.push(
@@ -154,7 +168,15 @@ async function route(
           ).bind(id, tag.name, tag.edition ?? "", tag.chapter ?? ""),
         );
     }
-    await env.DB.batch(statements);
+    try { await env.DB.batch(statements); }
+    catch (error) {
+      if (source && /FOREIGN KEY/.test(String(error))) return json({error:"コピー元の公開状態が変わりました。開き直してください。"},409);
+      throw error;
+    }
+    if (source) {
+      const row = await env.DB.prepare(`${deckSelect} WHERE d.id=? AND d.owner_id=?`).bind(id,uid).first<DeckRow>();
+      return json({deck:deckResult(row!)},201);
+    }
     return json(
       {
         deck: {

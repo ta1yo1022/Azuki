@@ -1,3 +1,5 @@
+import { ForkDialog } from "./components/ForkDialog";
+import { StandardLibrary } from "./components/StandardLibrary";
 import { Tutorial } from "./components/Tutorial";
 import { SearchInput } from "./components/SearchInput";
 import { Brand } from "./components/Brand";
@@ -28,7 +30,7 @@ import {
   X,
 } from "lucide-react";
 import { auth, googleSignIn } from "./lib/firebase";
-import { cloudRepository, demoRepository } from "./lib/repository";
+import { cloudRepository, demoRepository, publicRepository } from "./lib/repository";
 import { ImportDialog } from "./components/ImportDialog";
 import { ShareDialog } from "./components/ShareDialog";
 import { SettingsPage } from "./components/SettingsPage";
@@ -105,13 +107,14 @@ export default function App({ demo = false }: { demo?: boolean }) {
   const [wordsLoading, setWordsLoading] = useState(false);
   const [wordError, setWordError] = useState("");
   const [toast, setToast] = useState("");
+  const [forkOpen,setForkOpen]=useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const [reload, setReload] = useState(0);
   const confirm = useRef<HTMLDialogElement>(null);
   const generation = useRef(0);
   const repository = demo ? demoRepository : cloudRepository;
-  useEffect(() => { setConfirmDelete(false); }, [location.pathname]);
+  useEffect(() => { setConfirmDelete(false); setForkOpen(false); }, [location.pathname]);
   useEffect(() => {
     if (!auth) return;
     return onAuthStateChanged(
@@ -684,6 +687,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   </button>
                 </div>
               )}
+              <StandardLibrary />
               <footer className="library-footer">
                 <span>
                   <LockKeyhole size={14} />
@@ -732,6 +736,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   </div>
                 </div>
                 <div className="owner-deck-actions">
+                  {!demo && <button className="button secondary" onClick={()=>setForkOpen(true)}>JSONを編集してフォーク</button>}
                   <button
                     className="button primary"
                     onClick={() => navigate(`${detailPath}/study${location.search}`)}
@@ -851,6 +856,11 @@ export default function App({ demo = false }: { demo?: boolean }) {
         replay={new URLSearchParams(location.search).get("tutorial") === "1"}
         onFinish={() => setParams(current => { const next = new URLSearchParams(current); next.delete("tutorial"); return next; }, { replace: true })}
       />}
+      {forkOpen && selected && !demo && <ForkDialog key={selected.id} deck={selected} reader={repository} onClose={()=>setForkOpen(false)} onSave={async input=>{
+        const fork=await publicRepository.fork(selected.id,input);
+        setDecks(previous=>[fork,...previous]);
+        navigate(`/library/decks/${encodeURIComponent(fork.id)}`);
+      }}/>}
       {sharing && selected && (
         <ShareDialog
           deck={selected}

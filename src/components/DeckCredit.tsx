@@ -12,6 +12,7 @@ export function OfficialBadge() {
 }
 
 export function OfficialLevelBadge({ deck }: { deck: Deck }) {
+  if (deck.isOfficial && deck.cefrLevel) return <span className="official-level" aria-label={`CEFR-Jレベル：${deck.cefrLevel}`}>{deck.cefrLevel}</span>;
   if (!deck.isOfficial || !deck.officialLevel) return null;
   const level = LEVELS[deck.officialLevel];
   if (!level) return null;
@@ -34,6 +35,7 @@ export function OfficialPublisher({ deck }: { deck: Deck }) {
         <img src="/favicon.svg" alt="" />
         <div><OfficialBadge /><p>Azukiが編集した単語帳です。</p></div>
       </div>
+      {deck.cefrLevel && <div className="publisher-level"><div className="publisher-level-heading"><span>CEFR-Jの語彙レベル</span><OfficialLevelBadge deck={deck} /></div><p>原典の品詞別レベルを使用しています。前編・後編は掲載順による分割です。</p><p>CEFR-JによるAzukiの監修・認定を示すものではありません。</p></div>}
       {level && <div className="publisher-level">
         <div className="publisher-level-heading"><span>学習レベルの目安</span><OfficialLevelBadge deck={deck} /></div>
         <p>{level.description}</p>
@@ -48,6 +50,11 @@ export function OfficialPublisher({ deck }: { deck: Deck }) {
 }
 
 export function DeckCredit({ deck }: { deck: Deck }) {
+  if (deck.contentSource === "cefrj") return <div className="deck-credit cefrj-credit">
+    <p>出典：『CEFR-J Wordlist Version 1.6』東京外国語大学投野由紀夫研究室（<a href="https://www.cefr-j.org/download.html#cefrj_wordlist" target="_blank" rel="noreferrer">CEFR-J公式サイト</a>より2026年10月ダウンロード）。語彙表の著作権は原著作者に帰属します。</p>
+    <p>Azukiがレベル別に二分し、<a href="https://github.com/kujirahand/EJDict" target="_blank" rel="noreferrer">EJDict</a>（<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ja" target="_blank" rel="noreferrer">CC0</a>）を参考に、AIを用いて日本語の意味と例文を編集しています。代表的な意味の選定・その他の意味・例文はAzuki独自のもので、CEFR-Jの公式訳や公式例文ではありません。</p>
+    <p>項目数は品詞別です。同じ綴りが複数の品詞・レベルに含まれることがあります。</p>
+  </div>;
   if (deck.contentSource !== "ejdict") return null;
   return (
     <p className="deck-credit">

@@ -1,6 +1,7 @@
 export const LIMITS = {
   bytes: 512 * 1024,
   importWords: 500,
+  forkWords: 5000,
   userWords: 5000,
   decks: 20,
   dailyWords: 5000,
@@ -31,9 +32,17 @@ export type Deck = Omit<DeckInput, "words"> & {
   variantCount?: number;
   isOfficial?: boolean;
   officialLevel?: OfficialLevel;
-  contentSource?: "ejdict";
+  contentSource?: "ejdict" | "cefrj";
+  cefrLevel?: "A1" | "A2" | "B1" | "B2";
+  standard?: boolean;
 };
-export type Word = WordInput & { id: string; ordinal: number };
+export type Word = WordInput & {
+  id: string;
+  ordinal: number;
+  /** Additional senses of the same part of speech; meaning is the study prompt. */
+  otherMeanings?: string[];
+  usageNote?: string;
+};
 export type WordPage = { words: Word[]; nextCursor: number | null };
 export type DeckPage = { decks: Deck[]; nextCursor: string | null };
 export class ValidationError extends Error {}
@@ -53,7 +62,8 @@ function string(
     throw new ValidationError(`${label}は${max}文字以内にしてください。`);
   return result;
 }
-export function parseDeck(raw: string): DeckInput {
+export function parseDeck(raw: string, options: { maxWords?: number; allowExampleVariants?: boolean } = {}): DeckInput {
+  const maxWords = options.maxWords ?? LIMITS.importWords;
   if (new TextEncoder().encode(raw).length > LIMITS.bytes)
     throw new ValidationError("JSONは512KB以内にしてください。");
   let data: unknown;
@@ -72,9 +82,9 @@ export function parseDeck(raw: string): DeckInput {
   const description = string(data.description, "説明", 240, true);
   if (!Array.isArray(data.words) || data.words.length === 0)
     throw new ValidationError("wordsに1語以上の単語を追加してください。");
-  if (data.words.length > LIMITS.importWords)
+  if (data.words.length > maxWords)
     throw new ValidationError(
-      `一度に登録できるのは${LIMITS.importWords}語までです。単語帳を分けてください。`,
+      `一度に登録できるのは${maxWords}語までです。単語帳を分けてください。`,
     );
   const seen = new Set<string>();
   const words = data.words.map((item, i): WordInput => {
@@ -94,6 +104,7 @@ export function parseDeck(raw: string): DeckInput {
     const key = JSON.stringify([
       word.normalize("NFKC").toLowerCase(),
       meaning.normalize("NFKC"),
+      ...(options.allowExampleVariants ? [example.normalize("NFKC"), normalizedTags.join("\u0000")] : []),
     ]);
     if (seen.has(key))
       throw new ValidationError(

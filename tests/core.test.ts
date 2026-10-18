@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { afterEach, vi, beforeEach, describe, expect, it } from "vitest";
 import { DatabaseSync } from "node:sqlite";
 import { readFileSync, readdirSync } from "node:fs";
 import { createLocalJWKSet, exportJWK, generateKeyPair, SignJWT } from "jose";
@@ -7,6 +7,7 @@ import { parseDeck } from "../shared/model";
 import { createHandler, type Env } from "../worker";
 import { verifyFirebaseToken } from "../worker/auth";
 import { OFFICIAL_OWNER_ID } from "../worker/official";
+afterEach(() => vi.restoreAllMocks());
 const officialSeed = readFileSync(new URL("../content/official/seed.sql", import.meta.url), "utf8");
 const previousOfficialSeed = readFileSync(new URL("../content/official/releases/v2/seed.sql", import.meta.url), "utf8");
 const originalOfficialSeed = readFileSync(new URL("../content/official/releases/v1/seed.sql", import.meta.url), "utf8");
@@ -121,6 +122,61 @@ describe("owner isolation and atomic D1 imports", () => {
       ALLOWED_ORIGINS: "https://azuki.test",
       ALLOW_IMPORTS: "true",
     };
+  });
+  it("forks edited JSON atomically with trusted lineage and supports multiple forks", async () => {
+    const source=(await (await call("/decks","POST",sample())).json() as any).deck;
+    expect((await call(`/decks/${source.id}/fork`,"POST",sample(),"bob")).status).toBe(404);
+    await call(`/decks/${source.id}/visibility`,"PATCH",{visibility:"public"});
+    const edited={...sample(),title:"My fork",words:[{word:"hello",meaning:"こんにちは",example:"Hello, my name is Amy.",tags:[]}],isOfficial:true,sourceDeck:{id:"forged"}};
+    const response=await call(`/decks/${source.id}/fork`,"POST",edited,"bob");
+    expect(response.status).toBe(201);
+    const fork=(await response.json() as any).deck;
+    expect(fork.visibility).toBe("private");expect(fork.isOfficial).toBe(false);
+    expect(fork.sourceDeck.id).toBe(source.id);expect(fork.unchangedCopy).toBe(false);
+    expect((await call(`/decks/${fork.id}/visibility`,"PATCH",{visibility:"public"},"bob")).status).toBe(200);
+    expect((await call(`/decks/${source.id}/fork`,"POST",edited,"bob")).status).toBe(201);
+    expect((await call(`/decks/${source.id}/save`,"POST",undefined,"bob")).status).toBe(201);
+    expect((await call(`/decks/${source.id}/save`,"POST",undefined,"bob")).status).toBe(200);
+    expect(db.prepare("SELECT count(*) AS n FROM words WHERE deck_id=?").get(source.id)?.n).toBe(2);
+    const unchanged=(await (await call(`/decks/${source.id}/fork`,"POST",sample(),"bob")).json() as any).deck;
+    expect((await call(`/decks/${unchanged.id}/visibility`,"PATCH",{visibility:"public"},"bob")).status).toBe(409);
+  });
+  it("forks an entire CEFR book beyond 500 words and permits later word editing",async()=>{
+    const catalog=JSON.parse(readFileSync('shared/cefrj-catalog.json','utf8'));
+    const book=catalog.find((d:any)=>d.id==='azuki-cefrj-b2-1-v1');
+    const words=JSON.parse(readFileSync(`public/content/cefrj/${book.file}`,'utf8'));
+    const response=await call(`/decks/${book.id}/fork`,"POST",{title:'全編',words});
+    expect(response.status).toBe(201);
+    const deck=(await response.json() as any).deck;
+    expect(deck.wordCount).toBe(1390);
+    expect(db.prepare('SELECT count(*) AS n FROM words WHERE deck_id=?').get(deck.id)?.n).toBe(1390);
+    const word=db.prepare('SELECT * FROM words WHERE deck_id=? ORDER BY ordinal LIMIT 1').get(deck.id) as any;
+    const edited=await call(`/decks/${deck.id}/words/${word.id}`,"PATCH",{word:word.word,meaning:'編集した意味',example:word.example,expectedWord:word.word,expectedMeaning:word.meaning,expectedExample:word.example});
+    expect(edited.status).toBe(200);
+  });
+  it("forks standard books with server-owned attribution and validates limits before writing", async () => {
+    const id="azuki-cefrj-a1-1-v1";
+    const response=await call(`/decks/${id}/fork`,"POST",sample());
+    expect(response.status).toBe(201);
+    const deck=(await response.json() as any).deck;
+    expect(deck.sourceDeck).toEqual({id,title:"CEFR-J A1 前編",available:true});
+    expect(deck.contentSource).toBe("cefrj");expect(deck.isOfficial).toBe(false);
+    expect((await call(`/decks/${id}/fork`,"POST",sample(5001))).status).toBe(400);
+    expect((await call('/decks/nonexistent/fork',"POST",sample())).status).toBe(404);
+    expect(db.prepare("SELECT count(*) AS n FROM decks").get()?.n).toBe(1);
+    env.ALLOW_IMPORTS="false";
+    expect((await call(`/decks/${id}/fork`,"POST",sample())).status).toBe(503);
+  });
+  it("accepts reports only for known standard decks and shows them to admins", async () => {
+    env.ADMIN_EMAILS = "admin@example.test";
+    const id = "azuki-cefrj-a1-1-v1";
+    expect((await call(`/decks/${id}/report`, "POST", {reason:"inaccurate",details:"参考訳の確認"}, "bob")).status).toBe(201);
+    expect((await call(`/decks/azuki-cefrj-fake/report`, "POST", {reason:"spam"}, "bob")).status).toBe(404);
+    const response = await call("/admin/reports", "GET", undefined, "admin");
+    const result = await response.json() as any;
+    expect(result.reports[0].deck_title).toBe("CEFR-J A1 前編");
+    expect(result.reports[0].current_visibility).toBe("public");
+    expect(db.prepare("SELECT count(*) AS n FROM decks").get()).toEqual({n:0});
   });
   it("keeps reports private, deduplicates them, and restricts administration to verified configured admins", async () => {
     env.ADMIN_EMAILS="admin@example.test";
@@ -336,8 +392,8 @@ describe("owner isolation and atomic D1 imports", () => {
     db.exec(officialSeed);
     const quota = db.prepare("SELECT * FROM app_usage").get();
     const list = await (await anonymous("/decks")).json() as any;
-    expect(list.decks).toHaveLength(6);
-    expect(list.decks.filter((deck: any) => deck.isOfficial)).toHaveLength(5);
+    expect(list.decks).toHaveLength(1);
+    expect(list.decks.filter((deck: any) => deck.isOfficial)).toHaveLength(0);
     expect(db.prepare("SELECT word_count,deck_count,daily_words FROM users WHERE id=?").get(OFFICIAL_OWNER_ID))
       .toEqual({ word_count: 2500, deck_count: 5, daily_words: 2500 });
     // Existing rows must be skipped before quota triggers, even at the daily cap.
@@ -345,6 +401,7 @@ describe("owner isolation and atomic D1 imports", () => {
     db.exec(officialSeed);
     expect(db.prepare("SELECT * FROM app_usage").get()).toEqual(quota);
     expect(await (await anonymous(`/decks/${existing.id}`)).json()).toEqual(snapshot);
+    vi.spyOn(globalThis,"fetch").mockImplementation(async input => Response.json(JSON.parse(readFileSync(`public${new URL(String(input)).pathname}`,"utf8"))));
     for (const entry of officialManifest.decks) {
       const expected = parseDeck(readFileSync(new URL(`../content/official/${entry.file}`, import.meta.url), "utf8"));
       const { deck } = await (await anonymous(`/decks/${entry.id}`)).json() as any;
@@ -360,7 +417,7 @@ describe("owner isolation and atomic D1 imports", () => {
       expect((await call(`/decks/${entry.id}/visibility`, "PATCH", { visibility: "private" })).status).toBe(404);
     }
     const travel = await (await anonymous(`/decks?q=${encodeURIComponent("旅行")}`)).json() as any;
-    expect(travel.decks.map((deck: any) => deck.id)).toContain("azuki-official-travel-v1");
+    expect(travel.decks.map((deck: any) => deck.id)).not.toContain("azuki-official-travel-v1");
   });
   it("upgrades the first edition in place and preserves the first 50 words and existing saved copies", async () => {
     const existing = await published();
