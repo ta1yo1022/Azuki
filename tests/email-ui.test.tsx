@@ -30,3 +30,17 @@ it('shows no management controls after an authorization failure',async()=>{
 it('does not subscribe until the user explicitly chooses to receive email',async()=>{
  await mount(<EmailPreferences/>);expect(mocks.setPreferences).not.toHaveBeenCalled();expect(container.textContent).toContain('受信しない');await click('アップデート通知を受け取る');expect(mocks.setPreferences).toHaveBeenCalledWith(true);expect(container.querySelector('[role="status"]')?.textContent).toContain('受け取る設定');
 });
+
+it('inserts bold text and an image into the draft without sending',async()=>{
+ await mount(<AdminEmails/>);
+ await click('太字');
+ const body=container.querySelector<HTMLTextAreaElement>('#email-body')!;
+ expect(body.value).toBe('**太字の文章**');
+ await click('画像を挿入');
+ async function input(id:string,value:string){await act(async()=>{const el=container.querySelector<HTMLInputElement>(id)!;Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value')!.set!.call(el,value);el.dispatchEvent(new Event('input',{bubbles:true}));});}
+ await input('#email-image-url','javascript:alert(1)');await click('本文に画像を追加');expect(container.querySelector('[role="alert"]')?.textContent).toContain('HTTPS');
+ await input('#email-image-url','https://example.com/image.png');await input('#email-image-alt','本型の画面');await click('本文に画像を追加');
+ expect(body.value).toContain('**太字の文章**');
+ expect(body.value).toContain('![本型の画面](https://example.com/image.png)');
+ expect(container.querySelector('iframe')!.getAttribute('srcdoc')).toContain('src="https://example.com/image.png"');expect(mocks.action).not.toHaveBeenCalled();
+});

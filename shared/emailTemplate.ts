@@ -1,21 +1,11 @@
-/** Shared by the Worker and browser preview. Table layout + inline styles for mail clients. */
-export const escapeHtml = (value: string) => value.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
-function paragraph(value: string) {
-  // Only explicit HTTP(S) links become links; all other input stays escaped plain text.
-  return value.split(/(https?:\/\/[^\s<>"']+)/g).map(part => {
-    if (!/^https?:\/\//.test(part)) return escapeHtml(part).replace(/\n/g,'<br>');
-    const match=/^(.*?)([。、，．！？）》」』.,!?;:]*)$/.exec(part)!;
-    const url=match[1];
-    try { const parsed=new URL(url); if(!['http:','https:'].includes(parsed.protocol))throw new Error(); }
-    catch { return escapeHtml(part); }
-    return `<a href="${escapeHtml(url)}" style="color:#972d31;text-decoration:underline;word-break:break-all">${escapeHtml(url)}</a>${escapeHtml(match[2])}`;
-  }).join('');
-}
+import { escapeHtml, renderEmailBody } from './emailBody';
+export { escapeHtml } from './emailBody';
 export function renderEmail(subject: string, body: string, unsubscribeUrl: string, test: boolean, logoUrl = 'https://azuki.mame-app.com/email-logo.png', voltaLogoUrl = 'https://azuki.mame-app.com/volta-email-logo.png') {
-  const paragraphs=body.replace(/\r\n?/g,'\n').split(/\n\s*\n/).map(p=>`<p style="margin:0 0 22px;font-size:16px;line-height:1.9;color:#514a44;overflow-wrap:anywhere;word-break:break-word">${paragraph(p)}</p>`).join('');
+  const content=renderEmailBody(body);
+  const paragraphs=content.html;
   const stopLabel=test?'メール通知の設定':'アップデート通知を停止する';
   const footer=`Volta Technologies / Azuki\nお問い合わせ: support@volta.jp\n${stopLabel}: ${unsubscribeUrl}`;
-  return {textContent:`${subject}\n\n${body}\n\n${footer}`,htmlContent:`<!doctype html>
+  return {textContent:`${subject}\n\n${content.text}\n\n${footer}`,htmlContent:`<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>${escapeHtml(subject)}</title>
 <style>@media only screen and (max-width:600px){.email-shell{padding:16px 10px!important}.email-main{padding:32px 24px 24px!important}.email-heading{font-size:25px!important;margin:28px 0 36px!important}.email-footer{padding:28px 24px!important}}</style></head>
 <body style="margin:0;padding:0;background:#f5ece2;font-family:Arial,'Hiragino Kaku Gothic ProN',Meiryo,sans-serif;color:#282521;-webkit-text-size-adjust:100%">

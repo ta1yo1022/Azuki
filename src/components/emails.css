@@ -49,3 +49,11 @@
 .email-design-page > p { color:#796d62; }
 @media(max-width:900px) { .email-studio { grid-template-columns:1fr; } .email-preview-frame { height:880px; } }
 @media(max-width:600px) { .email-editor { padding:22px; } .email-preview-panel { padding:10px; border-radius:18px; } .email-design-page { padding:20px 14px; } .email-preview-toolbar { padding:8px 4px 14px; } }
+
+.email-format-toolbar { display:flex; flex-wrap:wrap; gap:8px; }
+.email-format-toolbar button { display:inline-flex; align-items:center; gap:6px; padding:9px 12px; border:1px solid #dfd2c2; border-radius:10px; background:white; color:#282521; font:inherit; font-size:13px; cursor:pointer; }
+.email-format-toolbar button:hover,.email-format-toolbar button[aria-expanded=true] { background:#f5ece2; border-color:#972d31; }
+.email-image-fields { display:grid; gap:10px; padding:16px; border:1px solid #dfd2c2; border-radius:12px; background:#f5ece2; }
+.admin-emails .email-image-fields label { margin:0; }
+.email-image-fields input { margin:0; }
+.email-image-fields .button { justify-self:start; font-size:13px; }
