@@ -112,7 +112,7 @@ describe('update emails',()=>{
  it('snapshots the audience once, sends individually, and never repeats a completed queue',async()=>{
    await subscribe();const id=await draft();await queue(id);await call('/admin/emails/'+id+'/start','POST',{confirm:'send-to-subscribers'});
    const send=vi.fn(accepted);await Promise.all([processEmailQueue(env,send),processEmailQueue(env,send)]);await processEmailQueue(env,send);
-   expect(send).toHaveBeenCalledTimes(1);const payload=JSON.parse(send.mock.calls[0]![1]!.body as string);expect(payload.to).toEqual([{email:user.email}]);expect(payload.headers['List-Unsubscribe-Post']).toBe('List-Unsubscribe=One-Click');expect(payload.htmlContent).toContain('token=');
+   expect(send).toHaveBeenCalledTimes(1);const payload=JSON.parse(send.mock.calls[0]![1]!.body as string);expect(payload.to).toEqual([{email:user.email}]);expect(payload.sender.name).toBe('英単語帳アプリ Azuki');expect(payload.headers['List-Unsubscribe-Post']).toBe('List-Unsubscribe=One-Click');expect(payload.htmlContent).toContain('token=');
    expect(db.prepare('SELECT status FROM email_campaigns WHERE id=?').get(id)?.status).toBe('completed');
  });
  it('deduplicates test submissions and addresses them only to the verified admin',async()=>{

@@ -166,7 +166,7 @@ export async function processEmailQueue(env: Env, send: typeof fetch = fetch,
     const unsubscribeUrl = test ? 'https://azuki.mame-app.com/library/settings' : `${env.EMAIL_API_URL}?token=${subscriber!.unsubscribe_token}`;
     try {
       const response = await send('https://api.brevo.com/v3/smtp/email', {method:'POST',headers:{'api-key':env.BREVO_API_KEY!,'Content-Type':'application/json','accept':'application/json'},body:JSON.stringify({
-        sender:{name:'Azuki / Volta Technologies',email:env.EMAIL_FROM},replyTo:{email:'support@volta.jp'},to:[{email:row.email}],
+        sender:{name:'英単語帳アプリ Azuki',email:env.EMAIL_FROM},replyTo:{email:'support@volta.jp'},to:[{email:row.email}],
         subject:(test?'[テスト] ':'')+campaign.subject,...renderEmail(campaign.subject,campaign.body,unsubscribeUrl,test),
         ...(test ? {} : {headers:{'List-Unsubscribe':`<${unsubscribeUrl}>`,'List-Unsubscribe-Post':'List-Unsubscribe=One-Click'}}),
       }),signal:AbortSignal.timeout(15000)});

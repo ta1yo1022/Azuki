@@ -4,7 +4,7 @@ export function renderEmail(subject: string, body: string, unsubscribeUrl: strin
   const content=renderEmailBody(body);
   const paragraphs=content.html;
   const stopLabel=test?'メール通知の設定':'アップデート通知を停止する';
-  const footer=`Volta Technologies / Azuki\nお問い合わせ: support@volta.jp\n${stopLabel}: ${unsubscribeUrl}`;
+  const footer=`英単語帳アプリ Azuki\nお問い合わせ: support@volta.jp\n${stopLabel}: ${unsubscribeUrl}`;
   return {textContent:`${subject}\n\n${content.text}\n\n${footer}`,htmlContent:`<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>${escapeHtml(subject)}</title>
 <style>@media only screen and (max-width:600px){.email-shell{padding:16px 10px!important}.email-main{padding:32px 24px 24px!important}.email-heading{font-size:25px!important;margin:28px 0 36px!important}.email-footer{padding:28px 24px!important}}</style></head>
