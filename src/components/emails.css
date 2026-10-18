@@ -14,7 +14,9 @@
 .email-confirm { border:2px solid #972d31; border-radius:24px; padding:28px; margin-block:32px; }
 @media(max-width:600px) { .email-compose,.email-confirm,.email-preview { padding:20px; } .email-actions { align-items:stretch; flex-direction:column; } }
 
-.admin-emails.create-guide { max-width:1320px; }
+.admin-emails.create-guide { width:100%; max-width:none; }
+.admin-emails.create-guide > .guide-header,
+.admin-emails.create-guide > main { width:100%; max-width:1320px; margin-inline:auto; }
 .email-studio { display:grid; grid-template-columns:minmax(300px,.8fr) minmax(0,1.2fr); gap:28px; margin:36px 0 56px; align-items:start; }
 .email-editor { padding:28px; border:1px solid #dfd2c2; border-radius:24px; background:#fffaf4; }
 .email-editor-heading h2 { margin:10px 0; font-size:26px; }
