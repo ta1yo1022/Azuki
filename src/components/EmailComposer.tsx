@@ -5,7 +5,7 @@ import { renderEmail } from '../../shared/emailTemplate';
 import './emails.css';
 export const sampleEmail={subject:'単語帳を、本のようにめくれるようになりました。',body:'いつもAzukiをご利用いただき、ありがとうございます。\n\n今回のアップデートで、新しく「単語帳モード」を追加しました。英単語・意味・例文をまとめて読みながら、本のページをめくるように学習できます。\n\nスマートフォンでは一面、パソコンでは見開きに。自分に合った画面で、覚えたいことばを少しずつ読み進めてみてください。\n\nAzukiをひらく\nhttps://azuki.mame-app.com/\n\nこれからも、みなさんの学習に役立つ機能を届けていきます。\n\nAzuki運営'};
 export function EmailPreview({subject,body,mobile=false}:{subject:string;body:string;mobile?:boolean}) {
- const html=renderEmail(subject,body,'https://azuki.mame-app.com/library/settings',false,new URL('/email-logo.png',window.location.origin).href).htmlContent;
+ const html=renderEmail(subject,body,'https://azuki.mame-app.com/library/settings',false,new URL('/email-logo.png',window.location.origin).href,new URL('/volta-email-logo.png',window.location.origin).href).htmlContent;
  return <iframe className={`email-preview-frame ${mobile?'is-mobile':''}`} title="送信メールのプレビュー" sandbox="" referrerPolicy="no-referrer" srcDoc={html} />;
 }
 export function EmailComposer({busy=false,onSave}:{busy?:boolean;onSave?:(id:string,subject:string,body:string)=>Promise<void>}) {

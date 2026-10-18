@@ -27,7 +27,7 @@ export function AdminEmails() {
     <span className="eyebrow">運営管理</span><h1>アップデート通知</h1>
     {!ready?<p>ログイン状態を確認しています…</p>:!user?<><p>管理者のGoogleアカウントでログインしてください。</p><button className="button primary" onClick={()=>void run(googleSignIn)}>Googleでログイン</button></>:data?<>
       <div className="email-summary"><strong>受信登録者 {data.subscribers.toLocaleString()} 人</strong><span>直近24時間の送信試行 {data.used} / {data.limit} 通</span></div>
-      <p>受信を希望した全ユーザーへ、5分ごとに最大10通ずつ配信します。上限に達した分は翌日以降に続けます。</p>
+      <p>メール通知が有効な全ユーザーへ、5分ごとに最大10通ずつ配信します。上限に達した分は翌日以降に続けます。</p>
       {!data.ready&&<p className="error-box" role="status">配信はまだ無効です。BrevoのAPIキー・認証済み送信元・配信停止URLを設定すると、テスト送信から開始できます。下書きは作成できます。</p>}
       <EmailComposer busy={busy} onSave={async(id,subject,body)=>{setBusy(true);setError('');try{await emailRepository.create(id,subject,body);setRefresh(n=>n+1);}catch(e){setError(e instanceof Error?e.message:'保存できませんでした。');throw e;}finally{setBusy(false);}}}/>
       <section><div className="email-list-heading"><h2>配信履歴・下書き</h2><button className="text-button" disabled={busy} onClick={()=>setRefresh(n=>n+1)}>更新</button></div><p>最新50件を表示します。「受付済み」はBrevoの受付結果で、受信箱への到着を保証するものではありません。</p>

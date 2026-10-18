@@ -11,7 +11,7 @@ function paragraph(value: string) {
     return `<a href="${escapeHtml(url)}" style="color:#972d31;text-decoration:underline;word-break:break-all">${escapeHtml(url)}</a>${escapeHtml(match[2])}`;
   }).join('');
 }
-export function renderEmail(subject: string, body: string, unsubscribeUrl: string, test: boolean, logoUrl = 'https://azuki.mame-app.com/email-logo.png') {
+export function renderEmail(subject: string, body: string, unsubscribeUrl: string, test: boolean, logoUrl = 'https://azuki.mame-app.com/email-logo.png', voltaLogoUrl = 'https://azuki.mame-app.com/volta-email-logo.png') {
   const paragraphs=body.replace(/\r\n?/g,'\n').split(/\n\s*\n/).map(p=>`<p style="margin:0 0 22px;font-size:16px;line-height:1.9;color:#514a44;overflow-wrap:anywhere;word-break:break-word">${paragraph(p)}</p>`).join('');
   const stopLabel=test?'メール通知の設定':'アップデート通知を停止する';
   const footer=`Volta Technologies / Azuki\nお問い合わせ: support@volta.jp\n${stopLabel}: ${unsubscribeUrl}`;
@@ -29,7 +29,7 @@ ${paragraphs}
 </td></tr>
 <tr><td class="email-footer" align="center" style="padding:32px 40px;background:#fbf6f0;border-top:1px solid #eee2d5;font-size:12px;line-height:1.9;color:#796d62">
 
-<p style="margin:0 0 6px;font-size:15px;font-weight:bold;color:#514a44">Volta Technologies</p>
+<p style="margin:0 0 18px"><img src="${escapeHtml(voltaLogoUrl)}" width="260" alt="Volta Technologies" style="display:block;border:0;width:260px;max-width:100%;height:auto;margin:0 auto"></p>
 <p style="margin:0 0 20px">英単語帳アプリ Azuki<br><a href="mailto:support@volta.jp" style="color:#796d62;text-decoration:underline">support@volta.jp</a></p>
 <p style="margin:0"><a href="https://azuki.mame-app.com/privacy" style="color:#796d62;text-decoration:underline">プライバシーポリシー</a><br><a href="${escapeHtml(unsubscribeUrl)}" style="color:#972d31;text-decoration:underline">${stopLabel}</a></p>
 </td></tr></table>

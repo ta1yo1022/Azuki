@@ -9,7 +9,7 @@ https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans
 
 ## 有効にする前の設定
 
-現状は EMAIL_ENABLED=false。API キーは未登録で、メールは送信しません。
+本番では EMAIL_ENABLED=true とし、APIキーはWorker Secretに保存します。配信は管理画面で明示的に開始したものだけが対象です。
 
 1. Brevo アカウントで送信ドメインを認証し、案内された DNS レコード（DKIM 等）を登録します。
 2. 送信元 support@volta.jp を認証します。返信・問い合わせもこのアドレスです。
@@ -30,7 +30,7 @@ https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans
    GET では確認画面のみ、POST で停止します。List-Unsubscribe-Post にも対応しています。
 8. 一斉配信は「配信内容を確認」→「全受信登録者への配信を開始」の明示的な操作で開始します。
 
-**この変更の実装時点では、実メール送信・本番 D1 反映・Secret 登録はしていません。**
+本番の管理画面は https://azuki.mame-app.com/admin/emails です。添付されたVolta Technologiesのロゴをメール用PNGに変換し、フッターに使用しています。
 
 ## 対象ユーザー
 
