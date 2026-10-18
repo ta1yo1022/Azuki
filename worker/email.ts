@@ -168,7 +168,7 @@ export async function processEmailQueue(env: Env, send: typeof fetch = fetch,
       const response = await send('https://api.brevo.com/v3/smtp/email', {method:'POST',headers:{'api-key':env.BREVO_API_KEY!,'Content-Type':'application/json','accept':'application/json'},body:JSON.stringify({
         sender:{name:'Azuki / Volta Technologies',email:env.EMAIL_FROM},replyTo:{email:'support@volta.jp'},to:[{email:row.email}],
         subject:(test?'[テスト] ':'')+campaign.subject,...renderEmail(campaign.subject,campaign.body,unsubscribeUrl,test),
-        headers: test ? {} : {'List-Unsubscribe':`<${unsubscribeUrl}>`,'List-Unsubscribe-Post':'List-Unsubscribe=One-Click'},
+        ...(test ? {} : {headers:{'List-Unsubscribe':`<${unsubscribeUrl}>`,'List-Unsubscribe-Post':'List-Unsubscribe=One-Click'}}),
       }),signal:AbortSignal.timeout(15000)});
       const data = await response.json().catch(()=>({})) as {messageId?:string};
       const accepted = response.ok && typeof data.messageId === 'string';

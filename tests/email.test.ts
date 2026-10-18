@@ -117,7 +117,7 @@ describe('update emails',()=>{
  });
  it('deduplicates test submissions and addresses them only to the verified admin',async()=>{
    const id=await draft();await call('/admin/emails/'+id+'/test','POST',{email:'other@example.com'});await call('/admin/emails/'+id+'/test','POST',{});
-   const send=vi.fn(accepted);await processEmailQueue(env,send);expect(send).toHaveBeenCalledTimes(1);expect(JSON.parse(send.mock.calls[0]![1]!.body as string).to).toEqual([{email:admin.email}]);
+   const send=vi.fn(accepted);await processEmailQueue(env,send);expect(send).toHaveBeenCalledTimes(1);expect(JSON.parse(send.mock.calls[0]![1]!.body as string).to).toEqual([{email:admin.email}]);expect(JSON.parse(send.mock.calls[0]![1]!.body as string)).not.toHaveProperty('headers');
  });
  it('skips recipients who unsubscribe after being queued',async()=>{
    await subscribe();const id=await draft();await queue(id);await call('/email/preferences','PUT',{enabled:false},'user');const send=vi.fn(accepted);await processEmailQueue(env,send);expect(send).not.toHaveBeenCalled();expect(db.prepare("SELECT status FROM email_deliveries WHERE kind='broadcast'").get()?.status).toBe('skipped');
