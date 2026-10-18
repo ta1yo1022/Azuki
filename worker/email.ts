@@ -141,16 +141,21 @@ export async function emailAdminRoute(request: Request, env: Env, identity: Veri
 }
 // A durable attempt is written BEFORE calling the provider. Ambiguous results are never
 // automatically retried; this prefers a missed message over duplicate announcements.
-export async function processEmailQueue(env: Env, send: typeof fetch = fetch) {
+export async function processEmailQueue(env: Env, send: typeof fetch = fetch,
+  options: { campaignId?: string; batchSize?: number; maxDurationMs?: number } = {}) {
   if (!emailReady(env)) return;
   await env.DB.prepare("UPDATE email_deliveries SET status='unknown',error_code='interrupted' WHERE status='sending' AND attempted_at < datetime('now','-10 minutes')").run();
-  for (let i=0;i<10;i++) {
+  const deadline = options.maxDurationMs ? Date.now() + options.maxDurationMs : Infinity;
+  for (let i=0;i<(options.batchSize ?? 10);i++) {
+    // Leave enough time for the provider timeout and persisting its result before waitUntil expires.
+    if (Date.now() + 16000 > deadline) break;
     const row = await env.DB.prepare(`UPDATE email_deliveries SET status='sending',attempted_at=datetime('now') WHERE id=(
       SELECT d.id FROM email_deliveries d JOIN email_campaigns c ON c.id=d.campaign_id WHERE d.status='pending'
+      AND (? IS NULL OR d.campaign_id=?)
       AND ((d.kind='test' AND c.status='draft') OR (d.kind='broadcast' AND c.status='queued'))
       ORDER BY c.created_at,d.id LIMIT 1)
       AND (SELECT COUNT(*) FROM email_deliveries WHERE attempted_at > datetime('now','-24 hours')) < ?
-      RETURNING *`).bind(emailLimit(env)).first<{id:string;campaign_id:string;email:string;user_id:string|null;consent_at:string|null;kind:string}>();
+      RETURNING *`).bind(options.campaignId ?? null,options.campaignId ?? null,emailLimit(env)).first<{id:string;campaign_id:string;email:string;user_id:string|null;consent_at:string|null;kind:string}>();
     if (!row) break;
     const subscriber = row.user_id ? await env.DB.prepare('SELECT enabled,email,consent_at,unsubscribe_token FROM email_subscribers WHERE user_id=?').bind(row.user_id).first<{enabled:number;email:string;consent_at:string;unsubscribe_token:string}>() : null;
     const campaign = await env.DB.prepare('SELECT subject,body,status FROM email_campaigns WHERE id=?').bind(row.campaign_id).first<{subject:string;body:string;status:string}>();

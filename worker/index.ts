@@ -253,7 +253,7 @@ async function route(
   return json({ error: "この操作は利用できません。" }, 404);
 }
 export function createHandler(verify: Verify = verifyFirebaseIdentity) {
-  return async (request: Request, env: Env): Promise<Response> => {
+  return async (request: Request, env: Env, ctx?: Pick<ExecutionContext, "waitUntil">): Promise<Response> => {
     const origin = request.headers.get("origin");
     const allowed = (env.ALLOWED_ORIGINS ?? "")
       .split(",")
@@ -267,6 +267,12 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
         request.method === "OPTIONS"
           ? new Response(null, { status: 204 })
           : await route(request, env, verify);
+      const emailAction = /^\/api\/admin\/emails\/([a-f0-9-]{36})\/(test|start)$/.exec(new URL(request.url).pathname);
+      if (ctx && response.ok && request.method === 'POST' && emailAction) {
+        ctx.waitUntil(processEmailQueue(env, fetch, {
+          campaignId: emailAction[1], batchSize: emailAction[2] === 'test' ? 1 : 10, maxDurationMs: 20000,
+        }).catch(() => { console.error('Azuki email background processing failed'); }));
+      }
     } catch (error) {
       const message = error instanceof Error ? error.message : "";
       if (error instanceof ValidationError)

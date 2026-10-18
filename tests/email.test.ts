@@ -58,6 +58,27 @@ async function queue(id:string){await call('/admin/emails/'+id+'/test','POST',{}
 beforeEach(()=>{db=new DatabaseSync(':memory:');for(const name of readdirSync(new URL('../migrations',import.meta.url)).sort()){db.exec(readFileSync(new URL('../migrations/'+name,import.meta.url),'utf8'));}env={DB:sqliteD1(db),FIREBASE_PROJECT_ID:'test',ALLOWED_ORIGINS:'https://azuki.example.com',ALLOW_IMPORTS:'true',ADMIN_EMAILS:admin.email,BREVO_API_KEY:'test-key',EMAIL_ENABLED:'true',EMAIL_FROM:'sender@example.com',EMAIL_API_URL:'https://api.example.com/api/email/unsubscribe',EMAIL_DAILY_LIMIT:'290'};});
 afterEach(()=>{db.close();vi.restoreAllMocks();});
 describe('update emails',()=>{
+ it('starts a requested test immediately in server background work without duplicate sends',async()=>{
+   const id=await draft(),send=vi.fn(accepted);vi.stubGlobal('fetch',send);
+   try {
+     const jobs:Promise<unknown>[]=[],ctx={waitUntil:(job:Promise<unknown>)=>{jobs.push(job);}};
+     const request=()=>new Request('https://api.example.com/api/admin/emails/'+id+'/test',{method:'POST',headers:{authorization:'Bearer admin'}});
+     expect((await handle(request(),env,ctx)).status).toBe(200);
+     await Promise.all(jobs);
+     expect(send).toHaveBeenCalledTimes(1);
+     expect(db.prepare("SELECT status FROM email_deliveries WHERE kind='test'").get()?.status).toBe('accepted');
+     await handle(request(),env,ctx);await Promise.all(jobs);expect(send).toHaveBeenCalledTimes(1);
+   } finally {vi.unstubAllGlobals();}
+ });
+ it('limits immediate work to the requested campaign and leaves other pending tests alone',async()=>{
+   const first=await draft(),second=await draft();
+   await call('/admin/emails/'+first+'/test','POST',{});await call('/admin/emails/'+second+'/test','POST',{});
+   const send=vi.fn(accepted);await processEmailQueue(env,send,{campaignId:second,batchSize:1,maxDurationMs:20000});
+   expect(send).toHaveBeenCalledTimes(1);
+   expect(db.prepare('SELECT status FROM email_deliveries WHERE campaign_id=?').get(first)?.status).toBe('pending');
+   expect(db.prepare('SELECT status FROM email_deliveries WHERE campaign_id=?').get(second)?.status).toBe('accepted');
+ });
+
  it('initializes existing library users once and preserves opt-outs on subsequent visits',async()=>{
    await call('/decks','GET',undefined,'user');
    expect(db.prepare('SELECT enabled,consent_version FROM email_subscribers').get()).toMatchObject({enabled:1,consent_version:'updates-default-v1'});
