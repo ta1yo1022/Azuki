@@ -129,7 +129,7 @@ export function CreateGuide() {
       </section>
       <section aria-labelledby="guide-step-3">
         <span className="eyebrow">STEP 03</span><h2 id="guide-step-3">Azukiに貼り付けて登録する</h2>
-        <p>作成画面の「JSONを貼り付け」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版も入力できます。</p>
+        <p>作成画面の「JSONを貼り付け」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版を入力できます。教材名がそのまま単語帳のタイトルになります。</p>
         <p>AIが作った意味や例文には誤りが含まれることがあります。登録後も単語一覧から確認・編集できます。新しい単語帳は非公開で保存されます。</p>
         <Link className="button primary" to={`${importPath}?tab=paste`}>JSONを貼り付ける<ArrowRight size={17} /></Link>
       </section>

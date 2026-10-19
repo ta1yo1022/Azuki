@@ -79,7 +79,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
       if (category === "textbook" && !textbookName.trim()) throw new Error("教材名を入力してください。");
       const textbookTags = category === "textbook" ? [{ name: textbookName.trim(), edition: edition.trim() }]
         : category ? [{ name: category }] : [];
-      await onImport(parseDeck(JSON.stringify({ ...preview, title, description, textbookTags })));
+      await onImport(parseDeck(JSON.stringify({ ...preview, title: category === "textbook" ? textbookName.trim() : title, description, textbookTags })));
       onClose();
     } catch (e) {
       setError((e as Error).message);
@@ -224,10 +224,10 @@ export function ImportDialog({ onClose, onImport }: Props) {
             </div>
             <fieldset className="import-classification" disabled={busy}>
               <legend className="visually-hidden">単語帳の設定</legend>
-              <div className="import-field">
+              {category !== "textbook" && <div className="import-field">
                 <label htmlFor="import-title-input">単語帳の名前 <small className="field-required">必須</small></label>
                 <input id="import-title-input" value={title} maxLength={80} required placeholder="例：旅先で使う英単語" onChange={(e) => setTitle(e.target.value)} />
-              </div>
+              </div>}
               <div className="import-field">
                 <label htmlFor="import-category">カテゴリ <small>任意</small></label>
                 <select id="import-category" value={category} onChange={(e) => setCategory(e.target.value)}>
@@ -240,6 +240,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
                 <div className="import-field">
                   <label htmlFor="import-textbook-name">教材名 <small className="field-required">必須</small></label>
                   <input id="import-textbook-name" value={textbookName} maxLength={80} placeholder="例：英単語ターゲット1900" onChange={(e) => setTextbookName(e.target.value)} required />
+                  <small>教材名を単語帳のタイトルに使います。</small>
                 </div>
                 <div className="import-field">
                   <label htmlFor="import-textbook-edition">版 <small>任意</small></label>
