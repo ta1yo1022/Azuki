@@ -685,7 +685,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
               </button>
               <div className="detail-heading">
                 <div>
-                  <span className="eyebrow">自分の単語帳</span>
+                  
                   <h1>{selected.title}</h1>
                   <p>{selected.description}</p>
                   <DeckCredit deck={selected} />

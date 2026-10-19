@@ -134,7 +134,7 @@ export function CreateGuide() {
         <Link className="button primary" to={`${importPath}?tab=paste`}>JSONを貼り付ける<ArrowRight size={17} /></Link>
       </section>
       <section id="own-examples" aria-labelledby="own-examples-title">
-        <span className="eyebrow">自分で作る</span><h2 id="own-examples-title">オリジナルの単語と例文を登録する</h2>
+        <h2 id="own-examples-title">オリジナルの単語と例文を登録する</h2>
         <p>マイライブラリで単語帳を開き、単語の行 →「例文を追加・編集」から、英文と日本語訳を直接入力できます。「例文を追加」で1語につき最大10件まで登録できます。JSONの編集は不要です。</p><p>単語をまとめて新規登録するときは、下のJSONもひな形として使えます。</p>
         <ol className="guide-example-steps">
           <li><strong>英単語・意味・例文を用意する</strong><p><code>word</code>に英単語、<code>meaning</code>に覚えたい日本語の意味、<code>examples</code>に例文を並べます。各例文の<code>text</code>に英文、<code>translation</code>に日本語訳を入れます。たとえば「discover／発見する」なら、「学校の近くで小さなカフェを見つけた」という場面を英文にします。</p></li>
@@ -149,7 +149,7 @@ export function CreateGuide() {
         <p>例文は英語で入力します。英文が不安なときは、AIに「この単語をこの意味で使えているか、文法も確認して」と頼み、内容を確認してから登録してください。</p>
       </section>
       <section aria-labelledby="fork-guide-title">
-        <span className="eyebrow">公開単語帳から作る</span><h2 id="fork-guide-title">気になる単語帳を、自分の例文に変える</h2>
+        <h2 id="fork-guide-title">気になる単語帳を、自分の例文に変える</h2>
         <p>公開単語帳の「その他」→「コピーして編集」で、自分用の非公開コピーを保存できます。マイライブラリで単語を開き、「例文を追加・編集」から英文・日本語訳を変更してください。</p>
         <p>AIでまとめて書き換える場合は、「その他」→「JSONを編集してフォーク」を選びます。JSONを外部AIに渡し、「英単語と意味は変えず、例文を好きな場面に書き換え、日本語訳も付けて」と頼めます。出力されたJSON全体をフォーク画面に貼り、内容を確認して保存します。</p>
         <p>コピーやフォークは自分用のデータとして保存され、元の更新は自動反映されません。編集せず学習するなら「お気に入りに登録」で、保存枠を使わずマイライブラリから開けます。</p>

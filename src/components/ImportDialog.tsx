@@ -103,7 +103,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
       <div className="dialog-inner">
         <header className="dialog-header">
           <div>
-            <span className="eyebrow">JSONから登録</span>
+            
             <h2 id="import-title">単語帳を追加</h2>
           </div>
           <button

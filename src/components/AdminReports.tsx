@@ -30,7 +30,7 @@ export function AdminReports() {
   },[user,ready,status,cursor,reload]);
   async function login(){setError("");try{await googleSignIn();}catch(e){setError(e instanceof Error?e.message:"ログインできませんでした。");}}
   return <div className="create-guide admin-reports"><header className="guide-header"><Link to="/"><Brand/></Link><Link to="/library/settings" className="text-button">設定へ戻る</Link></header><main>
-    <span className="eyebrow">運営管理</span><h1>単語帳の通報</h1>
+    <h1>単語帳の通報</h1>
     {!ready ? <p role="status">ログイン状態を確認しています…</p> : !user ? <><p>管理者のGoogleアカウントでログインしてください。</p><button className="button primary" onClick={()=>void login()}>Googleでログイン</button></> : <>
       <div className="admin-statuses" role="group" aria-label="通報の状態">{Object.entries(statuses).map(([key,label])=><button key={key} className={`filter-chip ${key===status?"selected":""}`} aria-pressed={key===status} onClick={()=>{setStatus(key as ReportStatus);setCursor(null);}}>{label}</button>)}</div>
       {busy && <p role="status">通報を読み込んでいます…</p>}

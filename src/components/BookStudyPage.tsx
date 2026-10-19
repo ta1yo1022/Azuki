@@ -2,7 +2,7 @@ import { useStudyTracking } from "../lib/studyTracking";
 import { WordExamples } from './WordExamples';
 import { useLayoutEffect, useEffect, useRef, useState, type PointerEvent } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, BookOpenText } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import type { Deck, Word, WordPage } from '../../shared/model';
 
 import {BookCover} from './BookCover';
@@ -235,7 +235,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
   }}>
     <header className={`book-study-header${controlsVisible ? "" : " is-hidden"}`} inert={!controlsVisible} aria-hidden={!controlsVisible}>
       <button className="back-button" onClick={onClose}><ArrowLeft size={18} />単語一覧に戻る</button>
-      <div className="book-study-title"><div><span className="eyebrow"><BookOpenText size={18} /> 単語帳で学習</span><h1 ref={heading} tabIndex={-1}>{deck.title}</h1></div>
+      <div className="book-study-title"><div><h1 ref={heading} tabIndex={-1}>{deck.title}</h1></div>
         <div className="book-study-tools"><button className="text-button book-controls-toggle" aria-controls="book-pagination" aria-expanded={controlsVisible} onClick={()=>{setControlsVisible(value=>!value);if(controlsVisible)document.querySelector<HTMLElement>(".book-leaf-content")?.focus();}}>{controlsVisible ? '操作を隠す' : '操作を表示'}</button><label className="book-study-toggle"><input type="checkbox" checked={hideMeanings} onChange={e=>{setHideMeanings(e.target.checked);setRevealed(new Set());}} />意味を隠す</label></div>
       </div>
       <p className="book-study-caption">{hideMeanings ? '意味の欄を押すと、1語ずつ答えを確認できます。' : '英単語・意味・例文を、まとめて読めます。タップで操作を隠し、左右のスワイプでページをめくれます。'}</p>

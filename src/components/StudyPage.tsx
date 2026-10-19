@@ -212,7 +212,7 @@ export function StudyPage({
           単語一覧に戻る
         </button>
         <div>
-          <span className="eyebrow">{examplesMode ? "例文カード学習" : "カード学習"}</span>
+          
           <h1 id="study-title">{deck.title}</h1>
         </div>
       </header>
@@ -263,7 +263,7 @@ export function StudyPage({
             <span className="study-complete-mark">
               <Check size={30} />
             </span>
-            <span className="eyebrow">学習終了</span>
+            
             <h3>最後までめくりました。</h3>
             <p>{words.length}{examplesMode ? "例文" : "語"}の学習、おつかれさまでした。</p>
             <div className="study-complete-actions">

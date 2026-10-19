@@ -53,7 +53,7 @@ export function ForkDialog({deck,onClose,onSave,reader=publicRepository}:{deck:D
     finally{busyRef.current=false;setBusy(false);}
   }
   return <dialog ref={dialog} className="import-dialog fork-dialog" aria-labelledby="fork-title" onCancel={e=>{e.preventDefault();if(!busy)onClose();}}>
-    <header className="fork-header"><div><span className="eyebrow">JSONから編集</span><h2 id="fork-title">単語帳をフォーク</h2></div><button className="icon-button" aria-label="閉じる" disabled={busy} onClick={onClose}><X size={22}/></button></header>
+    <header className="fork-header"><div><h2 id="fork-title">単語帳をフォーク</h2></div><button className="icon-button" aria-label="閉じる" disabled={busy} onClick={onClose}><X size={22}/></button></header>
     <div className="fork-body">
       <p className="muted">コピー元：{deck.title}。元の単語帳は変更せず、自分の単語帳として非公開で保存します。保存した単語数は個人の登録上限に含まれます。</p>
       {loading ? <p role="status">単語を読み込んでいます…</p> : words.length>0 && <>

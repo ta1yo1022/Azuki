@@ -64,7 +64,7 @@ export function ShareDialog({
     >
       <div className="dialog-header">
         <div>
-          <span className="eyebrow">公開設定</span>
+          
           <h2 id="share-title">単語帳を共有</h2>
         </div>
         <button

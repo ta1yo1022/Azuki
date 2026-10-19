@@ -428,7 +428,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
         <>
           <div className="detail-heading public-detail-heading">
             <div>
-              <span className="eyebrow">公開単語帳</span>
+              
               <h1>{deck.title}</h1>
               <p>{deck.description}</p>
               <div className="detail-tags">

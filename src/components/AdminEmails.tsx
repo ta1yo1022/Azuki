@@ -24,7 +24,7 @@ export function AdminEmails() {
   },[user,ready,refresh]);
   async function run(action:()=>Promise<unknown>) {setBusy(true);setError('');try{await action();setConfirmation(null);setRefresh(n=>n+1);}catch(e){setError(e instanceof Error?e.message:'処理できませんでした。');}finally{setBusy(false);}}
   return <div className="create-guide admin-emails"><header className="guide-header"><Link to="/"><Brand/></Link><Link className="text-button" to="/library/settings">設定へ戻る</Link></header><main>
-    <span className="eyebrow">運営管理</span><h1>アップデート通知</h1>
+    <h1>アップデート通知</h1>
     {!ready?<p>ログイン状態を確認しています…</p>:!user?<><p>管理者のGoogleアカウントでログインしてください。</p><button className="button primary" onClick={()=>void run(googleSignIn)}>Googleでログイン</button></>:data?<>
       <div className="email-summary"><strong>受信登録者 {data.subscribers.toLocaleString()} 人</strong><span>直近24時間の送信試行 {data.used} / {data.limit} 通</span></div>
       <p>テスト送信・配信開始の操作後、サーバー側ですぐに送信を始めます。残りは定期処理で順次送り、上限に達した分は翌日以降に続けます。</p>

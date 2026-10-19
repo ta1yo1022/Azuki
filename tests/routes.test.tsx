@@ -136,7 +136,7 @@ describe("URL navigation", () => {
       if(path.startsWith("/shared/"))await click("学習する");
       await click("例文カードで学習");
       expect(currentURL).toBe(`${path}/study?mode=examples`);
-      expect(container.textContent).toContain("例文カード学習");
+      expect(container.textContent).toContain("日本語訳のある例文が対象です。");
       expect((container.querySelector('[aria-label="カードの向き"]') as unknown as {value:string})?.value).toBe("en-ja");
     }
   });

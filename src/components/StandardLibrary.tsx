@@ -9,7 +9,7 @@ export function StandardLibrary({query = ''}:{query?:string}) {
   ];
   if (!decks.length) return null;
   return <section className="standard-library" aria-label="運営発行の標準単語帳">
-    <div className="standard-library-heading"><span className="eyebrow">標準単語帳</span><p>保存せずに学習できます。個人の保存上限には含まれません。</p></div>
+    <div className="standard-library-heading"><p>保存せずに学習できます。個人の保存上限には含まれません。</p></div>
     {groups.filter(group => group.decks.length > 0).map(group => <section key={group.key} className="standard-library-group" aria-label={group.title}>
       <div className="standard-library-heading"><div><h2>{group.title}</h2><p>{group.description}</p></div></div>
       <div className="deck-grid public-deck-grid">{group.decks.map((deck, index) => <PublicDeckCard key={deck.id} deck={deck} index={index} heading="h3" />)}</div>
