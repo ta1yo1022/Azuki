@@ -669,13 +669,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   </button>
                 </div>
               )}
-              <footer className="library-footer">
-                <span>
-                  <LockKeyhole size={14} />
-                  追加した単語帳は非公開。「共有」から公開できます。
-                </span>
-                <span>{demo ? "サンプルの変更は、このブラウザに保存されます。" : "単語帳はGoogleアカウントに保存されます。"}</span>
-              </footer>
+
             </>
           ) : (
             <>

@@ -4,7 +4,6 @@ import { ArrowLeft, Clock3, BookOpen, BarChart3 } from 'lucide-react';
 import { studyRepository } from '../lib/repository';
 import { demoStudySummary, syncStudy } from '../lib/studyTracking';
 import type { StudySummary } from '../../shared/studyStats';
-import { LegalLinks } from './LegalPage';
 export function studyDuration(milliseconds:number){const seconds=Math.floor(milliseconds/1000);if(seconds<60)return `${seconds}秒`;const minutes=Math.floor(seconds/60);return minutes>=60?`${Math.floor(minutes/60)}時間${minutes%60}分`:`${minutes}分`;}
 function useStudySummary(demo:boolean,userId?:string){
  const [data,setData]=useState<StudySummary|null>(null),[error,setError]=useState(''),[note,setNote]=useState(''),[loading,setLoading]=useState(true),[retry,setRetry]=useState(0);
@@ -39,6 +38,6 @@ export function StudyStatsPage({demo=false,userId,embedded=false}:{demo?:boolean
    <section className="stats-panel" aria-labelledby="weekly-heading"><h2 id="weekly-heading">1週間の学習時間</h2><ol className="stats-chart">{data.days.map(day=><li key={day.day} aria-label={`${day.day}：${studyDuration(day.milliseconds)}`}><span className="stats-chart-value">{studyDuration(day.milliseconds)}</span><div className="stats-chart-track" aria-hidden="true"><span style={{height:`${Math.max(day.milliseconds?2:0,day.milliseconds/maximum*100)}%`}}/></div><span>{day.day.slice(5).replace('-','/')}</span><small>{day.day===data.today?'今日':new Intl.DateTimeFormat('ja-JP',{weekday:'short',timeZone:'Asia/Tokyo'}).format(new Date(`${day.day}T00:00:00+09:00`))}</small></li>)}</ol></section>
    <section className="stats-panel" aria-labelledby="ranking-heading"><div className="stats-ranking-heading"><h2 id="ranking-heading">よく学習した単語帳</h2><label>並び順<select value={sort} onChange={event=>setSort(event.target.value as 'sessions'|'time')}><option value="sessions">学習回数</option><option value="time">学習時間</option></select></label></div>{ranked.length?<ol className="stats-ranking">{ranked.slice(0,10).map((deck,index)=><li key={deck.id}><span className="stats-rank">{String(index+1).padStart(2,'0')}</span><strong>{deck.title}</strong><span>{deck.sessions}回</span><span>{studyDuration(deck.milliseconds)}</span></li>)}</ol>:<div className="stats-empty"><BookOpen size={28}/><h3>最初の学習を記録しよう</h3><p>単語帳を開いて学習すると、ここに時間と回数が表示されます。</p><Link className="button primary" to={base}>単語帳を選ぶ</Link></div>}</section>
   </>}
-  <aside className="stats-method"><h2>記録について</h2><p>統計はこの機能の公開後の学習から記録します。日付は日本時間、1週間は今日を含む直近7日間です。</p><p>学習画面が手前に表示されている時間を計測します。開始前の設定・読み込み・本の表紙・完了画面は除き、90秒間操作がなければ一時停止します。タップ・キー操作・スクロールで再開します。同じブラウザの複数タブによる重複計測を抑えています。時間は目安です。</p><p>学習回数は、学習画面を開いて実際に学習した回数です。同じ画面内でのカード・ページの切り替えは回数を増やしません。{!demo&&'ログイン中の記録はアカウントに保存されます。通信失敗時はこのブラウザに一時保存し、学習画面や統計画面を開いたときに再送します。'}</p></aside><LegalLinks/>
+
  </div></div>;
 }
