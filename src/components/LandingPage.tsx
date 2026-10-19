@@ -137,7 +137,6 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
             <div className="landing-book-label"><span>{book.label}</span><span className="landing-book-arrow"><ArrowUpRight size={19} /></span></div>
           </Link>)}
         </div>
-        <p className="landing-sample-note">サンプルの変更は、このブラウザに保存されます。</p>
       </section>
       <section className="landing-invitation landing-container" aria-labelledby="invitation-title">
         <div className="landing-invitation-mark" aria-hidden="true"><img src="/favicon.svg" alt="" /></div>

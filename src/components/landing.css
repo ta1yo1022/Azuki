@@ -212,3 +212,21 @@
 .landing-product-stage .landing-card-stack { transform:none; margin-top:0; }
 .landing-product-stage .landing-card-scene { height:440px; }
 @media(max-width:800px) { .landing-product-stage { padding:32px 16px; } .landing-product-stage .landing-card-scene { height:380px; } }
+
+/* A quiet, warm display around the single interactive card. */
+.landing-product-stage { min-height:500px; padding:28px 32px; background:radial-gradient(ellipse at 50% 42%,#fff8ee 0%,#f1e3d5 52%,#ead8c7 100%); border:1px solid #e7d6c5; }
+.landing-product-stage::before { width:380px; height:380px; top:50%; left:50%; right:auto; transform:translate(-50%,-50%); background:#dcb5a54a; border-radius:46% 54% 61% 39% / 53% 40% 60% 47%; }
+.landing-product-stage::after { content:""; position:absolute; left:50%; bottom:40px; transform:translateX(-50%); width:290px; height:24px; border-radius:50%; background:#7943331c; filter:blur(14px); z-index:-1; }
+.landing-product-stage .landing-card-scene { height:440px; }
+.landing-product-stage .landing-card-stack { transform:rotate(-3deg); transition:transform .3s ease; }
+.landing-product-stage .landing-card-stack:hover { transform:rotate(0deg) translateY(-4px); }
+.landing-product-stage .landing-card-side { box-shadow:0 18px 38px #693d2420,0 2px 4px #693d2408; border-color:#d7bdA8; }
+.landing-product-stage .landing-card-orbit { display:block; position:absolute; left:50%; top:50%; width:440px; height:380px; transform:translate(-50%,-50%) rotate(-18deg); border:1px solid #a9695030; border-radius:50%; pointer-events:none; }
+.landing-card-orbit::before,.landing-card-orbit::after { content:""; position:absolute; width:12px; height:12px; background:#a13d42; border-radius:50%; top:45px; left:49px; box-shadow:0 0 0 7px #a13d4210; }
+.landing-card-orbit::after { width:7px; height:7px; top:auto; left:auto; bottom:53px; right:39px; background:#c29a65; box-shadow:none; }
+.landing-product-stage .landing-card-annotation { top:14px; left:calc(50% + 96px); width:148px; font-size:11px; transform:rotate(5deg); color:#865649; }
+.landing-product-stage .landing-card-annotation svg { transform:scaleX(-1) rotate(12deg); flex-shrink:0; }
+.landing-product-stage .landing-card-back { background:var(--landing-red); color:#fffaf3; }
+.landing-product-stage .landing-card-back .landing-card-top,.landing-product-stage .landing-card-back .landing-card-answer,.landing-product-stage .landing-card-back .landing-card-example,.landing-product-stage .landing-card-back .landing-card-bottom { color:#fffaf3; border-color:#ffffff40; }
+@media(max-width:800px) { .landing-product-stage { min-height:0; padding:32px 12px; } .landing-product-stage .landing-card-scene { height:380px; } .landing-product-stage::before { width:290px; height:310px; } .landing-product-stage .landing-card-orbit { width:310px; height:340px; } .landing-product-stage .landing-card-annotation { top:-5px; left:calc(50% - 38px); width:180px; } }
+.landing-product-stage .landing-card-annotation { width:auto; white-space:nowrap; }
