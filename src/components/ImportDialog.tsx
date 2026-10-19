@@ -240,12 +240,12 @@ export function ImportDialog({ onClose, onImport }: Props) {
                 <div className="import-field">
                   <label htmlFor="import-textbook-name">教材名 <small className="field-required">必須</small></label>
                   <input id="import-textbook-name" value={textbookName} maxLength={80} placeholder="例：英単語ターゲット1900" onChange={(e) => setTextbookName(e.target.value)} required />
-                  <small>教材名を単語帳のタイトルに使います。</small>
                 </div>
                 <div className="import-field">
                   <label htmlFor="import-textbook-edition">版 <small>任意</small></label>
                   <input id="import-textbook-edition" value={edition} maxLength={40} placeholder="例：第6版" onChange={(e) => setEdition(e.target.value)} />
                 </div>
+                <small className="import-textbook-hint">教材名を単語帳のタイトルに使います。</small>
               </div>}
               <div className="import-field">
                 <label htmlFor="import-description">説明 <small>任意</small></label>

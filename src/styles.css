@@ -3117,6 +3117,9 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .import-classification input::placeholder, .import-classification textarea::placeholder { color: #8a827a; }
 .import-classification :is(input, select, textarea):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .import-textbook-fields { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 16px; padding: 16px; border-left: 3px solid #dcb6aa; background: #f8efe6; border-radius: 0 10px 10px 0; }
+.import-textbook-fields > .import-field { align-content: start; }
+.import-textbook-fields label { min-height: 24px; }
+.import-textbook-hint { grid-column: 1 / -1; }
 .import-preview-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-top: 20px; border-top: 1px solid var(--border); }
 .import-preview-heading h3 { margin: 0; font: inherit; font-size: 14px; font-weight: 700; }
 .import-preview-heading > span { color: var(--muted); font-size: 12px; }
