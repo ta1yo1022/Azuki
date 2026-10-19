@@ -30,7 +30,6 @@ function PreviewCard() {
   const [revealed, setRevealed] = useState(false);
   const word = previewWords[0];
   return <div className="landing-card-scene">
-    <div className="landing-card-orbit" aria-hidden="true" />
     <div className="landing-card-annotation" aria-hidden="true">
       タップして答えを確認
       <svg width="74" height="48" viewBox="0 0 74 48" fill="none"><path d="M4 5C20 1 56 6 53 35M43 27L53 39L64 29" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -98,6 +97,12 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
           </div>
         </div>
         <div className="landing-product-stage">
+          <div className="landing-card-copy">
+            <h2>思い出して、<br /><span>めくって、覚える。</span></h2>
+            <p>日本語を見て、英語を思い浮かべる。<br />カードをタップすると、英単語と例文を確認できます。</p>
+            <p>英語から日本語への切り替えも、シャッフルも。<br />自分に合った出題方法で練習できます。</p>
+            <Link className="landing-inline-link" to="/shared/azuki-cefrj-a1-1-v1/study">カード学習を試す <ArrowUpRight size={17} /></Link>
+          </div>
           <PreviewCard />
         </div>
       </section>
