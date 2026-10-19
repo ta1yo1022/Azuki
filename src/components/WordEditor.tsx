@@ -22,7 +22,7 @@ export function WordEditor({deck,word,onSaved,repository=cloudRepository}:{deck:
     finally{setBusy(false);}
   }}>
     <fieldset disabled={busy} className="word-editor-fields">
-      <div className="word-editor-vocabulary"><label>英単語<input required maxLength={120} value={value.word} onChange={e=>setValue({...value,word:e.target.value})}/></label><label>意味<textarea required maxLength={1000} rows={2} value={value.meaning} onChange={e=>setValue({...value,meaning:e.target.value})}/></label></div>
+      <div className="word-editor-vocabulary"><label>英単語<textarea required maxLength={120} rows={2} lang="en" value={value.word} onChange={e=>setValue({...value,word:e.target.value})}/></label><label>意味<textarea required maxLength={1000} rows={2} value={value.meaning} onChange={e=>setValue({...value,meaning:e.target.value})}/></label></div>
       <div className="word-examples-heading"><h3>例文</h3><span>{examples.length} / {LIMITS.examplesPerWord}件</span></div>
       {examples.length===0&&<p className="muted">例文を追加して、覚えたい場面の英文を残せます。</p>}
       <div className="word-example-edit-list">{examples.map((example,index)=><section className="word-example-edit" key={example.key} aria-label={`例文${index+1}`}>
