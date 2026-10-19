@@ -3380,3 +3380,5 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .stats-mini strong { margin-left: 8px; color: var(--text); font-size: 17px; }
 .stats-mini .text-button { margin-left: auto; font-size: 13px; }
 @media (max-width: 640px) { .stats-mini { gap: 12px 20px; padding: 14px 16px; margin-bottom: 24px; } .stats-mini-label { width: 100%; } }
+.sidebar-mobile-settings { display: none; }
+@media (max-width: 800px) { .sidebar-mobile-settings { display: inline-flex; align-items: center; margin-left: 4px; } }

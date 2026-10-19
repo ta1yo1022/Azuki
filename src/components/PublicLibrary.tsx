@@ -154,9 +154,9 @@ function Discover() {
   return (
     <>
       <div className="public-intro">
-        <span className="eyebrow">公開ライブラリ</span>
+        
         <h1>
-          みんなの単語帳<span className="heading-dot">.</span>
+          みんなの単語帳
         </h1>
         <p>
           ログインせずに読めます。保存するにはGoogleログインが必要です。

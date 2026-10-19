@@ -127,7 +127,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
       <section className="landing-about" id="about" aria-labelledby="about-title">
         <div className="landing-container">
           <div className="landing-section-heading">
-            <div><span className="landing-eyebrow">MAKE IT YOURS</span><h2 id="about-title">覚えたいことばを、<br />覚えやすいかたちに。</h2></div>
+            <div><h2 id="about-title">覚えたいことばを、<br />覚えやすいかたちに。</h2></div>
             <p>パソコンでもスマートフォンでも。<br />Googleアカウントで単語帳を同期できます。</p>
           </div>
           <div className="landing-features" id="how-to">
@@ -138,7 +138,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
         </div>
       </section>
       <section className="landing-reading landing-container" aria-labelledby="reading-title">
-        <div className="landing-reading-copy"><span className="landing-eyebrow">A LITTLE MORE FAMILIAR</span><h2 id="reading-title">本をひらくように。<br />ことばに触れる。</h2><p>英単語、意味、例文をひとつの見開きに。<br />ページをめくりながら読み進める、<br />単語帳モードもあります。</p><Link className="landing-inline-link" to="/shared/azuki-cefrj-a1-1-v1/book">単語帳モードを試す <ArrowUpRight size={17} /></Link></div>
+        <div className="landing-reading-copy"><h2 id="reading-title">本をひらくように。<br />ことばに触れる。</h2><p>英単語、意味、例文をひとつの見開きに。<br />ページをめくりながら読み進める、<br />単語帳モードもあります。</p><Link className="landing-inline-link" to="/shared/azuki-cefrj-a1-1-v1/book">単語帳モードを試す <ArrowUpRight size={17} /></Link></div>
         <div className="landing-open-book" aria-label="単語帳モードの表示イメージ">
           <div className="landing-paper"><span>MY ENGLISH NOTES</span><h3>ことばを、ひとつずつ。</h3>{previewWords.map((word, i) => <div className="landing-paper-row" key={word.word}><small>0{i + 1}</small><strong>{word.word}</strong><span>{word.meaning}</span></div>)}<small className="landing-page-number">01</small></div>
           <div className="landing-paper landing-paper-right"><span>WORDS IN CONTEXT</span><h3>例文で、使い方まで。</h3>{previewWords.map((word) => <div className="landing-paper-row" key={word.word}><p>{word.example}</p></div>)}<small className="landing-page-number">02</small></div>
@@ -146,7 +146,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
       </section>
       <section className="landing-samples landing-container" aria-labelledby="samples-title">
         <div className="landing-section-heading">
-          <div><span className="landing-eyebrow">TAKE A LOOK INSIDE</span><h2 id="samples-title">はじめの一冊を、<br />ひらいてみよう。</h2></div>
+          <div><h2 id="samples-title">はじめの一冊を、<br />ひらいてみよう。</h2></div>
           <p>ログインせずにカード学習を試せます。</p>
         </div>
         <div className="landing-books">
@@ -164,7 +164,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
       </section>
       <section className="landing-invitation landing-container" aria-labelledby="invitation-title">
         <div className="landing-invitation-mark" aria-hidden="true"><img src="/favicon.svg" alt="" /></div>
-        <span className="landing-eyebrow">公開ライブラリ</span>
+        
         <h2 id="invitation-title">自分の学びが、<br />誰かの一冊にもなる。</h2>
         <p>テストに向けて作った単語帳を、クラスの友達にも。<br />公開してリンクを送れば、同じ単語帳で学べます。</p>
         <Link className="landing-final-button" to="/explore">公開単語帳を探す <ArrowUpRight size={18} /></Link>

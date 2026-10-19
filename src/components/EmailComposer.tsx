@@ -40,7 +40,7 @@ export function EmailComposer({busy=false,onSave}:{busy?:boolean;onSave?:(id:str
  }
  return <section className="email-studio" aria-label="メールを作成">
   <form className="email-editor" onSubmit={async e=>{e.preventDefault();if(!onSave)return;setMessage('');try{await onSave(id,subject,body);setMessage('下書きを保存しました。下の一覧からテスト送信できます。');}catch{/* Parent shows the request error; keep the editor content. */}}}>
-   <div className="email-editor-heading"><span className="eyebrow">NEW MESSAGE</span><h2>お知らせを書く</h2><p>伝えたいことを、あなたの言葉で。</p></div>
+   <div className="email-editor-heading"><h2>お知らせを書く</h2><p>伝えたいことを、あなたの言葉で。</p></div>
    <fieldset disabled={busy}>
     <label htmlFor="email-subject">件名・見出し <span>{subject.length} / 120</span></label><input id="email-subject" required maxLength={120} value={subject} onChange={e=>{setSubject(e.target.value);setId(crypto.randomUUID());setMessage('');}} placeholder="今回のアップデートについて"/>
     <label htmlFor="email-body">本文 <span>{body.length.toLocaleString()} / 5,000</span></label>

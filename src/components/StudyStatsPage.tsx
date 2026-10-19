@@ -31,7 +31,7 @@ export function StudyStatsPage({demo=false,userId,embedded=false}:{demo?:boolean
  const today=data?.days.find(day=>day.day===data.today),maximum=Math.max(60000,...(data?.days.map(day=>day.milliseconds)??[]));
  const ranked=[...(data?.decks??[])].sort((a,b)=>sort==='time'?b.milliseconds-a.milliseconds||b.sessions-a.sessions:b.sessions-a.sessions||b.milliseconds-a.milliseconds);
  return <div className={embedded?"stats-embedded":"study-page stats-page"}>{!embedded&&<header className="study-header"><Link className="text-button study-back" to={base}><ArrowLeft size={20}/>ライブラリに戻る</Link><h1>学習統計</h1></header>}<div className="stats-content">
-  <div className="stats-intro"><div><span className="eyebrow">YOUR LEARNING</span>{embedded?<h1>学習統計</h1>:<h2>学びの積み重ね。</h2>}<p className="muted">カードも、本での学習も。直近7日間の記録です。</p></div><button className="button secondary" disabled={loading} onClick={refresh}>再読み込み</button></div>
+  <div className="stats-intro"><div>{embedded?<h1>学習統計</h1>:<h2>学びの積み重ね。</h2>}<p className="muted">カードも、本での学習も。直近7日間の記録です。</p></div><button className="button secondary" disabled={loading} onClick={refresh}>再読み込み</button></div>
   {demo&&<p className="stats-note">お試しモードの記録は、このブラウザだけに保存されます。Googleアカウントへの自動移行はありません。</p>}
   {note&&<p role="status" className="stats-note">{note}</p>}{error&&<p role="alert" className="error-box">{error}</p>}
   {loading?<p role="status">学習記録を読み込んでいます…</p>:data&&<>

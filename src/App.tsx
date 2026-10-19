@@ -16,7 +16,6 @@ import {
   BookOpen,
   BookOpenText,
   ChevronDown,
-  ChevronRight,
   FileJson,
   FolderOpen,
   Globe,
@@ -390,6 +389,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
             <Globe size={19} />
             <span>公開単語帳を探す</span>
           </Link>
+          <Link className="profile-settings-link sidebar-mobile-settings" to={`${base}/settings`} aria-label="設定を開く"><ProfileAvatar name={displayName} photoURL={photoURL} initial={avatarInitial} small /></Link>
         </nav>
         <div className="sidebar-tags">
           <div className="sidebar-section-label">教材タグ</div>
@@ -451,35 +451,6 @@ export default function App({ demo = false }: { demo?: boolean }) {
         </div>
       </aside>
       <div className="workspace">
-        <header className="topbar">
-          <div className="breadcrumb">
-            <span>{statsMode ? "学習統計" : "マイライブラリ"}</span>
-            {selected && (
-              <>
-                <ChevronRight size={14} />
-                <strong>{selected.title}</strong>
-              </>
-            )}
-          </div>
-          <div className="topbar-right">
-            {demo && <span className="demo-badge">お試しモード</span>}
-            <Link to={`${base}/settings`} data-tour="profile" className="profile-settings-link" aria-label="設定を開く">
-            <ProfileAvatar
-              name={displayName}
-              photoURL={photoURL}
-              initial={avatarInitial}
-              small
-            />
-            </Link>
-            <button
-              className="icon-button mobile-only"
-              aria-label={demo ? "お試しモードを終了" : "ログアウト"}
-              onClick={() => void logout()}
-            >
-              <LogOut size={17} />
-            </button>
-          </div>
-        </header>
         {demo && (
           <div className="demo-banner">
             <span>
@@ -512,7 +483,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 <div>
 
                   <h1>
-                    わたしの単語帳<span className="heading-dot">.</span>
+                    わたしの単語帳
                   </h1>
                   <p>
                     <strong>{decks.length}</strong> 冊の単語帳{" "}
