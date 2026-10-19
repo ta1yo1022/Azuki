@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ArrowLeft, Copy, ArrowRight } from "lucide-react";
 import { Brand } from "./Brand";
 
@@ -73,8 +73,7 @@ const EXAMPLE_JSON = JSON.stringify({ words: [
 ] }, null, 2);
 
 export function CreateGuide() {
-  const [params] = useSearchParams();
-  const importPath = params.get("mode") === "demo" ? "/demo/import" : "/library/import";
+  const importPath = "/library/import";
   const [method, setMethod] = useState<"words" | "image">("words");
   const [drafts, setDrafts] = useState({ words: DECK_PROMPT, image: IMAGE_PROMPT });
   const prompt = drafts[method];

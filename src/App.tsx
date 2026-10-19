@@ -233,9 +233,6 @@ export default function App({ demo = false }: { demo?: boolean }) {
     : user?.providerData.find((profile) => profile.providerId === "google.com")
         ?.photoURL || user?.photoURL;
   const avatarInitial = demo ? "A" : Array.from(displayName)[0];
-  function startDemo() {
-    navigate("/demo");
-  }
   async function login() {
     setSigningIn(true);
     setError("");
@@ -323,7 +320,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
   if (!demo && user && location.pathname === "/") return <Navigate to="/library" replace />;
   if (!demo && !user) return (
     <LandingPage canSignIn={!!auth} signingIn={signingIn} error={error}
-      onLogin={() => void login()} onDemo={startDemo} />
+      onLogin={() => void login()} />
   );
   if (deckId && !selected && (loading || loadedOwner !== ownerKey)) return <LoadingScreen message="単語帳を読み込んでいます…" />;
   if (deckId && !selected) return (

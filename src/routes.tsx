@@ -11,7 +11,7 @@ import { PublicLibrary } from "./components/PublicLibrary";
 function Home() {
   const { search } = useLocation();
   return new URLSearchParams(search).get("demo") === "1"
-    ? <Navigate to="/demo" replace />
+    ? <Navigate to="/explore" replace />
     : <App />;
 }
 function RouteScroll() {
@@ -37,9 +37,10 @@ export function AzukiRoutes() {
       <RouteScroll />
       <Routes>
         <Route path="/" element={<Home />} />
-        {["library", "demo"].flatMap((base) => ["", "/settings", "/stats", "/import", "/decks/:deckId", "/decks/:deckId/study", "/decks/:deckId/book", "/decks/:deckId/share"].map((path) =>
-          <Route key={base + path} path={`/${base}${path}`} element={<App key={base} demo={base === "demo"} />} />
+        {["library"].flatMap((base) => ["", "/settings", "/stats", "/import", "/decks/:deckId", "/decks/:deckId/study", "/decks/:deckId/book", "/decks/:deckId/share"].map((path) =>
+          <Route key={base + path} path={`/${base}${path}`} element={<App key={base} />} />
         ))}
+        <Route path="/demo/*" element={<Navigate to="/explore" replace />} />
         <Route path="/guide/create" element={<CreateGuide />} />
         {import.meta.env.DEV && <Route path="/dev/email-preview" element={<EmailDesignPreview />} />}
         <Route path="/admin/emails" element={<AdminEmails />} />

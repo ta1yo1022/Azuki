@@ -20,7 +20,7 @@ it('provides importable translated examples in both AI prompts and the manual te
  const parsed=parseDeck(JSON.stringify({...JSON.parse(template),title:'自作の単語帳'}));
  expect(parsed.words[0].examples).toHaveLength(2);
  expect(parsed.words.every(word=>word.examples?.every(example=>example.translation))).toBe(true);
- expect(container.querySelector('a[href="/demo/import?tab=paste"]')).toBeTruthy();
+ expect(container.querySelector('a[href="/library/import?tab=paste"]')).toBeTruthy();
  expect(container.textContent).toContain('お気に入りに登録');
  expect(container.textContent).toContain('例文カードは日本語訳付き');
 });

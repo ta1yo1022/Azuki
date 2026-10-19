@@ -125,7 +125,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
         </div>
         {!preview ? (
           <>
-            <Link className="import-guide-link" to={location.pathname.startsWith("/demo/") ? "/guide/create?mode=demo" : "/guide/create"}>
+            <Link className="import-guide-link" to="/guide/create">
               <strong>オリジナル英単語帳の作り方 →</strong>
               <span>画像や学びたい単語から、ChatGPT・Geminiで作る</span>
             </Link>

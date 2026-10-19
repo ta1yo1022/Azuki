@@ -12,7 +12,7 @@ export const auth = Object.values(config).every(Boolean)
 export async function googleSignIn() {
   if (!auth)
     throw new Error(
-      "Googleログインは準備中です。お試しモードをご利用ください。",
+      "Googleログインは準備中です。公開単語帳はログインせずに閲覧・学習できます。",
     );
   const provider = new GoogleAuthProvider();
   provider.setCustomParameters({ prompt: "select_account" });

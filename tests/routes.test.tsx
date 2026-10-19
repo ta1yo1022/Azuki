@@ -129,7 +129,8 @@ describe("URL navigation", () => {
     }
   });
   it("opens example cards from both personal and public decks", async () => {
-    for (const path of ["/demo/decks/demo-deck", "/shared/demo-deck"]) {
+    mocks.user = { uid:"navigation-user", displayName:"Test", providerData:[] };localStorage.setItem("azuki.tutorial.v1.navigation-user","done");
+    for (const path of ["/library/decks/saved-deck", "/shared/demo-deck"]) {
       await act(async () => root.unmount());
       root = createRoot(container);
       await mount(path);
@@ -141,16 +142,17 @@ describe("URL navigation", () => {
     }
   });
   it("opens a study deep link directly, and restores details through Back and Forward", async () => {
-    await mount("/demo/decks/demo-deck/?q=curious");
+    mocks.user = { uid:"navigation-user", displayName:"Test", providerData:[] };localStorage.setItem("azuki.tutorial.v1.navigation-user","done");
+    await mount("/library/decks/saved-deck/?q=curious");
     await settle(280);
     expect(container.querySelector("h1")?.textContent).toBe("日常のことば");
     expect(container.querySelector<HTMLInputElement>('[aria-label="単語・意味を検索"]')?.value).toBe("curious");
     await click("カードで学習");
-    expect(currentURL).toBe("/demo/decks/demo-deck/study?q=curious&mode=words");
+    expect(currentURL).toBe("/library/decks/saved-deck/study?q=curious&mode=words");
     expect(container.querySelector(".study-page")).toBeTruthy();
     expect(container.querySelector(".sidebar")).toBeNull();
     await move(-1);
-    expect(currentURL).toBe("/demo/decks/demo-deck?q=curious");
+    expect(currentURL).toBe("/library/decks/saved-deck?q=curious");
     expect(container.querySelector(".study-page")).toBeNull();
     await move(1);
     expect(container.querySelector(".study-page")).toBeTruthy();
@@ -163,6 +165,7 @@ describe("URL navigation", () => {
     expect(container.querySelector('.study-card-face[aria-hidden="false"]')?.textContent).not.toContain("curious");
   });
   it("restores public search from URL and history, and opens public study directly", async () => {
+    mocks.user = { uid:"navigation-user", displayName:"Test", providerData:[] };localStorage.setItem("azuki.tutorial.v1.navigation-user","done");
     await mount("/explore?q=教科書");
     await settle(400);
     expect(mocks.list).toHaveBeenLastCalledWith("教科書", null, expect.any(AbortSignal));
@@ -170,21 +173,22 @@ describe("URL navigation", () => {
     expect(container.querySelector(".study-page")).toBeTruthy();
     await move(-1);
     expect(container.querySelector<HTMLInputElement>('[aria-label="公開単語帳を検索"]')?.value).toBe("教科書");
-    await move("/demo?tag=教科書&sort=name&q=ことば");
+    await move("/library?tag=教科書&sort=name&q=ことば");
     expect(container.querySelector<HTMLInputElement>('[aria-label="単語帳を検索"]')?.value).toBe("ことば");
     expect(container.querySelector("select")?.value).toBe("name");
     expect([...container.querySelectorAll("a.deck-card")].filter(card => !card.closest(".standard-library"))).toHaveLength(1);
   });
   it("routes import and share settings, redirects legacy demo links, and handles missing pages", async () => {
+    mocks.user = { uid:"navigation-user", displayName:"Test", providerData:[] };localStorage.setItem("azuki.tutorial.v1.navigation-user","done");
     await mount("/?demo=1");
-    expect(currentURL).toBe("/demo");
-    await move("/demo/import");
+    expect(currentURL).toBe("/explore");
+    await move("/library/import");
     expect(container.querySelector("dialog[open]")?.textContent).toContain("単語帳を追加");
     await click("キャンセル");
-    expect(currentURL).toBe("/demo");
-    await move("/demo/decks/demo-deck/share");
+    expect(currentURL).toBe("/library");
+    await move("/library/decks/saved-deck/share");
     expect(container.querySelector("dialog[open]")).toBeTruthy();
-    await move("/demo/decks/missing");
+    await move("/library/decks/missing");
     expect(container.textContent).toContain("単語帳が見つかりません");
     await move("/not-a-page");
     expect(container.textContent).toContain("ページが見つかりません");
@@ -270,10 +274,11 @@ describe("official publisher and deck-level difficulty", () => {
   });
 });
 
-it("opens the public creation guide and returns to the demo JSON paste tab", async () => {
+it("opens the public creation guide and returns to the library JSON paste tab", async () => {
+  mocks.user = { uid:"guide-user", displayName:"Test", providerData:[] };
   HTMLDialogElement.prototype.showModal = function () { this.setAttribute('open', ''); };
-  await mount('/demo/import');
-  const guide = container.querySelector<HTMLAnchorElement>('a[href="/guide/create?mode=demo"]')!;
+  await mount('/library/import');
+  const guide = container.querySelector<HTMLAnchorElement>('a[href="/guide/create"]')!;
   expect(guide).toBeTruthy();
   await act(async () => guide.click()); await settle();
   expect(container.querySelector('h1')?.textContent).toBe('オリジナル英単語帳の作り方');
@@ -286,9 +291,9 @@ it("opens the public creation guide and returns to the demo JSON paste tab", asy
   const sample = JSON.parse(copy.mock.calls.at(-1)![0]);
   expect(sample.words).toHaveLength(2);
   expect(sample.words.every((word: any) => word.word && word.meaning && word.examples?.length && word.examples.every((example: any) => example.text && example.translation))).toBe(true);
-  const paste = container.querySelector<HTMLAnchorElement>('a[href="/demo/import?tab=paste"]')!;
+  const paste = container.querySelector<HTMLAnchorElement>('a[href="/library/import?tab=paste"]')!;
   await act(async () => paste.click()); await settle();
-  expect(currentURL).toBe('/demo/import?tab=paste');
+  expect(currentURL).toBe('/library/import?tab=paste');
   expect(container.querySelector('#json-input')).toBeTruthy();
 });
 
@@ -333,14 +338,22 @@ it('opens the copyright policy without login and links it from terms and public 
  await move('/');expect(container.querySelector('footer a[href="/copyright"]')).toBeTruthy();
 });
 
-it('opens learning statistics from the demo library and returns to the library',async()=>{
- await mount('/demo');const link=container.querySelector<HTMLAnchorElement>('a[href="/demo/stats"]')!;
+it('opens learning statistics from the library and returns to the library',async()=>{
+ mocks.user = { uid:'stats-user', displayName:'Test', providerData:[] };localStorage.setItem('azuki.tutorial.v1.stats-user','done');
+ await mount('/library');const link=container.querySelector<HTMLAnchorElement>('a[href="/library/stats"]')!;
  expect(link).toBeTruthy();await act(async()=>link.click());await settle();
- expect(currentURL).toBe('/demo/stats');expect(container.querySelector('h1')?.textContent).toBe('学習統計');
- expect(container.textContent).toContain('このブラウザだけに保存');
+ expect(currentURL).toBe('/library/stats');expect(container.querySelector('h1')?.textContent).toBe('学習統計');
+ expect(container.querySelector('.stats-counters')).toBeTruthy();
  expect(container.querySelector('.sidebar nav')).toBeTruthy();
  expect(container.querySelector('.sidebar a[aria-current="page"]')?.textContent).toBe('学習統計');
  await act(async()=>container.querySelector<HTMLButtonElement>('button[aria-label="わたしの単語帳"]')!.click());await settle();
  expect(container.querySelector('.stats-mini')?.textContent).toContain('直近7日間');
- expect(currentURL).toBe('/demo');
+ expect(currentURL).toBe('/library');
+});
+
+it('redirects retired trial URLs to public discovery without login',async()=>{
+ for(const path of ['/demo','/demo/import','/demo/decks/sample-0/study','/?demo=1']){
+  await mount(path);expect(currentURL).toBe('/explore');expect(container.querySelector('.demo-banner')).toBeNull();
+ }
+ await move('/');expect(container.querySelector('a[href="/demo"]')).toBeNull();expect(container.textContent).not.toContain('お試しモード');
 });

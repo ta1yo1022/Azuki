@@ -12,7 +12,6 @@ type Props = {
   signingIn: boolean;
   error: string;
   onLogin: () => void;
-  onDemo: () => void;
 };
 const previewWords = [
   { word: "curious", pronunciation: "/ˈkjʊriəs/", type: "adjective", meaning: "好奇心の強い", example: "Stay curious about the world.", translation: "世界への好奇心を忘れずに。" },
@@ -20,9 +19,9 @@ const previewWords = [
   { word: "bloom", pronunciation: "/bluːm/", type: "verb", meaning: "花が咲く", example: "Give yourself time to bloom.", translation: "自分が花開くための時間をあげよう。" },
 ];
 const sampleBooks = [
-  { id: "sample-0", number: "01", title: "Everyday\nEnglish", label: "日常会話で使う表現", words: 16, color: "rose" },
-  { id: "sample-1", number: "02", title: "気持ちを\n伝える英語", label: "感情や気持ちを表す単語", words: 12, color: "olive" },
-  { id: "sample-2", number: "03", title: "Reading\nNotes", label: "読書で出会う単語", words: 8, color: "sand" },
+  { id: "azuki-official-daily-v1", number: "01", title: "毎日の動詞\n500", label: "日常生活で使う動詞", words: 500, color: "rose" },
+  { id: "azuki-official-feelings-v1", number: "02", title: "気持ちを\n伝える英単語", label: "感情や気持ちを表す単語", words: 500, color: "olive" },
+  { id: "azuki-cefrj-a1-1-v1", number: "03", title: "CEFR-J\nA1 前編", label: "A1レベルの英単語", words: 583, color: "sand" },
 ];
 function LandingBrand() {
   return <span className="brand"><img src="/favicon.svg" alt="" /><span>azuki</span></span>;
@@ -75,7 +74,7 @@ function PreviewCard() {
     </div>
   </div>;
 }
-export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Props) {
+export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
   const { hash } = useLocation();
   useEffect(() => { document.title = "Azuki | 自分の単語帳で英語を覚える"; }, []);
   useEffect(() => {
@@ -104,7 +103,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
               {signingIn ? "接続しています…" : "Googleでログイン"}
               <ArrowRight size={17} aria-hidden="true" />
             </button>
-            <button className="landing-google-button landing-demo-button" onClick={onDemo}><BookOpenText size={20} aria-hidden="true" />サンプルの単語帳で試す <ArrowRight size={17} aria-hidden="true" /></button>
+            <Link className="landing-google-button landing-demo-button" to="/explore"><BookOpenText size={20} aria-hidden="true" />公開単語帳を探す <ArrowRight size={17} aria-hidden="true" /></Link>
             {!canSignIn && <span className="landing-login-note">Googleログインは準備中です。</span>}
             {error && <p role="alert" className="error-box landing-login-error">{error}</p>}
           </div>
@@ -150,9 +149,9 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
           <p>ログインせずにカード学習を試せます。</p>
         </div>
         <div className="landing-books">
-          {sampleBooks.map((book) => <Link className={`landing-book ${book.color}`} to={`/demo/decks/${book.id}`} key={book.id}>
+          {sampleBooks.map((book) => <Link className={`landing-book ${book.color}`} to={`/shared/${book.id}`} key={book.id}>
             <div className="landing-book-cover">
-              <div className="landing-book-top"><BookOpenText size={23} strokeWidth={1.4} /><span>サンプル</span><span>{book.number}</span></div>
+              <div className="landing-book-top"><BookOpenText size={23} strokeWidth={1.4} /><span>公開単語帳</span><span>{book.number}</span></div>
               <h3>{book.title}</h3>
               <div className="landing-book-bottom"><span>{book.words}<small> words</small></span><span className="landing-book-monogram" aria-hidden="true">Aa</span></div>
               <span className="landing-book-spine" aria-hidden="true" />
@@ -173,7 +172,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
     </main>
     <footer className="landing-footer landing-container">
       <div><LandingBrand /></div>
-      <nav aria-label="フッターナビゲーション"><Link to="/explore">公開単語帳</Link><Link to="/demo">お試しモード</Link><Link to="/privacy">プライバシーポリシー</Link><Link to="/terms">利用規約</Link><Link to="/copyright">著作権・権利侵害への対応</Link><a href="https://github.com/ta1yo1022/Azuki" target="_blank" rel="noreferrer">GitHub</a><span>© {new Date().getFullYear()} Azuki</span></nav>
+      <nav aria-label="フッターナビゲーション"><Link to="/explore">公開単語帳</Link><Link to="/privacy">プライバシーポリシー</Link><Link to="/terms">利用規約</Link><Link to="/copyright">著作権・権利侵害への対応</Link><a href="https://github.com/ta1yo1022/Azuki" target="_blank" rel="noreferrer">GitHub</a><span>© {new Date().getFullYear()} Azuki</span></nav>
     </footer>
   </div>;
 }
