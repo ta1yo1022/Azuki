@@ -284,7 +284,7 @@ it("opens the public creation guide and returns to the demo JSON paste tab", asy
   await click('例文付きJSONをコピー');
   const sample = JSON.parse(copy.mock.calls.at(-1)![0]);
   expect(sample.words).toHaveLength(2);
-  expect(sample.words.every((word: any) => word.word && word.meaning && word.example)).toBe(true);
+  expect(sample.words.every((word: any) => word.word && word.meaning && word.examples?.length && word.examples.every((example: any) => example.text && example.translation))).toBe(true);
   const paste = container.querySelector<HTMLAnchorElement>('a[href="/demo/import?tab=paste"]')!;
   await act(async () => paste.click()); await settle();
   expect(currentURL).toBe('/demo/import?tab=paste');
