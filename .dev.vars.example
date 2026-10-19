@@ -1,0 +1,4 @@
+# Optional: only needed for your own email delivery testing.
+# Never put this key into VITE_ variables or commit .dev.vars.
+EMAIL_ENABLED=false
+BREVO_API_KEY=

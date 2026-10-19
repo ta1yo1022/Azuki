@@ -1,0 +1,16 @@
+name: 単語・意味・例文の修正
+description: 標準単語帳の内容の修正を提案します。
+body:
+  - type: input
+    id: deck
+    attributes:
+      label: 単語帳のURL・単語
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 現在の内容・修正案・理由
+      description: 教材本文や辞書の説明文を無断で転載しないでください。
+    validations:
+      required: true

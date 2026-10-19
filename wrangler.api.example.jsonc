@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "azuki-dev",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-05",
+  "vars": {
+    "FIREBASE_PROJECT_ID": "your-firebase-project-id",
+    "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173",
+    "ALLOW_IMPORTS": "true",
+    "EMAIL_ENABLED": "false",
+    "ADMIN_EMAILS": ""
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "azuki-dev",
+    "database_id": "00000000-0000-0000-0000-000000000000",
+    "migrations_dir": "migrations"
+  }]
+}

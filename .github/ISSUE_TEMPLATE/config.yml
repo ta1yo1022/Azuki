@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: セキュリティの報告
+    url: https://github.com/ta1yo1022/Azuki/blob/main/SECURITY.md
+    about: 脆弱性は公開Issueに書かず、メールでご連絡ください。

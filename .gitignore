@@ -11,3 +11,11 @@ coverage/
 *.sqlite
 *.sqlite3
 *.db
+
+# Contributor-specific settings and credentials
+.env.*.local
+.dev.vars.*
+!.dev.vars.example
+wrangler.local.jsonc
+*.pem
+*.key

@@ -173,7 +173,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin, onDemo }: Pr
     </main>
     <footer className="landing-footer landing-container">
       <div><LandingBrand /></div>
-      <nav aria-label="フッターナビゲーション"><Link to="/explore">公開単語帳</Link><Link to="/demo">お試しモード</Link><Link to="/privacy">プライバシーポリシー</Link><Link to="/terms">利用規約</Link><span>© {new Date().getFullYear()} Azuki</span></nav>
+      <nav aria-label="フッターナビゲーション"><Link to="/explore">公開単語帳</Link><Link to="/demo">お試しモード</Link><Link to="/privacy">プライバシーポリシー</Link><Link to="/terms">利用規約</Link><a href="https://github.com/ta1yo1022/Azuki" target="_blank" rel="noreferrer">GitHub</a><a href="https://github.com/ta1yo1022/Azuki/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">PR・改善提案を歓迎</a><span>© {new Date().getFullYear()} Azuki</span></nav>
     </footer>
   </div>;
 }

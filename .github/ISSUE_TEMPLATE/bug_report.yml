@@ -1,0 +1,25 @@
+name: 不具合の報告
+description: 期待どおり動かない箇所を教えてください。
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 起きていること・期待する動作
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 個人情報・認証トークン・非公開の教材内容は載せないでください。
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 端末・OS・ブラウザ
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショット・補足（任意）

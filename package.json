@@ -41,5 +41,15 @@
   },
   "overrides": {
     "@grpc/grpc-js": "^1.13.6"
-  }
+  },
+  "description": "英単語帳を作って、学んで、共有できるWebアプリ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ta1yo1022/Azuki.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ta1yo1022/Azuki/issues"
+  },
+  "homepage": "https://azuki.mame-app.com"
 }
