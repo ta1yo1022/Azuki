@@ -1,5 +1,5 @@
 import { BarChart3 } from "lucide-react";
-import { StudyStatsPage } from "./components/StudyStatsPage";
+import { StudyStatsPage, StudyStatsSummary } from "./components/StudyStatsPage";
 import { Favorites } from "./components/Favorites";
 import { BookStudyPage } from "./components/BookStudyPage";
 import { ForkDialog } from "./components/ForkDialog";
@@ -87,6 +87,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
   const location = useLocation();
   const { deckId } = useParams();
   const base = demo ? "/demo" : "/library";
+  const statsMode = location.pathname === `${base}/stats`;
   const detailPath = `${base}/decks/${encodeURIComponent(deckId ?? "")}`;
   const importing = location.pathname.endsWith("/import");
   const sharing = location.pathname.endsWith("/share");
@@ -337,7 +338,6 @@ export default function App({ demo = false }: { demo?: boolean }) {
       </>
     </div>
   );
-  if (location.pathname === `${base}/stats`) return <StudyStatsPage demo={demo} userId={user?.uid} />;
   if (location.pathname === `${base}/settings`) return <SettingsPage demo={demo} onClose={() => navigate(base)} onTutorial={() => navigate(`${base}?tutorial=1`)} />;
 
   if (bookMode && selected) return <BookStudyPage key={selected.id} demo={demo} deck={selected} reader={repository} onClose={() => navigate(detailPath + location.search)} />;
@@ -370,7 +370,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
         <nav aria-label="メインナビゲーション">
           <button
             aria-label="わたしの単語帳"
-            className={!filter ? "nav-item active" : "nav-item"}
+            className={!filter && !statsMode ? "nav-item active" : "nav-item"}
             onClick={() => navigate(base)}
           >
             <Library size={19} />
@@ -385,7 +385,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
             <FileJson size={19} />
             <span>JSONから追加</span>
           </button>
-          <Link className="nav-item" to={`${base}/stats`}><BarChart3 size={19}/><span>学習統計</span></Link>
+          <Link className={statsMode ? "nav-item active" : "nav-item"} aria-current={statsMode ? "page" : undefined} to={`${base}/stats`}><BarChart3 size={19}/><span>学習統計</span></Link>
           <Link data-tour="explore" className="nav-item" to="/explore">
             <Globe size={19} />
             <span>公開単語帳を探す</span>
@@ -453,7 +453,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
       <div className="workspace">
         <header className="topbar">
           <div className="breadcrumb">
-            <span>マイライブラリ</span>
+            <span>{statsMode ? "学習統計" : "マイライブラリ"}</span>
             {selected && (
               <>
                 <ChevronRight size={14} />
@@ -505,9 +505,9 @@ export default function App({ demo = false }: { demo?: boolean }) {
               </button>
             </div>
           )}
-          {!selected ? (
+          {statsMode ? <StudyStatsPage embedded demo={demo} userId={user?.uid} /> : !selected ? (
             <>
-              <Link className="text-button stats-library-link" to={`${base}/stats`}>学習統計を見る →</Link>
+              <StudyStatsSummary demo={demo} userId={user?.uid} />
               <div className="page-heading">
                 <div>
 

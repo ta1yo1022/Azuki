@@ -29,6 +29,7 @@ vi.mock("../src/lib/firebase", () => ({
   googleSignIn: mocks.login,
 }));
 vi.mock("../src/lib/repository", () => ({
+  studyRepository: { summary: async () => ({today:"2026-10-19",days:[],decks:[],totalMilliseconds:0,totalSessions:0}) },
   favoritesRepository: { list: async () => [], add: async () => {}, remove: async () => {} },
   emailRepository: { preferences: async () => ({enabled:false,email:"bob@example.com",available:true}) },
   reportRepository: { access: async () => ({isAdmin:false}) },
@@ -337,6 +338,9 @@ it('opens learning statistics from the demo library and returns to the library',
  expect(link).toBeTruthy();await act(async()=>link.click());await settle();
  expect(currentURL).toBe('/demo/stats');expect(container.querySelector('h1')?.textContent).toBe('学習統計');
  expect(container.textContent).toContain('このブラウザだけに保存');
- const back=container.querySelector<HTMLAnchorElement>('a[href="/demo"]')!;await act(async()=>back.click());await settle();
+ expect(container.querySelector('.sidebar nav')).toBeTruthy();
+ expect(container.querySelector('.sidebar a[aria-current="page"]')?.textContent).toBe('学習統計');
+ await act(async()=>container.querySelector<HTMLButtonElement>('button[aria-label="わたしの単語帳"]')!.click());await settle();
+ expect(container.querySelector('.stats-mini')?.textContent).toContain('直近7日間');
  expect(currentURL).toBe('/demo');
 });
