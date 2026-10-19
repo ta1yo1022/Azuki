@@ -329,7 +329,7 @@ it('opens the copyright policy without login and links it from terms and public 
  expect(container.textContent).toContain('公開されていることは、利用許諾を保証しません');
  expect(container.querySelector('a[href="mailto:support@volta.jp"]')).toBeTruthy();
  expect(mocks.login).not.toHaveBeenCalled();
- await move('/explore');expect(container.querySelector('footer a[href="/copyright"]')).toBeTruthy();
+ await move('/explore');expect(container.querySelector('.public-footer')).toBeNull();
  await move('/');expect(container.querySelector('footer a[href="/copyright"]')).toBeTruthy();
 });
 
