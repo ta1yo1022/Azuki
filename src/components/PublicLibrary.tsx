@@ -1,3 +1,4 @@
+import { ActionMenu } from "./ActionMenu";
 import { FavoriteButton } from "./Favorites";
 import { BookStudyPage } from "./BookStudyPage";
 import { PublicDeckCard } from "./PublicDeckCard";
@@ -13,14 +14,11 @@ import { onAuthStateChanged, type User } from "firebase/auth";
 import { auth, googleSignIn } from "../lib/firebase";
 import { useQueryValue } from "../lib/navigation";
 import {
-  BookmarkPlus,
   ArrowLeft,
   BookOpenText,
   ChevronDown,
-  Copy,
   Globe,
   Library,
-  Layers,
   Search,
   Tag,
   X,
@@ -454,26 +452,19 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
                 ))}
               </div>
             </div>
-            <div className="owner-deck-actions">
-              <button className="button secondary" onClick={() => navigate(`${detailPath}/book${location.search}`)}>単語帳で学習</button>
-              <button className="button secondary" onClick={() => navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)), mode:"examples"})}`)}>例文カードで学習</button>
-              <button
-                className="button primary"
-                onClick={() => navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)), mode:"words"})}`)}
-              >
-                <Layers size={17} />
-                カードで学習
-              </button>
+            <div className="owner-deck-actions public-deck-actions">
+              <ActionMenu label="学習する" primary items={[
+                {label:"カードで学習",description:"単語を1つずつ覚える",onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:"words"})}`)},
+                {label:"例文カードで学習",description:"英文と日本語訳で練習する",onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:"examples"})}`)},
+                {label:"単語帳で学習",description:"本をめくるように、まとめて読む",onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
+              ]}/>
               <FavoriteButton key={id} id={id} userId={user?.uid} />
-              <button className="button secondary" onClick={() => void save()} disabled={saving || !authReady || !auth}>
-                <BookmarkPlus size={17} />
-                {saving ? "追加しています…" : "コピーして編集"}
-              </button>
-              <button className="button secondary" onClick={()=>setForkOpen(true)}>JSONを編集してフォーク</button>
-              <button className="button secondary" onClick={() => void copy()}>
-                <Copy size={17} />
-                {copied ? "コピーしました" : "リンクをコピー"}
-              </button>
+              <ActionMenu label="その他" items={[
+                {label:"コピーして編集",description:"自分用の非公開コピーを保存",disabled:saving||!authReady||!auth,onSelect:()=>void save()},
+                {label:"JSONを編集してフォーク",description:"単語や例文をJSONでカスタマイズ",onSelect:()=>setForkOpen(true)},
+                {label:"リンクをコピー",description:"この単語帳を共有する",onSelect:()=>void copy()},
+              ]}/>
+              {(saving||copied)&&<span className="deck-action-status" role="status">{saving?"コピーを保存しています…":"リンクをコピーしました"}</span>}
             </div>
           </div>
           {forkOpen && <ForkDialog key={`fork-${deck.id}`} deck={deck} onClose={()=>setForkOpen(false)} onSave={async input=>{
