@@ -17,6 +17,12 @@
       "example": "Would you like some bread?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Would you like some bread?",
+          "translation": "パンはいかがですか。"
+        }
       ]
     },
     {
@@ -25,6 +31,12 @@
       "example": "We eat rice with dinner.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We eat rice with dinner.",
+          "translation": "私たちは夕食にご飯を食べます。"
+        }
       ]
     },
     {
@@ -33,6 +45,12 @@
       "example": "I would like the pasta with tomato sauce.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I would like the pasta with tomato sauce.",
+          "translation": "トマトソースのパスタをお願いします。"
+        }
       ]
     },
     {
@@ -41,6 +59,12 @@
       "example": "These noodles are delicious.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "These noodles are delicious.",
+          "translation": "この麺はおいしいです。"
+        }
       ]
     },
     {
@@ -49,6 +73,12 @@
       "example": "The soup is still hot.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The soup is still hot.",
+          "translation": "スープはまだ熱いです。"
+        }
       ]
     },
     {
@@ -57,6 +87,12 @@
       "example": "I made a salad for lunch.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I made a salad for lunch.",
+          "translation": "私は昼食にサラダを作りました。"
+        }
       ]
     },
     {
@@ -65,6 +101,12 @@
       "example": "Can I have a cheese sandwich?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Can I have a cheese sandwich?",
+          "translation": "チーズサンドイッチをいただけますか。"
+        }
       ]
     },
     {
@@ -73,6 +115,12 @@
       "example": "Would you like some cheese on your pasta?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Would you like some cheese on your pasta?",
+          "translation": "パスタにチーズをかけましょうか。"
+        }
       ]
     },
     {
@@ -81,6 +129,12 @@
       "example": "I had an egg for breakfast.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I had an egg for breakfast.",
+          "translation": "私は朝食に卵を食べました。"
+        }
       ]
     },
     {
@@ -89,6 +143,12 @@
       "example": "I will have the chicken with rice.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I will have the chicken with rice.",
+          "translation": "チキンとライスをお願いします。"
+        }
       ]
     },
     {
@@ -97,6 +157,12 @@
       "example": "This soup contains beef.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "This soup contains beef.",
+          "translation": "このスープには牛肉が入っている。"
+        }
       ]
     },
     {
@@ -105,6 +171,12 @@
       "example": "Does this dish contain pork?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Does this dish contain pork?",
+          "translation": "この料理には豚肉が入っていますか。"
+        }
       ]
     },
     {
@@ -113,6 +185,12 @@
       "example": "We had fish for dinner.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We had fish for dinner.",
+          "translation": "夕食は魚だった。"
+        }
       ]
     },
     {
@@ -121,6 +199,12 @@
       "example": "I eat vegetables every day.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I eat vegetables every day.",
+          "translation": "私は毎日野菜を食べます。"
+        }
       ]
     },
     {
@@ -129,6 +213,12 @@
       "example": "There is fresh fruit on the table.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "There is fresh fruit on the table.",
+          "translation": "テーブルには新鮮な果物がある。"
+        }
       ]
     },
     {
@@ -137,6 +227,12 @@
       "example": "I put an apple in my bag.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I put an apple in my bag.",
+          "translation": "私はバッグにリンゴを入れた。"
+        }
       ]
     },
     {
@@ -145,6 +241,12 @@
       "example": "This banana is ripe.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "This banana is ripe.",
+          "translation": "このバナナは熟している。"
+        }
       ]
     },
     {
@@ -153,6 +255,12 @@
       "example": "Would you like an orange?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Would you like an orange?",
+          "translation": "オレンジはいかがですか。"
+        }
       ]
     },
     {
@@ -161,6 +269,12 @@
       "example": "I like lemon in my tea.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I like lemon in my tea.",
+          "translation": "私はレモンの茶が好きです。"
+        }
       ]
     },
     {
@@ -169,6 +283,12 @@
       "example": "Please slice the tomato.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Please slice the tomato.",
+          "translation": "トマトをスライスしてください。"
+        }
       ]
     },
     {
@@ -177,6 +297,12 @@
       "example": "I baked a potato for lunch.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I baked a potato for lunch.",
+          "translation": "私は昼食にジャガイモを焼いた。"
+        }
       ]
     },
     {
@@ -185,6 +311,12 @@
       "example": "Add one onion to the soup.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Add one onion to the soup.",
+          "translation": "スープにタマネギを1つ加えて。"
+        }
       ]
     },
     {
@@ -193,6 +325,12 @@
       "example": "Cut the carrot into small pieces.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Cut the carrot into small pieces.",
+          "translation": "ニンジンを小さく切ってください。"
+        }
       ]
     },
     {
@@ -201,6 +339,12 @@
       "example": "This pasta has mushrooms in it.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "This pasta has mushrooms in it.",
+          "translation": "このパスタにはキノコが入ってる。"
+        }
       ]
     },
     {
@@ -209,6 +353,12 @@
       "example": "Do you take milk in your coffee?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Do you take milk in your coffee?",
+          "translation": "コーヒーにミルクを入れますか。"
+        }
       ]
     },
     {
@@ -217,6 +367,12 @@
       "example": "Could I have a glass of water?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Could I have a glass of water?",
+          "translation": "水を一杯いただけますか。"
+        }
       ]
     },
     {
@@ -225,6 +381,12 @@
       "example": "I drink coffee in the morning.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I drink coffee in the morning.",
+          "translation": "私は朝コーヒーを飲む。"
+        }
       ]
     },
     {
@@ -233,6 +395,12 @@
       "example": "Would you like a cup of tea?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Would you like a cup of tea?",
+          "translation": "お茶はいかがですか。"
+        }
       ]
     },
     {
@@ -241,6 +409,12 @@
       "example": "I ordered a glass of orange juice.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I ordered a glass of orange juice.",
+          "translation": "オレンジジュースを注文した。"
+        }
       ]
     },
     {
@@ -249,6 +423,12 @@
       "example": "Breakfast is served from seven.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Breakfast is served from seven.",
+          "translation": "朝食は7時から出される。"
+        }
       ]
     },
     {
@@ -257,6 +437,12 @@
       "example": "Let's have lunch together.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Let's have lunch together.",
+          "translation": "一緒に昼食を食べよう"
+        }
       ]
     },
     {
@@ -265,6 +451,12 @@
       "example": "What would you like for dinner?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "What would you like for dinner?",
+          "translation": "夕食には何を召し上がりたいですか。"
+        }
       ]
     },
     {
@@ -273,6 +465,12 @@
       "example": "Thank you for the lovely meal.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Thank you for the lovely meal.",
+          "translation": "素敵な食事をありがとう。"
+        }
       ]
     },
     {
@@ -281,6 +479,12 @@
       "example": "Could we see the menu, please?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Could we see the menu, please?",
+          "translation": "メニューを見せてくれませんか。"
+        }
       ]
     },
     {
@@ -289,6 +493,12 @@
       "example": "This restaurant serves fresh fish.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "This restaurant serves fresh fish.",
+          "translation": "このレストランは新鮮な魚を提供しています。"
+        }
       ]
     },
     {
@@ -297,6 +507,12 @@
       "example": "The waiter brought us some water.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The waiter brought us some water.",
+          "translation": "ウェイターが水を持ってきた。"
+        }
       ]
     },
     {
@@ -305,6 +521,12 @@
       "example": "Could we have the bill, please?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Could we have the bill, please?",
+          "translation": "請求書をお願いします。"
+        }
       ]
     },
     {
@@ -313,6 +535,12 @@
       "example": "Are you ready to order?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Are you ready to order?",
+          "translation": "ご注文はお決まりですか。"
+        }
       ]
     },
     {
@@ -321,6 +549,12 @@
       "example": "I like the taste of this soup.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I like the taste of this soup.",
+          "translation": "このスープの味が好きだ。"
+        }
       ]
     },
     {
@@ -329,6 +563,12 @@
       "example": "This cake is very sweet.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "This cake is very sweet.",
+          "translation": "このケーキはとても甘い。"
+        }
       ]
     },
     {
@@ -337,6 +577,12 @@
       "example": "The lemon tastes sour.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "The lemon tastes sour.",
+          "translation": "レモンは酸味がする。"
+        }
       ]
     },
     {
@@ -345,6 +591,12 @@
       "example": "This soup is a little salty.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "This soup is a little salty.",
+          "translation": "このスープは少し塩っぽい。"
+        }
       ]
     },
     {
@@ -353,6 +605,12 @@
       "example": "The coffee tastes bitter.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "The coffee tastes bitter.",
+          "translation": "コーヒーは苦い味がする。"
+        }
       ]
     },
     {
@@ -361,6 +619,12 @@
       "example": "We buy fresh vegetables every morning.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "We buy fresh vegetables every morning.",
+          "translation": "私たちは毎朝新鮮な野菜を買う。"
+        }
       ]
     },
     {
@@ -369,6 +633,12 @@
       "example": "These tomatoes are ripe.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "These tomatoes are ripe.",
+          "translation": "これらのトマトは熟している。"
+        }
       ]
     },
     {
@@ -377,6 +647,12 @@
       "example": "I am hungry after the long walk.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am hungry after the long walk.",
+          "translation": "長い散歩の後、お腹が空いている。"
+        }
       ]
     },
     {
@@ -385,6 +661,12 @@
       "example": "Are you thirsty?",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Are you thirsty?",
+          "translation": "喉が渇いた?"
+        }
       ]
     },
     {
@@ -393,6 +675,12 @@
       "example": "This sandwich is delicious.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "This sandwich is delicious.",
+          "translation": "このサンドイッチはおいしい。"
+        }
       ]
     },
     {
@@ -401,6 +689,12 @@
       "example": "What ingredients do we need for this soup?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "What ingredients do we need for this soup?",
+          "translation": "このスープの材料は何ですか。"
+        }
       ]
     },
     {
@@ -409,6 +703,12 @@
       "example": "Would you like some fruit for dessert?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Would you like some fruit for dessert?",
+          "translation": "デザートに果物はいかがですか。"
+        }
       ]
     },
     {
@@ -417,7 +717,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She placed an almond on each cookie."
+      "example": "She placed an almond on each cookie.",
+      "examples": [
+        {
+          "text": "She placed an almond on each cookie.",
+          "translation": "彼女はクッキーの上にアーモンドを置いた。"
+        }
+      ]
     },
     {
       "word": "peanut",
@@ -425,7 +731,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This sauce contains peanut butter."
+      "example": "This sauce contains peanut butter.",
+      "examples": [
+        {
+          "text": "This sauce contains peanut butter.",
+          "translation": "このソースにはピーナッツバターが入っている。"
+        }
+      ]
     },
     {
       "word": "hazelnut",
@@ -433,7 +745,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I ordered a hazelnut cake."
+      "example": "I ordered a hazelnut cake.",
+      "examples": [
+        {
+          "text": "I ordered a hazelnut cake.",
+          "translation": "私はヘーゼルナッツのケーキを注文しました。"
+        }
+      ]
     },
     {
       "word": "cashew",
@@ -441,7 +759,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Try this creamy cashew sauce."
+      "example": "Try this creamy cashew sauce.",
+      "examples": [
+        {
+          "text": "Try this creamy cashew sauce.",
+          "translation": "クリーミーなカシューナッツソースを試してみて。"
+        }
+      ]
     },
     {
       "word": "pecan",
@@ -449,7 +773,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He brought a pecan pie."
+      "example": "He brought a pecan pie.",
+      "examples": [
+        {
+          "text": "He brought a pecan pie.",
+          "translation": "彼はペカンパイを持ってきた。"
+        }
+      ]
     },
     {
       "word": "coconut",
@@ -457,7 +787,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add coconut milk to the soup."
+      "example": "Add coconut milk to the soup.",
+      "examples": [
+        {
+          "text": "Add coconut milk to the soup.",
+          "translation": "ココナッツミルクをスープに加える。"
+        }
+      ]
     },
     {
       "word": "sesame",
@@ -465,7 +801,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Sprinkle sesame seeds over the noodles."
+      "example": "Sprinkle sesame seeds over the noodles.",
+      "examples": [
+        {
+          "text": "Sprinkle sesame seeds over the noodles.",
+          "translation": "麺にゴマをかける。"
+        }
+      ]
     },
     {
       "word": "sunflower",
@@ -473,7 +815,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We harvest seeds from the sunflower."
+      "example": "We harvest seeds from the sunflower.",
+      "examples": [
+        {
+          "text": "We harvest seeds from the sunflower.",
+          "translation": "ヒマワリの種を収穫する。"
+        }
+      ]
     },
     {
       "word": "seed",
@@ -481,7 +829,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Remove the large seed before eating."
+      "example": "Remove the large seed before eating.",
+      "examples": [
+        {
+          "text": "Remove the large seed before eating.",
+          "translation": "食べる前に大粒を取り除く。"
+        }
+      ]
     },
     {
       "word": "date",
@@ -489,7 +843,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A dried date tastes very sweet."
+      "example": "A dried date tastes very sweet.",
+      "examples": [
+        {
+          "text": "A dried date tastes very sweet.",
+          "translation": "乾燥したナツメヤシはとても甘い味がする。"
+        }
+      ]
     },
     {
       "word": "fig",
@@ -497,7 +857,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She sliced a fresh fig in half."
+      "example": "She sliced a fresh fig in half.",
+      "examples": [
+        {
+          "text": "She sliced a fresh fig in half.",
+          "translation": "彼女は新鮮なイチジクを半分に切りました。"
+        }
+      ]
     },
     {
       "word": "apricot",
@@ -505,7 +871,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I spread apricot jam on my toast."
+      "example": "I spread apricot jam on my toast.",
+      "examples": [
+        {
+          "text": "I spread apricot jam on my toast.",
+          "translation": "トーストにアプリコットジャムを塗った。"
+        }
+      ]
     },
     {
       "word": "peach",
@@ -513,7 +885,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This peach is ripe and juicy."
+      "example": "This peach is ripe and juicy.",
+      "examples": [
+        {
+          "text": "This peach is ripe and juicy.",
+          "translation": "このモモは熟してジューシーだ。"
+        }
+      ]
     },
     {
       "word": "plum",
@@ -521,7 +899,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Remove the stone from the plum."
+      "example": "Remove the stone from the plum.",
+      "examples": [
+        {
+          "text": "Remove the stone from the plum.",
+          "translation": "スモモの種を取り除いてください。"
+        }
+      ]
     },
     {
       "word": "cherry",
@@ -529,7 +913,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Each dessert has a cherry on top."
+      "example": "Each dessert has a cherry on top.",
+      "examples": [
+        {
+          "text": "Each dessert has a cherry on top.",
+          "translation": "それぞれのデザートには、上にチェリーがある。"
+        }
+      ]
     },
     {
       "word": "raspberry",
@@ -537,7 +927,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We made raspberry jam this morning."
+      "example": "We made raspberry jam this morning.",
+      "examples": [
+        {
+          "text": "We made raspberry jam this morning.",
+          "translation": "今朝ラズベリージャムを作った。"
+        }
+      ]
     },
     {
       "word": "blackberry",
@@ -545,7 +941,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The blackberry pie is still warm."
+      "example": "The blackberry pie is still warm.",
+      "examples": [
+        {
+          "text": "The blackberry pie is still warm.",
+          "translation": "ブラックベリーのパイはまだ温かいです。"
+        }
+      ]
     },
     {
       "word": "cranberry",
@@ -553,7 +955,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We served cranberry sauce with the turkey."
+      "example": "We served cranberry sauce with the turkey.",
+      "examples": [
+        {
+          "text": "We served cranberry sauce with the turkey.",
+          "translation": "私たちは七面鳥に、クランベリーソースを添えて出しました。"
+        }
+      ]
     },
     {
       "word": "melon",
@@ -561,7 +969,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Cut the melon into small pieces."
+      "example": "Cut the melon into small pieces.",
+      "examples": [
+        {
+          "text": "Cut the melon into small pieces.",
+          "translation": "メロンを小さな塊に切る。"
+        }
+      ]
     },
     {
       "word": "watermelon",
@@ -569,7 +983,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Cold watermelon is refreshing in summer."
+      "example": "Cold watermelon is refreshing in summer.",
+      "examples": [
+        {
+          "text": "Cold watermelon is refreshing in summer.",
+          "translation": "夏には冷たいスイカが爽やかだ。"
+        }
+      ]
     },
     {
       "word": "mango",
@@ -577,7 +997,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I added mango to the fruit salad."
+      "example": "I added mango to the fruit salad.",
+      "examples": [
+        {
+          "text": "I added mango to the fruit salad.",
+          "translation": "私はフルーツサラダにマンゴーを加えた。"
+        }
+      ]
     },
     {
       "word": "papaya",
@@ -585,7 +1011,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Scoop the seeds out of the papaya."
+      "example": "Scoop the seeds out of the papaya.",
+      "examples": [
+        {
+          "text": "Scoop the seeds out of the papaya.",
+          "translation": "パパイヤの種を取って"
+        }
+      ]
     },
     {
       "word": "lychee",
@@ -593,7 +1025,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Peel the lychee before eating it."
+      "example": "Peel the lychee before eating it.",
+      "examples": [
+        {
+          "text": "Peel the lychee before eating it.",
+          "translation": "食べる前にライチの皮をむいてください。"
+        }
+      ]
     },
     {
       "word": "walnut",
@@ -601,7 +1039,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A walnut adds crunch to the salad."
+      "example": "A walnut adds crunch to the salad.",
+      "examples": [
+        {
+          "text": "A walnut adds crunch to the salad.",
+          "translation": "クルミを加えると、サラダに歯応えが出ます。"
+        }
+      ]
     },
     {
       "word": "lime",
@@ -609,7 +1053,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Squeeze some lime over the fish."
+      "example": "Squeeze some lime over the fish.",
+      "examples": [
+        {
+          "text": "Squeeze some lime over the fish.",
+          "translation": "魚にライムを少し搾りかけてください。"
+        }
+      ]
     },
     {
       "word": "tangerine",
@@ -617,7 +1067,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She packed a tangerine for lunch."
+      "example": "She packed a tangerine for lunch.",
+      "examples": [
+        {
+          "text": "She packed a tangerine for lunch.",
+          "translation": "彼女は昼食にミカンを詰め込んだ。"
+        }
+      ]
     },
     {
       "word": "nectarine",
@@ -625,7 +1081,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This nectarine has smooth skin."
+      "example": "This nectarine has smooth skin.",
+      "examples": [
+        {
+          "text": "This nectarine has smooth skin.",
+          "translation": "このネクタリンは皮が滑らかである。"
+        }
+      ]
     },
     {
       "word": "persimmon",
@@ -633,7 +1095,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We shared a ripe persimmon."
+      "example": "We shared a ripe persimmon.",
+      "examples": [
+        {
+          "text": "We shared a ripe persimmon.",
+          "translation": "私たちは熟した柿を共有した。"
+        }
+      ]
     },
     {
       "word": "avocado",
@@ -641,7 +1109,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Spread mashed avocado on the toast."
+      "example": "Spread mashed avocado on the toast.",
+      "examples": [
+        {
+          "text": "Spread mashed avocado on the toast.",
+          "translation": "つぶしたアボカドをトーストに塗ってください。"
+        }
+      ]
     },
     {
       "word": "cucumber",
@@ -649,7 +1123,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Slice the cucumber thinly."
+      "example": "Slice the cucumber thinly.",
+      "examples": [
+        {
+          "text": "Slice the cucumber thinly.",
+          "translation": "キュウリを薄く切る。"
+        }
+      ]
     },
     {
       "word": "lettuce",
@@ -657,7 +1137,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Wash the lettuce before serving."
+      "example": "Wash the lettuce before serving.",
+      "examples": [
+        {
+          "text": "Wash the lettuce before serving.",
+          "translation": "レタスを出す前に洗う。"
+        }
+      ]
     },
     {
       "word": "spinach",
@@ -665,7 +1151,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Stir the spinach into the soup."
+      "example": "Stir the spinach into the soup.",
+      "examples": [
+        {
+          "text": "Stir the spinach into the soup.",
+          "translation": "スープにホウレンソウを入れなさい。"
+        }
+      ]
     },
     {
       "word": "kale",
@@ -673,7 +1165,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We added chopped kale to the stew."
+      "example": "We added chopped kale to the stew.",
+      "examples": [
+        {
+          "text": "We added chopped kale to the stew.",
+          "translation": "煮物にケールを加えた。"
+        }
+      ]
     },
     {
       "word": "cauliflower",
@@ -681,7 +1179,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Roast the cauliflower until golden."
+      "example": "Roast the cauliflower until golden.",
+      "examples": [
+        {
+          "text": "Roast the cauliflower until golden.",
+          "translation": "カリフラワーを金色になるまで焼く。"
+        }
+      ]
     },
     {
       "word": "celery",
@@ -689,7 +1193,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Chop the celery into small pieces."
+      "example": "Chop the celery into small pieces.",
+      "examples": [
+        {
+          "text": "Chop the celery into small pieces.",
+          "translation": "セロリを小さく切る。"
+        }
+      ]
     },
     {
       "word": "garlic",
@@ -697,7 +1207,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The kitchen smells of fried garlic."
+      "example": "The kitchen smells of fried garlic.",
+      "examples": [
+        {
+          "text": "The kitchen smells of fried garlic.",
+          "translation": "キッチンはニンニクの臭いがする。"
+        }
+      ]
     },
     {
       "word": "ginger",
@@ -705,7 +1221,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Fresh ginger gives the soup a sharp flavor."
+      "example": "Fresh ginger gives the soup a sharp flavor.",
+      "examples": [
+        {
+          "text": "Fresh ginger gives the soup a sharp flavor.",
+          "translation": "生のショウガが、スープにぴりっとした風味を与えます。"
+        }
+      ]
     },
     {
       "word": "turnip",
@@ -713,7 +1235,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Peel the turnip before cooking it."
+      "example": "Peel the turnip before cooking it.",
+      "examples": [
+        {
+          "text": "Peel the turnip before cooking it.",
+          "translation": "調理する前にカブの皮をむいてください。"
+        }
+      ]
     },
     {
       "word": "beet",
@@ -721,7 +1249,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The beet turned the salad pink."
+      "example": "The beet turned the salad pink.",
+      "examples": [
+        {
+          "text": "The beet turned the salad pink.",
+          "translation": "ビートがサラダをピンクにした。"
+        }
+      ]
     },
     {
       "word": "squash",
@@ -729,7 +1263,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We roasted squash with olive oil."
+      "example": "We roasted squash with olive oil.",
+      "examples": [
+        {
+          "text": "We roasted squash with olive oil.",
+          "translation": "オリーブオイルでカボチャを焼いた。"
+        }
+      ]
     },
     {
       "word": "pumpkin",
@@ -737,7 +1277,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She made a pot of pumpkin soup."
+      "example": "She made a pot of pumpkin soup.",
+      "examples": [
+        {
+          "text": "She made a pot of pumpkin soup.",
+          "translation": "彼女はカボチャスープを一つ作った。"
+        }
+      ]
     },
     {
       "word": "eggplant",
@@ -745,7 +1291,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Cut the eggplant into thick slices."
+      "example": "Cut the eggplant into thick slices.",
+      "examples": [
+        {
+          "text": "Cut the eggplant into thick slices.",
+          "translation": "ナスを厚いスライスに切る。"
+        }
+      ]
     },
     {
       "word": "aubergine",
@@ -753,7 +1305,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We grilled the aubergine with tomatoes."
+      "example": "We grilled the aubergine with tomatoes.",
+      "examples": [
+        {
+          "text": "We grilled the aubergine with tomatoes.",
+          "translation": "私たちはナスをトマトで焼いた。"
+        }
+      ]
     },
     {
       "word": "chili",
@@ -761,7 +1319,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add a little chili for heat."
+      "example": "Add a little chili for heat.",
+      "examples": [
+        {
+          "text": "Add a little chili for heat.",
+          "translation": "辛みを付けるために唐辛子を少し加えてください。"
+        }
+      ]
     },
     {
       "word": "pea",
@@ -769,7 +1333,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A pea rolled off my plate."
+      "example": "A pea rolled off my plate.",
+      "examples": [
+        {
+          "text": "A pea rolled off my plate.",
+          "translation": "皿からエンドウ豆が1粒転がり落ちました。"
+        }
+      ]
     },
     {
       "word": "lentil",
@@ -777,7 +1347,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We had lentil soup for lunch."
+      "example": "We had lentil soup for lunch.",
+      "examples": [
+        {
+          "text": "We had lentil soup for lunch.",
+          "translation": "昼食はレンズ豆スープだった。"
+        }
+      ]
     },
     {
       "word": "soybean",
@@ -785,7 +1361,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A soybean can be used to make tofu."
+      "example": "A soybean can be used to make tofu.",
+      "examples": [
+        {
+          "text": "A soybean can be used to make tofu.",
+          "translation": "大豆は豆腐に使える。"
+        }
+      ]
     },
     {
       "word": "corn",
@@ -793,7 +1375,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We grilled corn for the picnic."
+      "example": "We grilled corn for the picnic.",
+      "examples": [
+        {
+          "text": "We grilled corn for the picnic.",
+          "translation": "私たちはピクニックのためにトウモロコシを焼いた。"
+        }
+      ]
     },
     {
       "word": "barley",
@@ -801,7 +1389,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add barley to the vegetable soup."
+      "example": "Add barley to the vegetable soup.",
+      "examples": [
+        {
+          "text": "Add barley to the vegetable soup.",
+          "translation": "野菜スープに大麦を加えて。"
+        }
+      ]
     },
     {
       "word": "wheat",
@@ -809,7 +1403,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This bread is made from wheat."
+      "example": "This bread is made from wheat.",
+      "examples": [
+        {
+          "text": "This bread is made from wheat.",
+          "translation": "このパンは小麦で作られている。"
+        }
+      ]
     },
     {
       "word": "rye",
@@ -817,7 +1417,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I bought a loaf of rye bread."
+      "example": "I bought a loaf of rye bread.",
+      "examples": [
+        {
+          "text": "I bought a loaf of rye bread.",
+          "translation": "私はライ麦パンを買った。"
+        }
+      ]
     },
     {
       "word": "millet",
@@ -825,7 +1431,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Cook the millet until tender."
+      "example": "Cook the millet until tender.",
+      "examples": [
+        {
+          "text": "Cook the millet until tender.",
+          "translation": "キビを柔らかくなるまで煮てください。"
+        }
+      ]
     },
     {
       "word": "bran",
@@ -833,7 +1445,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She adds bran to her breakfast cereal."
+      "example": "She adds bran to her breakfast cereal.",
+      "examples": [
+        {
+          "text": "She adds bran to her breakfast cereal.",
+          "translation": "彼女は朝食のシリアルにふすまを加えます。"
+        }
+      ]
     },
     {
       "word": "cereal",
@@ -841,7 +1459,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Wheat is a widely grown cereal."
+      "example": "Wheat is a widely grown cereal.",
+      "examples": [
+        {
+          "text": "Wheat is a widely grown cereal.",
+          "translation": "小麦は広く栽培されている穀物である。"
+        }
+      ]
     },
     {
       "word": "flour",
@@ -849,7 +1473,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Sift the flour into a bowl."
+      "example": "Sift the flour into a bowl.",
+      "examples": [
+        {
+          "text": "Sift the flour into a bowl.",
+          "translation": "小麦粉をボウルにふりかける。"
+        }
+      ]
     },
     {
       "word": "starch",
@@ -857,7 +1487,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Mix the starch with cold water."
+      "example": "Mix the starch with cold water.",
+      "examples": [
+        {
+          "text": "Mix the starch with cold water.",
+          "translation": "澱粉を冷水で混ぜる。"
+        }
+      ]
     },
     {
       "word": "batter",
@@ -865,7 +1501,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Pour the batter into the pan."
+      "example": "Pour the batter into the pan.",
+      "examples": [
+        {
+          "text": "Pour the batter into the pan.",
+          "translation": "生地を型に流し込んでください。"
+        }
+      ]
     },
     {
       "word": "yeast",
@@ -873,7 +1515,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The yeast helps the dough rise."
+      "example": "The yeast helps the dough rise.",
+      "examples": [
+        {
+          "text": "The yeast helps the dough rise.",
+          "translation": "酵母はパン生地の発酵を助ける。"
+        }
+      ]
     },
     {
       "word": "baking soda",
@@ -881,7 +1529,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add a teaspoon of baking soda."
+      "example": "Add a teaspoon of baking soda.",
+      "examples": [
+        {
+          "text": "Add a teaspoon of baking soda.",
+          "translation": "重曹を小さじ1杯加えてください。"
+        }
+      ]
     },
     {
       "word": "sugar",
@@ -889,7 +1543,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Would you like sugar in your tea?"
+      "example": "Would you like sugar in your tea?",
+      "examples": [
+        {
+          "text": "Would you like sugar in your tea?",
+          "translation": "お茶に砂糖を入れますか。"
+        }
+      ]
     },
     {
       "word": "honey",
@@ -897,7 +1557,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Drizzle honey over the yogurt."
+      "example": "Drizzle honey over the yogurt.",
+      "examples": [
+        {
+          "text": "Drizzle honey over the yogurt.",
+          "translation": "ヨーグルトに蜂蜜をかける。"
+        }
+      ]
     },
     {
       "word": "molasses",
@@ -905,7 +1571,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Molasses gives these cookies a deep flavor."
+      "example": "Molasses gives these cookies a deep flavor.",
+      "examples": [
+        {
+          "text": "Molasses gives these cookies a deep flavor.",
+          "translation": "糖蜜はこのクッキーに深い味わいを与える。"
+        }
+      ]
     },
     {
       "word": "caramel",
@@ -913,7 +1585,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The dessert has a caramel topping."
+      "example": "The dessert has a caramel topping.",
+      "examples": [
+        {
+          "text": "The dessert has a caramel topping.",
+          "translation": "デザートはキャラメルのトッピングがある。"
+        }
+      ]
     },
     {
       "word": "cocoa",
@@ -921,7 +1599,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Mix cocoa with the warm milk."
+      "example": "Mix cocoa with the warm milk.",
+      "examples": [
+        {
+          "text": "Mix cocoa with the warm milk.",
+          "translation": "温かいミルクにココアを混ぜる。"
+        }
+      ]
     },
     {
       "word": "vanilla",
@@ -929,7 +1613,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add a little vanilla to the cream."
+      "example": "Add a little vanilla to the cream.",
+      "examples": [
+        {
+          "text": "Add a little vanilla to the cream.",
+          "translation": "クリームに少しバニラを加えて。"
+        }
+      ]
     },
     {
       "word": "nutmeg",
@@ -937,7 +1627,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Grate some nutmeg over the sauce."
+      "example": "Grate some nutmeg over the sauce.",
+      "examples": [
+        {
+          "text": "Grate some nutmeg over the sauce.",
+          "translation": "ソースの上にナツメグを少しかける。"
+        }
+      ]
     },
     {
       "word": "clove",
@@ -945,7 +1641,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Remove the whole clove before serving."
+      "example": "Remove the whole clove before serving.",
+      "examples": [
+        {
+          "text": "Remove the whole clove before serving.",
+          "translation": "盛り付ける前に、丸ごとのクローブを取り除いてください。"
+        }
+      ]
     },
     {
       "word": "coriander",
@@ -953,7 +1655,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Sprinkle fresh coriander over the curry."
+      "example": "Sprinkle fresh coriander over the curry.",
+      "examples": [
+        {
+          "text": "Sprinkle fresh coriander over the curry.",
+          "translation": "カレーの上に新鮮なコリアンダーをかける。"
+        }
+      ]
     },
     {
       "word": "cumin",
@@ -961,7 +1669,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The recipe calls for ground cumin."
+      "example": "The recipe calls for ground cumin.",
+      "examples": [
+        {
+          "text": "The recipe calls for ground cumin.",
+          "translation": "そのレシピには粉末のクミンが必要です。"
+        }
+      ]
     },
     {
       "word": "paprika",
@@ -969,7 +1683,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Paprika gives the sauce a red color."
+      "example": "Paprika gives the sauce a red color.",
+      "examples": [
+        {
+          "text": "Paprika gives the sauce a red color.",
+          "translation": "パプリカはソースの赤色を与える。"
+        }
+      ]
     },
     {
       "word": "saffron",
@@ -977,7 +1697,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A little saffron colors the rice."
+      "example": "A little saffron colors the rice.",
+      "examples": [
+        {
+          "text": "A little saffron colors the rice.",
+          "translation": "少量のサフランでご飯に色が付きます。"
+        }
+      ]
     },
     {
       "word": "horseradish",
@@ -985,7 +1711,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This horseradish sauce tastes sharp."
+      "example": "This horseradish sauce tastes sharp.",
+      "examples": [
+        {
+          "text": "This horseradish sauce tastes sharp.",
+          "translation": "この西洋ワサビのソースは、ぴりっとした味がします。"
+        }
+      ]
     },
     {
       "word": "herb",
@@ -993,7 +1725,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Basil is my favorite herb."
+      "example": "Basil is my favorite herb.",
+      "examples": [
+        {
+          "text": "Basil is my favorite herb.",
+          "translation": "バジルは私のお気に入りのハーブです。"
+        }
+      ]
     },
     {
       "word": "seasoning",
@@ -1001,7 +1739,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Taste the soup and adjust the seasoning."
+      "example": "Taste the soup and adjust the seasoning.",
+      "examples": [
+        {
+          "text": "Taste the soup and adjust the seasoning.",
+          "translation": "スープを味わって調味料を調整する。"
+        }
+      ]
     },
     {
       "word": "parsley",
@@ -1009,7 +1753,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Finish the dish with chopped parsley."
+      "example": "Finish the dish with chopped parsley.",
+      "examples": [
+        {
+          "text": "Finish the dish with chopped parsley.",
+          "translation": "切り分けたパセリで仕上げる。"
+        }
+      ]
     },
     {
       "word": "mint",
@@ -1017,7 +1767,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Fresh mint makes the drink refreshing."
+      "example": "Fresh mint makes the drink refreshing.",
+      "examples": [
+        {
+          "text": "Fresh mint makes the drink refreshing.",
+          "translation": "生のミントを加えると、飲み物が爽やかになります。"
+        }
+      ]
     },
     {
       "word": "thyme",
@@ -1025,7 +1781,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We roasted the vegetables with thyme."
+      "example": "We roasted the vegetables with thyme.",
+      "examples": [
+        {
+          "text": "We roasted the vegetables with thyme.",
+          "translation": "私たちは野菜をタイムと一緒にオーブンで焼きました。"
+        }
+      ]
     },
     {
       "word": "sage",
@@ -1033,7 +1795,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add sage leaves to the butter."
+      "example": "Add sage leaves to the butter.",
+      "examples": [
+        {
+          "text": "Add sage leaves to the butter.",
+          "translation": "バターにセージの葉を加える。"
+        }
+      ]
     },
     {
       "word": "dill",
@@ -1041,7 +1809,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Dill goes well with this fish."
+      "example": "Dill goes well with this fish.",
+      "examples": [
+        {
+          "text": "Dill goes well with this fish.",
+          "translation": "ディルはこの魚によく合います。"
+        }
+      ]
     },
     {
       "word": "fennel",
@@ -1049,7 +1823,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Slice the fennel for the salad."
+      "example": "Slice the fennel for the salad.",
+      "examples": [
+        {
+          "text": "Slice the fennel for the salad.",
+          "translation": "サラダのためにフェンネルを切っておく。"
+        }
+      ]
     },
     {
       "word": "bay leaf",
@@ -1057,7 +1837,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Remove the bay leaf before serving."
+      "example": "Remove the bay leaf before serving.",
+      "examples": [
+        {
+          "text": "Remove the bay leaf before serving.",
+          "translation": "盛り付ける前にローリエを取り除いてください。"
+        }
+      ]
     },
     {
       "word": "sauce",
@@ -1065,7 +1851,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Pour the sauce over the pasta."
+      "example": "Pour the sauce over the pasta.",
+      "examples": [
+        {
+          "text": "Pour the sauce over the pasta.",
+          "translation": "パスタにソースをかける。"
+        }
+      ]
     },
     {
       "word": "dressing",
@@ -1073,7 +1865,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Serve the dressing in a separate bowl."
+      "example": "Serve the dressing in a separate bowl.",
+      "examples": [
+        {
+          "text": "Serve the dressing in a separate bowl.",
+          "translation": "ドレッシングは別のボウルで出す。"
+        }
+      ]
     },
     {
       "word": "mayonnaise",
@@ -1081,7 +1879,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Spread mayonnaise on the sandwich."
+      "example": "Spread mayonnaise on the sandwich.",
+      "examples": [
+        {
+          "text": "Spread mayonnaise on the sandwich.",
+          "translation": "マヨネーズをサンドイッチにかける。"
+        }
+      ]
     },
     {
       "word": "vinegar",
@@ -1089,7 +1893,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add vinegar to the salad dressing."
+      "example": "Add vinegar to the salad dressing.",
+      "examples": [
+        {
+          "text": "Add vinegar to the salad dressing.",
+          "translation": "サラダドレッシングに酢を加える。"
+        }
+      ]
     },
     {
       "word": "oil",
@@ -1097,7 +1907,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Heat the oil in a frying pan."
+      "example": "Heat the oil in a frying pan.",
+      "examples": [
+        {
+          "text": "Heat the oil in a frying pan.",
+          "translation": "油をフライパンで熱すればいい。"
+        }
+      ]
     },
     {
       "word": "margarine",
@@ -1105,7 +1921,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "You can spread margarine on the bread."
+      "example": "You can spread margarine on the bread.",
+      "examples": [
+        {
+          "text": "You can spread margarine on the bread.",
+          "translation": "パンにマーガリンを塗ってもいい。"
+        }
+      ]
     },
     {
       "word": "yogurt",
@@ -1113,7 +1935,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I eat yogurt with fruit."
+      "example": "I eat yogurt with fruit.",
+      "examples": [
+        {
+          "text": "I eat yogurt with fruit.",
+          "translation": "私はヨーグルトとフルーツを食べる。"
+        }
+      ]
     },
     {
       "word": "curd",
@@ -1121,7 +1949,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cheese maker separated the curd from the liquid."
+      "example": "The cheese maker separated the curd from the liquid.",
+      "examples": [
+        {
+          "text": "The cheese maker separated the curd from the liquid.",
+          "translation": "チーズ職人は、凝乳を液体から分けました。"
+        }
+      ]
     },
     {
       "word": "custard",
@@ -1129,7 +1963,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Pour warm custard over the cake."
+      "example": "Pour warm custard over the cake.",
+      "examples": [
+        {
+          "text": "Pour warm custard over the cake.",
+          "translation": "ケーキの上に温かいカスタードをかける。"
+        }
+      ]
     },
     {
       "word": "pudding",
@@ -1137,7 +1977,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We shared a bread pudding after dinner."
+      "example": "We shared a bread pudding after dinner.",
+      "examples": [
+        {
+          "text": "We shared a bread pudding after dinner.",
+          "translation": "私たちは夕食の後、ブレッドプディングを分け合って食べました。"
+        }
+      ]
     },
     {
       "word": "jam",
@@ -1145,7 +1991,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This jam is made from strawberries."
+      "example": "This jam is made from strawberries.",
+      "examples": [
+        {
+          "text": "This jam is made from strawberries.",
+          "translation": "このジャムはイチゴで作る。"
+        }
+      ]
     },
     {
       "word": "marmalade",
@@ -1153,7 +2005,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He likes marmalade on his toast."
+      "example": "He likes marmalade on his toast.",
+      "examples": [
+        {
+          "text": "He likes marmalade on his toast.",
+          "translation": "彼はトーストにマーマレードをかけるのが好きだ。"
+        }
+      ]
     },
     {
       "word": "pickle",
@@ -1161,7 +2019,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The sandwich comes with a pickle."
+      "example": "The sandwich comes with a pickle.",
+      "examples": [
+        {
+          "text": "The sandwich comes with a pickle.",
+          "translation": "サンドイッチにはピクルスが付いている。"
+        }
+      ]
     },
     {
       "word": "relish",
@@ -1169,7 +2033,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add some tomato relish to the burger."
+      "example": "Add some tomato relish to the burger.",
+      "examples": [
+        {
+          "text": "Add some tomato relish to the burger.",
+          "translation": "ハンバーガーにトマトのレリッシュを少し加えてください。"
+        }
+      ]
     },
     {
       "word": "puree",
@@ -1177,7 +2047,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Blend the cooked carrots into a puree."
+      "example": "Blend the cooked carrots into a puree.",
+      "examples": [
+        {
+          "text": "Blend the cooked carrots into a puree.",
+          "translation": "加熱したニンジンをミキサーにかけて、ピューレにしてください。"
+        }
+      ]
     },
     {
       "word": "paste",
@@ -1185,7 +2061,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Stir the tomato paste into the sauce."
+      "example": "Stir the tomato paste into the sauce.",
+      "examples": [
+        {
+          "text": "Stir the tomato paste into the sauce.",
+          "translation": "トマトペーストをソースに混ぜる。"
+        }
+      ]
     },
     {
       "word": "dip",
@@ -1193,7 +2075,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Serve the vegetables with a yogurt dip."
+      "example": "Serve the vegetables with a yogurt dip.",
+      "examples": [
+        {
+          "text": "Serve the vegetables with a yogurt dip.",
+          "translation": "野菜をヨーグルトのディップで盛り付ける。"
+        }
+      ]
     },
     {
       "word": "topping",
@@ -1201,7 +2089,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Choose one topping for your ice cream."
+      "example": "Choose one topping for your ice cream.",
+      "examples": [
+        {
+          "text": "Choose one topping for your ice cream.",
+          "translation": "アイスクリームのトッピングを一つ選んでください。"
+        }
+      ]
     },
     {
       "word": "frosting",
@@ -1209,7 +2103,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Spread the frosting over the cooled cake."
+      "example": "Spread the frosting over the cooled cake.",
+      "examples": [
+        {
+          "text": "Spread the frosting over the cooled cake.",
+          "translation": "冷ましたケーキに、砂糖のクリームを塗り広げてください。"
+        }
+      ]
     },
     {
       "word": "icing",
@@ -1217,7 +2117,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cake has white icing."
+      "example": "The cake has white icing.",
+      "examples": [
+        {
+          "text": "The cake has white icing.",
+          "translation": "そのケーキには白いアイシングがかかっています。"
+        }
+      ]
     },
     {
       "word": "broth",
@@ -1225,7 +2131,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Simmer the vegetables in chicken broth."
+      "example": "Simmer the vegetables in chicken broth.",
+      "examples": [
+        {
+          "text": "Simmer the vegetables in chicken broth.",
+          "translation": "野菜を鶏肉の汁で煮る。"
+        }
+      ]
     },
     {
       "word": "stew",
@@ -1233,7 +2145,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The beef stew cooked slowly all afternoon."
+      "example": "The beef stew cooked slowly all afternoon.",
+      "examples": [
+        {
+          "text": "The beef stew cooked slowly all afternoon.",
+          "translation": "牛肉のシチューは午後中ずっとゆっくりと煮込まれた。"
+        }
+      ]
     },
     {
       "word": "chowder",
@@ -1241,7 +2159,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We ordered a bowl of clam chowder."
+      "example": "We ordered a bowl of clam chowder.",
+      "examples": [
+        {
+          "text": "We ordered a bowl of clam chowder.",
+          "translation": "私たちはクラムチャウダーを1杯注文しました。"
+        }
+      ]
     },
     {
       "word": "oatmeal",
@@ -1249,7 +2173,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I make oatmeal with warm milk."
+      "example": "I make oatmeal with warm milk.",
+      "examples": [
+        {
+          "text": "I make oatmeal with warm milk.",
+          "translation": "私は温かい牛乳でオートミールを作る。"
+        }
+      ]
     },
     {
       "word": "risotto",
@@ -1257,7 +2187,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Stir the risotto gently as it cooks."
+      "example": "Stir the risotto gently as it cooks.",
+      "examples": [
+        {
+          "text": "Stir the risotto gently as it cooks.",
+          "translation": "リゾットを煮ながら、優しくかき混ぜてください。"
+        }
+      ]
     },
     {
       "word": "curry",
@@ -1265,7 +2201,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add a spoonful of curry powder."
+      "example": "Add a spoonful of curry powder.",
+      "examples": [
+        {
+          "text": "Add a spoonful of curry powder.",
+          "translation": "カレー粉を一スプーン加える。"
+        }
+      ]
     },
     {
       "word": "casserole",
@@ -1273,7 +2215,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Put the covered casserole in the oven."
+      "example": "Put the covered casserole in the oven.",
+      "examples": [
+        {
+          "text": "Put the covered casserole in the oven.",
+          "translation": "蓋をした鍋をオーブンに入れる。"
+        }
+      ]
     },
     {
       "word": "macaroni",
@@ -1281,7 +2229,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Boil the macaroni until just tender."
+      "example": "Boil the macaroni until just tender.",
+      "examples": [
+        {
+          "text": "Boil the macaroni until just tender.",
+          "translation": "マカロニを柔らかくなるまで煮る。"
+        }
+      ]
     },
     {
       "word": "spaghetti",
@@ -1289,7 +2243,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We served spaghetti with tomato sauce."
+      "example": "We served spaghetti with tomato sauce.",
+      "examples": [
+        {
+          "text": "We served spaghetti with tomato sauce.",
+          "translation": "私たちはトマトソースのスパゲッティを出した。"
+        }
+      ]
     },
     {
       "word": "dumpling",
@@ -1297,7 +2257,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Steam the dumpling before serving it."
+      "example": "Steam the dumpling before serving it.",
+      "examples": [
+        {
+          "text": "Steam the dumpling before serving it.",
+          "translation": "だんごは出す前に蒸してください。"
+        }
+      ]
     },
     {
       "word": "wonton",
@@ -1305,7 +2271,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "There is a wonton in my soup."
+      "example": "There is a wonton in my soup.",
+      "examples": [
+        {
+          "text": "There is a wonton in my soup.",
+          "translation": "私のスープにはワンタンが入っています。"
+        }
+      ]
     },
     {
       "word": "waffle",
@@ -1313,7 +2285,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She topped her waffle with fresh fruit."
+      "example": "She topped her waffle with fresh fruit.",
+      "examples": [
+        {
+          "text": "She topped her waffle with fresh fruit.",
+          "translation": "彼女はワッフルに新鮮な果物を乗せた。"
+        }
+      ]
     },
     {
       "word": "crepe",
@@ -1321,7 +2299,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Fold the crepe around the filling."
+      "example": "Fold the crepe around the filling.",
+      "examples": [
+        {
+          "text": "Fold the crepe around the filling.",
+          "translation": "クレープを詰め物の周りに折る。"
+        }
+      ]
     },
     {
       "word": "quiche",
@@ -1329,7 +2313,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The spinach quiche is ready to serve."
+      "example": "The spinach quiche is ready to serve.",
+      "examples": [
+        {
+          "text": "The spinach quiche is ready to serve.",
+          "translation": "ホウレンソウキッシュは出来上がりだ。"
+        }
+      ]
     },
     {
       "word": "souffle",
@@ -1337,7 +2327,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Serve the souffle straight from the oven."
+      "example": "Serve the souffle straight from the oven.",
+      "examples": [
+        {
+          "text": "Serve the souffle straight from the oven.",
+          "translation": "スフレはオーブンから出したらすぐに出してください。"
+        }
+      ]
     },
     {
       "word": "pie",
@@ -1345,7 +2341,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The apple pie smells wonderful."
+      "example": "The apple pie smells wonderful.",
+      "examples": [
+        {
+          "text": "The apple pie smells wonderful.",
+          "translation": "アップルパイは美味しい匂いがする。"
+        }
+      ]
     },
     {
       "word": "croissant",
@@ -1353,7 +2355,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I bought a croissant for breakfast."
+      "example": "I bought a croissant for breakfast.",
+      "examples": [
+        {
+          "text": "I bought a croissant for breakfast.",
+          "translation": "朝食にクロワッサンを買った。"
+        }
+      ]
     },
     {
       "word": "muffin",
@@ -1361,7 +2369,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This blueberry muffin is still warm."
+      "example": "This blueberry muffin is still warm.",
+      "examples": [
+        {
+          "text": "This blueberry muffin is still warm.",
+          "translation": "このブルーベリーマフィンはまだ温かい。"
+        }
+      ]
     },
     {
       "word": "biscuit",
@@ -1369,7 +2383,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He split the warm biscuit and added butter."
+      "example": "He split the warm biscuit and added butter.",
+      "examples": [
+        {
+          "text": "He split the warm biscuit and added butter.",
+          "translation": "彼は温かいビスケットを切り分けてバターを加えた。"
+        }
+      ]
     },
     {
       "word": "cookie",
@@ -1377,7 +2397,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Would you like a chocolate cookie?"
+      "example": "Would you like a chocolate cookie?",
+      "examples": [
+        {
+          "text": "Would you like a chocolate cookie?",
+          "translation": "チョコレートクッキーはいかがですか。"
+        }
+      ]
     },
     {
       "word": "pretzel",
@@ -1385,7 +2411,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She bought a salty pretzel at the bakery."
+      "example": "She bought a salty pretzel at the bakery.",
+      "examples": [
+        {
+          "text": "She bought a salty pretzel at the bakery.",
+          "translation": "彼女はパン屋で塩味のプレッツェルを買った。"
+        }
+      ]
     },
     {
       "word": "bagel",
@@ -1393,7 +2425,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Toast the bagel before adding cream cheese."
+      "example": "Toast the bagel before adding cream cheese.",
+      "examples": [
+        {
+          "text": "Toast the bagel before adding cream cheese.",
+          "translation": "クリームチーズを加える前にベーグルをトーストする。"
+        }
+      ]
     },
     {
       "word": "roll",
@@ -1401,7 +2439,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Each soup comes with a bread roll."
+      "example": "Each soup comes with a bread roll.",
+      "examples": [
+        {
+          "text": "Each soup comes with a bread roll.",
+          "translation": "それぞれのスープにはパンが付いている。"
+        }
+      ]
     },
     {
       "word": "bun",
@@ -1409,7 +2453,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Put the burger inside the bun."
+      "example": "Put the burger inside the bun.",
+      "examples": [
+        {
+          "text": "Put the burger inside the bun.",
+          "translation": "ハンバーガーのパティを丸パンで挟んでください。"
+        }
+      ]
     },
     {
       "word": "baguette",
@@ -1417,7 +2467,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We shared a fresh baguette at lunch."
+      "example": "We shared a fresh baguette at lunch.",
+      "examples": [
+        {
+          "text": "We shared a fresh baguette at lunch.",
+          "translation": "昼食に新鮮なバゲットを共有した。"
+        }
+      ]
     },
     {
       "word": "doughnut",
@@ -1425,7 +2481,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The doughnut has a chocolate coating."
+      "example": "The doughnut has a chocolate coating.",
+      "examples": [
+        {
+          "text": "The doughnut has a chocolate coating.",
+          "translation": "ドーナツはチョコレートでコーティングされている。"
+        }
+      ]
     },
     {
       "word": "cheesecake",
@@ -1433,7 +2495,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I'd like a slice of cheesecake."
+      "example": "I'd like a slice of cheesecake.",
+      "examples": [
+        {
+          "text": "I'd like a slice of cheesecake.",
+          "translation": "チーズケーキを一枚いただきたい。"
+        }
+      ]
     },
     {
       "word": "shortbread",
@@ -1441,7 +2509,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We served shortbread with tea."
+      "example": "We served shortbread with tea.",
+      "examples": [
+        {
+          "text": "We served shortbread with tea.",
+          "translation": "私たちはお茶とともにショートブレッドを出した。"
+        }
+      ]
     },
     {
       "word": "meringue",
@@ -1449,7 +2523,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The meringue is crisp on the outside."
+      "example": "The meringue is crisp on the outside.",
+      "examples": [
+        {
+          "text": "The meringue is crisp on the outside.",
+          "translation": "そのメレンゲは外側がさくさくしています。"
+        }
+      ]
     },
     {
       "word": "marshmallow",
@@ -1457,7 +2537,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She dropped a marshmallow into her hot chocolate."
+      "example": "She dropped a marshmallow into her hot chocolate.",
+      "examples": [
+        {
+          "text": "She dropped a marshmallow into her hot chocolate.",
+          "translation": "彼女はホットチョコレートにマシュマロを落とした。"
+        }
+      ]
     },
     {
       "word": "confectionery",
@@ -1465,7 +2551,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The shop sells handmade confectionery."
+      "example": "The shop sells handmade confectionery.",
+      "examples": [
+        {
+          "text": "The shop sells handmade confectionery.",
+          "translation": "その店は手作り菓子を売っている。"
+        }
+      ]
     },
     {
       "word": "fudge",
@@ -1473,7 +2565,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We cut the chocolate fudge into squares."
+      "example": "We cut the chocolate fudge into squares.",
+      "examples": [
+        {
+          "text": "We cut the chocolate fudge into squares.",
+          "translation": "私たちはチョコレートファッジを四角く切りました。"
+        }
+      ]
     },
     {
       "word": "nougat",
@@ -1481,7 +2579,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This nougat contains roasted almonds."
+      "example": "This nougat contains roasted almonds.",
+      "examples": [
+        {
+          "text": "This nougat contains roasted almonds.",
+          "translation": "このヌガーには、ローストしたアーモンドが入っています。"
+        }
+      ]
     },
     {
       "word": "lollipop",
@@ -1489,7 +2593,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The child chose a strawberry lollipop."
+      "example": "The child chose a strawberry lollipop.",
+      "examples": [
+        {
+          "text": "The child chose a strawberry lollipop.",
+          "translation": "子供はイチゴロリポップを選んだ。"
+        }
+      ]
     },
     {
       "word": "ice cream",
@@ -1497,7 +2607,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The ice cream is starting to melt."
+      "example": "The ice cream is starting to melt.",
+      "examples": [
+        {
+          "text": "The ice cream is starting to melt.",
+          "translation": "アイスクリームが溶け始めている。"
+        }
+      ]
     },
     {
       "word": "sherbet",
@@ -1505,7 +2621,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We ordered lemon sherbet for dessert."
+      "example": "We ordered lemon sherbet for dessert.",
+      "examples": [
+        {
+          "text": "We ordered lemon sherbet for dessert.",
+          "translation": "私たちはデザートに、レモンのシャーベットを注文しました。"
+        }
+      ]
     },
     {
       "word": "sundae",
@@ -1513,7 +2635,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The sundae comes with chocolate sauce."
+      "example": "The sundae comes with chocolate sauce.",
+      "examples": [
+        {
+          "text": "The sundae comes with chocolate sauce.",
+          "translation": "サンデーはチョコレートソースが付いている。"
+        }
+      ]
     },
     {
       "word": "mousse",
@@ -1521,7 +2649,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The chocolate mousse is light and smooth."
+      "example": "The chocolate mousse is light and smooth.",
+      "examples": [
+        {
+          "text": "The chocolate mousse is light and smooth.",
+          "translation": "チョコレートムースは軽くて滑らか。"
+        }
+      ]
     },
     {
       "word": "trifle",
@@ -1529,7 +2663,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The trifle has layers of fruit and cream."
+      "example": "The trifle has layers of fruit and cream.",
+      "examples": [
+        {
+          "text": "The trifle has layers of fruit and cream.",
+          "translation": "そのトライフルは、果物とクリームが層になっています。"
+        }
+      ]
     },
     {
       "word": "sponge cake",
@@ -1537,7 +2677,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Let the sponge cake cool completely."
+      "example": "Let the sponge cake cool completely.",
+      "examples": [
+        {
+          "text": "Let the sponge cake cool completely.",
+          "translation": "スポンジケーキを完全に冷やしておく。"
+        }
+      ]
     },
     {
       "word": "pound cake",
@@ -1545,7 +2691,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We served pound cake with berries."
+      "example": "We served pound cake with berries.",
+      "examples": [
+        {
+          "text": "We served pound cake with berries.",
+          "translation": "私たちはパウンドケーキにベリーを添えて出しました。"
+        }
+      ]
     },
     {
       "word": "shepherd's pie",
@@ -1553,7 +2705,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The shepherd's pie has a golden potato topping."
+      "example": "The shepherd's pie has a golden potato topping.",
+      "examples": [
+        {
+          "text": "The shepherd's pie has a golden potato topping.",
+          "translation": "そのシェパードパイは、上に載せたジャガイモがきつね色に焼けています。"
+        }
+      ]
     },
     {
       "word": "cream puff",
@@ -1561,7 +2719,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The bakery filled each cream puff by hand."
+      "example": "The bakery filled each cream puff by hand.",
+      "examples": [
+        {
+          "text": "The bakery filled each cream puff by hand.",
+          "translation": "そのパン屋では、シュークリームに1個ずつ手作業でクリームを詰めました。"
+        }
+      ]
     },
     {
       "word": "sour cream",
@@ -1569,7 +2733,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add sour cream just before serving."
+      "example": "Add sour cream just before serving.",
+      "examples": [
+        {
+          "text": "Add sour cream just before serving.",
+          "translation": "出しの直前にサワークリームを加える。"
+        }
+      ]
     },
     {
       "word": "cottage cheese",
@@ -1577,7 +2747,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She ate cottage cheese with sliced fruit."
+      "example": "She ate cottage cheese with sliced fruit.",
+      "examples": [
+        {
+          "text": "She ate cottage cheese with sliced fruit.",
+          "translation": "彼女は薄切りの果物と一緒に、コテージチーズを食べました。"
+        }
+      ]
     },
     {
       "word": "blue cheese",
@@ -1585,7 +2761,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The salad contains a little blue cheese."
+      "example": "The salad contains a little blue cheese.",
+      "examples": [
+        {
+          "text": "The salad contains a little blue cheese.",
+          "translation": "そのサラダには少しブルーチーズが入っている。"
+        }
+      ]
     },
     {
       "word": "parmesan",
@@ -1593,7 +2775,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Grate parmesan over the pasta."
+      "example": "Grate parmesan over the pasta.",
+      "examples": [
+        {
+          "text": "Grate parmesan over the pasta.",
+          "translation": "パルメザンチーズをすりおろしてパスタにかけてください。"
+        }
+      ]
     },
     {
       "word": "gouda",
@@ -1601,7 +2789,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We sliced gouda for the sandwiches."
+      "example": "We sliced gouda for the sandwiches.",
+      "examples": [
+        {
+          "text": "We sliced gouda for the sandwiches.",
+          "translation": "サンドイッチのためにゴーダを切った。"
+        }
+      ]
     },
     {
       "word": "buttermilk",
@@ -1609,7 +2803,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The pancake recipe uses buttermilk."
+      "example": "The pancake recipe uses buttermilk.",
+      "examples": [
+        {
+          "text": "The pancake recipe uses buttermilk.",
+          "translation": "パンケーキのレシピはバターミルクを使っている。"
+        }
+      ]
     },
     {
       "word": "condensed milk",
@@ -1617,7 +2817,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Stir condensed milk into the coffee."
+      "example": "Stir condensed milk into the coffee.",
+      "examples": [
+        {
+          "text": "Stir condensed milk into the coffee.",
+          "translation": "コーヒーに練乳を入れてかき混ぜてください。"
+        }
+      ]
     },
     {
       "word": "lactose",
@@ -1625,7 +2831,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This carton says the milk contains no lactose."
+      "example": "This carton says the milk contains no lactose.",
+      "examples": [
+        {
+          "text": "This carton says the milk contains no lactose.",
+          "translation": "この紙パックには、牛乳に乳糖が含まれていないと書いてあります。"
+        }
+      ]
     },
     {
       "word": "protein",
@@ -1633,7 +2845,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The label lists the amount of protein."
+      "example": "The label lists the amount of protein.",
+      "examples": [
+        {
+          "text": "The label lists the amount of protein.",
+          "translation": "ラベルにはタンパク質の量が書かれている。"
+        }
+      ]
     },
     {
       "word": "vitamin",
@@ -1641,7 +2859,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The packet shows its vitamin content."
+      "example": "The packet shows its vitamin content.",
+      "examples": [
+        {
+          "text": "The packet shows its vitamin content.",
+          "translation": "袋にはビタミン含有量が記載されている。"
+        }
+      ]
     },
     {
       "word": "mineral",
@@ -1649,7 +2873,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Calcium is a mineral found in milk."
+      "example": "Calcium is a mineral found in milk.",
+      "examples": [
+        {
+          "text": "Calcium is a mineral found in milk.",
+          "translation": "カルシウムは乳中に含まれる無機物である。"
+        }
+      ]
     },
     {
       "word": "fat",
@@ -1657,7 +2887,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Trim the extra fat from the meat."
+      "example": "Trim the extra fat from the meat.",
+      "examples": [
+        {
+          "text": "Trim the extra fat from the meat.",
+          "translation": "肉の余分な脂肪を切り落とす。"
+        }
+      ]
     },
     {
       "word": "calorie",
@@ -1665,7 +2901,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A calorie is a unit of energy."
+      "example": "A calorie is a unit of energy.",
+      "examples": [
+        {
+          "text": "A calorie is a unit of energy.",
+          "translation": "カロリーはエネルギーの単位である。"
+        }
+      ]
     },
     {
       "word": "diet",
@@ -1673,7 +2915,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Vegetables are part of my daily diet."
+      "example": "Vegetables are part of my daily diet.",
+      "examples": [
+        {
+          "text": "Vegetables are part of my daily diet.",
+          "translation": "野菜は私の日常食の一部です。"
+        }
+      ]
     },
     {
       "word": "portion",
@@ -1681,7 +2929,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I'd like a smaller portion, please."
+      "example": "I'd like a smaller portion, please.",
+      "examples": [
+        {
+          "text": "I'd like a smaller portion, please.",
+          "translation": "少し小さめにしてください。"
+        }
+      ]
     },
     {
       "word": "helping",
@@ -1689,7 +2943,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He asked for another helping of rice."
+      "example": "He asked for another helping of rice.",
+      "examples": [
+        {
+          "text": "He asked for another helping of rice.",
+          "translation": "彼はご飯をもう1杯頼みました。"
+        }
+      ]
     },
     {
       "word": "digestion",
@@ -1697,7 +2957,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The textbook explains how digestion works."
+      "example": "The textbook explains how digestion works.",
+      "examples": [
+        {
+          "text": "The textbook explains how digestion works.",
+          "translation": "教科書は消化の仕組みを説明している。"
+        }
+      ]
     },
     {
       "word": "allergy",
@@ -1705,7 +2971,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Please tell the waiter about your allergy."
+      "example": "Please tell the waiter about your allergy.",
+      "examples": [
+        {
+          "text": "Please tell the waiter about your allergy.",
+          "translation": "ウェイターにアレルギーのことを伝えてください。"
+        }
+      ]
     },
     {
       "word": "vegetarian",
@@ -1713,7 +2985,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "My sister is a vegetarian."
+      "example": "My sister is a vegetarian.",
+      "examples": [
+        {
+          "text": "My sister is a vegetarian.",
+          "translation": "私の妹はベジタリアンです。"
+        }
+      ]
     },
     {
       "word": "vegan",
@@ -1721,7 +2999,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The menu has several choices for a vegan."
+      "example": "The menu has several choices for a vegan.",
+      "examples": [
+        {
+          "text": "The menu has several choices for a vegan.",
+          "translation": "そのメニューには、動物性食品をとらない人向けの料理がいくつかあります。"
+        }
+      ]
     },
     {
       "word": "natural",
@@ -1729,7 +3013,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The fruit gives the drink a natural sweetness."
+      "example": "The fruit gives the drink a natural sweetness.",
+      "examples": [
+        {
+          "text": "The fruit gives the drink a natural sweetness.",
+          "translation": "果実は飲み物に天然の甘さを与える。"
+        }
+      ]
     },
     {
       "word": "whole-wheat",
@@ -1737,7 +3027,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I chose whole-wheat bread for my sandwich."
+      "example": "I chose whole-wheat bread for my sandwich.",
+      "examples": [
+        {
+          "text": "I chose whole-wheat bread for my sandwich.",
+          "translation": "私はサンドイッチに全麦パンを選んだ。"
+        }
+      ]
     },
     {
       "word": "raw",
@@ -1745,7 +3041,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Keep the raw meat in a separate container."
+      "example": "Keep the raw meat in a separate container.",
+      "examples": [
+        {
+          "text": "Keep the raw meat in a separate container.",
+          "translation": "生肉は別の容器に入れてください。"
+        }
+      ]
     },
     {
       "word": "fried",
@@ -1753,7 +3055,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We ordered fried rice for lunch."
+      "example": "We ordered fried rice for lunch.",
+      "examples": [
+        {
+          "text": "We ordered fried rice for lunch.",
+          "translation": "私たちは昼食にチャーハンを注文しました。"
+        }
+      ]
     },
     {
       "word": "dried",
@@ -1761,7 +3069,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add dried fruit to the mixture."
+      "example": "Add dried fruit to the mixture.",
+      "examples": [
+        {
+          "text": "Add dried fruit to the mixture.",
+          "translation": "乾燥果物を加える。"
+        }
+      ]
     },
     {
       "word": "frozen",
@@ -1769,7 +3083,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The recipe works with frozen peas."
+      "example": "The recipe works with frozen peas.",
+      "examples": [
+        {
+          "text": "The recipe works with frozen peas.",
+          "translation": "そのレシピは冷凍のエンドウ豆でも作れます。"
+        }
+      ]
     },
     {
       "word": "unripe",
@@ -1777,7 +3097,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This banana is still unripe."
+      "example": "This banana is still unripe.",
+      "examples": [
+        {
+          "text": "This banana is still unripe.",
+          "translation": "このバナナはまだ未熟だ。"
+        }
+      ]
     },
     {
       "word": "stale",
@@ -1785,7 +3111,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The bread tastes stale."
+      "example": "The bread tastes stale.",
+      "examples": [
+        {
+          "text": "The bread tastes stale.",
+          "translation": "そのパンは古くなって風味が落ちています。"
+        }
+      ]
     },
     {
       "word": "rotten",
@@ -1793,7 +3125,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Throw away the rotten tomato."
+      "example": "Throw away the rotten tomato.",
+      "examples": [
+        {
+          "text": "Throw away the rotten tomato.",
+          "translation": "腐ったトマトを捨てなさい。"
+        }
+      ]
     },
     {
       "word": "edible",
@@ -1801,7 +3139,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Check whether the flowers are edible."
+      "example": "Check whether the flowers are edible.",
+      "examples": [
+        {
+          "text": "Check whether the flowers are edible.",
+          "translation": "花が食べられるかどうかを確認する。"
+        }
+      ]
     },
     {
       "word": "poisonous",
@@ -1809,7 +3153,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Some wild mushrooms are poisonous."
+      "example": "Some wild mushrooms are poisonous.",
+      "examples": [
+        {
+          "text": "Some wild mushrooms are poisonous.",
+          "translation": "野生のキノコの中には毒がある。"
+        }
+      ]
     },
     {
       "word": "wholesome",
@@ -1817,7 +3167,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She prepared a wholesome homemade lunch."
+      "example": "She prepared a wholesome homemade lunch.",
+      "examples": [
+        {
+          "text": "She prepared a wholesome homemade lunch.",
+          "translation": "彼女は健康的な自家製のランチを作った。"
+        }
+      ]
     },
     {
       "word": "nourishing",
@@ -1825,7 +3181,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We enjoyed a warm, nourishing meal."
+      "example": "We enjoyed a warm, nourishing meal.",
+      "examples": [
+        {
+          "text": "We enjoyed a warm, nourishing meal.",
+          "translation": "私たちは暖かく栄養豊かな食事を楽しんだ。"
+        }
+      ]
     },
     {
       "word": "unhealthy",
@@ -1833,7 +3195,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He looked unhealthy after weeks without proper meals."
+      "example": "He looked unhealthy after weeks without proper meals.",
+      "examples": [
+        {
+          "text": "He looked unhealthy after weeks without proper meals.",
+          "translation": "彼は何週間も適切な食事をとらなかったために健康に見えなかった。"
+        }
+      ]
     },
     {
       "word": "lean",
@@ -1841,7 +3209,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use lean beef for this dish."
+      "example": "Use lean beef for this dish.",
+      "examples": [
+        {
+          "text": "Use lean beef for this dish.",
+          "translation": "この料理には脂肪の少ない牛肉を使ってください。"
+        }
+      ]
     },
     {
       "word": "oily",
@@ -1849,7 +3223,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The sauce left an oily mark."
+      "example": "The sauce left an oily mark.",
+      "examples": [
+        {
+          "text": "The sauce left an oily mark.",
+          "translation": "ソースは油の跡を残した。"
+        }
+      ]
     },
     {
       "word": "greasy",
@@ -1857,7 +3237,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The chips were too greasy for me."
+      "example": "The chips were too greasy for me.",
+      "examples": [
+        {
+          "text": "The chips were too greasy for me.",
+          "translation": "チップスは私には脂っこすぎた。"
+        }
+      ]
     },
     {
       "word": "creamy",
@@ -1865,7 +3251,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This soup has a creamy texture."
+      "example": "This soup has a creamy texture.",
+      "examples": [
+        {
+          "text": "This soup has a creamy texture.",
+          "translation": "このスープはクリーム状の食感がある。"
+        }
+      ]
     },
     {
       "word": "crispy",
@@ -1873,7 +3265,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The potatoes are golden and crispy."
+      "example": "The potatoes are golden and crispy.",
+      "examples": [
+        {
+          "text": "The potatoes are golden and crispy.",
+          "translation": "ジャガイモはきつね色で、表面がカリッとしています。"
+        }
+      ]
     },
     {
       "word": "chewy",
@@ -1881,7 +3279,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "These cookies have a chewy center."
+      "example": "These cookies have a chewy center.",
+      "examples": [
+        {
+          "text": "These cookies have a chewy center.",
+          "translation": "このクッキーは中心部分にかみ応えがあります。"
+        }
+      ]
     },
     {
       "word": "tender",
@@ -1889,7 +3293,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Cook the meat until tender."
+      "example": "Cook the meat until tender.",
+      "examples": [
+        {
+          "text": "Cook the meat until tender.",
+          "translation": "肉を柔らかくなるまで煮る。"
+        }
+      ]
     },
     {
       "word": "soft",
@@ -1897,7 +3307,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cheese is soft enough to spread."
+      "example": "The cheese is soft enough to spread.",
+      "examples": [
+        {
+          "text": "The cheese is soft enough to spread.",
+          "translation": "そのチーズは塗れるほど柔らかいです。"
+        }
+      ]
     },
     {
       "word": "hard",
@@ -1905,7 +3321,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This candy is very hard."
+      "example": "This candy is very hard.",
+      "examples": [
+        {
+          "text": "This candy is very hard.",
+          "translation": "このキャンディはとても硬い。"
+        }
+      ]
     },
     {
       "word": "thick",
@@ -1913,7 +3335,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The soup is rich and thick."
+      "example": "The soup is rich and thick.",
+      "examples": [
+        {
+          "text": "The soup is rich and thick.",
+          "translation": "スープは豊かで濃い。"
+        }
+      ]
     },
     {
       "word": "thin",
@@ -1921,7 +3349,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add water to make a thin sauce."
+      "example": "Add water to make a thin sauce.",
+      "examples": [
+        {
+          "text": "Add water to make a thin sauce.",
+          "translation": "水を加えて、さらっとしたソースにしてください。"
+        }
+      ]
     },
     {
       "word": "dry",
@@ -1929,7 +3363,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cake is a little dry."
+      "example": "The cake is a little dry.",
+      "examples": [
+        {
+          "text": "The cake is a little dry.",
+          "translation": "ケーキは少し乾いている。"
+        }
+      ]
     },
     {
       "word": "watery",
@@ -1937,7 +3377,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The soup tastes watery."
+      "example": "The soup tastes watery.",
+      "examples": [
+        {
+          "text": "The soup tastes watery.",
+          "translation": "スープは水っぽい味がする。"
+        }
+      ]
     },
     {
       "word": "rich",
@@ -1945,7 +3391,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This chocolate cake is very rich."
+      "example": "This chocolate cake is very rich.",
+      "examples": [
+        {
+          "text": "This chocolate cake is very rich.",
+          "translation": "このチョコレートケーキはとても濃厚です。"
+        }
+      ]
     },
     {
       "word": "bland",
@@ -1953,7 +3405,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The rice tastes bland without seasoning."
+      "example": "The rice tastes bland without seasoning.",
+      "examples": [
+        {
+          "text": "The rice tastes bland without seasoning.",
+          "translation": "味付けをしないと、そのご飯は味気なく感じます。"
+        }
+      ]
     },
     {
       "word": "spicy",
@@ -1961,7 +3419,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Is this dish very spicy?"
+      "example": "Is this dish very spicy?",
+      "examples": [
+        {
+          "text": "Is this dish very spicy?",
+          "translation": "この料理はとても辛いですか。"
+        }
+      ]
     },
     {
       "word": "pungent",
@@ -1969,7 +3433,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cheese has a pungent smell."
+      "example": "The cheese has a pungent smell.",
+      "examples": [
+        {
+          "text": "The cheese has a pungent smell.",
+          "translation": "チーズは刺激的な匂いがする。"
+        }
+      ]
     },
     {
       "word": "aromatic",
@@ -1977,7 +3447,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The kitchen filled with aromatic steam."
+      "example": "The kitchen filled with aromatic steam.",
+      "examples": [
+        {
+          "text": "The kitchen filled with aromatic steam.",
+          "translation": "キッチンは芳香の蒸気で満たされた。"
+        }
+      ]
     },
     {
       "word": "savory",
@@ -1985,7 +3461,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I prefer savory snacks to sweet ones."
+      "example": "I prefer savory snacks to sweet ones.",
+      "examples": [
+        {
+          "text": "I prefer savory snacks to sweet ones.",
+          "translation": "私は甘いものよりも塩味のスナックが好きです。"
+        }
+      ]
     },
     {
       "word": "appetizing",
@@ -1993,7 +3475,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The fresh bread looks appetizing."
+      "example": "The fresh bread looks appetizing.",
+      "examples": [
+        {
+          "text": "The fresh bread looks appetizing.",
+          "translation": "新鮮なパンはおいしそうだな。"
+        }
+      ]
     },
     {
       "word": "lukewarm",
@@ -2001,7 +3489,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "My coffee is only lukewarm."
+      "example": "My coffee is only lukewarm.",
+      "examples": [
+        {
+          "text": "My coffee is only lukewarm.",
+          "translation": "私のコーヒーは生ぬるいだけです。"
+        }
+      ]
     },
     {
       "word": "fizzy",
@@ -2009,7 +3503,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She ordered a fizzy orange drink."
+      "example": "She ordered a fizzy orange drink.",
+      "examples": [
+        {
+          "text": "She ordered a fizzy orange drink.",
+          "translation": "彼女はオレンジの炭酸飲料を注文しました。"
+        }
+      ]
     },
     {
       "word": "carbonated",
@@ -2017,7 +3517,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Would you like carbonated water?"
+      "example": "Would you like carbonated water?",
+      "examples": [
+        {
+          "text": "Would you like carbonated water?",
+          "translation": "炭酸水はいかがですか。"
+        }
+      ]
     },
     {
       "word": "instant",
@@ -2025,7 +3531,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We keep instant coffee in the cupboard."
+      "example": "We keep instant coffee in the cupboard.",
+      "examples": [
+        {
+          "text": "We keep instant coffee in the cupboard.",
+          "translation": "私たちはインスタントコーヒーを棚に置いている。"
+        }
+      ]
     },
     {
       "word": "liquid",
@@ -2033,7 +3545,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Pour the hot liquid carefully."
+      "example": "Pour the hot liquid carefully.",
+      "examples": [
+        {
+          "text": "Pour the hot liquid carefully.",
+          "translation": "熱い液体を慎重に注いでください。"
+        }
+      ]
     },
     {
       "word": "powder",
@@ -2041,7 +3559,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add the cocoa powder slowly."
+      "example": "Add the cocoa powder slowly.",
+      "examples": [
+        {
+          "text": "Add the cocoa powder slowly.",
+          "translation": "ココア粉をゆっくりと加える。"
+        }
+      ]
     },
     {
       "word": "cube",
@@ -2049,7 +3573,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Drop a sugar cube into the cup."
+      "example": "Drop a sugar cube into the cup.",
+      "examples": [
+        {
+          "text": "Drop a sugar cube into the cup.",
+          "translation": "カップに角砂糖を1個入れてください。"
+        }
+      ]
     },
     {
       "word": "piece",
@@ -2057,7 +3587,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Would you like a piece of cake?"
+      "example": "Would you like a piece of cake?",
+      "examples": [
+        {
+          "text": "Would you like a piece of cake?",
+          "translation": "ケーキを食べたい?"
+        }
+      ]
     },
     {
       "word": "chunk",
@@ -2065,7 +3601,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add a chunk of cheese to the plate."
+      "example": "Add a chunk of cheese to the plate.",
+      "examples": [
+        {
+          "text": "Add a chunk of cheese to the plate.",
+          "translation": "皿にチーズを一つ入れなさい。"
+        }
+      ]
     },
     {
       "word": "wedge",
@@ -2073,7 +3615,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Serve the fish with a lemon wedge."
+      "example": "Serve the fish with a lemon wedge.",
+      "examples": [
+        {
+          "text": "Serve the fish with a lemon wedge.",
+          "translation": "魚にくし形切りのレモンを添えて出してください。"
+        }
+      ]
     },
     {
       "word": "pinch",
@@ -2081,7 +3629,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add a pinch of salt."
+      "example": "Add a pinch of salt.",
+      "examples": [
+        {
+          "text": "Add a pinch of salt.",
+          "translation": "少し塩を加えて。"
+        }
+      ]
     },
     {
       "word": "tablespoon",
@@ -2089,7 +3643,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use a tablespoon to serve the sauce."
+      "example": "Use a tablespoon to serve the sauce.",
+      "examples": [
+        {
+          "text": "Use a tablespoon to serve the sauce.",
+          "translation": "ソースを出すにはスプーンを使う。"
+        }
+      ]
     },
     {
       "word": "teaspoon",
@@ -2097,7 +3657,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Stir your tea with a teaspoon."
+      "example": "Stir your tea with a teaspoon.",
+      "examples": [
+        {
+          "text": "Stir your tea with a teaspoon.",
+          "translation": "ティースプーンでお茶をかき混ぜてください。"
+        }
+      ]
     },
     {
       "word": "pint",
@@ -2105,7 +3671,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He bought a pint of milk."
+      "example": "He bought a pint of milk.",
+      "examples": [
+        {
+          "text": "He bought a pint of milk.",
+          "translation": "彼は牛乳を1パイント買った。"
+        }
+      ]
     },
     {
       "word": "quart",
@@ -2113,7 +3685,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The jug holds a quart of water."
+      "example": "The jug holds a quart of water.",
+      "examples": [
+        {
+          "text": "The jug holds a quart of water.",
+          "translation": "その水差しには水が1クォート入ります。"
+        }
+      ]
     },
     {
       "word": "ounce",
@@ -2121,7 +3699,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Weigh out one ounce of chocolate."
+      "example": "Weigh out one ounce of chocolate.",
+      "examples": [
+        {
+          "text": "Weigh out one ounce of chocolate.",
+          "translation": "チョコレート1オンスを計ってみろ。"
+        }
+      ]
     },
     {
       "word": "pound",
@@ -2129,7 +3713,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We bought a pound of apples."
+      "example": "We bought a pound of apples.",
+      "examples": [
+        {
+          "text": "We bought a pound of apples.",
+          "translation": "リンゴを1ポンド買った。"
+        }
+      ]
     },
     {
       "word": "kilogram",
@@ -2137,7 +3727,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The bag contains one kilogram of flour."
+      "example": "The bag contains one kilogram of flour.",
+      "examples": [
+        {
+          "text": "The bag contains one kilogram of flour.",
+          "translation": "その袋には1キロの小麦粉が入っている。"
+        }
+      ]
     },
     {
       "word": "liter",
@@ -2145,7 +3741,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add one liter of water."
+      "example": "Add one liter of water.",
+      "examples": [
+        {
+          "text": "Add one liter of water.",
+          "translation": "水を1リットル加えてください。"
+        }
+      ]
     },
     {
       "word": "dozen",
@@ -2153,7 +3755,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We bought a dozen eggs."
+      "example": "We bought a dozen eggs.",
+      "examples": [
+        {
+          "text": "We bought a dozen eggs.",
+          "translation": "私たちは卵を12個買った。"
+        }
+      ]
     },
     {
       "word": "quarter",
@@ -2161,7 +3769,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use a quarter of the onion."
+      "example": "Use a quarter of the onion.",
+      "examples": [
+        {
+          "text": "Use a quarter of the onion.",
+          "translation": "玉ねぎの1/4を使え。"
+        }
+      ]
     },
     {
       "word": "kilo",
@@ -2169,7 +3783,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I'd like a kilo of potatoes."
+      "example": "I'd like a kilo of potatoes.",
+      "examples": [
+        {
+          "text": "I'd like a kilo of potatoes.",
+          "translation": "私はジャガイモ1キロが欲しい。"
+        }
+      ]
     },
     {
       "word": "imperial",
@@ -2177,7 +3797,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This recipe uses imperial measurements."
+      "example": "This recipe uses imperial measurements.",
+      "examples": [
+        {
+          "text": "This recipe uses imperial measurements.",
+          "translation": "英式計量法を用いる。"
+        }
+      ]
     },
     {
       "word": "dash",
@@ -2185,7 +3811,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add a dash of vinegar."
+      "example": "Add a dash of vinegar.",
+      "examples": [
+        {
+          "text": "Add a dash of vinegar.",
+          "translation": "少し酢を加えて"
+        }
+      ]
     },
     {
       "word": "mouthful",
@@ -2193,7 +3825,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Take a small mouthful first."
+      "example": "Take a small mouthful first.",
+      "examples": [
+        {
+          "text": "Take a small mouthful first.",
+          "translation": "まず少しだけ口に入れてください。"
+        }
+      ]
     },
     {
       "word": "bite",
@@ -2201,7 +3839,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Let the bread cool before you bite it."
+      "example": "Let the bread cool before you bite it.",
+      "examples": [
+        {
+          "text": "Let the bread cool before you bite it.",
+          "translation": "パンを噛む前に冷やしておく。"
+        }
+      ]
     },
     {
       "word": "gulp",
@@ -2209,7 +3853,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Don't gulp your soup so quickly."
+      "example": "Don't gulp your soup so quickly.",
+      "examples": [
+        {
+          "text": "Don't gulp your soup so quickly.",
+          "translation": "スープをそんなに早く飲むな。"
+        }
+      ]
     },
     {
       "word": "chew",
@@ -2217,7 +3867,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Chew each mouthful slowly."
+      "example": "Chew each mouthful slowly.",
+      "examples": [
+        {
+          "text": "Chew each mouthful slowly.",
+          "translation": "ゆっくりと噛んでください。"
+        }
+      ]
     },
     {
       "word": "nibble",
@@ -2225,7 +3881,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We nibble crackers while dinner cooks."
+      "example": "We nibble crackers while dinner cooks.",
+      "examples": [
+        {
+          "text": "We nibble crackers while dinner cooks.",
+          "translation": "夕食が作られる間に クラッカーを食べる"
+        }
+      ]
     },
     {
       "word": "lick",
@@ -2233,7 +3895,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The child began to lick the ice cream."
+      "example": "The child began to lick the ice cream.",
+      "examples": [
+        {
+          "text": "The child began to lick the ice cream.",
+          "translation": "子供はアイスクリームを舐め始めた。"
+        }
+      ]
     },
     {
       "word": "slurp",
@@ -2241,7 +3909,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He likes to slurp his noodles."
+      "example": "He likes to slurp his noodles.",
+      "examples": [
+        {
+          "text": "He likes to slurp his noodles.",
+          "translation": "彼は音を立てて麺をすするのが好きです。"
+        }
+      ]
     },
     {
       "word": "crunch",
@@ -2249,7 +3923,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I could hear her crunch the apple."
+      "example": "I could hear her crunch the apple.",
+      "examples": [
+        {
+          "text": "I could hear her crunch the apple.",
+          "translation": "彼女がリンゴをかじる、しゃりしゃりという音が聞こえました。"
+        }
+      ]
     },
     {
       "word": "gnaw",
@@ -2257,7 +3937,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The puppy likes to gnaw on a bone."
+      "example": "The puppy likes to gnaw on a bone.",
+      "examples": [
+        {
+          "text": "The puppy likes to gnaw on a bone.",
+          "translation": "子犬は骨を噛むのが好きだ。"
+        }
+      ]
     },
     {
       "word": "eat",
@@ -2265,7 +3951,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We eat lunch together on Sundays."
+      "example": "We eat lunch together on Sundays.",
+      "examples": [
+        {
+          "text": "We eat lunch together on Sundays.",
+          "translation": "日曜日は一緒に昼食を食べる。"
+        }
+      ]
     },
     {
       "word": "dine",
@@ -2273,7 +3965,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We plan to dine at the new restaurant."
+      "example": "We plan to dine at the new restaurant.",
+      "examples": [
+        {
+          "text": "We plan to dine at the new restaurant.",
+          "translation": "私たちは新しいレストランで食事をするつもりです。"
+        }
+      ]
     },
     {
       "word": "snack",
@@ -2281,7 +3979,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I packed a small snack for later."
+      "example": "I packed a small snack for later.",
+      "examples": [
+        {
+          "text": "I packed a small snack for later.",
+          "translation": "後で食べるために小さなスナックを持ってきた。"
+        }
+      ]
     },
     {
       "word": "savor",
@@ -2289,7 +3993,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Take time to savor the flavor."
+      "example": "Take time to savor the flavor.",
+      "examples": [
+        {
+          "text": "Take time to savor the flavor.",
+          "translation": "味を味わう時間を取ってください。"
+        }
+      ]
     },
     {
       "word": "devour",
@@ -2297,7 +4007,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The hungry children devour their sandwiches."
+      "example": "The hungry children devour their sandwiches.",
+      "examples": [
+        {
+          "text": "The hungry children devour their sandwiches.",
+          "translation": "空腹な子供たちはサンドイッチを食べ尽くしている。"
+        }
+      ]
     },
     {
       "word": "consume",
@@ -2305,7 +4021,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The bakery will consume several bags of flour."
+      "example": "The bakery will consume several bags of flour.",
+      "examples": [
+        {
+          "text": "The bakery will consume several bags of flour.",
+          "translation": "パン屋は数袋の小麦粉を消費する。"
+        }
+      ]
     },
     {
       "word": "fast",
@@ -2313,7 +4035,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Some people fast for religious reasons."
+      "example": "Some people fast for religious reasons.",
+      "examples": [
+        {
+          "text": "Some people fast for religious reasons.",
+          "translation": "宗教的な理由で断食する人もいる。"
+        }
+      ]
     },
     {
       "word": "starve",
@@ -2321,7 +4049,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Without enough food, animals can starve."
+      "example": "Without enough food, animals can starve.",
+      "examples": [
+        {
+          "text": "Without enough food, animals can starve.",
+          "translation": "十分な食べ物がなければ、動物は餓死することがあります。"
+        }
+      ]
     },
     {
       "word": "nourish",
@@ -2329,7 +4063,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A balanced meal can nourish the body."
+      "example": "A balanced meal can nourish the body.",
+      "examples": [
+        {
+          "text": "A balanced meal can nourish the body.",
+          "translation": "バランスの取れた食事は、体に栄養を与えてくれます。"
+        }
+      ]
     },
     {
       "word": "cook",
@@ -2337,7 +4077,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I like to cook for my friends."
+      "example": "I like to cook for my friends.",
+      "examples": [
+        {
+          "text": "I like to cook for my friends.",
+          "translation": "友達のために料理するのが好きです。"
+        }
+      ]
     },
     {
       "word": "boil",
@@ -2345,7 +4091,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Wait for the water to boil."
+      "example": "Wait for the water to boil.",
+      "examples": [
+        {
+          "text": "Wait for the water to boil.",
+          "translation": "水が沸騰するのを待ってください。"
+        }
+      ]
     },
     {
       "word": "simmer",
@@ -2353,7 +4105,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Let the soup simmer gently."
+      "example": "Let the soup simmer gently.",
+      "examples": [
+        {
+          "text": "Let the soup simmer gently.",
+          "translation": "スープをゆっくり煮込む。"
+        }
+      ]
     },
     {
       "word": "blanch",
@@ -2361,7 +4119,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Blanch the vegetables briefly before cooling them."
+      "example": "Blanch the vegetables briefly before cooling them.",
+      "examples": [
+        {
+          "text": "Blanch the vegetables briefly before cooling them.",
+          "translation": "野菜をさっとゆでてから冷やしてください。"
+        }
+      ]
     },
     {
       "word": "braise",
@@ -2369,7 +4133,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We will braise the beef slowly."
+      "example": "We will braise the beef slowly.",
+      "examples": [
+        {
+          "text": "We will braise the beef slowly.",
+          "translation": "牛肉をゆっくり煮込む。"
+        }
+      ]
     },
     {
       "word": "roast",
@@ -2377,7 +4147,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Roast the potatoes until golden."
+      "example": "Roast the potatoes until golden.",
+      "examples": [
+        {
+          "text": "Roast the potatoes until golden.",
+          "translation": "ジャガイモを金色になるまで焼く。"
+        }
+      ]
     },
     {
       "word": "grill",
@@ -2385,7 +4161,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We grill the vegetables outside."
+      "example": "We grill the vegetables outside.",
+      "examples": [
+        {
+          "text": "We grill the vegetables outside.",
+          "translation": "野菜は外で焼く。"
+        }
+      ]
     },
     {
       "word": "barbecue",
@@ -2393,7 +4175,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We invited our neighbors to a barbecue."
+      "example": "We invited our neighbors to a barbecue.",
+      "examples": [
+        {
+          "text": "We invited our neighbors to a barbecue.",
+          "translation": "私たちは隣人をバーベキューに招待した。"
+        }
+      ]
     },
     {
       "word": "saute",
@@ -2401,7 +4189,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Saute the mushrooms in a little oil."
+      "example": "Saute the mushrooms in a little oil.",
+      "examples": [
+        {
+          "text": "Saute the mushrooms in a little oil.",
+          "translation": "少し油でキノコを炒める。"
+        }
+      ]
     },
     {
       "word": "deep-fry",
@@ -2409,7 +4203,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The chef will deep-fry the battered fish."
+      "example": "The chef will deep-fry the battered fish.",
+      "examples": [
+        {
+          "text": "The chef will deep-fry the battered fish.",
+          "translation": "シェフは、衣を付けた魚をたっぷりの油で揚げます。"
+        }
+      ]
     },
     {
       "word": "heat",
@@ -2417,7 +4217,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Heat the milk in a saucepan."
+      "example": "Heat the milk in a saucepan.",
+      "examples": [
+        {
+          "text": "Heat the milk in a saucepan.",
+          "translation": "鍋で牛乳を熱してください。"
+        }
+      ]
     },
     {
       "word": "warm",
@@ -2425,7 +4231,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Please warm the plates before serving."
+      "example": "Please warm the plates before serving.",
+      "examples": [
+        {
+          "text": "Please warm the plates before serving.",
+          "translation": "料理を出す前に皿を温めてください。"
+        }
+      ]
     },
     {
       "word": "chill",
@@ -2433,7 +4245,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Chill the dessert before serving it."
+      "example": "Chill the dessert before serving it.",
+      "examples": [
+        {
+          "text": "Chill the dessert before serving it.",
+          "translation": "デザートを出す前に冷やす。"
+        }
+      ]
     },
     {
       "word": "freeze",
@@ -2441,7 +4259,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The water will freeze overnight."
+      "example": "The water will freeze overnight.",
+      "examples": [
+        {
+          "text": "The water will freeze overnight.",
+          "translation": "水は一晩で凍る。"
+        }
+      ]
     },
     {
       "word": "defrost",
@@ -2449,7 +4273,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I need to defrost the freezer."
+      "example": "I need to defrost the freezer.",
+      "examples": [
+        {
+          "text": "I need to defrost the freezer.",
+          "translation": "私は冷凍庫の霜を取る必要があります。"
+        }
+      ]
     },
     {
       "word": "thaw",
@@ -2457,7 +4287,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The ice will thaw in the warm room."
+      "example": "The ice will thaw in the warm room.",
+      "examples": [
+        {
+          "text": "The ice will thaw in the warm room.",
+          "translation": "暖かい部屋では氷が溶ける。"
+        }
+      ]
     },
     {
       "word": "soften",
@@ -2465,7 +4301,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Warm the butter gently to soften it."
+      "example": "Warm the butter gently to soften it.",
+      "examples": [
+        {
+          "text": "Warm the butter gently to soften it.",
+          "translation": "バターを温めて柔らかくする。"
+        }
+      ]
     },
     {
       "word": "harden",
@@ -2473,7 +4315,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Let the chocolate harden before decorating."
+      "example": "Let the chocolate harden before decorating.",
+      "examples": [
+        {
+          "text": "Let the chocolate harden before decorating.",
+          "translation": "装飾する前にチョコレートを硬化させる。"
+        }
+      ]
     },
     {
       "word": "whisk",
@@ -2481,7 +4329,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use a whisk to mix the sauce."
+      "example": "Use a whisk to mix the sauce.",
+      "examples": [
+        {
+          "text": "Use a whisk to mix the sauce.",
+          "translation": "泡立て器でソースを混ぜてください。"
+        }
+      ]
     },
     {
       "word": "beat",
@@ -2489,7 +4343,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Beat the eggs in a bowl."
+      "example": "Beat the eggs in a bowl.",
+      "examples": [
+        {
+          "text": "Beat the eggs in a bowl.",
+          "translation": "ボウルで卵をよくかき混ぜてください。"
+        }
+      ]
     },
     {
       "word": "mix",
@@ -2497,7 +4357,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Mix the dry ingredients first."
+      "example": "Mix the dry ingredients first.",
+      "examples": [
+        {
+          "text": "Mix the dry ingredients first.",
+          "translation": "まず粉類などの乾いた材料を混ぜてください。"
+        }
+      ]
     },
     {
       "word": "combine",
@@ -2505,7 +4371,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Combine the flour and sugar."
+      "example": "Combine the flour and sugar.",
+      "examples": [
+        {
+          "text": "Combine the flour and sugar.",
+          "translation": "小麦粉と砂糖を混ぜる。"
+        }
+      ]
     },
     {
       "word": "fold",
@@ -2513,7 +4385,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Gently fold the cream into the mixture."
+      "example": "Gently fold the cream into the mixture.",
+      "examples": [
+        {
+          "text": "Gently fold the cream into the mixture.",
+          "translation": "混ぜたものにクリームを加え、さっくりと混ぜ合わせてください。"
+        }
+      ]
     },
     {
       "word": "strain",
@@ -2521,7 +4399,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Strain the sauce through a fine sieve."
+      "example": "Strain the sauce through a fine sieve.",
+      "examples": [
+        {
+          "text": "Strain the sauce through a fine sieve.",
+          "translation": "目の細かいざるでソースをこしてください。"
+        }
+      ]
     },
     {
       "word": "drain",
@@ -2529,7 +4413,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Drain the beans before adding them."
+      "example": "Drain the beans before adding them.",
+      "examples": [
+        {
+          "text": "Drain the beans before adding them.",
+          "translation": "豆を入れる前に水を切ってから入れる。"
+        }
+      ]
     },
     {
       "word": "wash",
@@ -2537,7 +4427,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Wash the apples before slicing them."
+      "example": "Wash the apples before slicing them.",
+      "examples": [
+        {
+          "text": "Wash the apples before slicing them.",
+          "translation": "リンゴを切る前に洗う。"
+        }
+      ]
     },
     {
       "word": "peel",
@@ -2545,7 +4441,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Peel the carrots with this tool."
+      "example": "Peel the carrots with this tool.",
+      "examples": [
+        {
+          "text": "Peel the carrots with this tool.",
+          "translation": "この道具でニンジンの皮をむいてください。"
+        }
+      ]
     },
     {
       "word": "dice",
@@ -2553,7 +4455,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Dice the onion into small pieces."
+      "example": "Dice the onion into small pieces.",
+      "examples": [
+        {
+          "text": "Dice the onion into small pieces.",
+          "translation": "玉ねぎを小さなさいの目に切ってください。"
+        }
+      ]
     },
     {
       "word": "mince",
@@ -2561,7 +4469,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Mince the meat with a sharp knife."
+      "example": "Mince the meat with a sharp knife.",
+      "examples": [
+        {
+          "text": "Mince the meat with a sharp knife.",
+          "translation": "鋭いナイフで肉を細かく切る。"
+        }
+      ]
     },
     {
       "word": "shred",
@@ -2569,7 +4483,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Shred the cabbage for the salad."
+      "example": "Shred the cabbage for the salad.",
+      "examples": [
+        {
+          "text": "Shred the cabbage for the salad.",
+          "translation": "サラダ用にキャベツを千切りにしてください。"
+        }
+      ]
     },
     {
       "word": "crush",
@@ -2577,7 +4497,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Crush the crackers into small crumbs."
+      "example": "Crush the crackers into small crumbs.",
+      "examples": [
+        {
+          "text": "Crush the crackers into small crumbs.",
+          "translation": "クラッカーを小さな粉に砕く。"
+        }
+      ]
     },
     {
       "word": "mash",
@@ -2585,7 +4511,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Mash the potatoes until smooth."
+      "example": "Mash the potatoes until smooth.",
+      "examples": [
+        {
+          "text": "Mash the potatoes until smooth.",
+          "translation": "ジャガイモを滑らかになるまでつぶしてください。"
+        }
+      ]
     },
     {
       "word": "squeeze",
@@ -2593,7 +4525,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Squeeze the lemon over the salad."
+      "example": "Squeeze the lemon over the salad.",
+      "examples": [
+        {
+          "text": "Squeeze the lemon over the salad.",
+          "translation": "レモンをサラダにかけて"
+        }
+      ]
     },
     {
       "word": "zest",
@@ -2601,7 +4539,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add grated lemon zest to the batter."
+      "example": "Add grated lemon zest to the batter.",
+      "examples": [
+        {
+          "text": "Add grated lemon zest to the batter.",
+          "translation": "生地にレモンの皮をかける。"
+        }
+      ]
     },
     {
       "word": "skin",
@@ -2609,7 +4553,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The peach has soft, fuzzy skin."
+      "example": "The peach has soft, fuzzy skin.",
+      "examples": [
+        {
+          "text": "The peach has soft, fuzzy skin.",
+          "translation": "モモは柔らかくてふわふわの皮がある。"
+        }
+      ]
     },
     {
       "word": "stuff",
@@ -2617,7 +4567,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Stuff the peppers with cooked rice."
+      "example": "Stuff the peppers with cooked rice.",
+      "examples": [
+        {
+          "text": "Stuff the peppers with cooked rice.",
+          "translation": "ピーマンに炊いたご飯を詰めてください。"
+        }
+      ]
     },
     {
       "word": "wrap",
@@ -2625,7 +4581,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Wrap the sandwiches in paper."
+      "example": "Wrap the sandwiches in paper.",
+      "examples": [
+        {
+          "text": "Wrap the sandwiches in paper.",
+          "translation": "サンドイッチを紙に包んで。"
+        }
+      ]
     },
     {
       "word": "coat",
@@ -2633,7 +4595,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Coat the fish in flour."
+      "example": "Coat the fish in flour.",
+      "examples": [
+        {
+          "text": "Coat the fish in flour.",
+          "translation": "魚に小麦粉をまぶしてください。"
+        }
+      ]
     },
     {
       "word": "sprinkle",
@@ -2641,7 +4609,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Sprinkle sugar over the berries."
+      "example": "Sprinkle sugar over the berries.",
+      "examples": [
+        {
+          "text": "Sprinkle sugar over the berries.",
+          "translation": "砂糖をベリーにかける。"
+        }
+      ]
     },
     {
       "word": "dust",
@@ -2649,7 +4623,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Dust the cake with icing sugar."
+      "example": "Dust the cake with icing sugar.",
+      "examples": [
+        {
+          "text": "Dust the cake with icing sugar.",
+          "translation": "ケーキに粉砂糖を振りかけてください。"
+        }
+      ]
     },
     {
       "word": "rub",
@@ -2657,7 +4637,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Rub the bowl with a clean cloth."
+      "example": "Rub the bowl with a clean cloth.",
+      "examples": [
+        {
+          "text": "Rub the bowl with a clean cloth.",
+          "translation": "清潔な布でボウルを擦れ。"
+        }
+      ]
     },
     {
       "word": "soak",
@@ -2665,7 +4651,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Soak the beans in water overnight."
+      "example": "Soak the beans in water overnight.",
+      "examples": [
+        {
+          "text": "Soak the beans in water overnight.",
+          "translation": "豆を一晩水に浸しておく。"
+        }
+      ]
     },
     {
       "word": "ferment",
@@ -2673,7 +4665,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The mixture will ferment in the jar."
+      "example": "The mixture will ferment in the jar.",
+      "examples": [
+        {
+          "text": "The mixture will ferment in the jar.",
+          "translation": "混合物は瓶の中で発酵する。"
+        }
+      ]
     },
     {
       "word": "brew",
@@ -2681,7 +4679,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This small company will brew its own beer."
+      "example": "This small company will brew its own beer.",
+      "examples": [
+        {
+          "text": "This small company will brew its own beer.",
+          "translation": "この小さな会社は自分でビールを醸造する。"
+        }
+      ]
     },
     {
       "word": "steep",
@@ -2689,7 +4693,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Let the tea steep before pouring."
+      "example": "Let the tea steep before pouring.",
+      "examples": [
+        {
+          "text": "Let the tea steep before pouring.",
+          "translation": "お茶を注ぐ前に、しばらく蒸らしてください。"
+        }
+      ]
     },
     {
       "word": "season",
@@ -2697,7 +4707,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Season the soup with salt and pepper."
+      "example": "Season the soup with salt and pepper.",
+      "examples": [
+        {
+          "text": "Season the soup with salt and pepper.",
+          "translation": "スープに塩胡椒をかける。"
+        }
+      ]
     },
     {
       "word": "decorate",
@@ -2705,7 +4721,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We decorate the cake with fresh fruit."
+      "example": "We decorate the cake with fresh fruit.",
+      "examples": [
+        {
+          "text": "We decorate the cake with fresh fruit.",
+          "translation": "ケーキを新鮮な果物で飾る。"
+        }
+      ]
     },
     {
       "word": "serve",
@@ -2713,7 +4735,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Serve the soup while it is hot."
+      "example": "Serve the soup while it is hot.",
+      "examples": [
+        {
+          "text": "Serve the soup while it is hot.",
+          "translation": "スープを熱いまま出してください。"
+        }
+      ]
     },
     {
       "word": "plate",
@@ -2721,7 +4749,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Put the sandwich on a plate."
+      "example": "Put the sandwich on a plate.",
+      "examples": [
+        {
+          "text": "Put the sandwich on a plate.",
+          "translation": "サンドイッチを皿に置け。"
+        }
+      ]
     },
     {
       "word": "present",
@@ -2729,7 +4763,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The chef will present the dessert on a white plate."
+      "example": "The chef will present the dessert on a white plate.",
+      "examples": [
+        {
+          "text": "The chef will present the dessert on a white plate.",
+          "translation": "シェフは白い皿にデザートを出す。"
+        }
+      ]
     },
     {
       "word": "carve",
@@ -2737,7 +4777,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Would you carve the roast for us?"
+      "example": "Would you carve the roast for us?",
+      "examples": [
+        {
+          "text": "Would you carve the roast for us?",
+          "translation": "私たちのために 焼き肉を切ってくれないか?"
+        }
+      ]
     },
     {
       "word": "measure",
@@ -2745,7 +4791,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Measure the flour carefully."
+      "example": "Measure the flour carefully.",
+      "examples": [
+        {
+          "text": "Measure the flour carefully.",
+          "translation": "粉を慎重に計ってください。"
+        }
+      ]
     },
     {
       "word": "weigh",
@@ -2753,7 +4805,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Weigh the ingredients before mixing them."
+      "example": "Weigh the ingredients before mixing them.",
+      "examples": [
+        {
+          "text": "Weigh the ingredients before mixing them.",
+          "translation": "混ぜる前に、材料の重さを量ってください。"
+        }
+      ]
     },
     {
       "word": "reduce",
@@ -2761,7 +4819,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Simmer the sauce to reduce it."
+      "example": "Simmer the sauce to reduce it.",
+      "examples": [
+        {
+          "text": "Simmer the sauce to reduce it.",
+          "translation": "ソースを煮込んで減らす。"
+        }
+      ]
     },
     {
       "word": "thicken",
@@ -2769,7 +4833,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A little flour will thicken the gravy."
+      "example": "A little flour will thicken the gravy.",
+      "examples": [
+        {
+          "text": "A little flour will thicken the gravy.",
+          "translation": "少し小麦粉を加えればソースが濃くなる。"
+        }
+      ]
     },
     {
       "word": "scrub",
@@ -2777,7 +4847,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Scrub the potatoes under running water."
+      "example": "Scrub the potatoes under running water.",
+      "examples": [
+        {
+          "text": "Scrub the potatoes under running water.",
+          "translation": "流水でジャガイモをこすり洗いしてください。"
+        }
+      ]
     },
     {
       "word": "grease",
@@ -2785,7 +4861,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Grease the cake tin with butter."
+      "example": "Grease the cake tin with butter.",
+      "examples": [
+        {
+          "text": "Grease the cake tin with butter.",
+          "translation": "ケーキの型にバターを塗る。"
+        }
+      ]
     },
     {
       "word": "burn",
@@ -2793,7 +4875,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The logs burn in the kitchen fireplace."
+      "example": "The logs burn in the kitchen fireplace.",
+      "examples": [
+        {
+          "text": "The logs burn in the kitchen fireplace.",
+          "translation": "木材は台所の暖炉で燃えている。"
+        }
+      ]
     },
     {
       "word": "scorch",
@@ -2801,7 +4889,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Too much heat can scorch the milk."
+      "example": "Too much heat can scorch the milk.",
+      "examples": [
+        {
+          "text": "Too much heat can scorch the milk.",
+          "translation": "熱が強すぎると牛乳が焦げる。"
+        }
+      ]
     },
     {
       "word": "spoil",
@@ -2809,7 +4903,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Fresh food can spoil in warm weather."
+      "example": "Fresh food can spoil in warm weather.",
+      "examples": [
+        {
+          "text": "Fresh food can spoil in warm weather.",
+          "translation": "暖かい天気では新鮮な食べ物は腐る。"
+        }
+      ]
     },
     {
       "word": "curdle",
@@ -2817,7 +4917,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The milk may curdle when you add lemon."
+      "example": "The milk may curdle when you add lemon.",
+      "examples": [
+        {
+          "text": "The milk may curdle when you add lemon.",
+          "translation": "レモンを加えると牛乳が凝固する。"
+        }
+      ]
     },
     {
       "word": "dissolve",
@@ -2825,7 +4931,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Dissolve the sugar in warm water."
+      "example": "Dissolve the sugar in warm water.",
+      "examples": [
+        {
+          "text": "Dissolve the sugar in warm water.",
+          "translation": "砂糖を温かい水に溶かす。"
+        }
+      ]
     },
     {
       "word": "bubble",
@@ -2833,7 +4945,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The sauce began to bubble."
+      "example": "The sauce began to bubble.",
+      "examples": [
+        {
+          "text": "The sauce began to bubble.",
+          "translation": "ソースが泡立ち始めた。"
+        }
+      ]
     },
     {
       "word": "skim",
@@ -2841,7 +4959,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Skim the foam from the broth."
+      "example": "Skim the foam from the broth.",
+      "examples": [
+        {
+          "text": "Skim the foam from the broth.",
+          "translation": "煮汁の表面の泡をすくい取ってください。"
+        }
+      ]
     },
     {
       "word": "sizzle",
@@ -2849,7 +4973,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Listen to the onions sizzle in the pan."
+      "example": "Listen to the onions sizzle in the pan.",
+      "examples": [
+        {
+          "text": "Listen to the onions sizzle in the pan.",
+          "translation": "鍋の中で玉ねぎがじゅうじゅうと焼ける音を聞いてください。"
+        }
+      ]
     },
     {
       "word": "rise",
@@ -2857,7 +4987,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Leave the dough to rise."
+      "example": "Leave the dough to rise.",
+      "examples": [
+        {
+          "text": "Leave the dough to rise.",
+          "translation": "生地を発酵させる。"
+        }
+      ]
     },
     {
       "word": "freezer",
@@ -2865,7 +5001,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Put the ice cream in the freezer."
+      "example": "Put the ice cream in the freezer.",
+      "examples": [
+        {
+          "text": "Put the ice cream in the freezer.",
+          "translation": "アイスクリームを冷凍庫に入れろ。"
+        }
+      ]
     },
     {
       "word": "refrigerator",
@@ -2873,7 +5015,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The milk is in the refrigerator."
+      "example": "The milk is in the refrigerator.",
+      "examples": [
+        {
+          "text": "The milk is in the refrigerator.",
+          "translation": "牛乳は冷蔵庫にある。"
+        }
+      ]
     },
     {
       "word": "oven",
@@ -2881,7 +5029,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Preheat the oven before baking."
+      "example": "Preheat the oven before baking.",
+      "examples": [
+        {
+          "text": "Preheat the oven before baking.",
+          "translation": "焼く前にオーブンを予熱する。"
+        }
+      ]
     },
     {
       "word": "stove",
@@ -2889,7 +5043,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The soup is on the stove."
+      "example": "The soup is on the stove.",
+      "examples": [
+        {
+          "text": "The soup is on the stove.",
+          "translation": "スープがストーブの上にある。"
+        }
+      ]
     },
     {
       "word": "range",
@@ -2897,7 +5057,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The kitchen has a large gas range."
+      "example": "The kitchen has a large gas range.",
+      "examples": [
+        {
+          "text": "The kitchen has a large gas range.",
+          "translation": "その台所には大きなガスレンジがあります。"
+        }
+      ]
     },
     {
       "word": "toaster",
@@ -2905,7 +5071,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The bread is in the toaster."
+      "example": "The bread is in the toaster.",
+      "examples": [
+        {
+          "text": "The bread is in the toaster.",
+          "translation": "パンはトースターにある。"
+        }
+      ]
     },
     {
       "word": "mixer",
@@ -2913,7 +5085,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use the mixer to beat the cream."
+      "example": "Use the mixer to beat the cream.",
+      "examples": [
+        {
+          "text": "Use the mixer to beat the cream.",
+          "translation": "ミキサーでクリームを泡立ててください。"
+        }
+      ]
     },
     {
       "word": "processor",
@@ -2921,7 +5099,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "A food processor can chop these vegetables."
+      "example": "A food processor can chop these vegetables.",
+      "examples": [
+        {
+          "text": "A food processor can chop these vegetables.",
+          "translation": "これらの野菜は食品加工機で切ることができる。"
+        }
+      ]
     },
     {
       "word": "saucepan",
@@ -2929,7 +5113,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Melt the butter in a saucepan."
+      "example": "Melt the butter in a saucepan.",
+      "examples": [
+        {
+          "text": "Melt the butter in a saucepan.",
+          "translation": "バターを鍋で溶かす。"
+        }
+      ]
     },
     {
       "word": "pot",
@@ -2937,7 +5127,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Put a lid on the pot."
+      "example": "Put a lid on the pot.",
+      "examples": [
+        {
+          "text": "Put a lid on the pot.",
+          "translation": "鍋に蓋をつけて。"
+        }
+      ]
     },
     {
       "word": "wok",
@@ -2945,7 +5141,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Heat the oil in a wok."
+      "example": "Heat the oil in a wok.",
+      "examples": [
+        {
+          "text": "Heat the oil in a wok.",
+          "translation": "中華鍋で油を熱してください。"
+        }
+      ]
     },
     {
       "word": "skillet",
@@ -2953,7 +5155,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Cook the eggs in a skillet."
+      "example": "Cook the eggs in a skillet.",
+      "examples": [
+        {
+          "text": "Cook the eggs in a skillet.",
+          "translation": "卵をフライパンで煮る。"
+        }
+      ]
     },
     {
       "word": "bowl",
@@ -2961,7 +5169,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Pour the soup into a bowl."
+      "example": "Pour the soup into a bowl.",
+      "examples": [
+        {
+          "text": "Pour the soup into a bowl.",
+          "translation": "スープをボウルに注ぐ。"
+        }
+      ]
     },
     {
       "word": "mug",
@@ -2969,7 +5183,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This mug keeps my tea warm."
+      "example": "This mug keeps my tea warm.",
+      "examples": [
+        {
+          "text": "This mug keeps my tea warm.",
+          "translation": "このマグカップはお茶を温かく保ちます。"
+        }
+      ]
     },
     {
       "word": "glass",
@@ -2977,7 +5197,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I'd like a glass of water."
+      "example": "I'd like a glass of water.",
+      "examples": [
+        {
+          "text": "I'd like a glass of water.",
+          "translation": "水を一杯いただきたい。"
+        }
+      ]
     },
     {
       "word": "tumbler",
@@ -2985,7 +5211,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She filled the tumbler with juice."
+      "example": "She filled the tumbler with juice.",
+      "examples": [
+        {
+          "text": "She filled the tumbler with juice.",
+          "translation": "彼女はタンブラーにジュースを入れた。"
+        }
+      ]
     },
     {
       "word": "jug",
@@ -2993,7 +5225,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The jug is full of milk."
+      "example": "The jug is full of milk.",
+      "examples": [
+        {
+          "text": "The jug is full of milk.",
+          "translation": "ジャグはミルクでいっぱいだ。"
+        }
+      ]
     },
     {
       "word": "bottle",
@@ -3001,7 +5239,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Open a bottle of sparkling water."
+      "example": "Open a bottle of sparkling water.",
+      "examples": [
+        {
+          "text": "Open a bottle of sparkling water.",
+          "translation": "炭酸水のボトルを1本開けてください。"
+        }
+      ]
     },
     {
       "word": "jar",
@@ -3009,7 +5253,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Keep the jam in a clean jar."
+      "example": "Keep the jam in a clean jar.",
+      "examples": [
+        {
+          "text": "Keep the jam in a clean jar.",
+          "translation": "ジャムはきれいな瓶に入れておけ。"
+        }
+      ]
     },
     {
       "word": "tin",
@@ -3017,7 +5267,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We opened a tin of tomatoes."
+      "example": "We opened a tin of tomatoes.",
+      "examples": [
+        {
+          "text": "We opened a tin of tomatoes.",
+          "translation": "私たちはトマトの缶を開けた。"
+        }
+      ]
     },
     {
       "word": "carton",
@@ -3025,7 +5281,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "There is a carton of milk on the shelf."
+      "example": "There is a carton of milk on the shelf.",
+      "examples": [
+        {
+          "text": "There is a carton of milk on the shelf.",
+          "translation": "棚に牛乳の箱がある。"
+        }
+      ]
     },
     {
       "word": "package",
@@ -3033,7 +5295,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Open the package of crackers."
+      "example": "Open the package of crackers.",
+      "examples": [
+        {
+          "text": "Open the package of crackers.",
+          "translation": "クラッカーの袋を開けて。"
+        }
+      ]
     },
     {
       "word": "bag",
@@ -3041,7 +5309,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She carried a bag of groceries."
+      "example": "She carried a bag of groceries.",
+      "examples": [
+        {
+          "text": "She carried a bag of groceries.",
+          "translation": "彼女は食料品の袋を持っていた。"
+        }
+      ]
     },
     {
       "word": "basket",
@@ -3049,7 +5323,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Put the bread in the basket."
+      "example": "Put the bread in the basket.",
+      "examples": [
+        {
+          "text": "Put the bread in the basket.",
+          "translation": "パンをバスケットに入れなさい。"
+        }
+      ]
     },
     {
       "word": "container",
@@ -3057,7 +5337,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Store the leftovers in a sealed container."
+      "example": "Store the leftovers in a sealed container.",
+      "examples": [
+        {
+          "text": "Store the leftovers in a sealed container.",
+          "translation": "残りは密封容器に入れて保管する。"
+        }
+      ]
     },
     {
       "word": "cork",
@@ -3065,7 +5351,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cork broke as he opened the bottle."
+      "example": "The cork broke as he opened the bottle.",
+      "examples": [
+        {
+          "text": "The cork broke as he opened the bottle.",
+          "translation": "彼が瓶を開けるとき、コルクが割れた。"
+        }
+      ]
     },
     {
       "word": "cap",
@@ -3073,7 +5365,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Screw the cap back on the bottle."
+      "example": "Screw the cap back on the bottle.",
+      "examples": [
+        {
+          "text": "Screw the cap back on the bottle.",
+          "translation": "瓶のキャップをねじ込んで"
+        }
+      ]
     },
     {
       "word": "funnel",
@@ -3081,7 +5379,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use a funnel to fill the bottle."
+      "example": "Use a funnel to fill the bottle.",
+      "examples": [
+        {
+          "text": "Use a funnel to fill the bottle.",
+          "translation": "じょうごを使って瓶に液体を入れてください。"
+        }
+      ]
     },
     {
       "word": "colander",
@@ -3089,7 +5393,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Drain the pasta in a colander."
+      "example": "Drain the pasta in a colander.",
+      "examples": [
+        {
+          "text": "Drain the pasta in a colander.",
+          "translation": "パスタをざるに上げて水を切ってください。"
+        }
+      ]
     },
     {
       "word": "strainer",
@@ -3097,7 +5407,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Pour the tea through a strainer."
+      "example": "Pour the tea through a strainer.",
+      "examples": [
+        {
+          "text": "Pour the tea through a strainer.",
+          "translation": "茶こしを通してお茶を注いでください。"
+        }
+      ]
     },
     {
       "word": "peeler",
@@ -3105,7 +5421,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use a peeler to remove the skin."
+      "example": "Use a peeler to remove the skin.",
+      "examples": [
+        {
+          "text": "Use a peeler to remove the skin.",
+          "translation": "皮を剥くには剥き器を使う。"
+        }
+      ]
     },
     {
       "word": "knife",
@@ -3113,7 +5435,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This knife is very sharp."
+      "example": "This knife is very sharp.",
+      "examples": [
+        {
+          "text": "This knife is very sharp.",
+          "translation": "このナイフはとても鋭い。"
+        }
+      ]
     },
     {
       "word": "spoon",
@@ -3121,7 +5449,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Stir the soup with a spoon."
+      "example": "Stir the soup with a spoon.",
+      "examples": [
+        {
+          "text": "Stir the soup with a spoon.",
+          "translation": "スープをスプーンでかき混ぜる。"
+        }
+      ]
     },
     {
       "word": "ladle",
@@ -3129,7 +5463,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use a ladle to serve the soup."
+      "example": "Use a ladle to serve the soup.",
+      "examples": [
+        {
+          "text": "Use a ladle to serve the soup.",
+          "translation": "おたまでスープをよそってください。"
+        }
+      ]
     },
     {
       "word": "tongs",
@@ -3137,7 +5477,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Turn the vegetables with tongs."
+      "example": "Turn the vegetables with tongs.",
+      "examples": [
+        {
+          "text": "Turn the vegetables with tongs.",
+          "translation": "トングで野菜を裏返してください。"
+        }
+      ]
     },
     {
       "word": "toothpick",
@@ -3145,7 +5491,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She picked up an olive with a toothpick."
+      "example": "She picked up an olive with a toothpick.",
+      "examples": [
+        {
+          "text": "She picked up an olive with a toothpick.",
+          "translation": "彼女はつまようじでオリーブを1個取りました。"
+        }
+      ]
     },
     {
       "word": "rolling pin",
@@ -3153,7 +5505,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Flatten the dough with a rolling pin."
+      "example": "Flatten the dough with a rolling pin.",
+      "examples": [
+        {
+          "text": "Flatten the dough with a rolling pin.",
+          "translation": "めん棒で生地を平らに伸ばしてください。"
+        }
+      ]
     },
     {
       "word": "frying pan",
@@ -3161,7 +5519,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Heat the frying pan before adding oil."
+      "example": "Heat the frying pan before adding oil.",
+      "examples": [
+        {
+          "text": "Heat the frying pan before adding oil.",
+          "translation": "油を入れる前に鍋を熱すればいい。"
+        }
+      ]
     },
     {
       "word": "teapot",
@@ -3169,7 +5533,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Warm the teapot before adding tea."
+      "example": "Warm the teapot before adding tea.",
+      "examples": [
+        {
+          "text": "Warm the teapot before adding tea.",
+          "translation": "茶葉を入れる前に、ティーポットを温めてください。"
+        }
+      ]
     },
     {
       "word": "corkscrew",
@@ -3177,7 +5547,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We need a corkscrew to open this bottle."
+      "example": "We need a corkscrew to open this bottle.",
+      "examples": [
+        {
+          "text": "We need a corkscrew to open this bottle.",
+          "translation": "この瓶を開けるにはコルクスクリューが必要だ。"
+        }
+      ]
     },
     {
       "word": "dining room",
@@ -3185,7 +5561,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Dinner is ready in the dining room."
+      "example": "Dinner is ready in the dining room.",
+      "examples": [
+        {
+          "text": "Dinner is ready in the dining room.",
+          "translation": "夕食は食堂で用意されている。"
+        }
+      ]
     },
     {
       "word": "dining table",
@@ -3193,7 +5575,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Set the plates on the dining table."
+      "example": "Set the plates on the dining table.",
+      "examples": [
+        {
+          "text": "Set the plates on the dining table.",
+          "translation": "食卓に皿を置いてくれ。"
+        }
+      ]
     },
     {
       "word": "napkin",
@@ -3201,7 +5589,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Place the napkin beside your plate."
+      "example": "Place the napkin beside your plate.",
+      "examples": [
+        {
+          "text": "Place the napkin beside your plate.",
+          "translation": "ナプキンを皿の横に置け。"
+        }
+      ]
     },
     {
       "word": "coaster",
@@ -3209,7 +5603,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Put a coaster under the glass."
+      "example": "Put a coaster under the glass.",
+      "examples": [
+        {
+          "text": "Put a coaster under the glass.",
+          "translation": "グラスの下にコースターを置いて。"
+        }
+      ]
     },
     {
       "word": "sink",
@@ -3217,7 +5617,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Leave the dirty dishes in the sink."
+      "example": "Leave the dirty dishes in the sink.",
+      "examples": [
+        {
+          "text": "Leave the dirty dishes in the sink.",
+          "translation": "汚い皿はシンクに置いておく。"
+        }
+      ]
     },
     {
       "word": "faucet",
@@ -3225,7 +5631,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Turn off the faucet after washing up."
+      "example": "Turn off the faucet after washing up.",
+      "examples": [
+        {
+          "text": "Turn off the faucet after washing up.",
+          "translation": "洗った後は蛇口を閉めておく。"
+        }
+      ]
     },
     {
       "word": "cupboard",
@@ -3233,7 +5645,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cups are in the cupboard."
+      "example": "The cups are in the cupboard.",
+      "examples": [
+        {
+          "text": "The cups are in the cupboard.",
+          "translation": "カップは食器棚にあります。"
+        }
+      ]
     },
     {
       "word": "shelf",
@@ -3241,7 +5659,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Put the jars on the top shelf."
+      "example": "Put the jars on the top shelf.",
+      "examples": [
+        {
+          "text": "Put the jars on the top shelf.",
+          "translation": "瓶を一番上の棚に置け。"
+        }
+      ]
     },
     {
       "word": "drawer",
@@ -3249,7 +5673,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The spoons are in this drawer."
+      "example": "The spoons are in this drawer.",
+      "examples": [
+        {
+          "text": "The spoons are in this drawer.",
+          "translation": "スプーンはこの引き出しにある。"
+        }
+      ]
     },
     {
       "word": "apron",
@@ -3257,7 +5687,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Wear an apron while cooking."
+      "example": "Wear an apron while cooking.",
+      "examples": [
+        {
+          "text": "Wear an apron while cooking.",
+          "translation": "料理するときはエプロンを着て。"
+        }
+      ]
     },
     {
       "word": "potholder",
@@ -3265,7 +5701,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use a potholder to lift the hot pan."
+      "example": "Use a potholder to lift the hot pan.",
+      "examples": [
+        {
+          "text": "Use a potholder to lift the hot pan.",
+          "translation": "熱い鍋を持ち上げるにはポットホルダーを使う。"
+        }
+      ]
     },
     {
       "word": "detergent",
@@ -3273,7 +5715,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add a little detergent to the water."
+      "example": "Add a little detergent to the water.",
+      "examples": [
+        {
+          "text": "Add a little detergent to the water.",
+          "translation": "水に少し洗剤を加えて。"
+        }
+      ]
     },
     {
       "word": "dishcloth",
@@ -3281,7 +5729,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Rinse the dishcloth after washing the plates."
+      "example": "Rinse the dishcloth after washing the plates.",
+      "examples": [
+        {
+          "text": "Rinse the dishcloth after washing the plates.",
+          "translation": "皿を洗った後に、食器拭きを洗い流す。"
+        }
+      ]
     },
     {
       "word": "cutlery",
@@ -3289,7 +5743,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The waiter brought clean cutlery."
+      "example": "The waiter brought clean cutlery.",
+      "examples": [
+        {
+          "text": "The waiter brought clean cutlery.",
+          "translation": "給仕係は、清潔なナイフやフォークを運んできました。"
+        }
+      ]
     },
     {
       "word": "crockery",
@@ -3297,7 +5757,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Please handle the crockery carefully."
+      "example": "Please handle the crockery carefully.",
+      "examples": [
+        {
+          "text": "Please handle the crockery carefully.",
+          "translation": "陶器の食器類は丁寧に扱ってください。"
+        }
+      ]
     },
     {
       "word": "silverware",
@@ -3305,7 +5771,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We polished the silverware before dinner."
+      "example": "We polished the silverware before dinner.",
+      "examples": [
+        {
+          "text": "We polished the silverware before dinner.",
+          "translation": "夕食の前に銀器を磨いた。"
+        }
+      ]
     },
     {
       "word": "glassware",
@@ -3313,7 +5785,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Pack the glassware in soft paper."
+      "example": "Pack the glassware in soft paper.",
+      "examples": [
+        {
+          "text": "Pack the glassware in soft paper.",
+          "translation": "ガラス器を柔らかい紙に包んでください。"
+        }
+      ]
     },
     {
       "word": "porcelain",
@@ -3321,7 +5799,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "These cups are made of porcelain."
+      "example": "These cups are made of porcelain.",
+      "examples": [
+        {
+          "text": "These cups are made of porcelain.",
+          "translation": "これらのカップは磁器でできています。"
+        }
+      ]
     },
     {
       "word": "ceramic",
@@ -3329,7 +5813,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Serve the soup in a ceramic bowl."
+      "example": "Serve the soup in a ceramic bowl.",
+      "examples": [
+        {
+          "text": "Serve the soup in a ceramic bowl.",
+          "translation": "スープを陶器のボウルで出しなさい。"
+        }
+      ]
     },
     {
       "word": "plastic",
@@ -3337,7 +5827,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This container is made of plastic."
+      "example": "This container is made of plastic.",
+      "examples": [
+        {
+          "text": "This container is made of plastic.",
+          "translation": "この容器はプラスチック製です。"
+        }
+      ]
     },
     {
       "word": "wood",
@@ -3345,7 +5841,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cutting board is made of wood."
+      "example": "The cutting board is made of wood.",
+      "examples": [
+        {
+          "text": "The cutting board is made of wood.",
+          "translation": "そのまな板は木製です。"
+        }
+      ]
     },
     {
       "word": "wooden",
@@ -3353,7 +5855,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Use a wooden spoon to stir."
+      "example": "Use a wooden spoon to stir.",
+      "examples": [
+        {
+          "text": "Use a wooden spoon to stir.",
+          "translation": "木のスプーンでかき混ぜる。"
+        }
+      ]
     },
     {
       "word": "disposable",
@@ -3361,7 +5869,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We avoided disposable cups at the picnic."
+      "example": "We avoided disposable cups at the picnic.",
+      "examples": [
+        {
+          "text": "We avoided disposable cups at the picnic.",
+          "translation": "ピクニックでは使い捨てのカップを避けた。"
+        }
+      ]
     },
     {
       "word": "thermos",
@@ -3369,7 +5883,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I filled a thermos with hot tea."
+      "example": "I filled a thermos with hot tea.",
+      "examples": [
+        {
+          "text": "I filled a thermos with hot tea.",
+          "translation": "私は魔法瓶に熱いお茶を入れました。"
+        }
+      ]
     },
     {
       "word": "takeaway",
@@ -3377,7 +5897,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We ordered a takeaway for dinner."
+      "example": "We ordered a takeaway for dinner.",
+      "examples": [
+        {
+          "text": "We ordered a takeaway for dinner.",
+          "translation": "夕食のためにテイクアウトを注文した。"
+        }
+      ]
     },
     {
       "word": "delivery",
@@ -3385,7 +5911,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The food delivery arrived at noon."
+      "example": "The food delivery arrived at noon.",
+      "examples": [
+        {
+          "text": "The food delivery arrived at noon.",
+          "translation": "食料の配達は正午に到着した。"
+        }
+      ]
     },
     {
       "word": "cafeteria",
@@ -3393,7 +5925,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We had lunch in the school cafeteria."
+      "example": "We had lunch in the school cafeteria.",
+      "examples": [
+        {
+          "text": "We had lunch in the school cafeteria.",
+          "translation": "私たちは学校の食堂で昼食をとった。"
+        }
+      ]
     },
     {
       "word": "canteen",
@@ -3401,7 +5939,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The staff canteen serves hot meals."
+      "example": "The staff canteen serves hot meals.",
+      "examples": [
+        {
+          "text": "The staff canteen serves hot meals.",
+          "translation": "職員食堂では暖かい食事を提供している。"
+        }
+      ]
     },
     {
       "word": "bistro",
@@ -3409,7 +5953,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We found a small bistro near the station."
+      "example": "We found a small bistro near the station.",
+      "examples": [
+        {
+          "text": "We found a small bistro near the station.",
+          "translation": "駅の近くに小さなビストロを見つけた。"
+        }
+      ]
     },
     {
       "word": "brasserie",
@@ -3417,7 +5967,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The brasserie serves beer and simple meals."
+      "example": "The brasserie serves beer and simple meals.",
+      "examples": [
+        {
+          "text": "The brasserie serves beer and simple meals.",
+          "translation": "そのブラッスリーでは、ビールと軽い食事を出しています。"
+        }
+      ]
     },
     {
       "word": "coffeehouse",
@@ -3425,7 +5981,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We met at the neighborhood coffeehouse."
+      "example": "We met at the neighborhood coffeehouse.",
+      "examples": [
+        {
+          "text": "We met at the neighborhood coffeehouse.",
+          "translation": "私たちは近所のコーヒーショップで会った。"
+        }
+      ]
     },
     {
       "word": "bar",
@@ -3433,7 +5995,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "They ordered drinks at the bar."
+      "example": "They ordered drinks at the bar.",
+      "examples": [
+        {
+          "text": "They ordered drinks at the bar.",
+          "translation": "彼らはバーで飲み物を注文した。"
+        }
+      ]
     },
     {
       "word": "tavern",
@@ -3441,7 +6009,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The old tavern serves local beer."
+      "example": "The old tavern serves local beer.",
+      "examples": [
+        {
+          "text": "The old tavern serves local beer.",
+          "translation": "古い酒場は地元のビールを提供している。"
+        }
+      ]
     },
     {
       "word": "buffet",
@@ -3449,7 +6023,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The buffet offers several vegetable dishes."
+      "example": "The buffet offers several vegetable dishes.",
+      "examples": [
+        {
+          "text": "The buffet offers several vegetable dishes.",
+          "translation": "そのビュッフェには、野菜料理がいくつかあります。"
+        }
+      ]
     },
     {
       "word": "banquet",
@@ -3457,7 +6037,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The hotel prepared a banquet for the guests."
+      "example": "The hotel prepared a banquet for the guests.",
+      "examples": [
+        {
+          "text": "The hotel prepared a banquet for the guests.",
+          "translation": "ホテルは客のために宴会を準備した。"
+        }
+      ]
     },
     {
       "word": "supper",
@@ -3465,7 +6051,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We had soup and bread for supper."
+      "example": "We had soup and bread for supper.",
+      "examples": [
+        {
+          "text": "We had soup and bread for supper.",
+          "translation": "夕食はスープとパンだった。"
+        }
+      ]
     },
     {
       "word": "luncheon",
@@ -3473,7 +6065,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The guests gathered for a formal luncheon."
+      "example": "The guests gathered for a formal luncheon.",
+      "examples": [
+        {
+          "text": "The guests gathered for a formal luncheon.",
+          "translation": "客は正式な昼食に集まった。"
+        }
+      ]
     },
     {
       "word": "appetizer",
@@ -3481,7 +6079,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We shared an appetizer before the main course."
+      "example": "We shared an appetizer before the main course.",
+      "examples": [
+        {
+          "text": "We shared an appetizer before the main course.",
+          "translation": "私たちは主菜の前に、前菜を分け合って食べました。"
+        }
+      ]
     },
     {
       "word": "starter",
@@ -3489,7 +6093,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I'd like soup as a starter."
+      "example": "I'd like soup as a starter.",
+      "examples": [
+        {
+          "text": "I'd like soup as a starter.",
+          "translation": "私は始めにスープを食べたい。"
+        }
+      ]
     },
     {
       "word": "side dish",
@@ -3497,7 +6107,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The meal includes a vegetable side dish."
+      "example": "The meal includes a vegetable side dish.",
+      "examples": [
+        {
+          "text": "The meal includes a vegetable side dish.",
+          "translation": "野菜の付け合わせがある。"
+        }
+      ]
     },
     {
       "word": "beverage",
@@ -3505,7 +6121,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Choose a hot or cold beverage."
+      "example": "Choose a hot or cold beverage.",
+      "examples": [
+        {
+          "text": "Choose a hot or cold beverage.",
+          "translation": "熱い飲み物か冷たい飲み物を選んでください。"
+        }
+      ]
     },
     {
       "word": "lemonade",
@@ -3513,7 +6135,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We made fresh lemonade for the picnic."
+      "example": "We made fresh lemonade for the picnic.",
+      "examples": [
+        {
+          "text": "We made fresh lemonade for the picnic.",
+          "translation": "ピクニックのために新鮮なレモネードを作った。"
+        }
+      ]
     },
     {
       "word": "soda",
@@ -3521,7 +6149,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She ordered soda with a slice of lemon."
+      "example": "She ordered soda with a slice of lemon.",
+      "examples": [
+        {
+          "text": "She ordered soda with a slice of lemon.",
+          "translation": "彼女はレモンのスライスを入れたソーダを注文した。"
+        }
+      ]
     },
     {
       "word": "tonic",
@@ -3529,7 +6163,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He added tonic to his drink."
+      "example": "He added tonic to his drink.",
+      "examples": [
+        {
+          "text": "He added tonic to his drink.",
+          "translation": "彼は飲み物にトニックを加えた。"
+        }
+      ]
     },
     {
       "word": "mineral water",
@@ -3537,7 +6177,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Could we have some mineral water?"
+      "example": "Could we have some mineral water?",
+      "examples": [
+        {
+          "text": "Could we have some mineral water?",
+          "translation": "ミネラルウォーターをいただけますか。"
+        }
+      ]
     },
     {
       "word": "beer",
@@ -3545,7 +6191,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This cafe serves local beer."
+      "example": "This cafe serves local beer.",
+      "examples": [
+        {
+          "text": "This cafe serves local beer.",
+          "translation": "このカフェは地元のビールを提供している。"
+        }
+      ]
     },
     {
       "word": "ale",
@@ -3553,7 +6205,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He ordered a glass of ale."
+      "example": "He ordered a glass of ale.",
+      "examples": [
+        {
+          "text": "He ordered a glass of ale.",
+          "translation": "彼はエールを注文した。"
+        }
+      ]
     },
     {
       "word": "stout",
@@ -3561,7 +6219,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The menu lists a dark stout."
+      "example": "The menu lists a dark stout.",
+      "examples": [
+        {
+          "text": "The menu lists a dark stout.",
+          "translation": "メニューには黒いスタウトビールが載っています。"
+        }
+      ]
     },
     {
       "word": "champagne",
@@ -3569,7 +6233,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "They opened champagne to celebrate."
+      "example": "They opened champagne to celebrate.",
+      "examples": [
+        {
+          "text": "They opened champagne to celebrate.",
+          "translation": "彼らは祝うためにシャンパンを開けた。"
+        }
+      ]
     },
     {
       "word": "brandy",
@@ -3577,7 +6247,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The recipe includes a little brandy."
+      "example": "The recipe includes a little brandy.",
+      "examples": [
+        {
+          "text": "The recipe includes a little brandy.",
+          "translation": "レシピには少しブランデーが含まれている。"
+        }
+      ]
     },
     {
       "word": "rum",
@@ -3585,7 +6261,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The cake contains rum."
+      "example": "The cake contains rum.",
+      "examples": [
+        {
+          "text": "The cake contains rum.",
+          "translation": "そのケーキにはラム酒が入っている。"
+        }
+      ]
     },
     {
       "word": "gin",
@@ -3593,7 +6275,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "This cocktail is made with gin."
+      "example": "This cocktail is made with gin.",
+      "examples": [
+        {
+          "text": "This cocktail is made with gin.",
+          "translation": "このカクテルはジンで作られている。"
+        }
+      ]
     },
     {
       "word": "sake",
@@ -3601,7 +6289,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The restaurant serves sake with dinner."
+      "example": "The restaurant serves sake with dinner.",
+      "examples": [
+        {
+          "text": "The restaurant serves sake with dinner.",
+          "translation": "そのレストランでは、夕食に日本酒を提供しています。"
+        }
+      ]
     },
     {
       "word": "sherry",
@@ -3609,7 +6303,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She added sherry to the sauce."
+      "example": "She added sherry to the sauce.",
+      "examples": [
+        {
+          "text": "She added sherry to the sauce.",
+          "translation": "彼女はソースにシェリーを加えた。"
+        }
+      ]
     },
     {
       "word": "liqueur",
@@ -3617,7 +6317,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The dessert contains orange liqueur."
+      "example": "The dessert contains orange liqueur.",
+      "examples": [
+        {
+          "text": "The dessert contains orange liqueur.",
+          "translation": "デザートにはオレンジリキュールが入っている。"
+        }
+      ]
     },
     {
       "word": "aperitif",
@@ -3625,7 +6331,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "They enjoyed an aperitif before dinner."
+      "example": "They enjoyed an aperitif before dinner.",
+      "examples": [
+        {
+          "text": "They enjoyed an aperitif before dinner.",
+          "translation": "彼らは夕食の前にアペリティフを楽しんだ。"
+        }
+      ]
     },
     {
       "word": "mocha",
@@ -3633,7 +6345,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I ordered a cup of mocha coffee."
+      "example": "I ordered a cup of mocha coffee.",
+      "examples": [
+        {
+          "text": "I ordered a cup of mocha coffee.",
+          "translation": "私はモカコーヒーを注文した。"
+        }
+      ]
     },
     {
       "word": "black tea",
@@ -3641,7 +6359,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Would you prefer black tea or green tea?"
+      "example": "Would you prefer black tea or green tea?",
+      "examples": [
+        {
+          "text": "Would you prefer black tea or green tea?",
+          "translation": "紅茶と緑茶の、どちらがよろしいですか。"
+        }
+      ]
     },
     {
       "word": "milkshake",
@@ -3649,7 +6373,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He ordered a strawberry milkshake."
+      "example": "He ordered a strawberry milkshake.",
+      "examples": [
+        {
+          "text": "He ordered a strawberry milkshake.",
+          "translation": "彼はイチゴのミルクセーキを注文しました。"
+        }
+      ]
     },
     {
       "word": "strawberry",
@@ -3657,7 +6387,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "There is a strawberry on the cake."
+      "example": "There is a strawberry on the cake.",
+      "examples": [
+        {
+          "text": "There is a strawberry on the cake.",
+          "translation": "ケーキの上にイチゴがある。"
+        }
+      ]
     },
     {
       "word": "turkey",
@@ -3665,7 +6401,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We served roast turkey for dinner."
+      "example": "We served roast turkey for dinner.",
+      "examples": [
+        {
+          "text": "We served roast turkey for dinner.",
+          "translation": "私たちは夕食にローストした七面鳥を出しました。"
+        }
+      ]
     },
     {
       "word": "goose",
@@ -3673,7 +6415,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The farmer keeps a goose beside the pond."
+      "example": "The farmer keeps a goose beside the pond.",
+      "examples": [
+        {
+          "text": "The farmer keeps a goose beside the pond.",
+          "translation": "農夫は池のそばにガチョウを飼っている。"
+        }
+      ]
     },
     {
       "word": "lamb",
@@ -3681,7 +6429,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The stew contains lamb and vegetables."
+      "example": "The stew contains lamb and vegetables.",
+      "examples": [
+        {
+          "text": "The stew contains lamb and vegetables.",
+          "translation": "羊肉と野菜が入っている。"
+        }
+      ]
     },
     {
       "word": "veal",
@@ -3689,7 +6443,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The chef prepared veal with mushrooms."
+      "example": "The chef prepared veal with mushrooms.",
+      "examples": [
+        {
+          "text": "The chef prepared veal with mushrooms.",
+          "translation": "シェフはキノコの入った子牛肉を作った。"
+        }
+      ]
     },
     {
       "word": "venison",
@@ -3697,7 +6457,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The restaurant serves venison in winter."
+      "example": "The restaurant serves venison in winter.",
+      "examples": [
+        {
+          "text": "The restaurant serves venison in winter.",
+          "translation": "冬は鹿肉を出す。"
+        }
+      ]
     },
     {
       "word": "ham",
@@ -3705,7 +6471,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I'd like a ham sandwich."
+      "example": "I'd like a ham sandwich.",
+      "examples": [
+        {
+          "text": "I'd like a ham sandwich.",
+          "translation": "ハムサンドイッチが食べたい。"
+        }
+      ]
     },
     {
       "word": "bacon",
@@ -3713,7 +6485,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The bacon is crisp and golden."
+      "example": "The bacon is crisp and golden.",
+      "examples": [
+        {
+          "text": "The bacon is crisp and golden.",
+          "translation": "ベーコンはきれいで金色だ。"
+        }
+      ]
     },
     {
       "word": "salami",
@@ -3721,7 +6499,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She added sliced salami to the plate."
+      "example": "She added sliced salami to the plate.",
+      "examples": [
+        {
+          "text": "She added sliced salami to the plate.",
+          "translation": "彼女は皿にサラミをスライスした。"
+        }
+      ]
     },
     {
       "word": "frankfurter",
@@ -3729,7 +6513,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He put a frankfurter in a bun."
+      "example": "He put a frankfurter in a bun.",
+      "examples": [
+        {
+          "text": "He put a frankfurter in a bun.",
+          "translation": "彼はフランクフルトをパンに入れた。"
+        }
+      ]
     },
     {
       "word": "hamburger",
@@ -3737,7 +6527,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The hamburger comes with a salad."
+      "example": "The hamburger comes with a salad.",
+      "examples": [
+        {
+          "text": "The hamburger comes with a salad.",
+          "translation": "ハンバーガーにはサラダが付いている。"
+        }
+      ]
     },
     {
       "word": "steak",
@@ -3745,7 +6541,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "How would you like your steak cooked?"
+      "example": "How would you like your steak cooked?",
+      "examples": [
+        {
+          "text": "How would you like your steak cooked?",
+          "translation": "ステーキの焼き加減はいかがなさいますか。"
+        }
+      ]
     },
     {
       "word": "fillet",
@@ -3753,7 +6555,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Season the fish fillet before cooking."
+      "example": "Season the fish fillet before cooking.",
+      "examples": [
+        {
+          "text": "Season the fish fillet before cooking.",
+          "translation": "魚のフィレを調理する前に調味料を加える。"
+        }
+      ]
     },
     {
       "word": "rib",
@@ -3761,7 +6569,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The pork rib has a sweet glaze."
+      "example": "The pork rib has a sweet glaze.",
+      "examples": [
+        {
+          "text": "The pork rib has a sweet glaze.",
+          "translation": "その豚のあばら肉には、甘いつや出しのたれがかかっています。"
+        }
+      ]
     },
     {
       "word": "liver",
@@ -3769,7 +6583,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The menu includes fried liver with onions."
+      "example": "The menu includes fried liver with onions.",
+      "examples": [
+        {
+          "text": "The menu includes fried liver with onions.",
+          "translation": "メニューには、レバーと玉ねぎを炒めた料理があります。"
+        }
+      ]
     },
     {
       "word": "kidney",
@@ -3777,7 +6597,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The pie contains beef and kidney."
+      "example": "The pie contains beef and kidney.",
+      "examples": [
+        {
+          "text": "The pie contains beef and kidney.",
+          "translation": "パイには牛肉と腎臓が入っている。"
+        }
+      ]
     },
     {
       "word": "tripe",
@@ -3785,7 +6611,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The stew contains thinly sliced tripe."
+      "example": "The stew contains thinly sliced tripe.",
+      "examples": [
+        {
+          "text": "The stew contains thinly sliced tripe.",
+          "translation": "そのシチューには、薄切りにした牛の第一胃が入っています。"
+        }
+      ]
     },
     {
       "word": "mussel",
@@ -3793,7 +6625,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Remove the mussel from its shell."
+      "example": "Remove the mussel from its shell.",
+      "examples": [
+        {
+          "text": "Remove the mussel from its shell.",
+          "translation": "ムール貝の身を殻から取り出してください。"
+        }
+      ]
     },
     {
       "word": "clam",
@@ -3801,7 +6639,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "There is a clam in the seafood soup."
+      "example": "There is a clam in the seafood soup.",
+      "examples": [
+        {
+          "text": "There is a clam in the seafood soup.",
+          "translation": "その海鮮スープにはハマグリが入っています。"
+        }
+      ]
     },
     {
       "word": "shrimp",
@@ -3809,7 +6653,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We ordered shrimp fried rice."
+      "example": "We ordered shrimp fried rice.",
+      "examples": [
+        {
+          "text": "We ordered shrimp fried rice.",
+          "translation": "私たちはエビチャーハンを注文しました。"
+        }
+      ]
     },
     {
       "word": "prawn",
@@ -3817,7 +6667,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She placed a cooked prawn on the salad."
+      "example": "She placed a cooked prawn on the salad.",
+      "examples": [
+        {
+          "text": "She placed a cooked prawn on the salad.",
+          "translation": "彼女はサラダの上に煮込んだエビを置いた。"
+        }
+      ]
     },
     {
       "word": "crab",
@@ -3825,7 +6681,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The soup contains fresh crab meat."
+      "example": "The soup contains fresh crab meat.",
+      "examples": [
+        {
+          "text": "The soup contains fresh crab meat.",
+          "translation": "生のカニ肉が入っている。"
+        }
+      ]
     },
     {
       "word": "crayfish",
@@ -3833,7 +6695,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We saw a crayfish beside the stream."
+      "example": "We saw a crayfish beside the stream.",
+      "examples": [
+        {
+          "text": "We saw a crayfish beside the stream.",
+          "translation": "私たちは小川のそばでザリガニを見ました。"
+        }
+      ]
     },
     {
       "word": "octopus",
@@ -3841,7 +6709,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The salad contains cooked octopus."
+      "example": "The salad contains cooked octopus.",
+      "examples": [
+        {
+          "text": "The salad contains cooked octopus.",
+          "translation": "そのサラダには加熱したタコが入っています。"
+        }
+      ]
     },
     {
       "word": "tuna",
@@ -3849,7 +6723,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "I made a tuna sandwich."
+      "example": "I made a tuna sandwich.",
+      "examples": [
+        {
+          "text": "I made a tuna sandwich.",
+          "translation": "私はツナのサンドイッチを作りました。"
+        }
+      ]
     },
     {
       "word": "trout",
@@ -3857,7 +6737,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We cooked the trout with lemon."
+      "example": "We cooked the trout with lemon.",
+      "examples": [
+        {
+          "text": "We cooked the trout with lemon.",
+          "translation": "私たちはマスをレモンで煮た。"
+        }
+      ]
     },
     {
       "word": "cod",
@@ -3865,7 +6751,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The restaurant serves baked cod."
+      "example": "The restaurant serves baked cod.",
+      "examples": [
+        {
+          "text": "The restaurant serves baked cod.",
+          "translation": "レストランでは焼きタラを提供している。"
+        }
+      ]
     },
     {
       "word": "herring",
@@ -3873,7 +6765,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "He tried pickled herring for lunch."
+      "example": "He tried pickled herring for lunch.",
+      "examples": [
+        {
+          "text": "He tried pickled herring for lunch.",
+          "translation": "彼は昼食にニシンの漬物を食べた。"
+        }
+      ]
     },
     {
       "word": "sardine",
@@ -3881,7 +6779,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "She placed a sardine on the toast."
+      "example": "She placed a sardine on the toast.",
+      "examples": [
+        {
+          "text": "She placed a sardine on the toast.",
+          "translation": "彼女はトーストの上にイワシを置いた。"
+        }
+      ]
     },
     {
       "word": "mackerel",
@@ -3889,7 +6793,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We grilled mackerel for dinner."
+      "example": "We grilled mackerel for dinner.",
+      "examples": [
+        {
+          "text": "We grilled mackerel for dinner.",
+          "translation": "夕食にはサバを焼いた。"
+        }
+      ]
     },
     {
       "word": "sole",
@@ -3897,7 +6807,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The chef served sole with butter sauce."
+      "example": "The chef served sole with butter sauce.",
+      "examples": [
+        {
+          "text": "The chef served sole with butter sauce.",
+          "translation": "シェフは舌平目にバターソースを添えて出しました。"
+        }
+      ]
     },
     {
       "word": "plaice",
@@ -3905,7 +6821,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We ordered plaice with potatoes."
+      "example": "We ordered plaice with potatoes.",
+      "examples": [
+        {
+          "text": "We ordered plaice with potatoes.",
+          "translation": "私たちはポテトとヒラメを注文した。"
+        }
+      ]
     },
     {
       "word": "seaweed",
@@ -3913,7 +6835,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The soup contains dried seaweed."
+      "example": "The soup contains dried seaweed.",
+      "examples": [
+        {
+          "text": "The soup contains dried seaweed.",
+          "translation": "そのスープには乾燥した海藻が入っています。"
+        }
+      ]
     },
     {
       "word": "kelp",
@@ -3921,7 +6849,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We used kelp to make the stock."
+      "example": "We used kelp to make the stock.",
+      "examples": [
+        {
+          "text": "We used kelp to make the stock.",
+          "translation": "私たちはコンブでだしを取りました。"
+        }
+      ]
     },
     {
       "word": "roe",
@@ -3929,7 +6863,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The sushi is topped with fish roe."
+      "example": "The sushi is topped with fish roe.",
+      "examples": [
+        {
+          "text": "The sushi is topped with fish roe.",
+          "translation": "そのすしには魚卵が載っています。"
+        }
+      ]
     },
     {
       "word": "scallion",
@@ -3937,7 +6877,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Chop a scallion for the noodles."
+      "example": "Chop a scallion for the noodles.",
+      "examples": [
+        {
+          "text": "Chop a scallion for the noodles.",
+          "translation": "麺に入れる青ネギを刻んでください。"
+        }
+      ]
     },
     {
       "word": "yam",
@@ -3945,7 +6891,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Peel the yam before cooking it."
+      "example": "Peel the yam before cooking it.",
+      "examples": [
+        {
+          "text": "Peel the yam before cooking it.",
+          "translation": "調理する前にヤムイモの皮をむいてください。"
+        }
+      ]
     },
     {
       "word": "artichoke",
@@ -3953,7 +6905,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The steamed artichoke came with a dip."
+      "example": "The steamed artichoke came with a dip.",
+      "examples": [
+        {
+          "text": "The steamed artichoke came with a dip.",
+          "translation": "蒸したアーティチョークには、ディップソースが添えられていました。"
+        }
+      ]
     },
     {
       "word": "Brussels sprout",
@@ -3961,7 +6919,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Cut each Brussels sprout in half."
+      "example": "Cut each Brussels sprout in half.",
+      "examples": [
+        {
+          "text": "Cut each Brussels sprout in half.",
+          "translation": "芽キャベツをそれぞれ半分に切ってください。"
+        }
+      ]
     },
     {
       "word": "watercress",
@@ -3969,7 +6933,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Add watercress to the salad."
+      "example": "Add watercress to the salad.",
+      "examples": [
+        {
+          "text": "Add watercress to the salad.",
+          "translation": "サラダにクレソンを加えてください。"
+        }
+      ]
     },
     {
       "word": "chicory",
@@ -3977,7 +6947,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The salad contains crisp chicory leaves."
+      "example": "The salad contains crisp chicory leaves.",
+      "examples": [
+        {
+          "text": "The salad contains crisp chicory leaves.",
+          "translation": "そのサラダには、しゃきしゃきしたチコリの葉が入っています。"
+        }
+      ]
     },
     {
       "word": "okra",
@@ -3985,7 +6961,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Slice the okra for the stew."
+      "example": "Slice the okra for the stew.",
+      "examples": [
+        {
+          "text": "Slice the okra for the stew.",
+          "translation": "シチューのためにオクラを切っておく。"
+        }
+      ]
     },
     {
       "word": "rutabaga",
@@ -3993,7 +6975,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "We mashed the rutabaga with butter."
+      "example": "We mashed the rutabaga with butter.",
+      "examples": [
+        {
+          "text": "We mashed the rutabaga with butter.",
+          "translation": "私たちはバターでルタバガを粉砕した。"
+        }
+      ]
     },
     {
       "word": "shallot",
@@ -4001,7 +6989,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "Finely chop one shallot."
+      "example": "Finely chop one shallot.",
+      "examples": [
+        {
+          "text": "Finely chop one shallot.",
+          "translation": "エシャロットを1個、細かく刻んでください。"
+        }
+      ]
     },
     {
       "word": "chanterelle",
@@ -4009,7 +7003,13 @@
       "tags": [
         "食事・カフェ"
       ],
-      "example": "The chef added a chanterelle to the sauce."
+      "example": "The chef added a chanterelle to the sauce.",
+      "examples": [
+        {
+          "text": "The chef added a chanterelle to the sauce.",
+          "translation": "シェフはソースに、アンズタケを加えました。"
+        }
+      ]
     }
   ]
 }

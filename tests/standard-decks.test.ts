@@ -4,6 +4,7 @@ import { standardDecks, findStandardDecks } from '../shared/standardDecks';
 import { standardWords } from '../src/lib/standardRepository';
 import { LIMITS, parseDeck } from '../shared/model';
 import { cefrEntryKey, validateCefrEditorial } from '../shared/cefrjEditorial';
+import { contentHash } from '../shared/content';
 const source = JSON.parse(readFileSync('content/cefrj/source-entries.json','utf8'));
 afterEach(() => vi.unstubAllGlobals());
 const editorial = validateCefrEditorial(source, ['a-levels.json','b1.json','b2.json','b2-tail.json'].flatMap(file => JSON.parse(readFileSync(`content/cefrj/editorial/${file}`, 'utf8'))));
@@ -14,7 +15,7 @@ it('preserves all source entries in order, split evenly within each CEFR level',
     const words = books.flatMap(book => {
       const data = JSON.parse(readFileSync(`public/content/cefrj/${book.file}`,'utf8'));
       expect(data).toHaveLength(book.wordCount);
-      expect(parseDeck(JSON.stringify({title:book.title,words:data}),{maxWords:LIMITS.forkWords,allowExampleVariants:true}).words).toHaveLength(book.wordCount);
+      expect(parseDeck(JSON.stringify({title:book.title,words:data.map(({word,meaning,example,examples,tags}:any)=>({word,meaning,...(examples?.length?{examples}:{example}),tags}))}),{maxWords:LIMITS.forkWords,allowExampleVariants:true}).words).toHaveLength(book.wordCount);
       expect(new Set(data.map((w:any)=>w.id)).size).toBe(book.wordCount);
       data.forEach((w:any,i:number)=>{expect(w.ordinal).toBe(i);expect(w.meaning).toMatch(/[ぁ-んァ-ン一-龥]/);expect(w.example).toMatch(/[A-Za-z]/);expect(Array.isArray(w.otherMeanings)).toBe(true);expect(w.otherMeanings).not.toContain(w.meaning);expect(w.tags).toHaveLength(2);expect(w.tags[1]).toBe(level);});
       return data;
@@ -25,6 +26,7 @@ it('preserves all source entries in order, split evenly within each CEFR level',
       const entry = editorial.get(cefrEntryKey(levelSource[index]))!;
       expect(word.meaning).toBe(entry.meaning);
       expect(word.example).toBe(entry.example);
+      expect(word.examples).toEqual([{text:entry.example,translation:entry.exampleTranslation}]);
       expect(word.otherMeanings).toEqual(entry.otherMeanings);
       expect(word.usageNote).toBe(entry.usageNote);
     });
@@ -50,4 +52,16 @@ it('pages beyond 500 without omissions, caches the downloaded file, and searches
 });
 it('does not relax the user import limit for standard books', () => {
   expect(()=>parseDeck(JSON.stringify({title:'import',words:Array.from({length:501},(_,i)=>({word:`word${i}`,meaning:'単語',tags:[]}))}))).toThrow('500');
+});
+
+it('keeps every translated standard book within the fork JSON limit without losing sentence pairs',async()=>{
+ for(const book of standardDecks){
+  const data=JSON.parse(readFileSync(`public/content/${book.contentSource==='cefrj'?'cefrj':'official'}/${book.file}`,'utf8'));
+  const exported=data.map(({word,meaning,example,examples,tags}:any)=>({word,meaning,...(examples?.length?{examples}:{example}),tags}));
+  const raw=JSON.stringify({schemaVersion:1,title:book.title,description:book.description,textbookTags:book.textbookTags,words:exported});
+  expect(new TextEncoder().encode(raw).length).toBeLessThanOrEqual(LIMITS.bytes);
+  const parsed=parseDeck(raw,{maxWords:LIMITS.forkWords,allowExampleVariants:true});
+  expect(parsed.words.map(w=>w.examples)).toEqual(data.map((w:any)=>w.examples));
+  expect(await contentHash(parsed.words)).toBe(book.contentHash);
+ }
 });

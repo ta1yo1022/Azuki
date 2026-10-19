@@ -17,6 +17,12 @@
       "example": "We arrived at the airport early.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We arrived at the airport early.",
+          "translation": "私たちは早めに空港に着きました。"
+        }
       ]
     },
     {
@@ -25,6 +31,12 @@
       "example": "Please show me your passport.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Please show me your passport.",
+          "translation": "パスポートを見せてください。"
+        }
       ]
     },
     {
@@ -33,6 +45,12 @@
       "example": "I need a ticket to Kyoto.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I need a ticket to Kyoto.",
+          "translation": "京都行きの切符が必要です。"
+        }
       ]
     },
     {
@@ -41,6 +59,12 @@
       "example": "Our flight leaves at noon.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Our flight leaves at noon.",
+          "translation": "私たちの飛行機は正午に出発します。"
+        }
       ]
     },
     {
@@ -49,6 +73,12 @@
       "example": "Where can I leave my luggage?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Where can I leave my luggage?",
+          "translation": "荷物はどこに預けられますか。"
+        }
       ]
     },
     {
@@ -57,6 +87,12 @@
       "example": "This suitcase is very heavy.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "This suitcase is very heavy.",
+          "translation": "このスーツケースはとても重いです。"
+        }
       ]
     },
     {
@@ -65,6 +101,12 @@
       "example": "Our hotel is near the beach.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Our hotel is near the beach.",
+          "translation": "私たちのホテルはビーチの近くにあります。"
+        }
       ]
     },
     {
@@ -73,6 +115,12 @@
       "example": "I have a reservation for two nights.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I have a reservation for two nights.",
+          "translation": "2泊で予約しています。"
+        }
       ]
     },
     {
@@ -81,6 +129,12 @@
       "example": "Please leave your key at reception.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Please leave your key at reception.",
+          "translation": "鍵はフロントに預けてください。"
+        }
       ]
     },
     {
@@ -89,6 +143,12 @@
       "example": "The elevator is on your right.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The elevator is on your right.",
+          "translation": "エレベーターは右側にあります。"
+        }
       ]
     },
     {
@@ -97,6 +157,12 @@
       "example": "Let's meet in the hotel lobby.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Let's meet in the hotel lobby.",
+          "translation": "ホテルのロビーで会おう"
+        }
       ]
     },
     {
@@ -105,6 +171,12 @@
       "example": "I left my key in the room.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I left my key in the room.",
+          "translation": "鍵を部屋に置いてきた。"
+        }
       ]
     },
     {
@@ -113,6 +185,12 @@
       "example": "Can you show me on the map?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Can you show me on the map?",
+          "translation": "地図で見せてくれないか?"
+        }
       ]
     },
     {
@@ -121,6 +199,12 @@
       "example": "The station is a short walk from here.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The station is a short walk from here.",
+          "translation": "駅はここから徒歩ですぐに行ける。"
+        }
       ]
     },
     {
@@ -129,6 +213,12 @@
       "example": "This train goes to the airport.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "This train goes to the airport.",
+          "translation": "この列車は空港へ行く。"
+        }
       ]
     },
     {
@@ -137,6 +227,12 @@
       "example": "We can take a bus to the museum.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We can take a bus to the museum.",
+          "translation": "博物館まではバスで行ける。"
+        }
       ]
     },
     {
@@ -145,6 +241,12 @@
       "example": "Could you call a taxi for me?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Could you call a taxi for me?",
+          "translation": "タクシーを呼んでくれませんか。"
+        }
       ]
     },
     {
@@ -153,6 +255,12 @@
       "example": "The subway is faster than the bus.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The subway is faster than the bus.",
+          "translation": "地下鉄はバスより速い。"
+        }
       ]
     },
     {
@@ -161,6 +269,12 @@
       "example": "The train leaves from platform three.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The train leaves from platform three.",
+          "translation": "列車は3番線から発車する。"
+        }
       ]
     },
     {
@@ -169,6 +283,12 @@
       "example": "Is this seat free?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Is this seat free?",
+          "translation": "この席は空いてますか。"
+        }
       ]
     },
     {
@@ -177,6 +297,12 @@
       "example": "We will arrive in Tokyo tonight.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We will arrive in Tokyo tonight.",
+          "translation": "私たちは今夜東京に到着する。"
+        }
       ]
     },
     {
@@ -185,6 +311,12 @@
       "example": "We leave the hotel at nine.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We leave the hotel at nine.",
+          "translation": "9時にホテルを出発する。"
+        }
       ]
     },
     {
@@ -193,6 +325,12 @@
       "example": "The next train departs at ten.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "The next train departs at ten.",
+          "translation": "次の列車は10時に発車する。"
+        }
       ]
     },
     {
@@ -201,6 +339,12 @@
       "example": "We return home on Sunday.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We return home on Sunday.",
+          "translation": "日曜日に帰宅する。"
+        }
       ]
     },
     {
@@ -209,6 +353,12 @@
       "example": "I like to travel by train.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I like to travel by train.",
+          "translation": "私は電車で旅行するのが好きです。"
+        }
       ]
     },
     {
@@ -217,6 +367,12 @@
       "example": "How was your trip to Japan?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "How was your trip to Japan?",
+          "translation": "日本旅行はどうでしたか。"
+        }
       ]
     },
     {
@@ -225,6 +381,12 @@
       "example": "The journey takes about two hours.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The journey takes about two hours.",
+          "translation": "旅行時間は約2時間。"
+        }
       ]
     },
     {
@@ -233,6 +395,12 @@
       "example": "Our final destination is Osaka.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Our final destination is Osaka.",
+          "translation": "私たちの最終目的地は大阪です。"
+        }
       ]
     },
     {
@@ -241,6 +409,12 @@
       "example": "Are we going in the right direction?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Are we going in the right direction?",
+          "translation": "私たちは正しい方向に向かっているのか。"
+        }
       ]
     },
     {
@@ -249,6 +423,12 @@
       "example": "There is a cafe on this street.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "There is a cafe on this street.",
+          "translation": "この通りにはカフェがあります。"
+        }
       ]
     },
     {
@@ -257,6 +437,12 @@
       "example": "This road leads to the beach.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "This road leads to the beach.",
+          "translation": "この道はビーチに通じる。"
+        }
       ]
     },
     {
@@ -265,6 +451,12 @@
       "example": "Turn right at the next corner.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Turn right at the next corner.",
+          "translation": "次の角で右に曲がれ。"
+        }
       ]
     },
     {
@@ -273,6 +465,12 @@
       "example": "Walk across the bridge.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Walk across the bridge.",
+          "translation": "橋を渡って歩いて"
+        }
       ]
     },
     {
@@ -281,6 +479,12 @@
       "example": "There is a lot of traffic today.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "There is a lot of traffic today.",
+          "translation": "今日は交通量が多い。"
+        }
       ]
     },
     {
@@ -289,6 +493,12 @@
       "example": "The main entrance is over there.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The main entrance is over there.",
+          "translation": "正面玄関はあちらです。"
+        }
       ]
     },
     {
@@ -297,6 +507,12 @@
       "example": "Please use the exit on your left.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Please use the exit on your left.",
+          "translation": "左側の出口をご利用ください。"
+        }
       ]
     },
     {
@@ -305,6 +521,12 @@
       "example": "Turn left at the next street.",
       "tags": [
         "副詞"
+      ],
+      "examples": [
+        {
+          "text": "Turn left at the next street.",
+          "translation": "次の通りで左に曲がれ。"
+        }
       ]
     },
     {
@@ -313,6 +535,12 @@
       "example": "Turn right after the bridge.",
       "tags": [
         "副詞"
+      ],
+      "examples": [
+        {
+          "text": "Turn right after the bridge.",
+          "translation": "橋を渡った後右折"
+        }
       ]
     },
     {
@@ -321,6 +549,12 @@
       "example": "Go straight for two blocks.",
       "tags": [
         "副詞"
+      ],
+      "examples": [
+        {
+          "text": "Go straight for two blocks.",
+          "translation": "2ブロック直進して"
+        }
       ]
     },
     {
@@ -329,6 +563,12 @@
       "example": "The station is quite near.",
       "tags": [
         "副詞"
+      ],
+      "examples": [
+        {
+          "text": "The station is quite near.",
+          "translation": "駅はとても近い。"
+        }
       ]
     },
     {
@@ -337,6 +577,12 @@
       "example": "We did not walk very far.",
       "tags": [
         "副詞"
+      ],
+      "examples": [
+        {
+          "text": "We did not walk very far.",
+          "translation": "私たちはあまり遠くまで歩かなかった。"
+        }
       ]
     },
     {
@@ -345,6 +591,12 @@
       "example": "The mountains are to the north.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The mountains are to the north.",
+          "translation": "山は北にある。"
+        }
       ]
     },
     {
@@ -353,6 +605,12 @@
       "example": "The beach is to the south.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The beach is to the south.",
+          "translation": "海岸は南にある。"
+        }
       ]
     },
     {
@@ -361,6 +619,12 @@
       "example": "The sun rises in the east.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The sun rises in the east.",
+          "translation": "太陽は東から昇る。"
+        }
       ]
     },
     {
@@ -369,6 +633,12 @@
       "example": "The sun sets in the west.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The sun sets in the west.",
+          "translation": "太陽は西に沈んでいる。"
+        }
       ]
     },
     {
@@ -377,6 +647,12 @@
       "example": "We spent the afternoon at the beach.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We spent the afternoon at the beach.",
+          "translation": "午後はビーチで過ごした。"
+        }
       ]
     },
     {
@@ -385,6 +661,12 @@
       "example": "The museum opens at ten.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The museum opens at ten.",
+          "translation": "博物館は10時に開館する。"
+        }
       ]
     },
     {
@@ -393,6 +675,12 @@
       "example": "Let's have lunch in the park.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Let's have lunch in the park.",
+          "translation": "公園で昼食をとろう。"
+        }
       ]
     },
     {
@@ -401,6 +689,12 @@
       "example": "We bought fruit at the local market.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We bought fruit at the local market.",
+          "translation": "私たちは地元の市場で果物を買った。"
+        }
       ]
     },
     {
@@ -409,6 +703,12 @@
       "example": "Our guide showed us around the city.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Our guide showed us around the city.",
+          "translation": "ガイドが私たちを街中を案内した。"
+        }
       ]
     },
     {
@@ -417,7 +717,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We found affordable accommodation near the station."
+      "example": "We found affordable accommodation near the station.",
+      "examples": [
+        {
+          "text": "We found affordable accommodation near the station.",
+          "translation": "駅の近くに安い宿を見つけた。"
+        }
+      ]
     },
     {
       "word": "arrival",
@@ -425,7 +731,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our arrival is scheduled for noon."
+      "example": "Our arrival is scheduled for noon.",
+      "examples": [
+        {
+          "text": "Our arrival is scheduled for noon.",
+          "translation": "私たちは正午に到着する予定です。"
+        }
+      ]
     },
     {
       "word": "passenger",
@@ -433,7 +745,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Each passenger may carry one small bag."
+      "example": "Each passenger may carry one small bag.",
+      "examples": [
+        {
+          "text": "Each passenger may carry one small bag.",
+          "translation": "旅客1人につき小さな荷物1個まで。"
+        }
+      ]
     },
     {
       "word": "tourist",
@@ -441,7 +759,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A tourist asked me for directions."
+      "example": "A tourist asked me for directions.",
+      "examples": [
+        {
+          "text": "A tourist asked me for directions.",
+          "translation": "ある観光客が私に道案内を頼んだ。"
+        }
+      ]
     },
     {
       "word": "tourism",
@@ -449,7 +773,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Tourism brings many visitors to this island."
+      "example": "Tourism brings many visitors to this island.",
+      "examples": [
+        {
+          "text": "Tourism brings many visitors to this island.",
+          "translation": "観光はこの島に多くの訪問者をもたらす。"
+        }
+      ]
     },
     {
       "word": "visitor",
@@ -457,7 +787,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Every visitor receives a free map."
+      "example": "Every visitor receives a free map.",
+      "examples": [
+        {
+          "text": "Every visitor receives a free map.",
+          "translation": "訪問者は無料で地図を受け取る。"
+        }
+      ]
     },
     {
       "word": "holiday",
@@ -465,7 +801,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The museum is closed on this holiday."
+      "example": "The museum is closed on this holiday.",
+      "examples": [
+        {
+          "text": "The museum is closed on this holiday.",
+          "translation": "この祝日は博物館は閉館です。"
+        }
+      ]
     },
     {
       "word": "vacation",
@@ -473,7 +815,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We are taking a vacation in July."
+      "example": "We are taking a vacation in July.",
+      "examples": [
+        {
+          "text": "We are taking a vacation in July.",
+          "translation": "私たちは7月に休暇を取る。"
+        }
+      ]
     },
     {
       "word": "adventure",
@@ -481,7 +829,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our mountain trip was a wonderful adventure."
+      "example": "Our mountain trip was a wonderful adventure.",
+      "examples": [
+        {
+          "text": "Our mountain trip was a wonderful adventure.",
+          "translation": "私たちの山岳旅行は素晴らしい冒険だった。"
+        }
+      ]
     },
     {
       "word": "itinerary",
@@ -489,7 +843,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The guide sent us a detailed itinerary."
+      "example": "The guide sent us a detailed itinerary.",
+      "examples": [
+        {
+          "text": "The guide sent us a detailed itinerary.",
+          "translation": "ガイドは私たちに詳細な行程を送ってくれた。"
+        }
+      ]
     },
     {
       "word": "voyage",
@@ -497,7 +857,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The voyage across the ocean took weeks."
+      "example": "The voyage across the ocean took weeks.",
+      "examples": [
+        {
+          "text": "The voyage across the ocean took weeks.",
+          "translation": "海を渡る旅は何週間もかかった。"
+        }
+      ]
     },
     {
       "word": "cruise",
@@ -505,7 +871,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We booked a cruise around the islands."
+      "example": "We booked a cruise around the islands.",
+      "examples": [
+        {
+          "text": "We booked a cruise around the islands.",
+          "translation": "私たちは島の周りを巡るクルーズを予約しました。"
+        }
+      ]
     },
     {
       "word": "ferry",
@@ -513,7 +885,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The ferry leaves every thirty minutes."
+      "example": "The ferry leaves every thirty minutes.",
+      "examples": [
+        {
+          "text": "The ferry leaves every thirty minutes.",
+          "translation": "フェリーは30分毎に出発する。"
+        }
+      ]
     },
     {
       "word": "port",
@@ -521,7 +899,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our ship arrived at the port early."
+      "example": "Our ship arrived at the port early.",
+      "examples": [
+        {
+          "text": "Our ship arrived at the port early.",
+          "translation": "我々の船は早く港に到着した。"
+        }
+      ]
     },
     {
       "word": "terminal",
@@ -529,7 +913,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Your flight leaves from the north terminal."
+      "example": "Your flight leaves from the north terminal.",
+      "examples": [
+        {
+          "text": "Your flight leaves from the north terminal.",
+          "translation": "君の飛行機は北ターミナルから出発する。"
+        }
+      ]
     },
     {
       "word": "runway",
@@ -537,7 +927,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The plane waited at the runway."
+      "example": "The plane waited at the runway.",
+      "examples": [
+        {
+          "text": "The plane waited at the runway.",
+          "translation": "飛行機は滑走路で待っていた。"
+        }
+      ]
     },
     {
       "word": "pilot",
@@ -545,7 +941,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The pilot welcomed us on board."
+      "example": "The pilot welcomed us on board.",
+      "examples": [
+        {
+          "text": "The pilot welcomed us on board.",
+          "translation": "パイロットは私たちを乗せて歓迎した。"
+        }
+      ]
     },
     {
       "word": "crew",
@@ -553,7 +955,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The crew helped passengers find their seats."
+      "example": "The crew helped passengers find their seats.",
+      "examples": [
+        {
+          "text": "The crew helped passengers find their seats.",
+          "translation": "乗務員は乗客が座席を見つけるのを手伝った。"
+        }
+      ]
     },
     {
       "word": "captain",
@@ -561,7 +969,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The captain announced our arrival time."
+      "example": "The captain announced our arrival time.",
+      "examples": [
+        {
+          "text": "The captain announced our arrival time.",
+          "translation": "船長は我々の到着時間を発表した。"
+        }
+      ]
     },
     {
       "word": "visa",
@@ -569,7 +983,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I need a visa for this trip."
+      "example": "I need a visa for this trip.",
+      "examples": [
+        {
+          "text": "I need a visa for this trip.",
+          "translation": "この旅行にはビザが必要です。"
+        }
+      ]
     },
     {
       "word": "permit",
@@ -577,7 +997,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You need a permit to enter this area."
+      "example": "You need a permit to enter this area.",
+      "examples": [
+        {
+          "text": "You need a permit to enter this area.",
+          "translation": "ここに入るには許可が必要だ"
+        }
+      ]
     },
     {
       "word": "identity",
@@ -585,7 +1011,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They checked my identity at the border."
+      "example": "They checked my identity at the border.",
+      "examples": [
+        {
+          "text": "They checked my identity at the border.",
+          "translation": "国境で身分証を確認された"
+        }
+      ]
     },
     {
       "word": "consulate",
@@ -593,7 +1025,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She contacted the consulate about her lost passport."
+      "example": "She contacted the consulate about her lost passport.",
+      "examples": [
+        {
+          "text": "She contacted the consulate about her lost passport.",
+          "translation": "彼女はパスポートの紛失について領事館に連絡した。"
+        }
+      ]
     },
     {
       "word": "border",
@@ -601,7 +1039,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We crossed the border by train."
+      "example": "We crossed the border by train.",
+      "examples": [
+        {
+          "text": "We crossed the border by train.",
+          "translation": "私たちは電車で国境を越えた。"
+        }
+      ]
     },
     {
       "word": "currency",
@@ -609,7 +1053,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "What currency do they use here?"
+      "example": "What currency do they use here?",
+      "examples": [
+        {
+          "text": "What currency do they use here?",
+          "translation": "ここで使われている通貨は何ですか。"
+        }
+      ]
     },
     {
       "word": "cash",
@@ -617,7 +1067,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This small shop only accepts cash."
+      "example": "This small shop only accepts cash.",
+      "examples": [
+        {
+          "text": "This small shop only accepts cash.",
+          "translation": "この小さな店は現金のみを受け付けている。"
+        }
+      ]
     },
     {
       "word": "coin",
@@ -625,7 +1081,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I found a coin under the seat."
+      "example": "I found a coin under the seat.",
+      "examples": [
+        {
+          "text": "I found a coin under the seat.",
+          "translation": "シートの下にコインを見つけた。"
+        }
+      ]
     },
     {
       "word": "wallet",
@@ -633,7 +1095,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Keep your wallet in a safe place."
+      "example": "Keep your wallet in a safe place.",
+      "examples": [
+        {
+          "text": "Keep your wallet in a safe place.",
+          "translation": "財布を安全な場所に保管してください。"
+        }
+      ]
     },
     {
       "word": "purse",
@@ -641,7 +1109,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She put the receipt in her purse."
+      "example": "She put the receipt in her purse.",
+      "examples": [
+        {
+          "text": "She put the receipt in her purse.",
+          "translation": "彼女は手形を財布に入れた。"
+        }
+      ]
     },
     {
       "word": "receipt",
@@ -649,7 +1123,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Could I have a receipt, please?"
+      "example": "Could I have a receipt, please?",
+      "examples": [
+        {
+          "text": "Could I have a receipt, please?",
+          "translation": "レシートをお願いします。"
+        }
+      ]
     },
     {
       "word": "fee",
@@ -657,7 +1137,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The entrance fee includes a guided tour."
+      "example": "The entrance fee includes a guided tour.",
+      "examples": [
+        {
+          "text": "The entrance fee includes a guided tour.",
+          "translation": "入場料にはガイド付きのツアーが含まれている。"
+        }
+      ]
     },
     {
       "word": "tax",
@@ -665,7 +1151,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Does this price include tax?"
+      "example": "Does this price include tax?",
+      "examples": [
+        {
+          "text": "Does this price include tax?",
+          "translation": "この価格は税込ですか。"
+        }
+      ]
     },
     {
       "word": "tip",
@@ -673,7 +1165,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We left a tip for the waiter."
+      "example": "We left a tip for the waiter.",
+      "examples": [
+        {
+          "text": "We left a tip for the waiter.",
+          "translation": "ウェイターにチップを残した。"
+        }
+      ]
     },
     {
       "word": "deposit",
@@ -681,7 +1179,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The hotel requires a small deposit."
+      "example": "The hotel requires a small deposit.",
+      "examples": [
+        {
+          "text": "The hotel requires a small deposit.",
+          "translation": "ホテルは少額の預金を要求します。"
+        }
+      ]
     },
     {
       "word": "refund",
@@ -689,7 +1193,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They will refund the unused ticket."
+      "example": "They will refund the unused ticket.",
+      "examples": [
+        {
+          "text": "They will refund the unused ticket.",
+          "translation": "彼らは未使用のチケットを返金します。"
+        }
+      ]
     },
     {
       "word": "discount",
@@ -697,7 +1207,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Students receive a discount on admission."
+      "example": "Students receive a discount on admission.",
+      "examples": [
+        {
+          "text": "Students receive a discount on admission.",
+          "translation": "学生は入場料が割引される。"
+        }
+      ]
     },
     {
       "word": "souvenir",
@@ -705,7 +1221,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I bought a small souvenir for my sister."
+      "example": "I bought a small souvenir for my sister.",
+      "examples": [
+        {
+          "text": "I bought a small souvenir for my sister.",
+          "translation": "妹に小さなお土産を買った。"
+        }
+      ]
     },
     {
       "word": "postcard",
@@ -713,7 +1235,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She sent me a postcard from Rome."
+      "example": "She sent me a postcard from Rome.",
+      "examples": [
+        {
+          "text": "She sent me a postcard from Rome.",
+          "translation": "彼女はローマから葉書を送ってきた。"
+        }
+      ]
     },
     {
       "word": "camera",
@@ -721,7 +1249,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Don't forget to charge your camera."
+      "example": "Don't forget to charge your camera.",
+      "examples": [
+        {
+          "text": "Don't forget to charge your camera.",
+          "translation": "カメラを充電するのを忘れないで。"
+        }
+      ]
     },
     {
       "word": "scenery",
@@ -729,7 +1263,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The mountain scenery was beautiful."
+      "example": "The mountain scenery was beautiful.",
+      "examples": [
+        {
+          "text": "The mountain scenery was beautiful.",
+          "translation": "山の風景は美しかった。"
+        }
+      ]
     },
     {
       "word": "landscape",
@@ -737,7 +1277,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Snow covered the entire landscape."
+      "example": "Snow covered the entire landscape.",
+      "examples": [
+        {
+          "text": "Snow covered the entire landscape.",
+          "translation": "雪が風景全体を覆った。"
+        }
+      ]
     },
     {
       "word": "view",
@@ -745,7 +1291,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our room has a sea view."
+      "example": "Our room has a sea view.",
+      "examples": [
+        {
+          "text": "Our room has a sea view.",
+          "translation": "私たちの部屋は海を見ている。"
+        }
+      ]
     },
     {
       "word": "monument",
@@ -753,7 +1305,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This monument honors the town's founders."
+      "example": "This monument honors the town's founders.",
+      "examples": [
+        {
+          "text": "This monument honors the town's founders.",
+          "translation": "町の創始者を讃える碑。"
+        }
+      ]
     },
     {
       "word": "castle",
@@ -761,7 +1319,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We visited a castle on the hill."
+      "example": "We visited a castle on the hill.",
+      "examples": [
+        {
+          "text": "We visited a castle on the hill.",
+          "translation": "私たちは丘の上の城を訪れた。"
+        }
+      ]
     },
     {
       "word": "cathedral",
@@ -769,7 +1333,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The cathedral has colorful glass windows."
+      "example": "The cathedral has colorful glass windows.",
+      "examples": [
+        {
+          "text": "The cathedral has colorful glass windows.",
+          "translation": "大聖堂には彩色されたガラスの窓がある。"
+        }
+      ]
     },
     {
       "word": "temple",
@@ -777,7 +1347,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please remove your shoes inside the temple."
+      "example": "Please remove your shoes inside the temple.",
+      "examples": [
+        {
+          "text": "Please remove your shoes inside the temple.",
+          "translation": "寺内で靴を脱いでください。"
+        }
+      ]
     },
     {
       "word": "shrine",
@@ -785,7 +1361,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We walked through the gate of the shrine."
+      "example": "We walked through the gate of the shrine.",
+      "examples": [
+        {
+          "text": "We walked through the gate of the shrine.",
+          "translation": "私たちは神社の門を通り抜けた。"
+        }
+      ]
     },
     {
       "word": "tower",
@@ -793,7 +1375,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You can see the tower from here."
+      "example": "You can see the tower from here.",
+      "examples": [
+        {
+          "text": "You can see the tower from here.",
+          "translation": "ここからは塔が見える。"
+        }
+      ]
     },
     {
       "word": "square",
@@ -801,7 +1389,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Let's meet in the main square."
+      "example": "Let's meet in the main square.",
+      "examples": [
+        {
+          "text": "Let's meet in the main square.",
+          "translation": "広場で会おう"
+        }
+      ]
     },
     {
       "word": "fountain",
@@ -809,7 +1403,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Children gathered around the fountain."
+      "example": "Children gathered around the fountain.",
+      "examples": [
+        {
+          "text": "Children gathered around the fountain.",
+          "translation": "子供たちは噴水の周りに集まった。"
+        }
+      ]
     },
     {
       "word": "gallery",
@@ -817,7 +1417,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The gallery displays paintings by local artists."
+      "example": "The gallery displays paintings by local artists.",
+      "examples": [
+        {
+          "text": "The gallery displays paintings by local artists.",
+          "translation": "地元の画家の作品が展示されている。"
+        }
+      ]
     },
     {
       "word": "theater",
@@ -825,7 +1431,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The theater opens an hour before the show."
+      "example": "The theater opens an hour before the show.",
+      "examples": [
+        {
+          "text": "The theater opens an hour before the show.",
+          "translation": "劇場は上演の1時間前に開館する。"
+        }
+      ]
     },
     {
       "word": "cinema",
@@ -833,7 +1445,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "There is a cinema beside our hotel."
+      "example": "There is a cinema beside our hotel.",
+      "examples": [
+        {
+          "text": "There is a cinema beside our hotel.",
+          "translation": "我々のホテルの隣に映画館がある。"
+        }
+      ]
     },
     {
       "word": "festival",
@@ -841,7 +1459,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The music festival lasts three days."
+      "example": "The music festival lasts three days.",
+      "examples": [
+        {
+          "text": "The music festival lasts three days.",
+          "translation": "音楽祭は3日間続く。"
+        }
+      ]
     },
     {
       "word": "parade",
@@ -849,7 +1473,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The parade passes through the town center."
+      "example": "The parade passes through the town center.",
+      "examples": [
+        {
+          "text": "The parade passes through the town center.",
+          "translation": "パレードは町の中心部を通る。"
+        }
+      ]
     },
     {
       "word": "exhibition",
@@ -857,7 +1487,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We visited an exhibition of old photographs."
+      "example": "We visited an exhibition of old photographs.",
+      "examples": [
+        {
+          "text": "We visited an exhibition of old photographs.",
+          "translation": "私たちは古い写真の展示会を訪れた。"
+        }
+      ]
     },
     {
       "word": "aquarium",
@@ -865,7 +1501,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The aquarium has a large shark tank."
+      "example": "The aquarium has a large shark tank.",
+      "examples": [
+        {
+          "text": "The aquarium has a large shark tank.",
+          "translation": "水族館には大きなサメの水槽がある。"
+        }
+      ]
     },
     {
       "word": "garden",
@@ -873,7 +1515,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We had tea in the garden."
+      "example": "We had tea in the garden.",
+      "examples": [
+        {
+          "text": "We had tea in the garden.",
+          "translation": "庭でお茶を飲んだ。"
+        }
+      ]
     },
     {
       "word": "mountain",
@@ -881,7 +1529,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The mountain was hidden by clouds."
+      "example": "The mountain was hidden by clouds.",
+      "examples": [
+        {
+          "text": "The mountain was hidden by clouds.",
+          "translation": "山は雲に隠れていた。"
+        }
+      ]
     },
     {
       "word": "valley",
@@ -889,7 +1543,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A river runs through the valley."
+      "example": "A river runs through the valley.",
+      "examples": [
+        {
+          "text": "A river runs through the valley.",
+          "translation": "川が谷を流れている。"
+        }
+      ]
     },
     {
       "word": "forest",
@@ -897,7 +1557,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Stay on the path through the forest."
+      "example": "Stay on the path through the forest.",
+      "examples": [
+        {
+          "text": "Stay on the path through the forest.",
+          "translation": "森を通り抜ける間は、道から外れないでください。"
+        }
+      ]
     },
     {
       "word": "wood",
@@ -905,7 +1571,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A small wood lies behind the village."
+      "example": "A small wood lies behind the village.",
+      "examples": [
+        {
+          "text": "A small wood lies behind the village.",
+          "translation": "村の後ろには小さな森がある。"
+        }
+      ]
     },
     {
       "word": "river",
@@ -913,7 +1585,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We crossed the river by boat."
+      "example": "We crossed the river by boat.",
+      "examples": [
+        {
+          "text": "We crossed the river by boat.",
+          "translation": "私たちはボートで川を渡った。"
+        }
+      ]
     },
     {
       "word": "stream",
@@ -921,7 +1599,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A narrow stream flows beside the campsite."
+      "example": "A narrow stream flows beside the campsite.",
+      "examples": [
+        {
+          "text": "A narrow stream flows beside the campsite.",
+          "translation": "キャンプ場の隣には狭い小川が流れている。"
+        }
+      ]
     },
     {
       "word": "island",
@@ -929,7 +1613,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You can reach the island by ferry."
+      "example": "You can reach the island by ferry.",
+      "examples": [
+        {
+          "text": "You can reach the island by ferry.",
+          "translation": "フェリーで島に行ける。"
+        }
+      ]
     },
     {
       "word": "peninsula",
@@ -937,7 +1627,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We drove around the southern peninsula."
+      "example": "We drove around the southern peninsula.",
+      "examples": [
+        {
+          "text": "We drove around the southern peninsula.",
+          "translation": "南半島をドライブした。"
+        }
+      ]
     },
     {
       "word": "coast",
@@ -945,7 +1641,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The train follows the coast."
+      "example": "The train follows the coast.",
+      "examples": [
+        {
+          "text": "The train follows the coast.",
+          "translation": "列車は海岸に沿って走る。"
+        }
+      ]
     },
     {
       "word": "cave",
@@ -953,7 +1655,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A guide led us into the cave."
+      "example": "A guide led us into the cave.",
+      "examples": [
+        {
+          "text": "A guide led us into the cave.",
+          "translation": "ガイドが洞窟に私たちを案内した。"
+        }
+      ]
     },
     {
       "word": "desert",
@@ -961,7 +1669,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The desert gets cold at night."
+      "example": "The desert gets cold at night.",
+      "examples": [
+        {
+          "text": "The desert gets cold at night.",
+          "translation": "砂漠は夜になると寒くなる。"
+        }
+      ]
     },
     {
       "word": "plain",
@@ -969,7 +1683,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The road crosses a wide plain."
+      "example": "The road crosses a wide plain.",
+      "examples": [
+        {
+          "text": "The road crosses a wide plain.",
+          "translation": "道路は広い平野を横切っている。"
+        }
+      ]
     },
     {
       "word": "farm",
@@ -977,7 +1697,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We stayed on a small farm."
+      "example": "We stayed on a small farm.",
+      "examples": [
+        {
+          "text": "We stayed on a small farm.",
+          "translation": "私たちは小さな農場に泊まった。"
+        }
+      ]
     },
     {
       "word": "countryside",
@@ -985,7 +1711,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We spent the weekend in the countryside."
+      "example": "We spent the weekend in the countryside.",
+      "examples": [
+        {
+          "text": "We spent the weekend in the countryside.",
+          "translation": "私たちは週末を田舎で過ごした。"
+        }
+      ]
     },
     {
       "word": "village",
@@ -993,7 +1725,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The village has one small shop."
+      "example": "The village has one small shop.",
+      "examples": [
+        {
+          "text": "The village has one small shop.",
+          "translation": "村には小さな店が1つある。"
+        }
+      ]
     },
     {
       "word": "city",
@@ -1001,7 +1739,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This city is easy to explore on foot."
+      "example": "This city is easy to explore on foot.",
+      "examples": [
+        {
+          "text": "This city is easy to explore on foot.",
+          "translation": "この街は歩いて探検しやすい。"
+        }
+      ]
     },
     {
       "word": "capital",
@@ -1009,7 +1753,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We spent two days in the capital."
+      "example": "We spent two days in the capital.",
+      "examples": [
+        {
+          "text": "We spent two days in the capital.",
+          "translation": "私たちは首都で2日間過ごした。"
+        }
+      ]
     },
     {
       "word": "suburb",
@@ -1017,7 +1767,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our hotel is in a quiet suburb."
+      "example": "Our hotel is in a quiet suburb.",
+      "examples": [
+        {
+          "text": "Our hotel is in a quiet suburb.",
+          "translation": "我々のホテルは静かな郊外にある。"
+        }
+      ]
     },
     {
       "word": "neighborhood",
@@ -1025,7 +1781,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "There are several cafes in this neighborhood."
+      "example": "There are several cafes in this neighborhood.",
+      "examples": [
+        {
+          "text": "There are several cafes in this neighborhood.",
+          "translation": "この近所にはいくつかのカフェがある。"
+        }
+      ]
     },
     {
       "word": "downtown",
@@ -1033,7 +1795,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We took a bus downtown."
+      "example": "We took a bus downtown.",
+      "examples": [
+        {
+          "text": "We took a bus downtown.",
+          "translation": "私たちはバスでダウンタウンに行った。"
+        }
+      ]
     },
     {
       "word": "avenue",
@@ -1041,7 +1809,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Trees line the wide avenue."
+      "example": "Trees line the wide avenue.",
+      "examples": [
+        {
+          "text": "Trees line the wide avenue.",
+          "translation": "広い通りには木々が並んでいる。"
+        }
+      ]
     },
     {
       "word": "path",
@@ -1049,7 +1823,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Follow the path to the lake."
+      "example": "Follow the path to the lake.",
+      "examples": [
+        {
+          "text": "Follow the path to the lake.",
+          "translation": "湖までこの道を進んでください。"
+        }
+      ]
     },
     {
       "word": "pavement",
@@ -1057,7 +1837,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please keep your bicycle off the pavement."
+      "example": "Please keep your bicycle off the pavement.",
+      "examples": [
+        {
+          "text": "Please keep your bicycle off the pavement.",
+          "translation": "自転車は歩道から離してください。"
+        }
+      ]
     },
     {
       "word": "crossing",
@@ -1065,7 +1851,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The sea crossing took two hours."
+      "example": "The sea crossing took two hours.",
+      "examples": [
+        {
+          "text": "The sea crossing took two hours.",
+          "translation": "海を渡るのに2時間かかった。"
+        }
+      ]
     },
     {
       "word": "intersection",
@@ -1073,7 +1865,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Turn left at the next intersection."
+      "example": "Turn left at the next intersection.",
+      "examples": [
+        {
+          "text": "Turn left at the next intersection.",
+          "translation": "次の交差点で左折。"
+        }
+      ]
     },
     {
       "word": "roundabout",
@@ -1081,7 +1879,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Take the second exit at the roundabout."
+      "example": "Take the second exit at the roundabout.",
+      "examples": [
+        {
+          "text": "Take the second exit at the roundabout.",
+          "translation": "ロータリーで2番出口を出て"
+        }
+      ]
     },
     {
       "word": "freeway",
@@ -1089,7 +1893,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We left the freeway near the airport."
+      "example": "We left the freeway near the airport.",
+      "examples": [
+        {
+          "text": "We left the freeway near the airport.",
+          "translation": "私たちは空港の近くの高速道路を出た。"
+        }
+      ]
     },
     {
       "word": "motorway",
@@ -1097,7 +1907,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Traffic on the motorway was slow."
+      "example": "Traffic on the motorway was slow.",
+      "examples": [
+        {
+          "text": "Traffic on the motorway was slow.",
+          "translation": "高速道路の交通は遅かった。"
+        }
+      ]
     },
     {
       "word": "tunnel",
@@ -1105,7 +1921,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The train went through a long tunnel."
+      "example": "The train went through a long tunnel.",
+      "examples": [
+        {
+          "text": "The train went through a long tunnel.",
+          "translation": "列車は長いトンネルを通った。"
+        }
+      ]
     },
     {
       "word": "railroad",
@@ -1113,7 +1935,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The railroad connects the two towns."
+      "example": "The railroad connects the two towns.",
+      "examples": [
+        {
+          "text": "The railroad connects the two towns.",
+          "translation": "鉄道が両町を結んでいる。"
+        }
+      ]
     },
     {
       "word": "carriage",
@@ -1121,7 +1949,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We found seats in the last carriage."
+      "example": "We found seats in the last carriage.",
+      "examples": [
+        {
+          "text": "We found seats in the last carriage.",
+          "translation": "最後の車両に座席がある。"
+        }
+      ]
     },
     {
       "word": "compartment",
@@ -1129,7 +1963,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our train compartment had six seats."
+      "example": "Our train compartment had six seats.",
+      "examples": [
+        {
+          "text": "Our train compartment had six seats.",
+          "translation": "私たちの列車の客室は6席だった。"
+        }
+      ]
     },
     {
       "word": "timetable",
@@ -1137,7 +1977,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please check the latest train timetable."
+      "example": "Please check the latest train timetable.",
+      "examples": [
+        {
+          "text": "Please check the latest train timetable.",
+          "translation": "最新の列車ダイヤをご確認ください。"
+        }
+      ]
     },
     {
       "word": "delay",
@@ -1145,7 +1991,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Bad weather may delay our flight."
+      "example": "Bad weather may delay our flight.",
+      "examples": [
+        {
+          "text": "Bad weather may delay our flight.",
+          "translation": "悪天候で飛行が遅れるかもしれない。"
+        }
+      ]
     },
     {
       "word": "cancellation",
@@ -1153,7 +2005,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The cancellation left us without a flight."
+      "example": "The cancellation left us without a flight.",
+      "examples": [
+        {
+          "text": "The cancellation left us without a flight.",
+          "translation": "キャンセルで私たちは飛行機がなくなった。"
+        }
+      ]
     },
     {
       "word": "transfer",
@@ -1161,7 +2019,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We need to transfer at the next station."
+      "example": "We need to transfer at the next station.",
+      "examples": [
+        {
+          "text": "We need to transfer at the next station.",
+          "translation": "次の駅で乗り換えなきゃ"
+        }
+      ]
     },
     {
       "word": "route",
@@ -1169,7 +2033,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This route avoids the busy city center."
+      "example": "This route avoids the busy city center.",
+      "examples": [
+        {
+          "text": "This route avoids the busy city center.",
+          "translation": "このルートは、繁華街を避ける。"
+        }
+      ]
     },
     {
       "word": "stop",
@@ -1177,7 +2047,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Get off at the next stop."
+      "example": "Get off at the next stop.",
+      "examples": [
+        {
+          "text": "Get off at the next stop.",
+          "translation": "次の停留所で降りて"
+        }
+      ]
     },
     {
       "word": "kilometer",
@@ -1185,7 +2061,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The beach is one kilometer away."
+      "example": "The beach is one kilometer away.",
+      "examples": [
+        {
+          "text": "The beach is one kilometer away.",
+          "translation": "海岸は1キロ離れている。"
+        }
+      ]
     },
     {
       "word": "mile",
@@ -1193,7 +2075,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We walked another mile before stopping."
+      "example": "We walked another mile before stopping.",
+      "examples": [
+        {
+          "text": "We walked another mile before stopping.",
+          "translation": "私たちは止まる前にもう1マイル歩いた。"
+        }
+      ]
     },
     {
       "word": "meter",
@@ -1201,7 +2089,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The path is about one meter wide."
+      "example": "The path is about one meter wide.",
+      "examples": [
+        {
+          "text": "The path is about one meter wide.",
+          "translation": "道の幅は約1メートル。"
+        }
+      ]
     },
     {
       "word": "address",
@@ -1209,7 +2103,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please write down the hotel's address."
+      "example": "Please write down the hotel's address.",
+      "examples": [
+        {
+          "text": "Please write down the hotel's address.",
+          "translation": "ホテルの住所を書いて下さい。"
+        }
+      ]
     },
     {
       "word": "sign",
@@ -1217,7 +2117,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The sign points toward the station."
+      "example": "The sign points toward the station.",
+      "examples": [
+        {
+          "text": "The sign points toward the station.",
+          "translation": "駅の方向を示している。"
+        }
+      ]
     },
     {
       "word": "petrol",
@@ -1225,7 +2131,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We need to buy more petrol."
+      "example": "We need to buy more petrol.",
+      "examples": [
+        {
+          "text": "We need to buy more petrol.",
+          "translation": "ガソリンを買う必要がある。"
+        }
+      ]
     },
     {
       "word": "gasoline",
@@ -1233,7 +2145,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The car is almost out of gasoline."
+      "example": "The car is almost out of gasoline.",
+      "examples": [
+        {
+          "text": "The car is almost out of gasoline.",
+          "translation": "車のガソリンがほとんど切れている。"
+        }
+      ]
     },
     {
       "word": "fuel",
@@ -1241,7 +2159,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The boat stopped to take on fuel."
+      "example": "The boat stopped to take on fuel.",
+      "examples": [
+        {
+          "text": "The boat stopped to take on fuel.",
+          "translation": "船は燃料を取るために止まった。"
+        }
+      ]
     },
     {
       "word": "tire",
@@ -1249,7 +2173,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our bicycle has a flat tire."
+      "example": "Our bicycle has a flat tire.",
+      "examples": [
+        {
+          "text": "Our bicycle has a flat tire.",
+          "translation": "私たちの自転車のタイヤがパンクしている。"
+        }
+      ]
     },
     {
       "word": "wheel",
@@ -1257,7 +2187,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The front wheel needs repair."
+      "example": "The front wheel needs repair.",
+      "examples": [
+        {
+          "text": "The front wheel needs repair.",
+          "translation": "前輪は修理が必要だ。"
+        }
+      ]
     },
     {
       "word": "engine",
@@ -1265,7 +2201,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The engine made a strange noise."
+      "example": "The engine made a strange noise.",
+      "examples": [
+        {
+          "text": "The engine made a strange noise.",
+          "translation": "エンジンが奇妙な音を出した。"
+        }
+      ]
     },
     {
       "word": "bicycle",
@@ -1273,7 +2215,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You can rent a bicycle here."
+      "example": "You can rent a bicycle here.",
+      "examples": [
+        {
+          "text": "You can rent a bicycle here.",
+          "translation": "ここで自転車を借りることができます。"
+        }
+      ]
     },
     {
       "word": "motorcycle",
@@ -1281,7 +2229,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "He traveled across the country by motorcycle."
+      "example": "He traveled across the country by motorcycle.",
+      "examples": [
+        {
+          "text": "He traveled across the country by motorcycle.",
+          "translation": "彼はバイクで国中を旅した。"
+        }
+      ]
     },
     {
       "word": "scooter",
@@ -1289,7 +2243,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She parked her scooter outside the cafe."
+      "example": "She parked her scooter outside the cafe.",
+      "examples": [
+        {
+          "text": "She parked her scooter outside the cafe.",
+          "translation": "彼女はカフェの外にスクーターを停めた。"
+        }
+      ]
     },
     {
       "word": "truck",
@@ -1297,7 +2257,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A truck was blocking the narrow road."
+      "example": "A truck was blocking the narrow road.",
+      "examples": [
+        {
+          "text": "A truck was blocking the narrow road.",
+          "translation": "トラックが狭い道を塞いでいた。"
+        }
+      ]
     },
     {
       "word": "coach",
@@ -1305,7 +2271,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We took a coach to the airport."
+      "example": "We took a coach to the airport.",
+      "examples": [
+        {
+          "text": "We took a coach to the airport.",
+          "translation": "私たちは空港までバスで行った。"
+        }
+      ]
     },
     {
       "word": "ambulance",
@@ -1313,7 +2285,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "An ambulance arrived within minutes."
+      "example": "An ambulance arrived within minutes.",
+      "examples": [
+        {
+          "text": "An ambulance arrived within minutes.",
+          "translation": "救急車が数分で到着した。"
+        }
+      ]
     },
     {
       "word": "parking",
@@ -1321,7 +2299,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Free parking is available behind the hotel."
+      "example": "Free parking is available behind the hotel.",
+      "examples": [
+        {
+          "text": "Free parking is available behind the hotel.",
+          "translation": "ホテルの裏手には無料駐車場がある。"
+        }
+      ]
     },
     {
       "word": "garage",
@@ -1329,7 +2313,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We left the car in the garage."
+      "example": "We left the car in the garage.",
+      "examples": [
+        {
+          "text": "We left the car in the garage.",
+          "translation": "私たちは車をガレージに置いた。"
+        }
+      ]
     },
     {
       "word": "rental",
@@ -1337,7 +2327,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The bicycle rental costs ten dollars."
+      "example": "The bicycle rental costs ten dollars.",
+      "examples": [
+        {
+          "text": "The bicycle rental costs ten dollars.",
+          "translation": "自転車のレンタル料は10ドルです。"
+        }
+      ]
     },
     {
       "word": "license",
@@ -1345,7 +2341,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "May I see your driver's license?"
+      "example": "May I see your driver's license?",
+      "examples": [
+        {
+          "text": "May I see your driver's license?",
+          "translation": "免許証を見せてくれませんか。"
+        }
+      ]
     },
     {
       "word": "accident",
@@ -1353,7 +2355,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "An accident delayed the morning traffic."
+      "example": "An accident delayed the morning traffic.",
+      "examples": [
+        {
+          "text": "An accident delayed the morning traffic.",
+          "translation": "事故で朝の交通に遅れが出ました。"
+        }
+      ]
     },
     {
       "word": "police",
@@ -1361,7 +2369,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We reported the missing bag to the police."
+      "example": "We reported the missing bag to the police.",
+      "examples": [
+        {
+          "text": "We reported the missing bag to the police.",
+          "translation": "私たちは警察に行方不明のバッグを報告した。"
+        }
+      ]
     },
     {
       "word": "hospital",
@@ -1369,7 +2383,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The nearest hospital is two streets away."
+      "example": "The nearest hospital is two streets away.",
+      "examples": [
+        {
+          "text": "The nearest hospital is two streets away.",
+          "translation": "最寄りの病院は2ブロック先です。"
+        }
+      ]
     },
     {
       "word": "pharmacy",
@@ -1377,7 +2397,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Is there a pharmacy near here?"
+      "example": "Is there a pharmacy near here?",
+      "examples": [
+        {
+          "text": "Is there a pharmacy near here?",
+          "translation": "ここ近くに薬局はありますか。"
+        }
+      ]
     },
     {
       "word": "doctor",
@@ -1385,7 +2411,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I need to see a doctor."
+      "example": "I need to see a doctor.",
+      "examples": [
+        {
+          "text": "I need to see a doctor.",
+          "translation": "医者に行かないと"
+        }
+      ]
     },
     {
       "word": "clinic",
@@ -1393,7 +2425,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The clinic opens at nine."
+      "example": "The clinic opens at nine.",
+      "examples": [
+        {
+          "text": "The clinic opens at nine.",
+          "translation": "診療所は9時に開いている。"
+        }
+      ]
     },
     {
       "word": "pain",
@@ -1401,7 +2439,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She felt a sharp pain in her ankle."
+      "example": "She felt a sharp pain in her ankle.",
+      "examples": [
+        {
+          "text": "She felt a sharp pain in her ankle.",
+          "translation": "彼女は足首に鋭い痛みを感じた。"
+        }
+      ]
     },
     {
       "word": "medicine",
@@ -1409,7 +2453,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Keep your medicine in your hand luggage."
+      "example": "Keep your medicine in your hand luggage.",
+      "examples": [
+        {
+          "text": "Keep your medicine in your hand luggage.",
+          "translation": "薬は手荷物に入れておいてください。"
+        }
+      ]
     },
     {
       "word": "fever",
@@ -1417,7 +2467,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "He stayed at the hotel with a fever."
+      "example": "He stayed at the hotel with a fever.",
+      "examples": [
+        {
+          "text": "He stayed at the hotel with a fever.",
+          "translation": "彼は発熱をしてホテルに滞在した。"
+        }
+      ]
     },
     {
       "word": "prescription",
@@ -1425,7 +2481,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The pharmacist asked for my prescription."
+      "example": "The pharmacist asked for my prescription.",
+      "examples": [
+        {
+          "text": "The pharmacist asked for my prescription.",
+          "translation": "薬剤師は私に処方箋を出すよう求めました。"
+        }
+      ]
     },
     {
       "word": "safety",
@@ -1433,7 +2495,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Your safety is our first concern."
+      "example": "Your safety is our first concern.",
+      "examples": [
+        {
+          "text": "Your safety is our first concern.",
+          "translation": "君の安全は最優先だ"
+        }
+      ]
     },
     {
       "word": "danger",
@@ -1441,7 +2509,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The sign warns of falling-rock danger."
+      "example": "The sign warns of falling-rock danger.",
+      "examples": [
+        {
+          "text": "The sign warns of falling-rock danger.",
+          "translation": "石が落ちる危険性を警告するサインだ。"
+        }
+      ]
     },
     {
       "word": "caution",
@@ -1449,7 +2523,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please use caution on the wet steps."
+      "example": "Please use caution on the wet steps.",
+      "examples": [
+        {
+          "text": "Please use caution on the wet steps.",
+          "translation": "湿った階段は注意してください。"
+        }
+      ]
     },
     {
       "word": "flood",
@@ -1457,7 +2537,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The flood closed the main road."
+      "example": "The flood closed the main road.",
+      "examples": [
+        {
+          "text": "The flood closed the main road.",
+          "translation": "洪水で主要道路が閉鎖された。"
+        }
+      ]
     },
     {
       "word": "storm",
@@ -1465,7 +2551,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We stayed indoors during the storm."
+      "example": "We stayed indoors during the storm.",
+      "examples": [
+        {
+          "text": "We stayed indoors during the storm.",
+          "translation": "嵐の間、私たちは屋内にいた。"
+        }
+      ]
     },
     {
       "word": "thunder",
@@ -1473,7 +2565,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We heard thunder in the distance."
+      "example": "We heard thunder in the distance.",
+      "examples": [
+        {
+          "text": "We heard thunder in the distance.",
+          "translation": "遠くから雷が聞こえた。"
+        }
+      ]
     },
     {
       "word": "snow",
@@ -1481,7 +2579,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Fresh snow covered the rooftops."
+      "example": "Fresh snow covered the rooftops.",
+      "examples": [
+        {
+          "text": "Fresh snow covered the rooftops.",
+          "translation": "新雪が屋根を覆っていた。"
+        }
+      ]
     },
     {
       "word": "rain",
@@ -1489,7 +2593,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Heavy rain continued all afternoon."
+      "example": "Heavy rain continued all afternoon.",
+      "examples": [
+        {
+          "text": "Heavy rain continued all afternoon.",
+          "translation": "午後中に激しい雨が続いた。"
+        }
+      ]
     },
     {
       "word": "fog",
@@ -1497,7 +2607,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Thick fog delayed the ferry."
+      "example": "Thick fog delayed the ferry.",
+      "examples": [
+        {
+          "text": "Thick fog delayed the ferry.",
+          "translation": "濃い霧がフェリーを遅らせた。"
+        }
+      ]
     },
     {
       "word": "mist",
@@ -1505,7 +2621,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Morning mist covered the lake."
+      "example": "Morning mist covered the lake.",
+      "examples": [
+        {
+          "text": "Morning mist covered the lake.",
+          "translation": "朝の霧が湖を覆った。"
+        }
+      ]
     },
     {
       "word": "wind",
@@ -1513,7 +2635,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The strong wind made walking difficult."
+      "example": "The strong wind made walking difficult.",
+      "examples": [
+        {
+          "text": "The strong wind made walking difficult.",
+          "translation": "強風で歩くのが難しかった。"
+        }
+      ]
     },
     {
       "word": "sunlight",
@@ -1521,7 +2649,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Sunlight filled the hotel room."
+      "example": "Sunlight filled the hotel room.",
+      "examples": [
+        {
+          "text": "Sunlight filled the hotel room.",
+          "translation": "ホテルの部屋は日光に満ちていた。"
+        }
+      ]
     },
     {
       "word": "shade",
@@ -1529,7 +2663,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Let's rest in the shade."
+      "example": "Let's rest in the shade.",
+      "examples": [
+        {
+          "text": "Let's rest in the shade.",
+          "translation": "日陰で休みましょう。"
+        }
+      ]
     },
     {
       "word": "shadow",
@@ -1537,7 +2677,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We waited in the shadow of the tower."
+      "example": "We waited in the shadow of the tower.",
+      "examples": [
+        {
+          "text": "We waited in the shadow of the tower.",
+          "translation": "私たちは塔の影で待った。"
+        }
+      ]
     },
     {
       "word": "weather",
@@ -1545,7 +2691,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The weather looks good for tomorrow."
+      "example": "The weather looks good for tomorrow.",
+      "examples": [
+        {
+          "text": "The weather looks good for tomorrow.",
+          "translation": "明日は天気が良いようだ。"
+        }
+      ]
     },
     {
       "word": "forecast",
@@ -1553,7 +2705,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The forecast says it will rain."
+      "example": "The forecast says it will rain.",
+      "examples": [
+        {
+          "text": "The forecast says it will rain.",
+          "translation": "予報では雨が降るそうです。"
+        }
+      ]
     },
     {
       "word": "temperature",
@@ -1561,7 +2719,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The temperature drops quickly after sunset."
+      "example": "The temperature drops quickly after sunset.",
+      "examples": [
+        {
+          "text": "The temperature drops quickly after sunset.",
+          "translation": "日没後は気温が急激に下がる。"
+        }
+      ]
     },
     {
       "word": "season",
@@ -1569,7 +2733,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Summer is the busiest travel season."
+      "example": "Summer is the busiest travel season.",
+      "examples": [
+        {
+          "text": "Summer is the busiest travel season.",
+          "translation": "夏は旅行の最も忙しい季節です。"
+        }
+      ]
     },
     {
       "word": "spring",
@@ -1577,7 +2747,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The gardens are lovely in spring."
+      "example": "The gardens are lovely in spring.",
+      "examples": [
+        {
+          "text": "The gardens are lovely in spring.",
+          "translation": "春には庭園は美しい。"
+        }
+      ]
     },
     {
       "word": "summer",
@@ -1585,7 +2761,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We visit the coast every summer."
+      "example": "We visit the coast every summer.",
+      "examples": [
+        {
+          "text": "We visit the coast every summer.",
+          "translation": "私たちは毎年夏に海岸を訪れる。"
+        }
+      ]
     },
     {
       "word": "winter",
@@ -1593,7 +2775,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The mountain road closes in winter."
+      "example": "The mountain road closes in winter.",
+      "examples": [
+        {
+          "text": "The mountain road closes in winter.",
+          "translation": "山道は冬には閉鎖される。"
+        }
+      ]
     },
     {
       "word": "dry",
@@ -1601,7 +2789,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Keep your passport in a dry bag."
+      "example": "Keep your passport in a dry bag.",
+      "examples": [
+        {
+          "text": "Keep your passport in a dry bag.",
+          "translation": "パスポートは乾燥袋に入れておいてください。"
+        }
+      ]
     },
     {
       "word": "wet",
@@ -1609,7 +2803,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "My shoes are still wet."
+      "example": "My shoes are still wet.",
+      "examples": [
+        {
+          "text": "My shoes are still wet.",
+          "translation": "靴はまだ濡れている。"
+        }
+      ]
     },
     {
       "word": "cold",
@@ -1617,7 +2817,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The water is too cold for swimming."
+      "example": "The water is too cold for swimming.",
+      "examples": [
+        {
+          "text": "The water is too cold for swimming.",
+          "translation": "水は泳げないほど寒い。"
+        }
+      ]
     },
     {
       "word": "warm",
@@ -1625,7 +2831,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Bring a warm jacket for the evening."
+      "example": "Bring a warm jacket for the evening.",
+      "examples": [
+        {
+          "text": "Bring a warm jacket for the evening.",
+          "translation": "夕方の暖かいジャケットを持ってきて。"
+        }
+      ]
     },
     {
       "word": "cool",
@@ -1633,7 +2845,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The cave stays cool all year."
+      "example": "The cave stays cool all year.",
+      "examples": [
+        {
+          "text": "The cave stays cool all year.",
+          "translation": "洞窟は一年中涼しい。"
+        }
+      ]
     },
     {
       "word": "humid",
@@ -1641,7 +2859,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The air feels very humid today."
+      "example": "The air feels very humid today.",
+      "examples": [
+        {
+          "text": "The air feels very humid today.",
+          "translation": "今日は空気がとても湿っている。"
+        }
+      ]
     },
     {
       "word": "icy",
@@ -1649,7 +2873,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Be careful on the icy pavement."
+      "example": "Be careful on the icy pavement.",
+      "examples": [
+        {
+          "text": "Be careful on the icy pavement.",
+          "translation": "氷の舗装道路は気をつけて。"
+        }
+      ]
     },
     {
       "word": "crowded",
@@ -1657,7 +2887,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The train was crowded this morning."
+      "example": "The train was crowded this morning.",
+      "examples": [
+        {
+          "text": "The train was crowded this morning.",
+          "translation": "今朝の列車は混んでいた。"
+        }
+      ]
     },
     {
       "word": "empty",
@@ -1665,7 +2901,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We found an empty seat near the window."
+      "example": "We found an empty seat near the window.",
+      "examples": [
+        {
+          "text": "We found an empty seat near the window.",
+          "translation": "窓の近くに空席が見つかった。"
+        }
+      ]
     },
     {
       "word": "busy",
@@ -1673,7 +2915,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The receptionist is busy at the moment."
+      "example": "The receptionist is busy at the moment.",
+      "examples": [
+        {
+          "text": "The receptionist is busy at the moment.",
+          "translation": "受付係は今忙しい。"
+        }
+      ]
     },
     {
       "word": "noisy",
@@ -1681,7 +2929,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our room faced a noisy street."
+      "example": "Our room faced a noisy street.",
+      "examples": [
+        {
+          "text": "Our room faced a noisy street.",
+          "translation": "私たちの部屋は騒がしい通りに面していた。"
+        }
+      ]
     },
     {
       "word": "calm",
@@ -1689,7 +2943,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The sea was calm this morning."
+      "example": "The sea was calm this morning.",
+      "examples": [
+        {
+          "text": "The sea was calm this morning.",
+          "translation": "今朝は海が静かだった。"
+        }
+      ]
     },
     {
       "word": "convenient",
@@ -1697,7 +2957,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This hotel is convenient for the station."
+      "example": "This hotel is convenient for the station.",
+      "examples": [
+        {
+          "text": "This hotel is convenient for the station.",
+          "translation": "このホテルは駅に近い。"
+        }
+      ]
     },
     {
       "word": "clean",
@@ -1705,7 +2971,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The room was bright and clean."
+      "example": "The room was bright and clean.",
+      "examples": [
+        {
+          "text": "The room was bright and clean.",
+          "translation": "部屋は明るくてきれいだった。"
+        }
+      ]
     },
     {
       "word": "dirty",
@@ -1713,7 +2985,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "My boots are dirty from the hike."
+      "example": "My boots are dirty from the hike.",
+      "examples": [
+        {
+          "text": "My boots are dirty from the hike.",
+          "translation": "私の靴はハイキングで汚れている。"
+        }
+      ]
     },
     {
       "word": "cheap",
@@ -1721,7 +2999,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We found a cheap flight online."
+      "example": "We found a cheap flight online.",
+      "examples": [
+        {
+          "text": "We found a cheap flight online.",
+          "translation": "ネットで安い航空券を見つけた。"
+        }
+      ]
     },
     {
       "word": "local",
@@ -1729,7 +3013,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Try some food at the local market."
+      "example": "Try some food at the local market.",
+      "examples": [
+        {
+          "text": "Try some food at the local market.",
+          "translation": "地元の市場で食べ物を試してみて。"
+        }
+      ]
     },
     {
       "word": "foreign",
@@ -1737,7 +3027,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She enjoys learning foreign languages."
+      "example": "She enjoys learning foreign languages.",
+      "examples": [
+        {
+          "text": "She enjoys learning foreign languages.",
+          "translation": "彼女は外国語を学ぶのが好きだ。"
+        }
+      ]
     },
     {
       "word": "international",
@@ -1745,7 +3041,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Follow the signs for international departures."
+      "example": "Follow the signs for international departures.",
+      "examples": [
+        {
+          "text": "Follow the signs for international departures.",
+          "translation": "国際線の出発の標識に従ってください。"
+        }
+      ]
     },
     {
       "word": "available",
@@ -1753,7 +3055,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Are any rooms available tonight?"
+      "example": "Are any rooms available tonight?",
+      "examples": [
+        {
+          "text": "Are any rooms available tonight?",
+          "translation": "今夜は部屋が空いてますか。"
+        }
+      ]
     },
     {
       "word": "full",
@@ -1761,7 +3069,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The last bus was completely full."
+      "example": "The last bus was completely full.",
+      "examples": [
+        {
+          "text": "The last bus was completely full.",
+          "translation": "最後のバスは満員だった。"
+        }
+      ]
     },
     {
       "word": "single",
@@ -1769,7 +3083,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I'd like a single room, please."
+      "example": "I'd like a single room, please.",
+      "examples": [
+        {
+          "text": "I'd like a single room, please.",
+          "translation": "私は1人部屋をお願いします。"
+        }
+      ]
     },
     {
       "word": "twin",
@@ -1777,7 +3097,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We booked a twin room with two beds."
+      "example": "We booked a twin room with two beds.",
+      "examples": [
+        {
+          "text": "We booked a twin room with two beds.",
+          "translation": "私たちはベッドが2つあるツインルームを予約した。"
+        }
+      ]
     },
     {
       "word": "suite",
@@ -1785,7 +3111,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The suite has a separate sitting room."
+      "example": "The suite has a separate sitting room.",
+      "examples": [
+        {
+          "text": "The suite has a separate sitting room.",
+          "translation": "そのスイートルームには、独立した居間があります。"
+        }
+      ]
     },
     {
       "word": "motel",
@@ -1793,7 +3125,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We stayed at a motel beside the highway."
+      "example": "We stayed at a motel beside the highway.",
+      "examples": [
+        {
+          "text": "We stayed at a motel beside the highway.",
+          "translation": "私たちは高速道路の隣のモーテルに泊まった。"
+        }
+      ]
     },
     {
       "word": "inn",
@@ -1801,7 +3139,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The old inn serves breakfast until ten."
+      "example": "The old inn serves breakfast until ten.",
+      "examples": [
+        {
+          "text": "The old inn serves breakfast until ten.",
+          "translation": "古い旅館は朝食を10時まで提供している。"
+        }
+      ]
     },
     {
       "word": "campsite",
@@ -1809,7 +3153,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The campsite is beside a small lake."
+      "example": "The campsite is beside a small lake.",
+      "examples": [
+        {
+          "text": "The campsite is beside a small lake.",
+          "translation": "キャンプ場は小さな湖のそばにある。"
+        }
+      ]
     },
     {
       "word": "caravan",
@@ -1817,7 +3167,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They towed a caravan to the coast."
+      "example": "They towed a caravan to the coast.",
+      "examples": [
+        {
+          "text": "They towed a caravan to the coast.",
+          "translation": "彼らはキャンピングトレーラーをけん引して海岸へ向かいました。"
+        }
+      ]
     },
     {
       "word": "backpack",
@@ -1825,7 +3181,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I packed a jacket in my backpack."
+      "example": "I packed a jacket in my backpack.",
+      "examples": [
+        {
+          "text": "I packed a jacket in my backpack.",
+          "translation": "私はリュックにジャケットを入れた。"
+        }
+      ]
     },
     {
       "word": "rucksack",
@@ -1833,7 +3195,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "His rucksack was too heavy to carry."
+      "example": "His rucksack was too heavy to carry.",
+      "examples": [
+        {
+          "text": "His rucksack was too heavy to carry.",
+          "translation": "彼のリュックサックは重すぎて運ぶのに苦労した。"
+        }
+      ]
     },
     {
       "word": "baggage",
@@ -1841,7 +3209,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please collect your baggage downstairs."
+      "example": "Please collect your baggage downstairs.",
+      "examples": [
+        {
+          "text": "Please collect your baggage downstairs.",
+          "translation": "階下で荷物をお受け取りください。"
+        }
+      ]
     },
     {
       "word": "label",
@@ -1849,7 +3223,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Put your name on the luggage label."
+      "example": "Put your name on the luggage label.",
+      "examples": [
+        {
+          "text": "Put your name on the luggage label.",
+          "translation": "荷物のラベルに名前を書いて。"
+        }
+      ]
     },
     {
       "word": "locker",
@@ -1857,7 +3237,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You can leave your bag in a locker."
+      "example": "You can leave your bag in a locker.",
+      "examples": [
+        {
+          "text": "You can leave your bag in a locker.",
+          "translation": "ロッカーに荷物を置いてもいい。"
+        }
+      ]
     },
     {
       "word": "towel",
@@ -1865,7 +3251,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Could I have another towel?"
+      "example": "Could I have another towel?",
+      "examples": [
+        {
+          "text": "Could I have another towel?",
+          "translation": "もう一枚タオルをくれませんか。"
+        }
+      ]
     },
     {
       "word": "blanket",
@@ -1873,7 +3265,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I asked for an extra blanket."
+      "example": "I asked for an extra blanket.",
+      "examples": [
+        {
+          "text": "I asked for an extra blanket.",
+          "translation": "私は毛布をもう1枚頼みました。"
+        }
+      ]
     },
     {
       "word": "pillow",
@@ -1881,7 +3279,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This pillow is very comfortable."
+      "example": "This pillow is very comfortable.",
+      "examples": [
+        {
+          "text": "This pillow is very comfortable.",
+          "translation": "この枕はとても快適です。"
+        }
+      ]
     },
     {
       "word": "soap",
@@ -1889,7 +3293,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "There is soap beside the sink."
+      "example": "There is soap beside the sink.",
+      "examples": [
+        {
+          "text": "There is soap beside the sink.",
+          "translation": "シンクの隣に石鹸がある。"
+        }
+      ]
     },
     {
       "word": "shampoo",
@@ -1897,7 +3307,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I forgot to pack my shampoo."
+      "example": "I forgot to pack my shampoo.",
+      "examples": [
+        {
+          "text": "I forgot to pack my shampoo.",
+          "translation": "シャンプーを入れるのを忘れた。"
+        }
+      ]
     },
     {
       "word": "toothbrush",
@@ -1905,7 +3321,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I bought a toothbrush at the airport."
+      "example": "I bought a toothbrush at the airport.",
+      "examples": [
+        {
+          "text": "I bought a toothbrush at the airport.",
+          "translation": "私は空港で歯ブラシを買った。"
+        }
+      ]
     },
     {
       "word": "bath",
@@ -1913,7 +3335,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A warm bath helped after the hike."
+      "example": "A warm bath helped after the hike.",
+      "examples": [
+        {
+          "text": "A warm bath helped after the hike.",
+          "translation": "ハイキングの後、温かい風呂に入ると楽になりました。"
+        }
+      ]
     },
     {
       "word": "bathroom",
@@ -1921,7 +3349,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our room has a private bathroom."
+      "example": "Our room has a private bathroom.",
+      "examples": [
+        {
+          "text": "Our room has a private bathroom.",
+          "translation": "私たちの部屋には個人用のバスルームがある。"
+        }
+      ]
     },
     {
       "word": "restroom",
@@ -1929,7 +3363,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Where is the nearest restroom?"
+      "example": "Where is the nearest restroom?",
+      "examples": [
+        {
+          "text": "Where is the nearest restroom?",
+          "translation": "最寄りのトイレはどこですか。"
+        }
+      ]
     },
     {
       "word": "washroom",
@@ -1937,7 +3377,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The washroom is at the end of the hall."
+      "example": "The washroom is at the end of the hall.",
+      "examples": [
+        {
+          "text": "The washroom is at the end of the hall.",
+          "translation": "洗面所はホールの端にある。"
+        }
+      ]
     },
     {
       "word": "laundry",
@@ -1945,7 +3391,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The hotel offers a laundry service."
+      "example": "The hotel offers a laundry service.",
+      "examples": [
+        {
+          "text": "The hotel offers a laundry service.",
+          "translation": "ホテルは洗濯サービスを提供しています。"
+        }
+      ]
     },
     {
       "word": "buffet",
@@ -1953,7 +3405,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Breakfast is served as a buffet."
+      "example": "Breakfast is served as a buffet.",
+      "examples": [
+        {
+          "text": "Breakfast is served as a buffet.",
+          "translation": "朝食はビュッフェで提供される。"
+        }
+      ]
     },
     {
       "word": "floor",
@@ -1961,7 +3419,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please keep your bags off the floor."
+      "example": "Please keep your bags off the floor.",
+      "examples": [
+        {
+          "text": "Please keep your bags off the floor.",
+          "translation": "荷物を床から離してください。"
+        }
+      ]
     },
     {
       "word": "corridor",
@@ -1969,7 +3433,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our room is at the end of the corridor."
+      "example": "Our room is at the end of the corridor.",
+      "examples": [
+        {
+          "text": "Our room is at the end of the corridor.",
+          "translation": "私たちの部屋は廊下の端にある。"
+        }
+      ]
     },
     {
       "word": "air-conditioning",
@@ -1977,7 +3447,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The room has air-conditioning."
+      "example": "The room has air-conditioning.",
+      "examples": [
+        {
+          "text": "The room has air-conditioning.",
+          "translation": "部屋はエアコンがある。"
+        }
+      ]
     },
     {
       "word": "heating",
@@ -1985,7 +3461,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Could you turn on the heating?"
+      "example": "Could you turn on the heating?",
+      "examples": [
+        {
+          "text": "Could you turn on the heating?",
+          "translation": "暖房を入れてくれないか。"
+        }
+      ]
     },
     {
       "word": "fan",
@@ -1993,7 +3475,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A small fan stood beside the bed."
+      "example": "A small fan stood beside the bed.",
+      "examples": [
+        {
+          "text": "A small fan stood beside the bed.",
+          "translation": "ベッドの隣に小さなファンが立っていた。"
+        }
+      ]
     },
     {
       "word": "adapter",
@@ -2001,7 +3489,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I need an adapter for this plug."
+      "example": "I need an adapter for this plug.",
+      "examples": [
+        {
+          "text": "I need an adapter for this plug.",
+          "translation": "このプラグのアダプターが必要です。"
+        }
+      ]
     },
     {
       "word": "plug",
@@ -2009,7 +3503,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This plug does not fit the socket."
+      "example": "This plug does not fit the socket.",
+      "examples": [
+        {
+          "text": "This plug does not fit the socket.",
+          "translation": "このプラグはソケットに合わない。"
+        }
+      ]
     },
     {
       "word": "socket",
@@ -2017,7 +3517,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "There is a socket beside the bed."
+      "example": "There is a socket beside the bed.",
+      "examples": [
+        {
+          "text": "There is a socket beside the bed.",
+          "translation": "ベッドの隣にソケットがある。"
+        }
+      ]
     },
     {
       "word": "wireless",
@@ -2025,7 +3531,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The ship uses wireless communication."
+      "example": "The ship uses wireless communication.",
+      "examples": [
+        {
+          "text": "The ship uses wireless communication.",
+          "translation": "船は無線通信を使用する。"
+        }
+      ]
     },
     {
       "word": "telephone",
@@ -2033,7 +3545,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The telephone is beside the bed."
+      "example": "The telephone is beside the bed.",
+      "examples": [
+        {
+          "text": "The telephone is beside the bed.",
+          "translation": "電話はベッドの隣にある。"
+        }
+      ]
     },
     {
       "word": "mobile",
@@ -2041,7 +3559,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A mobile clinic visits the village weekly."
+      "example": "A mobile clinic visits the village weekly.",
+      "examples": [
+        {
+          "text": "A mobile clinic visits the village weekly.",
+          "translation": "移動診療所が週に一度村を訪れている。"
+        }
+      ]
     },
     {
       "word": "battery",
@@ -2049,7 +3573,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "My camera battery is nearly empty."
+      "example": "My camera battery is nearly empty.",
+      "examples": [
+        {
+          "text": "My camera battery is nearly empty.",
+          "translation": "私のカメラのバッテリーがほとんど使えなくなってきた。"
+        }
+      ]
     },
     {
       "word": "screen",
@@ -2057,7 +3587,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Your departure time appears on the screen."
+      "example": "Your departure time appears on the screen.",
+      "examples": [
+        {
+          "text": "Your departure time appears on the screen.",
+          "translation": "出発時間が画面に表示されます。"
+        }
+      ]
     },
     {
       "word": "guidebook",
@@ -2065,7 +3601,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This guidebook includes walking maps."
+      "example": "This guidebook includes walking maps.",
+      "examples": [
+        {
+          "text": "This guidebook includes walking maps.",
+          "translation": "歩行地図を含む。"
+        }
+      ]
     },
     {
       "word": "leaflet",
@@ -2073,7 +3615,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The leaflet lists nearby attractions."
+      "example": "The leaflet lists nearby attractions.",
+      "examples": [
+        {
+          "text": "The leaflet lists nearby attractions.",
+          "translation": "近くの観光名所が掲載されている。"
+        }
+      ]
     },
     {
       "word": "tour",
@@ -2081,7 +3629,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The walking tour starts at ten."
+      "example": "The walking tour starts at ten.",
+      "examples": [
+        {
+          "text": "The walking tour starts at ten.",
+          "translation": "徒歩ツアーは10時に始まる。"
+        }
+      ]
     },
     {
       "word": "hike",
@@ -2089,7 +3643,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We plan to hike through the forest."
+      "example": "We plan to hike through the forest.",
+      "examples": [
+        {
+          "text": "We plan to hike through the forest.",
+          "translation": "私たちは森をハイキングするつもりです。"
+        }
+      ]
     },
     {
       "word": "trek",
@@ -2097,7 +3657,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They will trek across the remote mountains."
+      "example": "They will trek across the remote mountains.",
+      "examples": [
+        {
+          "text": "They will trek across the remote mountains.",
+          "translation": "彼らは遠い山々を越えて 旅をする"
+        }
+      ]
     },
     {
       "word": "climb",
@@ -2105,7 +3671,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We hope to climb the hill tomorrow."
+      "example": "We hope to climb the hill tomorrow.",
+      "examples": [
+        {
+          "text": "We hope to climb the hill tomorrow.",
+          "translation": "明日は丘を登りたい。"
+        }
+      ]
     },
     {
       "word": "surf",
@@ -2113,7 +3685,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You can learn to surf here."
+      "example": "You can learn to surf here.",
+      "examples": [
+        {
+          "text": "You can learn to surf here.",
+          "translation": "サーフィンを学ぶことができる。"
+        }
+      ]
     },
     {
       "word": "dive",
@@ -2121,7 +3699,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Watch the swimmers dive into the pool."
+      "example": "Watch the swimmers dive into the pool.",
+      "examples": [
+        {
+          "text": "Watch the swimmers dive into the pool.",
+          "translation": "泳ぎ手がプールに飛び込むのを見て。"
+        }
+      ]
     },
     {
       "word": "ski",
@@ -2129,7 +3713,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "One ski came loose from the roof rack."
+      "example": "One ski came loose from the roof rack.",
+      "examples": [
+        {
+          "text": "One ski came loose from the roof rack.",
+          "translation": "スキーが1つ屋根のラックから外れた。"
+        }
+      ]
     },
     {
       "word": "picnic",
@@ -2137,7 +3727,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We had a picnic beside the river."
+      "example": "We had a picnic beside the river.",
+      "examples": [
+        {
+          "text": "We had a picnic beside the river.",
+          "translation": "私たちは川のほとりでピクニックをした。"
+        }
+      ]
     },
     {
       "word": "camp",
@@ -2145,7 +3741,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We returned to camp before dark."
+      "example": "We returned to camp before dark.",
+      "examples": [
+        {
+          "text": "We returned to camp before dark.",
+          "translation": "私たちは夜明け前にキャンプに戻った。"
+        }
+      ]
     },
     {
       "word": "explore",
@@ -2153,7 +3755,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Let's explore the island on foot."
+      "example": "Let's explore the island on foot.",
+      "examples": [
+        {
+          "text": "Let's explore the island on foot.",
+          "translation": "島を歩いて探検しましょう。"
+        }
+      ]
     },
     {
       "word": "rest",
@@ -2161,7 +3769,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We stopped for a short rest."
+      "example": "We stopped for a short rest.",
+      "examples": [
+        {
+          "text": "We stopped for a short rest.",
+          "translation": "私たちは少し休憩した。"
+        }
+      ]
     },
     {
       "word": "enjoy",
@@ -2169,7 +3783,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I hope you enjoy your stay."
+      "example": "I hope you enjoy your stay.",
+      "examples": [
+        {
+          "text": "I hope you enjoy your stay.",
+          "translation": "ご滞在を楽しんでいただけたらと思います。"
+        }
+      ]
     },
     {
       "word": "discover",
@@ -2177,7 +3797,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You can discover quiet beaches along this coast."
+      "example": "You can discover quiet beaches along this coast.",
+      "examples": [
+        {
+          "text": "You can discover quiet beaches along this coast.",
+          "translation": "この海岸に沿って静かなビーチを発見することができる。"
+        }
+      ]
     },
     {
       "word": "book",
@@ -2185,7 +3811,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I'd like to book a room."
+      "example": "I'd like to book a room.",
+      "examples": [
+        {
+          "text": "I'd like to book a room.",
+          "translation": "部屋を予約したい。"
+        }
+      ]
     },
     {
       "word": "reserve",
@@ -2193,7 +3825,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Can we reserve two seats?"
+      "example": "Can we reserve two seats?",
+      "examples": [
+        {
+          "text": "Can we reserve two seats?",
+          "translation": "2席予約できますか。"
+        }
+      ]
     },
     {
       "word": "cancel",
@@ -2201,7 +3839,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I need to cancel my reservation."
+      "example": "I need to cancel my reservation.",
+      "examples": [
+        {
+          "text": "I need to cancel my reservation.",
+          "translation": "予約をキャンセルしなければなりません。"
+        }
+      ]
     },
     {
       "word": "boarding pass",
@@ -2209,7 +3853,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please show your boarding pass at the gate."
+      "example": "Please show your boarding pass at the gate.",
+      "examples": [
+        {
+          "text": "Please show your boarding pass at the gate.",
+          "translation": "ゲートで搭乗券を提示してください。"
+        }
+      ]
     },
     {
       "word": "first class",
@@ -2217,7 +3867,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They traveled first class on the train."
+      "example": "They traveled first class on the train.",
+      "examples": [
+        {
+          "text": "They traveled first class on the train.",
+          "translation": "彼らは列車でファーストクラスで旅行した。"
+        }
+      ]
     },
     {
       "word": "window",
@@ -2225,7 +3881,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I would like a seat near the window."
+      "example": "I would like a seat near the window.",
+      "examples": [
+        {
+          "text": "I would like a seat near the window.",
+          "translation": "窓の近くに座りたい。"
+        }
+      ]
     },
     {
       "word": "aisle seat",
@@ -2233,7 +3895,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Could I have an aisle seat?"
+      "example": "Could I have an aisle seat?",
+      "examples": [
+        {
+          "text": "Could I have an aisle seat?",
+          "translation": "私は通路の席を取ってもらえますか。"
+        }
+      ]
     },
     {
       "word": "one-way",
@@ -2241,7 +3909,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I bought a one-way ticket to London."
+      "example": "I bought a one-way ticket to London.",
+      "examples": [
+        {
+          "text": "I bought a one-way ticket to London.",
+          "translation": "私はロンドン行きの片道チケットを買った。"
+        }
+      ]
     },
     {
       "word": "direct",
@@ -2249,7 +3923,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This is the most direct route home."
+      "example": "This is the most direct route home.",
+      "examples": [
+        {
+          "text": "This is the most direct route home.",
+          "translation": "これが家に帰る最も直接的な経路です。"
+        }
+      ]
     },
     {
       "word": "indirect",
@@ -2257,7 +3937,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We took an indirect route through the hills."
+      "example": "We took an indirect route through the hills.",
+      "examples": [
+        {
+          "text": "We took an indirect route through the hills.",
+          "translation": "私たちは丘を通る間接路線を選んだ。"
+        }
+      ]
     },
     {
       "word": "transit",
@@ -2265,7 +3951,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "My suitcase was damaged in transit."
+      "example": "My suitcase was damaged in transit.",
+      "examples": [
+        {
+          "text": "My suitcase was damaged in transit.",
+          "translation": "私のスーツケースは輸送中に損傷しました。"
+        }
+      ]
     },
     {
       "word": "layover",
@@ -2273,7 +3965,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We have a two-hour layover in Seoul."
+      "example": "We have a two-hour layover in Seoul.",
+      "examples": [
+        {
+          "text": "We have a two-hour layover in Seoul.",
+          "translation": "私たちはソウルで、乗り継ぎのために2時間滞在します。"
+        }
+      ]
     },
     {
       "word": "track",
@@ -2281,7 +3979,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our train departs from track six."
+      "example": "Our train departs from track six.",
+      "examples": [
+        {
+          "text": "Our train departs from track six.",
+          "translation": "列車は6番線から発車します。"
+        }
+      ]
     },
     {
       "word": "gate",
@@ -2289,7 +3993,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Boarding begins at gate twelve."
+      "example": "Boarding begins at gate twelve.",
+      "examples": [
+        {
+          "text": "Boarding begins at gate twelve.",
+          "translation": "搭乗はゲート12から"
+        }
+      ]
     },
     {
       "word": "desk",
@@ -2297,7 +4007,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Ask for a map at the information desk."
+      "example": "Ask for a map at the information desk.",
+      "examples": [
+        {
+          "text": "Ask for a map at the information desk.",
+          "translation": "地図は情報デスクでお願いします。"
+        }
+      ]
     },
     {
       "word": "receptionist",
@@ -2305,7 +4021,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The receptionist gave us our room key."
+      "example": "The receptionist gave us our room key.",
+      "examples": [
+        {
+          "text": "The receptionist gave us our room key.",
+          "translation": "受付係が部屋の鍵をくれた。"
+        }
+      ]
     },
     {
       "word": "porter",
@@ -2313,7 +4035,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The porter carried our heavy bags."
+      "example": "The porter carried our heavy bags.",
+      "examples": [
+        {
+          "text": "The porter carried our heavy bags.",
+          "translation": "荷物運び人が重い荷物を運んだ。"
+        }
+      ]
     },
     {
       "word": "attendant",
@@ -2321,7 +4049,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "An attendant showed us to our seats."
+      "example": "An attendant showed us to our seats.",
+      "examples": [
+        {
+          "text": "An attendant showed us to our seats.",
+          "translation": "乗務員が私たちを席に案内した。"
+        }
+      ]
     },
     {
       "word": "security",
@@ -2329,7 +4063,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Better lighting improves security around the station."
+      "example": "Better lighting improves security around the station.",
+      "examples": [
+        {
+          "text": "Better lighting improves security around the station.",
+          "translation": "駅周辺の安全性を向上させるために 照明を改善する"
+        }
+      ]
     },
     {
       "word": "guard",
@@ -2337,7 +4077,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The guard checked our tickets."
+      "example": "The guard checked our tickets.",
+      "examples": [
+        {
+          "text": "The guard checked our tickets.",
+          "translation": "警備員は私たちのチケットを確認した。"
+        }
+      ]
     },
     {
       "word": "x-ray",
@@ -2345,7 +4091,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The doctor requested an x-ray of my ankle."
+      "example": "The doctor requested an x-ray of my ankle.",
+      "examples": [
+        {
+          "text": "The doctor requested an x-ray of my ankle.",
+          "translation": "医者は私の足首のX線写真を要求した。"
+        }
+      ]
     },
     {
       "word": "queue",
@@ -2353,7 +4105,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We joined the queue for tickets."
+      "example": "We joined the queue for tickets.",
+      "examples": [
+        {
+          "text": "We joined the queue for tickets.",
+          "translation": "チケットのために列に並んだ。"
+        }
+      ]
     },
     {
       "word": "zebra crossing",
@@ -2361,7 +4119,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Use the zebra crossing outside the school."
+      "example": "Use the zebra crossing outside the school.",
+      "examples": [
+        {
+          "text": "Use the zebra crossing outside the school.",
+          "translation": "学校の外の横断歩道を使ってください。"
+        }
+      ]
     },
     {
       "word": "stoplight",
@@ -2369,7 +4133,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Turn right after the stoplight."
+      "example": "Turn right after the stoplight.",
+      "examples": [
+        {
+          "text": "Turn right after the stoplight.",
+          "translation": "信号の後に右折する。"
+        }
+      ]
     },
     {
       "word": "signpost",
@@ -2377,7 +4147,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The signpost points toward the village."
+      "example": "The signpost points toward the village.",
+      "examples": [
+        {
+          "text": "The signpost points toward the village.",
+          "translation": "道標は村の方向を示しています。"
+        }
+      ]
     },
     {
       "word": "bus stop",
@@ -2385,7 +4161,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The bus stop is outside the hotel."
+      "example": "The bus stop is outside the hotel.",
+      "examples": [
+        {
+          "text": "The bus stop is outside the hotel.",
+          "translation": "バス停はホテルの外にある。"
+        }
+      ]
     },
     {
       "word": "package tour",
@@ -2393,7 +4175,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The package tour includes flights and accommodation."
+      "example": "The package tour includes flights and accommodation.",
+      "examples": [
+        {
+          "text": "The package tour includes flights and accommodation.",
+          "translation": "パッケージツアーは、航空券と宿泊を含む。"
+        }
+      ]
     },
     {
       "word": "travel agency",
@@ -2401,7 +4189,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The travel agency arranged our flights."
+      "example": "The travel agency arranged our flights.",
+      "examples": [
+        {
+          "text": "The travel agency arranged our flights.",
+          "translation": "旅行会社が私たちの飛行機の予約をした。"
+        }
+      ]
     },
     {
       "word": "waiting room",
@@ -2409,7 +4203,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please sit in the waiting room."
+      "example": "Please sit in the waiting room.",
+      "examples": [
+        {
+          "text": "Please sit in the waiting room.",
+          "translation": "待合室にお座りください。"
+        }
+      ]
     },
     {
       "word": "guesthouse",
@@ -2417,7 +4217,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We stayed in a family-run guesthouse."
+      "example": "We stayed in a family-run guesthouse.",
+      "examples": [
+        {
+          "text": "We stayed in a family-run guesthouse.",
+          "translation": "私たちは家族経営のゲストハウスに泊まった。"
+        }
+      ]
     },
     {
       "word": "youth hostel",
@@ -2425,7 +4231,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The youth hostel has a shared kitchen."
+      "example": "The youth hostel has a shared kitchen.",
+      "examples": [
+        {
+          "text": "The youth hostel has a shared kitchen.",
+          "translation": "ユースホステルには共用のキッチンがある。"
+        }
+      ]
     },
     {
       "word": "exchange rate",
@@ -2433,7 +4245,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Check the exchange rate before changing money."
+      "example": "Check the exchange rate before changing money.",
+      "examples": [
+        {
+          "text": "Check the exchange rate before changing money.",
+          "translation": "換金する前に換金率を確認してください。"
+        }
+      ]
     },
     {
       "word": "credit card",
@@ -2441,7 +4259,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Can I pay by credit card?"
+      "example": "Can I pay by credit card?",
+      "examples": [
+        {
+          "text": "Can I pay by credit card?",
+          "translation": "クレジットカードで払えますか。"
+        }
+      ]
     },
     {
       "word": "post office",
@@ -2449,7 +4273,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The post office sells international stamps."
+      "example": "The post office sells international stamps.",
+      "examples": [
+        {
+          "text": "The post office sells international stamps.",
+          "translation": "郵便局は国際切手を売っている。"
+        }
+      ]
     },
     {
       "word": "fire station",
@@ -2457,7 +4287,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The fire station is beside the library."
+      "example": "The fire station is beside the library.",
+      "examples": [
+        {
+          "text": "The fire station is beside the library.",
+          "translation": "消防署は図書館の隣にある。"
+        }
+      ]
     },
     {
       "word": "shopping center",
@@ -2465,7 +4301,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We spent an hour at the shopping center."
+      "example": "We spent an hour at the shopping center.",
+      "examples": [
+        {
+          "text": "We spent an hour at the shopping center.",
+          "translation": "私たちはショッピングセンターで1時間過ごした。"
+        }
+      ]
     },
     {
       "word": "department store",
@@ -2473,7 +4315,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The department store sells travel bags upstairs."
+      "example": "The department store sells travel bags upstairs.",
+      "examples": [
+        {
+          "text": "The department store sells travel bags upstairs.",
+          "translation": "2階のデパートはトラベルバッグを売っている。"
+        }
+      ]
     },
     {
       "word": "supermarket",
@@ -2481,7 +4329,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "There is a supermarket near our apartment."
+      "example": "There is a supermarket near our apartment.",
+      "examples": [
+        {
+          "text": "There is a supermarket near our apartment.",
+          "translation": "私たちのアパートの近くにスーパーマーケットがあります。"
+        }
+      ]
     },
     {
       "word": "bakery",
@@ -2489,7 +4343,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The bakery opens early every morning."
+      "example": "The bakery opens early every morning.",
+      "examples": [
+        {
+          "text": "The bakery opens early every morning.",
+          "translation": "パン屋は毎朝早く開店する。"
+        }
+      ]
     },
     {
       "word": "butcher",
@@ -2497,7 +4357,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We bought sausages at the butcher's shop."
+      "example": "We bought sausages at the butcher's shop.",
+      "examples": [
+        {
+          "text": "We bought sausages at the butcher's shop.",
+          "translation": "私たちは肉屋でソーセージを買った。"
+        }
+      ]
     },
     {
       "word": "bookstore",
@@ -2505,7 +4371,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I found a local map in the bookstore."
+      "example": "I found a local map in the bookstore.",
+      "examples": [
+        {
+          "text": "I found a local map in the bookstore.",
+          "translation": "本屋で地図を見つけた。"
+        }
+      ]
     },
     {
       "word": "duty-free",
@@ -2513,7 +4385,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We visited the duty-free shop before boarding."
+      "example": "We visited the duty-free shop before boarding.",
+      "examples": [
+        {
+          "text": "We visited the duty-free shop before boarding.",
+          "translation": "私たちは乗船前に免税店を訪れた。"
+        }
+      ]
     },
     {
       "word": "water bottle",
@@ -2521,7 +4399,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Fill your water bottle before the walk."
+      "example": "Fill your water bottle before the walk.",
+      "examples": [
+        {
+          "text": "Fill your water bottle before the walk.",
+          "translation": "散歩に出かける前に水筒に水を入れてください。"
+        }
+      ]
     },
     {
       "word": "raincoat",
@@ -2529,7 +4413,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Bring a raincoat in case it rains."
+      "example": "Bring a raincoat in case it rains.",
+      "examples": [
+        {
+          "text": "Bring a raincoat in case it rains.",
+          "translation": "雨の場合のためにレインコートを持ってきて。"
+        }
+      ]
     },
     {
       "word": "umbrella",
@@ -2537,7 +4427,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I left my umbrella on the bus."
+      "example": "I left my umbrella on the bus.",
+      "examples": [
+        {
+          "text": "I left my umbrella on the bus.",
+          "translation": "私は傘をバスに置いていった。"
+        }
+      ]
     },
     {
       "word": "swimsuit",
@@ -2545,7 +4441,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Don't forget your swimsuit for the pool."
+      "example": "Don't forget your swimsuit for the pool.",
+      "examples": [
+        {
+          "text": "Don't forget your swimsuit for the pool.",
+          "translation": "プールの水着を忘れないで。"
+        }
+      ]
     },
     {
       "word": "shorts",
@@ -2553,7 +4455,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I packed shorts for the warm weather."
+      "example": "I packed shorts for the warm weather.",
+      "examples": [
+        {
+          "text": "I packed shorts for the warm weather.",
+          "translation": "暖かい天気のためにショートパンツを入れてきた。"
+        }
+      ]
     },
     {
       "word": "boot",
@@ -2561,7 +4469,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "One boot was full of water."
+      "example": "One boot was full of water.",
+      "examples": [
+        {
+          "text": "One boot was full of water.",
+          "translation": "片方のブーツの中は水でいっぱいでした。"
+        }
+      ]
     },
     {
       "word": "jacket",
@@ -2569,7 +4483,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You will need a jacket tonight."
+      "example": "You will need a jacket tonight.",
+      "examples": [
+        {
+          "text": "You will need a jacket tonight.",
+          "translation": "今夜はジャケットが必要だ。"
+        }
+      ]
     },
     {
       "word": "sweater",
@@ -2577,7 +4497,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I wore a sweater on the plane."
+      "example": "I wore a sweater on the plane.",
+      "examples": [
+        {
+          "text": "I wore a sweater on the plane.",
+          "translation": "私は飛行機でセーターを着ていた。"
+        }
+      ]
     },
     {
       "word": "shirt",
@@ -2585,7 +4511,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This shirt dries quickly after washing."
+      "example": "This shirt dries quickly after washing.",
+      "examples": [
+        {
+          "text": "This shirt dries quickly after washing.",
+          "translation": "このシャツは洗った後すぐに乾く。"
+        }
+      ]
     },
     {
       "word": "skirt",
@@ -2593,7 +4525,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She bought a skirt at the market."
+      "example": "She bought a skirt at the market.",
+      "examples": [
+        {
+          "text": "She bought a skirt at the market.",
+          "translation": "彼女は市場でスカートを買った。"
+        }
+      ]
     },
     {
       "word": "dress",
@@ -2601,7 +4539,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She packed a dress for the evening party."
+      "example": "She packed a dress for the evening party.",
+      "examples": [
+        {
+          "text": "She packed a dress for the evening party.",
+          "translation": "彼女は夕方のパーティーのためにドレスを詰めた。"
+        }
+      ]
     },
     {
       "word": "hat",
@@ -2609,7 +4553,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Wear a hat in the strong sun."
+      "example": "Wear a hat in the strong sun.",
+      "examples": [
+        {
+          "text": "Wear a hat in the strong sun.",
+          "translation": "強い日差しの中は帽子をかぶれ。"
+        }
+      ]
     },
     {
       "word": "scarf",
@@ -2617,7 +4567,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I wrapped a scarf around my neck."
+      "example": "I wrapped a scarf around my neck.",
+      "examples": [
+        {
+          "text": "I wrapped a scarf around my neck.",
+          "translation": "私は首にスカーフを巻いた。"
+        }
+      ]
     },
     {
       "word": "belt",
@@ -2625,7 +4581,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "He bought a leather belt as a gift."
+      "example": "He bought a leather belt as a gift.",
+      "examples": [
+        {
+          "text": "He bought a leather belt as a gift.",
+          "translation": "彼は贈り物に革ベルトを買った。"
+        }
+      ]
     },
     {
       "word": "watch",
@@ -2633,7 +4595,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "My watch still shows the time back home."
+      "example": "My watch still shows the time back home.",
+      "examples": [
+        {
+          "text": "My watch still shows the time back home.",
+          "translation": "私の時計はまだ家の時間を示している。"
+        }
+      ]
     },
     {
       "word": "luggage rack",
@@ -2641,7 +4609,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Put your small bag on the luggage rack."
+      "example": "Put your small bag on the luggage rack.",
+      "examples": [
+        {
+          "text": "Put your small bag on the luggage rack.",
+          "translation": "小さなバッグを荷物置き場に置いて。"
+        }
+      ]
     },
     {
       "word": "trolley",
@@ -2649,7 +4623,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We used a trolley for our suitcases."
+      "example": "We used a trolley for our suitcases.",
+      "examples": [
+        {
+          "text": "We used a trolley for our suitcases.",
+          "translation": "私たちはスーツケースをトロリーで運んだ。"
+        }
+      ]
     },
     {
       "word": "lift",
@@ -2657,7 +4637,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Take the lift to the third floor."
+      "example": "Take the lift to the third floor.",
+      "examples": [
+        {
+          "text": "Take the lift to the third floor.",
+          "translation": "エレベーターで3階に行って。"
+        }
+      ]
     },
     {
       "word": "staircase",
@@ -2665,7 +4651,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A narrow staircase leads to the tower."
+      "example": "A narrow staircase leads to the tower.",
+      "examples": [
+        {
+          "text": "A narrow staircase leads to the tower.",
+          "translation": "狭い階段が塔に通じている。"
+        }
+      ]
     },
     {
       "word": "rail",
@@ -2673,7 +4665,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Hold the rail as you climb the steps."
+      "example": "Hold the rail as you climb the steps.",
+      "examples": [
+        {
+          "text": "Hold the rail as you climb the steps.",
+          "translation": "階段を上る時はレールを握ってください。"
+        }
+      ]
     },
     {
       "word": "fence",
@@ -2681,7 +4679,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please stay behind the fence."
+      "example": "Please stay behind the fence.",
+      "examples": [
+        {
+          "text": "Please stay behind the fence.",
+          "translation": "フェンスの後ろに居て"
+        }
+      ]
     },
     {
       "word": "wall",
@@ -2689,7 +4693,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A stone wall surrounds the garden."
+      "example": "A stone wall surrounds the garden.",
+      "examples": [
+        {
+          "text": "A stone wall surrounds the garden.",
+          "translation": "石の壁が庭を囲んでいる。"
+        }
+      ]
     },
     {
       "word": "roof",
@@ -2697,7 +4707,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Snow covered the station roof."
+      "example": "Snow covered the station roof.",
+      "examples": [
+        {
+          "text": "Snow covered the station roof.",
+          "translation": "駅の屋根は雪に覆われていた。"
+        }
+      ]
     },
     {
       "word": "door",
@@ -2705,7 +4721,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please close the door quietly."
+      "example": "Please close the door quietly.",
+      "examples": [
+        {
+          "text": "Please close the door quietly.",
+          "translation": "静かにドアを閉めてください。"
+        }
+      ]
     },
     {
       "word": "courtyard",
@@ -2713,7 +4735,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We ate breakfast in the courtyard."
+      "example": "We ate breakfast in the courtyard.",
+      "examples": [
+        {
+          "text": "We ate breakfast in the courtyard.",
+          "translation": "私たちは中庭で朝食を食べた。"
+        }
+      ]
     },
     {
       "word": "terrace",
@@ -2721,7 +4749,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our hotel room opens onto a terrace."
+      "example": "Our hotel room opens onto a terrace.",
+      "examples": [
+        {
+          "text": "Our hotel room opens onto a terrace.",
+          "translation": "私たちのホテルの部屋はテラスに向かって開いている。"
+        }
+      ]
     },
     {
       "word": "alley",
@@ -2729,7 +4763,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A small cafe stands in the alley."
+      "example": "A small cafe stands in the alley.",
+      "examples": [
+        {
+          "text": "A small cafe stands in the alley.",
+          "translation": "その小路には小さなカフェが立っている。"
+        }
+      ]
     },
     {
       "word": "canal",
@@ -2737,7 +4777,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We followed the canal through the city."
+      "example": "We followed the canal through the city.",
+      "examples": [
+        {
+          "text": "We followed the canal through the city.",
+          "translation": "私たちは運河に沿って街を通った。"
+        }
+      ]
     },
     {
       "word": "embankment",
@@ -2745,7 +4791,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "People were walking along the river embankment."
+      "example": "People were walking along the river embankment.",
+      "examples": [
+        {
+          "text": "People were walking along the river embankment.",
+          "translation": "人々は川岸を歩いていた。"
+        }
+      ]
     },
     {
       "word": "bay",
@@ -2753,7 +4805,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Small boats filled the quiet bay."
+      "example": "Small boats filled the quiet bay.",
+      "examples": [
+        {
+          "text": "Small boats filled the quiet bay.",
+          "translation": "小さなボートが静かな湾を満たした。"
+        }
+      ]
     },
     {
       "word": "gulf",
@@ -2761,7 +4819,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The ship crossed the gulf overnight."
+      "example": "The ship crossed the gulf overnight.",
+      "examples": [
+        {
+          "text": "The ship crossed the gulf overnight.",
+          "translation": "船は一夜で湾を渡った。"
+        }
+      ]
     },
     {
       "word": "ocean",
@@ -2769,7 +4833,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We could see the ocean from our room."
+      "example": "We could see the ocean from our room.",
+      "examples": [
+        {
+          "text": "We could see the ocean from our room.",
+          "translation": "部屋から海が見えた。"
+        }
+      ]
     },
     {
       "word": "dock",
@@ -2777,7 +4847,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The fishing boat returned to the dock."
+      "example": "The fishing boat returned to the dock.",
+      "examples": [
+        {
+          "text": "The fishing boat returned to the dock.",
+          "translation": "漁船は港に戻った。"
+        }
+      ]
     },
     {
       "word": "pier",
@@ -2785,7 +4861,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The ferry leaves from this pier."
+      "example": "The ferry leaves from this pier.",
+      "examples": [
+        {
+          "text": "The ferry leaves from this pier.",
+          "translation": "フェリーはこの桟橋から出発する。"
+        }
+      ]
     },
     {
       "word": "quay",
@@ -2793,7 +4875,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We walked along the quay at sunset."
+      "example": "We walked along the quay at sunset.",
+      "examples": [
+        {
+          "text": "We walked along the quay at sunset.",
+          "translation": "私たちは日没時に埠頭を歩いた。"
+        }
+      ]
     },
     {
       "word": "marina",
@@ -2801,7 +4889,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We rented a boat at the marina."
+      "example": "We rented a boat at the marina.",
+      "examples": [
+        {
+          "text": "We rented a boat at the marina.",
+          "translation": "私たちはマリーナでボートを借りた。"
+        }
+      ]
     },
     {
       "word": "sailboat",
@@ -2809,7 +4903,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A white sailboat crossed the bay."
+      "example": "A white sailboat crossed the bay.",
+      "examples": [
+        {
+          "text": "A white sailboat crossed the bay.",
+          "translation": "白い帆船が湾を横断した。"
+        }
+      ]
     },
     {
       "word": "canoe",
@@ -2817,7 +4917,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We rented a canoe for the afternoon."
+      "example": "We rented a canoe for the afternoon.",
+      "examples": [
+        {
+          "text": "We rented a canoe for the afternoon.",
+          "translation": "午後はカヌーを借りた。"
+        }
+      ]
     },
     {
       "word": "kayak",
@@ -2825,7 +4931,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She paddled her kayak along the shore."
+      "example": "She paddled her kayak along the shore.",
+      "examples": [
+        {
+          "text": "She paddled her kayak along the shore.",
+          "translation": "彼女は岸に沿ってカヤックを漕いだ。"
+        }
+      ]
     },
     {
       "word": "raft",
@@ -2833,7 +4945,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The raft floated slowly downstream."
+      "example": "The raft floated slowly downstream.",
+      "examples": [
+        {
+          "text": "The raft floated slowly downstream.",
+          "translation": "舟はゆっくりと下流に漂っていた。"
+        }
+      ]
     },
     {
       "word": "ship",
@@ -2841,7 +4959,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our ship leaves the harbor tonight."
+      "example": "Our ship leaves the harbor tonight.",
+      "examples": [
+        {
+          "text": "Our ship leaves the harbor tonight.",
+          "translation": "我々の船は今夜港を出発する。"
+        }
+      ]
     },
     {
       "word": "vessel",
@@ -2849,7 +4973,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The vessel carried passengers and cargo."
+      "example": "The vessel carried passengers and cargo.",
+      "examples": [
+        {
+          "text": "The vessel carried passengers and cargo.",
+          "translation": "船は乗客と貨物を運んだ。"
+        }
+      ]
     },
     {
       "word": "liner",
@@ -2857,7 +4987,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The ocean liner arrived early this morning."
+      "example": "The ocean liner arrived early this morning.",
+      "examples": [
+        {
+          "text": "The ocean liner arrived early this morning.",
+          "translation": "海上客船は今朝早く到着した。"
+        }
+      ]
     },
     {
       "word": "diver",
@@ -2865,7 +5001,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The diver entered the water headfirst."
+      "example": "The diver entered the water headfirst.",
+      "examples": [
+        {
+          "text": "The diver entered the water headfirst.",
+          "translation": "ダイバーは頭を上げて水中に入った。"
+        }
+      ]
     },
     {
       "word": "lifeguard",
@@ -2873,7 +5015,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A lifeguard watches the swimming area."
+      "example": "A lifeguard watches the swimming area.",
+      "examples": [
+        {
+          "text": "A lifeguard watches the swimming area.",
+          "translation": "水泳場は救命士が見張っている。"
+        }
+      ]
     },
     {
       "word": "checkpoint",
@@ -2881,7 +5029,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We showed our passports at the checkpoint."
+      "example": "We showed our passports at the checkpoint.",
+      "examples": [
+        {
+          "text": "We showed our passports at the checkpoint.",
+          "translation": "検問所でパスポートを見せた。"
+        }
+      ]
     },
     {
       "word": "tollbooth",
@@ -2889,7 +5043,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Have some cash ready at the tollbooth."
+      "example": "Have some cash ready at the tollbooth.",
+      "examples": [
+        {
+          "text": "Have some cash ready at the tollbooth.",
+          "translation": "料金所で現金を準備しておけ"
+        }
+      ]
     },
     {
       "word": "roadblock",
@@ -2897,7 +5057,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The police set up a roadblock."
+      "example": "The police set up a roadblock.",
+      "examples": [
+        {
+          "text": "The police set up a roadblock.",
+          "translation": "警察は道路封鎖を設けた。"
+        }
+      ]
     },
     {
       "word": "detour",
@@ -2905,7 +5071,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We followed a detour around the bridge."
+      "example": "We followed a detour around the bridge.",
+      "examples": [
+        {
+          "text": "We followed a detour around the bridge.",
+          "translation": "私たちは橋を避ける迂回路を通りました。"
+        }
+      ]
     },
     {
       "word": "cyclist",
@@ -2913,7 +5085,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A cyclist passed us on the hill."
+      "example": "A cyclist passed us on the hill.",
+      "examples": [
+        {
+          "text": "A cyclist passed us on the hill.",
+          "translation": "自転車乗りが丘の上で私たちを通り過ぎた。"
+        }
+      ]
     },
     {
       "word": "driver",
@@ -2921,7 +5099,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The driver helped us with our bags."
+      "example": "The driver helped us with our bags.",
+      "examples": [
+        {
+          "text": "The driver helped us with our bags.",
+          "translation": "運転手は私たちの荷物を手伝ってくれた。"
+        }
+      ]
     },
     {
       "word": "trucker",
@@ -2929,7 +5113,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The trucker stopped at a roadside cafe."
+      "example": "The trucker stopped at a roadside cafe.",
+      "examples": [
+        {
+          "text": "The trucker stopped at a roadside cafe.",
+          "translation": "トラック運転手は道端のカフェで止まった。"
+        }
+      ]
     },
     {
       "word": "hitchhike",
@@ -2937,7 +5127,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They decided to hitchhike across the country."
+      "example": "They decided to hitchhike across the country.",
+      "examples": [
+        {
+          "text": "They decided to hitchhike across the country.",
+          "translation": "彼らはヒッチハイクで国を横断することにした。"
+        }
+      ]
     },
     {
       "word": "luggage van",
@@ -2945,7 +5141,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The bicycles were loaded into the luggage van."
+      "example": "The bicycles were loaded into the luggage van.",
+      "examples": [
+        {
+          "text": "The bicycles were loaded into the luggage van.",
+          "translation": "自転車は荷物車に積み込まれた。"
+        }
+      ]
     },
     {
       "word": "sleeper",
@@ -2953,7 +5155,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We booked a sleeper for the overnight journey."
+      "example": "We booked a sleeper for the overnight journey.",
+      "examples": [
+        {
+          "text": "We booked a sleeper for the overnight journey.",
+          "translation": "私たちは一晩の旅行のために寝台車を予約した。"
+        }
+      ]
     },
     {
       "word": "express",
@@ -2961,7 +5169,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We caught the morning express to the capital."
+      "example": "We caught the morning express to the capital.",
+      "examples": [
+        {
+          "text": "We caught the morning express to the capital.",
+          "translation": "私たちは朝の特急に乗って首都へ向かった。"
+        }
+      ]
     },
     {
       "word": "expressway",
@@ -2969,7 +5183,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The expressway connects the airport and downtown."
+      "example": "The expressway connects the airport and downtown.",
+      "examples": [
+        {
+          "text": "The expressway connects the airport and downtown.",
+          "translation": "高速道路は空港と市街地を結んでいる。"
+        }
+      ]
     },
     {
       "word": "tram",
@@ -2977,7 +5197,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Take the tram to the museum."
+      "example": "Take the tram to the museum.",
+      "examples": [
+        {
+          "text": "Take the tram to the museum.",
+          "translation": "博物館までは路面電車を利用してください。"
+        }
+      ]
     },
     {
       "word": "streetcar",
@@ -2985,7 +5211,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The streetcar stops outside the market."
+      "example": "The streetcar stops outside the market.",
+      "examples": [
+        {
+          "text": "The streetcar stops outside the market.",
+          "translation": "電車は市場の外に停まる。"
+        }
+      ]
     },
     {
       "word": "monorail",
@@ -2993,7 +5225,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The monorail connects the airport terminals."
+      "example": "The monorail connects the airport terminals.",
+      "examples": [
+        {
+          "text": "The monorail connects the airport terminals.",
+          "translation": "空港ターミナルを結ぶモノレール。"
+        }
+      ]
     },
     {
       "word": "gondola",
@@ -3001,7 +5239,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We rode a gondola through the canals."
+      "example": "We rode a gondola through the canals.",
+      "examples": [
+        {
+          "text": "We rode a gondola through the canals.",
+          "translation": "私たちは運河をゴンドラで走った。"
+        }
+      ]
     },
     {
       "word": "funicular",
@@ -3009,7 +5253,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The funicular climbs the steep hillside."
+      "example": "The funicular climbs the steep hillside.",
+      "examples": [
+        {
+          "text": "The funicular climbs the steep hillside.",
+          "translation": "ケーブルカーは急な丘の斜面を登る。"
+        }
+      ]
     },
     {
       "word": "helicopter",
@@ -3017,7 +5267,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A helicopter flew over the mountain."
+      "example": "A helicopter flew over the mountain.",
+      "examples": [
+        {
+          "text": "A helicopter flew over the mountain.",
+          "translation": "ヘリコプターが山の上を飛んだ。"
+        }
+      ]
     },
     {
       "word": "aircraft",
@@ -3025,7 +5281,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The aircraft landed safely."
+      "example": "The aircraft landed safely.",
+      "examples": [
+        {
+          "text": "The aircraft landed safely.",
+          "translation": "飛行機は無事に着陸した。"
+        }
+      ]
     },
     {
       "word": "airplane",
@@ -3033,7 +5295,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We watched an airplane take off."
+      "example": "We watched an airplane take off.",
+      "examples": [
+        {
+          "text": "We watched an airplane take off.",
+          "translation": "私たちは飛行機が離陸するのを見た。"
+        }
+      ]
     },
     {
       "word": "aeroplane",
@@ -3041,7 +5309,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The aeroplane flew above the clouds."
+      "example": "The aeroplane flew above the clouds.",
+      "examples": [
+        {
+          "text": "The aeroplane flew above the clouds.",
+          "translation": "飛行機は雲の上を飛んだ。"
+        }
+      ]
     },
     {
       "word": "propeller",
@@ -3049,7 +5323,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The boat's propeller needed repair."
+      "example": "The boat's propeller needed repair.",
+      "examples": [
+        {
+          "text": "The boat's propeller needed repair.",
+          "translation": "ボートのプロペラは修理が必要だった。"
+        }
+      ]
     },
     {
       "word": "parachute",
@@ -3057,7 +5337,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Her parachute opened above the field."
+      "example": "Her parachute opened above the field.",
+      "examples": [
+        {
+          "text": "Her parachute opened above the field.",
+          "translation": "彼女のパラシュートはフィールドの上で開いた。"
+        }
+      ]
     },
     {
       "word": "cockpit",
@@ -3065,7 +5351,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The pilot returned to the cockpit."
+      "example": "The pilot returned to the cockpit.",
+      "examples": [
+        {
+          "text": "The pilot returned to the cockpit.",
+          "translation": "パイロットはコックピットに戻った。"
+        }
+      ]
     },
     {
       "word": "turbulence",
@@ -3073,7 +5365,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The plane encountered turbulence over the mountains."
+      "example": "The plane encountered turbulence over the mountains.",
+      "examples": [
+        {
+          "text": "The plane encountered turbulence over the mountains.",
+          "translation": "飛行機は山の上で乱流に遭遇した。"
+        }
+      ]
     },
     {
       "word": "landing",
@@ -3081,7 +5379,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please remain seated during landing."
+      "example": "Please remain seated during landing.",
+      "examples": [
+        {
+          "text": "Please remain seated during landing.",
+          "translation": "着陸中は座ってください。"
+        }
+      ]
     },
     {
       "word": "altitude",
@@ -3089,7 +5393,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The aircraft reached a higher altitude."
+      "example": "The aircraft reached a higher altitude.",
+      "examples": [
+        {
+          "text": "The aircraft reached a higher altitude.",
+          "translation": "飛行機は高度を上げた。"
+        }
+      ]
     },
     {
       "word": "longitude",
@@ -3097,7 +5407,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The map shows latitude and longitude."
+      "example": "The map shows latitude and longitude.",
+      "examples": [
+        {
+          "text": "The map shows latitude and longitude.",
+          "translation": "地図は緯度と経度を示している。"
+        }
+      ]
     },
     {
       "word": "latitude",
@@ -3105,7 +5421,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This island lies at a high latitude."
+      "example": "This island lies at a high latitude.",
+      "examples": [
+        {
+          "text": "This island lies at a high latitude.",
+          "translation": "この島は高緯度にある。"
+        }
+      ]
     },
     {
       "word": "equator",
@@ -3113,7 +5435,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The ship crossed the equator yesterday."
+      "example": "The ship crossed the equator yesterday.",
+      "examples": [
+        {
+          "text": "The ship crossed the equator yesterday.",
+          "translation": "船は昨日赤道を横断した。"
+        }
+      ]
     },
     {
       "word": "northbound",
@@ -3121,7 +5449,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We boarded a northbound train."
+      "example": "We boarded a northbound train.",
+      "examples": [
+        {
+          "text": "We boarded a northbound train.",
+          "translation": "私たちは北行きの列車に乗った。"
+        }
+      ]
     },
     {
       "word": "southbound",
@@ -3129,7 +5463,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The southbound bus leaves at noon."
+      "example": "The southbound bus leaves at noon.",
+      "examples": [
+        {
+          "text": "The southbound bus leaves at noon.",
+          "translation": "南行きのバスは正午に出発する。"
+        }
+      ]
     },
     {
       "word": "westbound",
@@ -3137,7 +5477,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Westbound traffic is moving slowly."
+      "example": "Westbound traffic is moving slowly.",
+      "examples": [
+        {
+          "text": "Westbound traffic is moving slowly.",
+          "translation": "西行きの交通はゆっくり動いています。"
+        }
+      ]
     },
     {
       "word": "northern",
@@ -3145,7 +5491,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We explored the northern coast."
+      "example": "We explored the northern coast.",
+      "examples": [
+        {
+          "text": "We explored the northern coast.",
+          "translation": "私たちは北海岸を探検した。"
+        }
+      ]
     },
     {
       "word": "southern",
@@ -3153,7 +5505,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The southern beaches are quieter."
+      "example": "The southern beaches are quieter.",
+      "examples": [
+        {
+          "text": "The southern beaches are quieter.",
+          "translation": "南のビーチは静かだ。"
+        }
+      ]
     },
     {
       "word": "western",
@@ -3161,7 +5519,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our hotel is on the western shore."
+      "example": "Our hotel is on the western shore.",
+      "examples": [
+        {
+          "text": "Our hotel is on the western shore.",
+          "translation": "我々のホテルは西岸にある。"
+        }
+      ]
     },
     {
       "word": "northeast",
@@ -3169,7 +5533,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The village lies to the northeast."
+      "example": "The village lies to the northeast.",
+      "examples": [
+        {
+          "text": "The village lies to the northeast.",
+          "translation": "村は北東に位置する。"
+        }
+      ]
     },
     {
       "word": "northwest",
@@ -3177,7 +5547,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We drove northwest toward the mountains."
+      "example": "We drove northwest toward the mountains.",
+      "examples": [
+        {
+          "text": "We drove northwest toward the mountains.",
+          "translation": "私たちは北西に向かって山に向かって運転した。"
+        }
+      ]
     },
     {
       "word": "southwest",
@@ -3185,7 +5561,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The wind comes from the southwest."
+      "example": "The wind comes from the southwest.",
+      "examples": [
+        {
+          "text": "The wind comes from the southwest.",
+          "translation": "風は南西から吹いている。"
+        }
+      ]
     },
     {
       "word": "uphill",
@@ -3193,7 +5575,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The uphill walk was tiring."
+      "example": "The uphill walk was tiring.",
+      "examples": [
+        {
+          "text": "The uphill walk was tiring.",
+          "translation": "上り坂を歩くのは疲れました。"
+        }
+      ]
     },
     {
       "word": "downhill",
@@ -3201,7 +5589,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We cycled downhill toward the town."
+      "example": "We cycled downhill toward the town.",
+      "examples": [
+        {
+          "text": "We cycled downhill toward the town.",
+          "translation": "私たちは町へ向かって下り坂を自転車で走った。"
+        }
+      ]
     },
     {
       "word": "downstairs",
@@ -3209,7 +5603,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Breakfast is served downstairs."
+      "example": "Breakfast is served downstairs.",
+      "examples": [
+        {
+          "text": "Breakfast is served downstairs.",
+          "translation": "朝食は下で出される。"
+        }
+      ]
     },
     {
       "word": "forward",
@@ -3217,7 +5617,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please move forward a little."
+      "example": "Please move forward a little.",
+      "examples": [
+        {
+          "text": "Please move forward a little.",
+          "translation": "少し前に進んでください。"
+        }
+      ]
     },
     {
       "word": "ahead",
@@ -3225,7 +5631,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The station is just ahead."
+      "example": "The station is just ahead.",
+      "examples": [
+        {
+          "text": "The station is just ahead.",
+          "translation": "駅はすぐ前にある。"
+        }
+      ]
     },
     {
       "word": "behind",
@@ -3233,7 +5645,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The taxi waited behind the bus."
+      "example": "The taxi waited behind the bus.",
+      "examples": [
+        {
+          "text": "The taxi waited behind the bus.",
+          "translation": "タクシーはバスの後ろで待っていた。"
+        }
+      ]
     },
     {
       "word": "nearby",
@@ -3241,7 +5659,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We found a nearby cafe."
+      "example": "We found a nearby cafe.",
+      "examples": [
+        {
+          "text": "We found a nearby cafe.",
+          "translation": "近くにカフェを見つけた。"
+        }
+      ]
     },
     {
       "word": "across",
@@ -3249,7 +5673,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The hotel is across the street."
+      "example": "The hotel is across the street.",
+      "examples": [
+        {
+          "text": "The hotel is across the street.",
+          "translation": "ホテルは通りの向こう側にあります。"
+        }
+      ]
     },
     {
       "word": "along",
@@ -3257,7 +5687,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Walk along the river to the bridge."
+      "example": "Walk along the river to the bridge.",
+      "examples": [
+        {
+          "text": "Walk along the river to the bridge.",
+          "translation": "川を沿って橋まで歩いて行け。"
+        }
+      ]
     },
     {
       "word": "through",
@@ -3265,7 +5701,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The path goes through the forest."
+      "example": "The path goes through the forest.",
+      "examples": [
+        {
+          "text": "The path goes through the forest.",
+          "translation": "道は森を通っている。"
+        }
+      ]
     },
     {
       "word": "around",
@@ -3273,7 +5715,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We walked around the lake."
+      "example": "We walked around the lake.",
+      "examples": [
+        {
+          "text": "We walked around the lake.",
+          "translation": "私たちは湖の周りを歩いた。"
+        }
+      ]
     },
     {
       "word": "beyond",
@@ -3281,7 +5729,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The campsite is beyond the village."
+      "example": "The campsite is beyond the village.",
+      "examples": [
+        {
+          "text": "The campsite is beyond the village.",
+          "translation": "キャンプ場は村の向こうにある。"
+        }
+      ]
     },
     {
       "word": "between",
@@ -3289,7 +5743,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The bank is between two restaurants."
+      "example": "The bank is between two restaurants.",
+      "examples": [
+        {
+          "text": "The bank is between two restaurants.",
+          "translation": "銀行は2つのレストランの間にある。"
+        }
+      ]
     },
     {
       "word": "beneath",
@@ -3297,7 +5757,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We sheltered beneath a large tree."
+      "example": "We sheltered beneath a large tree.",
+      "examples": [
+        {
+          "text": "We sheltered beneath a large tree.",
+          "translation": "私たちは大きな木の下に避難した。"
+        }
+      ]
     },
     {
       "word": "underneath",
@@ -3305,7 +5771,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "My bag is underneath the seat."
+      "example": "My bag is underneath the seat.",
+      "examples": [
+        {
+          "text": "My bag is underneath the seat.",
+          "translation": "私のバッグはシートの下にある。"
+        }
+      ]
     },
     {
       "word": "above",
@@ -3313,7 +5785,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Birds flew above the harbor."
+      "example": "Birds flew above the harbor.",
+      "examples": [
+        {
+          "text": "Birds flew above the harbor.",
+          "translation": "鳥たちが港の上を飛んでいました。"
+        }
+      ]
     },
     {
       "word": "inside",
@@ -3321,7 +5799,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The inside of the castle was cool."
+      "example": "The inside of the castle was cool.",
+      "examples": [
+        {
+          "text": "The inside of the castle was cool.",
+          "translation": "城の中はクールだった。"
+        }
+      ]
     },
     {
       "word": "outside",
@@ -3329,7 +5813,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The outside of the building is white."
+      "example": "The outside of the building is white.",
+      "examples": [
+        {
+          "text": "The outside of the building is white.",
+          "translation": "建物の外は白い。"
+        }
+      ]
     },
     {
       "word": "indoors",
@@ -3337,7 +5827,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We ate lunch indoors because of the rain."
+      "example": "We ate lunch indoors because of the rain.",
+      "examples": [
+        {
+          "text": "We ate lunch indoors because of the rain.",
+          "translation": "雨のために昼食を屋内で食べた。"
+        }
+      ]
     },
     {
       "word": "inland",
@@ -3345,7 +5841,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We visited an inland village."
+      "example": "We visited an inland village.",
+      "examples": [
+        {
+          "text": "We visited an inland village.",
+          "translation": "私たちは内陸の村を訪れた。"
+        }
+      ]
     },
     {
       "word": "overseas",
@@ -3353,7 +5855,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She travels overseas every summer."
+      "example": "She travels overseas every summer.",
+      "examples": [
+        {
+          "text": "She travels overseas every summer.",
+          "translation": "彼女は毎年夏に海外旅行をする。"
+        }
+      ]
     },
     {
       "word": "abroad",
@@ -3361,7 +5869,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This is my first trip abroad."
+      "example": "This is my first trip abroad.",
+      "examples": [
+        {
+          "text": "This is my first trip abroad.",
+          "translation": "これが私の初めての海外旅行です。"
+        }
+      ]
     },
     {
       "word": "offshore",
@@ -3369,7 +5883,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "An offshore wind pushed the boat away."
+      "example": "An offshore wind pushed the boat away.",
+      "examples": [
+        {
+          "text": "An offshore wind pushed the boat away.",
+          "translation": "沖の風が船を押し去った。"
+        }
+      ]
     },
     {
       "word": "afar",
@@ -3377,7 +5897,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We could see the mountain from afar."
+      "example": "We could see the mountain from afar.",
+      "examples": [
+        {
+          "text": "We could see the mountain from afar.",
+          "translation": "遠くから山が見えた。"
+        }
+      ]
     },
     {
       "word": "anywhere",
@@ -3385,7 +5911,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "You can sit anywhere you like."
+      "example": "You can sit anywhere you like.",
+      "examples": [
+        {
+          "text": "You can sit anywhere you like.",
+          "translation": "どこにでも座ってもいい。"
+        }
+      ]
     },
     {
       "word": "somewhere",
@@ -3393,7 +5925,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Let's stop somewhere for lunch."
+      "example": "Let's stop somewhere for lunch.",
+      "examples": [
+        {
+          "text": "Let's stop somewhere for lunch.",
+          "translation": "どこかに立ち寄って昼食を取りましょう。"
+        }
+      ]
     },
     {
       "word": "nowhere",
@@ -3401,7 +5939,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "There was nowhere to park."
+      "example": "There was nowhere to park.",
+      "examples": [
+        {
+          "text": "There was nowhere to park.",
+          "translation": "駐車場はなかった。"
+        }
+      ]
     },
     {
       "word": "position",
@@ -3409,7 +5953,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The map shows our current position."
+      "example": "The map shows our current position.",
+      "examples": [
+        {
+          "text": "The map shows our current position.",
+          "translation": "地図は我々の現在の位置を示している。"
+        }
+      ]
     },
     {
       "word": "region",
@@ -3417,7 +5967,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This region is famous for its lakes."
+      "example": "This region is famous for its lakes.",
+      "examples": [
+        {
+          "text": "This region is famous for its lakes.",
+          "translation": "この地域は湖で有名である。"
+        }
+      ]
     },
     {
       "word": "province",
@@ -3425,7 +5981,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We traveled across the province by train."
+      "example": "We traveled across the province by train.",
+      "examples": [
+        {
+          "text": "We traveled across the province by train.",
+          "translation": "私たちは電車で州を横断した。"
+        }
+      ]
     },
     {
       "word": "state",
@@ -3433,7 +5995,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They drove from one state to another."
+      "example": "They drove from one state to another.",
+      "examples": [
+        {
+          "text": "They drove from one state to another.",
+          "translation": "彼らは州から州へと運転した。"
+        }
+      ]
     },
     {
       "word": "territory",
@@ -3441,7 +6009,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The expedition crossed unfamiliar territory."
+      "example": "The expedition crossed unfamiliar territory.",
+      "examples": [
+        {
+          "text": "The expedition crossed unfamiliar territory.",
+          "translation": "遠征隊は未知の領域を横断した。"
+        }
+      ]
     },
     {
       "word": "frontier",
@@ -3449,7 +6023,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The train stopped near the frontier."
+      "example": "The train stopped near the frontier.",
+      "examples": [
+        {
+          "text": "The train stopped near the frontier.",
+          "translation": "列車は国境付近で止まった。"
+        }
+      ]
     },
     {
       "word": "nation",
@@ -3457,7 +6037,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Visitors come from every nation."
+      "example": "Visitors come from every nation.",
+      "examples": [
+        {
+          "text": "Visitors come from every nation.",
+          "translation": "訪問者はあらゆる国から来る。"
+        }
+      ]
     },
     {
       "word": "continent",
@@ -3465,7 +6051,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They traveled across the continent by rail."
+      "example": "They traveled across the continent by rail.",
+      "examples": [
+        {
+          "text": "They traveled across the continent by rail.",
+          "translation": "彼らは鉄道で大陸を横断した。"
+        }
+      ]
     },
     {
       "word": "Europe",
@@ -3473,7 +6065,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We spent a month traveling around Europe."
+      "example": "We spent a month traveling around Europe.",
+      "examples": [
+        {
+          "text": "We spent a month traveling around Europe.",
+          "translation": "私たちは1ヶ月間ヨーロッパを旅した。"
+        }
+      ]
     },
     {
       "word": "Africa",
@@ -3481,7 +6079,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She hopes to visit Africa next year."
+      "example": "She hopes to visit Africa next year.",
+      "examples": [
+        {
+          "text": "She hopes to visit Africa next year.",
+          "translation": "彼女は来年アフリカを訪れることを望んでいる。"
+        }
+      ]
     },
     {
       "word": "America",
@@ -3489,7 +6093,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "My cousins live in America."
+      "example": "My cousins live in America.",
+      "examples": [
+        {
+          "text": "My cousins live in America.",
+          "translation": "私の従兄弟はアメリカに住んでいます。"
+        }
+      ]
     },
     {
       "word": "Australia",
@@ -3497,7 +6107,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We flew to Australia in December."
+      "example": "We flew to Australia in December.",
+      "examples": [
+        {
+          "text": "We flew to Australia in December.",
+          "translation": "私たちは12月にオーストラリアに飛んだ。"
+        }
+      ]
     },
     {
       "word": "Asian",
@@ -3505,7 +6121,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The museum has a collection of Asian art."
+      "example": "The museum has a collection of Asian art.",
+      "examples": [
+        {
+          "text": "The museum has a collection of Asian art.",
+          "translation": "博物館にはアジア美術のコレクションがある。"
+        }
+      ]
     },
     {
       "word": "African",
@@ -3513,7 +6135,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The festival celebrates African music."
+      "example": "The festival celebrates African music.",
+      "examples": [
+        {
+          "text": "The festival celebrates African music.",
+          "translation": "この祭りはアフリカの音楽を祝う。"
+        }
+      ]
     },
     {
       "word": "Australian",
@@ -3521,7 +6149,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We met an Australian family on the train."
+      "example": "We met an Australian family on the train.",
+      "examples": [
+        {
+          "text": "We met an Australian family on the train.",
+          "translation": "私たちは列車でオーストラリアの家族に出会った。"
+        }
+      ]
     },
     {
       "word": "Japanese",
@@ -3529,7 +6163,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This restaurant serves Japanese food."
+      "example": "This restaurant serves Japanese food.",
+      "examples": [
+        {
+          "text": "This restaurant serves Japanese food.",
+          "translation": "このレストランは日本料理を提供しています。"
+        }
+      ]
     },
     {
       "word": "British",
@@ -3537,7 +6177,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The British visitors arrived yesterday."
+      "example": "The British visitors arrived yesterday.",
+      "examples": [
+        {
+          "text": "The British visitors arrived yesterday.",
+          "translation": "イギリスの訪問者が昨日到着した。"
+        }
+      ]
     },
     {
       "word": "German",
@@ -3545,7 +6191,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She bought a German phrasebook."
+      "example": "She bought a German phrasebook.",
+      "examples": [
+        {
+          "text": "She bought a German phrasebook.",
+          "translation": "彼女はドイツ語のフレーズブックを買った。"
+        }
+      ]
     },
     {
       "word": "Italian",
@@ -3553,7 +6205,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We listened to Italian music at the cafe."
+      "example": "We listened to Italian music at the cafe.",
+      "examples": [
+        {
+          "text": "We listened to Italian music at the cafe.",
+          "translation": "私たちはカフェでイタリアの音楽を聴いた。"
+        }
+      ]
     },
     {
       "word": "Spanish",
@@ -3561,7 +6219,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The guide gave us a Spanish map."
+      "example": "The guide gave us a Spanish map.",
+      "examples": [
+        {
+          "text": "The guide gave us a Spanish map.",
+          "translation": "ガイドは私たちにスペイン語の地図を与えた。"
+        }
+      ]
     },
     {
       "word": "Korean",
@@ -3569,7 +6233,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She ordered food from a Korean menu."
+      "example": "She ordered food from a Korean menu.",
+      "examples": [
+        {
+          "text": "She ordered food from a Korean menu.",
+          "translation": "彼女は韓国料理のメニューから食べ物を注文した。"
+        }
+      ]
     },
     {
       "word": "Indian",
@@ -3577,7 +6247,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We found an Indian restaurant nearby."
+      "example": "We found an Indian restaurant nearby.",
+      "examples": [
+        {
+          "text": "We found an Indian restaurant nearby.",
+          "translation": "近くにインド料理店を見つけた。"
+        }
+      ]
     },
     {
       "word": "Canadian",
@@ -3585,7 +6261,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our Canadian guide knew the trail well."
+      "example": "Our Canadian guide knew the trail well.",
+      "examples": [
+        {
+          "text": "Our Canadian guide knew the trail well.",
+          "translation": "カナダのガイドはその道をよく知っていた。"
+        }
+      ]
     },
     {
       "word": "Brazilian",
@@ -3593,7 +6275,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We heard Brazilian music in the square."
+      "example": "We heard Brazilian music in the square.",
+      "examples": [
+        {
+          "text": "We heard Brazilian music in the square.",
+          "translation": "広場でブラジルの音楽を聞いた。"
+        }
+      ]
     },
     {
       "word": "Egyptian",
@@ -3601,7 +6289,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The gallery displays Egyptian paintings."
+      "example": "The gallery displays Egyptian paintings.",
+      "examples": [
+        {
+          "text": "The gallery displays Egyptian paintings.",
+          "translation": "ギャラリーはエジプトの絵画を展示している。"
+        }
+      ]
     },
     {
       "word": "Greek",
@@ -3609,7 +6303,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We stayed on a Greek island."
+      "example": "We stayed on a Greek island.",
+      "examples": [
+        {
+          "text": "We stayed on a Greek island.",
+          "translation": "私たちはギリシャの島に滞在した。"
+        }
+      ]
     },
     {
       "word": "Turkish",
@@ -3617,7 +6317,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "They served us Turkish tea."
+      "example": "They served us Turkish tea.",
+      "examples": [
+        {
+          "text": "They served us Turkish tea.",
+          "translation": "彼らはトルコ茶を注いだ。"
+        }
+      ]
     },
     {
       "word": "Thai",
@@ -3625,7 +6331,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I am learning a few Thai phrases."
+      "example": "I am learning a few Thai phrases.",
+      "examples": [
+        {
+          "text": "I am learning a few Thai phrases.",
+          "translation": "私はタイ語のフレーズをいくつか学んでいます。"
+        }
+      ]
     },
     {
       "word": "Vietnamese",
@@ -3633,7 +6345,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The cafe serves Vietnamese coffee."
+      "example": "The cafe serves Vietnamese coffee.",
+      "examples": [
+        {
+          "text": "The cafe serves Vietnamese coffee.",
+          "translation": "そのカフェはベトナムのコーヒーを提供している。"
+        }
+      ]
     },
     {
       "word": "Malaysian",
@@ -3641,7 +6359,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We tried Malaysian food at the market."
+      "example": "We tried Malaysian food at the market.",
+      "examples": [
+        {
+          "text": "We tried Malaysian food at the market.",
+          "translation": "市場でマレーシアの食べ物を試した。"
+        }
+      ]
     },
     {
       "word": "language",
@@ -3649,7 +6373,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "What language do people speak here?"
+      "example": "What language do people speak here?",
+      "examples": [
+        {
+          "text": "What language do people speak here?",
+          "translation": "ここで人々はどんな言葉を話しますか。"
+        }
+      ]
     },
     {
       "word": "dictionary",
@@ -3657,7 +6387,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I checked the word in my dictionary."
+      "example": "I checked the word in my dictionary.",
+      "examples": [
+        {
+          "text": "I checked the word in my dictionary.",
+          "translation": "辞書でその言葉を調べた。"
+        }
+      ]
     },
     {
       "word": "phrase",
@@ -3665,7 +6401,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "This phrase is useful when ordering food."
+      "example": "This phrase is useful when ordering food.",
+      "examples": [
+        {
+          "text": "This phrase is useful when ordering food.",
+          "translation": "このフレーズは食事を注文するときに役立つ。"
+        }
+      ]
     },
     {
       "word": "accent",
@@ -3673,7 +6415,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "She speaks English with a French accent."
+      "example": "She speaks English with a French accent.",
+      "examples": [
+        {
+          "text": "She speaks English with a French accent.",
+          "translation": "彼女はフランス語なまりの英語を話します。"
+        }
+      ]
     },
     {
       "word": "communication",
@@ -3681,7 +6429,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Simple pictures can help with communication."
+      "example": "Simple pictures can help with communication.",
+      "examples": [
+        {
+          "text": "Simple pictures can help with communication.",
+          "translation": "単純な絵はコミュニケーションを助ける。"
+        }
+      ]
     },
     {
       "word": "misunderstanding",
@@ -3689,7 +6443,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A misunderstanding led us to the wrong gate."
+      "example": "A misunderstanding led us to the wrong gate.",
+      "examples": [
+        {
+          "text": "A misunderstanding led us to the wrong gate.",
+          "translation": "誤解で私たちは間違ったゲートに行った。"
+        }
+      ]
     },
     {
       "word": "gesture",
@@ -3697,7 +6457,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "He welcomed us with a friendly gesture."
+      "example": "He welcomed us with a friendly gesture.",
+      "examples": [
+        {
+          "text": "He welcomed us with a friendly gesture.",
+          "translation": "彼は友好的なジェスチャーで私たちを歓迎した。"
+        }
+      ]
     },
     {
       "word": "thanks",
@@ -3705,7 +6471,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Thanks for showing us the way."
+      "example": "Thanks for showing us the way.",
+      "examples": [
+        {
+          "text": "Thanks for showing us the way.",
+          "translation": "道を示してくれてありがとう"
+        }
+      ]
     },
     {
       "word": "apology",
@@ -3713,7 +6485,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The hotel offered an apology for the delay."
+      "example": "The hotel offered an apology for the delay.",
+      "examples": [
+        {
+          "text": "The hotel offered an apology for the delay.",
+          "translation": "ホテルは遅延について謝罪した。"
+        }
+      ]
     },
     {
       "word": "excuse",
@@ -3721,7 +6499,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please excuse my poor pronunciation."
+      "example": "Please excuse my poor pronunciation.",
+      "examples": [
+        {
+          "text": "Please excuse my poor pronunciation.",
+          "translation": "私の発音が悪いのでごめんなさい。"
+        }
+      ]
     },
     {
       "word": "welcome",
@@ -3729,7 +6513,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Welcome to our city!"
+      "example": "Welcome to our city!",
+      "examples": [
+        {
+          "text": "Welcome to our city!",
+          "translation": "ようこそ私たちの街へ!"
+        }
+      ]
     },
     {
       "word": "hello",
@@ -3737,7 +6527,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Hello, is this the hotel reception?"
+      "example": "Hello, is this the hotel reception?",
+      "examples": [
+        {
+          "text": "Hello, is this the hotel reception?",
+          "translation": "こちらホテルの受付ですか?"
+        }
+      ]
     },
     {
       "word": "goodbye",
@@ -3745,7 +6541,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We waved goodbye to our guide."
+      "example": "We waved goodbye to our guide.",
+      "examples": [
+        {
+          "text": "We waved goodbye to our guide.",
+          "translation": "私たちはガイドに手を振って別れを告げた。"
+        }
+      ]
     },
     {
       "word": "no",
@@ -3753,7 +6555,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "No, this is not my suitcase."
+      "example": "No, this is not my suitcase.",
+      "examples": [
+        {
+          "text": "No, this is not my suitcase.",
+          "translation": "いや これは私のスーツケースじゃない"
+        }
+      ]
     },
     {
       "word": "help",
@@ -3761,7 +6569,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Could you help me find the station?"
+      "example": "Could you help me find the station?",
+      "examples": [
+        {
+          "text": "Could you help me find the station?",
+          "translation": "駅を見つける手伝いをしてくれませんか。"
+        }
+      ]
     },
     {
       "word": "beware",
@@ -3769,7 +6583,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Beware of slippery steps."
+      "example": "Beware of slippery steps.",
+      "examples": [
+        {
+          "text": "Beware of slippery steps.",
+          "translation": "滑りやすい階段に気をつけなさい。"
+        }
+      ]
     },
     {
       "word": "lightweight",
@@ -3777,7 +6597,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "I bought a lightweight suitcase."
+      "example": "I bought a lightweight suitcase.",
+      "examples": [
+        {
+          "text": "I bought a lightweight suitcase.",
+          "translation": "軽量のスーツケースを買った。"
+        }
+      ]
     },
     {
       "word": "portable",
@@ -3785,7 +6611,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We packed a portable charger."
+      "example": "We packed a portable charger.",
+      "examples": [
+        {
+          "text": "We packed a portable charger.",
+          "translation": "携帯充電器を持ってきた"
+        }
+      ]
     },
     {
       "word": "spare",
@@ -3793,7 +6625,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Keep a spare key in your bag."
+      "example": "Keep a spare key in your bag.",
+      "examples": [
+        {
+          "text": "Keep a spare key in your bag.",
+          "translation": "予備の鍵をバッグに入れておけ。"
+        }
+      ]
     },
     {
       "word": "early",
@@ -3801,7 +6639,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We caught an early train."
+      "example": "We caught an early train.",
+      "examples": [
+        {
+          "text": "We caught an early train.",
+          "translation": "早い列車に乗った。"
+        }
+      ]
     },
     {
       "word": "late",
@@ -3809,7 +6653,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The last bus was late."
+      "example": "The last bus was late.",
+      "examples": [
+        {
+          "text": "The last bus was late.",
+          "translation": "最後のバスは遅かった。"
+        }
+      ]
     },
     {
       "word": "weekly",
@@ -3817,7 +6667,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The weekly market is held on Sundays."
+      "example": "The weekly market is held on Sundays.",
+      "examples": [
+        {
+          "text": "The weekly market is held on Sundays.",
+          "translation": "週末市場は日曜日に開催される。"
+        }
+      ]
     },
     {
       "word": "monthly",
@@ -3825,7 +6681,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "A monthly pass is cheaper for regular travelers."
+      "example": "A monthly pass is cheaper for regular travelers.",
+      "examples": [
+        {
+          "text": "A monthly pass is cheaper for regular travelers.",
+          "translation": "定期旅行者には月間券が安い。"
+        }
+      ]
     },
     {
       "word": "annual",
@@ -3833,7 +6695,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The annual festival attracts many visitors."
+      "example": "The annual festival attracts many visitors.",
+      "examples": [
+        {
+          "text": "The annual festival attracts many visitors.",
+          "translation": "毎年の祭りは多くの観光客を集める。"
+        }
+      ]
     },
     {
       "word": "midnight",
@@ -3841,7 +6709,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our flight arrives just before midnight."
+      "example": "Our flight arrives just before midnight.",
+      "examples": [
+        {
+          "text": "Our flight arrives just before midnight.",
+          "translation": "私たちの飛行機は真夜中のちょうど前に到着します。"
+        }
+      ]
     },
     {
       "word": "noon",
@@ -3849,7 +6723,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We must leave the room by noon."
+      "example": "We must leave the room by noon.",
+      "examples": [
+        {
+          "text": "We must leave the room by noon.",
+          "translation": "私たちは正午までに部屋を出なければならない。"
+        }
+      ]
     },
     {
       "word": "dawn",
@@ -3857,7 +6737,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We started our hike at dawn."
+      "example": "We started our hike at dawn.",
+      "examples": [
+        {
+          "text": "We started our hike at dawn.",
+          "translation": "私たちは夜明けに登山を始めた。"
+        }
+      ]
     },
     {
       "word": "sunrise",
@@ -3865,7 +6751,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We watched the sunrise from the beach."
+      "example": "We watched the sunrise from the beach.",
+      "examples": [
+        {
+          "text": "We watched the sunrise from the beach.",
+          "translation": "私たちは海岸から日の出を見た。"
+        }
+      ]
     },
     {
       "word": "sunset",
@@ -3873,7 +6765,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The boat returns before sunset."
+      "example": "The boat returns before sunset.",
+      "examples": [
+        {
+          "text": "The boat returns before sunset.",
+          "translation": "船は日没前に戻る。"
+        }
+      ]
     },
     {
       "word": "morning",
@@ -3881,7 +6779,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The streets are quiet in the morning."
+      "example": "The streets are quiet in the morning.",
+      "examples": [
+        {
+          "text": "The streets are quiet in the morning.",
+          "translation": "朝は通りは静かだ。"
+        }
+      ]
     },
     {
       "word": "evening",
@@ -3889,7 +6793,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We explored the market in the evening."
+      "example": "We explored the market in the evening.",
+      "examples": [
+        {
+          "text": "We explored the market in the evening.",
+          "translation": "私たちは夕方に市場を探検した。"
+        }
+      ]
     },
     {
       "word": "night",
@@ -3897,7 +6807,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The city looks different at night."
+      "example": "The city looks different at night.",
+      "examples": [
+        {
+          "text": "The city looks different at night.",
+          "translation": "夜になると街は違うように見える。"
+        }
+      ]
     },
     {
       "word": "weekend",
@@ -3905,7 +6821,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We are visiting friends this weekend."
+      "example": "We are visiting friends this weekend.",
+      "examples": [
+        {
+          "text": "We are visiting friends this weekend.",
+          "translation": "私たちはこの週末友達を訪ねる。"
+        }
+      ]
     },
     {
       "word": "today",
@@ -3913,7 +6835,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The museum is open today."
+      "example": "The museum is open today.",
+      "examples": [
+        {
+          "text": "The museum is open today.",
+          "translation": "博物館は今日開館している。"
+        }
+      ]
     },
     {
       "word": "tomorrow",
@@ -3921,7 +6849,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We will leave tomorrow morning."
+      "example": "We will leave tomorrow morning.",
+      "examples": [
+        {
+          "text": "We will leave tomorrow morning.",
+          "translation": "明日の朝に出発します。"
+        }
+      ]
     },
     {
       "word": "yesterday",
@@ -3929,7 +6863,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We arrived in the city yesterday."
+      "example": "We arrived in the city yesterday.",
+      "examples": [
+        {
+          "text": "We arrived in the city yesterday.",
+          "translation": "私たちは昨日町に到着した。"
+        }
+      ]
     },
     {
       "word": "hour",
@@ -3937,7 +6877,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The journey takes about an hour."
+      "example": "The journey takes about an hour.",
+      "examples": [
+        {
+          "text": "The journey takes about an hour.",
+          "translation": "旅行には約1時間かかる。"
+        }
+      ]
     },
     {
       "word": "day",
@@ -3945,7 +6891,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We spent a day at the beach."
+      "example": "We spent a day at the beach.",
+      "examples": [
+        {
+          "text": "We spent a day at the beach.",
+          "translation": "私たちは海岸で一日を過ごした。"
+        }
+      ]
     },
     {
       "word": "month",
@@ -3953,7 +6905,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The pass is valid for one month."
+      "example": "The pass is valid for one month.",
+      "examples": [
+        {
+          "text": "The pass is valid for one month.",
+          "translation": "乗車券は1ヶ月間有効。"
+        }
+      ]
     },
     {
       "word": "year",
@@ -3961,7 +6919,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "We visit this town every year."
+      "example": "We visit this town every year.",
+      "examples": [
+        {
+          "text": "We visit this town every year.",
+          "translation": "私たちは毎年この町を訪れる。"
+        }
+      ]
     },
     {
       "word": "century",
@@ -3969,7 +6933,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The castle was built over a century ago."
+      "example": "The castle was built over a century ago.",
+      "examples": [
+        {
+          "text": "The castle was built over a century ago.",
+          "translation": "城は百年以上前に建てられた。"
+        }
+      ]
     },
     {
       "word": "schedule",
@@ -3977,7 +6947,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Please check the ferry schedule."
+      "example": "Please check the ferry schedule.",
+      "examples": [
+        {
+          "text": "Please check the ferry schedule.",
+          "translation": "フェリーの時刻表を確認してください。"
+        }
+      ]
     },
     {
       "word": "duration",
@@ -3985,7 +6961,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The flight duration is about three hours."
+      "example": "The flight duration is about three hours.",
+      "examples": [
+        {
+          "text": "The flight duration is about three hours.",
+          "translation": "飛行時間は約3時間。"
+        }
+      ]
     },
     {
       "word": "interval",
@@ -3993,7 +6975,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "There is a short interval between tours."
+      "example": "There is a short interval between tours.",
+      "examples": [
+        {
+          "text": "There is a short interval between tours.",
+          "translation": "ツアー間隔が短い。"
+        }
+      ]
     },
     {
       "word": "time zone",
@@ -4001,7 +6989,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "Our destination is in a different time zone."
+      "example": "Our destination is in a different time zone.",
+      "examples": [
+        {
+          "text": "Our destination is in a different time zone.",
+          "translation": "私たちの目的地は、こことは標準時が異なる地域にあります。"
+        }
+      ]
     },
     {
       "word": "daylight saving time",
@@ -4009,7 +7003,13 @@
       "tags": [
         "旅行"
       ],
-      "example": "The clocks change for daylight saving time."
+      "example": "The clocks change for daylight saving time.",
+      "examples": [
+        {
+          "text": "The clocks change for daylight saving time.",
+          "translation": "夏時間のため時計が変わる。"
+        }
+      ]
     }
   ]
 }

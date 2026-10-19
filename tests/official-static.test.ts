@@ -10,6 +10,7 @@ it('publishes the five original books from editable JSON with trusted fork hashe
  const books=standardDecks.filter(d=>d.contentSource==='ejdict');expect(books).toHaveLength(5);
  for(const book of books){
   const words=JSON.parse(readFileSync(`public${standardAssetPath(book)}`,'utf8'));
+  expect(words.every((word:any)=>word.examples?.length && word.examples[0].text===word.example && /[ぁ-んァ-ン一-龥]/.test(word.examples[0].translation))).toBe(true);
   expect(words).toHaveLength(500);expect(await contentHash(words)).toBe(book.contentHash);
   expect(book.isOfficial).toBe(true);expect(book.standard).toBe(true);
  }

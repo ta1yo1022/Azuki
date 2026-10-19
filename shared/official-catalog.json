@@ -15,13 +15,13 @@
     "visibility": "public",
     "wordCount": 500,
     "createdAt": "2026-10-05T00:00:00.000Z",
-    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "officialLevel": "intermediate",
     "contentSource": "ejdict",
     "standard": true,
-    "file": "azuki-official-daily-v1.c4b52c6dbbcee401.json",
-    "contentHash": "f94ce510fe2fd80fd219254327ab64aee6cb77300f81c454dc37b5df54fbefc8"
+    "file": "azuki-official-daily-v1.487edbe7c5a35bc7.json",
+    "contentHash": "dc6f7acd270e93205f8d2a75461e6ed94ccc72837aeb8493f430df42704c17e5"
   },
   {
     "schemaVersion": 1,
@@ -39,13 +39,13 @@
     "visibility": "public",
     "wordCount": 500,
     "createdAt": "2026-10-05T00:00:00.000Z",
-    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "officialLevel": "beginner",
     "contentSource": "ejdict",
     "standard": true,
-    "file": "azuki-official-travel-v1.49a38407b785b672.json",
-    "contentHash": "f5a9826ce705c7beda1c305927861068b9722520459f354b938fa1d47f6632cd"
+    "file": "azuki-official-travel-v1.0761ce0006048163.json",
+    "contentHash": "481d31edfe9a7e8899e91e7747290e5d78fa7c9604c335c4849524bd4295130b"
   },
   {
     "schemaVersion": 1,
@@ -63,13 +63,13 @@
     "visibility": "public",
     "wordCount": 500,
     "createdAt": "2026-10-05T00:00:00.000Z",
-    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "officialLevel": "intermediate",
     "contentSource": "ejdict",
     "standard": true,
-    "file": "azuki-official-food-v1.395d131a7ea0abbf.json",
-    "contentHash": "86e1d00dfb96f45e647e08e39286f6fb99f8e0af14dc79e8b1dc0373404a0a1e"
+    "file": "azuki-official-food-v1.4f23a870aaa55e16.json",
+    "contentHash": "30810b08cee7d6496c69a85d312491628eccc0345a2f434b86a5ce477b8379aa"
   },
   {
     "schemaVersion": 1,
@@ -87,13 +87,13 @@
     "visibility": "public",
     "wordCount": 500,
     "createdAt": "2026-10-05T00:00:00.000Z",
-    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "officialLevel": "intermediate",
     "contentSource": "ejdict",
     "standard": true,
-    "file": "azuki-official-feelings-v1.f64ac16377745363.json",
-    "contentHash": "f98a4a6694c228baaf20b701d9d3800b3483b21fc2b6e2ffe6694e0be8e36c17"
+    "file": "azuki-official-feelings-v1.7af0fbb6736aa284.json",
+    "contentHash": "821bd670f0f98468812232c6eccd4b25ebab2df3433bddb015daf510a3dc768a"
   },
   {
     "schemaVersion": 1,
@@ -111,12 +111,12 @@
     "visibility": "public",
     "wordCount": 500,
     "createdAt": "2026-10-05T00:00:00.000Z",
-    "updatedAt": "2026-10-05T13:45:05.929543+00:00",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "officialLevel": "advanced",
     "contentSource": "ejdict",
     "standard": true,
-    "file": "azuki-official-work-v1.289b783b6e859ced.json",
-    "contentHash": "059390d9382f135c6bd5d8fc49d49d2af9f9c894275cdfdc61fb7bad2720b953"
+    "file": "azuki-official-work-v1.b81c156e5d54e083.json",
+    "contentHash": "4b4800e09c37cbbd92db83e338e33dd10a87131f868396575437eee7c2f82d12"
   }
 ]

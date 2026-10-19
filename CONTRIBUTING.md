@@ -17,7 +17,7 @@ Issue・プルリクエストを歓迎します。日本語・英語のどちら
 - テーマ別：`content/official/decks/*.json`
 - CEFR-Jの意味・例文：`content/cefrj/editorial/*.json`
 - 原典の掲載順・公開ID・出典表示を、語義の修正に伴って変更しないでください。
-- 教材本文・辞書の説明文を無断で転載しないでください。意味・品詞・例文の対応を確認し、AIを使った場合も内容を見直してください。
+- 教材本文・辞書の説明文を無断で転載しないでください。意味・品詞・例文・日本語訳の対応を確認し、AIを使った場合も内容を見直してください。
 - `npm run content:build` で生成します。`public/content/` と `shared/*-catalog.json` を直接編集せず、編集元と生成結果を同じPRに含めてください。
 - 詳細：[テーマ別](content/official/README.md) / [CEFR-J](content/cefrj/README.md)。出典とそれぞれの利用条件を維持してください。
 

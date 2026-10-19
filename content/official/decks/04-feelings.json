@@ -17,6 +17,12 @@
       "example": "I am happy to see you.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am happy to see you.",
+          "translation": "あなたに会えてうれしいです。"
+        }
       ]
     },
     {
@@ -25,6 +31,12 @@
       "example": "I felt sad when the trip ended.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I felt sad when the trip ended.",
+          "translation": "旅行が終わったとき、私は寂しくなりました。"
+        }
       ]
     },
     {
@@ -33,6 +45,12 @@
       "example": "He was angry about the delay.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "He was angry about the delay.",
+          "translation": "彼は遅れたことに腹を立てていました。"
+        }
       ]
     },
     {
@@ -41,6 +59,12 @@
       "example": "She is afraid of spiders.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "She is afraid of spiders.",
+          "translation": "彼女はクモが怖いです。"
+        }
       ]
     },
     {
@@ -49,6 +73,12 @@
       "example": "I am worried about tomorrow's test.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am worried about tomorrow's test.",
+          "translation": "私は明日のテストが心配です。"
+        }
       ]
     },
     {
@@ -57,6 +87,12 @@
       "example": "We are excited about the trip.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "We are excited about the trip.",
+          "translation": "私たちは旅行を楽しみにしています。"
+        }
       ]
     },
     {
@@ -65,6 +101,12 @@
       "example": "I feel tired after work.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I feel tired after work.",
+          "translation": "仕事の後は疲れを感じます。"
+        }
       ]
     },
     {
@@ -73,6 +115,12 @@
       "example": "I get sleepy after lunch.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I get sleepy after lunch.",
+          "translation": "私は昼食の後に眠くなります。"
+        }
       ]
     },
     {
@@ -81,6 +129,12 @@
       "example": "I like to relax with a book.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I like to relax with a book.",
+          "translation": "私は本を読みながらくつろぐのが好きです。"
+        }
       ]
     },
     {
@@ -89,6 +143,12 @@
       "example": "Try to stay calm.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Try to stay calm.",
+          "translation": "落ち着いているようにしてください。"
+        }
       ]
     },
     {
@@ -97,6 +157,12 @@
       "example": "I am proud of my sister.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am proud of my sister.",
+          "translation": "妹を誇りに思う。"
+        }
       ]
     },
     {
@@ -105,6 +171,12 @@
       "example": "I was shy when I was a child.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I was shy when I was a child.",
+          "translation": "子供の頃は恥ずかしかった。"
+        }
       ]
     },
     {
@@ -113,6 +185,12 @@
       "example": "I feel lonely when I eat alone.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I feel lonely when I eat alone.",
+          "translation": "私は一人で食事をすると寂しくなります。"
+        }
       ]
     },
     {
@@ -121,6 +199,12 @@
       "example": "I was surprised by the news.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I was surprised by the news.",
+          "translation": "私はそのニュースに驚いた。"
+        }
       ]
     },
     {
@@ -129,6 +213,12 @@
       "example": "I feel anxious before a big test.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I feel anxious before a big test.",
+          "translation": "私は大きな試験の前に不安を感じる。"
+        }
       ]
     },
     {
@@ -137,6 +227,12 @@
       "example": "I am nervous about the interview.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am nervous about the interview.",
+          "translation": "面接に緊張している。"
+        }
       ]
     },
     {
@@ -145,6 +241,12 @@
       "example": "It was kind of you to help.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "It was kind of you to help.",
+          "translation": "助けてくれて ありがとう"
+        }
       ]
     },
     {
@@ -153,6 +255,12 @@
       "example": "Our new neighbor is very friendly.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Our new neighbor is very friendly.",
+          "translation": "新しい隣人はとても親切だ。"
+        }
       ]
     },
     {
@@ -161,6 +269,12 @@
       "example": "It is polite to say thank you.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "It is polite to say thank you.",
+          "translation": "ありがとうと言うのは礼儀正しい。"
+        }
       ]
     },
     {
@@ -169,6 +283,12 @@
       "example": "Please be honest with me.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Please be honest with me.",
+          "translation": "正直に言ってくれ"
+        }
       ]
     },
     {
@@ -177,6 +297,12 @@
       "example": "The brave child asked for help.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "The brave child asked for help.",
+          "translation": "勇敢な子供は助けを求めた。"
+        }
       ]
     },
     {
@@ -185,6 +311,12 @@
       "example": "Thank you for being patient with me.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Thank you for being patient with me.",
+          "translation": "私に対して忍耐を持ってくれてありがとう。"
+        }
       ]
     },
     {
@@ -193,6 +325,12 @@
       "example": "Be careful when you cross the road.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Be careful when you cross the road.",
+          "translation": "道を渡る時は気をつけて。"
+        }
       ]
     },
     {
@@ -201,6 +339,12 @@
       "example": "She spoke in a gentle voice.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "She spoke in a gentle voice.",
+          "translation": "彼女は優しい声で話した。"
+        }
       ]
     },
     {
@@ -209,6 +353,12 @@
       "example": "He always has a cheerful smile.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "He always has a cheerful smile.",
+          "translation": "彼はいつも笑顔でいる。"
+        }
       ]
     },
     {
@@ -217,6 +367,12 @@
       "example": "We found a quiet place to talk.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "We found a quiet place to talk.",
+          "translation": "話すために静かな場所を見つけた。"
+        }
       ]
     },
     {
@@ -225,6 +381,12 @@
       "example": "I am serious about learning English.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am serious about learning English.",
+          "translation": "私は英語を真剣に学んでいます。"
+        }
       ]
     },
     {
@@ -233,6 +395,12 @@
       "example": "Children are curious about the world.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Children are curious about the world.",
+          "translation": "子供は世界に対して好奇心がある。"
+        }
       ]
     },
     {
@@ -241,6 +409,12 @@
       "example": "I feel more confident now.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I feel more confident now.",
+          "translation": "今は以前より自信があります。"
+        }
       ]
     },
     {
@@ -249,6 +423,12 @@
       "example": "I am grateful for your help.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am grateful for your help.",
+          "translation": "あなたの助けに感謝します。"
+        }
       ]
     },
     {
@@ -257,6 +437,12 @@
       "example": "We are hopeful about the future.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "We are hopeful about the future.",
+          "translation": "私たちは未来に対して希望を持っている。"
+        }
       ]
     },
     {
@@ -265,6 +451,12 @@
       "example": "She was upset by the bad news.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "She was upset by the bad news.",
+          "translation": "彼女は悪い知らせに動揺した。"
+        }
       ]
     },
     {
@@ -273,6 +465,12 @@
       "example": "I was disappointed with the result.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I was disappointed with the result.",
+          "translation": "結果に失望した。"
+        }
       ]
     },
     {
@@ -281,6 +479,12 @@
       "example": "He felt ashamed of his rude words.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "He felt ashamed of his rude words.",
+          "translation": "彼はその無礼な言葉を恥じた。"
+        }
       ]
     },
     {
@@ -289,6 +493,12 @@
       "example": "I am pleased with my progress.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am pleased with my progress.",
+          "translation": "私は進歩に満足している。"
+        }
       ]
     },
     {
@@ -297,6 +507,12 @@
       "example": "This chair is very comfortable.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "This chair is very comfortable.",
+          "translation": "この椅子はとても快適です。"
+        }
       ]
     },
     {
@@ -305,6 +521,12 @@
       "example": "I want to stay healthy.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I want to stay healthy.",
+          "translation": "健康を保ちたい"
+        }
       ]
     },
     {
@@ -313,6 +535,12 @@
       "example": "I felt ill yesterday.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I felt ill yesterday.",
+          "translation": "昨日は病気だった。"
+        }
       ]
     },
     {
@@ -321,6 +549,12 @@
       "example": "Are you busy this afternoon?",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Are you busy this afternoon?",
+          "translation": "今日の午後は忙しいですか。"
+        }
       ]
     },
     {
@@ -329,6 +563,12 @@
       "example": "I am free after six.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am free after six.",
+          "translation": "私は6時以降なら空いています。"
+        }
       ]
     },
     {
@@ -337,6 +577,12 @@
       "example": "Are you ready to go?",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Are you ready to go?",
+          "translation": "準備はいいか?"
+        }
       ]
     },
     {
@@ -345,6 +591,12 @@
       "example": "I am sure this is the right way.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "I am sure this is the right way.",
+          "translation": "これが正しい方法だと確信している。"
+        }
       ]
     },
     {
@@ -353,6 +605,12 @@
       "example": "This question is easy.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "This question is easy.",
+          "translation": "この質問は簡単だ。"
+        }
       ]
     },
     {
@@ -361,6 +619,12 @@
       "example": "This word is difficult to pronounce.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "This word is difficult to pronounce.",
+          "translation": "この単語は発音するのが難しいです。"
+        }
       ]
     },
     {
@@ -369,6 +633,12 @@
       "example": "Your health is important.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "Your health is important.",
+          "translation": "あなたの健康は大切です。"
+        }
       ]
     },
     {
@@ -377,6 +647,12 @@
       "example": "That is an interesting idea.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "That is an interesting idea.",
+          "translation": "それは興味深い考えだ。"
+        }
       ]
     },
     {
@@ -385,6 +661,12 @@
       "example": "This map is very useful.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "This map is very useful.",
+          "translation": "この地図はとても役に立つ。"
+        }
       ]
     },
     {
@@ -393,6 +675,12 @@
       "example": "What a beautiful view!",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "What a beautiful view!",
+          "translation": "なんて美しい景色だ!"
+        }
       ]
     },
     {
@@ -401,6 +689,12 @@
       "example": "This is my favorite song.",
       "tags": [
         "形容詞"
+      ],
+      "examples": [
+        {
+          "text": "This is my favorite song.",
+          "translation": "これは私のお気に入りの曲です。"
+        }
       ]
     },
     {
@@ -409,6 +703,12 @@
       "example": "She smiled when she saw us.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "She smiled when she saw us.",
+          "translation": "彼女は私たちを見て微笑んだ。"
+        }
       ]
     },
     {
@@ -417,7 +717,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her visit filled me with joy."
+      "example": "Her visit filled me with joy.",
+      "examples": [
+        {
+          "text": "Her visit filled me with joy.",
+          "translation": "彼女の訪問は私を喜びに満ちた。"
+        }
+      ]
     },
     {
       "word": "delight",
@@ -425,7 +731,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The children shouted with delight."
+      "example": "The children shouted with delight.",
+      "examples": [
+        {
+          "text": "The children shouted with delight.",
+          "translation": "子供たちは喜びに叫んだ。"
+        }
+      ]
     },
     {
       "word": "pleasure",
@@ -433,7 +745,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It was a pleasure to meet you."
+      "example": "It was a pleasure to meet you.",
+      "examples": [
+        {
+          "text": "It was a pleasure to meet you.",
+          "translation": "会えて光栄だった"
+        }
+      ]
     },
     {
       "word": "bliss",
@@ -441,7 +759,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A quiet afternoon felt like pure bliss."
+      "example": "A quiet afternoon felt like pure bliss.",
+      "examples": [
+        {
+          "text": "A quiet afternoon felt like pure bliss.",
+          "translation": "静かな午後は純粋な幸福のようだった。"
+        }
+      ]
     },
     {
       "word": "satisfaction",
@@ -449,7 +773,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Helping others brings her great satisfaction."
+      "example": "Helping others brings her great satisfaction.",
+      "examples": [
+        {
+          "text": "Helping others brings her great satisfaction.",
+          "translation": "他人を助けることは彼女に大きな満足をもたらす。"
+        }
+      ]
     },
     {
       "word": "excitement",
@@ -457,7 +787,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I could hardly sleep from excitement."
+      "example": "I could hardly sleep from excitement.",
+      "examples": [
+        {
+          "text": "I could hardly sleep from excitement.",
+          "translation": "興奮して眠れなくなった。"
+        }
+      ]
     },
     {
       "word": "eagerness",
@@ -465,7 +801,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His eagerness to learn impressed the teacher."
+      "example": "His eagerness to learn impressed the teacher.",
+      "examples": [
+        {
+          "text": "His eagerness to learn impressed the teacher.",
+          "translation": "彼の学びたいという熱意は先生に印象を与えた。"
+        }
+      ]
     },
     {
       "word": "hope",
@@ -473,7 +815,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The good news gave us hope."
+      "example": "The good news gave us hope.",
+      "examples": [
+        {
+          "text": "The good news gave us hope.",
+          "translation": "良い知らせは私たちに希望を与えた。"
+        }
+      ]
     },
     {
       "word": "confidence",
@@ -481,7 +829,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Practice helped build my confidence."
+      "example": "Practice helped build my confidence.",
+      "examples": [
+        {
+          "text": "Practice helped build my confidence.",
+          "translation": "練習は自信をつけるために役立った。"
+        }
+      ]
     },
     {
       "word": "courage",
@@ -489,7 +843,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It took courage to ask for help."
+      "example": "It took courage to ask for help.",
+      "examples": [
+        {
+          "text": "It took courage to ask for help.",
+          "translation": "助けを求めるのに勇気が必要だった。"
+        }
+      ]
     },
     {
       "word": "bravery",
@@ -497,7 +857,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Everyone admired the firefighter's bravery."
+      "example": "Everyone admired the firefighter's bravery.",
+      "examples": [
+        {
+          "text": "Everyone admired the firefighter's bravery.",
+          "translation": "みんな消防士の勇気に感心した。"
+        }
+      ]
     },
     {
       "word": "comfort",
@@ -505,7 +871,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her kind words brought me comfort."
+      "example": "Her kind words brought me comfort.",
+      "examples": [
+        {
+          "text": "Her kind words brought me comfort.",
+          "translation": "彼女の優しい言葉は私を慰めた。"
+        }
+      ]
     },
     {
       "word": "serenity",
@@ -513,7 +885,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The garden gave us a sense of serenity."
+      "example": "The garden gave us a sense of serenity.",
+      "examples": [
+        {
+          "text": "The garden gave us a sense of serenity.",
+          "translation": "庭は私たちに平和の感覚を与えた。"
+        }
+      ]
     },
     {
       "word": "tranquility",
@@ -521,7 +899,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We enjoyed the tranquility of the quiet lake."
+      "example": "We enjoyed the tranquility of the quiet lake.",
+      "examples": [
+        {
+          "text": "We enjoyed the tranquility of the quiet lake.",
+          "translation": "私たちは静かな湖の静けさを楽しんだ。"
+        }
+      ]
     },
     {
       "word": "gratitude",
@@ -529,7 +913,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I expressed my gratitude in a letter."
+      "example": "I expressed my gratitude in a letter.",
+      "examples": [
+        {
+          "text": "I expressed my gratitude in a letter.",
+          "translation": "私は手紙で感謝を表明した。"
+        }
+      ]
     },
     {
       "word": "affection",
@@ -537,7 +927,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He shows his affection through small acts."
+      "example": "He shows his affection through small acts.",
+      "examples": [
+        {
+          "text": "He shows his affection through small acts.",
+          "translation": "彼は小さな行動で愛情を示す。"
+        }
+      ]
     },
     {
       "word": "love",
@@ -545,7 +941,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her letter was full of love."
+      "example": "Her letter was full of love.",
+      "examples": [
+        {
+          "text": "Her letter was full of love.",
+          "translation": "彼女の手紙は愛情に満ちていた。"
+        }
+      ]
     },
     {
       "word": "warmth",
@@ -553,7 +955,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They welcomed us with genuine warmth."
+      "example": "They welcomed us with genuine warmth.",
+      "examples": [
+        {
+          "text": "They welcomed us with genuine warmth.",
+          "translation": "彼らは真の温かさで私たちを歓迎した。"
+        }
+      ]
     },
     {
       "word": "tenderness",
@@ -561,7 +969,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She held the baby with tenderness."
+      "example": "She held the baby with tenderness.",
+      "examples": [
+        {
+          "text": "She held the baby with tenderness.",
+          "translation": "彼女は優しく赤ん坊を抱いた。"
+        }
+      ]
     },
     {
       "word": "compassion",
@@ -569,7 +983,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He treated the frightened child with compassion."
+      "example": "He treated the frightened child with compassion.",
+      "examples": [
+        {
+          "text": "He treated the frightened child with compassion.",
+          "translation": "彼は恐怖に震えた子供に同情をもって対処した。"
+        }
+      ]
     },
     {
       "word": "empathy",
@@ -577,7 +997,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Listening carefully helps us show empathy."
+      "example": "Listening carefully helps us show empathy.",
+      "examples": [
+        {
+          "text": "Listening carefully helps us show empathy.",
+          "translation": "注意深く聞くことは共感を示すのに役立つ。"
+        }
+      ]
     },
     {
       "word": "pity",
@@ -585,7 +1011,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She felt pity for the injured bird."
+      "example": "She felt pity for the injured bird.",
+      "examples": [
+        {
+          "text": "She felt pity for the injured bird.",
+          "translation": "彼女は怪我した鳥を可哀想に思った。"
+        }
+      ]
     },
     {
       "word": "respect",
@@ -593,7 +1025,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We treat each other with respect."
+      "example": "We treat each other with respect.",
+      "examples": [
+        {
+          "text": "We treat each other with respect.",
+          "translation": "私たちは互いに尊敬をもって接する。"
+        }
+      ]
     },
     {
       "word": "wonder",
@@ -601,7 +1039,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The children looked at the stars in wonder."
+      "example": "The children looked at the stars in wonder.",
+      "examples": [
+        {
+          "text": "The children looked at the stars in wonder.",
+          "translation": "子供たちは星を驚いて見た。"
+        }
+      ]
     },
     {
       "word": "curiosity",
@@ -609,7 +1053,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Curiosity led me to open the old box."
+      "example": "Curiosity led me to open the old box.",
+      "examples": [
+        {
+          "text": "Curiosity led me to open the old box.",
+          "translation": "好奇心から 古い箱を開けた"
+        }
+      ]
     },
     {
       "word": "surprise",
@@ -617,7 +1067,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "To my surprise, everyone remembered my birthday."
+      "example": "To my surprise, everyone remembered my birthday.",
+      "examples": [
+        {
+          "text": "To my surprise, everyone remembered my birthday.",
+          "translation": "驚いたことに、みんな私の誕生日を覚えていた。"
+        }
+      ]
     },
     {
       "word": "amazement",
@@ -625,7 +1081,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We watched the performance in amazement."
+      "example": "We watched the performance in amazement.",
+      "examples": [
+        {
+          "text": "We watched the performance in amazement.",
+          "translation": "私たちは驚いてその演奏を見た。"
+        }
+      ]
     },
     {
       "word": "awe",
@@ -633,7 +1095,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The mountains filled us with awe."
+      "example": "The mountains filled us with awe.",
+      "examples": [
+        {
+          "text": "The mountains filled us with awe.",
+          "translation": "私たちは山々を見て、畏敬の念でいっぱいになりました。"
+        }
+      ]
     },
     {
       "word": "fear",
@@ -641,7 +1109,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He overcame his fear of swimming."
+      "example": "He overcame his fear of swimming.",
+      "examples": [
+        {
+          "text": "He overcame his fear of swimming.",
+          "translation": "彼は泳ぐことへの恐怖を克服しました。"
+        }
+      ]
     },
     {
       "word": "anxiety",
@@ -649,7 +1123,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She felt anxiety before the interview."
+      "example": "She felt anxiety before the interview.",
+      "examples": [
+        {
+          "text": "She felt anxiety before the interview.",
+          "translation": "面接前に不安を感じていた。"
+        }
+      ]
     },
     {
       "word": "concern",
@@ -657,7 +1137,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Thank you for your concern."
+      "example": "Thank you for your concern.",
+      "examples": [
+        {
+          "text": "Thank you for your concern.",
+          "translation": "ご心配いただきありがとうございます。"
+        }
+      ]
     },
     {
       "word": "tension",
@@ -665,7 +1151,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A joke helped ease the tension."
+      "example": "A joke helped ease the tension.",
+      "examples": [
+        {
+          "text": "A joke helped ease the tension.",
+          "translation": "ジョークが緊張を和らげる役割を果たした。"
+        }
+      ]
     },
     {
       "word": "panic",
@@ -673,7 +1165,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt a moment of panic."
+      "example": "I felt a moment of panic.",
+      "examples": [
+        {
+          "text": "I felt a moment of panic.",
+          "translation": "私は一瞬パニックに陥った。"
+        }
+      ]
     },
     {
       "word": "horror",
@@ -681,7 +1179,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She stared at the damage in horror."
+      "example": "She stared at the damage in horror.",
+      "examples": [
+        {
+          "text": "She stared at the damage in horror.",
+          "translation": "彼女は恐怖に陥って損傷を見つめた。"
+        }
+      ]
     },
     {
       "word": "alarm",
@@ -689,7 +1193,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He looked at the smoke with alarm."
+      "example": "He looked at the smoke with alarm.",
+      "examples": [
+        {
+          "text": "He looked at the smoke with alarm.",
+          "translation": "彼は煙を警戒して見た。"
+        }
+      ]
     },
     {
       "word": "fright",
@@ -697,7 +1207,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The sudden noise gave me a fright."
+      "example": "The sudden noise gave me a fright.",
+      "examples": [
+        {
+          "text": "The sudden noise gave me a fright.",
+          "translation": "突然の騒音に私は怖がった。"
+        }
+      ]
     },
     {
       "word": "insecurity",
@@ -705,7 +1221,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She spoke openly about her insecurity."
+      "example": "She spoke openly about her insecurity.",
+      "examples": [
+        {
+          "text": "She spoke openly about her insecurity.",
+          "translation": "彼女は自分の不安について公然と話した。"
+        }
+      ]
     },
     {
       "word": "uncertainty",
@@ -713,7 +1235,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The delay caused a lot of uncertainty."
+      "example": "The delay caused a lot of uncertainty.",
+      "examples": [
+        {
+          "text": "The delay caused a lot of uncertainty.",
+          "translation": "遅延は多くの不確実性を引き起こした。"
+        }
+      ]
     },
     {
       "word": "suspicion",
@@ -721,7 +1249,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His strange excuse raised my suspicion."
+      "example": "His strange excuse raised my suspicion.",
+      "examples": [
+        {
+          "text": "His strange excuse raised my suspicion.",
+          "translation": "彼の奇妙な言い訳は私の疑念を高めた。"
+        }
+      ]
     },
     {
       "word": "jealousy",
@@ -729,7 +1263,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Jealousy damaged their friendship."
+      "example": "Jealousy damaged their friendship.",
+      "examples": [
+        {
+          "text": "Jealousy damaged their friendship.",
+          "translation": "嫉妬が彼らの友情を傷つけた。"
+        }
+      ]
     },
     {
       "word": "envy",
@@ -737,7 +1277,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt a little envy of her talent."
+      "example": "I felt a little envy of her talent.",
+      "examples": [
+        {
+          "text": "I felt a little envy of her talent.",
+          "translation": "私は彼女の才能を少し羨ましがった。"
+        }
+      ]
     },
     {
       "word": "bitterness",
@@ -745,7 +1291,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He spoke about the past without bitterness."
+      "example": "He spoke about the past without bitterness.",
+      "examples": [
+        {
+          "text": "He spoke about the past without bitterness.",
+          "translation": "彼は過去について苦しみを感じることなく話した。"
+        }
+      ]
     },
     {
       "word": "rage",
@@ -753,7 +1305,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She struggled to control her rage."
+      "example": "She struggled to control her rage.",
+      "examples": [
+        {
+          "text": "She struggled to control her rage.",
+          "translation": "彼女は怒りを抑えようと苦労した。"
+        }
+      ]
     },
     {
       "word": "fury",
@@ -761,7 +1319,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His face showed his fury."
+      "example": "His face showed his fury.",
+      "examples": [
+        {
+          "text": "His face showed his fury.",
+          "translation": "彼の顔には怒りが見えた。"
+        }
+      ]
     },
     {
       "word": "irritation",
@@ -769,7 +1333,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She sighed in irritation at the noise."
+      "example": "She sighed in irritation at the noise.",
+      "examples": [
+        {
+          "text": "She sighed in irritation at the noise.",
+          "translation": "彼女は騒音に怒りながら息を吐いた。"
+        }
+      ]
     },
     {
       "word": "frustration",
@@ -777,7 +1347,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He expressed his frustration calmly."
+      "example": "He expressed his frustration calmly.",
+      "examples": [
+        {
+          "text": "He expressed his frustration calmly.",
+          "translation": "彼は落ち着いて不満を表明した。"
+        }
+      ]
     },
     {
       "word": "impatience",
@@ -785,7 +1361,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I could hear impatience in her voice."
+      "example": "I could hear impatience in her voice.",
+      "examples": [
+        {
+          "text": "I could hear impatience in her voice.",
+          "translation": "彼女の声には不耐が聞こえた。"
+        }
+      ]
     },
     {
       "word": "sadness",
@@ -793,7 +1375,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A wave of sadness came over me."
+      "example": "A wave of sadness came over me.",
+      "examples": [
+        {
+          "text": "A wave of sadness came over me.",
+          "translation": "悲しみの波が私を襲った。"
+        }
+      ]
     },
     {
       "word": "grief",
@@ -801,7 +1389,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Friends supported her through her grief."
+      "example": "Friends supported her through her grief.",
+      "examples": [
+        {
+          "text": "Friends supported her through her grief.",
+          "translation": "友人は彼女の悲しみを支えた。"
+        }
+      ]
     },
     {
       "word": "misery",
@@ -809,7 +1403,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Loneliness added to his misery."
+      "example": "Loneliness added to his misery.",
+      "examples": [
+        {
+          "text": "Loneliness added to his misery.",
+          "translation": "孤独は彼の不幸を増やした。"
+        }
+      ]
     },
     {
       "word": "loneliness",
@@ -817,7 +1417,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Calling a friend eased my loneliness."
+      "example": "Calling a friend eased my loneliness.",
+      "examples": [
+        {
+          "text": "Calling a friend eased my loneliness.",
+          "translation": "友達に電話すると寂しさが和らぐ。"
+        }
+      ]
     },
     {
       "word": "isolation",
@@ -825,7 +1431,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She found the isolation difficult."
+      "example": "She found the isolation difficult.",
+      "examples": [
+        {
+          "text": "She found the isolation difficult.",
+          "translation": "彼女は孤立を困難と感じた。"
+        }
+      ]
     },
     {
       "word": "apathy",
@@ -833,7 +1445,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The proposal was met with apathy."
+      "example": "The proposal was met with apathy.",
+      "examples": [
+        {
+          "text": "The proposal was met with apathy.",
+          "translation": "提案は無関心に迎えられた。"
+        }
+      ]
     },
     {
       "word": "despair",
@@ -841,7 +1459,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We must not give in to despair."
+      "example": "We must not give in to despair.",
+      "examples": [
+        {
+          "text": "We must not give in to despair.",
+          "translation": "絶望に屈しないこと。"
+        }
+      ]
     },
     {
       "word": "hopelessness",
@@ -849,7 +1473,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He described a feeling of hopelessness."
+      "example": "He described a feeling of hopelessness.",
+      "examples": [
+        {
+          "text": "He described a feeling of hopelessness.",
+          "translation": "患者は絶望感を訴えた。"
+        }
+      ]
     },
     {
       "word": "guilt",
@@ -857,7 +1487,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt guilt about breaking my promise."
+      "example": "I felt guilt about breaking my promise.",
+      "examples": [
+        {
+          "text": "I felt guilt about breaking my promise.",
+          "translation": "約束を破ったことに罪悪感を感じた。"
+        }
+      ]
     },
     {
       "word": "embarrassment",
@@ -865,7 +1501,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My face turned red with embarrassment."
+      "example": "My face turned red with embarrassment.",
+      "examples": [
+        {
+          "text": "My face turned red with embarrassment.",
+          "translation": "私の顔は恥ずかしくて赤くなった。"
+        }
+      ]
     },
     {
       "word": "humiliation",
@@ -873,7 +1515,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He never forgot the humiliation of being mocked."
+      "example": "He never forgot the humiliation of being mocked.",
+      "examples": [
+        {
+          "text": "He never forgot the humiliation of being mocked.",
+          "translation": "彼は嘲笑されるという屈辱を決して忘れなかった。"
+        }
+      ]
     },
     {
       "word": "remorse",
@@ -881,7 +1529,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She showed genuine remorse for her mistake."
+      "example": "She showed genuine remorse for her mistake.",
+      "examples": [
+        {
+          "text": "She showed genuine remorse for her mistake.",
+          "translation": "彼女は自分の過ちに対して真剣な悔い改めを示した。"
+        }
+      ]
     },
     {
       "word": "longing",
@@ -889,7 +1543,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His letter expressed a longing for home."
+      "example": "His letter expressed a longing for home.",
+      "examples": [
+        {
+          "text": "His letter expressed a longing for home.",
+          "translation": "彼の手紙は故郷への想いを表した。"
+        }
+      ]
     },
     {
       "word": "homesickness",
@@ -897,7 +1557,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A familiar meal eased her homesickness."
+      "example": "A familiar meal eased her homesickness.",
+      "examples": [
+        {
+          "text": "A familiar meal eased her homesickness.",
+          "translation": "彼女の懐かしい食事は彼女のホームシックを和らげた。"
+        }
+      ]
     },
     {
       "word": "passion",
@@ -905,7 +1571,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He has a passion for music."
+      "example": "He has a passion for music.",
+      "examples": [
+        {
+          "text": "He has a passion for music.",
+          "translation": "彼は音楽に情熱を持っている。"
+        }
+      ]
     },
     {
       "word": "devotion",
@@ -913,7 +1585,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her devotion to her family is clear."
+      "example": "Her devotion to her family is clear.",
+      "examples": [
+        {
+          "text": "Her devotion to her family is clear.",
+          "translation": "彼女の家族への献身は明らかだ。"
+        }
+      ]
     },
     {
       "word": "sincerity",
@@ -921,7 +1599,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I could hear sincerity in his apology."
+      "example": "I could hear sincerity in his apology.",
+      "examples": [
+        {
+          "text": "I could hear sincerity in his apology.",
+          "translation": "彼の謝罪の中に真心が聞こえた。"
+        }
+      ]
     },
     {
       "word": "generosity",
@@ -929,7 +1613,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Thank you for your kindness and generosity."
+      "example": "Thank you for your kindness and generosity.",
+      "examples": [
+        {
+          "text": "Thank you for your kindness and generosity.",
+          "translation": "親切で寛大なご対応に感謝します。"
+        }
+      ]
     },
     {
       "word": "patience",
@@ -937,7 +1627,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Learning this skill requires patience."
+      "example": "Learning this skill requires patience.",
+      "examples": [
+        {
+          "text": "Learning this skill requires patience.",
+          "translation": "この技を学ぶには忍耐が必要だ。"
+        }
+      ]
     },
     {
       "word": "understanding",
@@ -945,7 +1641,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The conversation deepened our understanding of each other."
+      "example": "The conversation deepened our understanding of each other.",
+      "examples": [
+        {
+          "text": "The conversation deepened our understanding of each other.",
+          "translation": "その会話は私たちの相互理解を深めた。"
+        }
+      ]
     },
     {
       "word": "forgiveness",
@@ -953,7 +1655,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He asked for her forgiveness."
+      "example": "He asked for her forgiveness.",
+      "examples": [
+        {
+          "text": "He asked for her forgiveness.",
+          "translation": "彼は彼女に許しを請った。"
+        }
+      ]
     },
     {
       "word": "encouragement",
@@ -961,7 +1669,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Your encouragement helped me keep going."
+      "example": "Your encouragement helped me keep going.",
+      "examples": [
+        {
+          "text": "Your encouragement helped me keep going.",
+          "translation": "あなたの励ましが私を続ける手助けになりました。"
+        }
+      ]
     },
     {
       "word": "inspiration",
@@ -969,7 +1683,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The garden became a source of inspiration."
+      "example": "The garden became a source of inspiration.",
+      "examples": [
+        {
+          "text": "The garden became a source of inspiration.",
+          "translation": "庭園は彼のインスピレーションの源となった。"
+        }
+      ]
     },
     {
       "word": "determination",
@@ -977,7 +1697,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She approached the task with determination."
+      "example": "She approached the task with determination.",
+      "examples": [
+        {
+          "text": "She approached the task with determination.",
+          "translation": "彼女は決意をもってこの仕事に取り組んだ。"
+        }
+      ]
     },
     {
       "word": "perseverance",
@@ -985,7 +1711,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His perseverance finally paid off."
+      "example": "His perseverance finally paid off.",
+      "examples": [
+        {
+          "text": "His perseverance finally paid off.",
+          "translation": "彼の忍耐はついに報われた。"
+        }
+      ]
     },
     {
       "word": "resilience",
@@ -993,7 +1725,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She showed resilience after the setback."
+      "example": "She showed resilience after the setback.",
+      "examples": [
+        {
+          "text": "She showed resilience after the setback.",
+          "translation": "彼女は挫折後に回復力を示した。"
+        }
+      ]
     },
     {
       "word": "responsibility",
@@ -1001,7 +1739,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I accept responsibility for my mistake."
+      "example": "I accept responsibility for my mistake.",
+      "examples": [
+        {
+          "text": "I accept responsibility for my mistake.",
+          "translation": "私は自分の過ちの責任を受け入れる。"
+        }
+      ]
     },
     {
       "word": "independence",
@@ -1009,7 +1753,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Living alone taught him independence."
+      "example": "Living alone taught him independence.",
+      "examples": [
+        {
+          "text": "Living alone taught him independence.",
+          "translation": "独り暮らしは彼に独立性を教えた。"
+        }
+      ]
     },
     {
       "word": "dignity",
@@ -1017,7 +1767,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She faced criticism with dignity."
+      "example": "She faced criticism with dignity.",
+      "examples": [
+        {
+          "text": "She faced criticism with dignity.",
+          "translation": "彼女は尊厳をもって批判に対処した。"
+        }
+      ]
     },
     {
       "word": "modesty",
@@ -1025,7 +1781,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He accepted the award with modesty."
+      "example": "He accepted the award with modesty.",
+      "examples": [
+        {
+          "text": "He accepted the award with modesty.",
+          "translation": "彼は謙虚にその賞を受け入れた。"
+        }
+      ]
     },
     {
       "word": "courtesy",
@@ -1033,7 +1795,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The staff treated us with courtesy."
+      "example": "The staff treated us with courtesy.",
+      "examples": [
+        {
+          "text": "The staff treated us with courtesy.",
+          "translation": "スタッフは私たちを礼儀正しく扱った。"
+        }
+      ]
     },
     {
       "word": "vulnerability",
@@ -1041,7 +1809,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Sharing his fears revealed his vulnerability."
+      "example": "Sharing his fears revealed his vulnerability.",
+      "examples": [
+        {
+          "text": "Sharing his fears revealed his vulnerability.",
+          "translation": "彼の恐怖を共有することは 彼の脆弱性を明らかにした"
+        }
+      ]
     },
     {
       "word": "stability",
@@ -1049,7 +1823,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A familiar routine gives her stability."
+      "example": "A familiar routine gives her stability.",
+      "examples": [
+        {
+          "text": "A familiar routine gives her stability.",
+          "translation": "慣れ親しんだルーチンが安定感を与える。"
+        }
+      ]
     },
     {
       "word": "harmony",
@@ -1057,7 +1837,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The neighbors live in harmony."
+      "example": "The neighbors live in harmony.",
+      "examples": [
+        {
+          "text": "The neighbors live in harmony.",
+          "translation": "隣人たちは和解して暮らしている。"
+        }
+      ]
     },
     {
       "word": "friendship",
@@ -1065,7 +1851,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Our friendship began at school."
+      "example": "Our friendship began at school.",
+      "examples": [
+        {
+          "text": "Our friendship began at school.",
+          "translation": "私たちの友情は学校で始まった。"
+        }
+      ]
     },
     {
       "word": "companionship",
@@ -1073,7 +1865,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She enjoys the companionship of her friends."
+      "example": "She enjoys the companionship of her friends.",
+      "examples": [
+        {
+          "text": "She enjoys the companionship of her friends.",
+          "translation": "彼女は友達との付き合いを楽しんでいる。"
+        }
+      ]
     },
     {
       "word": "connection",
@@ -1081,7 +1879,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt an immediate connection with her."
+      "example": "I felt an immediate connection with her.",
+      "examples": [
+        {
+          "text": "I felt an immediate connection with her.",
+          "translation": "私は彼女と直接的なつながりを感じた。"
+        }
+      ]
     },
     {
       "word": "partnership",
@@ -1089,7 +1893,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Their partnership is based on trust."
+      "example": "Their partnership is based on trust.",
+      "examples": [
+        {
+          "text": "Their partnership is based on trust.",
+          "translation": "彼らのパートナーシップは信頼に基づいている。"
+        }
+      ]
     },
     {
       "word": "marriage",
@@ -1097,7 +1907,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They celebrated twenty years of marriage."
+      "example": "They celebrated twenty years of marriage.",
+      "examples": [
+        {
+          "text": "They celebrated twenty years of marriage.",
+          "translation": "彼らは結婚20周年を祝った。"
+        }
+      ]
     },
     {
       "word": "divorce",
@@ -1105,7 +1921,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The family adjusted after the divorce."
+      "example": "The family adjusted after the divorce.",
+      "examples": [
+        {
+          "text": "The family adjusted after the divorce.",
+          "translation": "離婚後に家族は順応した。"
+        }
+      ]
     },
     {
       "word": "separation",
@@ -1113,7 +1935,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The long separation was difficult for them."
+      "example": "The long separation was difficult for them.",
+      "examples": [
+        {
+          "text": "The long separation was difficult for them.",
+          "translation": "長い離れ離れが彼らにとっては難しかった。"
+        }
+      ]
     },
     {
       "word": "romance",
@@ -1121,7 +1949,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Their friendship slowly developed into romance."
+      "example": "Their friendship slowly developed into romance.",
+      "examples": [
+        {
+          "text": "Their friendship slowly developed into romance.",
+          "translation": "彼らの友情はゆっくりと恋愛に発展した。"
+        }
+      ]
     },
     {
       "word": "attachment",
@@ -1129,7 +1963,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She has a strong attachment to this house."
+      "example": "She has a strong attachment to this house.",
+      "examples": [
+        {
+          "text": "She has a strong attachment to this house.",
+          "translation": "彼女はこの家に強い愛着を持っている。"
+        }
+      ]
     },
     {
       "word": "belonging",
@@ -1137,7 +1977,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The club gave me a sense of belonging."
+      "example": "The club gave me a sense of belonging.",
+      "examples": [
+        {
+          "text": "The club gave me a sense of belonging.",
+          "translation": "そのクラブで、私は自分の居場所があると感じられました。"
+        }
+      ]
     },
     {
       "word": "exclusion",
@@ -1145,7 +1991,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His exclusion from the group hurt him."
+      "example": "His exclusion from the group hurt him.",
+      "examples": [
+        {
+          "text": "His exclusion from the group hurt him.",
+          "translation": "彼がグループから外されたことは彼を傷つけた。"
+        }
+      ]
     },
     {
       "word": "approval",
@@ -1153,7 +2005,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She smiled in approval."
+      "example": "She smiled in approval.",
+      "examples": [
+        {
+          "text": "She smiled in approval.",
+          "translation": "彼女は賛成の微笑みを浮かべた。"
+        }
+      ]
     },
     {
       "word": "disapproval",
@@ -1161,7 +2019,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He shook his head in disapproval."
+      "example": "He shook his head in disapproval.",
+      "examples": [
+        {
+          "text": "He shook his head in disapproval.",
+          "translation": "彼は不満を示して頭を振った。"
+        }
+      ]
     },
     {
       "word": "praise",
@@ -1169,7 +2033,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The children responded well to praise."
+      "example": "The children responded well to praise.",
+      "examples": [
+        {
+          "text": "The children responded well to praise.",
+          "translation": "子供たちは賞賛に良く反応した。"
+        }
+      ]
     },
     {
       "word": "blame",
@@ -1177,7 +2047,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Please don't blame yourself."
+      "example": "Please don't blame yourself.",
+      "examples": [
+        {
+          "text": "Please don't blame yourself.",
+          "translation": "自分を責めないで"
+        }
+      ]
     },
     {
       "word": "insult",
@@ -1185,7 +2061,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "There is no need to insult anyone."
+      "example": "There is no need to insult anyone.",
+      "examples": [
+        {
+          "text": "There is no need to insult anyone.",
+          "translation": "誰も侮辱する必要はない。"
+        }
+      ]
     },
     {
       "word": "apology",
@@ -1193,7 +2075,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I owe you an apology."
+      "example": "I owe you an apology.",
+      "examples": [
+        {
+          "text": "I owe you an apology.",
+          "translation": "あなたに謝らなければなりません。"
+        }
+      ]
     },
     {
       "word": "excuse",
@@ -1201,7 +2089,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Being tired is no excuse for rudeness."
+      "example": "Being tired is no excuse for rudeness.",
+      "examples": [
+        {
+          "text": "Being tired is no excuse for rudeness.",
+          "translation": "疲れたことは無礼を言い訳にするのではない。"
+        }
+      ]
     },
     {
       "word": "conflict",
@@ -1209,7 +2103,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They resolved the conflict through discussion."
+      "example": "They resolved the conflict through discussion.",
+      "examples": [
+        {
+          "text": "They resolved the conflict through discussion.",
+          "translation": "彼らは議論を通して対立を解決した。"
+        }
+      ]
     },
     {
       "word": "argument",
@@ -1217,7 +2117,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We had an argument about the plans."
+      "example": "We had an argument about the plans.",
+      "examples": [
+        {
+          "text": "We had an argument about the plans.",
+          "translation": "計画について議論した。"
+        }
+      ]
     },
     {
       "word": "quarrel",
@@ -1225,7 +2131,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The quarrel ended with an apology."
+      "example": "The quarrel ended with an apology.",
+      "examples": [
+        {
+          "text": "The quarrel ended with an apology.",
+          "translation": "喧嘩は謝罪で終わった。"
+        }
+      ]
     },
     {
       "word": "rivalry",
@@ -1233,7 +2145,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Their friendly rivalry pushed them to improve."
+      "example": "Their friendly rivalry pushed them to improve.",
+      "examples": [
+        {
+          "text": "Their friendly rivalry pushed them to improve.",
+          "translation": "友好的なライバル関係が彼らを向上させた。"
+        }
+      ]
     },
     {
       "word": "cooperation",
@@ -1241,7 +2159,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The project depends on everyone's cooperation."
+      "example": "The project depends on everyone's cooperation.",
+      "examples": [
+        {
+          "text": "The project depends on everyone's cooperation.",
+          "translation": "プロジェクトは皆の協力に依存する。"
+        }
+      ]
     },
     {
       "word": "collaboration",
@@ -1249,7 +2173,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Our collaboration produced some great ideas."
+      "example": "Our collaboration produced some great ideas.",
+      "examples": [
+        {
+          "text": "Our collaboration produced some great ideas.",
+          "translation": "私たちの協力は 素晴らしいアイデアを生み出した"
+        }
+      ]
     },
     {
       "word": "agreement",
@@ -1257,7 +2187,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We finally reached agreement on the plan."
+      "example": "We finally reached agreement on the plan.",
+      "examples": [
+        {
+          "text": "We finally reached agreement on the plan.",
+          "translation": "私たちはついに計画について合意に達した。"
+        }
+      ]
     },
     {
       "word": "communication",
@@ -1265,7 +2201,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Honest communication helps build trust."
+      "example": "Honest communication helps build trust.",
+      "examples": [
+        {
+          "text": "Honest communication helps build trust.",
+          "translation": "正直なコミュニケーションは信頼を築くのに役立つ。"
+        }
+      ]
     },
     {
       "word": "expression",
@@ -1273,7 +2215,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Writing gives her a means of expression."
+      "example": "Writing gives her a means of expression.",
+      "examples": [
+        {
+          "text": "Writing gives her a means of expression.",
+          "translation": "書くことは彼女に表現の手段を与える。"
+        }
+      ]
     },
     {
       "word": "mood",
@@ -1281,7 +2229,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I am in a good mood today."
+      "example": "I am in a good mood today.",
+      "examples": [
+        {
+          "text": "I am in a good mood today.",
+          "translation": "私は今日気分がいい。"
+        }
+      ]
     },
     {
       "word": "feeling",
@@ -1289,7 +2243,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I had a strange feeling about the place."
+      "example": "I had a strange feeling about the place.",
+      "examples": [
+        {
+          "text": "I had a strange feeling about the place.",
+          "translation": "私はこの場所について奇妙な感覚を持っていた。"
+        }
+      ]
     },
     {
       "word": "temperament",
@@ -1297,7 +2257,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The twins have very different temperaments."
+      "example": "The twins have very different temperaments.",
+      "examples": [
+        {
+          "text": "The twins have very different temperaments.",
+          "translation": "双子は気性が全く違う。"
+        }
+      ]
     },
     {
       "word": "character",
@@ -1305,7 +2271,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her kindness shows her true character."
+      "example": "Her kindness shows her true character.",
+      "examples": [
+        {
+          "text": "Her kindness shows her true character.",
+          "translation": "彼女の優しさは彼女の本当の性格を示している。"
+        }
+      ]
     },
     {
       "word": "attitude",
@@ -1313,7 +2285,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A positive attitude helped him through the day."
+      "example": "A positive attitude helped him through the day.",
+      "examples": [
+        {
+          "text": "A positive attitude helped him through the day.",
+          "translation": "前向きな態度が彼を一日を通して助けた。"
+        }
+      ]
     },
     {
       "word": "conduct",
@@ -1321,7 +2299,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His rude conduct upset the guests."
+      "example": "His rude conduct upset the guests.",
+      "examples": [
+        {
+          "text": "His rude conduct upset the guests.",
+          "translation": "彼の無礼な振る舞いは客を怒らせた。"
+        }
+      ]
     },
     {
       "word": "trait",
@@ -1329,7 +2313,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Patience is one of her strongest traits."
+      "example": "Patience is one of her strongest traits.",
+      "examples": [
+        {
+          "text": "Patience is one of her strongest traits.",
+          "translation": "忍耐は彼女の最も強い特徴の一つである。"
+        }
+      ]
     },
     {
       "word": "nature",
@@ -1337,7 +2327,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It is not in his nature to complain."
+      "example": "It is not in his nature to complain.",
+      "examples": [
+        {
+          "text": "It is not in his nature to complain.",
+          "translation": "彼は文句を言うのが本性ではない。"
+        }
+      ]
     },
     {
       "word": "self-esteem",
@@ -1345,7 +2341,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Learning a new skill improved her self-esteem."
+      "example": "Learning a new skill improved her self-esteem.",
+      "examples": [
+        {
+          "text": "Learning a new skill improved her self-esteem.",
+          "translation": "新しい技能を学ぶことで彼女の自尊心が向上した。"
+        }
+      ]
     },
     {
       "word": "self-control",
@@ -1353,7 +2355,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He showed self-control during the argument."
+      "example": "He showed self-control during the argument.",
+      "examples": [
+        {
+          "text": "He showed self-control during the argument.",
+          "translation": "彼は論争中に自制を示した。"
+        }
+      ]
     },
     {
       "word": "self-interest",
@@ -1361,7 +2369,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Their decision was driven by self-interest."
+      "example": "Their decision was driven by self-interest.",
+      "examples": [
+        {
+          "text": "Their decision was driven by self-interest.",
+          "translation": "彼らの決定は利己的なものだった。"
+        }
+      ]
     },
     {
       "word": "selfless",
@@ -1369,7 +2383,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her selfless actions helped many people."
+      "example": "Her selfless actions helped many people.",
+      "examples": [
+        {
+          "text": "Her selfless actions helped many people.",
+          "translation": "彼女の無私の行動は多くの人々を助けた。"
+        }
+      ]
     },
     {
       "word": "generous",
@@ -1377,7 +2397,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It was generous of you to help."
+      "example": "It was generous of you to help.",
+      "examples": [
+        {
+          "text": "It was generous of you to help.",
+          "translation": "あなたが助けてくれて 気前がいいわ"
+        }
+      ]
     },
     {
       "word": "stingy",
@@ -1385,7 +2411,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He is stingy with his praise."
+      "example": "He is stingy with his praise.",
+      "examples": [
+        {
+          "text": "He is stingy with his praise.",
+          "translation": "彼は人を褒めることを出し惜しみします。"
+        }
+      ]
     },
     {
       "word": "rude",
@@ -1393,7 +2425,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Interrupting her was rude."
+      "example": "Interrupting her was rude.",
+      "examples": [
+        {
+          "text": "Interrupting her was rude.",
+          "translation": "彼女を邪魔したのは無礼だった。"
+        }
+      ]
     },
     {
       "word": "considerate",
@@ -1401,7 +2439,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It was considerate of you to call."
+      "example": "It was considerate of you to call.",
+      "examples": [
+        {
+          "text": "It was considerate of you to call.",
+          "translation": "電話してくれてありがとう"
+        }
+      ]
     },
     {
       "word": "thoughtful",
@@ -1409,7 +2453,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Thank you for the thoughtful gift."
+      "example": "Thank you for the thoughtful gift.",
+      "examples": [
+        {
+          "text": "Thank you for the thoughtful gift.",
+          "translation": "思いやりのある贈り物に感謝します。"
+        }
+      ]
     },
     {
       "word": "loving",
@@ -1417,7 +2467,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She grew up in a loving family."
+      "example": "She grew up in a loving family.",
+      "examples": [
+        {
+          "text": "She grew up in a loving family.",
+          "translation": "彼女は愛情にあふれた家庭で育った。"
+        }
+      ]
     },
     {
       "word": "lovable",
@@ -1425,7 +2481,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The puppy is small and lovable."
+      "example": "The puppy is small and lovable.",
+      "examples": [
+        {
+          "text": "The puppy is small and lovable.",
+          "translation": "その子犬は小さくて愛らしい。"
+        }
+      ]
     },
     {
       "word": "pleasant",
@@ -1433,7 +2495,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We had a pleasant conversation."
+      "example": "We had a pleasant conversation.",
+      "examples": [
+        {
+          "text": "We had a pleasant conversation.",
+          "translation": "私たちは楽しい会話をした。"
+        }
+      ]
     },
     {
       "word": "agreeable",
@@ -1441,7 +2509,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His calm manner made him agreeable company."
+      "example": "His calm manner made him agreeable company.",
+      "examples": [
+        {
+          "text": "His calm manner made him agreeable company.",
+          "translation": "彼の冷静な態度は彼を楽しい仲間にした。"
+        }
+      ]
     },
     {
       "word": "disagreeable",
@@ -1449,7 +2523,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The argument was a disagreeable experience."
+      "example": "The argument was a disagreeable experience.",
+      "examples": [
+        {
+          "text": "The argument was a disagreeable experience.",
+          "translation": "論争は不快な経験だった。"
+        }
+      ]
     },
     {
       "word": "outgoing",
@@ -1457,7 +2537,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My sister is friendly and outgoing."
+      "example": "My sister is friendly and outgoing.",
+      "examples": [
+        {
+          "text": "My sister is friendly and outgoing.",
+          "translation": "私の妹は友好的で外向的です。"
+        }
+      ]
     },
     {
       "word": "reserved",
@@ -1465,7 +2551,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He is reserved around new people."
+      "example": "He is reserved around new people.",
+      "examples": [
+        {
+          "text": "He is reserved around new people.",
+          "translation": "彼は新しい人々のところでは控えめだ。"
+        }
+      ]
     },
     {
       "word": "talkative",
@@ -1473,7 +2565,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She becomes talkative when she feels comfortable."
+      "example": "She becomes talkative when she feels comfortable.",
+      "examples": [
+        {
+          "text": "She becomes talkative when she feels comfortable.",
+          "translation": "彼女は気分がよくなると話しやすくなる。"
+        }
+      ]
     },
     {
       "word": "timid",
@@ -1481,7 +2579,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The timid child hid behind his mother."
+      "example": "The timid child hid behind his mother.",
+      "examples": [
+        {
+          "text": "The timid child hid behind his mother.",
+          "translation": "怯えた子供は母親の後ろに隠れた。"
+        }
+      ]
     },
     {
       "word": "bold",
@@ -1489,7 +2593,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It was a bold decision to move abroad."
+      "example": "It was a bold decision to move abroad.",
+      "examples": [
+        {
+          "text": "It was a bold decision to move abroad.",
+          "translation": "海外に移るというのは大胆な決断だった。"
+        }
+      ]
     },
     {
       "word": "fearless",
@@ -1497,7 +2607,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The fearless climber continued upward."
+      "example": "The fearless climber continued upward.",
+      "examples": [
+        {
+          "text": "The fearless climber continued upward.",
+          "translation": "勇敢な登山家は上り続けた。"
+        }
+      ]
     },
     {
       "word": "cowardly",
@@ -1505,7 +2621,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Blaming someone else was a cowardly act."
+      "example": "Blaming someone else was a cowardly act.",
+      "examples": [
+        {
+          "text": "Blaming someone else was a cowardly act.",
+          "translation": "他者を責めるのは臆病な行為だった。"
+        }
+      ]
     },
     {
       "word": "insecure",
@@ -1513,7 +2635,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt insecure in the new group."
+      "example": "I felt insecure in the new group.",
+      "examples": [
+        {
+          "text": "I felt insecure in the new group.",
+          "translation": "新しいグループで不安を感じた。"
+        }
+      ]
     },
     {
       "word": "uncertain",
@@ -1521,7 +2649,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She was uncertain about what to say."
+      "example": "She was uncertain about what to say.",
+      "examples": [
+        {
+          "text": "She was uncertain about what to say.",
+          "translation": "彼女は何を言うべきか分からなかった。"
+        }
+      ]
     },
     {
       "word": "negative",
@@ -1529,7 +2663,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His negative comments discouraged the team."
+      "example": "His negative comments discouraged the team.",
+      "examples": [
+        {
+          "text": "His negative comments discouraged the team.",
+          "translation": "彼の否定的なコメントはチームを落胆させた。"
+        }
+      ]
     },
     {
       "word": "optimistic",
@@ -1537,7 +2677,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I am optimistic about the future."
+      "example": "I am optimistic about the future.",
+      "examples": [
+        {
+          "text": "I am optimistic about the future.",
+          "translation": "私は将来に対して楽観的です。"
+        }
+      ]
     },
     {
       "word": "hopeless",
@@ -1545,7 +2691,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He felt hopeless after another rejection."
+      "example": "He felt hopeless after another rejection.",
+      "examples": [
+        {
+          "text": "He felt hopeless after another rejection.",
+          "translation": "彼はもう一度拒否された後に絶望感を感じた。"
+        }
+      ]
     },
     {
       "word": "helpless",
@@ -1553,7 +2705,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt helpless when I heard the news."
+      "example": "I felt helpless when I heard the news.",
+      "examples": [
+        {
+          "text": "I felt helpless when I heard the news.",
+          "translation": "私はそのニュースを聞いたとき無力感を感じた。"
+        }
+      ]
     },
     {
       "word": "thankful",
@@ -1561,7 +2719,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We are thankful for your support."
+      "example": "We are thankful for your support.",
+      "examples": [
+        {
+          "text": "We are thankful for your support.",
+          "translation": "あなたの支援に感謝します。"
+        }
+      ]
     },
     {
       "word": "affectionate",
@@ -1569,7 +2733,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She gave her brother an affectionate hug."
+      "example": "She gave her brother an affectionate hug.",
+      "examples": [
+        {
+          "text": "She gave her brother an affectionate hug.",
+          "translation": "彼女は兄を愛情深く抱きしめた。"
+        }
+      ]
     },
     {
       "word": "devoted",
@@ -1577,7 +2747,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He is a devoted friend."
+      "example": "He is a devoted friend.",
+      "examples": [
+        {
+          "text": "He is a devoted friend.",
+          "translation": "彼は忠実な友人だ。"
+        }
+      ]
     },
     {
       "word": "faithful",
@@ -1585,7 +2761,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The dog remained a faithful companion."
+      "example": "The dog remained a faithful companion.",
+      "examples": [
+        {
+          "text": "The dog remained a faithful companion.",
+          "translation": "犬は忠実な仲間として残った。"
+        }
+      ]
     },
     {
       "word": "reliable",
@@ -1593,7 +2775,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She is a reliable person to ask."
+      "example": "She is a reliable person to ask.",
+      "examples": [
+        {
+          "text": "She is a reliable person to ask.",
+          "translation": "彼女は頼りになる人です。"
+        }
+      ]
     },
     {
       "word": "unreliable",
@@ -1601,7 +2789,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His promises proved unreliable."
+      "example": "His promises proved unreliable.",
+      "examples": [
+        {
+          "text": "His promises proved unreliable.",
+          "translation": "彼の約束は信頼できないことになる。"
+        }
+      ]
     },
     {
       "word": "trustworthy",
@@ -1609,7 +2803,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I need advice from someone trustworthy."
+      "example": "I need advice from someone trustworthy.",
+      "examples": [
+        {
+          "text": "I need advice from someone trustworthy.",
+          "translation": "信頼できる人から助言を 必要としている"
+        }
+      ]
     },
     {
       "word": "truthful",
@@ -1617,7 +2817,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Please give me a truthful answer."
+      "example": "Please give me a truthful answer.",
+      "examples": [
+        {
+          "text": "Please give me a truthful answer.",
+          "translation": "真実を答えて下さい。"
+        }
+      ]
     },
     {
       "word": "untruthful",
@@ -1625,7 +2831,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His account of the conversation was untruthful."
+      "example": "His account of the conversation was untruthful.",
+      "examples": [
+        {
+          "text": "His account of the conversation was untruthful.",
+          "translation": "彼の会話の話は嘘だった。"
+        }
+      ]
     },
     {
       "word": "insincere",
@@ -1633,7 +2845,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The apology sounded insincere."
+      "example": "The apology sounded insincere.",
+      "examples": [
+        {
+          "text": "The apology sounded insincere.",
+          "translation": "謝罪は真剣ではないように聞こえた。"
+        }
+      ]
     },
     {
       "word": "genuine",
@@ -1641,7 +2859,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her concern for us was genuine."
+      "example": "Her concern for us was genuine.",
+      "examples": [
+        {
+          "text": "Her concern for us was genuine.",
+          "translation": "彼女は私たちを真剣に気遣っていた。"
+        }
+      ]
     },
     {
       "word": "fake",
@@ -1649,7 +2873,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He forced a fake smile."
+      "example": "He forced a fake smile.",
+      "examples": [
+        {
+          "text": "He forced a fake smile.",
+          "translation": "彼は偽りの笑顔を強要した。"
+        }
+      ]
     },
     {
       "word": "humble",
@@ -1657,7 +2887,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She remained humble after her success."
+      "example": "She remained humble after her success.",
+      "examples": [
+        {
+          "text": "She remained humble after her success.",
+          "translation": "彼女は成功した後も謙虚であった。"
+        }
+      ]
     },
     {
       "word": "arrogant",
@@ -1665,7 +2901,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His arrogant attitude annoyed everyone."
+      "example": "His arrogant attitude annoyed everyone.",
+      "examples": [
+        {
+          "text": "His arrogant attitude annoyed everyone.",
+          "translation": "彼の傲慢な態度はみんなを怒らせた。"
+        }
+      ]
     },
     {
       "word": "boastful",
@@ -1673,7 +2915,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The boastful remarks made us uncomfortable."
+      "example": "The boastful remarks made us uncomfortable.",
+      "examples": [
+        {
+          "text": "The boastful remarks made us uncomfortable.",
+          "translation": "その誇張した言葉は私たちを不快にさせた。"
+        }
+      ]
     },
     {
       "word": "jealous",
@@ -1681,7 +2929,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt jealous of his success."
+      "example": "I felt jealous of his success.",
+      "examples": [
+        {
+          "text": "I felt jealous of his success.",
+          "translation": "私は彼の成功を嫉妬した。"
+        }
+      ]
     },
     {
       "word": "envious",
@@ -1689,7 +2943,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She gave my new bicycle an envious look."
+      "example": "She gave my new bicycle an envious look.",
+      "examples": [
+        {
+          "text": "She gave my new bicycle an envious look.",
+          "translation": "彼女は私の新しい自転車を嫉妬深く見た。"
+        }
+      ]
     },
     {
       "word": "bitter",
@@ -1697,7 +2957,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The failure was a bitter disappointment."
+      "example": "The failure was a bitter disappointment.",
+      "examples": [
+        {
+          "text": "The failure was a bitter disappointment.",
+          "translation": "失敗は苦い失望だった。"
+        }
+      ]
     },
     {
       "word": "sympathetic",
@@ -1705,7 +2971,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My friend was sympathetic when I explained."
+      "example": "My friend was sympathetic when I explained.",
+      "examples": [
+        {
+          "text": "My friend was sympathetic when I explained.",
+          "translation": "私が説明したとき、友人は同情的だった。"
+        }
+      ]
     },
     {
       "word": "unsympathetic",
@@ -1713,7 +2985,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His unsympathetic response made her feel worse."
+      "example": "His unsympathetic response made her feel worse.",
+      "examples": [
+        {
+          "text": "His unsympathetic response made her feel worse.",
+          "translation": "彼の不和な反応は彼女の気持ちを悪くした。"
+        }
+      ]
     },
     {
       "word": "heartless",
@@ -1721,7 +2999,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It was a heartless thing to say."
+      "example": "It was a heartless thing to say.",
+      "examples": [
+        {
+          "text": "It was a heartless thing to say.",
+          "translation": "言うのは無慈悲だった"
+        }
+      ]
     },
     {
       "word": "cruel",
@@ -1729,7 +3013,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Laughing at her mistake was cruel."
+      "example": "Laughing at her mistake was cruel.",
+      "examples": [
+        {
+          "text": "Laughing at her mistake was cruel.",
+          "translation": "彼女の間違いを笑うのは残酷だった。"
+        }
+      ]
     },
     {
       "word": "tender",
@@ -1737,7 +3027,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He gave her a tender smile."
+      "example": "He gave her a tender smile.",
+      "examples": [
+        {
+          "text": "He gave her a tender smile.",
+          "translation": "彼は彼女に優しい微笑みをした。"
+        }
+      ]
     },
     {
       "word": "cold",
@@ -1745,7 +3041,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her reply sounded cold and distant."
+      "example": "Her reply sounded cold and distant.",
+      "examples": [
+        {
+          "text": "Her reply sounded cold and distant.",
+          "translation": "彼女の答えは冷たく遠いものに聞こえた。"
+        }
+      ]
     },
     {
       "word": "cool",
@@ -1753,7 +3055,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Try to stay cool under pressure."
+      "example": "Try to stay cool under pressure.",
+      "examples": [
+        {
+          "text": "Try to stay cool under pressure.",
+          "translation": "圧力の下でも冷静に"
+        }
+      ]
     },
     {
       "word": "serene",
@@ -1761,7 +3069,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The quiet garden felt serene."
+      "example": "The quiet garden felt serene.",
+      "examples": [
+        {
+          "text": "The quiet garden felt serene.",
+          "translation": "静かな庭は穏やかな雰囲気でした。"
+        }
+      ]
     },
     {
       "word": "restless",
@@ -1769,7 +3083,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt restless before the journey."
+      "example": "I felt restless before the journey.",
+      "examples": [
+        {
+          "text": "I felt restless before the journey.",
+          "translation": "私は旅の前に不安を感じた。"
+        }
+      ]
     },
     {
       "word": "tense",
@@ -1777,7 +3097,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Everyone was tense before the announcement."
+      "example": "Everyone was tense before the announcement.",
+      "examples": [
+        {
+          "text": "Everyone was tense before the announcement.",
+          "translation": "発表の前はみんな緊張していた。"
+        }
+      ]
     },
     {
       "word": "fearful",
@@ -1785,7 +3111,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The child gave us a fearful glance."
+      "example": "The child gave us a fearful glance.",
+      "examples": [
+        {
+          "text": "The child gave us a fearful glance.",
+          "translation": "子供は私たちに恐ろしい目を向けた。"
+        }
+      ]
     },
     {
       "word": "delighted",
@@ -1793,7 +3125,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I am delighted to see you."
+      "example": "I am delighted to see you.",
+      "examples": [
+        {
+          "text": "I am delighted to see you.",
+          "translation": "会えて嬉しいよ"
+        }
+      ]
     },
     {
       "word": "joyful",
@@ -1801,7 +3139,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We shared a joyful reunion."
+      "example": "We shared a joyful reunion.",
+      "examples": [
+        {
+          "text": "We shared a joyful reunion.",
+          "translation": "私たちは喜びの再会を共有した。"
+        }
+      ]
     },
     {
       "word": "glad",
@@ -1809,7 +3153,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I'm glad you could come."
+      "example": "I'm glad you could come.",
+      "examples": [
+        {
+          "text": "I'm glad you could come.",
+          "translation": "来てくれて嬉しいわ"
+        }
+      ]
     },
     {
       "word": "merry",
@@ -1817,7 +3167,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We heard merry laughter from the kitchen."
+      "example": "We heard merry laughter from the kitchen.",
+      "examples": [
+        {
+          "text": "We heard merry laughter from the kitchen.",
+          "translation": "台所からは喜笑いが聞こえた。"
+        }
+      ]
     },
     {
       "word": "ecstatic",
@@ -1825,7 +3181,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She was ecstatic about winning the prize."
+      "example": "She was ecstatic about winning the prize.",
+      "examples": [
+        {
+          "text": "She was ecstatic about winning the prize.",
+          "translation": "彼女は賞を受賞したことに興奮していた。"
+        }
+      ]
     },
     {
       "word": "contented",
@@ -1833,7 +3195,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The dog gave a contented sigh."
+      "example": "The dog gave a contented sigh.",
+      "examples": [
+        {
+          "text": "The dog gave a contented sigh.",
+          "translation": "犬は満足して息を吐いた。"
+        }
+      ]
     },
     {
       "word": "satisfied",
@@ -1841,7 +3209,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Are you satisfied with the result?"
+      "example": "Are you satisfied with the result?",
+      "examples": [
+        {
+          "text": "Are you satisfied with the result?",
+          "translation": "結果に満足していますか。"
+        }
+      ]
     },
     {
       "word": "unhappy",
@@ -1849,7 +3223,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He looked unhappy after the meeting."
+      "example": "He looked unhappy after the meeting.",
+      "examples": [
+        {
+          "text": "He looked unhappy after the meeting.",
+          "translation": "彼は会議の後不満そうに見えた。"
+        }
+      ]
     },
     {
       "word": "sorrowful",
@@ -1857,7 +3237,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She gave him a sorrowful smile."
+      "example": "She gave him a sorrowful smile.",
+      "examples": [
+        {
+          "text": "She gave him a sorrowful smile.",
+          "translation": "彼女は彼に悲しげな笑顔を見せた。"
+        }
+      ]
     },
     {
       "word": "mournful",
@@ -1865,7 +3251,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The song had a mournful sound."
+      "example": "The song had a mournful sound.",
+      "examples": [
+        {
+          "text": "The song had a mournful sound.",
+          "translation": "その歌は悲しげな音でした。"
+        }
+      ]
     },
     {
       "word": "gloomy",
@@ -1873,7 +3265,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The room looked gloomy without sunlight."
+      "example": "The room looked gloomy without sunlight.",
+      "examples": [
+        {
+          "text": "The room looked gloomy without sunlight.",
+          "translation": "部屋は日光がないと暗く見えた。"
+        }
+      ]
     },
     {
       "word": "melancholy",
@@ -1881,7 +3279,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A feeling of melancholy settled over him."
+      "example": "A feeling of melancholy settled over him.",
+      "examples": [
+        {
+          "text": "A feeling of melancholy settled over him.",
+          "translation": "彼は憂鬱な気持ちに陥った。"
+        }
+      ]
     },
     {
       "word": "tearful",
@@ -1889,7 +3293,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They shared a tearful goodbye."
+      "example": "They shared a tearful goodbye.",
+      "examples": [
+        {
+          "text": "They shared a tearful goodbye.",
+          "translation": "彼らは涙を流して別れを告げた。"
+        }
+      ]
     },
     {
       "word": "homesick",
@@ -1897,7 +3307,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt homesick during my first week away."
+      "example": "I felt homesick during my first week away.",
+      "examples": [
+        {
+          "text": "I felt homesick during my first week away.",
+          "translation": "家を離れて最初の1週間は、ホームシックになりました。"
+        }
+      ]
     },
     {
       "word": "nostalgic",
@@ -1905,7 +3321,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "This song makes me feel nostalgic."
+      "example": "This song makes me feel nostalgic.",
+      "examples": [
+        {
+          "text": "This song makes me feel nostalgic.",
+          "translation": "この歌は私を懐かしく感じさせる。"
+        }
+      ]
     },
     {
       "word": "emotional",
@@ -1913,7 +3335,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The experience had a strong emotional effect."
+      "example": "The experience had a strong emotional effect.",
+      "examples": [
+        {
+          "text": "The experience had a strong emotional effect.",
+          "translation": "経験は強い感情的影響を与えた。"
+        }
+      ]
     },
     {
       "word": "insensitive",
@@ -1921,7 +3349,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "That was an insensitive comment."
+      "example": "That was an insensitive comment.",
+      "examples": [
+        {
+          "text": "That was an insensitive comment.",
+          "translation": "それは配慮に欠ける発言でした。"
+        }
+      ]
     },
     {
       "word": "sensible",
@@ -1929,7 +3363,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Taking a break was a sensible decision."
+      "example": "Taking a break was a sensible decision.",
+      "examples": [
+        {
+          "text": "Taking a break was a sensible decision.",
+          "translation": "休憩をとるのは賢明な決断だった。"
+        }
+      ]
     },
     {
       "word": "wise",
@@ -1937,7 +3377,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She gave me some wise advice."
+      "example": "She gave me some wise advice.",
+      "examples": [
+        {
+          "text": "She gave me some wise advice.",
+          "translation": "彼女は私に賢明なアドバイスをした。"
+        }
+      ]
     },
     {
       "word": "smart",
@@ -1945,7 +3391,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He is smart enough to find a solution."
+      "example": "He is smart enough to find a solution.",
+      "examples": [
+        {
+          "text": "He is smart enough to find a solution.",
+          "translation": "彼は解決策を見つけるだけ賢い。"
+        }
+      ]
     },
     {
       "word": "intelligent",
@@ -1953,7 +3405,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She asked an intelligent question."
+      "example": "She asked an intelligent question.",
+      "examples": [
+        {
+          "text": "She asked an intelligent question.",
+          "translation": "彼女は賢明な質問をした。"
+        }
+      ]
     },
     {
       "word": "brilliant",
@@ -1961,7 +3419,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "That was a brilliant idea."
+      "example": "That was a brilliant idea.",
+      "examples": [
+        {
+          "text": "That was a brilliant idea.",
+          "translation": "素晴らしいアイデアだった"
+        }
+      ]
     },
     {
       "word": "stupid",
@@ -1969,7 +3433,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I made a stupid mistake."
+      "example": "I made a stupid mistake.",
+      "examples": [
+        {
+          "text": "I made a stupid mistake.",
+          "translation": "私はバカな間違いをした。"
+        }
+      ]
     },
     {
       "word": "dull",
@@ -1977,7 +3447,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The long speech was rather dull."
+      "example": "The long speech was rather dull.",
+      "examples": [
+        {
+          "text": "The long speech was rather dull.",
+          "translation": "その長い演説はかなり退屈だった。"
+        }
+      ]
     },
     {
       "word": "knowledgeable",
@@ -1985,7 +3461,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Our guide was knowledgeable about local history."
+      "example": "Our guide was knowledgeable about local history.",
+      "examples": [
+        {
+          "text": "Our guide was knowledgeable about local history.",
+          "translation": "私たちのガイドは地元の歴史に詳しかった。"
+        }
+      ]
     },
     {
       "word": "reflective",
@@ -1993,7 +3475,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She grew quiet and reflective."
+      "example": "She grew quiet and reflective.",
+      "examples": [
+        {
+          "text": "She grew quiet and reflective.",
+          "translation": "彼女は静かになり、思考が深まった。"
+        }
+      ]
     },
     {
       "word": "creative",
@@ -2001,7 +3489,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We need a creative solution."
+      "example": "We need a creative solution.",
+      "examples": [
+        {
+          "text": "We need a creative solution.",
+          "translation": "創造的な解決策が必要だ"
+        }
+      ]
     },
     {
       "word": "original",
@@ -2009,7 +3503,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His story contains many original ideas."
+      "example": "His story contains many original ideas.",
+      "examples": [
+        {
+          "text": "His story contains many original ideas.",
+          "translation": "彼の物語には多くの独創的な考えが含まれている。"
+        }
+      ]
     },
     {
       "word": "practical",
@@ -2017,7 +3517,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She offered some practical advice."
+      "example": "She offered some practical advice.",
+      "examples": [
+        {
+          "text": "She offered some practical advice.",
+          "translation": "彼女はいくつかの実践的な助言をした。"
+        }
+      ]
     },
     {
       "word": "idealistic",
@@ -2025,7 +3531,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His plans were hopeful but idealistic."
+      "example": "His plans were hopeful but idealistic.",
+      "examples": [
+        {
+          "text": "His plans were hopeful but idealistic.",
+          "translation": "彼の計画は希望的だが理想主義的だった。"
+        }
+      ]
     },
     {
       "word": "reasonable",
@@ -2033,7 +3545,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Let's try to be reasonable."
+      "example": "Let's try to be reasonable.",
+      "examples": [
+        {
+          "text": "Let's try to be reasonable.",
+          "translation": "合理的に考えてみよう"
+        }
+      ]
     },
     {
       "word": "unreasonable",
@@ -2041,7 +3559,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The demand seemed unreasonable to everyone."
+      "example": "The demand seemed unreasonable to everyone.",
+      "examples": [
+        {
+          "text": "The demand seemed unreasonable to everyone.",
+          "translation": "その要求は誰にとっても不合理に思えた。"
+        }
+      ]
     },
     {
       "word": "illogical",
@@ -2049,7 +3573,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His explanation was completely illogical."
+      "example": "His explanation was completely illogical.",
+      "examples": [
+        {
+          "text": "His explanation was completely illogical.",
+          "translation": "彼の説明は完全に不合理だった。"
+        }
+      ]
     },
     {
       "word": "subjective",
@@ -2057,7 +3587,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Our impressions of beauty are subjective."
+      "example": "Our impressions of beauty are subjective.",
+      "examples": [
+        {
+          "text": "Our impressions of beauty are subjective.",
+          "translation": "美の感覚は主観的である。"
+        }
+      ]
     },
     {
       "word": "skeptical",
@@ -2065,7 +3601,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I was skeptical of his explanation."
+      "example": "I was skeptical of his explanation.",
+      "examples": [
+        {
+          "text": "I was skeptical of his explanation.",
+          "translation": "私は彼の説明に懐疑的だった。"
+        }
+      ]
     },
     {
       "word": "suspicious",
@@ -2073,7 +3615,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The message looked suspicious."
+      "example": "The message looked suspicious.",
+      "examples": [
+        {
+          "text": "The message looked suspicious.",
+          "translation": "メッセージは不審に見えた"
+        }
+      ]
     },
     {
       "word": "trusting",
@@ -2081,7 +3629,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She has a trusting nature."
+      "example": "She has a trusting nature.",
+      "examples": [
+        {
+          "text": "She has a trusting nature.",
+          "translation": "彼女は信頼できる性格を持っている。"
+        }
+      ]
     },
     {
       "word": "naive",
@@ -2089,7 +3643,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I was naive to believe that promise."
+      "example": "I was naive to believe that promise.",
+      "examples": [
+        {
+          "text": "I was naive to believe that promise.",
+          "translation": "その約束を信じてしまうなんて、私は世間知らずでした。"
+        }
+      ]
     },
     {
       "word": "mature",
@@ -2097,7 +3657,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He showed a mature attitude to criticism."
+      "example": "He showed a mature attitude to criticism.",
+      "examples": [
+        {
+          "text": "He showed a mature attitude to criticism.",
+          "translation": "批判に対して成熟した態度を示した。"
+        }
+      ]
     },
     {
       "word": "immature",
@@ -2105,7 +3671,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His response was immature."
+      "example": "His response was immature.",
+      "examples": [
+        {
+          "text": "His response was immature.",
+          "translation": "彼の反応は未熟であった。"
+        }
+      ]
     },
     {
       "word": "childlike",
@@ -2113,7 +3685,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She watched the snow with childlike wonder."
+      "example": "She watched the snow with childlike wonder.",
+      "examples": [
+        {
+          "text": "She watched the snow with childlike wonder.",
+          "translation": "彼女は子供のように驚きを込めて雪を見た。"
+        }
+      ]
     },
     {
       "word": "elderly",
@@ -2121,7 +3699,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "An elderly neighbor joined us for tea."
+      "example": "An elderly neighbor joined us for tea.",
+      "examples": [
+        {
+          "text": "An elderly neighbor joined us for tea.",
+          "translation": "高齢の隣人がお茶を飲むために私たちと一緒に来た。"
+        }
+      ]
     },
     {
       "word": "adult",
@@ -2129,7 +3713,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Adult learners often bring useful life experience."
+      "example": "Adult learners often bring useful life experience.",
+      "examples": [
+        {
+          "text": "Adult learners often bring useful life experience.",
+          "translation": "成人学習者はしばしば有用な生活経験をもたらす。"
+        }
+      ]
     },
     {
       "word": "irresponsible",
@@ -2137,7 +3727,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Leaving without telling anyone was irresponsible."
+      "example": "Leaving without telling anyone was irresponsible.",
+      "examples": [
+        {
+          "text": "Leaving without telling anyone was irresponsible.",
+          "translation": "誰にも言わずに出て行くのは無責任だった。"
+        }
+      ]
     },
     {
       "word": "rash",
@@ -2145,7 +3741,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Don't make a rash decision."
+      "example": "Don't make a rash decision.",
+      "examples": [
+        {
+          "text": "Don't make a rash decision.",
+          "translation": "急いで決めるな"
+        }
+      ]
     },
     {
       "word": "reckless",
@@ -2153,7 +3755,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His reckless behavior worried his friends."
+      "example": "His reckless behavior worried his friends.",
+      "examples": [
+        {
+          "text": "His reckless behavior worried his friends.",
+          "translation": "彼の無謀な行動は友人を心配させた。"
+        }
+      ]
     },
     {
       "word": "alert",
@@ -2161,7 +3769,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Stay alert when crossing this road."
+      "example": "Stay alert when crossing this road.",
+      "examples": [
+        {
+          "text": "Stay alert when crossing this road.",
+          "translation": "この道を渡る時は注意を払ってください。"
+        }
+      ]
     },
     {
       "word": "attentive",
@@ -2169,7 +3783,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The teacher was patient and attentive."
+      "example": "The teacher was patient and attentive.",
+      "examples": [
+        {
+          "text": "The teacher was patient and attentive.",
+          "translation": "先生は忍耐強く注意深かった。"
+        }
+      ]
     },
     {
       "word": "watchful",
@@ -2177,7 +3797,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She kept a watchful eye on the children."
+      "example": "She kept a watchful eye on the children.",
+      "examples": [
+        {
+          "text": "She kept a watchful eye on the children.",
+          "translation": "彼女は子供たちを気配りしていた。"
+        }
+      ]
     },
     {
       "word": "unaware",
@@ -2185,7 +3811,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He was unaware of my worries."
+      "example": "He was unaware of my worries.",
+      "examples": [
+        {
+          "text": "He was unaware of my worries.",
+          "translation": "彼は私の心配を知らなかった。"
+        }
+      ]
     },
     {
       "word": "conscious",
@@ -2193,7 +3825,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I was conscious of everyone watching me."
+      "example": "I was conscious of everyone watching me.",
+      "examples": [
+        {
+          "text": "I was conscious of everyone watching me.",
+          "translation": "みんなが私を見ていることに気づいた。"
+        }
+      ]
     },
     {
       "word": "impatient",
@@ -2201,7 +3839,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She grew impatient with the delay."
+      "example": "She grew impatient with the delay.",
+      "examples": [
+        {
+          "text": "She grew impatient with the delay.",
+          "translation": "彼女は遅れにいらいらし始めました。"
+        }
+      ]
     },
     {
       "word": "intolerant",
@@ -2209,7 +3853,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He was intolerant of other people's opinions."
+      "example": "He was intolerant of other people's opinions.",
+      "examples": [
+        {
+          "text": "He was intolerant of other people's opinions.",
+          "translation": "彼は他人の意見に対して寛容ではなかった。"
+        }
+      ]
     },
     {
       "word": "flexible",
@@ -2217,7 +3867,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We can be flexible about the time."
+      "example": "We can be flexible about the time.",
+      "examples": [
+        {
+          "text": "We can be flexible about the time.",
+          "translation": "時間は柔軟に決められる"
+        }
+      ]
     },
     {
       "word": "adaptable",
@@ -2225,7 +3881,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She is adaptable in unfamiliar situations."
+      "example": "She is adaptable in unfamiliar situations.",
+      "examples": [
+        {
+          "text": "She is adaptable in unfamiliar situations.",
+          "translation": "彼女は不慣れな状況に適応できる。"
+        }
+      ]
     },
     {
       "word": "obstinate",
@@ -2233,7 +3895,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He was too obstinate to change his mind."
+      "example": "He was too obstinate to change his mind.",
+      "examples": [
+        {
+          "text": "He was too obstinate to change his mind.",
+          "translation": "彼は気を変えられないほど固執していた。"
+        }
+      ]
     },
     {
       "word": "persistent",
@@ -2241,7 +3909,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her persistent efforts finally succeeded."
+      "example": "Her persistent efforts finally succeeded.",
+      "examples": [
+        {
+          "text": "Her persistent efforts finally succeeded.",
+          "translation": "彼女の頑張りはついに成功した。"
+        }
+      ]
     },
     {
       "word": "resolute",
@@ -2249,7 +3923,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She remained resolute despite the criticism."
+      "example": "She remained resolute despite the criticism.",
+      "examples": [
+        {
+          "text": "She remained resolute despite the criticism.",
+          "translation": "彼女は批判にもかかわらず決意を固めた。"
+        }
+      ]
     },
     {
       "word": "indecisive",
@@ -2257,7 +3937,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I become indecisive when there are many choices."
+      "example": "I become indecisive when there are many choices.",
+      "examples": [
+        {
+          "text": "I become indecisive when there are many choices.",
+          "translation": "選択肢が多いと決断がつかない。"
+        }
+      ]
     },
     {
       "word": "hesitant",
@@ -2265,7 +3951,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He was hesitant to ask for help."
+      "example": "He was hesitant to ask for help.",
+      "examples": [
+        {
+          "text": "He was hesitant to ask for help.",
+          "translation": "彼は助けを求めるのを躊躇していた。"
+        }
+      ]
     },
     {
       "word": "willing",
@@ -2273,7 +3965,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I am willing to try again."
+      "example": "I am willing to try again.",
+      "examples": [
+        {
+          "text": "I am willing to try again.",
+          "translation": "もう一度やってみたい。"
+        }
+      ]
     },
     {
       "word": "unwilling",
@@ -2281,7 +3979,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She seemed unwilling to discuss it."
+      "example": "She seemed unwilling to discuss it.",
+      "examples": [
+        {
+          "text": "She seemed unwilling to discuss it.",
+          "translation": "彼女はそれについて話したがらなかったようだった。"
+        }
+      ]
     },
     {
       "word": "keen",
@@ -2289,7 +3993,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He is keen to learn new skills."
+      "example": "He is keen to learn new skills.",
+      "examples": [
+        {
+          "text": "He is keen to learn new skills.",
+          "translation": "彼は新しい技術を学ぶのが好きだ。"
+        }
+      ]
     },
     {
       "word": "apathetic",
@@ -2297,7 +4007,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The students seemed apathetic about the election."
+      "example": "The students seemed apathetic about the election.",
+      "examples": [
+        {
+          "text": "The students seemed apathetic about the election.",
+          "translation": "学生たちは選挙に対して無関心に見えた。"
+        }
+      ]
     },
     {
       "word": "indifferent",
@@ -2305,7 +4021,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She was indifferent to their praise."
+      "example": "She was indifferent to their praise.",
+      "examples": [
+        {
+          "text": "She was indifferent to their praise.",
+          "translation": "彼女は彼らの称賛に無関心だった。"
+        }
+      ]
     },
     {
       "word": "idle",
@@ -2313,7 +4035,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He felt uneasy while sitting idle."
+      "example": "He felt uneasy while sitting idle.",
+      "examples": [
+        {
+          "text": "He felt uneasy while sitting idle.",
+          "translation": "彼は何もせずに座っていると、落ち着かない気分になりました。"
+        }
+      ]
     },
     {
       "word": "energetic",
@@ -2321,7 +4049,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The children were energetic after lunch."
+      "example": "The children were energetic after lunch.",
+      "examples": [
+        {
+          "text": "The children were energetic after lunch.",
+          "translation": "子供たちは昼食後に活発であった。"
+        }
+      ]
     },
     {
       "word": "dynamic",
@@ -2329,7 +4063,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She is a dynamic team leader."
+      "example": "She is a dynamic team leader.",
+      "examples": [
+        {
+          "text": "She is a dynamic team leader.",
+          "translation": "彼女はダイナミックなチームリーダーです。"
+        }
+      ]
     },
     {
       "word": "vigorous",
@@ -2337,7 +4077,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He gave a vigorous wave."
+      "example": "He gave a vigorous wave.",
+      "examples": [
+        {
+          "text": "He gave a vigorous wave.",
+          "translation": "彼は力強く手を振った。"
+        }
+      ]
     },
     {
       "word": "exhausted",
@@ -2345,7 +4091,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I was exhausted after the long walk."
+      "example": "I was exhausted after the long walk.",
+      "examples": [
+        {
+          "text": "I was exhausted after the long walk.",
+          "translation": "私は長い散歩の後に疲れていた。"
+        }
+      ]
     },
     {
       "word": "weary",
@@ -2353,7 +4105,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The weary travelers stopped to rest."
+      "example": "The weary travelers stopped to rest.",
+      "examples": [
+        {
+          "text": "The weary travelers stopped to rest.",
+          "translation": "疲れた旅人たちは休憩するために止まった。"
+        }
+      ]
     },
     {
       "word": "awake",
@@ -2361,7 +4119,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I was still awake at midnight."
+      "example": "I was still awake at midnight.",
+      "examples": [
+        {
+          "text": "I was still awake at midnight.",
+          "translation": "真夜中にまだ起きていた。"
+        }
+      ]
     },
     {
       "word": "asleep",
@@ -2369,7 +4133,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The baby is already asleep."
+      "example": "The baby is already asleep.",
+      "examples": [
+        {
+          "text": "The baby is already asleep.",
+          "translation": "赤ちゃんはもう寝ている。"
+        }
+      ]
     },
     {
       "word": "unwell",
@@ -2377,7 +4147,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She felt unwell and went home."
+      "example": "She felt unwell and went home.",
+      "examples": [
+        {
+          "text": "She felt unwell and went home.",
+          "translation": "彼女は気分が悪くなり家に帰った。"
+        }
+      ]
     },
     {
       "word": "faint",
@@ -2385,7 +4161,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt faint in the crowded room."
+      "example": "I felt faint in the crowded room.",
+      "examples": [
+        {
+          "text": "I felt faint in the crowded room.",
+          "translation": "私は人が多い部屋で気を失った。"
+        }
+      ]
     },
     {
       "word": "dizzy",
@@ -2393,7 +4175,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The spinning ride made me dizzy."
+      "example": "The spinning ride made me dizzy.",
+      "examples": [
+        {
+          "text": "The spinning ride made me dizzy.",
+          "translation": "回転する車でめまいがした。"
+        }
+      ]
     },
     {
       "word": "breathless",
@@ -2401,7 +4189,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We were breathless after climbing the stairs."
+      "example": "We were breathless after climbing the stairs.",
+      "examples": [
+        {
+          "text": "We were breathless after climbing the stairs.",
+          "translation": "階段を登った後、私たちは息切れした。"
+        }
+      ]
     },
     {
       "word": "strong",
@@ -2409,7 +4203,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She is strong enough to lift the box."
+      "example": "She is strong enough to lift the box.",
+      "examples": [
+        {
+          "text": "She is strong enough to lift the box.",
+          "translation": "彼女は箱を持ち上げるほど強い。"
+        }
+      ]
     },
     {
       "word": "fragile",
@@ -2417,7 +4217,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His confidence felt fragile after the setback."
+      "example": "His confidence felt fragile after the setback.",
+      "examples": [
+        {
+          "text": "His confidence felt fragile after the setback.",
+          "translation": "挫折した後、彼の自信は揺らいでいました。"
+        }
+      ]
     },
     {
       "word": "robust",
@@ -2425,7 +4231,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He remained robust well into old age."
+      "example": "He remained robust well into old age.",
+      "examples": [
+        {
+          "text": "He remained robust well into old age.",
+          "translation": "老齢に至るまで健常であった。"
+        }
+      ]
     },
     {
       "word": "unfit",
@@ -2433,7 +4245,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt unfit after months without exercise."
+      "example": "I felt unfit after months without exercise.",
+      "examples": [
+        {
+          "text": "I felt unfit after months without exercise.",
+          "translation": "何か月も運動をしなかったので、体力が落ちたと感じました。"
+        }
+      ]
     },
     {
       "word": "sore",
@@ -2441,7 +4259,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My legs are sore from yesterday's walk."
+      "example": "My legs are sore from yesterday's walk.",
+      "examples": [
+        {
+          "text": "My legs are sore from yesterday's walk.",
+          "translation": "昨日の散歩で足が痛い。"
+        }
+      ]
     },
     {
       "word": "painless",
@@ -2449,7 +4273,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The procedure was almost painless."
+      "example": "The procedure was almost painless.",
+      "examples": [
+        {
+          "text": "The procedure was almost painless.",
+          "translation": "その処置はほとんど痛みがありませんでした。"
+        }
+      ]
     },
     {
       "word": "numb",
@@ -2457,7 +4287,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My fingers felt numb in the cold."
+      "example": "My fingers felt numb in the cold.",
+      "examples": [
+        {
+          "text": "My fingers felt numb in the cold.",
+          "translation": "寒さで指がしびれていた。"
+        }
+      ]
     },
     {
       "word": "shaky",
@@ -2465,7 +4301,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His voice was shaky with nerves."
+      "example": "His voice was shaky with nerves.",
+      "examples": [
+        {
+          "text": "His voice was shaky with nerves.",
+          "translation": "彼の声は神経質で揺れていた。"
+        }
+      ]
     },
     {
       "word": "thirsty",
@@ -2473,7 +4315,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I feel thirsty after the walk."
+      "example": "I feel thirsty after the walk.",
+      "examples": [
+        {
+          "text": "I feel thirsty after the walk.",
+          "translation": "散歩した後に喉が渇いた。"
+        }
+      ]
     },
     {
       "word": "full",
@@ -2481,7 +4329,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "No more cake, thanks; I'm full."
+      "example": "No more cake, thanks; I'm full.",
+      "examples": [
+        {
+          "text": "No more cake, thanks; I'm full.",
+          "translation": "ケーキはもう結構です。ありがとう。お腹がいっぱいです。"
+        }
+      ]
     },
     {
       "word": "uncomfortable",
@@ -2489,7 +4343,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "This chair is uncomfortable."
+      "example": "This chair is uncomfortable.",
+      "examples": [
+        {
+          "text": "This chair is uncomfortable.",
+          "translation": "この椅子は不快です。"
+        }
+      ]
     },
     {
       "word": "bashful",
@@ -2497,7 +4357,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The bashful child gave a small smile."
+      "example": "The bashful child gave a small smile.",
+      "examples": [
+        {
+          "text": "The bashful child gave a small smile.",
+          "translation": "恥ずかしい子供は微笑んだ。"
+        }
+      ]
     },
     {
       "word": "amused",
@@ -2505,7 +4371,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She looked amused by the joke."
+      "example": "She looked amused by the joke.",
+      "examples": [
+        {
+          "text": "She looked amused by the joke.",
+          "translation": "彼女はジョークに笑っているように見えた。"
+        }
+      ]
     },
     {
       "word": "boring",
@@ -2513,7 +4385,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The lecture was boring."
+      "example": "The lecture was boring.",
+      "examples": [
+        {
+          "text": "The lecture was boring.",
+          "translation": "講義は退屈だった。"
+        }
+      ]
     },
     {
       "word": "exciting",
@@ -2521,7 +4399,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Starting a new job can be exciting."
+      "example": "Starting a new job can be exciting.",
+      "examples": [
+        {
+          "text": "Starting a new job can be exciting.",
+          "translation": "新しい仕事を始めるのはワクワクする。"
+        }
+      ]
     },
     {
       "word": "frightening",
@@ -2529,7 +4413,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The sudden noise was frightening."
+      "example": "The sudden noise was frightening.",
+      "examples": [
+        {
+          "text": "The sudden noise was frightening.",
+          "translation": "突然の騒音は恐ろしかった。"
+        }
+      ]
     },
     {
       "word": "disappointing",
@@ -2537,7 +4427,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The result was disappointing."
+      "example": "The result was disappointing.",
+      "examples": [
+        {
+          "text": "The result was disappointing.",
+          "translation": "結果は失望的であった。"
+        }
+      ]
     },
     {
       "word": "amazing",
@@ -2545,7 +4441,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Your progress is amazing."
+      "example": "Your progress is amazing.",
+      "examples": [
+        {
+          "text": "Your progress is amazing.",
+          "translation": "君の進歩は驚くべきだ"
+        }
+      ]
     },
     {
       "word": "worrying",
@@ -2553,7 +4455,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The lack of news is worrying."
+      "example": "The lack of news is worrying.",
+      "examples": [
+        {
+          "text": "The lack of news is worrying.",
+          "translation": "ニュースの欠如は心配です。"
+        }
+      ]
     },
     {
       "word": "confusing",
@@ -2561,7 +4469,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "These instructions are confusing."
+      "example": "These instructions are confusing.",
+      "examples": [
+        {
+          "text": "These instructions are confusing.",
+          "translation": "これらの指示は混乱している。"
+        }
+      ]
     },
     {
       "word": "embarrassing",
@@ -2569,7 +4483,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Forgetting his name was embarrassing."
+      "example": "Forgetting his name was embarrassing.",
+      "examples": [
+        {
+          "text": "Forgetting his name was embarrassing.",
+          "translation": "彼の名前を忘れたのは恥ずかしかった。"
+        }
+      ]
     },
     {
       "word": "satisfying",
@@ -2577,7 +4497,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Finishing the puzzle was satisfying."
+      "example": "Finishing the puzzle was satisfying.",
+      "examples": [
+        {
+          "text": "Finishing the puzzle was satisfying.",
+          "translation": "パズルを完成させるのは満足だった。"
+        }
+      ]
     },
     {
       "word": "shocking",
@@ -2585,7 +4511,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The news was shocking."
+      "example": "The news was shocking.",
+      "examples": [
+        {
+          "text": "The news was shocking.",
+          "translation": "ニュースはショックだった。"
+        }
+      ]
     },
     {
       "word": "inspired",
@@ -2593,7 +4525,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt inspired after hearing her story."
+      "example": "I felt inspired after hearing her story.",
+      "examples": [
+        {
+          "text": "I felt inspired after hearing her story.",
+          "translation": "彼女の話を聞いて感動した。"
+        }
+      ]
     },
     {
       "word": "encouraging",
@@ -2601,7 +4539,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The teacher's comments were encouraging."
+      "example": "The teacher's comments were encouraging.",
+      "examples": [
+        {
+          "text": "The teacher's comments were encouraging.",
+          "translation": "先生のコメントは励ましだった。"
+        }
+      ]
     },
     {
       "word": "assured",
@@ -2609,7 +4553,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She spoke in an assured voice."
+      "example": "She spoke in an assured voice.",
+      "examples": [
+        {
+          "text": "She spoke in an assured voice.",
+          "translation": "彼女は確かな声で話した。"
+        }
+      ]
     },
     {
       "word": "secure",
@@ -2617,7 +4567,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I feel secure with people I trust."
+      "example": "I feel secure with people I trust.",
+      "examples": [
+        {
+          "text": "I feel secure with people I trust.",
+          "translation": "信頼できる人と一緒にいると 安全に感じる"
+        }
+      ]
     },
     {
       "word": "unsafe",
@@ -2625,7 +4581,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The dark staircase looked unsafe."
+      "example": "The dark staircase looked unsafe.",
+      "examples": [
+        {
+          "text": "The dark staircase looked unsafe.",
+          "translation": "暗い階段は危険に見えた。"
+        }
+      ]
     },
     {
       "word": "vulnerable",
@@ -2633,7 +4595,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The small animals are vulnerable to the cold."
+      "example": "The small animals are vulnerable to the cold.",
+      "examples": [
+        {
+          "text": "The small animals are vulnerable to the cold.",
+          "translation": "小動物は寒さに弱い。"
+        }
+      ]
     },
     {
       "word": "wounded",
@@ -2641,7 +4609,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His wounded pride made him quiet."
+      "example": "His wounded pride made him quiet.",
+      "examples": [
+        {
+          "text": "His wounded pride made him quiet.",
+          "translation": "彼の傷ついた誇りは彼を沈黙させた。"
+        }
+      ]
     },
     {
       "word": "disturbed",
@@ -2649,7 +4623,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She was disturbed by the strange message."
+      "example": "She was disturbed by the strange message.",
+      "examples": [
+        {
+          "text": "She was disturbed by the strange message.",
+          "translation": "彼女は奇妙なメッセージに不安を覚えた。"
+        }
+      ]
     },
     {
       "word": "overjoyed",
@@ -2657,7 +4637,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We were overjoyed to hear the news."
+      "example": "We were overjoyed to hear the news.",
+      "examples": [
+        {
+          "text": "We were overjoyed to hear the news.",
+          "translation": "私たちはその知らせを聞いてとても喜んだ。"
+        }
+      ]
     },
     {
       "word": "adore",
@@ -2665,7 +4651,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I adore spending time with my grandparents."
+      "example": "I adore spending time with my grandparents.",
+      "examples": [
+        {
+          "text": "I adore spending time with my grandparents.",
+          "translation": "祖父母と過ごすのが大好きです。"
+        }
+      ]
     },
     {
       "word": "approve",
@@ -2673,7 +4665,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My friends approve of the idea."
+      "example": "My friends approve of the idea.",
+      "examples": [
+        {
+          "text": "My friends approve of the idea.",
+          "translation": "友人はその考えを認めている。"
+        }
+      ]
     },
     {
       "word": "assure",
@@ -2681,7 +4679,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I assure you that everything is ready."
+      "example": "I assure you that everything is ready.",
+      "examples": [
+        {
+          "text": "I assure you that everything is ready.",
+          "translation": "すべて準備できていることを保証します。"
+        }
+      ]
     },
     {
       "word": "believe",
@@ -2689,7 +4693,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I believe what you told me."
+      "example": "I believe what you told me.",
+      "examples": [
+        {
+          "text": "I believe what you told me.",
+          "translation": "あなたが言ったことを信じる"
+        }
+      ]
     },
     {
       "word": "care",
@@ -2697,7 +4707,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I care about how you feel."
+      "example": "I care about how you feel.",
+      "examples": [
+        {
+          "text": "I care about how you feel.",
+          "translation": "君の気持ちが気になる"
+        }
+      ]
     },
     {
       "word": "cherish",
@@ -2705,7 +4721,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We cherish our children."
+      "example": "We cherish our children.",
+      "examples": [
+        {
+          "text": "We cherish our children.",
+          "translation": "私たちは子供を大切にする。"
+        }
+      ]
     },
     {
       "word": "convince",
@@ -2713,7 +4735,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Your explanation will convince them."
+      "example": "Your explanation will convince them.",
+      "examples": [
+        {
+          "text": "Your explanation will convince them.",
+          "translation": "君の説明で彼らは納得するだろう"
+        }
+      ]
     },
     {
       "word": "criticize",
@@ -2721,7 +4749,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It is easy to criticize from a distance."
+      "example": "It is easy to criticize from a distance.",
+      "examples": [
+        {
+          "text": "It is easy to criticize from a distance.",
+          "translation": "遠くから批判するのは簡単だ。"
+        }
+      ]
     },
     {
       "word": "distrust",
@@ -2729,7 +4763,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "There was distrust between the two groups."
+      "example": "There was distrust between the two groups.",
+      "examples": [
+        {
+          "text": "There was distrust between the two groups.",
+          "translation": "両群間には不信感があった。"
+        }
+      ]
     },
     {
       "word": "encourage",
@@ -2737,7 +4777,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Your words encourage me to keep trying."
+      "example": "Your words encourage me to keep trying.",
+      "examples": [
+        {
+          "text": "Your words encourage me to keep trying.",
+          "translation": "あなたの言葉に励まされて、私は挑戦を続けられます。"
+        }
+      ]
     },
     {
       "word": "excite",
@@ -2745,7 +4791,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "New ideas always excite her."
+      "example": "New ideas always excite her.",
+      "examples": [
+        {
+          "text": "New ideas always excite her.",
+          "translation": "新しいアイデアはいつも彼女を興奮させる。"
+        }
+      ]
     },
     {
       "word": "frighten",
@@ -2753,7 +4805,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Sudden noises frighten the cat."
+      "example": "Sudden noises frighten the cat.",
+      "examples": [
+        {
+          "text": "Sudden noises frighten the cat.",
+          "translation": "突然の音は猫を怖がらせる。"
+        }
+      ]
     },
     {
       "word": "hate",
@@ -2761,7 +4819,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I hate being late."
+      "example": "I hate being late.",
+      "examples": [
+        {
+          "text": "I hate being late.",
+          "translation": "遅刻は嫌いだ"
+        }
+      ]
     },
     {
       "word": "impress",
@@ -2769,7 +4833,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His kindness will impress you."
+      "example": "His kindness will impress you.",
+      "examples": [
+        {
+          "text": "His kindness will impress you.",
+          "translation": "彼の優しさに感動するでしょう。"
+        }
+      ]
     },
     {
       "word": "irritate",
@@ -2777,7 +4847,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Repeated interruptions irritate me."
+      "example": "Repeated interruptions irritate me.",
+      "examples": [
+        {
+          "text": "Repeated interruptions irritate me.",
+          "translation": "繰り返しの中断は私を怒らせる。"
+        }
+      ]
     },
     {
       "word": "like",
@@ -2785,7 +4861,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I like your sense of humor."
+      "example": "I like your sense of humor.",
+      "examples": [
+        {
+          "text": "I like your sense of humor.",
+          "translation": "私はあなたのユーモアのセンスが好きです。"
+        }
+      ]
     },
     {
       "word": "miss",
@@ -2793,7 +4875,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I miss my family when I travel."
+      "example": "I miss my family when I travel.",
+      "examples": [
+        {
+          "text": "I miss my family when I travel.",
+          "translation": "旅行するときは家族がいなくて寂しい。"
+        }
+      ]
     },
     {
       "word": "offend",
@@ -2801,7 +4889,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I did not mean to offend you."
+      "example": "I did not mean to offend you.",
+      "examples": [
+        {
+          "text": "I did not mean to offend you.",
+          "translation": "あなたを怒らせるつもりはなかった。"
+        }
+      ]
     },
     {
       "word": "please",
@@ -2809,7 +4903,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The surprise should please her."
+      "example": "The surprise should please her.",
+      "examples": [
+        {
+          "text": "The surprise should please her.",
+          "translation": "彼女は驚いて喜ぶだろう。"
+        }
+      ]
     },
     {
       "word": "relieve",
@@ -2817,7 +4917,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Talking helped relieve some of my worries."
+      "example": "Talking helped relieve some of my worries.",
+      "examples": [
+        {
+          "text": "Talking helped relieve some of my worries.",
+          "translation": "話すことで私の心配の一部が解消された。"
+        }
+      ]
     },
     {
       "word": "resent",
@@ -2825,7 +4931,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I resent being ignored."
+      "example": "I resent being ignored.",
+      "examples": [
+        {
+          "text": "I resent being ignored.",
+          "translation": "私は無視されることに腹が立ちます。"
+        }
+      ]
     },
     {
       "word": "satisfy",
@@ -2833,7 +4945,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Nothing seemed to satisfy him."
+      "example": "Nothing seemed to satisfy him.",
+      "examples": [
+        {
+          "text": "Nothing seemed to satisfy him.",
+          "translation": "何も彼を満足させないようだった。"
+        }
+      ]
     },
     {
       "word": "soothe",
@@ -2841,7 +4959,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her gentle voice helped soothe the child."
+      "example": "Her gentle voice helped soothe the child.",
+      "examples": [
+        {
+          "text": "Her gentle voice helped soothe the child.",
+          "translation": "彼女の優しい声が子供を安らげる役に立った。"
+        }
+      ]
     },
     {
       "word": "sympathize",
@@ -2849,7 +4973,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I sympathize with your disappointment."
+      "example": "I sympathize with your disappointment.",
+      "examples": [
+        {
+          "text": "I sympathize with your disappointment.",
+          "translation": "がっかりしたあなたの気持ちに同情します。"
+        }
+      ]
     },
     {
       "word": "tease",
@@ -2857,7 +4987,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Please don't tease him about his mistake."
+      "example": "Please don't tease him about his mistake.",
+      "examples": [
+        {
+          "text": "Please don't tease him about his mistake.",
+          "translation": "彼の間違いを いじめないでください"
+        }
+      ]
     },
     {
       "word": "thrill",
@@ -2865,7 +5001,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt a thrill when my name was called."
+      "example": "I felt a thrill when my name was called.",
+      "examples": [
+        {
+          "text": "I felt a thrill when my name was called.",
+          "translation": "私の名前が呼ばれたとき、私は興奮した。"
+        }
+      ]
     },
     {
       "word": "yearn",
@@ -2873,7 +5015,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They yearn for a peaceful life."
+      "example": "They yearn for a peaceful life.",
+      "examples": [
+        {
+          "text": "They yearn for a peaceful life.",
+          "translation": "彼らは平和な生活を望んでいる。"
+        }
+      ]
     },
     {
       "word": "rejoice",
@@ -2881,7 +5029,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We rejoice in your success."
+      "example": "We rejoice in your success.",
+      "examples": [
+        {
+          "text": "We rejoice in your success.",
+          "translation": "あなたの成功を喜んでいる。"
+        }
+      ]
     },
     {
       "word": "celebrate",
@@ -2889,7 +5043,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Let's celebrate your achievement."
+      "example": "Let's celebrate your achievement.",
+      "examples": [
+        {
+          "text": "Let's celebrate your achievement.",
+          "translation": "あなたの成果を祝おう"
+        }
+      ]
     },
     {
       "word": "empathize",
@@ -2897,7 +5057,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I can empathize with your situation."
+      "example": "I can empathize with your situation.",
+      "examples": [
+        {
+          "text": "I can empathize with your situation.",
+          "translation": "君の状況に共感できる"
+        }
+      ]
     },
     {
       "word": "disappoint",
@@ -2905,7 +5071,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I didn't want to disappoint you."
+      "example": "I didn't want to disappoint you.",
+      "examples": [
+        {
+          "text": "I didn't want to disappoint you.",
+          "translation": "あなたをがっかりさせたくなかった"
+        }
+      ]
     },
     {
       "word": "annoy",
@@ -2913,7 +5085,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Those loud noises annoy me."
+      "example": "Those loud noises annoy me.",
+      "examples": [
+        {
+          "text": "Those loud noises annoy me.",
+          "translation": "あの大音量の音が私を怒らせる。"
+        }
+      ]
     },
     {
       "word": "fascinate",
@@ -2921,7 +5099,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Stories about space fascinate him."
+      "example": "Stories about space fascinate him.",
+      "examples": [
+        {
+          "text": "Stories about space fascinate him.",
+          "translation": "彼は宇宙の話に魅了されている。"
+        }
+      ]
     },
     {
       "word": "astonish",
@@ -2929,7 +5113,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her memory never fails to astonish me."
+      "example": "Her memory never fails to astonish me.",
+      "examples": [
+        {
+          "text": "Her memory never fails to astonish me.",
+          "translation": "彼女の記憶力には、いつも驚かされます。"
+        }
+      ]
     },
     {
       "word": "confuse",
@@ -2937,7 +5127,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I often confuse the two brothers."
+      "example": "I often confuse the two brothers.",
+      "examples": [
+        {
+          "text": "I often confuse the two brothers.",
+          "translation": "私はしばしば二人の兄弟を混同する。"
+        }
+      ]
     },
     {
       "word": "disturb",
@@ -2945,7 +5141,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Please don't disturb the quiet atmosphere."
+      "example": "Please don't disturb the quiet atmosphere.",
+      "examples": [
+        {
+          "text": "Please don't disturb the quiet atmosphere.",
+          "translation": "静かな雰囲気を乱さないでください。"
+        }
+      ]
     },
     {
       "word": "despise",
@@ -2953,7 +5155,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They despise dishonest behavior."
+      "example": "They despise dishonest behavior.",
+      "examples": [
+        {
+          "text": "They despise dishonest behavior.",
+          "translation": "彼らは不正を軽蔑する。"
+        }
+      ]
     },
     {
       "word": "repent",
@@ -2961,7 +5169,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He began to repent of his actions."
+      "example": "He began to repent of his actions.",
+      "examples": [
+        {
+          "text": "He began to repent of his actions.",
+          "translation": "彼は自分の行いを悔やむようになった。"
+        }
+      ]
     },
     {
       "word": "tolerate",
@@ -2969,7 +5183,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We should tolerate differences of opinion."
+      "example": "We should tolerate differences of opinion.",
+      "examples": [
+        {
+          "text": "We should tolerate differences of opinion.",
+          "translation": "意見の相違を容認すべきだ。"
+        }
+      ]
     },
     {
       "word": "bear",
@@ -2977,7 +5197,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I cannot bear the thought of leaving."
+      "example": "I cannot bear the thought of leaving.",
+      "examples": [
+        {
+          "text": "I cannot bear the thought of leaving.",
+          "translation": "私は出て行くことの考えに耐えられない。"
+        }
+      ]
     },
     {
       "word": "withstand",
@@ -2985,7 +5211,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Their friendship could withstand the disagreement."
+      "example": "Their friendship could withstand the disagreement.",
+      "examples": [
+        {
+          "text": "Their friendship could withstand the disagreement.",
+          "translation": "彼らの友情は不一致に耐えられた。"
+        }
+      ]
     },
     {
       "word": "cope",
@@ -2993,7 +5225,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We are learning to cope with change."
+      "example": "We are learning to cope with change.",
+      "examples": [
+        {
+          "text": "We are learning to cope with change.",
+          "translation": "私たちは変化に対処する方法を学んでいる。"
+        }
+      ]
     },
     {
       "word": "recover",
@@ -3001,7 +5239,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It took time to recover from the shock."
+      "example": "It took time to recover from the shock.",
+      "examples": [
+        {
+          "text": "It took time to recover from the shock.",
+          "translation": "ショックから回復するのに時間がかかった。"
+        }
+      ]
     },
     {
       "word": "heal",
@@ -3009,7 +5253,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Time helped heal their emotional wounds."
+      "example": "Time helped heal their emotional wounds.",
+      "examples": [
+        {
+          "text": "Time helped heal their emotional wounds.",
+          "translation": "時間は彼らの感情的な傷を癒すのに役立った。"
+        }
+      ]
     },
     {
       "word": "accept",
@@ -3017,7 +5267,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I accept your apology."
+      "example": "I accept your apology.",
+      "examples": [
+        {
+          "text": "I accept your apology.",
+          "translation": "謝罪を受け入れる"
+        }
+      ]
     },
     {
       "word": "reconcile",
@@ -3025,7 +5281,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She tried to reconcile the two friends."
+      "example": "She tried to reconcile the two friends.",
+      "examples": [
+        {
+          "text": "She tried to reconcile the two friends.",
+          "translation": "彼女は2人の友人を和解させようとした。"
+        }
+      ]
     },
     {
       "word": "deny",
@@ -3033,7 +5295,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I cannot deny that I was upset."
+      "example": "I cannot deny that I was upset.",
+      "examples": [
+        {
+          "text": "I cannot deny that I was upset.",
+          "translation": "私は怒ったことを否定できない。"
+        }
+      ]
     },
     {
       "word": "confess",
@@ -3041,7 +5309,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I must confess that I was nervous."
+      "example": "I must confess that I was nervous.",
+      "examples": [
+        {
+          "text": "I must confess that I was nervous.",
+          "translation": "私は緊張していたことを告白しなければなりません。"
+        }
+      ]
     },
     {
       "word": "apologize",
@@ -3049,7 +5323,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I want to apologize for my rude comment."
+      "example": "I want to apologize for my rude comment.",
+      "examples": [
+        {
+          "text": "I want to apologize for my rude comment.",
+          "translation": "私は私の無礼なコメントに謝りたい。"
+        }
+      ]
     },
     {
       "word": "betray",
@@ -3057,7 +5337,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I would never betray your trust."
+      "example": "I would never betray your trust.",
+      "examples": [
+        {
+          "text": "I would never betray your trust.",
+          "translation": "信頼を裏切るつもりはない"
+        }
+      ]
     },
     {
       "word": "lie",
@@ -3065,7 +5351,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Please don't lie to me."
+      "example": "Please don't lie to me.",
+      "examples": [
+        {
+          "text": "Please don't lie to me.",
+          "translation": "嘘をつかないで"
+        }
+      ]
     },
     {
       "word": "cheat",
@@ -3073,7 +5365,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It is wrong to cheat people."
+      "example": "It is wrong to cheat people.",
+      "examples": [
+        {
+          "text": "It is wrong to cheat people.",
+          "translation": "人を騙すのは間違っている。"
+        }
+      ]
     },
     {
       "word": "conceal",
@@ -3081,7 +5379,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He tried to conceal the broken vase."
+      "example": "He tried to conceal the broken vase.",
+      "examples": [
+        {
+          "text": "He tried to conceal the broken vase.",
+          "translation": "彼は割れた花瓶を隠そうとした。"
+        }
+      ]
     },
     {
       "word": "express",
@@ -3089,7 +5393,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It is hard to express my feelings."
+      "example": "It is hard to express my feelings.",
+      "examples": [
+        {
+          "text": "It is hard to express my feelings.",
+          "translation": "私の感情を表現するのは難しい。"
+        }
+      ]
     },
     {
       "word": "share",
@@ -3097,7 +5407,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "You can share your worries with me."
+      "example": "You can share your worries with me.",
+      "examples": [
+        {
+          "text": "You can share your worries with me.",
+          "translation": "私と心配事を分かち合ってもいい"
+        }
+      ]
     },
     {
       "word": "hear",
@@ -3105,7 +5421,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I can hear laughter in the next room."
+      "example": "I can hear laughter in the next room.",
+      "examples": [
+        {
+          "text": "I can hear laughter in the next room.",
+          "translation": "隣の部屋で笑い声が聞こえる。"
+        }
+      ]
     },
     {
       "word": "speak",
@@ -3113,7 +5435,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We need to speak honestly."
+      "example": "We need to speak honestly.",
+      "examples": [
+        {
+          "text": "We need to speak honestly.",
+          "translation": "正直に話さないと"
+        }
+      ]
     },
     {
       "word": "discuss",
@@ -3121,7 +5449,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Let's discuss this when we are calmer."
+      "example": "Let's discuss this when we are calmer.",
+      "examples": [
+        {
+          "text": "Let's discuss this when we are calmer.",
+          "translation": "落ち着いたら話そう"
+        }
+      ]
     },
     {
       "word": "disagree",
@@ -3129,7 +5463,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Our accounts of the event disagree."
+      "example": "Our accounts of the event disagree.",
+      "examples": [
+        {
+          "text": "Our accounts of the event disagree.",
+          "translation": "事件の記録は 矛盾している"
+        }
+      ]
     },
     {
       "word": "confront",
@@ -3137,7 +5477,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She decided to confront her fears."
+      "example": "She decided to confront her fears.",
+      "examples": [
+        {
+          "text": "She decided to confront her fears.",
+          "translation": "彼女は自分の恐怖に直面することを決めた。"
+        }
+      ]
     },
     {
       "word": "mock",
@@ -3145,7 +5491,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Don't mock someone for asking a question."
+      "example": "Don't mock someone for asking a question.",
+      "examples": [
+        {
+          "text": "Don't mock someone for asking a question.",
+          "translation": "質問をした人をからかうな。"
+        }
+      ]
     },
     {
       "word": "bully",
@@ -3153,7 +5505,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "No one has the right to bully you."
+      "example": "No one has the right to bully you.",
+      "examples": [
+        {
+          "text": "No one has the right to bully you.",
+          "translation": "誰も君をいじめる権利はない。"
+        }
+      ]
     },
     {
       "word": "threaten",
@@ -3161,7 +5519,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He tried to threaten us into silence."
+      "example": "He tried to threaten us into silence.",
+      "examples": [
+        {
+          "text": "He tried to threaten us into silence.",
+          "translation": "彼は私たちを脅し 黙らせようとした"
+        }
+      ]
     },
     {
       "word": "persuade",
@@ -3169,7 +5533,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I hope to persuade her to stay."
+      "example": "I hope to persuade her to stay.",
+      "examples": [
+        {
+          "text": "I hope to persuade her to stay.",
+          "translation": "彼女を留めておくよう説得したいと思います。"
+        }
+      ]
     },
     {
       "word": "scold",
@@ -3177,7 +5547,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "There is no need to scold him."
+      "example": "There is no need to scold him.",
+      "examples": [
+        {
+          "text": "There is no need to scold him.",
+          "translation": "彼を叱る必要はない。"
+        }
+      ]
     },
     {
       "word": "complain",
@@ -3185,7 +5561,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "You can complain without being rude."
+      "example": "You can complain without being rude.",
+      "examples": [
+        {
+          "text": "You can complain without being rude.",
+          "translation": "失礼なことをしないで文句を言えばいい。"
+        }
+      ]
     },
     {
       "word": "object",
@@ -3193,7 +5575,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I object to being treated unfairly."
+      "example": "I object to being treated unfairly.",
+      "examples": [
+        {
+          "text": "I object to being treated unfairly.",
+          "translation": "不公平に扱われるのに反対します。"
+        }
+      ]
     },
     {
       "word": "avoid",
@@ -3201,7 +5589,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I try to avoid unnecessary arguments."
+      "example": "I try to avoid unnecessary arguments.",
+      "examples": [
+        {
+          "text": "I try to avoid unnecessary arguments.",
+          "translation": "私は不要な議論を避けようとする。"
+        }
+      ]
     },
     {
       "word": "escape",
@@ -3209,7 +5603,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She wanted to escape the noisy crowd."
+      "example": "She wanted to escape the noisy crowd.",
+      "examples": [
+        {
+          "text": "She wanted to escape the noisy crowd.",
+          "translation": "彼女は騒がしい人々から逃げたかった。"
+        }
+      ]
     },
     {
       "word": "approach",
@@ -3217,7 +5617,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He was afraid to approach the group."
+      "example": "He was afraid to approach the group.",
+      "examples": [
+        {
+          "text": "He was afraid to approach the group.",
+          "translation": "彼はそのグループに近づくのを恐れた。"
+        }
+      ]
     },
     {
       "word": "interact",
@@ -3225,7 +5631,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The game helps children interact with each other."
+      "example": "The game helps children interact with each other.",
+      "examples": [
+        {
+          "text": "The game helps children interact with each other.",
+          "translation": "ゲームは子供たちが互いに相互作用するのを助ける。"
+        }
+      ]
     },
     {
       "word": "engage",
@@ -3233,7 +5645,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Good stories engage our emotions."
+      "example": "Good stories engage our emotions.",
+      "examples": [
+        {
+          "text": "Good stories engage our emotions.",
+          "translation": "良い物語は私たちの感情を引き付けます。"
+        }
+      ]
     },
     {
       "word": "cooperate",
@@ -3241,7 +5659,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We must cooperate to solve this problem."
+      "example": "We must cooperate to solve this problem.",
+      "examples": [
+        {
+          "text": "We must cooperate to solve this problem.",
+          "translation": "この問題を解決するために協力する必要がある。"
+        }
+      ]
     },
     {
       "word": "compete",
@@ -3249,7 +5673,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The siblings often compete for attention."
+      "example": "The siblings often compete for attention.",
+      "examples": [
+        {
+          "text": "The siblings often compete for attention.",
+          "translation": "兄弟姉妹は注意を集めるためにしばしば競い合う。"
+        }
+      ]
     },
     {
       "word": "assist",
@@ -3257,7 +5687,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I'm happy to assist you."
+      "example": "I'm happy to assist you.",
+      "examples": [
+        {
+          "text": "I'm happy to assist you.",
+          "translation": "喜んで助ける"
+        }
+      ]
     },
     {
       "word": "donate",
@@ -3265,7 +5701,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They donate their spare clothes to charity."
+      "example": "They donate their spare clothes to charity.",
+      "examples": [
+        {
+          "text": "They donate their spare clothes to charity.",
+          "translation": "彼らは余分な服を慈善団体に寄付する。"
+        }
+      ]
     },
     {
       "word": "sacrifice",
@@ -3273,7 +5715,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She made a sacrifice for her family."
+      "example": "She made a sacrifice for her family.",
+      "examples": [
+        {
+          "text": "She made a sacrifice for her family.",
+          "translation": "彼女は家族のために犠牲を払った。"
+        }
+      ]
     },
     {
       "word": "protect",
@@ -3281,7 +5729,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We want to protect the children from harm."
+      "example": "We want to protect the children from harm.",
+      "examples": [
+        {
+          "text": "We want to protect the children from harm.",
+          "translation": "子供たちを危害から守りたいのです。"
+        }
+      ]
     },
     {
       "word": "rescue",
@@ -3289,7 +5743,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The neighbors helped rescue the trapped dog."
+      "example": "The neighbors helped rescue the trapped dog.",
+      "examples": [
+        {
+          "text": "The neighbors helped rescue the trapped dog.",
+          "translation": "近所の人々が捕まった犬を救助した。"
+        }
+      ]
     },
     {
       "word": "welcome",
@@ -3297,7 +5757,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We welcome you with open hearts."
+      "example": "We welcome you with open hearts.",
+      "examples": [
+        {
+          "text": "We welcome you with open hearts.",
+          "translation": "心から歓迎します"
+        }
+      ]
     },
     {
       "word": "hug",
@@ -3305,7 +5771,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I wanted to hug my friend."
+      "example": "I wanted to hug my friend.",
+      "examples": [
+        {
+          "text": "I wanted to hug my friend.",
+          "translation": "友達を抱きしめたかったの"
+        }
+      ]
     },
     {
       "word": "kiss",
@@ -3313,7 +5785,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She leaned over to kiss his cheek."
+      "example": "She leaned over to kiss his cheek.",
+      "examples": [
+        {
+          "text": "She leaned over to kiss his cheek.",
+          "translation": "彼女は彼の頬にキスをするために、身を乗り出しました。"
+        }
+      ]
     },
     {
       "word": "caress",
@@ -3321,7 +5799,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He reached out to caress the dog's head."
+      "example": "He reached out to caress the dog's head.",
+      "examples": [
+        {
+          "text": "He reached out to caress the dog's head.",
+          "translation": "彼は犬の頭を撫でるために手を伸ばした。"
+        }
+      ]
     },
     {
       "word": "wink",
@@ -3329,7 +5813,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She would wink at me after each joke."
+      "example": "She would wink at me after each joke.",
+      "examples": [
+        {
+          "text": "She would wink at me after each joke.",
+          "translation": "彼女はジョークの後に私にウィンクした。"
+        }
+      ]
     },
     {
       "word": "nod",
@@ -3337,7 +5827,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I saw him nod in agreement."
+      "example": "I saw him nod in agreement.",
+      "examples": [
+        {
+          "text": "I saw him nod in agreement.",
+          "translation": "私は彼が同意してうなずくのを見ました。"
+        }
+      ]
     },
     {
       "word": "salute",
@@ -3345,7 +5841,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The soldiers salute their commander."
+      "example": "The soldiers salute their commander.",
+      "examples": [
+        {
+          "text": "The soldiers salute their commander.",
+          "translation": "兵士たちは指揮官に敬礼する。"
+        }
+      ]
     },
     {
       "word": "gesture",
@@ -3353,7 +5855,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She thanked us with a simple gesture."
+      "example": "She thanked us with a simple gesture.",
+      "examples": [
+        {
+          "text": "She thanked us with a simple gesture.",
+          "translation": "彼女は単純なジェスチャーで私たちに感謝した。"
+        }
+      ]
     },
     {
       "word": "grin",
@@ -3361,7 +5869,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The good news made him grin."
+      "example": "The good news made him grin.",
+      "examples": [
+        {
+          "text": "The good news made him grin.",
+          "translation": "良い知らせに彼は笑った。"
+        }
+      ]
     },
     {
       "word": "scowl",
@@ -3369,7 +5883,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He began to scowl at the interruption."
+      "example": "He began to scowl at the interruption.",
+      "examples": [
+        {
+          "text": "He began to scowl at the interruption.",
+          "translation": "話を遮られて、彼は不機嫌そうに顔をしかめ始めました。"
+        }
+      ]
     },
     {
       "word": "stare",
@@ -3377,7 +5897,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Please don't stare at me."
+      "example": "Please don't stare at me.",
+      "examples": [
+        {
+          "text": "Please don't stare at me.",
+          "translation": "私をじっと見ないでください。"
+        }
+      ]
     },
     {
       "word": "gaze",
@@ -3385,7 +5911,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They gaze quietly at the stars."
+      "example": "They gaze quietly at the stars.",
+      "examples": [
+        {
+          "text": "They gaze quietly at the stars.",
+          "translation": "かれらは星々を見下す。"
+        }
+      ]
     },
     {
       "word": "blush",
@@ -3393,7 +5925,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Compliments always make me blush."
+      "example": "Compliments always make me blush.",
+      "examples": [
+        {
+          "text": "Compliments always make me blush.",
+          "translation": "褒められるといつも顔が赤くなる。"
+        }
+      ]
     },
     {
       "word": "beam",
@@ -3401,7 +5939,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She began to beam with pride."
+      "example": "She began to beam with pride.",
+      "examples": [
+        {
+          "text": "She began to beam with pride.",
+          "translation": "彼女は誇りに満ちて輝き始めた。"
+        }
+      ]
     },
     {
       "word": "weep",
@@ -3409,7 +5953,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The sad ending made her weep."
+      "example": "The sad ending made her weep.",
+      "examples": [
+        {
+          "text": "The sad ending made her weep.",
+          "translation": "悲しい終わりが彼女を泣かせた。"
+        }
+      ]
     },
     {
       "word": "cry",
@@ -3417,7 +5967,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "It's all right to cry."
+      "example": "It's all right to cry.",
+      "examples": [
+        {
+          "text": "It's all right to cry.",
+          "translation": "泣いてもいい"
+        }
+      ]
     },
     {
       "word": "gasp",
@@ -3425,7 +5981,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The surprise made everyone gasp."
+      "example": "The surprise made everyone gasp.",
+      "examples": [
+        {
+          "text": "The surprise made everyone gasp.",
+          "translation": "皆は驚きのあまり、はっと息をのみました。"
+        }
+      ]
     },
     {
       "word": "tremble",
@@ -3433,7 +5995,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My hands tremble when I feel nervous."
+      "example": "My hands tremble when I feel nervous.",
+      "examples": [
+        {
+          "text": "My hands tremble when I feel nervous.",
+          "translation": "緊張すると手が震える。"
+        }
+      ]
     },
     {
       "word": "shake",
@@ -3441,7 +6009,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She began to shake her head."
+      "example": "She began to shake her head.",
+      "examples": [
+        {
+          "text": "She began to shake her head.",
+          "translation": "彼女は頭を振り始めた。"
+        }
+      ]
     },
     {
       "word": "quiver",
@@ -3449,7 +6023,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His lips began to quiver."
+      "example": "His lips began to quiver.",
+      "examples": [
+        {
+          "text": "His lips began to quiver.",
+          "translation": "彼の唇が震え始めた。"
+        }
+      ]
     },
     {
       "word": "heartbeat",
@@ -3457,7 +6037,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I could feel my heartbeat getting faster."
+      "example": "I could feel my heartbeat getting faster.",
+      "examples": [
+        {
+          "text": "I could feel my heartbeat getting faster.",
+          "translation": "心拍が速くなってきた"
+        }
+      ]
     },
     {
       "word": "laughter",
@@ -3465,7 +6051,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The room filled with laughter."
+      "example": "The room filled with laughter.",
+      "examples": [
+        {
+          "text": "The room filled with laughter.",
+          "translation": "部屋中が笑い声でいっぱいになりました。"
+        }
+      ]
     },
     {
       "word": "giggle",
@@ -3473,7 +6065,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The children began to giggle."
+      "example": "The children began to giggle.",
+      "examples": [
+        {
+          "text": "The children began to giggle.",
+          "translation": "子供たちは笑い始めた。"
+        }
+      ]
     },
     {
       "word": "snicker",
@@ -3481,7 +6079,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I heard a snicker behind me."
+      "example": "I heard a snicker behind me.",
+      "examples": [
+        {
+          "text": "I heard a snicker behind me.",
+          "translation": "後ろから笑い声が聞こえた。"
+        }
+      ]
     },
     {
       "word": "groan",
@@ -3489,7 +6093,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He let out a groan of disappointment."
+      "example": "He let out a groan of disappointment.",
+      "examples": [
+        {
+          "text": "He let out a groan of disappointment.",
+          "translation": "彼はがっかりして、うめき声を上げました。"
+        }
+      ]
     },
     {
       "word": "moan",
@@ -3497,7 +6107,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A quiet moan came from the injured man."
+      "example": "A quiet moan came from the injured man.",
+      "examples": [
+        {
+          "text": "A quiet moan came from the injured man.",
+          "translation": "けがをした男性から、小さなうめき声が聞こえました。"
+        }
+      ]
     },
     {
       "word": "shout",
@@ -3505,7 +6121,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Please don't shout at me."
+      "example": "Please don't shout at me.",
+      "examples": [
+        {
+          "text": "Please don't shout at me.",
+          "translation": "私に叫ばないでください。"
+        }
+      ]
     },
     {
       "word": "murmur",
@@ -3513,7 +6135,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "A murmur of surprise spread through the room."
+      "example": "A murmur of surprise spread through the room.",
+      "examples": [
+        {
+          "text": "A murmur of surprise spread through the room.",
+          "translation": "驚きのうなり声が部屋中に広がった。"
+        }
+      ]
     },
     {
       "word": "silence",
@@ -3521,7 +6149,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We sat together in comfortable silence."
+      "example": "We sat together in comfortable silence.",
+      "examples": [
+        {
+          "text": "We sat together in comfortable silence.",
+          "translation": "私たちは一緒に座り、心地よい沈黙を保った。"
+        }
+      ]
     },
     {
       "word": "tone",
@@ -3529,7 +6163,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her tone was gentle and reassuring."
+      "example": "Her tone was gentle and reassuring.",
+      "examples": [
+        {
+          "text": "Her tone was gentle and reassuring.",
+          "translation": "彼女の声は優しく安心感を与えていた。"
+        }
+      ]
     },
     {
       "word": "posture",
@@ -3537,7 +6177,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His relaxed posture made me feel welcome."
+      "example": "His relaxed posture made me feel welcome.",
+      "examples": [
+        {
+          "text": "His relaxed posture made me feel welcome.",
+          "translation": "彼のリラックスした姿勢は私を歓迎した。"
+        }
+      ]
     },
     {
       "word": "smirk",
@@ -3545,7 +6191,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He began to smirk at my mistake."
+      "example": "He began to smirk at my mistake.",
+      "examples": [
+        {
+          "text": "He began to smirk at my mistake.",
+          "translation": "彼は私の間違いに微笑み始めた。"
+        }
+      ]
     },
     {
       "word": "sulk",
@@ -3553,7 +6205,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He would sulk whenever he lost a game."
+      "example": "He would sulk whenever he lost a game.",
+      "examples": [
+        {
+          "text": "He would sulk whenever he lost a game.",
+          "translation": "彼はゲームに負けると、いつもすねていました。"
+        }
+      ]
     },
     {
       "word": "brood",
@@ -3561,7 +6219,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Try not to brood over the argument."
+      "example": "Try not to brood over the argument.",
+      "examples": [
+        {
+          "text": "Try not to brood over the argument.",
+          "translation": "議論を考えないでください。"
+        }
+      ]
     },
     {
       "word": "fantasy",
@@ -3569,7 +6233,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The story mixes everyday life with fantasy."
+      "example": "The story mixes everyday life with fantasy.",
+      "examples": [
+        {
+          "text": "The story mixes everyday life with fantasy.",
+          "translation": "物語は日常生活とファンタジーを混ぜ合わせている。"
+        }
+      ]
     },
     {
       "word": "nightmare",
@@ -3577,7 +6247,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I woke up after a nightmare."
+      "example": "I woke up after a nightmare.",
+      "examples": [
+        {
+          "text": "I woke up after a nightmare.",
+          "translation": "悪夢の後に目が覚めた。"
+        }
+      ]
     },
     {
       "word": "memory",
@@ -3585,7 +6261,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My memory of that day is clear."
+      "example": "My memory of that day is clear.",
+      "examples": [
+        {
+          "text": "My memory of that day is clear.",
+          "translation": "その日の記憶は明瞭だ。"
+        }
+      ]
     },
     {
       "word": "recollection",
@@ -3593,7 +6275,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She has a vivid recollection of their first meeting."
+      "example": "She has a vivid recollection of their first meeting.",
+      "examples": [
+        {
+          "text": "She has a vivid recollection of their first meeting.",
+          "translation": "彼女は彼らの最初の会合の生き生きとした記憶を持っている。"
+        }
+      ]
     },
     {
       "word": "opinion",
@@ -3601,7 +6289,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I value your opinion."
+      "example": "I value your opinion.",
+      "examples": [
+        {
+          "text": "I value your opinion.",
+          "translation": "君の意見を尊重する"
+        }
+      ]
     },
     {
       "word": "belief",
@@ -3609,7 +6303,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her belief in me gave me confidence."
+      "example": "Her belief in me gave me confidence.",
+      "examples": [
+        {
+          "text": "Her belief in me gave me confidence.",
+          "translation": "彼女の信頼は 私に自信を与えてくれた"
+        }
+      ]
     },
     {
       "word": "idea",
@@ -3617,7 +6317,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I have an idea that might help."
+      "example": "I have an idea that might help.",
+      "examples": [
+        {
+          "text": "I have an idea that might help.",
+          "translation": "私には助けになるアイデアがある"
+        }
+      ]
     },
     {
       "word": "insight",
@@ -3625,7 +6331,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The conversation gave me insight into his feelings."
+      "example": "The conversation gave me insight into his feelings.",
+      "examples": [
+        {
+          "text": "The conversation gave me insight into his feelings.",
+          "translation": "その会話で彼の感情を見抜いた。"
+        }
+      ]
     },
     {
       "word": "instinct",
@@ -3633,7 +6345,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My first instinct was to help."
+      "example": "My first instinct was to help.",
+      "examples": [
+        {
+          "text": "My first instinct was to help.",
+          "translation": "私は真っ先に、助けたいと本能的に感じました。"
+        }
+      ]
     },
     {
       "word": "creativity",
@@ -3641,7 +6359,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The activity encourages creativity."
+      "example": "The activity encourages creativity.",
+      "examples": [
+        {
+          "text": "The activity encourages creativity.",
+          "translation": "活動は創造性を促進する。"
+        }
+      ]
     },
     {
       "word": "judgment",
@@ -3649,7 +6373,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I trust your judgment."
+      "example": "I trust your judgment.",
+      "examples": [
+        {
+          "text": "I trust your judgment.",
+          "translation": "君の判断を信じる"
+        }
+      ]
     },
     {
       "word": "intelligence",
@@ -3657,7 +6387,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her intelligence impressed everyone."
+      "example": "Her intelligence impressed everyone.",
+      "examples": [
+        {
+          "text": "Her intelligence impressed everyone.",
+          "translation": "彼女の知性は誰にでも印象を与えた。"
+        }
+      ]
     },
     {
       "word": "attention",
@@ -3665,7 +6401,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The child wanted his father's attention."
+      "example": "The child wanted his father's attention.",
+      "examples": [
+        {
+          "text": "The child wanted his father's attention.",
+          "translation": "子供は父親の注意を欲しがった。"
+        }
+      ]
     },
     {
       "word": "awareness",
@@ -3673,7 +6415,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The workshop increased our awareness of others' feelings."
+      "example": "The workshop increased our awareness of others' feelings.",
+      "examples": [
+        {
+          "text": "The workshop increased our awareness of others' feelings.",
+          "translation": "ワークショップは他者の感情に対する意識を高めた。"
+        }
+      ]
     },
     {
       "word": "reflection",
@@ -3681,7 +6429,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "After some reflection, I changed my mind."
+      "example": "After some reflection, I changed my mind.",
+      "examples": [
+        {
+          "text": "After some reflection, I changed my mind.",
+          "translation": "しばらく考えた後、私は気が変わった。"
+        }
+      ]
     },
     {
       "word": "spirituality",
@@ -3689,7 +6443,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She finds meaning through art and spirituality."
+      "example": "She finds meaning through art and spirituality.",
+      "examples": [
+        {
+          "text": "She finds meaning through art and spirituality.",
+          "translation": "彼女は芸術と精神性を通して意味を見つける。"
+        }
+      ]
     },
     {
       "word": "conscience",
@@ -3697,7 +6457,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My conscience told me to apologize."
+      "example": "My conscience told me to apologize.",
+      "examples": [
+        {
+          "text": "My conscience told me to apologize.",
+          "translation": "良心が謝るように言った。"
+        }
+      ]
     },
     {
       "word": "ethic",
@@ -3705,7 +6471,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "An ethic of kindness guides their actions."
+      "example": "An ethic of kindness guides their actions.",
+      "examples": [
+        {
+          "text": "An ethic of kindness guides their actions.",
+          "translation": "親切の倫理が彼らの行動を導く。"
+        }
+      ]
     },
     {
       "word": "virtue",
@@ -3713,7 +6485,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Patience is an important virtue."
+      "example": "Patience is an important virtue.",
+      "examples": [
+        {
+          "text": "Patience is an important virtue.",
+          "translation": "忍耐は重要な美徳である。"
+        }
+      ]
     },
     {
       "word": "honor",
@@ -3721,7 +6499,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His sense of honor kept him honest."
+      "example": "His sense of honor kept him honest.",
+      "examples": [
+        {
+          "text": "His sense of honor kept him honest.",
+          "translation": "彼の名誉感は彼を正直にしていた。"
+        }
+      ]
     },
     {
       "word": "decency",
@@ -3729,7 +6513,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She treated everyone with basic decency."
+      "example": "She treated everyone with basic decency.",
+      "examples": [
+        {
+          "text": "She treated everyone with basic decency.",
+          "translation": "彼女は基本的な礼儀正しさで みんなを扱った"
+        }
+      ]
     },
     {
       "word": "fairness",
@@ -3737,7 +6527,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The children care deeply about fairness."
+      "example": "The children care deeply about fairness.",
+      "examples": [
+        {
+          "text": "The children care deeply about fairness.",
+          "translation": "子供たちは公平を深く気にかけている。"
+        }
+      ]
     },
     {
       "word": "equality",
@@ -3745,7 +6541,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They believe in equality for everyone."
+      "example": "They believe in equality for everyone.",
+      "examples": [
+        {
+          "text": "They believe in equality for everyone.",
+          "translation": "彼らは皆の平等を信じている。"
+        }
+      ]
     },
     {
       "word": "bias",
@@ -3753,7 +6555,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Personal bias can affect our judgment."
+      "example": "Personal bias can affect our judgment.",
+      "examples": [
+        {
+          "text": "Personal bias can affect our judgment.",
+          "translation": "個人的偏見は判断に影響を与える。"
+        }
+      ]
     },
     {
       "word": "prejudice",
@@ -3761,7 +6569,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Getting to know people can challenge prejudice."
+      "example": "Getting to know people can challenge prejudice.",
+      "examples": [
+        {
+          "text": "Getting to know people can challenge prejudice.",
+          "translation": "人を知ることは偏見に挑戦できる。"
+        }
+      ]
     },
     {
       "word": "hatred",
@@ -3769,7 +6583,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He refused to let hatred control him."
+      "example": "He refused to let hatred control him.",
+      "examples": [
+        {
+          "text": "He refused to let hatred control him.",
+          "translation": "彼は憎しみに支配されることを拒んだ。"
+        }
+      ]
     },
     {
       "word": "aggression",
@@ -3777,7 +6597,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His aggression made the conversation difficult."
+      "example": "His aggression made the conversation difficult.",
+      "examples": [
+        {
+          "text": "His aggression made the conversation difficult.",
+          "translation": "彼の攻撃性は会話を難しくした。"
+        }
+      ]
     },
     {
       "word": "violence",
@@ -3785,7 +6611,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They spoke out against violence."
+      "example": "They spoke out against violence.",
+      "examples": [
+        {
+          "text": "They spoke out against violence.",
+          "translation": "彼らは暴力に反対した。"
+        }
+      ]
     },
     {
       "word": "malice",
@@ -3793,7 +6625,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "There was no malice in her words."
+      "example": "There was no malice in her words.",
+      "examples": [
+        {
+          "text": "There was no malice in her words.",
+          "translation": "彼女の言葉には悪意はなかった。"
+        }
+      ]
     },
     {
       "word": "spite",
@@ -3801,7 +6639,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He hid the letter out of spite."
+      "example": "He hid the letter out of spite.",
+      "examples": [
+        {
+          "text": "He hid the letter out of spite.",
+          "translation": "彼は恨みから手紙を隠した。"
+        }
+      ]
     },
     {
       "word": "vengeance",
@@ -3809,7 +6653,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She chose forgiveness instead of vengeance."
+      "example": "She chose forgiveness instead of vengeance.",
+      "examples": [
+        {
+          "text": "She chose forgiveness instead of vengeance.",
+          "translation": "彼女は復讐よりも 許しを選んだ"
+        }
+      ]
     },
     {
       "word": "obligation",
@@ -3817,7 +6667,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I felt an obligation to help."
+      "example": "I felt an obligation to help.",
+      "examples": [
+        {
+          "text": "I felt an obligation to help.",
+          "translation": "私は助ける義務を感じた。"
+        }
+      ]
     },
     {
       "word": "duty",
@@ -3825,7 +6681,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He felt it was his duty to tell the truth."
+      "example": "He felt it was his duty to tell the truth.",
+      "examples": [
+        {
+          "text": "He felt it was his duty to tell the truth.",
+          "translation": "彼は真実を話すのが自分の義務だと感じた。"
+        }
+      ]
     },
     {
       "word": "promise",
@@ -3833,7 +6695,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I will keep my promise to you."
+      "example": "I will keep my promise to you.",
+      "examples": [
+        {
+          "text": "I will keep my promise to you.",
+          "translation": "約束は守る"
+        }
+      ]
     },
     {
       "word": "intention",
@@ -3841,7 +6709,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "My intention was to help, not upset you."
+      "example": "My intention was to help, not upset you.",
+      "examples": [
+        {
+          "text": "My intention was to help, not upset you.",
+          "translation": "私の意図は助ける事だった あなたを怒らせる事じゃない"
+        }
+      ]
     },
     {
       "word": "purpose",
@@ -3849,7 +6723,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Helping others gives her a sense of purpose."
+      "example": "Helping others gives her a sense of purpose.",
+      "examples": [
+        {
+          "text": "Helping others gives her a sense of purpose.",
+          "translation": "他人を助けることは彼女に目的感を与える。"
+        }
+      ]
     },
     {
       "word": "fulfillment",
@@ -3857,7 +6737,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The project marked the fulfillment of a dream."
+      "example": "The project marked the fulfillment of a dream.",
+      "examples": [
+        {
+          "text": "The project marked the fulfillment of a dream.",
+          "translation": "プロジェクトは夢の実現を示した。"
+        }
+      ]
     },
     {
       "word": "accomplishment",
@@ -3865,7 +6751,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We celebrated the accomplishment of our goal."
+      "example": "We celebrated the accomplishment of our goal.",
+      "examples": [
+        {
+          "text": "We celebrated the accomplishment of our goal.",
+          "translation": "私たちは目標の達成を祝った。"
+        }
+      ]
     },
     {
       "word": "success",
@@ -3873,7 +6765,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She was proud of her friend's success."
+      "example": "She was proud of her friend's success.",
+      "examples": [
+        {
+          "text": "She was proud of her friend's success.",
+          "translation": "彼女は友人の成功を誇りに思った。"
+        }
+      ]
     },
     {
       "word": "loss",
@@ -3881,7 +6779,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He struggled with the loss of his friend."
+      "example": "He struggled with the loss of his friend.",
+      "examples": [
+        {
+          "text": "He struggled with the loss of his friend.",
+          "translation": "彼は友人を失ったことで苦しんだ。"
+        }
+      ]
     },
     {
       "word": "defeat",
@@ -3889,7 +6793,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "They accepted defeat with dignity."
+      "example": "They accepted defeat with dignity.",
+      "examples": [
+        {
+          "text": "They accepted defeat with dignity.",
+          "translation": "彼らは尊厳をもって敗北を受け入れた。"
+        }
+      ]
     },
     {
       "word": "triumph",
@@ -3897,7 +6807,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Finishing the race was a personal triumph."
+      "example": "Finishing the race was a personal triumph.",
+      "examples": [
+        {
+          "text": "Finishing the race was a personal triumph.",
+          "translation": "レースを終えたことは個人的な勝利だった。"
+        }
+      ]
     },
     {
       "word": "obstacle",
@@ -3905,7 +6821,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Fear became an obstacle to trying again."
+      "example": "Fear became an obstacle to trying again.",
+      "examples": [
+        {
+          "text": "Fear became an obstacle to trying again.",
+          "translation": "恐怖はもう一度試みる障害となった。"
+        }
+      ]
     },
     {
       "word": "hardship",
@@ -3913,7 +6835,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The family supported each other through hardship."
+      "example": "The family supported each other through hardship.",
+      "examples": [
+        {
+          "text": "The family supported each other through hardship.",
+          "translation": "家族は苦難の中で互いに支え合った。"
+        }
+      ]
     },
     {
       "word": "burden",
@@ -3921,7 +6849,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Sharing the problem eased the burden."
+      "example": "Sharing the problem eased the burden.",
+      "examples": [
+        {
+          "text": "Sharing the problem eased the burden.",
+          "translation": "問題を共有することで負担が軽減した。"
+        }
+      ]
     },
     {
       "word": "strain",
@@ -3929,7 +6863,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The long wait put a strain on everyone."
+      "example": "The long wait put a strain on everyone.",
+      "examples": [
+        {
+          "text": "The long wait put a strain on everyone.",
+          "translation": "長い待ち時間はみんなにストレスを与えた。"
+        }
+      ]
     },
     {
       "word": "trauma",
@@ -3937,7 +6877,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "She spoke carefully about the trauma she experienced."
+      "example": "She spoke carefully about the trauma she experienced.",
+      "examples": [
+        {
+          "text": "She spoke carefully about the trauma she experienced.",
+          "translation": "彼女は自分が経験したトラウマについて慎重に話した。"
+        }
+      ]
     },
     {
       "word": "anguish",
@@ -3945,7 +6891,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "His voice revealed his anguish."
+      "example": "His voice revealed his anguish.",
+      "examples": [
+        {
+          "text": "His voice revealed his anguish.",
+          "translation": "彼の声は苦しみを表していた。"
+        }
+      ]
     },
     {
       "word": "discomfort",
@@ -3953,7 +6905,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "I noticed her discomfort during the conversation."
+      "example": "I noticed her discomfort during the conversation.",
+      "examples": [
+        {
+          "text": "I noticed her discomfort during the conversation.",
+          "translation": "私は会話中に彼女の不快感に気づいた。"
+        }
+      ]
     },
     {
       "word": "displeasure",
@@ -3961,7 +6919,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He made his displeasure clear."
+      "example": "He made his displeasure clear.",
+      "examples": [
+        {
+          "text": "He made his displeasure clear.",
+          "translation": "彼は不満を明らかにした。"
+        }
+      ]
     },
     {
       "word": "disillusionment",
@@ -3969,7 +6933,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "The broken promise led to disillusionment."
+      "example": "The broken promise led to disillusionment.",
+      "examples": [
+        {
+          "text": "The broken promise led to disillusionment.",
+          "translation": "破られた約束は幻滅につながった。"
+        }
+      ]
     },
     {
       "word": "skepticism",
@@ -3977,7 +6947,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her claim was met with skepticism."
+      "example": "Her claim was met with skepticism.",
+      "examples": [
+        {
+          "text": "Her claim was met with skepticism.",
+          "translation": "彼女の主張は懐疑的に受け止められた。"
+        }
+      ]
     },
     {
       "word": "cynic",
@@ -3985,7 +6961,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Even a cynic could see their kindness."
+      "example": "Even a cynic could see their kindness.",
+      "examples": [
+        {
+          "text": "Even a cynic could see their kindness.",
+          "translation": "皮肉屋でも彼らの優しさを見ることができた。"
+        }
+      ]
     },
     {
       "word": "earnest",
@@ -3993,7 +6975,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "He made an earnest effort to apologize."
+      "example": "He made an earnest effort to apologize.",
+      "examples": [
+        {
+          "text": "He made an earnest effort to apologize.",
+          "translation": "彼は謝罪するために真剣に努力した。"
+        }
+      ]
     },
     {
       "word": "seriousness",
@@ -4001,7 +6989,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "Her expression showed the seriousness of her concern."
+      "example": "Her expression showed the seriousness of her concern.",
+      "examples": [
+        {
+          "text": "Her expression showed the seriousness of her concern.",
+          "translation": "彼女の表情は彼女の心配の真剣さを示した。"
+        }
+      ]
     },
     {
       "word": "solemnity",
@@ -4009,7 +7003,13 @@
       "tags": [
         "気持ち・人柄"
       ],
-      "example": "We were moved by the ceremony's solemnity."
+      "example": "We were moved by the ceremony's solemnity.",
+      "examples": [
+        {
+          "text": "We were moved by the ceremony's solemnity.",
+          "translation": "私たちはその儀式の厳重さに感動した。"
+        }
+      ]
     }
   ]
 }

@@ -13,13 +13,13 @@
     "visibility": "public",
     "wordCount": 583,
     "createdAt": "2026-10-18T00:00:00.000Z",
-    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "contentSource": "cefrj",
     "cefrLevel": "A1",
     "standard": true,
-    "contentHash": "baceaf448589065e1a9ca1a839154423a701bb193e1b29368547dc105a6013fd",
-    "file": "azuki-cefrj-a1-1-v1.0c4b7e3b34182027.json"
+    "contentHash": "3ae5a2eac98a8e160541a390bafb3134c461767d24136a1f792f93f7f7af4e87",
+    "file": "azuki-cefrj-a1-1-v1.9146553b7c71d3e8.json"
   },
   {
     "id": "azuki-cefrj-a1-2-v1",
@@ -35,13 +35,13 @@
     "visibility": "public",
     "wordCount": 583,
     "createdAt": "2026-10-18T00:00:00.000Z",
-    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "contentSource": "cefrj",
     "cefrLevel": "A1",
     "standard": true,
-    "contentHash": "02ed633d838d8f729c79821b1f3c06c25557ee80e2565ececd818134fab3d2eb",
-    "file": "azuki-cefrj-a1-2-v1.56cefa6cb500797b.json"
+    "contentHash": "490f5fa771d32aa69954bf963fcba0e2febcffec08c8d3972e6fc140f66c7def",
+    "file": "azuki-cefrj-a1-2-v1.caee902d0a1c68b4.json"
   },
   {
     "id": "azuki-cefrj-a2-1-v1",
@@ -57,13 +57,13 @@
     "visibility": "public",
     "wordCount": 706,
     "createdAt": "2026-10-18T00:00:00.000Z",
-    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "contentSource": "cefrj",
     "cefrLevel": "A2",
     "standard": true,
-    "contentHash": "fb6693a72bce1ee9efe05b42a5b624e8f744edba37a2a707a62bf76882dc7ccb",
-    "file": "azuki-cefrj-a2-1-v1.651832383249ad03.json"
+    "contentHash": "8d100ad6b6e04c82bf9bc016a15fc00a2e3150ad726329eada8e4f4ac20c4566",
+    "file": "azuki-cefrj-a2-1-v1.cc565e3be00728f2.json"
   },
   {
     "id": "azuki-cefrj-a2-2-v1",
@@ -79,13 +79,13 @@
     "visibility": "public",
     "wordCount": 705,
     "createdAt": "2026-10-18T00:00:00.000Z",
-    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "contentSource": "cefrj",
     "cefrLevel": "A2",
     "standard": true,
-    "contentHash": "8f785d3dafd6e4ffc5ac65e001d0a554322831b1b92db529c7c97fe8721e1281",
-    "file": "azuki-cefrj-a2-2-v1.18eac088b6536914.json"
+    "contentHash": "9e0d96e93b6ec1bbcabe62c90289726141d4403253306a657d486086e3d4ca99",
+    "file": "azuki-cefrj-a2-2-v1.3c628773dad1ad7d.json"
   },
   {
     "id": "azuki-cefrj-b1-1-v1",
@@ -101,13 +101,13 @@
     "visibility": "public",
     "wordCount": 1223,
     "createdAt": "2026-10-18T00:00:00.000Z",
-    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "contentSource": "cefrj",
     "cefrLevel": "B1",
     "standard": true,
-    "contentHash": "d909b6daf034bfc9a68ddca083b505d59ab7fc01ae01211637f052e04875f8c1",
-    "file": "azuki-cefrj-b1-1-v1.a1903e0899b8f412.json"
+    "contentHash": "06d844fa55d8a6e41a2c2aebcb23c53ee7cd3122ff1ea8b20d3ddcdcdeb27add",
+    "file": "azuki-cefrj-b1-1-v1.262b76cc7f85c630.json"
   },
   {
     "id": "azuki-cefrj-b1-2-v1",
@@ -123,13 +123,13 @@
     "visibility": "public",
     "wordCount": 1222,
     "createdAt": "2026-10-18T00:00:00.000Z",
-    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "contentSource": "cefrj",
     "cefrLevel": "B1",
     "standard": true,
-    "contentHash": "db477220cf279bfb6b89f0e75e9d3817e7a94cd3d1b0ca0a0ffaff97b15647d0",
-    "file": "azuki-cefrj-b1-2-v1.5be5b611e9597cdf.json"
+    "contentHash": "f1ad070ee9a06dbac70c294ce4a1078b4f866d062cdf1181657ee60efa34e6c9",
+    "file": "azuki-cefrj-b1-2-v1.8204fb3276e52c3e.json"
   },
   {
     "id": "azuki-cefrj-b2-1-v1",
@@ -145,13 +145,13 @@
     "visibility": "public",
     "wordCount": 1390,
     "createdAt": "2026-10-18T00:00:00.000Z",
-    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "contentSource": "cefrj",
     "cefrLevel": "B2",
     "standard": true,
-    "contentHash": "a224c60a829df06739562cacb4b42bbe31a46c42459e8549e5ca81ab0cab031c",
-    "file": "azuki-cefrj-b2-1-v1.d9edae0e78bbdd9d.json"
+    "contentHash": "a20dbd035c13ee38e48a51d80fa42732b8300b1d212a4ba4bf9f76e754bc3912",
+    "file": "azuki-cefrj-b2-1-v1.ab4b39afef72092c.json"
   },
   {
     "id": "azuki-cefrj-b2-2-v1",
@@ -167,12 +167,12 @@
     "visibility": "public",
     "wordCount": 1389,
     "createdAt": "2026-10-18T00:00:00.000Z",
-    "updatedAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z",
     "isOfficial": true,
     "contentSource": "cefrj",
     "cefrLevel": "B2",
     "standard": true,
-    "contentHash": "ce09a6b235934edded33b080a124a0a5dae395691c9c73e78297aeb8e31ee313",
-    "file": "azuki-cefrj-b2-2-v1.5491ae330555139c.json"
+    "contentHash": "8b9c8d9509b6b0e04a2467dc88024ce217feb03ab0572402959e9f4b234fc331",
+    "file": "azuki-cefrj-b2-2-v1.1707ff93f37a3495.json"
   }
 ]

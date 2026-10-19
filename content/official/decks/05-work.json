@@ -17,6 +17,12 @@
       "example": "Our office is near the station.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Our office is near the station.",
+          "translation": "私たちの事務所は駅の近くにあります。"
+        }
       ]
     },
     {
@@ -25,6 +31,12 @@
       "example": "She works for a small company.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "She works for a small company.",
+          "translation": "彼女は小さな会社で働いています。"
+        }
       ]
     },
     {
@@ -33,6 +45,12 @@
       "example": "I had lunch with a colleague.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I had lunch with a colleague.",
+          "translation": "私は同僚と昼食を取りました。"
+        }
       ]
     },
     {
@@ -41,6 +59,12 @@
       "example": "The customer has a question.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The customer has a question.",
+          "translation": "お客様が質問をお持ちです。"
+        }
       ]
     },
     {
@@ -49,6 +73,12 @@
       "example": "Please ask the manager.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Please ask the manager.",
+          "translation": "責任者に尋ねてください。"
+        }
       ]
     },
     {
@@ -57,6 +87,12 @@
       "example": "We work well as a team.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We work well as a team.",
+          "translation": "私たちはチームとしてうまく協力しています。"
+        }
       ]
     },
     {
@@ -65,6 +101,12 @@
       "example": "The meeting starts at ten.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The meeting starts at ten.",
+          "translation": "会議は10時に始まります。"
+        }
       ]
     },
     {
@@ -73,6 +115,12 @@
       "example": "Let me check my schedule.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Let me check my schedule.",
+          "translation": "予定を確認させてください。"
+        }
       ]
     },
     {
@@ -81,6 +129,12 @@
       "example": "I have an appointment at two.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "I have an appointment at two.",
+          "translation": "私は2時に約束があります。"
+        }
       ]
     },
     {
@@ -89,6 +143,12 @@
       "example": "The deadline is Friday.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The deadline is Friday.",
+          "translation": "締め切りは金曜日です。"
+        }
       ]
     },
     {
@@ -97,6 +157,12 @@
       "example": "We are working on a new project.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We are working on a new project.",
+          "translation": "私たちは新しいプロジェクトに取り組んでいます。"
+        }
       ]
     },
     {
@@ -105,6 +171,12 @@
       "example": "This task takes about an hour.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "This task takes about an hour.",
+          "translation": "この作業は約1時間かかる。"
+        }
       ]
     },
     {
@@ -113,6 +185,12 @@
       "example": "What is the plan for tomorrow?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "What is the plan for tomorrow?",
+          "translation": "明日の計画は?"
+        }
       ]
     },
     {
@@ -121,6 +199,12 @@
       "example": "Please read the report before the meeting.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Please read the report before the meeting.",
+          "translation": "会議の前に報告書を読んでください。"
+        }
       ]
     },
     {
@@ -129,6 +213,12 @@
       "example": "Please sign this document.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Please sign this document.",
+          "translation": "この文書にサインしてください。"
+        }
       ]
     },
     {
@@ -137,6 +227,12 @@
       "example": "Put these papers in the file.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Put these papers in the file.",
+          "translation": "これらの書類をファイルに入れなさい。"
+        }
       ]
     },
     {
@@ -145,6 +241,12 @@
       "example": "We received a letter from a customer.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We received a letter from a customer.",
+          "translation": "私たちは顧客から手紙を受け取った。"
+        }
       ]
     },
     {
@@ -153,6 +255,12 @@
       "example": "Could you leave a message?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Could you leave a message?",
+          "translation": "メッセージを残してくれますか。"
+        }
       ]
     },
     {
@@ -161,6 +269,12 @@
       "example": "Please reply by Friday.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please reply by Friday.",
+          "translation": "金曜日までに返事をください。"
+        }
       ]
     },
     {
@@ -169,6 +283,12 @@
       "example": "You can contact me by phone.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "You can contact me by phone.",
+          "translation": "電話で連絡してください。"
+        }
       ]
     },
     {
@@ -177,6 +297,12 @@
       "example": "Let's discuss the plan tomorrow.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Let's discuss the plan tomorrow.",
+          "translation": "明日計画を話し合おう。"
+        }
       ]
     },
     {
@@ -185,6 +311,12 @@
       "example": "Could you explain this part again?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Could you explain this part again?",
+          "translation": "もう一度説明してくれないか?"
+        }
       ]
     },
     {
@@ -193,6 +325,12 @@
       "example": "I suggest taking a short break.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I suggest taking a short break.",
+          "translation": "少し休憩することを提案します。"
+        }
       ]
     },
     {
@@ -201,6 +339,12 @@
       "example": "I agree with your idea.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I agree with your idea.",
+          "translation": "あなたの考えに同意します。"
+        }
       ]
     },
     {
@@ -209,6 +353,12 @@
       "example": "We need to decide today.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We need to decide today.",
+          "translation": "今日決めなければならない。"
+        }
       ]
     },
     {
@@ -217,6 +367,12 @@
       "example": "I will prepare the documents.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I will prepare the documents.",
+          "translation": "私が書類を準備します。"
+        }
       ]
     },
     {
@@ -225,6 +381,12 @@
       "example": "Please check these numbers.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please check these numbers.",
+          "translation": "これらの番号を確認してください。"
+        }
       ]
     },
     {
@@ -233,6 +395,12 @@
       "example": "We can complete the task today.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We can complete the task today.",
+          "translation": "私たちは今日、その仕事を終えられます。"
+        }
       ]
     },
     {
@@ -241,6 +409,12 @@
       "example": "We want to improve our service.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We want to improve our service.",
+          "translation": "私たちはサービスを改善したい。"
+        }
       ]
     },
     {
@@ -249,6 +423,12 @@
       "example": "Can we change the meeting time?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Can we change the meeting time?",
+          "translation": "会議の時間を変えてもいい?"
+        }
       ]
     },
     {
@@ -257,6 +437,12 @@
       "example": "Let's solve this problem together.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Let's solve this problem together.",
+          "translation": "一緒にこの問題を解決しましょう。"
+        }
       ]
     },
     {
@@ -265,6 +451,12 @@
       "example": "We want to create something useful.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We want to create something useful.",
+          "translation": "私たちは何か役に立つものを作りたい。"
+        }
       ]
     },
     {
@@ -273,6 +465,12 @@
       "example": "This job helps me develop new skills.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "This job helps me develop new skills.",
+          "translation": "この仕事は私が新しいスキルを身につける助けになる。"
+        }
       ]
     },
     {
@@ -281,6 +479,12 @@
       "example": "I need to organize these documents.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I need to organize these documents.",
+          "translation": "私はこの文書を整理する必要があります。"
+        }
       ]
     },
     {
@@ -289,6 +493,12 @@
       "example": "Please share your ideas with the team.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please share your ideas with the team.",
+          "translation": "チームにアイデアを伝えてください。"
+        }
       ]
     },
     {
@@ -297,6 +507,12 @@
       "example": "I will send you the report today.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I will send you the report today.",
+          "translation": "今日レポートを送ります。"
+        }
       ]
     },
     {
@@ -305,6 +521,12 @@
       "example": "Did you receive my message?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Did you receive my message?",
+          "translation": "私のメッセージを受け取ったか?"
+        }
       ]
     },
     {
@@ -313,6 +535,12 @@
       "example": "We received a request for more information.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We received a request for more information.",
+          "translation": "情報の要請を受けました"
+        }
       ]
     },
     {
@@ -321,6 +549,12 @@
       "example": "Please confirm the date of the meeting.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please confirm the date of the meeting.",
+          "translation": "会議の日時を確認してください。"
+        }
       ]
     },
     {
@@ -329,6 +563,12 @@
       "example": "We had to cancel the meeting.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We had to cancel the meeting.",
+          "translation": "会議を中止しなければならなかった。"
+        }
       ]
     },
     {
@@ -337,6 +577,12 @@
       "example": "We will deliver the package tomorrow.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We will deliver the package tomorrow.",
+          "translation": "明日に配達します。"
+        }
       ]
     },
     {
@@ -345,6 +591,12 @@
       "example": "We offer free delivery.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We offer free delivery.",
+          "translation": "無料配達を提供します。"
+        }
       ]
     },
     {
@@ -353,6 +605,12 @@
       "example": "What is the price of this item?",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "What is the price of this item?",
+          "translation": "この物の値段はいくらですか。"
+        }
       ]
     },
     {
@@ -361,6 +619,12 @@
       "example": "The cost includes delivery.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The cost includes delivery.",
+          "translation": "その費用には配達料も含まれています。"
+        }
       ]
     },
     {
@@ -369,6 +633,12 @@
       "example": "We have a small budget for this project.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "We have a small budget for this project.",
+          "translation": "このプロジェクトの予算は少ない。"
+        }
       ]
     },
     {
@@ -377,6 +647,12 @@
       "example": "The company pays my salary every month.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The company pays my salary every month.",
+          "translation": "会社は毎月私の給料を支払う。"
+        }
       ]
     },
     {
@@ -385,6 +661,12 @@
       "example": "She runs a small business.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "She runs a small business.",
+          "translation": "彼女は小さな事業を経営している。"
+        }
       ]
     },
     {
@@ -393,6 +675,12 @@
       "example": "Our goal is to finish by Friday.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Our goal is to finish by Friday.",
+          "translation": "私たちの目標は金曜日までに終えることです。"
+        }
       ]
     },
     {
@@ -401,6 +689,12 @@
       "example": "The event was a success.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "The event was a success.",
+          "translation": "その催しは成功しました。"
+        }
       ]
     },
     {
@@ -409,6 +703,12 @@
       "example": "Thank you for the information.",
       "tags": [
         "名詞"
+      ],
+      "examples": [
+        {
+          "text": "Thank you for the information.",
+          "translation": "情報をありがとう"
+        }
       ]
     },
     {
@@ -417,7 +717,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Each employee receives a security badge."
+      "example": "Each employee receives a security badge.",
+      "examples": [
+        {
+          "text": "Each employee receives a security badge.",
+          "translation": "従業員はそれぞれセキュリティバッジを受け取る。"
+        }
+      ]
     },
     {
       "word": "employment",
@@ -425,7 +731,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The contract confirms the terms of employment."
+      "example": "The contract confirms the terms of employment.",
+      "examples": [
+        {
+          "text": "The contract confirms the terms of employment.",
+          "translation": "契約は雇用の条件を確認する。"
+        }
+      ]
     },
     {
       "word": "occupation",
@@ -433,7 +745,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please state your occupation on the form."
+      "example": "Please state your occupation on the form.",
+      "examples": [
+        {
+          "text": "Please state your occupation on the form.",
+          "translation": "申請書にお職業を記入してください。"
+        }
+      ]
     },
     {
       "word": "profession",
@@ -441,7 +759,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Teaching is a demanding profession."
+      "example": "Teaching is a demanding profession.",
+      "examples": [
+        {
+          "text": "Teaching is a demanding profession.",
+          "translation": "教師は要求の高い職業である。"
+        }
+      ]
     },
     {
       "word": "job",
@@ -449,7 +773,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She starts her new job on Monday."
+      "example": "She starts her new job on Monday.",
+      "examples": [
+        {
+          "text": "She starts her new job on Monday.",
+          "translation": "彼女は月曜日に新しい仕事を始める。"
+        }
+      ]
     },
     {
       "word": "role",
@@ -457,7 +787,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "My role is to coordinate the team."
+      "example": "My role is to coordinate the team.",
+      "examples": [
+        {
+          "text": "My role is to coordinate the team.",
+          "translation": "私の役割はチームを調整することです。"
+        }
+      ]
     },
     {
       "word": "responsibility",
@@ -465,7 +801,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "I take responsibility for the final report."
+      "example": "I take responsibility for the final report.",
+      "examples": [
+        {
+          "text": "I take responsibility for the final report.",
+          "translation": "最終報告書の責任は私が負う"
+        }
+      ]
     },
     {
       "word": "staff",
@@ -473,7 +815,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The staff meet every Monday morning."
+      "example": "The staff meet every Monday morning.",
+      "examples": [
+        {
+          "text": "The staff meet every Monday morning.",
+          "translation": "スタッフは毎月の朝に会議を開く。"
+        }
+      ]
     },
     {
       "word": "workforce",
@@ -481,7 +829,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company has a skilled workforce."
+      "example": "The company has a skilled workforce.",
+      "examples": [
+        {
+          "text": "The company has a skilled workforce.",
+          "translation": "会社は熟練労働者を有している。"
+        }
+      ]
     },
     {
       "word": "labor",
@@ -489,7 +843,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The project requires skilled labor."
+      "example": "The project requires skilled labor.",
+      "examples": [
+        {
+          "text": "The project requires skilled labor.",
+          "translation": "プロジェクトは熟練労働者を必要とする。"
+        }
+      ]
     },
     {
       "word": "supervisor",
@@ -497,7 +857,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please ask your supervisor for approval."
+      "example": "Please ask your supervisor for approval.",
+      "examples": [
+        {
+          "text": "Please ask your supervisor for approval.",
+          "translation": "上司に承認を頼んでください。"
+        }
+      ]
     },
     {
       "word": "executive",
@@ -505,7 +871,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The executive reviewed our proposal."
+      "example": "The executive reviewed our proposal.",
+      "examples": [
+        {
+          "text": "The executive reviewed our proposal.",
+          "translation": "幹部は我々の提案を見直した。"
+        }
+      ]
     },
     {
       "word": "chairman",
@@ -513,7 +885,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The chairman opened the meeting."
+      "example": "The chairman opened the meeting.",
+      "examples": [
+        {
+          "text": "The chairman opened the meeting.",
+          "translation": "会長が開会した。"
+        }
+      ]
     },
     {
       "word": "chairperson",
@@ -521,7 +899,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The chairperson invited questions from the audience."
+      "example": "The chairperson invited questions from the audience.",
+      "examples": [
+        {
+          "text": "The chairperson invited questions from the audience.",
+          "translation": "会長は,聴衆から質問を受けた。"
+        }
+      ]
     },
     {
       "word": "leader",
@@ -529,7 +913,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Our team leader explained the plan."
+      "example": "Our team leader explained the plan.",
+      "examples": [
+        {
+          "text": "Our team leader explained the plan.",
+          "translation": "チームリーダーが計画を説明した。"
+        }
+      ]
     },
     {
       "word": "leadership",
@@ -537,7 +927,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She took over the leadership of the department."
+      "example": "She took over the leadership of the department.",
+      "examples": [
+        {
+          "text": "She took over the leadership of the department.",
+          "translation": "彼女は部門の指導を引き継いだ。"
+        }
+      ]
     },
     {
       "word": "administration",
@@ -545,7 +941,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She works in hospital administration."
+      "example": "She works in hospital administration.",
+      "examples": [
+        {
+          "text": "She works in hospital administration.",
+          "translation": "彼女は病院の行政に従事している。"
+        }
+      ]
     },
     {
       "word": "assistant",
@@ -553,7 +955,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "My assistant will arrange the meeting."
+      "example": "My assistant will arrange the meeting.",
+      "examples": [
+        {
+          "text": "My assistant will arrange the meeting.",
+          "translation": "私の助手が会議を準備します。"
+        }
+      ]
     },
     {
       "word": "receptionist",
@@ -561,7 +969,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The receptionist called to announce our visitor."
+      "example": "The receptionist called to announce our visitor.",
+      "examples": [
+        {
+          "text": "The receptionist called to announce our visitor.",
+          "translation": "受付の人が電話して来客を告げた。"
+        }
+      ]
     },
     {
       "word": "accountant",
@@ -569,7 +983,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The accountant checked the expense report."
+      "example": "The accountant checked the expense report.",
+      "examples": [
+        {
+          "text": "The accountant checked the expense report.",
+          "translation": "会計士は経費報告書を確認しました。"
+        }
+      ]
     },
     {
       "word": "lawyer",
@@ -577,7 +997,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We asked a lawyer to review the contract."
+      "example": "We asked a lawyer to review the contract.",
+      "examples": [
+        {
+          "text": "We asked a lawyer to review the contract.",
+          "translation": "私たちは弁護士に契約書を見てもらった。"
+        }
+      ]
     },
     {
       "word": "attorney",
@@ -585,7 +1011,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Their attorney attended the meeting."
+      "example": "Their attorney attended the meeting.",
+      "examples": [
+        {
+          "text": "Their attorney attended the meeting.",
+          "translation": "彼らの弁護士は会議に出席した。"
+        }
+      ]
     },
     {
       "word": "adviser",
@@ -593,7 +1025,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The adviser suggested a simpler approach."
+      "example": "The adviser suggested a simpler approach.",
+      "examples": [
+        {
+          "text": "The adviser suggested a simpler approach.",
+          "translation": "顧問はより簡単なアプローチを提案した。"
+        }
+      ]
     },
     {
       "word": "architect",
@@ -601,7 +1039,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The architect showed us the building plans."
+      "example": "The architect showed us the building plans.",
+      "examples": [
+        {
+          "text": "The architect showed us the building plans.",
+          "translation": "建築家は私たちに建物の計画を見せた。"
+        }
+      ]
     },
     {
       "word": "developer",
@@ -609,7 +1053,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The developer fixed the software problem."
+      "example": "The developer fixed the software problem.",
+      "examples": [
+        {
+          "text": "The developer fixed the software problem.",
+          "translation": "開発者はソフトウェアの問題を修正した。"
+        }
+      ]
     },
     {
       "word": "analyst",
@@ -617,7 +1067,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The analyst studied the sales data."
+      "example": "The analyst studied the sales data.",
+      "examples": [
+        {
+          "text": "The analyst studied the sales data.",
+          "translation": "分析者は売上データを研究した。"
+        }
+      ]
     },
     {
       "word": "scientist",
@@ -625,7 +1081,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The scientist presented her findings."
+      "example": "The scientist presented her findings.",
+      "examples": [
+        {
+          "text": "The scientist presented her findings.",
+          "translation": "科学者は彼女の発見を提示した。"
+        }
+      ]
     },
     {
       "word": "technician",
@@ -633,7 +1095,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "A technician will inspect the equipment."
+      "example": "A technician will inspect the equipment.",
+      "examples": [
+        {
+          "text": "A technician will inspect the equipment.",
+          "translation": "技術者が装置を検査する。"
+        }
+      ]
     },
     {
       "word": "electrician",
@@ -641,7 +1109,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We called an electrician to check the wiring."
+      "example": "We called an electrician to check the wiring.",
+      "examples": [
+        {
+          "text": "We called an electrician to check the wiring.",
+          "translation": "配線を確認するために電気工事士を呼んだ。"
+        }
+      ]
     },
     {
       "word": "carpenter",
@@ -649,7 +1123,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The carpenter built a new reception desk."
+      "example": "The carpenter built a new reception desk.",
+      "examples": [
+        {
+          "text": "The carpenter built a new reception desk.",
+          "translation": "大工は新しい受付デスクを作った。"
+        }
+      ]
     },
     {
       "word": "freelancer",
@@ -657,7 +1137,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She works as a freelancer for several clients."
+      "example": "She works as a freelancer for several clients.",
+      "examples": [
+        {
+          "text": "She works as a freelancer for several clients.",
+          "translation": "彼女はいくつかの顧客のためにフリーランスとして働いている。"
+        }
+      ]
     },
     {
       "word": "founder",
@@ -665,7 +1151,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The founder still visits the office regularly."
+      "example": "The founder still visits the office regularly.",
+      "examples": [
+        {
+          "text": "The founder still visits the office regularly.",
+          "translation": "創業者は今でも定期的に事務所を訪れている。"
+        }
+      ]
     },
     {
       "word": "shareholder",
@@ -673,7 +1165,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Each shareholder received an annual report."
+      "example": "Each shareholder received an annual report.",
+      "examples": [
+        {
+          "text": "Each shareholder received an annual report.",
+          "translation": "各株主は年次報告書を受け取った。"
+        }
+      ]
     },
     {
       "word": "stakeholder",
@@ -681,7 +1179,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Every stakeholder should understand the proposed change."
+      "example": "Every stakeholder should understand the proposed change.",
+      "examples": [
+        {
+          "text": "Every stakeholder should understand the proposed change.",
+          "translation": "すべての関係者は提案された変更を理解する必要がある。"
+        }
+      ]
     },
     {
       "word": "partnership",
@@ -689,7 +1193,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The two firms formed a partnership."
+      "example": "The two firms formed a partnership.",
+      "examples": [
+        {
+          "text": "The two firms formed a partnership.",
+          "translation": "両社はパートナーシップを結んだ。"
+        }
+      ]
     },
     {
       "word": "enterprise",
@@ -697,7 +1207,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Starting the new enterprise required careful planning."
+      "example": "Starting the new enterprise required careful planning.",
+      "examples": [
+        {
+          "text": "Starting the new enterprise required careful planning.",
+          "translation": "新しい事業を始めるには慎重な計画が必要であった。"
+        }
+      ]
     },
     {
       "word": "agency",
@@ -705,7 +1221,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The agency handles our advertising."
+      "example": "The agency handles our advertising.",
+      "examples": [
+        {
+          "text": "The agency handles our advertising.",
+          "translation": "その代理店が私たちの広告を担当しています。"
+        }
+      ]
     },
     {
       "word": "institution",
@@ -713,7 +1235,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She works for a research institution."
+      "example": "She works for a research institution.",
+      "examples": [
+        {
+          "text": "She works for a research institution.",
+          "translation": "彼女は研究機関で働いている。"
+        }
+      ]
     },
     {
       "word": "union",
@@ -721,7 +1249,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The union requested a meeting with management."
+      "example": "The union requested a meeting with management.",
+      "examples": [
+        {
+          "text": "The union requested a meeting with management.",
+          "translation": "労働組合は経営者との会議を要求した。"
+        }
+      ]
     },
     {
       "word": "board",
@@ -729,7 +1263,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The board approved the expansion."
+      "example": "The board approved the expansion.",
+      "examples": [
+        {
+          "text": "The board approved the expansion.",
+          "translation": "委員会は拡張を承認した。"
+        }
+      ]
     },
     {
       "word": "division",
@@ -737,7 +1277,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "He works in the sales division."
+      "example": "He works in the sales division.",
+      "examples": [
+        {
+          "text": "He works in the sales division.",
+          "translation": "彼は営業部門で働いている。"
+        }
+      ]
     },
     {
       "word": "headquarters",
@@ -745,7 +1291,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company moved its headquarters last year."
+      "example": "The company moved its headquarters last year.",
+      "examples": [
+        {
+          "text": "The company moved its headquarters last year.",
+          "translation": "昨年、会社は本社を移転した。"
+        }
+      ]
     },
     {
       "word": "affiliate",
@@ -753,7 +1305,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Our overseas affiliate handles local sales."
+      "example": "Our overseas affiliate handles local sales.",
+      "examples": [
+        {
+          "text": "Our overseas affiliate handles local sales.",
+          "translation": "海外の関係会社が現地の販売を担当している。"
+        }
+      ]
     },
     {
       "word": "cooperative",
@@ -761,7 +1319,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The farmers formed a cooperative."
+      "example": "The farmers formed a cooperative.",
+      "examples": [
+        {
+          "text": "The farmers formed a cooperative.",
+          "translation": "農民は協同組合を結成した。"
+        }
+      ]
     },
     {
       "word": "charity",
@@ -769,7 +1333,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She treats people in need with charity."
+      "example": "She treats people in need with charity.",
+      "examples": [
+        {
+          "text": "She treats people in need with charity.",
+          "translation": "彼女は慈善をもって、困っている人々を扱う。"
+        }
+      ]
     },
     {
       "word": "industry",
@@ -777,7 +1347,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The industry is changing rapidly."
+      "example": "The industry is changing rapidly.",
+      "examples": [
+        {
+          "text": "The industry is changing rapidly.",
+          "translation": "産業は急速に変化している。"
+        }
+      ]
     },
     {
       "word": "service",
@@ -785,7 +1361,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We thanked her for her years of service."
+      "example": "We thanked her for her years of service.",
+      "examples": [
+        {
+          "text": "We thanked her for her years of service.",
+          "translation": "私たちは彼女の長年の奉仕に感謝した。"
+        }
+      ]
     },
     {
       "word": "construction",
@@ -793,7 +1375,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Construction of the new office begins tomorrow."
+      "example": "Construction of the new office begins tomorrow.",
+      "examples": [
+        {
+          "text": "Construction of the new office begins tomorrow.",
+          "translation": "新しい事務所の建設は明日から始まる。"
+        }
+      ]
     },
     {
       "word": "commerce",
@@ -801,7 +1389,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new port increased regional commerce."
+      "example": "The new port increased regional commerce.",
+      "examples": [
+        {
+          "text": "The new port increased regional commerce.",
+          "translation": "新しい港は地域の貿易を増やした。"
+        }
+      ]
     },
     {
       "word": "retail",
@@ -809,7 +1403,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She has ten years of experience in retail."
+      "example": "She has ten years of experience in retail.",
+      "examples": [
+        {
+          "text": "She has ten years of experience in retail.",
+          "translation": "彼女は小売業で10年の経験がある。"
+        }
+      ]
     },
     {
       "word": "distribution",
@@ -817,7 +1417,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We improved the distribution of our products."
+      "example": "We improved the distribution of our products.",
+      "examples": [
+        {
+          "text": "We improved the distribution of our products.",
+          "translation": "製品の流通を改善した。"
+        }
+      ]
     },
     {
       "word": "logistics",
@@ -825,7 +1431,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The logistics team arranged the shipment."
+      "example": "The logistics team arranged the shipment.",
+      "examples": [
+        {
+          "text": "The logistics team arranged the shipment.",
+          "translation": "物流チームが出荷を準備した。"
+        }
+      ]
     },
     {
       "word": "transportation",
@@ -833,7 +1445,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Transportation costs have increased this month."
+      "example": "Transportation costs have increased this month.",
+      "examples": [
+        {
+          "text": "Transportation costs have increased this month.",
+          "translation": "輸送費がこの月増えた。"
+        }
+      ]
     },
     {
       "word": "delivery",
@@ -841,7 +1459,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The delivery is due tomorrow morning."
+      "example": "The delivery is due tomorrow morning.",
+      "examples": [
+        {
+          "text": "The delivery is due tomorrow morning.",
+          "translation": "明日の朝に配達が予定されています。"
+        }
+      ]
     },
     {
       "word": "demand",
@@ -849,7 +1473,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Demand for this product is growing."
+      "example": "Demand for this product is growing.",
+      "examples": [
+        {
+          "text": "Demand for this product is growing.",
+          "translation": "この製品の需要は増加している。"
+        }
+      ]
     },
     {
       "word": "vendor",
@@ -857,7 +1487,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We asked the vendor for a quotation."
+      "example": "We asked the vendor for a quotation.",
+      "examples": [
+        {
+          "text": "We asked the vendor for a quotation.",
+          "translation": "私たちはベンダーに価格を尋ねた。"
+        }
+      ]
     },
     {
       "word": "producer",
@@ -865,7 +1501,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The producer supplies several local shops."
+      "example": "The producer supplies several local shops.",
+      "examples": [
+        {
+          "text": "The producer supplies several local shops.",
+          "translation": "生産者は地元の店舗に供給している。"
+        }
+      ]
     },
     {
       "word": "distributor",
@@ -873,7 +1515,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Our distributor will handle the shipment."
+      "example": "Our distributor will handle the shipment.",
+      "examples": [
+        {
+          "text": "Our distributor will handle the shipment.",
+          "translation": "配送は我々のディストリビューターが行う。"
+        }
+      ]
     },
     {
       "word": "wholesaler",
@@ -881,7 +1529,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The wholesaler sells goods to smaller shops."
+      "example": "The wholesaler sells goods to smaller shops.",
+      "examples": [
+        {
+          "text": "The wholesaler sells goods to smaller shops.",
+          "translation": "卸売業者は小さな店に商品を売る。"
+        }
+      ]
     },
     {
       "word": "consumer",
@@ -889,7 +1543,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The survey asked each consumer about quality."
+      "example": "The survey asked each consumer about quality.",
+      "examples": [
+        {
+          "text": "The survey asked each consumer about quality.",
+          "translation": "その調査では、消費者一人ひとりに品質について尋ねました。"
+        }
+      ]
     },
     {
       "word": "clientele",
@@ -897,7 +1557,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The cafe has a loyal clientele."
+      "example": "The cafe has a loyal clientele.",
+      "examples": [
+        {
+          "text": "The cafe has a loyal clientele.",
+          "translation": "そのカフェには忠実な顧客がいる。"
+        }
+      ]
     },
     {
       "word": "seller",
@@ -905,7 +1571,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The seller agreed to a lower price."
+      "example": "The seller agreed to a lower price.",
+      "examples": [
+        {
+          "text": "The seller agreed to a lower price.",
+          "translation": "売り手は低価格に同意した。"
+        }
+      ]
     },
     {
       "word": "visitor",
@@ -913,7 +1585,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please give each visitor a name badge."
+      "example": "Please give each visitor a name badge.",
+      "examples": [
+        {
+          "text": "Please give each visitor a name badge.",
+          "translation": "訪問者に名前のバッジをお渡しください。"
+        }
+      ]
     },
     {
       "word": "guest",
@@ -921,7 +1599,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Our guest arrived before the meeting."
+      "example": "Our guest arrived before the meeting.",
+      "examples": [
+        {
+          "text": "Our guest arrived before the meeting.",
+          "translation": "私たちのゲストは会議の前に到着した。"
+        }
+      ]
     },
     {
       "word": "membership",
@@ -929,7 +1613,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Your membership expires next month."
+      "example": "Your membership expires next month.",
+      "examples": [
+        {
+          "text": "Your membership expires next month.",
+          "translation": "会員資格は来月に期限切れです。"
+        }
+      ]
     },
     {
       "word": "agent",
@@ -937,7 +1627,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Our agent will contact you tomorrow."
+      "example": "Our agent will contact you tomorrow.",
+      "examples": [
+        {
+          "text": "Our agent will contact you tomorrow.",
+          "translation": "明日 エージェントが連絡します"
+        }
+      ]
     },
     {
       "word": "dealer",
@@ -945,7 +1641,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The dealer showed us several office printers."
+      "example": "The dealer showed us several office printers.",
+      "examples": [
+        {
+          "text": "The dealer showed us several office printers.",
+          "translation": "ディーラーは私たちにいくつかのオフィスプリンタを見せた。"
+        }
+      ]
     },
     {
       "word": "officer",
@@ -953,7 +1655,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company's financial officer reviewed the budget."
+      "example": "The company's financial officer reviewed the budget.",
+      "examples": [
+        {
+          "text": "The company's financial officer reviewed the budget.",
+          "translation": "会社の財務官が予算を見直した。"
+        }
+      ]
     },
     {
       "word": "authority",
@@ -961,7 +1669,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Only the manager has authority to approve this."
+      "example": "Only the manager has authority to approve this.",
+      "examples": [
+        {
+          "text": "Only the manager has authority to approve this.",
+          "translation": "これを承認する権限はマネージャーだけにある。"
+        }
+      ]
     },
     {
       "word": "promotion",
@@ -969,7 +1683,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She received a promotion last month."
+      "example": "She received a promotion last month.",
+      "examples": [
+        {
+          "text": "She received a promotion last month.",
+          "translation": "彼女は先月昇進した。"
+        }
+      ]
     },
     {
       "word": "transfer",
@@ -977,7 +1697,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "He requested a transfer to another department."
+      "example": "He requested a transfer to another department.",
+      "examples": [
+        {
+          "text": "He requested a transfer to another department.",
+          "translation": "彼は他の部門への転勤を要求した。"
+        }
+      ]
     },
     {
       "word": "retirement",
@@ -985,7 +1711,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We held a party for her retirement."
+      "example": "We held a party for her retirement.",
+      "examples": [
+        {
+          "text": "We held a party for her retirement.",
+          "translation": "彼女の引退パーティーを開いた。"
+        }
+      ]
     },
     {
       "word": "redundancy",
@@ -993,7 +1725,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The closure put several jobs at risk of redundancy."
+      "example": "The closure put several jobs at risk of redundancy.",
+      "examples": [
+        {
+          "text": "The closure put several jobs at risk of redundancy.",
+          "translation": "その閉鎖によって、何人かが人員整理の対象になる恐れが生じました。"
+        }
+      ]
     },
     {
       "word": "recruitment",
@@ -1001,7 +1739,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Recruitment for the new team starts next week."
+      "example": "Recruitment for the new team starts next week.",
+      "examples": [
+        {
+          "text": "Recruitment for the new team starts next week.",
+          "translation": "新しいチームの募集は来週から始まる。"
+        }
+      ]
     },
     {
       "word": "applicant",
@@ -1009,7 +1753,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Each applicant must submit a resume."
+      "example": "Each applicant must submit a resume.",
+      "examples": [
+        {
+          "text": "Each applicant must submit a resume.",
+          "translation": "各申請者は履歴書を提出する必要がある。"
+        }
+      ]
     },
     {
       "word": "application",
@@ -1017,7 +1767,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We received your application yesterday."
+      "example": "We received your application yesterday.",
+      "examples": [
+        {
+          "text": "We received your application yesterday.",
+          "translation": "昨日、あなたの申請書を受け取った。"
+        }
+      ]
     },
     {
       "word": "qualification",
@@ -1025,7 +1781,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The job requires a teaching qualification."
+      "example": "The job requires a teaching qualification.",
+      "examples": [
+        {
+          "text": "The job requires a teaching qualification.",
+          "translation": "その仕事には教員資格が必要だ。"
+        }
+      ]
     },
     {
       "word": "diploma",
@@ -1033,7 +1795,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please attach a copy of your diploma."
+      "example": "Please attach a copy of your diploma.",
+      "examples": [
+        {
+          "text": "Please attach a copy of your diploma.",
+          "translation": "卒業証書のコピーを添付してください。"
+        }
+      ]
     },
     {
       "word": "education",
@@ -1041,7 +1809,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Her education prepared her for the role."
+      "example": "Her education prepared her for the role.",
+      "examples": [
+        {
+          "text": "Her education prepared her for the role.",
+          "translation": "彼女の教育は彼女を役に立たせた。"
+        }
+      ]
     },
     {
       "word": "internship",
@@ -1049,7 +1823,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "He completed an internship at our office."
+      "example": "He completed an internship at our office.",
+      "examples": [
+        {
+          "text": "He completed an internship at our office.",
+          "translation": "彼は私たちの事務所でインターンを終えた。"
+        }
+      ]
     },
     {
       "word": "experience",
@@ -1057,7 +1837,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Do you have experience in customer service?"
+      "example": "Do you have experience in customer service?",
+      "examples": [
+        {
+          "text": "Do you have experience in customer service?",
+          "translation": "顧客サービスの経験はありますか。"
+        }
+      ]
     },
     {
       "word": "skill",
@@ -1065,7 +1851,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Clear writing is an important skill."
+      "example": "Clear writing is an important skill.",
+      "examples": [
+        {
+          "text": "Clear writing is an important skill.",
+          "translation": "明瞭な書き方は重要な技能である。"
+        }
+      ]
     },
     {
       "word": "competence",
@@ -1073,7 +1865,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The interview will assess your technical competence."
+      "example": "The interview will assess your technical competence.",
+      "examples": [
+        {
+          "text": "The interview will assess your technical competence.",
+          "translation": "面接はあなたの技術的能力を評価する。"
+        }
+      ]
     },
     {
       "word": "talent",
@@ -1081,7 +1879,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She has a talent for solving problems."
+      "example": "She has a talent for solving problems.",
+      "examples": [
+        {
+          "text": "She has a talent for solving problems.",
+          "translation": "彼女は問題解決の才能がある。"
+        }
+      ]
     },
     {
       "word": "performance",
@@ -1089,7 +1893,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We review employee performance every year."
+      "example": "We review employee performance every year.",
+      "examples": [
+        {
+          "text": "We review employee performance every year.",
+          "translation": "毎年社員の業績を見直す。"
+        }
+      ]
     },
     {
       "word": "efficiency",
@@ -1097,7 +1907,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new process improved efficiency."
+      "example": "The new process improved efficiency.",
+      "examples": [
+        {
+          "text": "The new process improved efficiency.",
+          "translation": "新しい工程によって効率が向上しました。"
+        }
+      ]
     },
     {
       "word": "quantity",
@@ -1105,7 +1921,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please confirm the quantity you need."
+      "example": "Please confirm the quantity you need.",
+      "examples": [
+        {
+          "text": "Please confirm the quantity you need.",
+          "translation": "必要な量を確認してください。"
+        }
+      ]
     },
     {
       "word": "standard",
@@ -1113,7 +1935,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Every product must meet our quality standard."
+      "example": "Every product must meet our quality standard.",
+      "examples": [
+        {
+          "text": "Every product must meet our quality standard.",
+          "translation": "すべての製品は我々の品質基準に合致する必要がある。"
+        }
+      ]
     },
     {
       "word": "specification",
@@ -1121,7 +1949,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The product meets the customer's specification."
+      "example": "The product meets the customer's specification.",
+      "examples": [
+        {
+          "text": "The product meets the customer's specification.",
+          "translation": "製品は顧客の仕様に合致した。"
+        }
+      ]
     },
     {
       "word": "objective",
@@ -1129,7 +1963,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Our objective is to reduce waiting times."
+      "example": "Our objective is to reduce waiting times.",
+      "examples": [
+        {
+          "text": "Our objective is to reduce waiting times.",
+          "translation": "目標は待ち時間を短縮することである。"
+        }
+      ]
     },
     {
       "word": "timetable",
@@ -1137,7 +1977,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The training timetable is on the noticeboard."
+      "example": "The training timetable is on the noticeboard.",
+      "examples": [
+        {
+          "text": "The training timetable is on the noticeboard.",
+          "translation": "練習時間表は掲示板にある。"
+        }
+      ]
     },
     {
       "word": "calendar",
@@ -1145,7 +1991,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please add the meeting to your calendar."
+      "example": "Please add the meeting to your calendar.",
+      "examples": [
+        {
+          "text": "Please add the meeting to your calendar.",
+          "translation": "この会議をカレンダーに追加してください。"
+        }
+      ]
     },
     {
       "word": "urgency",
@@ -1153,7 +2005,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The manager emphasized the urgency of the request."
+      "example": "The manager emphasized the urgency of the request.",
+      "examples": [
+        {
+          "text": "The manager emphasized the urgency of the request.",
+          "translation": "管理者は要請の緊急性を強調した。"
+        }
+      ]
     },
     {
       "word": "assignment",
@@ -1161,7 +2019,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "My first assignment is to review the records."
+      "example": "My first assignment is to review the records.",
+      "examples": [
+        {
+          "text": "My first assignment is to review the records.",
+          "translation": "私の最初の任務は 記録を見直すことです"
+        }
+      ]
     },
     {
       "word": "initiative",
@@ -1169,7 +2033,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She showed initiative by proposing a solution."
+      "example": "She showed initiative by proposing a solution.",
+      "examples": [
+        {
+          "text": "She showed initiative by proposing a solution.",
+          "translation": "彼女は解決策を提案して主導権を示した。"
+        }
+      ]
     },
     {
       "word": "operation",
@@ -1177,7 +2047,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The manual explains the machine's operation."
+      "example": "The manual explains the machine's operation.",
+      "examples": [
+        {
+          "text": "The manual explains the machine's operation.",
+          "translation": "マニュアルは機械の操作を説明する。"
+        }
+      ]
     },
     {
       "word": "process",
@@ -1185,7 +2061,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We need to simplify the approval process."
+      "example": "We need to simplify the approval process.",
+      "examples": [
+        {
+          "text": "We need to simplify the approval process.",
+          "translation": "認可プロセスを簡素化する必要がある。"
+        }
+      ]
     },
     {
       "word": "system",
@@ -1193,7 +2075,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new system stores customer records securely."
+      "example": "The new system stores customer records securely.",
+      "examples": [
+        {
+          "text": "The new system stores customer records securely.",
+          "translation": "顧客記録を安全に保存する新しいシステムである。"
+        }
+      ]
     },
     {
       "word": "technique",
@@ -1201,7 +2089,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This technique saves time during assembly."
+      "example": "This technique saves time during assembly.",
+      "examples": [
+        {
+          "text": "This technique saves time during assembly.",
+          "translation": "この技法を使うと組み立ての時間を節約できます。"
+        }
+      ]
     },
     {
       "word": "strategy",
@@ -1209,7 +2103,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We discussed our strategy for next year."
+      "example": "We discussed our strategy for next year.",
+      "examples": [
+        {
+          "text": "We discussed our strategy for next year.",
+          "translation": "来年の戦略を議論した。"
+        }
+      ]
     },
     {
       "word": "guideline",
@@ -1217,7 +2117,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This guideline explains how to submit expenses."
+      "example": "This guideline explains how to submit expenses.",
+      "examples": [
+        {
+          "text": "This guideline explains how to submit expenses.",
+          "translation": "この指針には、経費を申請する方法が説明されています。"
+        }
+      ]
     },
     {
       "word": "rule",
@@ -1225,7 +2131,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Everyone must follow the safety rule."
+      "example": "Everyone must follow the safety rule.",
+      "examples": [
+        {
+          "text": "Everyone must follow the safety rule.",
+          "translation": "みんな安全規則に従わなければならない。"
+        }
+      ]
     },
     {
       "word": "manual",
@@ -1233,7 +2145,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please read the manual before using the equipment."
+      "example": "Please read the manual before using the equipment.",
+      "examples": [
+        {
+          "text": "Please read the manual before using the equipment.",
+          "translation": "使用前にマニュアルを読んでください。"
+        }
+      ]
     },
     {
       "word": "protocol",
@@ -1241,7 +2159,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We followed the agreed protocol."
+      "example": "We followed the agreed protocol.",
+      "examples": [
+        {
+          "text": "We followed the agreed protocol.",
+          "translation": "合意されたプロトコールに従った。"
+        }
+      ]
     },
     {
       "word": "governance",
@@ -1249,7 +2173,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The report examines corporate governance."
+      "example": "The report examines corporate governance.",
+      "examples": [
+        {
+          "text": "The report examines corporate governance.",
+          "translation": "報告書は,企業のガバナンスについて検討した。"
+        }
+      ]
     },
     {
       "word": "ethics",
@@ -1257,7 +2187,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She teaches a course in business ethics."
+      "example": "She teaches a course in business ethics.",
+      "examples": [
+        {
+          "text": "She teaches a course in business ethics.",
+          "translation": "彼女はビジネス倫理のコースを教えている。"
+        }
+      ]
     },
     {
       "word": "confidentiality",
@@ -1265,7 +2201,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The agreement protects client confidentiality."
+      "example": "The agreement protects client confidentiality.",
+      "examples": [
+        {
+          "text": "The agreement protects client confidentiality.",
+          "translation": "契約はクライアントの機密を守る"
+        }
+      ]
     },
     {
       "word": "security",
@@ -1273,7 +2215,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Better lighting improves security around the office."
+      "example": "Better lighting improves security around the office.",
+      "examples": [
+        {
+          "text": "Better lighting improves security around the office.",
+          "translation": "良い照明はオフィスの周りの安全性を向上させる。"
+        }
+      ]
     },
     {
       "word": "risk",
@@ -1281,7 +2229,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We need to assess the risk first."
+      "example": "We need to assess the risk first.",
+      "examples": [
+        {
+          "text": "We need to assess the risk first.",
+          "translation": "まずリスクを評価する必要がある"
+        }
+      ]
     },
     {
       "word": "insurance",
@@ -1289,7 +2243,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company provides travel insurance."
+      "example": "The company provides travel insurance.",
+      "examples": [
+        {
+          "text": "The company provides travel insurance.",
+          "translation": "会社は旅行保険を提供している。"
+        }
+      ]
     },
     {
       "word": "warranty",
@@ -1297,7 +2257,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The printer comes with a two-year warranty."
+      "example": "The printer comes with a two-year warranty.",
+      "examples": [
+        {
+          "text": "The printer comes with a two-year warranty.",
+          "translation": "プリンタは2年間の保証がついています。"
+        }
+      ]
     },
     {
       "word": "liability",
@@ -1305,7 +2271,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The contract describes each party's liability."
+      "example": "The contract describes each party's liability.",
+      "examples": [
+        {
+          "text": "The contract describes each party's liability.",
+          "translation": "契約は各当事者の責任を記述する。"
+        }
+      ]
     },
     {
       "word": "contract",
@@ -1313,7 +2285,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Both companies signed the contract."
+      "example": "Both companies signed the contract.",
+      "examples": [
+        {
+          "text": "Both companies signed the contract.",
+          "translation": "両社は契約にサインした。"
+        }
+      ]
     },
     {
       "word": "arrangement",
@@ -1321,7 +2299,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We confirmed the delivery arrangement in writing."
+      "example": "We confirmed the delivery arrangement in writing.",
+      "examples": [
+        {
+          "text": "We confirmed the delivery arrangement in writing.",
+          "translation": "書面で配達の取り決めを確認した。"
+        }
+      ]
     },
     {
       "word": "term",
@@ -1329,7 +2313,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The contract term is twelve months."
+      "example": "The contract term is twelve months.",
+      "examples": [
+        {
+          "text": "The contract term is twelve months.",
+          "translation": "契約期間は12か月。"
+        }
+      ]
     },
     {
       "word": "signature",
@@ -1337,7 +2327,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Your signature is required on the last page."
+      "example": "Your signature is required on the last page.",
+      "examples": [
+        {
+          "text": "Your signature is required on the last page.",
+          "translation": "最後のページに署名が必要です。"
+        }
+      ]
     },
     {
       "word": "permission",
@@ -1345,7 +2341,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "You need permission to enter this room."
+      "example": "You need permission to enter this room.",
+      "examples": [
+        {
+          "text": "You need permission to enter this room.",
+          "translation": "ここに入るには許可が必要だ"
+        }
+      ]
     },
     {
       "word": "approval",
@@ -1353,7 +2355,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The purchase is waiting for approval."
+      "example": "The purchase is waiting for approval.",
+      "examples": [
+        {
+          "text": "The purchase is waiting for approval.",
+          "translation": "買い取りは承認を待っている。"
+        }
+      ]
     },
     {
       "word": "license",
@@ -1361,7 +2369,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company renewed its software license."
+      "example": "The company renewed its software license.",
+      "examples": [
+        {
+          "text": "The company renewed its software license.",
+          "translation": "ソフトウェアライセンスを更新した。"
+        }
+      ]
     },
     {
       "word": "trademark",
@@ -1369,7 +2383,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The logo is a registered trademark."
+      "example": "The logo is a registered trademark.",
+      "examples": [
+        {
+          "text": "The logo is a registered trademark.",
+          "translation": "ロゴは登録商標である。"
+        }
+      ]
     },
     {
       "word": "ownership",
@@ -1377,7 +2397,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Ownership of the building changed last year."
+      "example": "Ownership of the building changed last year.",
+      "examples": [
+        {
+          "text": "Ownership of the building changed last year.",
+          "translation": "昨年、建物の所有者が変わった。"
+        }
+      ]
     },
     {
       "word": "receipt",
@@ -1385,7 +2411,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please keep the receipt for your expenses."
+      "example": "Please keep the receipt for your expenses.",
+      "examples": [
+        {
+          "text": "Please keep the receipt for your expenses.",
+          "translation": "経費の領収書は保管しておいてください。"
+        }
+      ]
     },
     {
       "word": "quotation",
@@ -1393,7 +2425,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We requested a quotation for the repairs."
+      "example": "We requested a quotation for the repairs.",
+      "examples": [
+        {
+          "text": "We requested a quotation for the repairs.",
+          "translation": "修理の見積もりを求めた。"
+        }
+      ]
     },
     {
       "word": "estimate",
@@ -1401,7 +2439,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The estimate includes materials and labor."
+      "example": "The estimate includes materials and labor.",
+      "examples": [
+        {
+          "text": "The estimate includes materials and labor.",
+          "translation": "その見積もりには材料費と人件費が含まれています。"
+        }
+      ]
     },
     {
       "word": "bid",
@@ -1409,7 +2453,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The firm submitted a bid for the project."
+      "example": "The firm submitted a bid for the project.",
+      "examples": [
+        {
+          "text": "The firm submitted a bid for the project.",
+          "translation": "その会社は、その事業への入札書を提出しました。"
+        }
+      ]
     },
     {
       "word": "order",
@@ -1417,7 +2467,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Your order will be ready on Friday."
+      "example": "Your order will be ready on Friday.",
+      "examples": [
+        {
+          "text": "Your order will be ready on Friday.",
+          "translation": "ご注文の品は金曜日に用意できます。"
+        }
+      ]
     },
     {
       "word": "procurement",
@@ -1425,7 +2481,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The procurement team compares supplier prices."
+      "example": "The procurement team compares supplier prices.",
+      "examples": [
+        {
+          "text": "The procurement team compares supplier prices.",
+          "translation": "調達チームは供給者の価格を比較する。"
+        }
+      ]
     },
     {
       "word": "pay",
@@ -1433,7 +2495,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new role offers higher pay."
+      "example": "The new role offers higher pay.",
+      "examples": [
+        {
+          "text": "The new role offers higher pay.",
+          "translation": "新しい役割は高い給与を提供する。"
+        }
+      ]
     },
     {
       "word": "income",
@@ -1441,7 +2509,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Her monthly income covers her living expenses."
+      "example": "Her monthly income covers her living expenses.",
+      "examples": [
+        {
+          "text": "Her monthly income covers her living expenses.",
+          "translation": "彼女の月収は生活費を賄える。"
+        }
+      ]
     },
     {
       "word": "earnings",
@@ -1449,7 +2523,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company reported higher earnings this year."
+      "example": "The company reported higher earnings this year.",
+      "examples": [
+        {
+          "text": "The company reported higher earnings this year.",
+          "translation": "会社は今年の収益を高めたと報告した。"
+        }
+      ]
     },
     {
       "word": "profit",
@@ -1457,7 +2537,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The shop made a small profit."
+      "example": "The shop made a small profit.",
+      "examples": [
+        {
+          "text": "The shop made a small profit.",
+          "translation": "その店は少し利益を上げた。"
+        }
+      ]
     },
     {
       "word": "expense",
@@ -1465,7 +2551,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Travel was our largest expense this month."
+      "example": "Travel was our largest expense this month.",
+      "examples": [
+        {
+          "text": "Travel was our largest expense this month.",
+          "translation": "旅行はこの月の私たちの最大の支出だった。"
+        }
+      ]
     },
     {
       "word": "overhead",
@@ -1473,7 +2565,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Rent is a major overhead for the business."
+      "example": "Rent is a major overhead for the business.",
+      "examples": [
+        {
+          "text": "Rent is a major overhead for the business.",
+          "translation": "賃料は事業の主要なオーバーヘッドである。"
+        }
+      ]
     },
     {
       "word": "investment",
@@ -1481,7 +2579,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new equipment requires a large investment."
+      "example": "The new equipment requires a large investment.",
+      "examples": [
+        {
+          "text": "The new equipment requires a large investment.",
+          "translation": "新しい装置は大きな投資を必要とする。"
+        }
+      ]
     },
     {
       "word": "asset",
@@ -1489,7 +2593,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The building is the company's largest asset."
+      "example": "The building is the company's largest asset.",
+      "examples": [
+        {
+          "text": "The building is the company's largest asset.",
+          "translation": "建物は会社の最大の資産です。"
+        }
+      ]
     },
     {
       "word": "equity",
@@ -1497,7 +2607,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The founders hold most of the company's equity."
+      "example": "The founders hold most of the company's equity.",
+      "examples": [
+        {
+          "text": "The founders hold most of the company's equity.",
+          "translation": "創業者は会社の株式の大半を保有している。"
+        }
+      ]
     },
     {
       "word": "bond",
@@ -1505,7 +2621,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company issued a bond to raise funds."
+      "example": "The company issued a bond to raise funds.",
+      "examples": [
+        {
+          "text": "The company issued a bond to raise funds.",
+          "translation": "会社は資金調達のために債券を発行した。"
+        }
+      ]
     },
     {
       "word": "interest",
@@ -1513,7 +2635,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The bank pays interest on this account."
+      "example": "The bank pays interest on this account.",
+      "examples": [
+        {
+          "text": "The bank pays interest on this account.",
+          "translation": "銀行はこの口座に利子を払う。"
+        }
+      ]
     },
     {
       "word": "debt",
@@ -1521,7 +2649,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company plans to reduce its debt."
+      "example": "The company plans to reduce its debt.",
+      "examples": [
+        {
+          "text": "The company plans to reduce its debt.",
+          "translation": "会社は負債を減らす計画を立てている。"
+        }
+      ]
     },
     {
       "word": "debit",
@@ -1529,7 +2663,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Record the payment as a debit."
+      "example": "Record the payment as a debit.",
+      "examples": [
+        {
+          "text": "Record the payment as a debit.",
+          "translation": "その支払いを借方に記入してください。"
+        }
+      ]
     },
     {
       "word": "bank",
@@ -1537,7 +2677,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The bank opens at nine."
+      "example": "The bank opens at nine.",
+      "examples": [
+        {
+          "text": "The bank opens at nine.",
+          "translation": "銀行は9時に開店する。"
+        }
+      ]
     },
     {
       "word": "banking",
@@ -1545,7 +2691,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She has worked in banking for years."
+      "example": "She has worked in banking for years.",
+      "examples": [
+        {
+          "text": "She has worked in banking for years.",
+          "translation": "彼女は何年も銀行で働いている。"
+        }
+      ]
     },
     {
       "word": "cash",
@@ -1553,7 +2705,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We keep a small amount of cash here."
+      "example": "We keep a small amount of cash here.",
+      "examples": [
+        {
+          "text": "We keep a small amount of cash here.",
+          "translation": "少額の現金をここに保管しています。"
+        }
+      ]
     },
     {
       "word": "deposit",
@@ -1561,7 +2719,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "I made a deposit into the business account."
+      "example": "I made a deposit into the business account.",
+      "examples": [
+        {
+          "text": "I made a deposit into the business account.",
+          "translation": "私は事業用口座に入金しました。"
+        }
+      ]
     },
     {
       "word": "balance",
@@ -1569,7 +2733,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please check the account balance."
+      "example": "Please check the account balance.",
+      "examples": [
+        {
+          "text": "Please check the account balance.",
+          "translation": "口座残高を確認してください。"
+        }
+      ]
     },
     {
       "word": "accounting",
@@ -1577,7 +2747,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She is responsible for accounting."
+      "example": "She is responsible for accounting.",
+      "examples": [
+        {
+          "text": "She is responsible for accounting.",
+          "translation": "彼女は会計を担当している。"
+        }
+      ]
     },
     {
       "word": "audit",
@@ -1585,7 +2761,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The annual audit begins next week."
+      "example": "The annual audit begins next week.",
+      "examples": [
+        {
+          "text": "The annual audit begins next week.",
+          "translation": "来週から年次監査が始まる。"
+        }
+      ]
     },
     {
       "word": "taxation",
@@ -1593,7 +2775,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The course covers international taxation."
+      "example": "The course covers international taxation.",
+      "examples": [
+        {
+          "text": "The course covers international taxation.",
+          "translation": "その講座では国際的な課税制度を扱います。"
+        }
+      ]
     },
     {
       "word": "tariff",
@@ -1601,7 +2789,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The tariff increases the cost of imported goods."
+      "example": "The tariff increases the cost of imported goods.",
+      "examples": [
+        {
+          "text": "The tariff increases the cost of imported goods.",
+          "translation": "関税は輸入品のコストを上げる。"
+        }
+      ]
     },
     {
       "word": "fee",
@@ -1609,7 +2803,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The consultation fee is listed on the website."
+      "example": "The consultation fee is listed on the website.",
+      "examples": [
+        {
+          "text": "The consultation fee is listed on the website.",
+          "translation": "相談料はウェブサイトに掲載されている。"
+        }
+      ]
     },
     {
       "word": "commission",
@@ -1617,7 +2817,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The agent receives a commission on each sale."
+      "example": "The agent receives a commission on each sale.",
+      "examples": [
+        {
+          "text": "The agent receives a commission on each sale.",
+          "translation": "代理人は売上の毎に手数料を受け取る。"
+        }
+      ]
     },
     {
       "word": "benefit",
@@ -1625,7 +2831,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Health insurance is an employee benefit."
+      "example": "Health insurance is an employee benefit.",
+      "examples": [
+        {
+          "text": "Health insurance is an employee benefit.",
+          "translation": "健康保険は従業員の福祉である。"
+        }
+      ]
     },
     {
       "word": "incentive",
@@ -1633,7 +2845,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The bonus provides an incentive to improve."
+      "example": "The bonus provides an incentive to improve.",
+      "examples": [
+        {
+          "text": "The bonus provides an incentive to improve.",
+          "translation": "ボーナスは改善に対するインセンティブを与える。"
+        }
+      ]
     },
     {
       "word": "allowance",
@@ -1641,7 +2859,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Employees receive a travel allowance."
+      "example": "Employees receive a travel allowance.",
+      "examples": [
+        {
+          "text": "Employees receive a travel allowance.",
+          "translation": "従業員は出張料を受け取る。"
+        }
+      ]
     },
     {
       "word": "premium",
@@ -1649,7 +2873,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The insurance premium is paid annually."
+      "example": "The insurance premium is paid annually.",
+      "examples": [
+        {
+          "text": "The insurance premium is paid annually.",
+          "translation": "保険料は年に一度支払われる。"
+        }
+      ]
     },
     {
       "word": "grant",
@@ -1657,7 +2887,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The research team received a grant."
+      "example": "The research team received a grant.",
+      "examples": [
+        {
+          "text": "The research team received a grant.",
+          "translation": "その研究チームは助成金を受け取りました。"
+        }
+      ]
     },
     {
       "word": "contribution",
@@ -1665,7 +2901,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We appreciate your contribution to the project."
+      "example": "We appreciate your contribution to the project.",
+      "examples": [
+        {
+          "text": "We appreciate your contribution to the project.",
+          "translation": "プロジェクトへの貢献に感謝します。"
+        }
+      ]
     },
     {
       "word": "refund",
@@ -1673,7 +2915,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We will refund the full purchase price."
+      "example": "We will refund the full purchase price.",
+      "examples": [
+        {
+          "text": "We will refund the full purchase price.",
+          "translation": "購入金額を全額返金します。"
+        }
+      ]
     },
     {
       "word": "rebate",
@@ -1681,7 +2929,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The supplier offered a rebate on large orders."
+      "example": "The supplier offered a rebate on large orders.",
+      "examples": [
+        {
+          "text": "The supplier offered a rebate on large orders.",
+          "translation": "供給者は大量注文に対して割引を提案した。"
+        }
+      ]
     },
     {
       "word": "surcharge",
@@ -1689,7 +2943,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "There is a surcharge for express delivery."
+      "example": "There is a surcharge for express delivery.",
+      "examples": [
+        {
+          "text": "There is a surcharge for express delivery.",
+          "translation": "特急配達は追加料金がかかります。"
+        }
+      ]
     },
     {
       "word": "fine",
@@ -1697,7 +2957,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company paid a fine for the violation."
+      "example": "The company paid a fine for the violation.",
+      "examples": [
+        {
+          "text": "The company paid a fine for the violation.",
+          "translation": "会社は違反の罰金を支払った。"
+        }
+      ]
     },
     {
       "word": "insolvency",
@@ -1705,7 +2971,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The report warned of possible insolvency."
+      "example": "The report warned of possible insolvency.",
+      "examples": [
+        {
+          "text": "The report warned of possible insolvency.",
+          "translation": "報告書は破産の可能性を警告した。"
+        }
+      ]
     },
     {
       "word": "acquisition",
@@ -1713,7 +2985,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The acquisition of new equipment took months."
+      "example": "The acquisition of new equipment took months.",
+      "examples": [
+        {
+          "text": "The acquisition of new equipment took months.",
+          "translation": "新しい装置の取得には数か月を要した。"
+        }
+      ]
     },
     {
       "word": "negotiation",
@@ -1721,7 +2999,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The price is still under negotiation."
+      "example": "The price is still under negotiation.",
+      "examples": [
+        {
+          "text": "The price is still under negotiation.",
+          "translation": "価格はまだ交渉中です。"
+        }
+      ]
     },
     {
       "word": "settlement",
@@ -1729,7 +3013,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The two parties reached a settlement."
+      "example": "The two parties reached a settlement.",
+      "examples": [
+        {
+          "text": "The two parties reached a settlement.",
+          "translation": "両者は和解に至った。"
+        }
+      ]
     },
     {
       "word": "arbitration",
@@ -1737,7 +3027,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "They agreed to resolve the dispute through arbitration."
+      "example": "They agreed to resolve the dispute through arbitration.",
+      "examples": [
+        {
+          "text": "They agreed to resolve the dispute through arbitration.",
+          "translation": "彼らは仲裁を通じて争いを解決することに同意した。"
+        }
+      ]
     },
     {
       "word": "litigation",
@@ -1745,7 +3041,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company wants to avoid lengthy litigation."
+      "example": "The company wants to avoid lengthy litigation.",
+      "examples": [
+        {
+          "text": "The company wants to avoid lengthy litigation.",
+          "translation": "会社は長期の訴訟を避けたい。"
+        }
+      ]
     },
     {
       "word": "judgment",
@@ -1753,7 +3055,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The court issued its judgment yesterday."
+      "example": "The court issued its judgment yesterday.",
+      "examples": [
+        {
+          "text": "The court issued its judgment yesterday.",
+          "translation": "裁判所は昨日判決を下した。"
+        }
+      ]
     },
     {
       "word": "claim",
@@ -1761,7 +3069,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please submit your expense claim this week."
+      "example": "Please submit your expense claim this week.",
+      "examples": [
+        {
+          "text": "Please submit your expense claim this week.",
+          "translation": "今週中に経費の精算申請を提出してください。"
+        }
+      ]
     },
     {
       "word": "dispute",
@@ -1769,7 +3083,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The dispute concerns the delivery date."
+      "example": "The dispute concerns the delivery date.",
+      "examples": [
+        {
+          "text": "The dispute concerns the delivery date.",
+          "translation": "争いは納期に関するものである。"
+        }
+      ]
     },
     {
       "word": "violation",
@@ -1777,7 +3097,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The inspection found a safety violation."
+      "example": "The inspection found a safety violation.",
+      "examples": [
+        {
+          "text": "The inspection found a safety violation.",
+          "translation": "検査で安全違反が発見された。"
+        }
+      ]
     },
     {
       "word": "fraud",
@@ -1785,7 +3111,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The audit uncovered evidence of fraud."
+      "example": "The audit uncovered evidence of fraud.",
+      "examples": [
+        {
+          "text": "The audit uncovered evidence of fraud.",
+          "translation": "監査の結果、不正の証拠が発見された。"
+        }
+      ]
     },
     {
       "word": "bribery",
@@ -1793,7 +3125,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The policy strictly prohibits bribery."
+      "example": "The policy strictly prohibits bribery.",
+      "examples": [
+        {
+          "text": "The policy strictly prohibits bribery.",
+          "translation": "その方針は、贈収賄を厳しく禁じています。"
+        }
+      ]
     },
     {
       "word": "misconduct",
@@ -1801,7 +3139,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company investigated the allegation of misconduct."
+      "example": "The company investigated the allegation of misconduct.",
+      "examples": [
+        {
+          "text": "The company investigated the allegation of misconduct.",
+          "translation": "会社は不正行為の疑いを調査した。"
+        }
+      ]
     },
     {
       "word": "competition",
@@ -1809,7 +3153,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Competition in this market is intense."
+      "example": "Competition in this market is intense.",
+      "examples": [
+        {
+          "text": "Competition in this market is intense.",
+          "translation": "この市場の競争は激しい。"
+        }
+      ]
     },
     {
       "word": "competitive",
@@ -1817,7 +3167,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The firm offers competitive prices."
+      "example": "The firm offers competitive prices.",
+      "examples": [
+        {
+          "text": "The firm offers competitive prices.",
+          "translation": "会社は競争力のある価格を提供している。"
+        }
+      ]
     },
     {
       "word": "market",
@@ -1825,7 +3181,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We are entering a new market."
+      "example": "We are entering a new market.",
+      "examples": [
+        {
+          "text": "We are entering a new market.",
+          "translation": "私たちは新しい市場に入りつつある。"
+        }
+      ]
     },
     {
       "word": "marketplace",
@@ -1833,7 +3195,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Local sellers gathered in the marketplace."
+      "example": "Local sellers gathered in the marketplace.",
+      "examples": [
+        {
+          "text": "Local sellers gathered in the marketplace.",
+          "translation": "地元の売人が市場に集まった。"
+        }
+      ]
     },
     {
       "word": "advertising",
@@ -1841,7 +3209,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We increased our advertising budget."
+      "example": "We increased our advertising budget.",
+      "examples": [
+        {
+          "text": "We increased our advertising budget.",
+          "translation": "広告費を増やした"
+        }
+      ]
     },
     {
       "word": "publicity",
@@ -1849,7 +3223,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The event generated positive publicity."
+      "example": "The event generated positive publicity.",
+      "examples": [
+        {
+          "text": "The event generated positive publicity.",
+          "translation": "これは良い宣伝を生み出した。"
+        }
+      ]
     },
     {
       "word": "brand",
@@ -1857,7 +3237,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Customers recognize our brand immediately."
+      "example": "Customers recognize our brand immediately.",
+      "examples": [
+        {
+          "text": "Customers recognize our brand immediately.",
+          "translation": "顧客は我々のブランドをすぐに認識する。"
+        }
+      ]
     },
     {
       "word": "image",
@@ -1865,7 +3251,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Reliable service improves the company's image."
+      "example": "Reliable service improves the company's image.",
+      "examples": [
+        {
+          "text": "Reliable service improves the company's image.",
+          "translation": "信頼できるサービスは企業のイメージを高める。"
+        }
+      ]
     },
     {
       "word": "campaign",
@@ -1873,7 +3265,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The campaign promotes our new product."
+      "example": "The campaign promotes our new product.",
+      "examples": [
+        {
+          "text": "The campaign promotes our new product.",
+          "translation": "キャンペーンは我々の新製品を宣伝する。"
+        }
+      ]
     },
     {
       "word": "audience",
@@ -1881,7 +3279,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The audience asked several questions."
+      "example": "The audience asked several questions.",
+      "examples": [
+        {
+          "text": "The audience asked several questions.",
+          "translation": "聴衆はいくつかの質問をした。"
+        }
+      ]
     },
     {
       "word": "niche",
@@ -1889,7 +3293,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company serves a small but profitable niche."
+      "example": "The company serves a small but profitable niche.",
+      "examples": [
+        {
+          "text": "The company serves a small but profitable niche.",
+          "translation": "会社は小さく利益のあるニッチに従事している。"
+        }
+      ]
     },
     {
       "word": "trend",
@@ -1897,7 +3307,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The chart shows an upward trend."
+      "example": "The chart shows an upward trend.",
+      "examples": [
+        {
+          "text": "The chart shows an upward trend.",
+          "translation": "図は上昇傾向を示している。"
+        }
+      ]
     },
     {
       "word": "questionnaire",
@@ -1905,7 +3321,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please complete this short questionnaire."
+      "example": "Please complete this short questionnaire.",
+      "examples": [
+        {
+          "text": "Please complete this short questionnaire.",
+          "translation": "こちらの簡単なアンケートに答えて下さい。"
+        }
+      ]
     },
     {
       "word": "analysis",
@@ -1913,7 +3335,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The analysis revealed several useful patterns."
+      "example": "The analysis revealed several useful patterns.",
+      "examples": [
+        {
+          "text": "The analysis revealed several useful patterns.",
+          "translation": "解析の結果,いくつかの有用なパターンが明らかになった。"
+        }
+      ]
     },
     {
       "word": "statistics",
@@ -1921,7 +3349,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "These statistics summarize last month's sales."
+      "example": "These statistics summarize last month's sales.",
+      "examples": [
+        {
+          "text": "These statistics summarize last month's sales.",
+          "translation": "これは昨月の売上の統計です。"
+        }
+      ]
     },
     {
       "word": "data",
@@ -1929,7 +3363,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We checked the data before presenting it."
+      "example": "We checked the data before presenting it.",
+      "examples": [
+        {
+          "text": "We checked the data before presenting it.",
+          "translation": "また,データを提示する前に検証した。"
+        }
+      ]
     },
     {
       "word": "fact",
@@ -1937,7 +3377,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please separate each fact from your opinion."
+      "example": "Please separate each fact from your opinion.",
+      "examples": [
+        {
+          "text": "Please separate each fact from your opinion.",
+          "translation": "あなたの意見と事実を分けておいてください。"
+        }
+      ]
     },
     {
       "word": "number",
@@ -1945,7 +3391,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The number of orders increased."
+      "example": "The number of orders increased.",
+      "examples": [
+        {
+          "text": "The number of orders increased.",
+          "translation": "注文数が増加した。"
+        }
+      ]
     },
     {
       "word": "proportion",
@@ -1953,7 +3405,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "A large proportion of customers returned."
+      "example": "A large proportion of customers returned.",
+      "examples": [
+        {
+          "text": "A large proportion of customers returned.",
+          "translation": "顧客の大部分が再来した。"
+        }
+      ]
     },
     {
       "word": "rate",
@@ -1961,7 +3419,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The response rate was higher than expected."
+      "example": "The response rate was higher than expected.",
+      "examples": [
+        {
+          "text": "The response rate was higher than expected.",
+          "translation": "反応率は予想より高かった。"
+        }
+      ]
     },
     {
       "word": "median",
@@ -1969,7 +3433,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The median is shown on the chart."
+      "example": "The median is shown on the chart.",
+      "examples": [
+        {
+          "text": "The median is shown on the chart.",
+          "translation": "その図には中央値が示されています。"
+        }
+      ]
     },
     {
       "word": "maximum",
@@ -1977,7 +3447,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The maximum order size is fifty units."
+      "example": "The maximum order size is fifty units.",
+      "examples": [
+        {
+          "text": "The maximum order size is fifty units.",
+          "translation": "最大オーダーサイズは50個である。"
+        }
+      ]
     },
     {
       "word": "range",
@@ -1985,7 +3461,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The products cover a wide price range."
+      "example": "The products cover a wide price range.",
+      "examples": [
+        {
+          "text": "The products cover a wide price range.",
+          "translation": "製品は幅広い価格帯をカバーしている。"
+        }
+      ]
     },
     {
       "word": "sum",
@@ -1993,7 +3475,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Check the sum at the bottom."
+      "example": "Check the sum at the bottom.",
+      "examples": [
+        {
+          "text": "Check the sum at the bottom.",
+          "translation": "下の和を確認してください。"
+        }
+      ]
     },
     {
       "word": "volume",
@@ -2001,7 +3489,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Sales volume increased last quarter."
+      "example": "Sales volume increased last quarter.",
+      "examples": [
+        {
+          "text": "Sales volume increased last quarter.",
+          "translation": "前四半期は販売量が増加しました。"
+        }
+      ]
     },
     {
       "word": "valuation",
@@ -2009,7 +3503,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We requested an independent valuation of the property."
+      "example": "We requested an independent valuation of the property.",
+      "examples": [
+        {
+          "text": "We requested an independent valuation of the property.",
+          "translation": "私たちは,この不動産の独立した評価を要求した。"
+        }
+      ]
     },
     {
       "word": "projection",
@@ -2017,7 +3517,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Our projection assumes stable demand."
+      "example": "Our projection assumes stable demand.",
+      "examples": [
+        {
+          "text": "Our projection assumes stable demand.",
+          "translation": "これらの予測は,安定した需要を仮定したものである。"
+        }
+      ]
     },
     {
       "word": "prediction",
@@ -2025,7 +3531,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Her prediction proved accurate."
+      "example": "Her prediction proved accurate.",
+      "examples": [
+        {
+          "text": "Her prediction proved accurate.",
+          "translation": "彼女の予測は正しかった。"
+        }
+      ]
     },
     {
       "word": "outcome",
@@ -2033,7 +3545,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We are pleased with the outcome."
+      "example": "We are pleased with the outcome.",
+      "examples": [
+        {
+          "text": "We are pleased with the outcome.",
+          "translation": "結果に満足した。"
+        }
+      ]
     },
     {
       "word": "input",
@@ -2041,7 +3559,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The project requires significant input of time."
+      "example": "The project requires significant input of time.",
+      "examples": [
+        {
+          "text": "The project requires significant input of time.",
+          "translation": "プロジェクトはかなりの時間投入を必要とする。"
+        }
+      ]
     },
     {
       "word": "decline",
@@ -2049,7 +3573,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We noticed a decline in sales."
+      "example": "We noticed a decline in sales.",
+      "examples": [
+        {
+          "text": "We noticed a decline in sales.",
+          "translation": "売上が減少した。"
+        }
+      ]
     },
     {
       "word": "reduction",
@@ -2057,7 +3587,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The change led to a reduction in costs."
+      "example": "The change led to a reduction in costs.",
+      "examples": [
+        {
+          "text": "The change led to a reduction in costs.",
+          "translation": "これにより,コストの低減が図れた。"
+        }
+      ]
     },
     {
       "word": "decrease",
@@ -2065,7 +3601,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We need to decrease waste."
+      "example": "We need to decrease waste.",
+      "examples": [
+        {
+          "text": "We need to decrease waste.",
+          "translation": "廃棄物を減らす必要がある。"
+        }
+      ]
     },
     {
       "word": "development",
@@ -2073,7 +3615,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The plan supports regional development."
+      "example": "The plan supports regional development.",
+      "examples": [
+        {
+          "text": "The plan supports regional development.",
+          "translation": "地域開発を支援する。"
+        }
+      ]
     },
     {
       "word": "invention",
@@ -2081,7 +3629,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The invention made the process easier."
+      "example": "The invention made the process easier.",
+      "examples": [
+        {
+          "text": "The invention made the process easier.",
+          "translation": "発明により,このプロセスが容易になった。"
+        }
+      ]
     },
     {
       "word": "improvement",
@@ -2089,7 +3643,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new results show a clear improvement."
+      "example": "The new results show a clear improvement.",
+      "examples": [
+        {
+          "text": "The new results show a clear improvement.",
+          "translation": "これらの結果は明らかな改善を示した。"
+        }
+      ]
     },
     {
       "word": "transformation",
@@ -2097,7 +3657,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company is undergoing a digital transformation."
+      "example": "The company is undergoing a digital transformation.",
+      "examples": [
+        {
+          "text": "The company is undergoing a digital transformation.",
+          "translation": "会社はディジタル化を進めている。"
+        }
+      ]
     },
     {
       "word": "progress",
@@ -2105,7 +3671,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We made good progress this week."
+      "example": "We made good progress this week.",
+      "examples": [
+        {
+          "text": "We made good progress this week.",
+          "translation": "私たちはこの週良い進展を遂げた。"
+        }
+      ]
     },
     {
       "word": "accomplishment",
@@ -2113,7 +3685,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The team celebrated the accomplishment of its goal."
+      "example": "The team celebrated the accomplishment of its goal.",
+      "examples": [
+        {
+          "text": "The team celebrated the accomplishment of its goal.",
+          "translation": "チームはその目標の達成を祝った。"
+        }
+      ]
     },
     {
       "word": "failure",
@@ -2121,7 +3699,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The machine failure delayed production."
+      "example": "The machine failure delayed production.",
+      "examples": [
+        {
+          "text": "The machine failure delayed production.",
+          "translation": "機械故障により生産が遅延した。"
+        }
+      ]
     },
     {
       "word": "problem",
@@ -2129,7 +3713,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We need to solve this problem today."
+      "example": "We need to solve this problem today.",
+      "examples": [
+        {
+          "text": "We need to solve this problem today.",
+          "translation": "今日この問題を解決する必要がある。"
+        }
+      ]
     },
     {
       "word": "challenge",
@@ -2137,7 +3727,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Meeting the deadline will be a challenge."
+      "example": "Meeting the deadline will be a challenge.",
+      "examples": [
+        {
+          "text": "Meeting the deadline will be a challenge.",
+          "translation": "期限を満たすのは難しいことになる。"
+        }
+      ]
     },
     {
       "word": "difficulty",
@@ -2145,7 +3741,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We had difficulty finding the right supplier."
+      "example": "We had difficulty finding the right supplier.",
+      "examples": [
+        {
+          "text": "We had difficulty finding the right supplier.",
+          "translation": "適切な供給者を見つけるのが困難だった。"
+        }
+      ]
     },
     {
       "word": "possibility",
@@ -2153,7 +3755,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We discussed the possibility of expanding."
+      "example": "We discussed the possibility of expanding.",
+      "examples": [
+        {
+          "text": "We discussed the possibility of expanding.",
+          "translation": "拡張の可能性について議論した。"
+        }
+      ]
     },
     {
       "word": "alternative",
@@ -2161,7 +3769,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Is there a cheaper alternative?"
+      "example": "Is there a cheaper alternative?",
+      "examples": [
+        {
+          "text": "Is there a cheaper alternative?",
+          "translation": "もっと安い代替案はありますか。"
+        }
+      ]
     },
     {
       "word": "choice",
@@ -2169,7 +3783,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We have a choice of three suppliers."
+      "example": "We have a choice of three suppliers.",
+      "examples": [
+        {
+          "text": "We have a choice of three suppliers.",
+          "translation": "私たちは3社の仕入れ先の中から選べます。"
+        }
+      ]
     },
     {
       "word": "conclusion",
@@ -2177,7 +3797,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The report explains our conclusion."
+      "example": "The report explains our conclusion.",
+      "examples": [
+        {
+          "text": "The report explains our conclusion.",
+          "translation": "その報告書は私たちの結論を説明しています。"
+        }
+      ]
     },
     {
       "word": "suggestion",
@@ -2185,7 +3811,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Thank you for your helpful suggestion."
+      "example": "Thank you for your helpful suggestion.",
+      "examples": [
+        {
+          "text": "Thank you for your helpful suggestion.",
+          "translation": "あなたの役に立つ提案に感謝します。"
+        }
+      ]
     },
     {
       "word": "feedback",
@@ -2193,7 +3825,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We welcome feedback from customers."
+      "example": "We welcome feedback from customers.",
+      "examples": [
+        {
+          "text": "We welcome feedback from customers.",
+          "translation": "顧客からのフィードバックを歓迎する。"
+        }
+      ]
     },
     {
       "word": "comment",
@@ -2201,7 +3839,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please add your comment below."
+      "example": "Please add your comment below.",
+      "examples": [
+        {
+          "text": "Please add your comment below.",
+          "translation": "コメントを下に添えてください。"
+        }
+      ]
     },
     {
       "word": "evaluation",
@@ -2209,7 +3853,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The evaluation will take two weeks."
+      "example": "The evaluation will take two weeks.",
+      "examples": [
+        {
+          "text": "The evaluation will take two weeks.",
+          "translation": "評価には2週間かかる"
+        }
+      ]
     },
     {
       "word": "assessment",
@@ -2217,7 +3867,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We completed the initial risk assessment."
+      "example": "We completed the initial risk assessment.",
+      "examples": [
+        {
+          "text": "We completed the initial risk assessment.",
+          "translation": "初期リスクアセスメントを完了した。"
+        }
+      ]
     },
     {
       "word": "inspection",
@@ -2225,7 +3881,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The equipment passed its safety inspection."
+      "example": "The equipment passed its safety inspection.",
+      "examples": [
+        {
+          "text": "The equipment passed its safety inspection.",
+          "translation": "装置は安全検査を通過した。"
+        }
+      ]
     },
     {
       "word": "investigation",
@@ -2233,7 +3895,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The investigation is still ongoing."
+      "example": "The investigation is still ongoing.",
+      "examples": [
+        {
+          "text": "The investigation is still ongoing.",
+          "translation": "捜査はまだ続いている。"
+        }
+      ]
     },
     {
       "word": "query",
@@ -2241,7 +3909,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please send your query by email."
+      "example": "Please send your query by email.",
+      "examples": [
+        {
+          "text": "Please send your query by email.",
+          "translation": "質問はメールで送ってください。"
+        }
+      ]
     },
     {
       "word": "answer",
@@ -2249,7 +3923,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We need an answer by Friday."
+      "example": "We need an answer by Friday.",
+      "examples": [
+        {
+          "text": "We need an answer by Friday.",
+          "translation": "金曜日までに答えが必要だ"
+        }
+      ]
     },
     {
       "word": "clarification",
@@ -2257,7 +3937,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Could you provide clarification on this point?"
+      "example": "Could you provide clarification on this point?",
+      "examples": [
+        {
+          "text": "Could you provide clarification on this point?",
+          "translation": "この点については、説明していただけますか。"
+        }
+      ]
     },
     {
       "word": "confirmation",
@@ -2265,7 +3951,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "You will receive confirmation by email."
+      "example": "You will receive confirmation by email.",
+      "examples": [
+        {
+          "text": "You will receive confirmation by email.",
+          "translation": "確認メールが届きます。"
+        }
+      ]
     },
     {
       "word": "reservation",
@@ -2273,7 +3965,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "I made a reservation for the meeting room."
+      "example": "I made a reservation for the meeting room.",
+      "examples": [
+        {
+          "text": "I made a reservation for the meeting room.",
+          "translation": "会議室を予約しました。"
+        }
+      ]
     },
     {
       "word": "notice",
@@ -2281,7 +3979,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please read the notice on the board."
+      "example": "Please read the notice on the board.",
+      "examples": [
+        {
+          "text": "Please read the notice on the board.",
+          "translation": "掲示板の告知を読んでください。"
+        }
+      ]
     },
     {
       "word": "memorandum",
@@ -2289,7 +3993,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The memorandum outlines the new policy."
+      "example": "The memorandum outlines the new policy.",
+      "examples": [
+        {
+          "text": "The memorandum outlines the new policy.",
+          "translation": "その覚え書きには新しい方針の概要が記されています。"
+        }
+      ]
     },
     {
       "word": "correspondence",
@@ -2297,7 +4007,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Keep all correspondence about the project."
+      "example": "Keep all correspondence about the project.",
+      "examples": [
+        {
+          "text": "Keep all correspondence about the project.",
+          "translation": "プロジェクトの手紙を全て保管して"
+        }
+      ]
     },
     {
       "word": "telephone",
@@ -2305,7 +4021,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The telephone is on the desk."
+      "example": "The telephone is on the desk.",
+      "examples": [
+        {
+          "text": "The telephone is on the desk.",
+          "translation": "電話は机の上にある。"
+        }
+      ]
     },
     {
       "word": "phone",
@@ -2313,7 +4035,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please answer the phone."
+      "example": "Please answer the phone.",
+      "examples": [
+        {
+          "text": "Please answer the phone.",
+          "translation": "電話に出て下さい。"
+        }
+      ]
     },
     {
       "word": "conversation",
@@ -2321,7 +4049,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Our conversation clarified the next steps."
+      "example": "Our conversation clarified the next steps.",
+      "examples": [
+        {
+          "text": "Our conversation clarified the next steps.",
+          "translation": "私たちの会話は次のステップを明確にした。"
+        }
+      ]
     },
     {
       "word": "presentation",
@@ -2329,7 +4063,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Her presentation lasted twenty minutes."
+      "example": "Her presentation lasted twenty minutes.",
+      "examples": [
+        {
+          "text": "Her presentation lasted twenty minutes.",
+          "translation": "彼女のプレゼンテーションは20分間続いた。"
+        }
+      ]
     },
     {
       "word": "lecture",
@@ -2337,7 +4077,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We attended a lecture on design."
+      "example": "We attended a lecture on design.",
+      "examples": [
+        {
+          "text": "We attended a lecture on design.",
+          "translation": "私たちは設計の講義に出席した。"
+        }
+      ]
     },
     {
       "word": "convention",
@@ -2345,7 +4091,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The annual convention attracts industry leaders."
+      "example": "The annual convention attracts industry leaders.",
+      "examples": [
+        {
+          "text": "The annual convention attracts industry leaders.",
+          "translation": "年次大会は業界のリーダーを集める。"
+        }
+      ]
     },
     {
       "word": "workshop",
@@ -2353,7 +4105,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The workshop includes practical exercises."
+      "example": "The workshop includes practical exercises.",
+      "examples": [
+        {
+          "text": "The workshop includes practical exercises.",
+          "translation": "ワークショップは実践的な演習を含む。"
+        }
+      ]
     },
     {
       "word": "symposium",
@@ -2361,7 +4119,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She presented her research at the symposium."
+      "example": "She presented her research at the symposium.",
+      "examples": [
+        {
+          "text": "She presented her research at the symposium.",
+          "translation": "シンポジウムで研究成果を発表した。"
+        }
+      ]
     },
     {
       "word": "session",
@@ -2369,7 +4133,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The next training session starts at two."
+      "example": "The next training session starts at two.",
+      "examples": [
+        {
+          "text": "The next training session starts at two.",
+          "translation": "次のトレーニングは2時に始まる。"
+        }
+      ]
     },
     {
       "word": "debate",
@@ -2377,7 +4147,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The proposal led to a lively debate."
+      "example": "The proposal led to a lively debate.",
+      "examples": [
+        {
+          "text": "The proposal led to a lively debate.",
+          "translation": "この提案は熱い議論を呼んだ。"
+        }
+      ]
     },
     {
       "word": "reception",
@@ -2385,7 +4161,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please leave the package at reception."
+      "example": "Please leave the package at reception.",
+      "examples": [
+        {
+          "text": "Please leave the package at reception.",
+          "translation": "荷物は受付に預けてください。"
+        }
+      ]
     },
     {
       "word": "fair",
@@ -2393,7 +4175,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We displayed our products at the trade fair."
+      "example": "We displayed our products at the trade fair.",
+      "examples": [
+        {
+          "text": "We displayed our products at the trade fair.",
+          "translation": "展示会において,我々の製品を展示した。"
+        }
+      ]
     },
     {
       "word": "demonstration",
@@ -2401,7 +4189,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The demonstration showed how the machine works."
+      "example": "The demonstration showed how the machine works.",
+      "examples": [
+        {
+          "text": "The demonstration showed how the machine works.",
+          "translation": "実証実験により,機械の動作を示した。"
+        }
+      ]
     },
     {
       "word": "display",
@@ -2409,7 +4203,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We display new products near the entrance."
+      "example": "We display new products near the entrance.",
+      "examples": [
+        {
+          "text": "We display new products near the entrance.",
+          "translation": "入口近くに新製品を展示する。"
+        }
+      ]
     },
     {
       "word": "ceremony",
@@ -2417,7 +4217,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The opening ceremony begins at noon."
+      "example": "The opening ceremony begins at noon.",
+      "examples": [
+        {
+          "text": "The opening ceremony begins at noon.",
+          "translation": "開会式は正午に始まる。"
+        }
+      ]
     },
     {
       "word": "launch",
@@ -2425,7 +4231,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We plan to launch the product next month."
+      "example": "We plan to launch the product next month.",
+      "examples": [
+        {
+          "text": "We plan to launch the product next month.",
+          "translation": "私たちは来月、その製品を発売する予定です。"
+        }
+      ]
     },
     {
       "word": "publication",
@@ -2433,7 +4245,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The report is ready for publication."
+      "example": "The report is ready for publication.",
+      "examples": [
+        {
+          "text": "The report is ready for publication.",
+          "translation": "報告書は出版準備ができた。"
+        }
+      ]
     },
     {
       "word": "media",
@@ -2441,7 +4259,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The event attracted attention from the media."
+      "example": "The event attracted attention from the media.",
+      "examples": [
+        {
+          "text": "The event attracted attention from the media.",
+          "translation": "このイベントはメディアからの注目を集めた。"
+        }
+      ]
     },
     {
       "word": "journal",
@@ -2449,7 +4273,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She records her daily tasks in a journal."
+      "example": "She records her daily tasks in a journal.",
+      "examples": [
+        {
+          "text": "She records her daily tasks in a journal.",
+          "translation": "彼女は日記に日々の作業を記録している。"
+        }
+      ]
     },
     {
       "word": "magazine",
@@ -2457,7 +4287,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The magazine published an interview with our founder."
+      "example": "The magazine published an interview with our founder.",
+      "examples": [
+        {
+          "text": "The magazine published an interview with our founder.",
+          "translation": "雑誌は創業者とのインタビューを掲載した。"
+        }
+      ]
     },
     {
       "word": "bulletin",
@@ -2465,7 +4301,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The weekly bulletin lists important updates."
+      "example": "The weekly bulletin lists important updates.",
+      "examples": [
+        {
+          "text": "The weekly bulletin lists important updates.",
+          "translation": "週刊の会報には、重要な最新情報が載っています。"
+        }
+      ]
     },
     {
       "word": "leaflet",
@@ -2473,7 +4315,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The leaflet explains our services."
+      "example": "The leaflet explains our services.",
+      "examples": [
+        {
+          "text": "The leaflet explains our services.",
+          "translation": "パンフレットは私たちのサービスを説明している。"
+        }
+      ]
     },
     {
       "word": "poster",
@@ -2481,7 +4329,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We put a poster in the window."
+      "example": "We put a poster in the window.",
+      "examples": [
+        {
+          "text": "We put a poster in the window.",
+          "translation": "窓にポスターを貼った。"
+        }
+      ]
     },
     {
       "word": "catalog",
@@ -2489,7 +4343,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please choose a model from the catalog."
+      "example": "Please choose a model from the catalog.",
+      "examples": [
+        {
+          "text": "Please choose a model from the catalog.",
+          "translation": "カタログからモデルを選んでください。"
+        }
+      ]
     },
     {
       "word": "folder",
@@ -2497,7 +4357,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Keep the signed papers in this folder."
+      "example": "Keep the signed papers in this folder.",
+      "examples": [
+        {
+          "text": "Keep the signed papers in this folder.",
+          "translation": "署名した書類をこのフォルダに保存してください。"
+        }
+      ]
     },
     {
       "word": "record",
@@ -2505,7 +4371,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We keep a record of every order."
+      "example": "We keep a record of every order.",
+      "examples": [
+        {
+          "text": "We keep a record of every order.",
+          "translation": "私たちは全ての注文を記録しています。"
+        }
+      ]
     },
     {
       "word": "abstract",
@@ -2513,7 +4385,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please write a short abstract of the report."
+      "example": "Please write a short abstract of the report.",
+      "examples": [
+        {
+          "text": "Please write a short abstract of the report.",
+          "translation": "報告書の簡単な要約を書いて下さい。"
+        }
+      ]
     },
     {
       "word": "draft",
@@ -2521,7 +4399,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "I will send you the first draft."
+      "example": "I will send you the first draft.",
+      "examples": [
+        {
+          "text": "I will send you the first draft.",
+          "translation": "私は最初の草稿を送ります。"
+        }
+      ]
     },
     {
       "word": "original",
@@ -2529,7 +4413,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Keep the original and send a copy."
+      "example": "Keep the original and send a copy.",
+      "examples": [
+        {
+          "text": "Keep the original and send a copy.",
+          "translation": "原本を保管し、コピーを送ってください。"
+        }
+      ]
     },
     {
       "word": "revision",
@@ -2537,7 +4427,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The document needs one final revision."
+      "example": "The document needs one final revision.",
+      "examples": [
+        {
+          "text": "The document needs one final revision.",
+          "translation": "文書は最終的な修正が必要です。"
+        }
+      ]
     },
     {
       "word": "proof",
@@ -2545,7 +4441,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please check the printer's proof carefully."
+      "example": "Please check the printer's proof carefully.",
+      "examples": [
+        {
+          "text": "Please check the printer's proof carefully.",
+          "translation": "印刷の校正刷りを、よく確認してください。"
+        }
+      ]
     },
     {
       "word": "print",
@@ -2553,7 +4455,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Could you print two copies?"
+      "example": "Could you print two copies?",
+      "examples": [
+        {
+          "text": "Could you print two copies?",
+          "translation": "2通印刷してくれませんか。"
+        }
+      ]
     },
     {
       "word": "photocopier",
@@ -2561,7 +4469,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The photocopier is beside the door."
+      "example": "The photocopier is beside the door.",
+      "examples": [
+        {
+          "text": "The photocopier is beside the door.",
+          "translation": "複写機はドアの隣にある。"
+        }
+      ]
     },
     {
       "word": "scanner",
@@ -2569,7 +4483,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Use the scanner to copy the document."
+      "example": "Use the scanner to copy the document.",
+      "examples": [
+        {
+          "text": "Use the scanner to copy the document.",
+          "translation": "スキャナを使って文書をコピーしてください。"
+        }
+      ]
     },
     {
       "word": "notebook",
@@ -2577,7 +4497,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "I wrote the details in my notebook."
+      "example": "I wrote the details in my notebook.",
+      "examples": [
+        {
+          "text": "I wrote the details in my notebook.",
+          "translation": "私はノートに詳細を書いた。"
+        }
+      ]
     },
     {
       "word": "monitor",
@@ -2585,7 +4511,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The monitor displays the current results."
+      "example": "The monitor displays the current results.",
+      "examples": [
+        {
+          "text": "The monitor displays the current results.",
+          "translation": "そのモニターに現在の結果が表示されます。"
+        }
+      ]
     },
     {
       "word": "keyboard",
@@ -2593,7 +4525,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This keyboard is comfortable to use."
+      "example": "This keyboard is comfortable to use.",
+      "examples": [
+        {
+          "text": "This keyboard is comfortable to use.",
+          "translation": "このキーボードは使いやすい。"
+        }
+      ]
     },
     {
       "word": "mouse",
@@ -2601,7 +4539,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Move the mouse to select the file."
+      "example": "Move the mouse to select the file.",
+      "examples": [
+        {
+          "text": "Move the mouse to select the file.",
+          "translation": "マウスを動かしてファイルを選択します。"
+        }
+      ]
     },
     {
       "word": "icon",
@@ -2609,7 +4553,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Click the folder icon."
+      "example": "Click the folder icon.",
+      "examples": [
+        {
+          "text": "Click the folder icon.",
+          "translation": "フォルダアイコンをクリックします。"
+        }
+      ]
     },
     {
       "word": "window",
@@ -2617,7 +4567,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Close the extra window on your screen."
+      "example": "Close the extra window on your screen.",
+      "examples": [
+        {
+          "text": "Close the extra window on your screen.",
+          "translation": "スクリーンの余分なウィンドウを閉じます。"
+        }
+      ]
     },
     {
       "word": "hardware",
@@ -2625,7 +4581,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We need to replace the old hardware."
+      "example": "We need to replace the old hardware.",
+      "examples": [
+        {
+          "text": "We need to replace the old hardware.",
+          "translation": "古いハードウェアを交換する必要がある。"
+        }
+      ]
     },
     {
       "word": "interface",
@@ -2633,7 +4595,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new interface is easier to use."
+      "example": "The new interface is easier to use.",
+      "examples": [
+        {
+          "text": "The new interface is easier to use.",
+          "translation": "また,新しいインタフェースは,より使いやすい。"
+        }
+      ]
     },
     {
       "word": "server",
@@ -2641,7 +4609,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The server stores our shared files."
+      "example": "The server stores our shared files.",
+      "examples": [
+        {
+          "text": "The server stores our shared files.",
+          "translation": "サーバは共有ファイルを保存する。"
+        }
+      ]
     },
     {
       "word": "cable",
@@ -2649,7 +4623,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Check that the cable is connected."
+      "example": "Check that the cable is connected.",
+      "examples": [
+        {
+          "text": "Check that the cable is connected.",
+          "translation": "ケーブルが接続されているか確認してください。"
+        }
+      ]
     },
     {
       "word": "wireless",
@@ -2657,7 +4637,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This device supports wireless communication."
+      "example": "This device supports wireless communication.",
+      "examples": [
+        {
+          "text": "This device supports wireless communication.",
+          "translation": "このデバイスは無線通信をサポートする。"
+        }
+      ]
     },
     {
       "word": "access",
@@ -2665,7 +4651,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Only authorized staff have access to these files."
+      "example": "Only authorized staff have access to these files.",
+      "examples": [
+        {
+          "text": "Only authorized staff have access to these files.",
+          "translation": "権限のあるスタッフのみが ファイルにアクセスできる"
+        }
+      ]
     },
     {
       "word": "backup",
@@ -2673,7 +4665,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Make a backup before changing the data."
+      "example": "Make a backup before changing the data.",
+      "examples": [
+        {
+          "text": "Make a backup before changing the data.",
+          "translation": "データを変更する前にバックアップを作成してください。"
+        }
+      ]
     },
     {
       "word": "memory",
@@ -2681,7 +4679,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The computer needs more memory."
+      "example": "The computer needs more memory.",
+      "examples": [
+        {
+          "text": "The computer needs more memory.",
+          "translation": "コンピュータにはもっとメモリが必要です。"
+        }
+      ]
     },
     {
       "word": "drive",
@@ -2689,7 +4693,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Save the file to the shared drive."
+      "example": "Save the file to the shared drive.",
+      "examples": [
+        {
+          "text": "Save the file to the shared drive.",
+          "translation": "ファイルを共有ドライブに保存します。"
+        }
+      ]
     },
     {
       "word": "worksheet",
@@ -2697,7 +4707,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Complete the worksheet before the meeting."
+      "example": "Complete the worksheet before the meeting.",
+      "examples": [
+        {
+          "text": "Complete the worksheet before the meeting.",
+          "translation": "会議の前にワークシートを完成させて。"
+        }
+      ]
     },
     {
       "word": "row",
@@ -2705,7 +4721,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Enter the total in the last row."
+      "example": "Enter the total in the last row.",
+      "examples": [
+        {
+          "text": "Enter the total in the last row.",
+          "translation": "最後の行に合計を入力します。"
+        }
+      ]
     },
     {
       "word": "chart",
@@ -2713,7 +4735,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The chart compares monthly sales."
+      "example": "The chart compares monthly sales.",
+      "examples": [
+        {
+          "text": "The chart compares monthly sales.",
+          "translation": "月間売上を比較した図である。"
+        }
+      ]
     },
     {
       "word": "diagram",
@@ -2721,7 +4749,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The diagram shows how the parts connect."
+      "example": "The diagram shows how the parts connect.",
+      "examples": [
+        {
+          "text": "The diagram shows how the parts connect.",
+          "translation": "図は各部の接続を示している。"
+        }
+      ]
     },
     {
       "word": "list",
@@ -2729,7 +4763,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please check the list of participants."
+      "example": "Please check the list of participants.",
+      "examples": [
+        {
+          "text": "Please check the list of participants.",
+          "translation": "参加者リストを確認してください。"
+        }
+      ]
     },
     {
       "word": "template",
@@ -2737,7 +4777,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Use this template for your report."
+      "example": "Use this template for your report.",
+      "examples": [
+        {
+          "text": "Use this template for your report.",
+          "translation": "このテンプレートをレポートに使用してください。"
+        }
+      ]
     },
     {
       "word": "format",
@@ -2745,7 +4791,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The publisher changed the book's format."
+      "example": "The publisher changed the book's format.",
+      "examples": [
+        {
+          "text": "The publisher changed the book's format.",
+          "translation": "出版社は本の形式を変えた。"
+        }
+      ]
     },
     {
       "word": "design",
@@ -2753,7 +4805,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The design shows the new office layout."
+      "example": "The design shows the new office layout.",
+      "examples": [
+        {
+          "text": "The design shows the new office layout.",
+          "translation": "設計図は新しいオフィスのレイアウトを示している。"
+        }
+      ]
     },
     {
       "word": "typeface",
@@ -2761,7 +4819,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Choose a clear typeface for the notice."
+      "example": "Choose a clear typeface for the notice.",
+      "examples": [
+        {
+          "text": "Choose a clear typeface for the notice.",
+          "translation": "注意書きのための明瞭なフォントを選択します。"
+        }
+      ]
     },
     {
       "word": "paragraph",
@@ -2769,7 +4833,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please shorten the final paragraph."
+      "example": "Please shorten the final paragraph.",
+      "examples": [
+        {
+          "text": "Please shorten the final paragraph.",
+          "translation": "最後の段落を短くしてください。"
+        }
+      ]
     },
     {
       "word": "content",
@@ -2777,7 +4847,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Check the contents of the box."
+      "example": "Check the contents of the box.",
+      "examples": [
+        {
+          "text": "Check the contents of the box.",
+          "translation": "箱の中身を確認してください。"
+        }
+      ]
     },
     {
       "word": "photograph",
@@ -2785,7 +4861,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Attach a photograph of the damaged product."
+      "example": "Attach a photograph of the damaged product.",
+      "examples": [
+        {
+          "text": "Attach a photograph of the damaged product.",
+          "translation": "損傷した製品の写真を添付してください。"
+        }
+      ]
     },
     {
       "word": "video",
@@ -2793,7 +4875,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The technician adjusted the video signal."
+      "example": "The technician adjusted the video signal.",
+      "examples": [
+        {
+          "text": "The technician adjusted the video signal.",
+          "translation": "技術者はビデオ信号を調整した。"
+        }
+      ]
     },
     {
       "word": "microphone",
@@ -2801,7 +4889,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please speak into the microphone."
+      "example": "Please speak into the microphone.",
+      "examples": [
+        {
+          "text": "Please speak into the microphone.",
+          "translation": "マイクに向かって話してください。"
+        }
+      ]
     },
     {
       "word": "headphone",
@@ -2809,7 +4903,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Check the headphone cable."
+      "example": "Check the headphone cable.",
+      "examples": [
+        {
+          "text": "Check the headphone cable.",
+          "translation": "ヘッドホンケーブルを確認して"
+        }
+      ]
     },
     {
       "word": "camera",
@@ -2817,7 +4917,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The camera is ready for the interview."
+      "example": "The camera is ready for the interview.",
+      "examples": [
+        {
+          "text": "The camera is ready for the interview.",
+          "translation": "インタビューのためのカメラが準備できた。"
+        }
+      ]
     },
     {
       "word": "charger",
@@ -2825,7 +4931,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "I left my charger at the office."
+      "example": "I left my charger at the office.",
+      "examples": [
+        {
+          "text": "I left my charger at the office.",
+          "translation": "私はオフィスで充電器を忘れてしまった。"
+        }
+      ]
     },
     {
       "word": "socket",
@@ -2833,7 +4945,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Plug the printer into this socket."
+      "example": "Plug the printer into this socket.",
+      "examples": [
+        {
+          "text": "Plug the printer into this socket.",
+          "translation": "プリンタをこのソケットに接続してください。"
+        }
+      ]
     },
     {
       "word": "outlet",
@@ -2841,7 +4959,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "There is an electrical outlet under the desk."
+      "example": "There is an electrical outlet under the desk.",
+      "examples": [
+        {
+          "text": "There is an electrical outlet under the desk.",
+          "translation": "机の下に電気コンセントがある。"
+        }
+      ]
     },
     {
       "word": "electricity",
@@ -2849,7 +4973,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The building uses less electricity now."
+      "example": "The building uses less electricity now.",
+      "examples": [
+        {
+          "text": "The building uses less electricity now.",
+          "translation": "建物は電気を少なく使うようになった。"
+        }
+      ]
     },
     {
       "word": "power",
@@ -2857,7 +4987,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The machine lost power suddenly."
+      "example": "The machine lost power suddenly.",
+      "examples": [
+        {
+          "text": "The machine lost power suddenly.",
+          "translation": "機械は突然電源を失った。"
+        }
+      ]
     },
     {
       "word": "lighting",
@@ -2865,7 +5001,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Better lighting made the office more comfortable."
+      "example": "Better lighting made the office more comfortable.",
+      "examples": [
+        {
+          "text": "Better lighting made the office more comfortable.",
+          "translation": "明るい照明がオフィスを快適にした。"
+        }
+      ]
     },
     {
       "word": "heating",
@@ -2873,7 +5015,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The heating is not working today."
+      "example": "The heating is not working today.",
+      "examples": [
+        {
+          "text": "The heating is not working today.",
+          "translation": "今日は暖房が動かない。"
+        }
+      ]
     },
     {
       "word": "furniture",
@@ -2881,7 +5029,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new office furniture arrives tomorrow."
+      "example": "The new office furniture arrives tomorrow.",
+      "examples": [
+        {
+          "text": "The new office furniture arrives tomorrow.",
+          "translation": "新しいオフィス家具は明日到着する。"
+        }
+      ]
     },
     {
       "word": "desk",
@@ -2889,7 +5043,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please leave the report on my desk."
+      "example": "Please leave the report on my desk.",
+      "examples": [
+        {
+          "text": "Please leave the report on my desk.",
+          "translation": "報告書を机に置いておいてください。"
+        }
+      ]
     },
     {
       "word": "cabinet",
@@ -2897,7 +5057,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The contracts are in the filing cabinet."
+      "example": "The contracts are in the filing cabinet.",
+      "examples": [
+        {
+          "text": "The contracts are in the filing cabinet.",
+          "translation": "契約書はファイルケースにある"
+        }
+      ]
     },
     {
       "word": "shelf",
@@ -2905,7 +5071,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Put the manuals on the shelf."
+      "example": "Put the manuals on the shelf.",
+      "examples": [
+        {
+          "text": "Put the manuals on the shelf.",
+          "translation": "マニュアルを棚に置け"
+        }
+      ]
     },
     {
       "word": "cupboard",
@@ -2913,7 +5085,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Clean cups are in the kitchen cupboard."
+      "example": "Clean cups are in the kitchen cupboard.",
+      "examples": [
+        {
+          "text": "Clean cups are in the kitchen cupboard.",
+          "translation": "きれいなカップは台所の棚にある。"
+        }
+      ]
     },
     {
       "word": "safe",
@@ -2921,7 +5099,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Keep important documents in the safe."
+      "example": "Keep important documents in the safe.",
+      "examples": [
+        {
+          "text": "Keep important documents in the safe.",
+          "translation": "重要な文書を金庫に入れておく。"
+        }
+      ]
     },
     {
       "word": "trash",
@@ -2929,7 +5113,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This broken packaging is just trash."
+      "example": "This broken packaging is just trash.",
+      "examples": [
+        {
+          "text": "This broken packaging is just trash.",
+          "translation": "壊れた包装はゴミだ"
+        }
+      ]
     },
     {
       "word": "waste",
@@ -2937,7 +5127,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We aim to reduce office waste."
+      "example": "We aim to reduce office waste.",
+      "examples": [
+        {
+          "text": "We aim to reduce office waste.",
+          "translation": "事務廃棄物の削減を目指している。"
+        }
+      ]
     },
     {
       "word": "stationery",
@@ -2945,7 +5141,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The stationery cupboard needs more pens."
+      "example": "The stationery cupboard needs more pens.",
+      "examples": [
+        {
+          "text": "The stationery cupboard needs more pens.",
+          "translation": "文房具の棚にはペンがもっと必要だ。"
+        }
+      ]
     },
     {
       "word": "envelope",
@@ -2953,7 +5155,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Put the letter in this envelope."
+      "example": "Put the letter in this envelope.",
+      "examples": [
+        {
+          "text": "Put the letter in this envelope.",
+          "translation": "手紙をこの封筒に入れなさい。"
+        }
+      ]
     },
     {
       "word": "postcard",
@@ -2961,7 +5169,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We sent a postcard to each customer."
+      "example": "We sent a postcard to each customer.",
+      "examples": [
+        {
+          "text": "We sent a postcard to each customer.",
+          "translation": "私たちは各顧客に葉書を送った。"
+        }
+      ]
     },
     {
       "word": "parcel",
@@ -2969,7 +5183,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The parcel arrived this morning."
+      "example": "The parcel arrived this morning.",
+      "examples": [
+        {
+          "text": "The parcel arrived this morning.",
+          "translation": "その小包は今朝到着しました。"
+        }
+      ]
     },
     {
       "word": "box",
@@ -2977,7 +5197,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The box contains printer paper."
+      "example": "The box contains printer paper.",
+      "examples": [
+        {
+          "text": "The box contains printer paper.",
+          "translation": "箱にはプリンタ用紙が入っている。"
+        }
+      ]
     },
     {
       "word": "tape",
@@ -2985,7 +5211,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Seal the box with tape."
+      "example": "Seal the box with tape.",
+      "examples": [
+        {
+          "text": "Seal the box with tape.",
+          "translation": "箱をテープでしっかり封じてください。"
+        }
+      ]
     },
     {
       "word": "stapler",
@@ -2993,7 +5225,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "May I borrow your stapler?"
+      "example": "May I borrow your stapler?",
+      "examples": [
+        {
+          "text": "May I borrow your stapler?",
+          "translation": "ステープラーを借りてもらえますか。"
+        }
+      ]
     },
     {
       "word": "paperclip",
@@ -3001,7 +5239,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Use a paperclip to hold these pages together."
+      "example": "Use a paperclip to hold these pages together.",
+      "examples": [
+        {
+          "text": "Use a paperclip to hold these pages together.",
+          "translation": "クリップでこれらのページを一緒に保つ。"
+        }
+      ]
     },
     {
       "word": "pin",
@@ -3009,7 +5253,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Attach the notice with a pin."
+      "example": "Attach the notice with a pin.",
+      "examples": [
+        {
+          "text": "Attach the notice with a pin.",
+          "translation": "ピンで通知を貼り付けて。"
+        }
+      ]
     },
     {
       "word": "eraser",
@@ -3017,7 +5267,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "There is an eraser beside the pencil."
+      "example": "There is an eraser beside the pencil.",
+      "examples": [
+        {
+          "text": "There is an eraser beside the pencil.",
+          "translation": "鉛筆の隣に消しゴムがある。"
+        }
+      ]
     },
     {
       "word": "pen",
@@ -3025,7 +5281,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Could I borrow a pen?"
+      "example": "Could I borrow a pen?",
+      "examples": [
+        {
+          "text": "Could I borrow a pen?",
+          "translation": "ペンを借りてもらえますか。"
+        }
+      ]
     },
     {
       "word": "marker",
@@ -3033,7 +5295,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Use a marker to label the box."
+      "example": "Use a marker to label the box.",
+      "examples": [
+        {
+          "text": "Use a marker to label the box.",
+          "translation": "箱にラベルを付けるにはマーカーを使ってください。"
+        }
+      ]
     },
     {
       "word": "diary",
@@ -3041,7 +5309,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She keeps a diary of her work."
+      "example": "She keeps a diary of her work.",
+      "examples": [
+        {
+          "text": "She keeps a diary of her work.",
+          "translation": "彼女は仕事の日記をつけている。"
+        }
+      ]
     },
     {
       "word": "calculator",
@@ -3049,7 +5323,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Use a calculator to check the total."
+      "example": "Use a calculator to check the total.",
+      "examples": [
+        {
+          "text": "Use a calculator to check the total.",
+          "translation": "計算機で合計を確認してください。"
+        }
+      ]
     },
     {
       "word": "cutter",
@@ -3057,7 +5337,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Keep your fingers clear of the paper cutter."
+      "example": "Keep your fingers clear of the paper cutter.",
+      "examples": [
+        {
+          "text": "Keep your fingers clear of the paper cutter.",
+          "translation": "紙切りから指を離して"
+        }
+      ]
     },
     {
       "word": "blackboard",
@@ -3065,7 +5351,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The trainer wrote the plan on the blackboard."
+      "example": "The trainer wrote the plan on the blackboard.",
+      "examples": [
+        {
+          "text": "The trainer wrote the plan on the blackboard.",
+          "translation": "トレーナーは黒板に計画を書いた。"
+        }
+      ]
     },
     {
       "word": "binder",
@@ -3073,7 +5365,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Store the training notes in this binder."
+      "example": "Store the training notes in this binder.",
+      "examples": [
+        {
+          "text": "Store the training notes in this binder.",
+          "translation": "訓練ノートをこのバインダーに入れておけ"
+        }
+      ]
     },
     {
       "word": "clipboard",
@@ -3081,7 +5379,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The inspector carried a clipboard."
+      "example": "The inspector carried a clipboard.",
+      "examples": [
+        {
+          "text": "The inspector carried a clipboard.",
+          "translation": "警部はクリップボードを持っていた。"
+        }
+      ]
     },
     {
       "word": "organizer",
@@ -3089,7 +5393,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The organizer confirmed the venue."
+      "example": "The organizer confirmed the venue.",
+      "examples": [
+        {
+          "text": "The organizer confirmed the venue.",
+          "translation": "主催者は会場を確認した。"
+        }
+      ]
     },
     {
       "word": "overtime",
@@ -3097,7 +5407,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We worked overtime to finish the order."
+      "example": "We worked overtime to finish the order.",
+      "examples": [
+        {
+          "text": "We worked overtime to finish the order.",
+          "translation": "注文を終えるために我々は余分な時間を働いた。"
+        }
+      ]
     },
     {
       "word": "permanent",
@@ -3105,7 +5421,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She accepted a permanent position."
+      "example": "She accepted a permanent position.",
+      "examples": [
+        {
+          "text": "She accepted a permanent position.",
+          "translation": "彼女は正規雇用の職を引き受けました。"
+        }
+      ]
     },
     {
       "word": "seasonal",
@@ -3113,7 +5435,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company hires seasonal workers in summer."
+      "example": "The company hires seasonal workers in summer.",
+      "examples": [
+        {
+          "text": "The company hires seasonal workers in summer.",
+          "translation": "会社は夏に季節労働者を雇う。"
+        }
+      ]
     },
     {
       "word": "remote",
@@ -3121,7 +5449,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company has several remote offices."
+      "example": "The company has several remote offices.",
+      "examples": [
+        {
+          "text": "The company has several remote offices.",
+          "translation": "会社はいくつかの遠隔オフィスを持っている。"
+        }
+      ]
     },
     {
       "word": "hybrid",
@@ -3129,7 +5463,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We use a hybrid model of remote and office work."
+      "example": "We use a hybrid model of remote and office work.",
+      "examples": [
+        {
+          "text": "We use a hybrid model of remote and office work.",
+          "translation": "遠隔作業とオフィス作業のハイブリッドモデルを用いた。"
+        }
+      ]
     },
     {
       "word": "break",
@@ -3137,7 +5477,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Let's take a short break."
+      "example": "Let's take a short break.",
+      "examples": [
+        {
+          "text": "Let's take a short break.",
+          "translation": "ちょっと休憩しましょう。"
+        }
+      ]
     },
     {
       "word": "sick leave",
@@ -3145,7 +5491,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She is on sick leave today."
+      "example": "She is on sick leave today.",
+      "examples": [
+        {
+          "text": "She is on sick leave today.",
+          "translation": "彼女は今日病気休暇中です。"
+        }
+      ]
     },
     {
       "word": "holiday",
@@ -3153,7 +5505,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The office is closed for the holiday."
+      "example": "The office is closed for the holiday.",
+      "examples": [
+        {
+          "text": "The office is closed for the holiday.",
+          "translation": "事務所は休日のため閉鎖しています。"
+        }
+      ]
     },
     {
       "word": "attendance",
@@ -3161,7 +5519,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Attendance at the training is required."
+      "example": "Attendance at the training is required.",
+      "examples": [
+        {
+          "text": "Attendance at the training is required.",
+          "translation": "訓練に出席する必要がある。"
+        }
+      ]
     },
     {
       "word": "punctuality",
@@ -3169,7 +5533,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company values punctuality."
+      "example": "The company values punctuality.",
+      "examples": [
+        {
+          "text": "The company values punctuality.",
+          "translation": "その会社は時間を守ることを大切にしています。"
+        }
+      ]
     },
     {
       "word": "lateness",
@@ -3177,7 +5547,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Repeated lateness caused problems for the team."
+      "example": "Repeated lateness caused problems for the team.",
+      "examples": [
+        {
+          "text": "Repeated lateness caused problems for the team.",
+          "translation": "繰り返し遅刻することはチームに問題を引き起こした。"
+        }
+      ]
     },
     {
       "word": "morale",
@@ -3185,7 +5561,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The good news improved staff morale."
+      "example": "The good news improved staff morale.",
+      "examples": [
+        {
+          "text": "The good news improved staff morale.",
+          "translation": "良い知らせはスタッフの士気を高めた。"
+        }
+      ]
     },
     {
       "word": "cooperation",
@@ -3193,7 +5575,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Thank you for your cooperation."
+      "example": "Thank you for your cooperation.",
+      "examples": [
+        {
+          "text": "Thank you for your cooperation.",
+          "translation": "ご協力ありがとうございます。"
+        }
+      ]
     },
     {
       "word": "coordination",
@@ -3201,7 +5589,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The event requires careful coordination."
+      "example": "The event requires careful coordination.",
+      "examples": [
+        {
+          "text": "The event requires careful coordination.",
+          "translation": "その催しには慎重な調整が必要です。"
+        }
+      ]
     },
     {
       "word": "delegation",
@@ -3209,7 +5603,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Effective delegation gives managers time to plan."
+      "example": "Effective delegation gives managers time to plan.",
+      "examples": [
+        {
+          "text": "Effective delegation gives managers time to plan.",
+          "translation": "効果的な委任は管理者に計画する時間を与える。"
+        }
+      ]
     },
     {
       "word": "adaptability",
@@ -3217,7 +5617,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The role requires adaptability."
+      "example": "The role requires adaptability.",
+      "examples": [
+        {
+          "text": "The role requires adaptability.",
+          "translation": "その役割には適応力が求められます。"
+        }
+      ]
     },
     {
       "word": "flexibility",
@@ -3225,7 +5631,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We appreciate your flexibility about the schedule."
+      "example": "We appreciate your flexibility about the schedule.",
+      "examples": [
+        {
+          "text": "We appreciate your flexibility about the schedule.",
+          "translation": "予定の柔軟性に感謝します。"
+        }
+      ]
     },
     {
       "word": "integrity",
@@ -3233,7 +5645,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She is known for her integrity."
+      "example": "She is known for her integrity.",
+      "examples": [
+        {
+          "text": "She is known for her integrity.",
+          "translation": "彼女は正直で知られている。"
+        }
+      ]
     },
     {
       "word": "diligence",
@@ -3241,7 +5659,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "His diligence helped prevent mistakes."
+      "example": "His diligence helped prevent mistakes.",
+      "examples": [
+        {
+          "text": "His diligence helped prevent mistakes.",
+          "translation": "彼の勤勉さは間違いを防ぐのに役立った。"
+        }
+      ]
     },
     {
       "word": "courtesy",
@@ -3249,7 +5673,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please treat every customer with courtesy."
+      "example": "Please treat every customer with courtesy.",
+      "examples": [
+        {
+          "text": "Please treat every customer with courtesy.",
+          "translation": "どんなお客様にも丁寧に対応してください。"
+        }
+      ]
     },
     {
       "word": "strategic",
@@ -3257,7 +5687,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This is an important strategic decision."
+      "example": "This is an important strategic decision.",
+      "examples": [
+        {
+          "text": "This is an important strategic decision.",
+          "translation": "これは重要な戦略的決定である。"
+        }
+      ]
     },
     {
       "word": "interpersonal",
@@ -3265,7 +5701,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The role requires strong interpersonal skills."
+      "example": "The role requires strong interpersonal skills.",
+      "examples": [
+        {
+          "text": "The role requires strong interpersonal skills.",
+          "translation": "強い対人能力が必要だ"
+        }
+      ]
     },
     {
       "word": "practical",
@@ -3273,7 +5715,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The course includes practical training."
+      "example": "The course includes practical training.",
+      "examples": [
+        {
+          "text": "The course includes practical training.",
+          "translation": "実習も含まれる。"
+        }
+      ]
     },
     {
       "word": "administrative",
@@ -3281,7 +5729,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She handles the administrative work."
+      "example": "She handles the administrative work.",
+      "examples": [
+        {
+          "text": "She handles the administrative work.",
+          "translation": "彼女は行政の仕事をこなしている。"
+        }
+      ]
     },
     {
       "word": "managerial",
@@ -3289,7 +5743,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "He has several years of managerial experience."
+      "example": "He has several years of managerial experience.",
+      "examples": [
+        {
+          "text": "He has several years of managerial experience.",
+          "translation": "彼は数年間の経営経験を持っている。"
+        }
+      ]
     },
     {
       "word": "financial",
@@ -3297,7 +5757,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The financial report is ready."
+      "example": "The financial report is ready.",
+      "examples": [
+        {
+          "text": "The financial report is ready.",
+          "translation": "財務報告書が準備できた。"
+        }
+      ]
     },
     {
       "word": "industrial",
@@ -3305,7 +5771,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The area has several industrial buildings."
+      "example": "The area has several industrial buildings.",
+      "examples": [
+        {
+          "text": "The area has several industrial buildings.",
+          "translation": "地域にはいくつかの工業ビルがある。"
+        }
+      ]
     },
     {
       "word": "legal",
@@ -3313,7 +5785,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We need legal advice before signing."
+      "example": "We need legal advice before signing.",
+      "examples": [
+        {
+          "text": "We need legal advice before signing.",
+          "translation": "法律のアドバイスが必要だ"
+        }
+      ]
     },
     {
       "word": "ethical",
@@ -3321,7 +5799,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The decision raised ethical questions."
+      "example": "The decision raised ethical questions.",
+      "examples": [
+        {
+          "text": "The decision raised ethical questions.",
+          "translation": "この判断は倫理的な問題を引き起こした。"
+        }
+      ]
     },
     {
       "word": "efficient",
@@ -3329,7 +5813,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new system is more efficient."
+      "example": "The new system is more efficient.",
+      "examples": [
+        {
+          "text": "The new system is more efficient.",
+          "translation": "新しいシステムはより効率的である。"
+        }
+      ]
     },
     {
       "word": "productive",
@@ -3337,7 +5827,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We had a productive meeting."
+      "example": "We had a productive meeting.",
+      "examples": [
+        {
+          "text": "We had a productive meeting.",
+          "translation": "私たちは生産的な会議をした。"
+        }
+      ]
     },
     {
       "word": "precise",
@@ -3345,7 +5841,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please provide precise measurements."
+      "example": "Please provide precise measurements.",
+      "examples": [
+        {
+          "text": "Please provide precise measurements.",
+          "translation": "正確な測定値をお願いします。"
+        }
+      ]
     },
     {
       "word": "valid",
@@ -3353,7 +5855,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "That is a valid reason for the delay."
+      "example": "That is a valid reason for the delay.",
+      "examples": [
+        {
+          "text": "That is a valid reason for the delay.",
+          "translation": "それは遅延の有効な理由です。"
+        }
+      ]
     },
     {
       "word": "appropriate",
@@ -3361,7 +5869,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please use appropriate language in the report."
+      "example": "Please use appropriate language in the report.",
+      "examples": [
+        {
+          "text": "Please use appropriate language in the report.",
+          "translation": "報告書において適切な言葉を使用してください。"
+        }
+      ]
     },
     {
       "word": "suitable",
@@ -3369,7 +5883,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We found a suitable meeting room."
+      "example": "We found a suitable meeting room.",
+      "examples": [
+        {
+          "text": "We found a suitable meeting room.",
+          "translation": "私たちは適切な会議室を見つけた。"
+        }
+      ]
     },
     {
       "word": "necessary",
@@ -3377,7 +5897,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Is another meeting necessary?"
+      "example": "Is another meeting necessary?",
+      "examples": [
+        {
+          "text": "Is another meeting necessary?",
+          "translation": "もう一度会議が必要ですか。"
+        }
+      ]
     },
     {
       "word": "optional",
@@ -3385,7 +5911,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The afternoon workshop is optional."
+      "example": "The afternoon workshop is optional.",
+      "examples": [
+        {
+          "text": "The afternoon workshop is optional.",
+          "translation": "午後のワークショップは選択的である。"
+        }
+      ]
     },
     {
       "word": "urgent",
@@ -3393,7 +5925,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This request is urgent."
+      "example": "This request is urgent.",
+      "examples": [
+        {
+          "text": "This request is urgent.",
+          "translation": "この依頼は急ぎです。"
+        }
+      ]
     },
     {
       "word": "critical",
@@ -3401,7 +5939,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Accurate data is critical to the project."
+      "example": "Accurate data is critical to the project.",
+      "examples": [
+        {
+          "text": "Accurate data is critical to the project.",
+          "translation": "プロジェクトにおいて正確なデータは重要である。"
+        }
+      ]
     },
     {
       "word": "daily",
@@ -3409,7 +5953,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We hold a short daily meeting."
+      "example": "We hold a short daily meeting.",
+      "examples": [
+        {
+          "text": "We hold a short daily meeting.",
+          "translation": "私たちは毎日短い会議を開く。"
+        }
+      ]
     },
     {
       "word": "weekly",
@@ -3417,7 +5967,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The weekly report is due on Friday."
+      "example": "The weekly report is due on Friday.",
+      "examples": [
+        {
+          "text": "The weekly report is due on Friday.",
+          "translation": "週次報告書の提出期限は金曜日です。"
+        }
+      ]
     },
     {
       "word": "quarterly",
@@ -3425,7 +5981,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We review our targets at quarterly meetings."
+      "example": "We review our targets at quarterly meetings.",
+      "examples": [
+        {
+          "text": "We review our targets at quarterly meetings.",
+          "translation": "私たちは四半期ごとの会議で、目標を見直します。"
+        }
+      ]
     },
     {
       "word": "annual",
@@ -3433,7 +5995,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The annual report is available online."
+      "example": "The annual report is available online.",
+      "examples": [
+        {
+          "text": "The annual report is available online.",
+          "translation": "年次報告書はオンラインで閲覧できる。"
+        }
+      ]
     },
     {
       "word": "occasional",
@@ -3441,7 +6009,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The role requires occasional travel."
+      "example": "The role requires occasional travel.",
+      "examples": [
+        {
+          "text": "The role requires occasional travel.",
+          "translation": "時折の出張が必要です"
+        }
+      ]
     },
     {
       "word": "immediate",
@@ -3449,7 +6023,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The problem needs immediate attention."
+      "example": "The problem needs immediate attention.",
+      "examples": [
+        {
+          "text": "The problem needs immediate attention.",
+          "translation": "問題は直ちに注意を要する。"
+        }
+      ]
     },
     {
       "word": "timely",
@@ -3457,7 +6037,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Your timely advice helped us finish."
+      "example": "Your timely advice helped us finish.",
+      "examples": [
+        {
+          "text": "Your timely advice helped us finish.",
+          "translation": "あなたの適切なアドバイスが私たちを終わらせた。"
+        }
+      ]
     },
     {
       "word": "late",
@@ -3465,7 +6051,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The delivery was late."
+      "example": "The delivery was late.",
+      "examples": [
+        {
+          "text": "The delivery was late.",
+          "translation": "配達が遅れました。"
+        }
+      ]
     },
     {
       "word": "outstanding",
@@ -3473,7 +6065,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She did outstanding work on the project."
+      "example": "She did outstanding work on the project.",
+      "examples": [
+        {
+          "text": "She did outstanding work on the project.",
+          "translation": "彼女はこのプロジェクトで優れた仕事をした。"
+        }
+      ]
     },
     {
       "word": "finished",
@@ -3481,7 +6079,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please send the finished report."
+      "example": "Please send the finished report.",
+      "examples": [
+        {
+          "text": "Please send the finished report.",
+          "translation": "完了した報告書を送ってください。"
+        }
+      ]
     },
     {
       "word": "successful",
@@ -3489,7 +6093,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The product launch was successful."
+      "example": "The product launch was successful.",
+      "examples": [
+        {
+          "text": "The product launch was successful.",
+          "translation": "製品発売に成功した。"
+        }
+      ]
     },
     {
       "word": "accepted",
@@ -3497,7 +6107,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This is the generally accepted procedure."
+      "example": "This is the generally accepted procedure.",
+      "examples": [
+        {
+          "text": "This is the generally accepted procedure.",
+          "translation": "これは一般に受け入れられている手順である。"
+        }
+      ]
     },
     {
       "word": "received",
@@ -3505,7 +6121,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We received your message this morning."
+      "example": "We received your message this morning.",
+      "examples": [
+        {
+          "text": "We received your message this morning.",
+          "translation": "今朝 あなたのメッセージを受け取った"
+        }
+      ]
     },
     {
       "word": "sent",
@@ -3513,7 +6135,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "I sent the report yesterday."
+      "example": "I sent the report yesterday.",
+      "examples": [
+        {
+          "text": "I sent the report yesterday.",
+          "translation": "昨日報告書を送った。"
+        }
+      ]
     },
     {
       "word": "checked",
@@ -3521,7 +6149,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "She checked every figure twice."
+      "example": "She checked every figure twice.",
+      "examples": [
+        {
+          "text": "She checked every figure twice.",
+          "translation": "彼女は全ての数字を2回確認した。"
+        }
+      ]
     },
     {
       "word": "public",
@@ -3529,7 +6163,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The report is available to the public."
+      "example": "The report is available to the public.",
+      "examples": [
+        {
+          "text": "The report is available to the public.",
+          "translation": "報告書は公開されている。"
+        }
+      ]
     },
     {
       "word": "internal",
@@ -3537,7 +6177,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This document is for internal use."
+      "example": "This document is for internal use.",
+      "examples": [
+        {
+          "text": "This document is for internal use.",
+          "translation": "この文書は内部用です。"
+        }
+      ]
     },
     {
       "word": "domestic",
@@ -3545,7 +6191,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Domestic sales increased this year."
+      "example": "Domestic sales increased this year.",
+      "examples": [
+        {
+          "text": "Domestic sales increased this year.",
+          "translation": "今年は国内販売が増加した。"
+        }
+      ]
     },
     {
       "word": "global",
@@ -3553,7 +6205,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company serves a global market."
+      "example": "The company serves a global market.",
+      "examples": [
+        {
+          "text": "The company serves a global market.",
+          "translation": "会社はグローバル市場にサービスを提供している。"
+        }
+      ]
     },
     {
       "word": "local",
@@ -3561,7 +6219,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We work with local suppliers."
+      "example": "We work with local suppliers.",
+      "examples": [
+        {
+          "text": "We work with local suppliers.",
+          "translation": "地元の供給者と仕事をしている。"
+        }
+      ]
     },
     {
       "word": "national",
@@ -3569,7 +6233,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The campaign received national attention."
+      "example": "The campaign received national attention.",
+      "examples": [
+        {
+          "text": "The campaign received national attention.",
+          "translation": "このキャンペーンは全国的な注目を集めた。"
+        }
+      ]
     },
     {
       "word": "overseas",
@@ -3577,7 +6247,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The company sells its products overseas."
+      "example": "The company sells its products overseas.",
+      "examples": [
+        {
+          "text": "The company sells its products overseas.",
+          "translation": "海外にも製品を販売している。"
+        }
+      ]
     },
     {
       "word": "export",
@@ -3585,7 +6261,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We export furniture to several countries."
+      "example": "We export furniture to several countries.",
+      "examples": [
+        {
+          "text": "We export furniture to several countries.",
+          "translation": "家具を数カ国に輸出している。"
+        }
+      ]
     },
     {
       "word": "exporter",
@@ -3593,7 +6275,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The exporter arranged the shipping documents."
+      "example": "The exporter arranged the shipping documents.",
+      "examples": [
+        {
+          "text": "The exporter arranged the shipping documents.",
+          "translation": "輸出者は出荷書類を整理した。"
+        }
+      ]
     },
     {
       "word": "cargo",
@@ -3601,7 +6289,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The ship carries valuable cargo."
+      "example": "The ship carries valuable cargo.",
+      "examples": [
+        {
+          "text": "The ship carries valuable cargo.",
+          "translation": "船は貴重な貨物を運んでいる。"
+        }
+      ]
     },
     {
       "word": "freight",
@@ -3609,7 +6303,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The goods travel by rail freight."
+      "example": "The goods travel by rail freight.",
+      "examples": [
+        {
+          "text": "The goods travel by rail freight.",
+          "translation": "貨物は鉄道貨物で運ばれる。"
+        }
+      ]
     },
     {
       "word": "warehouse",
@@ -3617,7 +6317,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The products are stored in our warehouse."
+      "example": "The products are stored in our warehouse.",
+      "examples": [
+        {
+          "text": "The products are stored in our warehouse.",
+          "translation": "製品は倉庫に保管されている。"
+        }
+      ]
     },
     {
       "word": "stockpile",
@@ -3625,7 +6331,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The factory maintains a stockpile of spare parts."
+      "example": "The factory maintains a stockpile of spare parts.",
+      "examples": [
+        {
+          "text": "The factory maintains a stockpile of spare parts.",
+          "translation": "工場は予備部品の貯蔵庫を維持している。"
+        }
+      ]
     },
     {
       "word": "stocktaking",
@@ -3633,7 +6345,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The shop will close for stocktaking."
+      "example": "The shop will close for stocktaking.",
+      "examples": [
+        {
+          "text": "The shop will close for stocktaking.",
+          "translation": "その店は棚卸しのため休業します。"
+        }
+      ]
     },
     {
       "word": "dispatch",
@@ -3641,7 +6359,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We will dispatch the documents today."
+      "example": "We will dispatch the documents today.",
+      "examples": [
+        {
+          "text": "We will dispatch the documents today.",
+          "translation": "文書は今日発送します。"
+        }
+      ]
     },
     {
       "word": "courier",
@@ -3649,7 +6373,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The courier collected the parcel."
+      "example": "The courier collected the parcel.",
+      "examples": [
+        {
+          "text": "The courier collected the parcel.",
+          "translation": "配達人はその小包を受け取った。"
+        }
+      ]
     },
     {
       "word": "port",
@@ -3657,7 +6387,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The shipment arrived at the port."
+      "example": "The shipment arrived at the port.",
+      "examples": [
+        {
+          "text": "The shipment arrived at the port.",
+          "translation": "荷物は港に到着した。"
+        }
+      ]
     },
     {
       "word": "depot",
@@ -3665,7 +6401,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The buses return to the depot at night."
+      "example": "The buses return to the depot at night.",
+      "examples": [
+        {
+          "text": "The buses return to the depot at night.",
+          "translation": "夜にバスは駅に戻る。"
+        }
+      ]
     },
     {
       "word": "facility",
@@ -3673,7 +6415,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new facility can handle larger orders."
+      "example": "The new facility can handle larger orders.",
+      "examples": [
+        {
+          "text": "The new facility can handle larger orders.",
+          "translation": "新しい施設はより大きな注文を処理できる。"
+        }
+      ]
     },
     {
       "word": "factory",
@@ -3681,7 +6429,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The factory produces kitchen equipment."
+      "example": "The factory produces kitchen equipment.",
+      "examples": [
+        {
+          "text": "The factory produces kitchen equipment.",
+          "translation": "工場は厨房機器を製造している。"
+        }
+      ]
     },
     {
       "word": "production line",
@@ -3689,7 +6443,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The production line stopped for maintenance."
+      "example": "The production line stopped for maintenance.",
+      "examples": [
+        {
+          "text": "The production line stopped for maintenance.",
+          "translation": "生産ラインはメンテナンスのために停止した。"
+        }
+      ]
     },
     {
       "word": "machine",
@@ -3697,7 +6457,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "This machine cuts the metal sheets."
+      "example": "This machine cuts the metal sheets.",
+      "examples": [
+        {
+          "text": "This machine cuts the metal sheets.",
+          "translation": "この機械は金属板を切断する。"
+        }
+      ]
     },
     {
       "word": "tool",
@@ -3705,7 +6471,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Use the right tool for the job."
+      "example": "Use the right tool for the job.",
+      "examples": [
+        {
+          "text": "Use the right tool for the job.",
+          "translation": "仕事に合った道具を使え"
+        }
+      ]
     },
     {
       "word": "instrument",
@@ -3713,7 +6485,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The instrument measures temperature accurately."
+      "example": "The instrument measures temperature accurately.",
+      "examples": [
+        {
+          "text": "The instrument measures temperature accurately.",
+          "translation": "その計器は温度を正確に測ります。"
+        }
+      ]
     },
     {
       "word": "appliance",
@@ -3721,7 +6499,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The appliance comes with an instruction manual."
+      "example": "The appliance comes with an instruction manual.",
+      "examples": [
+        {
+          "text": "The appliance comes with an instruction manual.",
+          "translation": "装置は使用説明書が付属している。"
+        }
+      ]
     },
     {
       "word": "part",
@@ -3729,7 +6513,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We need to replace this broken part."
+      "example": "We need to replace this broken part.",
+      "examples": [
+        {
+          "text": "We need to replace this broken part.",
+          "translation": "この壊れた部品を交換する必要があります。"
+        }
+      ]
     },
     {
       "word": "resource",
@@ -3737,7 +6527,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Water is an important natural resource."
+      "example": "Water is an important natural resource.",
+      "examples": [
+        {
+          "text": "Water is an important natural resource.",
+          "translation": "水は重要な天然資源である。"
+        }
+      ]
     },
     {
       "word": "commodity",
@@ -3745,7 +6541,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Coffee is a widely traded commodity."
+      "example": "Coffee is a widely traded commodity.",
+      "examples": [
+        {
+          "text": "Coffee is a widely traded commodity.",
+          "translation": "コーヒーは広く取引される商品である。"
+        }
+      ]
     },
     {
       "word": "product",
@@ -3753,7 +6555,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The product is ready for testing."
+      "example": "The product is ready for testing.",
+      "examples": [
+        {
+          "text": "The product is ready for testing.",
+          "translation": "製品はテストの準備ができた。"
+        }
+      ]
     },
     {
       "word": "goods",
@@ -3761,7 +6569,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Check the goods when they arrive."
+      "example": "Check the goods when they arrive.",
+      "examples": [
+        {
+          "text": "Check the goods when they arrive.",
+          "translation": "到着したら商品を確認する。"
+        }
+      ]
     },
     {
       "word": "unit",
@@ -3769,7 +6583,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Each unit is tested before shipment."
+      "example": "Each unit is tested before shipment.",
+      "examples": [
+        {
+          "text": "Each unit is tested before shipment.",
+          "translation": "各ユニットは出荷前にテストを行う。"
+        }
+      ]
     },
     {
       "word": "lot",
@@ -3777,7 +6597,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The entire lot passed inspection."
+      "example": "The entire lot passed inspection.",
+      "examples": [
+        {
+          "text": "The entire lot passed inspection.",
+          "translation": "全てのロットが検査を通過した。"
+        }
+      ]
     },
     {
       "word": "prototype",
@@ -3785,7 +6611,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The team built a working prototype."
+      "example": "The team built a working prototype.",
+      "examples": [
+        {
+          "text": "The team built a working prototype.",
+          "translation": "チームは実用的なプロトタイプを作製した。"
+        }
+      ]
     },
     {
       "word": "defect",
@@ -3793,7 +6625,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The inspection found a small defect."
+      "example": "The inspection found a small defect.",
+      "examples": [
+        {
+          "text": "The inspection found a small defect.",
+          "translation": "検査で小さな欠陥が見つかった。"
+        }
+      ]
     },
     {
       "word": "fault",
@@ -3801,7 +6639,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "A wiring fault stopped the machine."
+      "example": "A wiring fault stopped the machine.",
+      "examples": [
+        {
+          "text": "A wiring fault stopped the machine.",
+          "translation": "配線の故障で機械が止まった。"
+        }
+      ]
     },
     {
       "word": "mistake",
@@ -3809,7 +6653,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We corrected the mistake immediately."
+      "example": "We corrected the mistake immediately.",
+      "examples": [
+        {
+          "text": "We corrected the mistake immediately.",
+          "translation": "私たちは間違いを直ちに訂正した。"
+        }
+      ]
     },
     {
       "word": "repair",
@@ -3817,7 +6667,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "A technician will repair the printer."
+      "example": "A technician will repair the printer.",
+      "examples": [
+        {
+          "text": "A technician will repair the printer.",
+          "translation": "技師がプリンタを修理します。"
+        }
+      ]
     },
     {
       "word": "replacement",
@@ -3825,7 +6681,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The supplier sent a replacement part."
+      "example": "The supplier sent a replacement part.",
+      "examples": [
+        {
+          "text": "The supplier sent a replacement part.",
+          "translation": "供給者は交換部品を送った。"
+        }
+      ]
     },
     {
       "word": "reuse",
@@ -3833,7 +6695,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We reuse these containers."
+      "example": "We reuse these containers.",
+      "examples": [
+        {
+          "text": "We reuse these containers.",
+          "translation": "これらの容器を再利用する。"
+        }
+      ]
     },
     {
       "word": "environment",
@@ -3841,7 +6709,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The project aims to protect the environment."
+      "example": "The project aims to protect the environment.",
+      "examples": [
+        {
+          "text": "The project aims to protect the environment.",
+          "translation": "環境保全を目的とした。"
+        }
+      ]
     },
     {
       "word": "emission",
@@ -3849,7 +6723,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The filter reduces the emission of dust."
+      "example": "The filter reduces the emission of dust.",
+      "examples": [
+        {
+          "text": "The filter reduces the emission of dust.",
+          "translation": "フィルタはダストの放出を減らす。"
+        }
+      ]
     },
     {
       "word": "conservation",
@@ -3857,7 +6737,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The plan supports water conservation."
+      "example": "The plan supports water conservation.",
+      "examples": [
+        {
+          "text": "The plan supports water conservation.",
+          "translation": "計画は水の節約を支援する。"
+        }
+      ]
     },
     {
       "word": "automation",
@@ -3865,7 +6751,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Automation reduced repetitive work."
+      "example": "Automation reduced repetitive work.",
+      "examples": [
+        {
+          "text": "Automation reduced repetitive work.",
+          "translation": "自動化は反復作業を減らした。"
+        }
+      ]
     },
     {
       "word": "machine learning",
@@ -3873,7 +6765,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The team uses machine learning to classify images."
+      "example": "The team uses machine learning to classify images.",
+      "examples": [
+        {
+          "text": "The team uses machine learning to classify images.",
+          "translation": "チームは,画像を分類するために機械学習を用いた。"
+        }
+      ]
     },
     {
       "word": "code",
@@ -3881,7 +6779,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Please follow the company's code of conduct."
+      "example": "Please follow the company's code of conduct.",
+      "examples": [
+        {
+          "text": "Please follow the company's code of conduct.",
+          "translation": "会社の規則に従ってください。"
+        }
+      ]
     },
     {
       "word": "support",
@@ -3889,7 +6793,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "These beams support the factory roof."
+      "example": "These beams support the factory roof.",
+      "examples": [
+        {
+          "text": "These beams support the factory roof.",
+          "translation": "工場の屋根を支える梁である。"
+        }
+      ]
     },
     {
       "word": "upgrade",
@@ -3897,7 +6807,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We plan to upgrade the equipment."
+      "example": "We plan to upgrade the equipment.",
+      "examples": [
+        {
+          "text": "We plan to upgrade the equipment.",
+          "translation": "装置の更新を計画している。"
+        }
+      ]
     },
     {
       "word": "installation",
@@ -3905,7 +6821,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Installation will take two days."
+      "example": "Installation will take two days.",
+      "examples": [
+        {
+          "text": "Installation will take two days.",
+          "translation": "設置には2日かかる"
+        }
+      ]
     },
     {
       "word": "integration",
@@ -3913,7 +6835,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The integration of the two systems is complete."
+      "example": "The integration of the two systems is complete.",
+      "examples": [
+        {
+          "text": "The integration of the two systems is complete.",
+          "translation": "両システムの統合は完了した。"
+        }
+      ]
     },
     {
       "word": "conversion",
@@ -3921,7 +6849,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The file conversion finished successfully."
+      "example": "The file conversion finished successfully.",
+      "examples": [
+        {
+          "text": "The file conversion finished successfully.",
+          "translation": "ファイルの変換が完了しました。"
+        }
+      ]
     },
     {
       "word": "verification",
@@ -3929,7 +6863,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The results require independent verification."
+      "example": "The results require independent verification.",
+      "examples": [
+        {
+          "text": "The results require independent verification.",
+          "translation": "結果は独立した検証が必要である。"
+        }
+      ]
     },
     {
       "word": "certification",
@@ -3937,7 +6877,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The equipment passed the certification process."
+      "example": "The equipment passed the certification process.",
+      "examples": [
+        {
+          "text": "The equipment passed the certification process.",
+          "translation": "装置は認証プロセスを通過した。"
+        }
+      ]
     },
     {
       "word": "standardization",
@@ -3945,7 +6891,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "Standardization makes the parts easier to replace."
+      "example": "Standardization makes the parts easier to replace.",
+      "examples": [
+        {
+          "text": "Standardization makes the parts easier to replace.",
+          "translation": "標準化により部品の交換が容易になる。"
+        }
+      ]
     },
     {
       "word": "benchmark",
@@ -3953,7 +6905,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We use last year's results as a benchmark."
+      "example": "We use last year's results as a benchmark.",
+      "examples": [
+        {
+          "text": "We use last year's results as a benchmark.",
+          "translation": "昨年の成績をベンチマークとして用いた。"
+        }
+      ]
     },
     {
       "word": "trial",
@@ -3961,7 +6919,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The trial will run for one month."
+      "example": "The trial will run for one month.",
+      "examples": [
+        {
+          "text": "The trial will run for one month.",
+          "translation": "その試行は1か月間行われます。"
+        }
+      ]
     },
     {
       "word": "feasibility",
@@ -3969,7 +6933,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "We are studying the feasibility of the plan."
+      "example": "We are studying the feasibility of the plan.",
+      "examples": [
+        {
+          "text": "We are studying the feasibility of the plan.",
+          "translation": "計画の実現性を検討中である。"
+        }
+      ]
     },
     {
       "word": "capacity",
@@ -3977,7 +6947,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The warehouse is nearly at full capacity."
+      "example": "The warehouse is nearly at full capacity.",
+      "examples": [
+        {
+          "text": "The warehouse is nearly at full capacity.",
+          "translation": "倉庫はほぼ満員になっている。"
+        }
+      ]
     },
     {
       "word": "accessibility",
@@ -3985,7 +6961,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new entrance improves accessibility."
+      "example": "The new entrance improves accessibility.",
+      "examples": [
+        {
+          "text": "The new entrance improves accessibility.",
+          "translation": "新しい入口はアクセス性を改善する。"
+        }
+      ]
     },
     {
       "word": "capability",
@@ -3993,7 +6975,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The machine has the capability to handle larger parts."
+      "example": "The machine has the capability to handle larger parts.",
+      "examples": [
+        {
+          "text": "The machine has the capability to handle larger parts.",
+          "translation": "機械は大型部品の取扱いが可能である。"
+        }
+      ]
     },
     {
       "word": "throughput",
@@ -4001,7 +6989,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The new equipment increased daily throughput."
+      "example": "The new equipment increased daily throughput.",
+      "examples": [
+        {
+          "text": "The new equipment increased daily throughput.",
+          "translation": "新設装置により,1日の処理量が増加した。"
+        }
+      ]
     },
     {
       "word": "synchronization",
@@ -4009,7 +7003,13 @@
       "tags": [
         "仕事"
       ],
-      "example": "The system checks the synchronization of the clocks."
+      "example": "The system checks the synchronization of the clocks.",
+      "examples": [
+        {
+          "text": "The system checks the synchronization of the clocks.",
+          "translation": "また,システムはクロックの同期をチェックする。"
+        }
+      ]
     }
   ]
 }

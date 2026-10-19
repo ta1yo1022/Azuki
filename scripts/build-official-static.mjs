@@ -10,12 +10,13 @@ for (const entry of manifest.decks) {
   if (!['beginner','intermediate','advanced'].includes(entry.level)) throw new Error('Invalid level');
   const input=parseDeck(await readFile(`content/official/${entry.file}`,'utf8'));
   if (input.words.some(w=>!w.example?.trim())) throw new Error(`${entry.id}: example required`);
+  if (input.words.some(w=>!w.examples?.length || w.examples.some(e=>!e.translation?.trim() || !/[ぁ-んァ-ン一-龥]/.test(e.translation)))) throw new Error(`${entry.id}: Japanese example translation required`);
   const words=input.words.map((w,ordinal)=>({...w,id:`${entry.id}-${ordinal}`,ordinal}));
   const text=JSON.stringify(words)+'\n';
   const file=`${entry.id}.${createHash('sha256').update(text).digest('hex').slice(0,16)}.json`;
   await writeFile(`public/content/official/${file}`,text);
   const {words:_,...metadata}=input;
-  catalog.push({...metadata,id:entry.id,visibility:'public',wordCount:words.length,createdAt:'2026-10-05T00:00:00.000Z',updatedAt:manifest.updatedAt,isOfficial:true,officialLevel:entry.level,contentSource:'ejdict',standard:true,file,contentHash:await contentHash(words)});
+  catalog.push({...metadata,id:entry.id,visibility:'public',wordCount:words.length,createdAt:'2026-10-05T00:00:00.000Z',updatedAt:manifest.exampleTranslationsUpdatedAt ?? manifest.updatedAt,isOfficial:true,officialLevel:entry.level,contentSource:'ejdict',standard:true,file,contentHash:await contentHash(words)});
 }
 if(new Set(catalog.map(d=>d.id)).size!==catalog.length)throw new Error('Duplicate official ID');
 await writeFile('shared/official-catalog.json',JSON.stringify(catalog,null,2)+'\n');

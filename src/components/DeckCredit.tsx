@@ -52,7 +52,7 @@ export function OfficialPublisher({ deck }: { deck: Deck }) {
 export function DeckCredit({ deck }: { deck: Deck }) {
   if (deck.contentSource === "cefrj") return <div className="deck-credit cefrj-credit">
     <p>出典：『CEFR-J Wordlist Version 1.6』東京外国語大学投野由紀夫研究室（<a href="https://www.cefr-j.org/download.html#cefrj_wordlist" target="_blank" rel="noreferrer">CEFR-J公式サイト</a>より2026年10月ダウンロード）。語彙表の著作権は原著作者に帰属します。</p>
-    <p>Azukiがレベル別に二分し、<a href="https://github.com/kujirahand/EJDict" target="_blank" rel="noreferrer">EJDict</a>（<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ja" target="_blank" rel="noreferrer">CC0</a>）を参考に、AIを用いて日本語の意味と例文を編集しています。代表的な意味の選定・その他の意味・例文はAzuki独自のもので、CEFR-Jの公式訳や公式例文ではありません。</p>
+    <p>Azukiがレベル別に二分し、<a href="https://github.com/kujirahand/EJDict" target="_blank" rel="noreferrer">EJDict</a>（<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ja" target="_blank" rel="noreferrer">CC0</a>）を参考に、AIを用いて日本語の意味と例文を編集しています。代表的な意味の選定・その他の意味・例文とその日本語訳はAzukiが追加したもので、CEFR-Jの公式訳や公式例文ではありません。日本語訳はAIによる下訳を含みます。</p>
     <p>項目数は品詞別です。同じ綴りが複数の品詞・レベルに含まれることがあります。</p>
   </div>;
   if (deck.contentSource !== "ejdict") return null;
@@ -60,7 +60,7 @@ export function DeckCredit({ deck }: { deck: Deck }) {
     <p className="deck-credit">
       出典：<a href="https://github.com/kujirahand/EJDict" target="_blank" rel="noreferrer">EJDict</a>
       {" "}（<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ja" target="_blank" rel="noreferrer">CC0</a>）。
-      テーマに合わせて語義を編集・補足しています。
+      テーマに合わせて語義を編集・補足しています。例文の日本語訳はAIによる下訳を含みます。
     </p>
   );
 }

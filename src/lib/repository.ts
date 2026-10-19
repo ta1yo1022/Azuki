@@ -236,7 +236,7 @@ export const publicRepository = {
         words.push(...page.words);cursor=page.nextCursor;
       }
       if(words.length!==standard.wordCount)throw new Error('単語帳が更新されました。開き直してください。');
-      const input:DeckInput={schemaVersion:1,title:standard.title,description:standard.description,textbookTags:standard.textbookTags,words:words.map(({word,meaning,example,examples,tags})=>({word,meaning,example,...(examples ? {examples} : {}),tags}))};
+      const input:DeckInput={schemaVersion:1,title:standard.title,description:standard.description,textbookTags:standard.textbookTags,words:words.map(({word,meaning,example,examples,tags})=>({word,meaning,...(examples?.length ? {examples} : {example}),tags}))};
       return (await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/fork`,{method:'POST',body:JSON.stringify(input)})).deck;
     }
     return (await request<{ deck: Deck; alreadySaved: boolean }>(

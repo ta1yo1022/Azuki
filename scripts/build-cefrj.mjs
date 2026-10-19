@@ -16,16 +16,16 @@ for (const [level,count] of Object.entries(counts)) {
   for (const [part, subset] of [rows.slice(0,middle),rows.slice(middle)].entries()) {
     const id = `azuki-cefrj-${level.toLowerCase()}-${part+1}-v1`;
     const words = subset.map((entry,ordinal) => {
-      const {meaning,example,otherMeanings,usagePos,usageNote} = editorial.get(cefrEntryKey(entry));
+      const {meaning,example,exampleTranslation,otherMeanings,usagePos,usageNote} = editorial.get(cefrEntryKey(entry));
       const displayPos = usagePos ?? entry.pos;
       if (!pos[displayPos]) throw new Error(`Unknown part of speech: ${entry.pos}`);
-      return {id:`${id}-${ordinal}`,ordinal,word:entry.word,meaning,example,otherMeanings,...(usageNote ? {usageNote} : {}),tags:[pos[displayPos],level]};
+      return {id:`${id}-${ordinal}`,ordinal,word:entry.word,meaning,example,examples:[{text:example,translation:exampleTranslation}],otherMeanings,...(usageNote ? {usageNote} : {}),tags:[pos[displayPos],level]};
     });
     const text = JSON.stringify(words)+'\n';
     const hash = createHash('sha256').update(text).digest('hex').slice(0,16);
     const file = `${id}.${hash}.json`;
     await writeFile(`public/content/cefrj/${file}`,text);
-    catalog.push({id,schemaVersion:1,title:`CEFR-J ${level} ${part === 0 ? '前編' : '後編'}`,description:`CEFR-J Wordlistの${level}を原典の掲載順で二分した${part === 0 ? '前編' : '後編'}です。代表的な意味・例文付き。`,textbookTags:[{name:'CEFR-J',edition:'Wordlist 1.6'}],visibility:'public',wordCount:words.length,createdAt:'2026-10-18T00:00:00.000Z',updatedAt:'2026-10-18T00:00:00.000Z',isOfficial:true,contentSource:'cefrj',cefrLevel:level,standard:true,contentHash:await contentHash(words),file});
+    catalog.push({id,schemaVersion:1,title:`CEFR-J ${level} ${part === 0 ? '前編' : '後編'}`,description:`CEFR-J Wordlistの${level}を原典の掲載順で二分した${part === 0 ? '前編' : '後編'}です。代表的な意味・例文付き。`,textbookTags:[{name:'CEFR-J',edition:'Wordlist 1.6'}],visibility:'public',wordCount:words.length,createdAt:'2026-10-18T00:00:00.000Z',updatedAt:'2026-10-19T00:00:00.000Z',isOfficial:true,contentSource:'cefrj',cefrLevel:level,standard:true,contentHash:await contentHash(words),file});
   }
 }
 await writeFile('shared/cefrj-catalog.json',JSON.stringify(catalog,null,2)+'\n');

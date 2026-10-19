@@ -17,6 +17,12 @@
       "example": "I wake up at seven every morning.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I wake up at seven every morning.",
+          "translation": "私は毎朝7時に目を覚まします。"
+        }
       ]
     },
     {
@@ -25,6 +31,12 @@
       "example": "Please wash your hands before lunch.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please wash your hands before lunch.",
+          "translation": "昼食の前に手を洗ってください。"
+        }
       ]
     },
     {
@@ -33,6 +45,12 @@
       "example": "I brush my teeth after breakfast.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I brush my teeth after breakfast.",
+          "translation": "私は朝食の後に歯を磨きます。"
+        }
       ]
     },
     {
@@ -41,6 +59,12 @@
       "example": "We dress quickly in the morning.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We dress quickly in the morning.",
+          "translation": "私たちは朝、手早く着替えます。"
+        }
       ]
     },
     {
@@ -49,6 +73,12 @@
       "example": "I wear a warm coat in winter.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I wear a warm coat in winter.",
+          "translation": "私は冬に暖かいコートを着ます。"
+        }
       ]
     },
     {
@@ -57,6 +87,12 @@
       "example": "Please open the window.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please open the window.",
+          "translation": "窓を開けてください。"
+        }
       ]
     },
     {
@@ -65,6 +101,12 @@
       "example": "Please close the door quietly.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please close the door quietly.",
+          "translation": "静かにドアを閉めてください。"
+        }
       ]
     },
     {
@@ -73,6 +115,12 @@
       "example": "I read a book before bed.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I read a book before bed.",
+          "translation": "私は寝る前に本を読みます。"
+        }
       ]
     },
     {
@@ -81,6 +129,12 @@
       "example": "Please write your name here.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please write your name here.",
+          "translation": "ここに名前を書いてください。"
+        }
       ]
     },
     {
@@ -89,6 +143,12 @@
       "example": "I listen to music on the bus.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I listen to music on the bus.",
+          "translation": "私はバスの中で音楽を聴きます。"
+        }
       ]
     },
     {
@@ -97,6 +157,12 @@
       "example": "Can you speak more slowly?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Can you speak more slowly?",
+          "translation": "もう少しゆっくり話してくれないか。"
+        }
       ]
     },
     {
@@ -105,6 +171,12 @@
       "example": "Can I ask you a question?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Can I ask you a question?",
+          "translation": "質問してもいい?"
+        }
       ]
     },
     {
@@ -113,6 +185,12 @@
       "example": "Please answer the question.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please answer the question.",
+          "translation": "質問に答えてください。"
+        }
       ]
     },
     {
@@ -121,6 +199,12 @@
       "example": "I learn a new word every day.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I learn a new word every day.",
+          "translation": "私は毎日新しい言葉を学ぶ。"
+        }
       ]
     },
     {
@@ -129,6 +213,12 @@
       "example": "My sister teaches English.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "My sister teaches English.",
+          "translation": "私の姉は英語を教えている。"
+        }
       ]
     },
     {
@@ -137,6 +227,12 @@
       "example": "We study together after school.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We study together after school.",
+          "translation": "放課後は一緒に勉強する。"
+        }
       ]
     },
     {
@@ -145,6 +241,12 @@
       "example": "I practice speaking English every day.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I practice speaking English every day.",
+          "translation": "私は毎日英語を話す練習をしています。"
+        }
       ]
     },
     {
@@ -153,6 +255,12 @@
       "example": "I remember your name.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I remember your name.",
+          "translation": "あなたの名前を覚えています。"
+        }
       ]
     },
     {
@@ -161,6 +269,12 @@
       "example": "Do not forget your umbrella.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Do not forget your umbrella.",
+          "translation": "傘を忘れないでください。"
+        }
       ]
     },
     {
@@ -169,6 +283,12 @@
       "example": "I understand this sentence.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I understand this sentence.",
+          "translation": "この文はわかる。"
+        }
       ]
     },
     {
@@ -177,6 +297,12 @@
       "example": "Let's start the lesson.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Let's start the lesson.",
+          "translation": "レッスンを始めよう"
+        }
       ]
     },
     {
@@ -185,6 +311,12 @@
       "example": "I finish my homework before dinner.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I finish my homework before dinner.",
+          "translation": "私は夕食の前に宿題を終える。"
+        }
       ]
     },
     {
@@ -193,6 +325,12 @@
       "example": "Please wait here for a minute.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please wait here for a minute.",
+          "translation": "ちょっと待ってください。"
+        }
       ]
     },
     {
@@ -201,6 +339,12 @@
       "example": "Can you help me with this bag?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Can you help me with this bag?",
+          "translation": "このバッグを手伝ってくれませんか。"
+        }
       ]
     },
     {
@@ -209,6 +353,12 @@
       "example": "May I use your pen?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "May I use your pen?",
+          "translation": "ペンを使ってもいいですか。"
+        }
       ]
     },
     {
@@ -217,6 +367,12 @@
       "example": "We need more time.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We need more time.",
+          "translation": "もう少し時間が必要だ"
+        }
       ]
     },
     {
@@ -225,6 +381,12 @@
       "example": "I want a new notebook.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I want a new notebook.",
+          "translation": "新しいノートが欲しい。"
+        }
       ]
     },
     {
@@ -233,6 +395,12 @@
       "example": "I like this song.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I like this song.",
+          "translation": "この曲が好きだ。"
+        }
       ]
     },
     {
@@ -241,6 +409,12 @@
       "example": "I love spending time with my family.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I love spending time with my family.",
+          "translation": "私は家族と過ごす時間が好きです。"
+        }
       ]
     },
     {
@@ -249,6 +423,12 @@
       "example": "I live near the station.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I live near the station.",
+          "translation": "私は駅の近くに住んでいます。"
+        }
       ]
     },
     {
@@ -257,6 +437,12 @@
       "example": "I walk to school every day.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I walk to school every day.",
+          "translation": "私は毎日歩いて学校に行く。"
+        }
       ]
     },
     {
@@ -265,6 +451,12 @@
       "example": "We run in the park on Sundays.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We run in the park on Sundays.",
+          "translation": "日曜日は公園で走る。"
+        }
       ]
     },
     {
@@ -273,6 +465,12 @@
       "example": "Please sit next to me.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please sit next to me.",
+          "translation": "私の隣に座ってください。"
+        }
       ]
     },
     {
@@ -281,6 +479,12 @@
       "example": "We stand in line for the bus.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We stand in line for the bus.",
+          "translation": "私たちはバスの列に立つ。"
+        }
       ]
     },
     {
@@ -289,6 +493,12 @@
       "example": "I sleep for eight hours each night.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I sleep for eight hours each night.",
+          "translation": "私は毎晩8時間眠る。"
+        }
       ]
     },
     {
@@ -297,6 +507,12 @@
       "example": "I work at a bookstore.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I work at a bookstore.",
+          "translation": "私は本屋で働いています。"
+        }
       ]
     },
     {
@@ -305,6 +521,12 @@
       "example": "The children play in the garden.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "The children play in the garden.",
+          "translation": "子供たちは庭で遊んでいる。"
+        }
       ]
     },
     {
@@ -313,6 +535,12 @@
       "example": "Let's meet at the cafe.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Let's meet at the cafe.",
+          "translation": "カフェで会おう。"
+        }
       ]
     },
     {
@@ -321,6 +549,12 @@
       "example": "I will call you tonight.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I will call you tonight.",
+          "translation": "今夜電話する"
+        }
       ]
     },
     {
@@ -329,6 +563,12 @@
       "example": "We visit our grandparents on weekends.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We visit our grandparents on weekends.",
+          "translation": "週末は祖父母を訪ねる。"
+        }
       ]
     },
     {
@@ -337,6 +577,12 @@
       "example": "I buy fruit at the market.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I buy fruit at the market.",
+          "translation": "私は市場で果物を買う。"
+        }
       ]
     },
     {
@@ -345,6 +591,12 @@
       "example": "Can I pay by card?",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Can I pay by card?",
+          "translation": "カードで払えますか。"
+        }
       ]
     },
     {
@@ -353,6 +605,12 @@
       "example": "Please choose one color.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please choose one color.",
+          "translation": "色を一つ選んでください。"
+        }
       ]
     },
     {
@@ -361,6 +619,12 @@
       "example": "Please bring your notebook tomorrow.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please bring your notebook tomorrow.",
+          "translation": "明日ノートを持ってきて下さい。"
+        }
       ]
     },
     {
@@ -369,6 +633,12 @@
       "example": "Take an umbrella with you.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Take an umbrella with you.",
+          "translation": "傘を持っていってください。"
+        }
       ]
     },
     {
@@ -377,6 +647,12 @@
       "example": "Please give this note to your teacher.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "Please give this note to your teacher.",
+          "translation": "このメモを先生に渡してください。"
+        }
       ]
     },
     {
@@ -385,6 +661,12 @@
       "example": "I cannot find my keys.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I cannot find my keys.",
+          "translation": "鍵が見つからない。"
+        }
       ]
     },
     {
@@ -393,6 +675,12 @@
       "example": "You can keep this book.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "You can keep this book.",
+          "translation": "この本はお持ちください。"
+        }
       ]
     },
     {
@@ -401,6 +689,12 @@
       "example": "I clean my room on Saturdays.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "I clean my room on Saturdays.",
+          "translation": "土曜日に部屋を掃除する。"
+        }
       ]
     },
     {
@@ -409,6 +703,12 @@
       "example": "We cook dinner together.",
       "tags": [
         "動詞"
+      ],
+      "examples": [
+        {
+          "text": "We cook dinner together.",
+          "translation": "私たちは一緒に夕食を作る。"
+        }
       ]
     },
     {
@@ -417,7 +717,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please accept this small gift."
+      "example": "Please accept this small gift.",
+      "examples": [
+        {
+          "text": "Please accept this small gift.",
+          "translation": "ささやかな贈り物ですが、お受け取りください。"
+        }
+      ]
     },
     {
       "word": "act",
@@ -425,7 +731,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We must act before it rains."
+      "example": "We must act before it rains.",
+      "examples": [
+        {
+          "text": "We must act before it rains.",
+          "translation": "雨が降る前に行動しなければならない。"
+        }
+      ]
     },
     {
       "word": "adjust",
@@ -433,7 +745,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You can adjust the seat height."
+      "example": "You can adjust the seat height.",
+      "examples": [
+        {
+          "text": "You can adjust the seat height.",
+          "translation": "座面の高さを調節できます。"
+        }
+      ]
     },
     {
       "word": "admire",
@@ -441,7 +759,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I admire your patience with children."
+      "example": "I admire your patience with children.",
+      "examples": [
+        {
+          "text": "I admire your patience with children.",
+          "translation": "子供に対するあなたの忍耐に感心した。"
+        }
+      ]
     },
     {
       "word": "adopt",
@@ -449,7 +773,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's adopt a simpler approach."
+      "example": "Let's adopt a simpler approach.",
+      "examples": [
+        {
+          "text": "Let's adopt a simpler approach.",
+          "translation": "もっと簡単な方法を 採用しましょう"
+        }
+      ]
     },
     {
       "word": "afford",
@@ -457,7 +787,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We cannot afford a new car."
+      "example": "We cannot afford a new car.",
+      "examples": [
+        {
+          "text": "We cannot afford a new car.",
+          "translation": "私たちは新しい車を買う余裕がない。"
+        }
+      ]
     },
     {
       "word": "allow",
@@ -465,7 +801,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They allow dogs in this cafe."
+      "example": "They allow dogs in this cafe.",
+      "examples": [
+        {
+          "text": "They allow dogs in this cafe.",
+          "translation": "このカフェでは犬を入れるのが許されている。"
+        }
+      ]
     },
     {
       "word": "apologize",
@@ -473,7 +815,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I apologize for arriving so late."
+      "example": "I apologize for arriving so late.",
+      "examples": [
+        {
+          "text": "I apologize for arriving so late.",
+          "translation": "遅れて申し訳ありません。"
+        }
+      ]
     },
     {
       "word": "appear",
@@ -481,7 +829,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Stars appear after the sun sets."
+      "example": "Stars appear after the sun sets.",
+      "examples": [
+        {
+          "text": "Stars appear after the sun sets.",
+          "translation": "日が沈んだ後に星が現れる。"
+        }
+      ]
     },
     {
       "word": "appreciate",
@@ -489,7 +843,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I really appreciate your help today."
+      "example": "I really appreciate your help today.",
+      "examples": [
+        {
+          "text": "I really appreciate your help today.",
+          "translation": "今日のあなたの助けに感謝します。"
+        }
+      ]
     },
     {
       "word": "approve",
@@ -497,7 +857,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "My parents approve of the plan."
+      "example": "My parents approve of the plan.",
+      "examples": [
+        {
+          "text": "My parents approve of the plan.",
+          "translation": "両親は計画を認めている。"
+        }
+      ]
     },
     {
       "word": "arrange",
@@ -505,7 +871,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please arrange the books by size."
+      "example": "Please arrange the books by size.",
+      "examples": [
+        {
+          "text": "Please arrange the books by size.",
+          "translation": "本を大きさ順に並べてください。"
+        }
+      ]
     },
     {
       "word": "attack",
@@ -513,7 +885,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Some insects attack young plants."
+      "example": "Some insects attack young plants.",
+      "examples": [
+        {
+          "text": "Some insects attack young plants.",
+          "translation": "幼植物を攻撃する昆虫もある。"
+        }
+      ]
     },
     {
       "word": "attend",
@@ -521,7 +899,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I will attend the meeting tomorrow."
+      "example": "I will attend the meeting tomorrow.",
+      "examples": [
+        {
+          "text": "I will attend the meeting tomorrow.",
+          "translation": "明日の会議に私は出席します。"
+        }
+      ]
     },
     {
       "word": "attract",
@@ -529,7 +913,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Magnets attract small pieces of iron."
+      "example": "Magnets attract small pieces of iron.",
+      "examples": [
+        {
+          "text": "Magnets attract small pieces of iron.",
+          "translation": "磁石は小さな鉄の塊を引っ張る。"
+        }
+      ]
     },
     {
       "word": "bake",
@@ -537,7 +927,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's bake some bread together."
+      "example": "Let's bake some bread together.",
+      "examples": [
+        {
+          "text": "Let's bake some bread together.",
+          "translation": "一緒にパンを焼こう。"
+        }
+      ]
     },
     {
       "word": "bathe",
@@ -545,7 +941,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We bathe the baby before bed."
+      "example": "We bathe the baby before bed.",
+      "examples": [
+        {
+          "text": "We bathe the baby before bed.",
+          "translation": "寝る前に赤ちゃんを入浴させる。"
+        }
+      ]
     },
     {
       "word": "become",
@@ -553,7 +955,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She wants to become a teacher."
+      "example": "She wants to become a teacher.",
+      "examples": [
+        {
+          "text": "She wants to become a teacher.",
+          "translation": "彼女は教師になりたい。"
+        }
+      ]
     },
     {
       "word": "believe",
@@ -561,7 +969,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I believe your story."
+      "example": "I believe your story.",
+      "examples": [
+        {
+          "text": "I believe your story.",
+          "translation": "あなたの話を信じるわ"
+        }
+      ]
     },
     {
       "word": "belong",
@@ -569,7 +983,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "These keys belong to my sister."
+      "example": "These keys belong to my sister.",
+      "examples": [
+        {
+          "text": "These keys belong to my sister.",
+          "translation": "これは妹の鍵だ"
+        }
+      ]
     },
     {
       "word": "bet",
@@ -577,7 +997,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "He likes to bet on horse races."
+      "example": "He likes to bet on horse races.",
+      "examples": [
+        {
+          "text": "He likes to bet on horse races.",
+          "translation": "彼は競馬に賭けるのが好きだ。"
+        }
+      ]
     },
     {
       "word": "blame",
@@ -585,7 +1011,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't blame yourself for the delay."
+      "example": "Don't blame yourself for the delay.",
+      "examples": [
+        {
+          "text": "Don't blame yourself for the delay.",
+          "translation": "遅れを自分で責めないで。"
+        }
+      ]
     },
     {
       "word": "blow",
@@ -593,7 +1025,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Strong winds blow across the lake."
+      "example": "Strong winds blow across the lake.",
+      "examples": [
+        {
+          "text": "Strong winds blow across the lake.",
+          "translation": "強風が湖を吹いている。"
+        }
+      ]
     },
     {
       "word": "borrow",
@@ -601,7 +1039,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "May I borrow your umbrella?"
+      "example": "May I borrow your umbrella?",
+      "examples": [
+        {
+          "text": "May I borrow your umbrella?",
+          "translation": "傘を貸してもらえますか。"
+        }
+      ]
     },
     {
       "word": "bounce",
@@ -609,7 +1053,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Watch the ball bounce across the floor."
+      "example": "Watch the ball bounce across the floor.",
+      "examples": [
+        {
+          "text": "Watch the ball bounce across the floor.",
+          "translation": "ボールが床の上を跳ねていく様子を見てください。"
+        }
+      ]
     },
     {
       "word": "break",
@@ -617,7 +1067,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Be careful not to break the glass."
+      "example": "Be careful not to break the glass.",
+      "examples": [
+        {
+          "text": "Be careful not to break the glass.",
+          "translation": "ガラスを割らないように気をつけて。"
+        }
+      ]
     },
     {
       "word": "build",
@@ -625,7 +1081,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They plan to build a new library."
+      "example": "They plan to build a new library.",
+      "examples": [
+        {
+          "text": "They plan to build a new library.",
+          "translation": "彼らは新しい図書館を建設する計画を立てている。"
+        }
+      ]
     },
     {
       "word": "burst",
@@ -633,7 +1095,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The balloon might burst in the heat."
+      "example": "The balloon might burst in the heat.",
+      "examples": [
+        {
+          "text": "The balloon might burst in the heat.",
+          "translation": "熱で風船が破裂するかもしれない。"
+        }
+      ]
     },
     {
       "word": "calculate",
@@ -641,7 +1109,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please calculate the total cost."
+      "example": "Please calculate the total cost.",
+      "examples": [
+        {
+          "text": "Please calculate the total cost.",
+          "translation": "総費用を計算してください。"
+        }
+      ]
     },
     {
       "word": "care",
@@ -649,7 +1123,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I care about your happiness."
+      "example": "I care about your happiness.",
+      "examples": [
+        {
+          "text": "I care about your happiness.",
+          "translation": "君の幸せが大事だ"
+        }
+      ]
     },
     {
       "word": "carve",
@@ -657,7 +1137,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "He can carve animals from wood."
+      "example": "He can carve animals from wood.",
+      "examples": [
+        {
+          "text": "He can carve animals from wood.",
+          "translation": "彼は木から動物を彫ることができる。"
+        }
+      ]
     },
     {
       "word": "celebrate",
@@ -665,7 +1151,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's celebrate your birthday on Saturday."
+      "example": "Let's celebrate your birthday on Saturday.",
+      "examples": [
+        {
+          "text": "Let's celebrate your birthday on Saturday.",
+          "translation": "土曜日にお誕生日を祝おう。"
+        }
+      ]
     },
     {
       "word": "chat",
@@ -673,7 +1165,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We often chat after class."
+      "example": "We often chat after class.",
+      "examples": [
+        {
+          "text": "We often chat after class.",
+          "translation": "授業の後はよく話をする。"
+        }
+      ]
     },
     {
       "word": "cheer",
@@ -681,7 +1179,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Fans cheer when their team scores."
+      "example": "Fans cheer when their team scores.",
+      "examples": [
+        {
+          "text": "Fans cheer when their team scores.",
+          "translation": "ファンはチームが得点したときに歓声をあげる。"
+        }
+      ]
     },
     {
       "word": "chew",
@@ -689,7 +1193,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please chew your food slowly."
+      "example": "Please chew your food slowly.",
+      "examples": [
+        {
+          "text": "Please chew your food slowly.",
+          "translation": "ゆっくり噛んでください。"
+        }
+      ]
     },
     {
       "word": "clear",
@@ -697,7 +1207,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's clear the table after dinner."
+      "example": "Let's clear the table after dinner.",
+      "examples": [
+        {
+          "text": "Let's clear the table after dinner.",
+          "translation": "夕食の後にテーブルを片付けよう。"
+        }
+      ]
     },
     {
       "word": "collect",
@@ -705,7 +1221,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I collect postcards from different countries."
+      "example": "I collect postcards from different countries.",
+      "examples": [
+        {
+          "text": "I collect postcards from different countries.",
+          "translation": "私は様々な国の葉書を集めています。"
+        }
+      ]
     },
     {
       "word": "come",
@@ -713,7 +1235,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please come to my house tomorrow."
+      "example": "Please come to my house tomorrow.",
+      "examples": [
+        {
+          "text": "Please come to my house tomorrow.",
+          "translation": "明日は私の家に来て下さい。"
+        }
+      ]
     },
     {
       "word": "compete",
@@ -721,7 +1249,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Eight teams will compete for the cup."
+      "example": "Eight teams will compete for the cup.",
+      "examples": [
+        {
+          "text": "Eight teams will compete for the cup.",
+          "translation": "8チームがカップを争う。"
+        }
+      ]
     },
     {
       "word": "compose",
@@ -729,7 +1263,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She likes to compose music at night."
+      "example": "She likes to compose music at night.",
+      "examples": [
+        {
+          "text": "She likes to compose music at night.",
+          "translation": "彼女は夜に作曲することが好きです。"
+        }
+      ]
     },
     {
       "word": "concentrate",
@@ -737,7 +1277,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I cannot concentrate with the television on."
+      "example": "I cannot concentrate with the television on.",
+      "examples": [
+        {
+          "text": "I cannot concentrate with the television on.",
+          "translation": "テレビを見ていると集中できない。"
+        }
+      ]
     },
     {
       "word": "conclude",
@@ -745,7 +1291,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will conclude the meeting at five."
+      "example": "We will conclude the meeting at five.",
+      "examples": [
+        {
+          "text": "We will conclude the meeting at five.",
+          "translation": "5時に会議を終了する。"
+        }
+      ]
     },
     {
       "word": "confuse",
@@ -753,7 +1305,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "People often confuse these two words."
+      "example": "People often confuse these two words.",
+      "examples": [
+        {
+          "text": "People often confuse these two words.",
+          "translation": "人々はしばしばこの二つの言葉を混同する。"
+        }
+      ]
     },
     {
       "word": "consider",
@@ -761,7 +1319,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please consider all the options."
+      "example": "Please consider all the options.",
+      "examples": [
+        {
+          "text": "Please consider all the options.",
+          "translation": "あらゆる選択肢を考えて下さい。"
+        }
+      ]
     },
     {
       "word": "contain",
@@ -769,7 +1333,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "These cookies contain nuts."
+      "example": "These cookies contain nuts.",
+      "examples": [
+        {
+          "text": "These cookies contain nuts.",
+          "translation": "このクッキーにはナッツが入っている。"
+        }
+      ]
     },
     {
       "word": "continue",
@@ -777,7 +1347,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's continue our walk after lunch."
+      "example": "Let's continue our walk after lunch.",
+      "examples": [
+        {
+          "text": "Let's continue our walk after lunch.",
+          "translation": "昼食の後に歩き続けよう。"
+        }
+      ]
     },
     {
       "word": "correct",
@@ -785,7 +1361,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please correct the spelling mistakes."
+      "example": "Please correct the spelling mistakes.",
+      "examples": [
+        {
+          "text": "Please correct the spelling mistakes.",
+          "translation": "スペルミスを訂正してください。"
+        }
+      ]
     },
     {
       "word": "count",
@@ -793,7 +1375,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you count the stars?"
+      "example": "Can you count the stars?",
+      "examples": [
+        {
+          "text": "Can you count the stars?",
+          "translation": "星を数えられる?"
+        }
+      ]
     },
     {
       "word": "crash",
@@ -801,7 +1389,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The car could crash on this ice."
+      "example": "The car could crash on this ice.",
+      "examples": [
+        {
+          "text": "The car could crash on this ice.",
+          "translation": "車はこの氷の上で衝突するかもしれない。"
+        }
+      ]
     },
     {
       "word": "cross",
@@ -809,7 +1403,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Look both ways before you cross."
+      "example": "Look both ways before you cross.",
+      "examples": [
+        {
+          "text": "Look both ways before you cross.",
+          "translation": "横断する前に両方を見て"
+        }
+      ]
     },
     {
       "word": "crush",
@@ -817,7 +1417,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Crush the garlic with a spoon."
+      "example": "Crush the garlic with a spoon.",
+      "examples": [
+        {
+          "text": "Crush the garlic with a spoon.",
+          "translation": "スプーンでニンニクを粉砕する。"
+        }
+      ]
     },
     {
       "word": "cure",
@@ -825,7 +1431,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The treatment helped cure his illness."
+      "example": "The treatment helped cure his illness.",
+      "examples": [
+        {
+          "text": "The treatment helped cure his illness.",
+          "translation": "治療により治癒した。"
+        }
+      ]
     },
     {
       "word": "dance",
@@ -833,7 +1445,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We love to dance together."
+      "example": "We love to dance together.",
+      "examples": [
+        {
+          "text": "We love to dance together.",
+          "translation": "私たちは一緒に踊るのが好きです。"
+        }
+      ]
     },
     {
       "word": "deal",
@@ -841,7 +1459,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I can deal with this problem."
+      "example": "I can deal with this problem.",
+      "examples": [
+        {
+          "text": "I can deal with this problem.",
+          "translation": "私はこの問題に取り組める。"
+        }
+      ]
     },
     {
       "word": "decrease",
@@ -849,7 +1473,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We need to decrease our spending."
+      "example": "We need to decrease our spending.",
+      "examples": [
+        {
+          "text": "We need to decrease our spending.",
+          "translation": "私たちは支出を減らさなければならない。"
+        }
+      ]
     },
     {
       "word": "defend",
@@ -857,7 +1487,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The walls helped defend the city."
+      "example": "The walls helped defend the city.",
+      "examples": [
+        {
+          "text": "The walls helped defend the city.",
+          "translation": "城壁は都市を守る役割を果たした。"
+        }
+      ]
     },
     {
       "word": "depend",
@@ -865,7 +1501,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Young children depend on their parents."
+      "example": "Young children depend on their parents.",
+      "examples": [
+        {
+          "text": "Young children depend on their parents.",
+          "translation": "幼い子供は両親に依存する。"
+        }
+      ]
     },
     {
       "word": "design",
@@ -873,7 +1515,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She will design our new kitchen."
+      "example": "She will design our new kitchen.",
+      "examples": [
+        {
+          "text": "She will design our new kitchen.",
+          "translation": "彼女は私たちの新しいキッチンをデザインする。"
+        }
+      ]
     },
     {
       "word": "detect",
@@ -881,7 +1529,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "This alarm can detect smoke."
+      "example": "This alarm can detect smoke.",
+      "examples": [
+        {
+          "text": "This alarm can detect smoke.",
+          "translation": "このアラームは煙を検出できる。"
+        }
+      ]
     },
     {
       "word": "disappear",
@@ -889,7 +1543,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The mountains disappear into the fog."
+      "example": "The mountains disappear into the fog.",
+      "examples": [
+        {
+          "text": "The mountains disappear into the fog.",
+          "translation": "山々は霧に消え去る。"
+        }
+      ]
     },
     {
       "word": "divide",
@@ -897,7 +1557,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Divide the cake into eight pieces."
+      "example": "Divide the cake into eight pieces.",
+      "examples": [
+        {
+          "text": "Divide the cake into eight pieces.",
+          "translation": "ケーキを8つに分ける。"
+        }
+      ]
     },
     {
       "word": "doubt",
@@ -905,7 +1571,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I doubt that he will agree."
+      "example": "I doubt that he will agree.",
+      "examples": [
+        {
+          "text": "I doubt that he will agree.",
+          "translation": "彼が同意するのは疑わしい。"
+        }
+      ]
     },
     {
       "word": "draw",
@@ -913,7 +1585,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you draw a picture of a cat?"
+      "example": "Can you draw a picture of a cat?",
+      "examples": [
+        {
+          "text": "Can you draw a picture of a cat?",
+          "translation": "猫の絵を描けますか。"
+        }
+      ]
     },
     {
       "word": "drink",
@@ -921,7 +1599,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I drink tea every morning."
+      "example": "I drink tea every morning.",
+      "examples": [
+        {
+          "text": "I drink tea every morning.",
+          "translation": "私は毎朝お茶を飲む。"
+        }
+      ]
     },
     {
       "word": "drop",
@@ -929,7 +1613,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't drop your phone in the water."
+      "example": "Don't drop your phone in the water.",
+      "examples": [
+        {
+          "text": "Don't drop your phone in the water.",
+          "translation": "電話を水に落とさないで。"
+        }
+      ]
     },
     {
       "word": "earn",
@@ -937,7 +1627,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She works weekends to earn extra money."
+      "example": "She works weekends to earn extra money.",
+      "examples": [
+        {
+          "text": "She works weekends to earn extra money.",
+          "translation": "彼女は余分なお金を稼ぐために週末に働いている。"
+        }
+      ]
     },
     {
       "word": "eat",
@@ -945,7 +1641,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We usually eat dinner at seven."
+      "example": "We usually eat dinner at seven.",
+      "examples": [
+        {
+          "text": "We usually eat dinner at seven.",
+          "translation": "私たちは普段7時に夕食を食べます。"
+        }
+      ]
     },
     {
       "word": "enjoy",
@@ -953,7 +1655,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I enjoy walking by the river."
+      "example": "I enjoy walking by the river.",
+      "examples": [
+        {
+          "text": "I enjoy walking by the river.",
+          "translation": "私は川沿いを歩くのが好きです。"
+        }
+      ]
     },
     {
       "word": "escape",
@@ -961,7 +1669,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The bird managed to escape its cage."
+      "example": "The bird managed to escape its cage.",
+      "examples": [
+        {
+          "text": "The bird managed to escape its cage.",
+          "translation": "鳥はその檻から脱出することができた。"
+        }
+      ]
     },
     {
       "word": "exchange",
@@ -969,7 +1683,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can I exchange this shirt for another?"
+      "example": "Can I exchange this shirt for another?",
+      "examples": [
+        {
+          "text": "Can I exchange this shirt for another?",
+          "translation": "このシャツを別のものに交換してもいいですか。"
+        }
+      ]
     },
     {
       "word": "exist",
@@ -977,7 +1697,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Do these animals still exist?"
+      "example": "Do these animals still exist?",
+      "examples": [
+        {
+          "text": "Do these animals still exist?",
+          "translation": "これらの動物はまだ存在するのか。"
+        }
+      ]
     },
     {
       "word": "expand",
@@ -985,7 +1711,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The metal will expand when heated."
+      "example": "The metal will expand when heated.",
+      "examples": [
+        {
+          "text": "The metal will expand when heated.",
+          "translation": "金属は加熱すると膨張する。"
+        }
+      ]
     },
     {
       "word": "experience",
@@ -993,7 +1725,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Visitors can experience life on a farm."
+      "example": "Visitors can experience life on a farm.",
+      "examples": [
+        {
+          "text": "Visitors can experience life on a farm.",
+          "translation": "農家の生活を体験できる。"
+        }
+      ]
     },
     {
       "word": "face",
@@ -1001,7 +1739,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We must face the problem together."
+      "example": "We must face the problem together.",
+      "examples": [
+        {
+          "text": "We must face the problem together.",
+          "translation": "私たちは一緒に問題に直面しなければならない。"
+        }
+      ]
     },
     {
       "word": "fall",
@@ -1009,7 +1753,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Leaves fall from the trees in autumn."
+      "example": "Leaves fall from the trees in autumn.",
+      "examples": [
+        {
+          "text": "Leaves fall from the trees in autumn.",
+          "translation": "秋には木から葉が落ちる。"
+        }
+      ]
     },
     {
       "word": "feed",
@@ -1017,7 +1767,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please feed the cat before you leave."
+      "example": "Please feed the cat before you leave.",
+      "examples": [
+        {
+          "text": "Please feed the cat before you leave.",
+          "translation": "帰る前に猫に餌をやってください。"
+        }
+      ]
     },
     {
       "word": "feel",
@@ -1025,7 +1781,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I feel much better today."
+      "example": "I feel much better today.",
+      "examples": [
+        {
+          "text": "I feel much better today.",
+          "translation": "今日はずっと気分が良くなった。"
+        }
+      ]
     },
     {
       "word": "fight",
@@ -1033,7 +1795,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The brothers often fight over their toys."
+      "example": "The brothers often fight over their toys.",
+      "examples": [
+        {
+          "text": "The brothers often fight over their toys.",
+          "translation": "兄弟はよくおもちゃのために喧嘩する。"
+        }
+      ]
     },
     {
       "word": "fix",
@@ -1041,7 +1809,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you fix this broken chair?"
+      "example": "Can you fix this broken chair?",
+      "examples": [
+        {
+          "text": "Can you fix this broken chair?",
+          "translation": "この壊れた椅子を直せる?"
+        }
+      ]
     },
     {
       "word": "fly",
@@ -1049,7 +1823,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Birds fly south for the winter."
+      "example": "Birds fly south for the winter.",
+      "examples": [
+        {
+          "text": "Birds fly south for the winter.",
+          "translation": "鳥は冬を越すために南へ飛ぶ。"
+        }
+      ]
     },
     {
       "word": "follow",
@@ -1057,7 +1837,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please follow me to your table."
+      "example": "Please follow me to your table.",
+      "examples": [
+        {
+          "text": "Please follow me to your table.",
+          "translation": "お席までご案内しますので、ついてきてください。"
+        }
+      ]
     },
     {
       "word": "force",
@@ -1065,7 +1851,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't force the children to eat."
+      "example": "Don't force the children to eat.",
+      "examples": [
+        {
+          "text": "Don't force the children to eat.",
+          "translation": "子供に食べさせるな。"
+        }
+      ]
     },
     {
       "word": "freeze",
@@ -1073,7 +1865,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The lake may freeze tonight."
+      "example": "The lake may freeze tonight.",
+      "examples": [
+        {
+          "text": "The lake may freeze tonight.",
+          "translation": "湖は今夜凍るかもしれない。"
+        }
+      ]
     },
     {
       "word": "fry",
@@ -1081,7 +1879,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Fry the onions until they soften."
+      "example": "Fry the onions until they soften.",
+      "examples": [
+        {
+          "text": "Fry the onions until they soften.",
+          "translation": "玉ねぎを柔らかくなるまで炒める。"
+        }
+      ]
     },
     {
       "word": "gaze",
@@ -1089,7 +1893,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We gaze at the stars together."
+      "example": "We gaze at the stars together.",
+      "examples": [
+        {
+          "text": "We gaze at the stars together.",
+          "translation": "私たちは一緒に星を見る。"
+        }
+      ]
     },
     {
       "word": "glance",
@@ -1097,7 +1907,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I glance at the clock."
+      "example": "I glance at the clock.",
+      "examples": [
+        {
+          "text": "I glance at the clock.",
+          "translation": "私は時計をちらりと見ます。"
+        }
+      ]
     },
     {
       "word": "grab",
@@ -1105,7 +1921,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Grab your coat and come outside."
+      "example": "Grab your coat and come outside.",
+      "examples": [
+        {
+          "text": "Grab your coat and come outside.",
+          "translation": "コートを持って外に出て来い。"
+        }
+      ]
     },
     {
       "word": "greet",
@@ -1113,7 +1935,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We greet our neighbors every morning."
+      "example": "We greet our neighbors every morning.",
+      "examples": [
+        {
+          "text": "We greet our neighbors every morning.",
+          "translation": "私たちは毎朝隣人に挨拶する。"
+        }
+      ]
     },
     {
       "word": "guess",
@@ -1121,7 +1949,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you guess my favorite color?"
+      "example": "Can you guess my favorite color?",
+      "examples": [
+        {
+          "text": "Can you guess my favorite color?",
+          "translation": "私の好きな色を 見当てられますか?"
+        }
+      ]
     },
     {
       "word": "handle",
@@ -1129,7 +1963,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please handle these plates carefully."
+      "example": "Please handle these plates carefully.",
+      "examples": [
+        {
+          "text": "Please handle these plates carefully.",
+          "translation": "これらのプレートを慎重に扱ってください。"
+        }
+      ]
     },
     {
       "word": "happen",
@@ -1137,7 +1977,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Accidents can happen anywhere."
+      "example": "Accidents can happen anywhere.",
+      "examples": [
+        {
+          "text": "Accidents can happen anywhere.",
+          "translation": "事故はどこでも起こりうる。"
+        }
+      ]
     },
     {
       "word": "hear",
@@ -1145,7 +1991,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I can hear someone singing."
+      "example": "I can hear someone singing.",
+      "examples": [
+        {
+          "text": "I can hear someone singing.",
+          "translation": "誰かが歌っているのが聞こえる。"
+        }
+      ]
     },
     {
       "word": "heat",
@@ -1153,7 +2005,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Heat the soup in a small pan."
+      "example": "Heat the soup in a small pan.",
+      "examples": [
+        {
+          "text": "Heat the soup in a small pan.",
+          "translation": "スープを小さな鍋で熱してください。"
+        }
+      ]
     },
     {
       "word": "hit",
@@ -1161,7 +2019,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The ball hit the window."
+      "example": "The ball hit the window.",
+      "examples": [
+        {
+          "text": "The ball hit the window.",
+          "translation": "ボールは窓に当たった。"
+        }
+      ]
     },
     {
       "word": "hope",
@@ -1169,7 +2033,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I hope you enjoy your trip."
+      "example": "I hope you enjoy your trip.",
+      "examples": [
+        {
+          "text": "I hope you enjoy your trip.",
+          "translation": "旅を楽しんでほしい。"
+        }
+      ]
     },
     {
       "word": "hurry",
@@ -1177,7 +2047,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We must hurry to catch the train."
+      "example": "We must hurry to catch the train.",
+      "examples": [
+        {
+          "text": "We must hurry to catch the train.",
+          "translation": "私たちは急いで電車に乗らなければならない。"
+        }
+      ]
     },
     {
       "word": "identify",
@@ -1185,7 +2061,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you identify this bird?"
+      "example": "Can you identify this bird?",
+      "examples": [
+        {
+          "text": "Can you identify this bird?",
+          "translation": "この鳥を特定できますか。"
+        }
+      ]
     },
     {
       "word": "ignore",
@@ -1193,7 +2075,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please don't ignore my question."
+      "example": "Please don't ignore my question.",
+      "examples": [
+        {
+          "text": "Please don't ignore my question.",
+          "translation": "私の質問を無視しないでください。"
+        }
+      ]
     },
     {
       "word": "include",
@@ -1201,7 +2089,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The price will include breakfast."
+      "example": "The price will include breakfast.",
+      "examples": [
+        {
+          "text": "The price will include breakfast.",
+          "translation": "その料金には朝食が含まれます。"
+        }
+      ]
     },
     {
       "word": "influence",
@@ -1209,7 +2103,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Friends can influence our choices."
+      "example": "Friends can influence our choices.",
+      "examples": [
+        {
+          "text": "Friends can influence our choices.",
+          "translation": "友達は私たちの選択に影響を与えることができる。"
+        }
+      ]
     },
     {
       "word": "insist",
@@ -1217,7 +2117,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I insist that we check the facts."
+      "example": "I insist that we check the facts.",
+      "examples": [
+        {
+          "text": "I insist that we check the facts.",
+          "translation": "事実を確認するよう主張する。"
+        }
+      ]
     },
     {
       "word": "introduce",
@@ -1225,7 +2131,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let me introduce my brother."
+      "example": "Let me introduce my brother.",
+      "examples": [
+        {
+          "text": "Let me introduce my brother.",
+          "translation": "私の弟を紹介しましょう"
+        }
+      ]
     },
     {
       "word": "invent",
@@ -1233,7 +2145,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She hopes to invent a useful tool."
+      "example": "She hopes to invent a useful tool.",
+      "examples": [
+        {
+          "text": "She hopes to invent a useful tool.",
+          "translation": "彼女は有用な道具を発明したいと願っている。"
+        }
+      ]
     },
     {
       "word": "iron",
@@ -1241,7 +2159,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I need to iron my shirt."
+      "example": "I need to iron my shirt.",
+      "examples": [
+        {
+          "text": "I need to iron my shirt.",
+          "translation": "シャツをアイロンする必要がある。"
+        }
+      ]
     },
     {
       "word": "joke",
@@ -1249,7 +2173,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We often joke about our cooking."
+      "example": "We often joke about our cooking.",
+      "examples": [
+        {
+          "text": "We often joke about our cooking.",
+          "translation": "私たちはよく料理について冗談を言う。"
+        }
+      ]
     },
     {
       "word": "jump",
@@ -1257,7 +2187,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The dog can jump over the fence."
+      "example": "The dog can jump over the fence.",
+      "examples": [
+        {
+          "text": "The dog can jump over the fence.",
+          "translation": "犬はフェンスを飛び越えられる。"
+        }
+      ]
     },
     {
       "word": "kiss",
@@ -1265,7 +2201,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She leaned down to kiss the baby."
+      "example": "She leaned down to kiss the baby.",
+      "examples": [
+        {
+          "text": "She leaned down to kiss the baby.",
+          "translation": "彼女は赤ん坊にキスするために腰を下ろした。"
+        }
+      ]
     },
     {
       "word": "knit",
@@ -1273,7 +2215,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "My grandmother can knit warm socks."
+      "example": "My grandmother can knit warm socks.",
+      "examples": [
+        {
+          "text": "My grandmother can knit warm socks.",
+          "translation": "祖母は暖かい靴下を編むことができる。"
+        }
+      ]
     },
     {
       "word": "knock",
@@ -1281,7 +2229,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please knock before you enter."
+      "example": "Please knock before you enter.",
+      "examples": [
+        {
+          "text": "Please knock before you enter.",
+          "translation": "入る前にノックしてください。"
+        }
+      ]
     },
     {
       "word": "lack",
@@ -1289,7 +2243,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We lack enough space for another desk."
+      "example": "We lack enough space for another desk.",
+      "examples": [
+        {
+          "text": "We lack enough space for another desk.",
+          "translation": "もう一つの机のための十分なスペースがありません。"
+        }
+      ]
     },
     {
       "word": "last",
@@ -1297,7 +2257,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "These shoes should last for years."
+      "example": "These shoes should last for years.",
+      "examples": [
+        {
+          "text": "These shoes should last for years.",
+          "translation": "これは何年も履けるはずだ。"
+        }
+      ]
     },
     {
       "word": "lay",
@@ -1305,7 +2271,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Lay the blanket on the grass."
+      "example": "Lay the blanket on the grass.",
+      "examples": [
+        {
+          "text": "Lay the blanket on the grass.",
+          "translation": "毛布を芝生の上に敷いてください。"
+        }
+      ]
     },
     {
       "word": "lean",
@@ -1313,7 +2285,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't lean against the wet wall."
+      "example": "Don't lean against the wet wall.",
+      "examples": [
+        {
+          "text": "Don't lean against the wet wall.",
+          "translation": "濡れた壁に 寄りかかるな"
+        }
+      ]
     },
     {
       "word": "lend",
@@ -1321,7 +2299,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Could you lend me a pen?"
+      "example": "Could you lend me a pen?",
+      "examples": [
+        {
+          "text": "Could you lend me a pen?",
+          "translation": "ペンを貸してくれませんか。"
+        }
+      ]
     },
     {
       "word": "lie",
@@ -1329,7 +2313,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I want to lie on the sofa."
+      "example": "I want to lie on the sofa.",
+      "examples": [
+        {
+          "text": "I want to lie on the sofa.",
+          "translation": "私はソファに横になりたいです。"
+        }
+      ]
     },
     {
       "word": "light",
@@ -1337,7 +2327,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's light a candle."
+      "example": "Let's light a candle.",
+      "examples": [
+        {
+          "text": "Let's light a candle.",
+          "translation": "ロウソクを灯そう"
+        }
+      ]
     },
     {
       "word": "link",
@@ -1345,7 +2341,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The bridge will link the two villages."
+      "example": "The bridge will link the two villages.",
+      "examples": [
+        {
+          "text": "The bridge will link the two villages.",
+          "translation": "橋は2つの村を結ぶ。"
+        }
+      ]
     },
     {
       "word": "lock",
@@ -1353,7 +2355,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Remember to lock the front door."
+      "example": "Remember to lock the front door.",
+      "examples": [
+        {
+          "text": "Remember to lock the front door.",
+          "translation": "玄関をロックするのを忘れないで。"
+        }
+      ]
     },
     {
       "word": "look",
@@ -1361,7 +2369,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Look at the rainbow!"
+      "example": "Look at the rainbow!",
+      "examples": [
+        {
+          "text": "Look at the rainbow!",
+          "translation": "虹を見て！"
+        }
+      ]
     },
     {
       "word": "lower",
@@ -1369,7 +2383,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please lower your voice."
+      "example": "Please lower your voice.",
+      "examples": [
+        {
+          "text": "Please lower your voice.",
+          "translation": "声を落としてください。"
+        }
+      ]
     },
     {
       "word": "manage",
@@ -1377,7 +2397,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She helps manage the family shop."
+      "example": "She helps manage the family shop.",
+      "examples": [
+        {
+          "text": "She helps manage the family shop.",
+          "translation": "彼女は家業の経営を手伝っている。"
+        }
+      ]
     },
     {
       "word": "marry",
@@ -1385,7 +2411,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They plan to marry in June."
+      "example": "They plan to marry in June.",
+      "examples": [
+        {
+          "text": "They plan to marry in June.",
+          "translation": "彼らは6月に結婚する予定だ。"
+        }
+      ]
     },
     {
       "word": "measure",
@@ -1393,7 +2425,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Measure the window before buying curtains."
+      "example": "Measure the window before buying curtains.",
+      "examples": [
+        {
+          "text": "Measure the window before buying curtains.",
+          "translation": "カーテンを買う前に窓を測ってください。"
+        }
+      ]
     },
     {
       "word": "melt",
@@ -1401,7 +2439,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The butter will melt in the pan."
+      "example": "The butter will melt in the pan.",
+      "examples": [
+        {
+          "text": "The butter will melt in the pan.",
+          "translation": "バターは鍋で溶ける。"
+        }
+      ]
     },
     {
       "word": "mind",
@@ -1409,7 +2453,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Do you mind if I sit here?"
+      "example": "Do you mind if I sit here?",
+      "examples": [
+        {
+          "text": "Do you mind if I sit here?",
+          "translation": "ここに座ってもいい?"
+        }
+      ]
     },
     {
       "word": "mix",
@@ -1417,7 +2467,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Mix the flour and water together."
+      "example": "Mix the flour and water together.",
+      "examples": [
+        {
+          "text": "Mix the flour and water together.",
+          "translation": "小麦粉と水を混ぜる。"
+        }
+      ]
     },
     {
       "word": "name",
@@ -1425,7 +2481,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will name the puppy Max."
+      "example": "We will name the puppy Max.",
+      "examples": [
+        {
+          "text": "We will name the puppy Max.",
+          "translation": "私たちはその子犬の名前をマックスとする。"
+        }
+      ]
     },
     {
       "word": "obey",
@@ -1433,7 +2495,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Drivers must obey the traffic rules."
+      "example": "Drivers must obey the traffic rules.",
+      "examples": [
+        {
+          "text": "Drivers must obey the traffic rules.",
+          "translation": "運転手は交通規則に従わなければならない。"
+        }
+      ]
     },
     {
       "word": "occur",
@@ -1441,7 +2509,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Delays often occur during heavy snow."
+      "example": "Delays often occur during heavy snow.",
+      "examples": [
+        {
+          "text": "Delays often occur during heavy snow.",
+          "translation": "積雪の多い時期に遅延が起こることが多い。"
+        }
+      ]
     },
     {
       "word": "order",
@@ -1449,7 +2523,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I'd like to order some tea."
+      "example": "I'd like to order some tea.",
+      "examples": [
+        {
+          "text": "I'd like to order some tea.",
+          "translation": "お茶を注文したい。"
+        }
+      ]
     },
     {
       "word": "owe",
@@ -1457,7 +2537,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I owe you ten dollars."
+      "example": "I owe you ten dollars.",
+      "examples": [
+        {
+          "text": "I owe you ten dollars.",
+          "translation": "10ドル借りがある"
+        }
+      ]
     },
     {
       "word": "pack",
@@ -1465,7 +2551,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I need to pack my suitcase."
+      "example": "I need to pack my suitcase.",
+      "examples": [
+        {
+          "text": "I need to pack my suitcase.",
+          "translation": "スーツケースをまとめなきゃ。"
+        }
+      ]
     },
     {
       "word": "park",
@@ -1473,7 +2565,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You can park beside the library."
+      "example": "You can park beside the library.",
+      "examples": [
+        {
+          "text": "You can park beside the library.",
+          "translation": "図書館の隣に駐車できます。"
+        }
+      ]
     },
     {
       "word": "pause",
@@ -1481,7 +2579,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's pause for a short break."
+      "example": "Let's pause for a short break.",
+      "examples": [
+        {
+          "text": "Let's pause for a short break.",
+          "translation": "ちょっと休憩しましょう。"
+        }
+      ]
     },
     {
       "word": "perform",
@@ -1489,7 +2593,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The children will perform a short play."
+      "example": "The children will perform a short play.",
+      "examples": [
+        {
+          "text": "The children will perform a short play.",
+          "translation": "子供たちは短い戯曲を演じる。"
+        }
+      ]
     },
     {
       "word": "persuade",
@@ -1497,7 +2607,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you persuade him to join us?"
+      "example": "Can you persuade him to join us?",
+      "examples": [
+        {
+          "text": "Can you persuade him to join us?",
+          "translation": "彼を説得してくれないか?"
+        }
+      ]
     },
     {
       "word": "place",
@@ -1505,7 +2621,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Place your bag under the seat."
+      "example": "Place your bag under the seat.",
+      "examples": [
+        {
+          "text": "Place your bag under the seat.",
+          "translation": "荷物をシートの下に置け。"
+        }
+      ]
     },
     {
       "word": "pour",
@@ -1513,7 +2635,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Pour the milk into the bowl."
+      "example": "Pour the milk into the bowl.",
+      "examples": [
+        {
+          "text": "Pour the milk into the bowl.",
+          "translation": "ボウルにミルクを注いでください。"
+        }
+      ]
     },
     {
       "word": "pray",
@@ -1521,7 +2649,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They pray for peace every day."
+      "example": "They pray for peace every day.",
+      "examples": [
+        {
+          "text": "They pray for peace every day.",
+          "translation": "彼らは毎日平和を祈っている。"
+        }
+      ]
     },
     {
       "word": "predict",
@@ -1529,7 +2663,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "It is hard to predict the weather."
+      "example": "It is hard to predict the weather.",
+      "examples": [
+        {
+          "text": "It is hard to predict the weather.",
+          "translation": "天気は予測しにくい。"
+        }
+      ]
     },
     {
       "word": "press",
@@ -1537,7 +2677,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Press the green button to start."
+      "example": "Press the green button to start.",
+      "examples": [
+        {
+          "text": "Press the green button to start.",
+          "translation": "緑のボタンを押して始める。"
+        }
+      ]
     },
     {
       "word": "promise",
@@ -1545,7 +2691,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I promise to call you tonight."
+      "example": "I promise to call you tonight.",
+      "examples": [
+        {
+          "text": "I promise to call you tonight.",
+          "translation": "今夜電話することを約束します。"
+        }
+      ]
     },
     {
       "word": "prove",
@@ -1553,7 +2705,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We need evidence to prove our claim."
+      "example": "We need evidence to prove our claim.",
+      "examples": [
+        {
+          "text": "We need evidence to prove our claim.",
+          "translation": "証拠が必要だ"
+        }
+      ]
     },
     {
       "word": "pull",
@@ -1561,7 +2719,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Pull the door toward you."
+      "example": "Pull the door toward you.",
+      "examples": [
+        {
+          "text": "Pull the door toward you.",
+          "translation": "ドアを手前に引いてください。"
+        }
+      ]
     },
     {
       "word": "punch",
@@ -1569,7 +2733,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The boxer learned to punch the bag."
+      "example": "The boxer learned to punch the bag.",
+      "examples": [
+        {
+          "text": "The boxer learned to punch the bag.",
+          "translation": "ボクサーは袋を打つことを学んだ。"
+        }
+      ]
     },
     {
       "word": "put",
@@ -1577,7 +2747,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Put your keys on the shelf."
+      "example": "Put your keys on the shelf.",
+      "examples": [
+        {
+          "text": "Put your keys on the shelf.",
+          "translation": "鍵を棚に置け"
+        }
+      ]
     },
     {
       "word": "raise",
@@ -1585,7 +2761,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please raise your hand to answer."
+      "example": "Please raise your hand to answer.",
+      "examples": [
+        {
+          "text": "Please raise your hand to answer.",
+          "translation": "答えるなら手を挙げてください。"
+        }
+      ]
     },
     {
       "word": "realize",
@@ -1593,7 +2775,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I realize how important this is."
+      "example": "I realize how important this is.",
+      "examples": [
+        {
+          "text": "I realize how important this is.",
+          "translation": "これがどれだけ重要か分かってる"
+        }
+      ]
     },
     {
       "word": "recommend",
@@ -1601,7 +2789,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you recommend a good restaurant?"
+      "example": "Can you recommend a good restaurant?",
+      "examples": [
+        {
+          "text": "Can you recommend a good restaurant?",
+          "translation": "いいレストランをお勧めできますか。"
+        }
+      ]
     },
     {
       "word": "record",
@@ -1609,7 +2803,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "May I record this conversation?"
+      "example": "May I record this conversation?",
+      "examples": [
+        {
+          "text": "May I record this conversation?",
+          "translation": "この会話を録音してもいい?"
+        }
+      ]
     },
     {
       "word": "refuse",
@@ -1617,7 +2817,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You can refuse the invitation politely."
+      "example": "You can refuse the invitation politely.",
+      "examples": [
+        {
+          "text": "You can refuse the invitation politely.",
+          "translation": "礼儀正しく招待を断ってもいい。"
+        }
+      ]
     },
     {
       "word": "regret",
@@ -1625,7 +2831,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I regret missing your concert."
+      "example": "I regret missing your concert.",
+      "examples": [
+        {
+          "text": "I regret missing your concert.",
+          "translation": "君のコンサートを見逃したことを残念に思う。"
+        }
+      ]
     },
     {
       "word": "release",
@@ -1633,7 +2845,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They will release the bird tomorrow."
+      "example": "They will release the bird tomorrow.",
+      "examples": [
+        {
+          "text": "They will release the bird tomorrow.",
+          "translation": "明日、彼らは鳥を放す。"
+        }
+      ]
     },
     {
       "word": "remain",
@@ -1641,7 +2859,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please remain in your seat."
+      "example": "Please remain in your seat.",
+      "examples": [
+        {
+          "text": "Please remain in your seat.",
+          "translation": "そのまま席に座っていてください。"
+        }
+      ]
     },
     {
       "word": "remove",
@@ -1649,7 +2873,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Remove your shoes at the entrance."
+      "example": "Remove your shoes at the entrance.",
+      "examples": [
+        {
+          "text": "Remove your shoes at the entrance.",
+          "translation": "入り口で靴を脱いでください。"
+        }
+      ]
     },
     {
       "word": "rent",
@@ -1657,7 +2887,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We plan to rent a small apartment."
+      "example": "We plan to rent a small apartment.",
+      "examples": [
+        {
+          "text": "We plan to rent a small apartment.",
+          "translation": "私たちは小さなアパートを借りるつもりです。"
+        }
+      ]
     },
     {
       "word": "repeat",
@@ -1665,7 +2901,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Could you repeat the question?"
+      "example": "Could you repeat the question?",
+      "examples": [
+        {
+          "text": "Could you repeat the question?",
+          "translation": "質問を繰り返してくれませんか。"
+        }
+      ]
     },
     {
       "word": "reply",
@@ -1673,7 +2915,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please reply before Friday."
+      "example": "Please reply before Friday.",
+      "examples": [
+        {
+          "text": "Please reply before Friday.",
+          "translation": "金曜日までに返事をください。"
+        }
+      ]
     },
     {
       "word": "rescue",
@@ -1681,7 +2929,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The firefighters helped rescue the family."
+      "example": "The firefighters helped rescue the family.",
+      "examples": [
+        {
+          "text": "The firefighters helped rescue the family.",
+          "translation": "消防士が家族を救助した。"
+        }
+      ]
     },
     {
       "word": "ride",
@@ -1689,7 +2943,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I ride my bike to school."
+      "example": "I ride my bike to school.",
+      "examples": [
+        {
+          "text": "I ride my bike to school.",
+          "translation": "私は自転車で学校に行く。"
+        }
+      ]
     },
     {
       "word": "ring",
@@ -1697,7 +2957,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The school bell will ring soon."
+      "example": "The school bell will ring soon.",
+      "examples": [
+        {
+          "text": "The school bell will ring soon.",
+          "translation": "学校の鐘がすぐ鳴る。"
+        }
+      ]
     },
     {
       "word": "roll",
@@ -1705,7 +2971,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The ball began to roll downhill."
+      "example": "The ball began to roll downhill.",
+      "examples": [
+        {
+          "text": "The ball began to roll downhill.",
+          "translation": "ボールは下り坂を転がり始めた。"
+        }
+      ]
     },
     {
       "word": "rush",
@@ -1713,7 +2985,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't rush through your homework."
+      "example": "Don't rush through your homework.",
+      "examples": [
+        {
+          "text": "Don't rush through your homework.",
+          "translation": "宿題を急いでやるな。"
+        }
+      ]
     },
     {
       "word": "save",
@@ -1721,7 +2999,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I save a little money each month."
+      "example": "I save a little money each month.",
+      "examples": [
+        {
+          "text": "I save a little money each month.",
+          "translation": "私は毎月少しずつ貯めている。"
+        }
+      ]
     },
     {
       "word": "scare",
@@ -1729,7 +3013,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Loud noises scare the puppy."
+      "example": "Loud noises scare the puppy.",
+      "examples": [
+        {
+          "text": "Loud noises scare the puppy.",
+          "translation": "大きい音は子犬を怖がらせる。"
+        }
+      ]
     },
     {
       "word": "scratch",
@@ -1737,7 +3027,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The branches might scratch the paint."
+      "example": "The branches might scratch the paint.",
+      "examples": [
+        {
+          "text": "The branches might scratch the paint.",
+          "translation": "枝が塗料を傷つけるかもしれない。"
+        }
+      ]
     },
     {
       "word": "search",
@@ -1745,7 +3041,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's search the room for your keys."
+      "example": "Let's search the room for your keys.",
+      "examples": [
+        {
+          "text": "Let's search the room for your keys.",
+          "translation": "鍵を探してみよう"
+        }
+      ]
     },
     {
       "word": "seek",
@@ -1753,7 +3055,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Many travelers seek quiet places."
+      "example": "Many travelers seek quiet places.",
+      "examples": [
+        {
+          "text": "Many travelers seek quiet places.",
+          "translation": "多くの旅行者は静かな場所を求める。"
+        }
+      ]
     },
     {
       "word": "sell",
@@ -1761,7 +3069,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They sell fresh bread here."
+      "example": "They sell fresh bread here.",
+      "examples": [
+        {
+          "text": "They sell fresh bread here.",
+          "translation": "ここでは新鮮なパンが売られている。"
+        }
+      ]
     },
     {
       "word": "set",
@@ -1769,7 +3083,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Set your alarm for seven."
+      "example": "Set your alarm for seven.",
+      "examples": [
+        {
+          "text": "Set your alarm for seven.",
+          "translation": "7時にアラームを設定して"
+        }
+      ]
     },
     {
       "word": "shake",
@@ -1777,7 +3097,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Shake the bottle before opening it."
+      "example": "Shake the bottle before opening it.",
+      "examples": [
+        {
+          "text": "Shake the bottle before opening it.",
+          "translation": "開ける前に瓶を振ってください。"
+        }
+      ]
     },
     {
       "word": "shoot",
@@ -1785,7 +3111,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will shoot a short film here."
+      "example": "We will shoot a short film here.",
+      "examples": [
+        {
+          "text": "We will shoot a short film here.",
+          "translation": "ここで短編映画を撮影します。"
+        }
+      ]
     },
     {
       "word": "shout",
@@ -1793,7 +3125,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You don't need to shout."
+      "example": "You don't need to shout.",
+      "examples": [
+        {
+          "text": "You don't need to shout.",
+          "translation": "叫ぶ必要はない"
+        }
+      ]
     },
     {
       "word": "shut",
@@ -1801,7 +3139,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please shut the gate behind you."
+      "example": "Please shut the gate behind you.",
+      "examples": [
+        {
+          "text": "Please shut the gate behind you.",
+          "translation": "後ろのゲートを閉めて下さい。"
+        }
+      ]
     },
     {
       "word": "sink",
@@ -1809,7 +3153,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Heavy stones sink in water."
+      "example": "Heavy stones sink in water.",
+      "examples": [
+        {
+          "text": "Heavy stones sink in water.",
+          "translation": "重い石は水に沈む。"
+        }
+      ]
     },
     {
       "word": "ski",
@@ -1817,7 +3167,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We learned to ski last winter."
+      "example": "We learned to ski last winter.",
+      "examples": [
+        {
+          "text": "We learned to ski last winter.",
+          "translation": "昨年の冬にスキーを習った。"
+        }
+      ]
     },
     {
       "word": "slide",
@@ -1825,7 +3181,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The children slide down the snowy hill."
+      "example": "The children slide down the snowy hill.",
+      "examples": [
+        {
+          "text": "The children slide down the snowy hill.",
+          "translation": "子供たちは雪の丘を滑り降りている。"
+        }
+      ]
     },
     {
       "word": "smell",
@@ -1833,7 +3195,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Stop and smell the flowers."
+      "example": "Stop and smell the flowers.",
+      "examples": [
+        {
+          "text": "Stop and smell the flowers.",
+          "translation": "立ち止まって花の香りを楽しんでください。"
+        }
+      ]
     },
     {
       "word": "solve",
@@ -1841,7 +3209,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you solve this puzzle?"
+      "example": "Can you solve this puzzle?",
+      "examples": [
+        {
+          "text": "Can you solve this puzzle?",
+          "translation": "このパズルを解けますか。"
+        }
+      ]
     },
     {
       "word": "sound",
@@ -1849,7 +3223,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Your plans sound exciting."
+      "example": "Your plans sound exciting.",
+      "examples": [
+        {
+          "text": "Your plans sound exciting.",
+          "translation": "あなたの計画はワクワクするようね"
+        }
+      ]
     },
     {
       "word": "spend",
@@ -1857,7 +3237,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I try to spend less on clothes."
+      "example": "I try to spend less on clothes.",
+      "examples": [
+        {
+          "text": "I try to spend less on clothes.",
+          "translation": "私は服の消費を減らそうとしている。"
+        }
+      ]
     },
     {
       "word": "spill",
@@ -1865,7 +3251,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Be careful not to spill your coffee."
+      "example": "Be careful not to spill your coffee.",
+      "examples": [
+        {
+          "text": "Be careful not to spill your coffee.",
+          "translation": "コーヒーを流さないように気をつけて。"
+        }
+      ]
     },
     {
       "word": "spread",
@@ -1873,7 +3265,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Spread the blanket on the floor."
+      "example": "Spread the blanket on the floor.",
+      "examples": [
+        {
+          "text": "Spread the blanket on the floor.",
+          "translation": "床に毛布を広げて。"
+        }
+      ]
     },
     {
       "word": "stay",
@@ -1881,7 +3279,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You can stay with us tonight."
+      "example": "You can stay with us tonight.",
+      "examples": [
+        {
+          "text": "You can stay with us tonight.",
+          "translation": "今夜は一緒に泊まってもいい"
+        }
+      ]
     },
     {
       "word": "step",
@@ -1889,7 +3293,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please step away from the edge."
+      "example": "Please step away from the edge.",
+      "examples": [
+        {
+          "text": "Please step away from the edge.",
+          "translation": "端から離れて"
+        }
+      ]
     },
     {
       "word": "stir",
@@ -1897,7 +3307,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Stir the soup with a wooden spoon."
+      "example": "Stir the soup with a wooden spoon.",
+      "examples": [
+        {
+          "text": "Stir the soup with a wooden spoon.",
+          "translation": "木のスプーンでスープをかき混ぜる。"
+        }
+      ]
     },
     {
       "word": "stop",
@@ -1905,7 +3321,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Stop the car at the red light."
+      "example": "Stop the car at the red light.",
+      "examples": [
+        {
+          "text": "Stop the car at the red light.",
+          "translation": "赤信号で車を止めて。"
+        }
+      ]
     },
     {
       "word": "strike",
@@ -1913,7 +3335,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Strike the drum with this stick."
+      "example": "Strike the drum with this stick.",
+      "examples": [
+        {
+          "text": "Strike the drum with this stick.",
+          "translation": "この棒でドラムを叩け。"
+        }
+      ]
     },
     {
       "word": "succeed",
@@ -1921,7 +3349,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "With practice, you can succeed."
+      "example": "With practice, you can succeed.",
+      "examples": [
+        {
+          "text": "With practice, you can succeed.",
+          "translation": "練習すれば成功できる。"
+        }
+      ]
     },
     {
       "word": "suggest",
@@ -1929,7 +3363,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I suggest taking an earlier train."
+      "example": "I suggest taking an earlier train.",
+      "examples": [
+        {
+          "text": "I suggest taking an earlier train.",
+          "translation": "もう少し早い電車に乗ることを提案します。"
+        }
+      ]
     },
     {
       "word": "support",
@@ -1937,7 +3377,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "These wooden posts support the roof."
+      "example": "These wooden posts support the roof.",
+      "examples": [
+        {
+          "text": "These wooden posts support the roof.",
+          "translation": "これらの木柱が屋根を支える。"
+        }
+      ]
     },
     {
       "word": "suppose",
@@ -1945,7 +3391,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Suppose we miss the last bus."
+      "example": "Suppose we miss the last bus.",
+      "examples": [
+        {
+          "text": "Suppose we miss the last bus.",
+          "translation": "最後のバスに遅れてしまったとしましょう。"
+        }
+      ]
     },
     {
       "word": "surround",
@@ -1953,7 +3405,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Tall trees surround the house."
+      "example": "Tall trees surround the house.",
+      "examples": [
+        {
+          "text": "Tall trees surround the house.",
+          "translation": "高い木々が家を囲んでいる。"
+        }
+      ]
     },
     {
       "word": "swallow",
@@ -1961,7 +3419,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "It hurts to swallow food."
+      "example": "It hurts to swallow food.",
+      "examples": [
+        {
+          "text": "It hurts to swallow food.",
+          "translation": "食べ物を飲み込むのが痛い。"
+        }
+      ]
     },
     {
       "word": "swim",
@@ -1969,7 +3433,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you swim across the pool?"
+      "example": "Can you swim across the pool?",
+      "examples": [
+        {
+          "text": "Can you swim across the pool?",
+          "translation": "プールを泳げますか。"
+        }
+      ]
     },
     {
       "word": "switch",
@@ -1977,7 +3447,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's switch to a quieter room."
+      "example": "Let's switch to a quieter room.",
+      "examples": [
+        {
+          "text": "Let's switch to a quieter room.",
+          "translation": "静かな部屋に移ろう"
+        }
+      ]
     },
     {
       "word": "talk",
@@ -1985,7 +3461,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We need to talk about tomorrow."
+      "example": "We need to talk about tomorrow.",
+      "examples": [
+        {
+          "text": "We need to talk about tomorrow.",
+          "translation": "明日のことを話さないと"
+        }
+      ]
     },
     {
       "word": "tear",
@@ -1993,7 +3475,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't tear the paper."
+      "example": "Don't tear the paper.",
+      "examples": [
+        {
+          "text": "Don't tear the paper.",
+          "translation": "紙を破るな"
+        }
+      ]
     },
     {
       "word": "thank",
@@ -2001,7 +3489,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I want to thank everyone for coming."
+      "example": "I want to thank everyone for coming.",
+      "examples": [
+        {
+          "text": "I want to thank everyone for coming.",
+          "translation": "来てくれた皆さんに感謝したいと思います。"
+        }
+      ]
     },
     {
       "word": "throw",
@@ -2009,7 +3503,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Throw the ball to me."
+      "example": "Throw the ball to me.",
+      "examples": [
+        {
+          "text": "Throw the ball to me.",
+          "translation": "俺にボールを投げろ"
+        }
+      ]
     },
     {
       "word": "touch",
@@ -2017,7 +3517,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please don't touch the wet paint."
+      "example": "Please don't touch the wet paint.",
+      "examples": [
+        {
+          "text": "Please don't touch the wet paint.",
+          "translation": "濡れたペンキには触らないでください。"
+        }
+      ]
     },
     {
       "word": "translate",
@@ -2025,7 +3531,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you translate this letter into English?"
+      "example": "Can you translate this letter into English?",
+      "examples": [
+        {
+          "text": "Can you translate this letter into English?",
+          "translation": "この手紙を英語に翻訳してくれませんか。"
+        }
+      ]
     },
     {
       "word": "treat",
@@ -2033,7 +3545,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please treat everyone with respect."
+      "example": "Please treat everyone with respect.",
+      "examples": [
+        {
+          "text": "Please treat everyone with respect.",
+          "translation": "皆さんに敬意を払ってください。"
+        }
+      ]
     },
     {
       "word": "try",
@@ -2041,7 +3559,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's try a different route."
+      "example": "Let's try a different route.",
+      "examples": [
+        {
+          "text": "Let's try a different route.",
+          "translation": "別のルートを試してみよう"
+        }
+      ]
     },
     {
       "word": "type",
@@ -2049,7 +3573,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Type your name in this box."
+      "example": "Type your name in this box.",
+      "examples": [
+        {
+          "text": "Type your name in this box.",
+          "translation": "このボックスに名前を入力してください。"
+        }
+      ]
     },
     {
       "word": "unite",
@@ -2057,7 +3587,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Music can unite people from different backgrounds."
+      "example": "Music can unite people from different backgrounds.",
+      "examples": [
+        {
+          "text": "Music can unite people from different backgrounds.",
+          "translation": "音楽は異なる背景の人々を結びつける。"
+        }
+      ]
     },
     {
       "word": "update",
@@ -2065,7 +3601,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please update your contact details."
+      "example": "Please update your contact details.",
+      "examples": [
+        {
+          "text": "Please update your contact details.",
+          "translation": "連絡先を更新してください。"
+        }
+      ]
     },
     {
       "word": "upset",
@@ -2073,7 +3615,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "A sudden gust could upset the small boat."
+      "example": "A sudden gust could upset the small boat.",
+      "examples": [
+        {
+          "text": "A sudden gust could upset the small boat.",
+          "translation": "突然の激風は小さなボートを動揺させるかもしれない。"
+        }
+      ]
     },
     {
       "word": "value",
@@ -2081,7 +3629,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I value the time we spend together."
+      "example": "I value the time we spend together.",
+      "examples": [
+        {
+          "text": "I value the time we spend together.",
+          "translation": "私は一緒に過ごす時間を大切にする。"
+        }
+      ]
     },
     {
       "word": "vote",
@@ -2089,7 +3643,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You can vote at the town hall."
+      "example": "You can vote at the town hall.",
+      "examples": [
+        {
+          "text": "You can vote at the town hall.",
+          "translation": "市役所で投票できます。"
+        }
+      ]
     },
     {
       "word": "waste",
@@ -2097,7 +3657,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't waste water while brushing your teeth."
+      "example": "Don't waste water while brushing your teeth.",
+      "examples": [
+        {
+          "text": "Don't waste water while brushing your teeth.",
+          "translation": "歯磨きするときは水を無駄にしないでください。"
+        }
+      ]
     },
     {
       "word": "wave",
@@ -2105,7 +3671,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The flags wave in the wind."
+      "example": "The flags wave in the wind.",
+      "examples": [
+        {
+          "text": "The flags wave in the wind.",
+          "translation": "旗は風に揺れる。"
+        }
+      ]
     },
     {
       "word": "weigh",
@@ -2113,7 +3685,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please weigh the apples on this scale."
+      "example": "Please weigh the apples on this scale.",
+      "examples": [
+        {
+          "text": "Please weigh the apples on this scale.",
+          "translation": "この秤でリンゴを計ってください。"
+        }
+      ]
     },
     {
       "word": "whisper",
@@ -2121,7 +3699,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We whisper because the baby is sleeping."
+      "example": "We whisper because the baby is sleeping.",
+      "examples": [
+        {
+          "text": "We whisper because the baby is sleeping.",
+          "translation": "赤ちゃんが眠っているから 私たちはささやく"
+        }
+      ]
     },
     {
       "word": "wish",
@@ -2129,7 +3713,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I wish I could stay longer."
+      "example": "I wish I could stay longer.",
+      "examples": [
+        {
+          "text": "I wish I could stay longer.",
+          "translation": "もっと長く滞在できたらと思う。"
+        }
+      ]
     },
     {
       "word": "worry",
@@ -2137,7 +3727,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't worry about being late."
+      "example": "Don't worry about being late.",
+      "examples": [
+        {
+          "text": "Don't worry about being late.",
+          "translation": "遅刻の心配はしないで。"
+        }
+      ]
     },
     {
       "word": "yield",
@@ -2145,7 +3741,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "These trees yield plenty of fruit."
+      "example": "These trees yield plenty of fruit.",
+      "examples": [
+        {
+          "text": "These trees yield plenty of fruit.",
+          "translation": "これらの木は果実をたくさん生む。"
+        }
+      ]
     },
     {
       "word": "zoom",
@@ -2153,7 +3755,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We watched the plane zoom into the sky."
+      "example": "We watched the plane zoom into the sky.",
+      "examples": [
+        {
+          "text": "We watched the plane zoom into the sky.",
+          "translation": "私たちは飛行機が空に向かってズームするのを見た。"
+        }
+      ]
     },
     {
       "word": "accompany",
@@ -2161,7 +3769,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "May I accompany you to the station?"
+      "example": "May I accompany you to the station?",
+      "examples": [
+        {
+          "text": "May I accompany you to the station?",
+          "translation": "駅まで連れて行ってもいいですか。"
+        }
+      ]
     },
     {
       "word": "accuse",
@@ -2169,7 +3783,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You should not accuse anyone without evidence."
+      "example": "You should not accuse anyone without evidence.",
+      "examples": [
+        {
+          "text": "You should not accuse anyone without evidence.",
+          "translation": "証拠がないと誰も告発しないでください。"
+        }
+      ]
     },
     {
       "word": "address",
@@ -2177,7 +3797,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We need to address this issue soon."
+      "example": "We need to address this issue soon.",
+      "examples": [
+        {
+          "text": "We need to address this issue soon.",
+          "translation": "早くこの問題に取り組む必要がある。"
+        }
+      ]
     },
     {
       "word": "affect",
@@ -2185,7 +3811,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Heavy rain can affect train services."
+      "example": "Heavy rain can affect train services.",
+      "examples": [
+        {
+          "text": "Heavy rain can affect train services.",
+          "translation": "激しい雨が列車の運行に影響を与える。"
+        }
+      ]
     },
     {
       "word": "amuse",
@@ -2193,7 +3825,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The clown tried to amuse the children."
+      "example": "The clown tried to amuse the children.",
+      "examples": [
+        {
+          "text": "The clown tried to amuse the children.",
+          "translation": "ピエロは子供たちを楽しませようとした。"
+        }
+      ]
     },
     {
       "word": "appeal",
@@ -2201,7 +3839,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We appeal to everyone to save water."
+      "example": "We appeal to everyone to save water.",
+      "examples": [
+        {
+          "text": "We appeal to everyone to save water.",
+          "translation": "皆さんに水を節約していただきたいと思います。"
+        }
+      ]
     },
     {
       "word": "assess",
@@ -2209,7 +3853,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The teacher will assess our progress."
+      "example": "The teacher will assess our progress.",
+      "examples": [
+        {
+          "text": "The teacher will assess our progress.",
+          "translation": "先生が、私たちの上達ぶりを評価します。"
+        }
+      ]
     },
     {
       "word": "assume",
@@ -2217,7 +3867,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't assume that everyone agrees."
+      "example": "Don't assume that everyone agrees.",
+      "examples": [
+        {
+          "text": "Don't assume that everyone agrees.",
+          "translation": "みんなが同意するとは思わないでください。"
+        }
+      ]
     },
     {
       "word": "astonish",
@@ -2225,7 +3881,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "His magic tricks never fail to astonish me."
+      "example": "His magic tricks never fail to astonish me.",
+      "examples": [
+        {
+          "text": "His magic tricks never fail to astonish me.",
+          "translation": "彼の手品には、いつも驚かされます。"
+        }
+      ]
     },
     {
       "word": "bat",
@@ -2233,7 +3895,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "It's your turn to bat."
+      "example": "It's your turn to bat.",
+      "examples": [
+        {
+          "text": "It's your turn to bat.",
+          "translation": "次はあなたが打つ番です。"
+        }
+      ]
     },
     {
       "word": "bloom",
@@ -2241,7 +3909,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "These flowers bloom in early spring."
+      "example": "These flowers bloom in early spring.",
+      "examples": [
+        {
+          "text": "These flowers bloom in early spring.",
+          "translation": "これらの花は早春に開花する。"
+        }
+      ]
     },
     {
       "word": "broadcast",
@@ -2249,7 +3923,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They will broadcast the concert live."
+      "example": "They will broadcast the concert live.",
+      "examples": [
+        {
+          "text": "They will broadcast the concert live.",
+          "translation": "彼らはそのコンサートを生中継する。"
+        }
+      ]
     },
     {
       "word": "capture",
@@ -2257,7 +3937,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The rescuers managed to capture the injured bird."
+      "example": "The rescuers managed to capture the injured bird.",
+      "examples": [
+        {
+          "text": "The rescuers managed to capture the injured bird.",
+          "translation": "救助隊は負傷した鳥を捕獲することに成功した。"
+        }
+      ]
     },
     {
       "word": "charge",
@@ -2265,7 +3951,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I need to charge my phone."
+      "example": "I need to charge my phone.",
+      "examples": [
+        {
+          "text": "I need to charge my phone.",
+          "translation": "電話を充電しないと"
+        }
+      ]
     },
     {
       "word": "choke",
@@ -2273,7 +3965,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Thick smoke can choke anyone inside."
+      "example": "Thick smoke can choke anyone inside.",
+      "examples": [
+        {
+          "text": "Thick smoke can choke anyone inside.",
+          "translation": "濃い煙は中の誰もが窒息する。"
+        }
+      ]
     },
     {
       "word": "claim",
@@ -2281,7 +3979,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please claim your prize at the desk."
+      "example": "Please claim your prize at the desk.",
+      "examples": [
+        {
+          "text": "Please claim your prize at the desk.",
+          "translation": "賞品を受け取ってください。"
+        }
+      ]
     },
     {
       "word": "click",
@@ -2289,7 +3993,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Click the blue button to continue."
+      "example": "Click the blue button to continue.",
+      "examples": [
+        {
+          "text": "Click the blue button to continue.",
+          "translation": "続けるには青いボタンをクリックしてください。"
+        }
+      ]
     },
     {
       "word": "collapse",
@@ -2297,7 +4007,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The old roof might collapse."
+      "example": "The old roof might collapse.",
+      "examples": [
+        {
+          "text": "The old roof might collapse.",
+          "translation": "古い屋根は崩壊するかもしれない。"
+        }
+      ]
     },
     {
       "word": "command",
@@ -2305,7 +4021,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The officer will command the soldiers to halt."
+      "example": "The officer will command the soldiers to halt.",
+      "examples": [
+        {
+          "text": "The officer will command the soldiers to halt.",
+          "translation": "士官は兵士に止まるよう命じる。"
+        }
+      ]
     },
     {
       "word": "communicate",
@@ -2313,7 +4035,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Pictures can communicate ideas without words."
+      "example": "Pictures can communicate ideas without words.",
+      "examples": [
+        {
+          "text": "Pictures can communicate ideas without words.",
+          "translation": "絵は言葉なしでアイデアを伝えることができる。"
+        }
+      ]
     },
     {
       "word": "consult",
@@ -2321,7 +4049,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please consult the guide before you start."
+      "example": "Please consult the guide before you start.",
+      "examples": [
+        {
+          "text": "Please consult the guide before you start.",
+          "translation": "始める前にガイドを参照してください。"
+        }
+      ]
     },
     {
       "word": "contribute",
@@ -2329,7 +4063,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Everyone can contribute to the discussion."
+      "example": "Everyone can contribute to the discussion.",
+      "examples": [
+        {
+          "text": "Everyone can contribute to the discussion.",
+          "translation": "誰でも議論に貢献できる。"
+        }
+      ]
     },
     {
       "word": "convince",
@@ -2337,7 +4077,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The results will convince you."
+      "example": "The results will convince you.",
+      "examples": [
+        {
+          "text": "The results will convince you.",
+          "translation": "結果はあなたを説得するでしょう。"
+        }
+      ]
     },
     {
       "word": "cope",
@@ -2345,7 +4091,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She learned to cope with stress."
+      "example": "She learned to cope with stress.",
+      "examples": [
+        {
+          "text": "She learned to cope with stress.",
+          "translation": "彼女はストレスに対処する方法を学んだ。"
+        }
+      ]
     },
     {
       "word": "create",
@@ -2353,7 +4105,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's create a garden behind the school."
+      "example": "Let's create a garden behind the school.",
+      "examples": [
+        {
+          "text": "Let's create a garden behind the school.",
+          "translation": "学校の裏に庭を作ろう。"
+        }
+      ]
     },
     {
       "word": "creep",
@@ -2361,7 +4119,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We watched a beetle creep across a leaf."
+      "example": "We watched a beetle creep across a leaf.",
+      "examples": [
+        {
+          "text": "We watched a beetle creep across a leaf.",
+          "translation": "私たちは甲虫が葉を越えてくるのを見た。"
+        }
+      ]
     },
     {
       "word": "damage",
@@ -2369,7 +4133,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Too much sunlight can damage the fabric."
+      "example": "Too much sunlight can damage the fabric.",
+      "examples": [
+        {
+          "text": "Too much sunlight can damage the fabric.",
+          "translation": "太陽光が強すぎると布が傷つく。"
+        }
+      ]
     },
     {
       "word": "decide",
@@ -2377,7 +4147,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We must decide where to meet."
+      "example": "We must decide where to meet.",
+      "examples": [
+        {
+          "text": "We must decide where to meet.",
+          "translation": "会う場所を決めなければならない。"
+        }
+      ]
     },
     {
       "word": "define",
@@ -2385,7 +4161,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you define this word?"
+      "example": "Can you define this word?",
+      "examples": [
+        {
+          "text": "Can you define this word?",
+          "translation": "この言葉の定義がわかりますか。"
+        }
+      ]
     },
     {
       "word": "deny",
@@ -2393,7 +4175,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "He did not deny making the mistake."
+      "example": "He did not deny making the mistake.",
+      "examples": [
+        {
+          "text": "He did not deny making the mistake.",
+          "translation": "彼はその間違いをしたことを否定しなかった。"
+        }
+      ]
     },
     {
       "word": "deserve",
@@ -2401,7 +4189,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You deserve a break after all that work."
+      "example": "You deserve a break after all that work.",
+      "examples": [
+        {
+          "text": "You deserve a break after all that work.",
+          "translation": "あなたは休憩に値する"
+        }
+      ]
     },
     {
       "word": "develop",
@@ -2409,7 +4203,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They hope to develop a better battery."
+      "example": "They hope to develop a better battery.",
+      "examples": [
+        {
+          "text": "They hope to develop a better battery.",
+          "translation": "彼らはより良い電池を開発することを望んでいる。"
+        }
+      ]
     },
     {
       "word": "direct",
@@ -2417,7 +4217,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "A sign will direct you to reception."
+      "example": "A sign will direct you to reception.",
+      "examples": [
+        {
+          "text": "A sign will direct you to reception.",
+          "translation": "標識が受付まで案内してくれます。"
+        }
+      ]
     },
     {
       "word": "disappoint",
@@ -2425,7 +4231,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I don't want to disappoint my team."
+      "example": "I don't want to disappoint my team.",
+      "examples": [
+        {
+          "text": "I don't want to disappoint my team.",
+          "translation": "チームをがっかりさせたくない"
+        }
+      ]
     },
     {
       "word": "display",
@@ -2433,7 +4245,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They display local paintings in the cafe."
+      "example": "They display local paintings in the cafe.",
+      "examples": [
+        {
+          "text": "They display local paintings in the cafe.",
+          "translation": "カフェでは地元の絵画を展示している。"
+        }
+      ]
     },
     {
       "word": "dive",
@@ -2441,7 +4259,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We watched the swimmers dive into the pool."
+      "example": "We watched the swimmers dive into the pool.",
+      "examples": [
+        {
+          "text": "We watched the swimmers dive into the pool.",
+          "translation": "私たちは泳ぎ手がプールに飛び込むのを見た。"
+        }
+      ]
     },
     {
       "word": "drain",
@@ -2449,7 +4273,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Drain the pasta before adding the sauce."
+      "example": "Drain the pasta before adding the sauce.",
+      "examples": [
+        {
+          "text": "Drain the pasta before adding the sauce.",
+          "translation": "ソースを入れる前にパスタをすりつぶす。"
+        }
+      ]
     },
     {
       "word": "educate",
@@ -2457,7 +4287,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Museums help educate people about history."
+      "example": "Museums help educate people about history.",
+      "examples": [
+        {
+          "text": "Museums help educate people about history.",
+          "translation": "博物館は人々に歴史について教育するのに役立つ。"
+        }
+      ]
     },
     {
       "word": "embrace",
@@ -2465,7 +4301,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She ran to embrace her sister."
+      "example": "She ran to embrace her sister.",
+      "examples": [
+        {
+          "text": "She ran to embrace her sister.",
+          "translation": "彼女は姉を抱きしめるために走った。"
+        }
+      ]
     },
     {
       "word": "employ",
@@ -2473,7 +4315,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The shop will employ two new assistants."
+      "example": "The shop will employ two new assistants.",
+      "examples": [
+        {
+          "text": "The shop will employ two new assistants.",
+          "translation": "店は新たに助手を2人雇う。"
+        }
+      ]
     },
     {
       "word": "end",
@@ -2481,7 +4329,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's end the meeting here."
+      "example": "Let's end the meeting here.",
+      "examples": [
+        {
+          "text": "Let's end the meeting here.",
+          "translation": "ここで会議を終わらせよう"
+        }
+      ]
     },
     {
       "word": "enforce",
@@ -2489,7 +4343,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The staff enforce the safety rules."
+      "example": "The staff enforce the safety rules.",
+      "examples": [
+        {
+          "text": "The staff enforce the safety rules.",
+          "translation": "職員は安全規則を執行する。"
+        }
+      ]
     },
     {
       "word": "enhance",
@@ -2497,7 +4357,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Fresh herbs enhance the flavor."
+      "example": "Fresh herbs enhance the flavor.",
+      "examples": [
+        {
+          "text": "Fresh herbs enhance the flavor.",
+          "translation": "新鮮なハーブは味を増す。"
+        }
+      ]
     },
     {
       "word": "establish",
@@ -2505,7 +4371,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They hope to establish a community library."
+      "example": "They hope to establish a community library.",
+      "examples": [
+        {
+          "text": "They hope to establish a community library.",
+          "translation": "彼らは地域図書館を設立することを望んでいる。"
+        }
+      ]
     },
     {
       "word": "evaluate",
@@ -2513,7 +4385,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will evaluate the results tomorrow."
+      "example": "We will evaluate the results tomorrow.",
+      "examples": [
+        {
+          "text": "We will evaluate the results tomorrow.",
+          "translation": "私たちは明日、その結果を評価します。"
+        }
+      ]
     },
     {
       "word": "explore",
@@ -2521,7 +4399,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's explore the old town."
+      "example": "Let's explore the old town.",
+      "examples": [
+        {
+          "text": "Let's explore the old town.",
+          "translation": "古い町を探検しましょう。"
+        }
+      ]
     },
     {
       "word": "extend",
@@ -2529,7 +4413,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can we extend our stay by one night?"
+      "example": "Can we extend our stay by one night?",
+      "examples": [
+        {
+          "text": "Can we extend our stay by one night?",
+          "translation": "1泊延長してもらえますか。"
+        }
+      ]
     },
     {
       "word": "focus",
@@ -2537,7 +4427,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please focus on one task at a time."
+      "example": "Please focus on one task at a time.",
+      "examples": [
+        {
+          "text": "Please focus on one task at a time.",
+          "translation": "一度に一つの作業に集中してください。"
+        }
+      ]
     },
     {
       "word": "function",
@@ -2545,7 +4441,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The machine cannot function without electricity."
+      "example": "The machine cannot function without electricity.",
+      "examples": [
+        {
+          "text": "The machine cannot function without electricity.",
+          "translation": "電気なしでは機械は機能しない。"
+        }
+      ]
     },
     {
       "word": "guarantee",
@@ -2553,7 +4455,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We guarantee that the parts will fit."
+      "example": "We guarantee that the parts will fit.",
+      "examples": [
+        {
+          "text": "We guarantee that the parts will fit.",
+          "translation": "部品が合うことを保証します。"
+        }
+      ]
     },
     {
       "word": "heal",
@@ -2561,7 +4469,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The cut will take time to heal."
+      "example": "The cut will take time to heal.",
+      "examples": [
+        {
+          "text": "The cut will take time to heal.",
+          "translation": "傷が治るのに時間がかかる"
+        }
+      ]
     },
     {
       "word": "hesitate",
@@ -2569,7 +4483,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please don't hesitate to ask questions."
+      "example": "Please don't hesitate to ask questions.",
+      "examples": [
+        {
+          "text": "Please don't hesitate to ask questions.",
+          "translation": "どうぞ遠慮なく質問してください。"
+        }
+      ]
     },
     {
       "word": "illustrate",
@@ -2577,7 +4497,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "This picture will illustrate my point."
+      "example": "This picture will illustrate my point.",
+      "examples": [
+        {
+          "text": "This picture will illustrate my point.",
+          "translation": "この写真は私の要点を説明する。"
+        }
+      ]
     },
     {
       "word": "improve",
@@ -2585,7 +4511,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Daily practice can improve your writing."
+      "example": "Daily practice can improve your writing.",
+      "examples": [
+        {
+          "text": "Daily practice can improve your writing.",
+          "translation": "日々の練習はあなたの書き方を改善する。"
+        }
+      ]
     },
     {
       "word": "injure",
@@ -2593,7 +4525,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Broken glass can injure your feet."
+      "example": "Broken glass can injure your feet.",
+      "examples": [
+        {
+          "text": "Broken glass can injure your feet.",
+          "translation": "割れたガラスは足を傷つける。"
+        }
+      ]
     },
     {
       "word": "inspect",
@@ -2601,7 +4539,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We inspect the equipment every morning."
+      "example": "We inspect the equipment every morning.",
+      "examples": [
+        {
+          "text": "We inspect the equipment every morning.",
+          "translation": "私たちは毎朝装置を検査する。"
+        }
+      ]
     },
     {
       "word": "interrupt",
@@ -2609,7 +4553,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please don't interrupt while she is speaking."
+      "example": "Please don't interrupt while she is speaking.",
+      "examples": [
+        {
+          "text": "Please don't interrupt while she is speaking.",
+          "translation": "彼女が話している間は邪魔しないでください。"
+        }
+      ]
     },
     {
       "word": "involve",
@@ -2617,7 +4567,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The repairs will involve some extra work."
+      "example": "The repairs will involve some extra work.",
+      "examples": [
+        {
+          "text": "The repairs will involve some extra work.",
+          "translation": "修理には余分な作業が必要になる。"
+        }
+      ]
     },
     {
       "word": "jog",
@@ -2625,7 +4581,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I jog around the park each morning."
+      "example": "I jog around the park each morning.",
+      "examples": [
+        {
+          "text": "I jog around the park each morning.",
+          "translation": "私は毎朝公園でジョギングをします。"
+        }
+      ]
     },
     {
       "word": "leak",
@@ -2633,7 +4595,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The old pipe may leak again."
+      "example": "The old pipe may leak again.",
+      "examples": [
+        {
+          "text": "The old pipe may leak again.",
+          "translation": "古いパイプがまた漏れることもある。"
+        }
+      ]
     },
     {
       "word": "maintain",
@@ -2641,7 +4609,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We need to maintain a steady speed."
+      "example": "We need to maintain a steady speed.",
+      "examples": [
+        {
+          "text": "We need to maintain a steady speed.",
+          "translation": "一定の速度を維持する必要がある。"
+        }
+      ]
     },
     {
       "word": "march",
@@ -2649,7 +4623,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The band will march through the town."
+      "example": "The band will march through the town.",
+      "examples": [
+        {
+          "text": "The band will march through the town.",
+          "translation": "バンドは町を行進する。"
+        }
+      ]
     },
     {
       "word": "mend",
@@ -2657,7 +4637,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you mend this torn pocket?"
+      "example": "Can you mend this torn pocket?",
+      "examples": [
+        {
+          "text": "Can you mend this torn pocket?",
+          "translation": "この破れたポケットを繕ってもらえますか。"
+        }
+      ]
     },
     {
       "word": "motivate",
@@ -2665,7 +4651,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Clear goals help motivate the team."
+      "example": "Clear goals help motivate the team.",
+      "examples": [
+        {
+          "text": "Clear goals help motivate the team.",
+          "translation": "明確な目標はチームの動機付けに役立つ。"
+        }
+      ]
     },
     {
       "word": "observe",
@@ -2673,7 +4665,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We observe the birds from a distance."
+      "example": "We observe the birds from a distance.",
+      "examples": [
+        {
+          "text": "We observe the birds from a distance.",
+          "translation": "私たちは鳥を遠くから観察する。"
+        }
+      ]
     },
     {
       "word": "oppose",
@@ -2681,7 +4679,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Many residents oppose the new road."
+      "example": "Many residents oppose the new road.",
+      "examples": [
+        {
+          "text": "Many residents oppose the new road.",
+          "translation": "多くの住民が新しい道路に反対している。"
+        }
+      ]
     },
     {
       "word": "participate",
@@ -2689,7 +4693,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Everyone is welcome to participate in the game."
+      "example": "Everyone is welcome to participate in the game.",
+      "examples": [
+        {
+          "text": "Everyone is welcome to participate in the game.",
+          "translation": "誰でもこのゲームに参加してもらえます。"
+        }
+      ]
     },
     {
       "word": "peel",
@@ -2697,7 +4707,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Peel the potatoes before boiling them."
+      "example": "Peel the potatoes before boiling them.",
+      "examples": [
+        {
+          "text": "Peel the potatoes before boiling them.",
+          "translation": "ジャガイモを煮る前に皮をむける。"
+        }
+      ]
     },
     {
       "word": "plant",
@@ -2705,7 +4721,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will plant a tree this weekend."
+      "example": "We will plant a tree this weekend.",
+      "examples": [
+        {
+          "text": "We will plant a tree this weekend.",
+          "translation": "私たちはこの週末に木を植える。"
+        }
+      ]
     },
     {
       "word": "pop",
@@ -2713,7 +4735,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The bubbles pop when you touch them."
+      "example": "The bubbles pop when you touch them.",
+      "examples": [
+        {
+          "text": "The bubbles pop when you touch them.",
+          "translation": "泡は触ると割れる。"
+        }
+      ]
     },
     {
       "word": "postpone",
@@ -2721,7 +4749,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We may postpone the picnic until Sunday."
+      "example": "We may postpone the picnic until Sunday.",
+      "examples": [
+        {
+          "text": "We may postpone the picnic until Sunday.",
+          "translation": "ピクニックは日曜日に延期するかもしれない。"
+        }
+      ]
     },
     {
       "word": "preserve",
@@ -2729,7 +4763,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The museum helps preserve local history."
+      "example": "The museum helps preserve local history.",
+      "examples": [
+        {
+          "text": "The museum helps preserve local history.",
+          "translation": "博物館は地元の歴史を保存するのに役立っている。"
+        }
+      ]
     },
     {
       "word": "pretend",
@@ -2737,7 +4777,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's pretend we are on the moon."
+      "example": "Let's pretend we are on the moon.",
+      "examples": [
+        {
+          "text": "Let's pretend we are on the moon.",
+          "translation": "月にいるふりをしよう"
+        }
+      ]
     },
     {
       "word": "process",
@@ -2745,7 +4791,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The office will process your application."
+      "example": "The office will process your application.",
+      "examples": [
+        {
+          "text": "The office will process your application.",
+          "translation": "事務所であなたの申請を処理します。"
+        }
+      ]
     },
     {
       "word": "progress",
@@ -2753,7 +4805,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Students progress at different speeds."
+      "example": "Students progress at different speeds.",
+      "examples": [
+        {
+          "text": "Students progress at different speeds.",
+          "translation": "学生は異なる速度で進む。"
+        }
+      ]
     },
     {
       "word": "propose",
@@ -2761,7 +4819,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I propose a short break."
+      "example": "I propose a short break.",
+      "examples": [
+        {
+          "text": "I propose a short break.",
+          "translation": "ちょっと休憩を提案します。"
+        }
+      ]
     },
     {
       "word": "pump",
@@ -2769,7 +4833,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They pump water from the well."
+      "example": "They pump water from the well.",
+      "examples": [
+        {
+          "text": "They pump water from the well.",
+          "translation": "井戸から水を汲んでいる。"
+        }
+      ]
     },
     {
       "word": "purchase",
@@ -2777,7 +4847,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You can purchase tickets at the entrance."
+      "example": "You can purchase tickets at the entrance.",
+      "examples": [
+        {
+          "text": "You can purchase tickets at the entrance.",
+          "translation": "入場券は入口で購入できる。"
+        }
+      ]
     },
     {
       "word": "question",
@@ -2785,7 +4861,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't be afraid to question the decision."
+      "example": "Don't be afraid to question the decision.",
+      "examples": [
+        {
+          "text": "Don't be afraid to question the decision.",
+          "translation": "決断に疑問を持つのを恐れないでください。"
+        }
+      ]
     },
     {
       "word": "recall",
@@ -2793,7 +4875,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I cannot recall his name."
+      "example": "I cannot recall his name.",
+      "examples": [
+        {
+          "text": "I cannot recall his name.",
+          "translation": "彼の名前を覚えていない。"
+        }
+      ]
     },
     {
       "word": "recycle",
@@ -2801,7 +4889,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We recycle paper and glass."
+      "example": "We recycle paper and glass.",
+      "examples": [
+        {
+          "text": "We recycle paper and glass.",
+          "translation": "紙とガラスをリサイクルする。"
+        }
+      ]
     },
     {
       "word": "reflect",
@@ -2809,7 +4903,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Mirrors reflect light."
+      "example": "Mirrors reflect light.",
+      "examples": [
+        {
+          "text": "Mirrors reflect light.",
+          "translation": "鏡は光を反射する。"
+        }
+      ]
     },
     {
       "word": "register",
@@ -2817,7 +4917,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You can register for the class online."
+      "example": "You can register for the class online.",
+      "examples": [
+        {
+          "text": "You can register for the class online.",
+          "translation": "クラスはオンラインで登録できます。"
+        }
+      ]
     },
     {
       "word": "relax",
@@ -2825,7 +4931,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Take a deep breath and relax."
+      "example": "Take a deep breath and relax.",
+      "examples": [
+        {
+          "text": "Take a deep breath and relax.",
+          "translation": "深呼吸してリラックスして"
+        }
+      ]
     },
     {
       "word": "renew",
@@ -2833,7 +4945,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I need to renew my library card."
+      "example": "I need to renew my library card.",
+      "examples": [
+        {
+          "text": "I need to renew my library card.",
+          "translation": "図書館カードを更新しなければなりません。"
+        }
+      ]
     },
     {
       "word": "research",
@@ -2841,7 +4959,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will research the history of this building."
+      "example": "We will research the history of this building.",
+      "examples": [
+        {
+          "text": "We will research the history of this building.",
+          "translation": "建物の歴史を調査する。"
+        }
+      ]
     },
     {
       "word": "resolve",
@@ -2849,7 +4973,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I resolve to practice every day."
+      "example": "I resolve to practice every day.",
+      "examples": [
+        {
+          "text": "I resolve to practice every day.",
+          "translation": "毎日練習する決意をする。"
+        }
+      ]
     },
     {
       "word": "retain",
@@ -2857,7 +4987,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "This bottle helps retain the heat."
+      "example": "This bottle helps retain the heat.",
+      "examples": [
+        {
+          "text": "This bottle helps retain the heat.",
+          "translation": "このボトルは熱を保つのに役立つ。"
+        }
+      ]
     },
     {
       "word": "retire",
@@ -2865,7 +5001,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She plans to retire next year."
+      "example": "She plans to retire next year.",
+      "examples": [
+        {
+          "text": "She plans to retire next year.",
+          "translation": "彼女は来年引退するつもりだ。"
+        }
+      ]
     },
     {
       "word": "review",
@@ -2873,7 +5015,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's review yesterday's lesson."
+      "example": "Let's review yesterday's lesson.",
+      "examples": [
+        {
+          "text": "Let's review yesterday's lesson.",
+          "translation": "昨日の授業を見直しましょう。"
+        }
+      ]
     },
     {
       "word": "rinse",
@@ -2881,7 +5029,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Rinse the cup with clean water."
+      "example": "Rinse the cup with clean water.",
+      "examples": [
+        {
+          "text": "Rinse the cup with clean water.",
+          "translation": "清潔な水でカップを洗い流す。"
+        }
+      ]
     },
     {
       "word": "rotate",
@@ -2889,7 +5043,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The wheels rotate smoothly."
+      "example": "The wheels rotate smoothly.",
+      "examples": [
+        {
+          "text": "The wheels rotate smoothly.",
+          "translation": "車輪は滑らかに回転する。"
+        }
+      ]
     },
     {
       "word": "select",
@@ -2897,7 +5057,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please select your preferred language."
+      "example": "Please select your preferred language.",
+      "examples": [
+        {
+          "text": "Please select your preferred language.",
+          "translation": "言語を選択してください。"
+        }
+      ]
     },
     {
       "word": "separate",
@@ -2905,7 +5071,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Separate the white clothes from the colored ones."
+      "example": "Separate the white clothes from the colored ones.",
+      "examples": [
+        {
+          "text": "Separate the white clothes from the colored ones.",
+          "translation": "白い服と有色の服を分けて置け。"
+        }
+      ]
     },
     {
       "word": "sew",
@@ -2913,7 +5085,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "My father taught me to sew."
+      "example": "My father taught me to sew.",
+      "examples": [
+        {
+          "text": "My father taught me to sew.",
+          "translation": "父は私に縫い方を教えてくれた。"
+        }
+      ]
     },
     {
       "word": "shave",
@@ -2921,7 +5099,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "He needs to shave his beard."
+      "example": "He needs to shave his beard.",
+      "examples": [
+        {
+          "text": "He needs to shave his beard.",
+          "translation": "彼は髭を剃らなければならない。"
+        }
+      ]
     },
     {
       "word": "shift",
@@ -2929,7 +5113,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's shift the sofa toward the window."
+      "example": "Let's shift the sofa toward the window.",
+      "examples": [
+        {
+          "text": "Let's shift the sofa toward the window.",
+          "translation": "窓の方にソファを移動させよう。"
+        }
+      ]
     },
     {
       "word": "sign",
@@ -2937,7 +5127,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please sign your name here."
+      "example": "Please sign your name here.",
+      "examples": [
+        {
+          "text": "Please sign your name here.",
+          "translation": "ここにサインしてください。"
+        }
+      ]
     },
     {
       "word": "simplify",
@@ -2945,7 +5141,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We should simplify these instructions."
+      "example": "We should simplify these instructions.",
+      "examples": [
+        {
+          "text": "We should simplify these instructions.",
+          "translation": "これらの指示を簡略化すべきだ。"
+        }
+      ]
     },
     {
       "word": "smash",
@@ -2953,7 +5155,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The falling branch could smash the window."
+      "example": "The falling branch could smash the window.",
+      "examples": [
+        {
+          "text": "The falling branch could smash the window.",
+          "translation": "落ちる枝が窓を割ってしまうかもしれない。"
+        }
+      ]
     },
     {
       "word": "spare",
@@ -2961,7 +5169,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you spare a few minutes?"
+      "example": "Can you spare a few minutes?",
+      "examples": [
+        {
+          "text": "Can you spare a few minutes?",
+          "translation": "少し時間をいただけますか。"
+        }
+      ]
     },
     {
       "word": "speed",
@@ -2969,7 +5183,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't speed on this narrow road."
+      "example": "Don't speed on this narrow road.",
+      "examples": [
+        {
+          "text": "Don't speed on this narrow road.",
+          "translation": "この狭い道をスピードで走らないでください。"
+        }
+      ]
     },
     {
       "word": "stare",
@@ -2977,7 +5197,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "It is rude to stare at strangers."
+      "example": "It is rude to stare at strangers.",
+      "examples": [
+        {
+          "text": "It is rude to stare at strangers.",
+          "translation": "見知らぬ人を見つめるのは無礼だ。"
+        }
+      ]
     },
     {
       "word": "stress",
@@ -2985,7 +5211,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I want to stress the importance of practice."
+      "example": "I want to stress the importance of practice.",
+      "examples": [
+        {
+          "text": "I want to stress the importance of practice.",
+          "translation": "練習の重要性を強調したい。"
+        }
+      ]
     },
     {
       "word": "submit",
@@ -2993,7 +5225,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please submit your essay by Friday."
+      "example": "Please submit your essay by Friday.",
+      "examples": [
+        {
+          "text": "Please submit your essay by Friday.",
+          "translation": "金曜日までにエッセイを提出してください。"
+        }
+      ]
     },
     {
       "word": "summon",
@@ -3001,7 +5239,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Ring the bell to summon an attendant."
+      "example": "Ring the bell to summon an attendant.",
+      "examples": [
+        {
+          "text": "Ring the bell to summon an attendant.",
+          "translation": "係員を呼ぶにはベルを鳴らしてください。"
+        }
+      ]
     },
     {
       "word": "tend",
@@ -3009,7 +5253,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I tend to wake up early."
+      "example": "I tend to wake up early.",
+      "examples": [
+        {
+          "text": "I tend to wake up early.",
+          "translation": "私は早起きする傾向がある。"
+        }
+      ]
     },
     {
       "word": "threaten",
@@ -3017,7 +5267,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Storms threaten the coastal villages."
+      "example": "Storms threaten the coastal villages.",
+      "examples": [
+        {
+          "text": "Storms threaten the coastal villages.",
+          "translation": "嵐は沿岸の村々を脅かしている。"
+        }
+      ]
     },
     {
       "word": "tickle",
@@ -3025,7 +5281,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't tickle my feet!"
+      "example": "Don't tickle my feet!",
+      "examples": [
+        {
+          "text": "Don't tickle my feet!",
+          "translation": "足をくすぐるな!"
+        }
+      ]
     },
     {
       "word": "tidy",
@@ -3033,7 +5295,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Let's tidy the room before dinner."
+      "example": "Let's tidy the room before dinner.",
+      "examples": [
+        {
+          "text": "Let's tidy the room before dinner.",
+          "translation": "夕食の前に部屋を片付けよう。"
+        }
+      ]
     },
     {
       "word": "transfer",
@@ -3041,7 +5309,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Transfer the photos to your computer."
+      "example": "Transfer the photos to your computer.",
+      "examples": [
+        {
+          "text": "Transfer the photos to your computer.",
+          "translation": "写真をコンピュータに転送します。"
+        }
+      ]
     },
     {
       "word": "transport",
@@ -3049,7 +5323,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Trucks transport vegetables to the market."
+      "example": "Trucks transport vegetables to the market.",
+      "examples": [
+        {
+          "text": "Trucks transport vegetables to the market.",
+          "translation": "トラックが野菜を市場に運ぶ。"
+        }
+      ]
     },
     {
       "word": "tremble",
@@ -3057,7 +5337,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "My hands tremble when I am nervous."
+      "example": "My hands tremble when I am nervous.",
+      "examples": [
+        {
+          "text": "My hands tremble when I am nervous.",
+          "translation": "私は緊張すると手が震える。"
+        }
+      ]
     },
     {
       "word": "trim",
@@ -3065,7 +5351,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please trim the hedge beside the gate."
+      "example": "Please trim the hedge beside the gate.",
+      "examples": [
+        {
+          "text": "Please trim the hedge beside the gate.",
+          "translation": "門のそばの生け垣を刈り込んでください。"
+        }
+      ]
     },
     {
       "word": "trouble",
@@ -3073,7 +5365,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I don't want to trouble you again."
+      "example": "I don't want to trouble you again.",
+      "examples": [
+        {
+          "text": "I don't want to trouble you again.",
+          "translation": "もう二度と あなたを悩ませたくない"
+        }
+      ]
     },
     {
       "word": "undo",
@@ -3081,7 +5379,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Can you undo this tight knot?"
+      "example": "Can you undo this tight knot?",
+      "examples": [
+        {
+          "text": "Can you undo this tight knot?",
+          "translation": "この結び目を解けるか?"
+        }
+      ]
     },
     {
       "word": "vacuum",
@@ -3089,7 +5393,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I vacuum the carpet every Saturday."
+      "example": "I vacuum the carpet every Saturday.",
+      "examples": [
+        {
+          "text": "I vacuum the carpet every Saturday.",
+          "translation": "毎週土曜日にカーペットを掃除する。"
+        }
+      ]
     },
     {
       "word": "vary",
@@ -3097,7 +5407,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Prices vary from shop to shop."
+      "example": "Prices vary from shop to shop.",
+      "examples": [
+        {
+          "text": "Prices vary from shop to shop.",
+          "translation": "店によって価格は異なる。"
+        }
+      ]
     },
     {
       "word": "volunteer",
@@ -3105,7 +5421,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I will volunteer to help with lunch."
+      "example": "I will volunteer to help with lunch.",
+      "examples": [
+        {
+          "text": "I will volunteer to help with lunch.",
+          "translation": "私は進んで昼食の手伝いを申し出ます。"
+        }
+      ]
     },
     {
       "word": "wander",
@@ -3113,7 +5435,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We wander through the narrow streets."
+      "example": "We wander through the narrow streets.",
+      "examples": [
+        {
+          "text": "We wander through the narrow streets.",
+          "translation": "私たちは狭い通りを歩き回る。"
+        }
+      ]
     },
     {
       "word": "water",
@@ -3121,7 +5449,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please water the plants while I'm away."
+      "example": "Please water the plants while I'm away.",
+      "examples": [
+        {
+          "text": "Please water the plants while I'm away.",
+          "translation": "私がいない間は植物に水をやってください。"
+        }
+      ]
     },
     {
       "word": "wipe",
@@ -3129,7 +5463,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Wipe the table with a damp cloth."
+      "example": "Wipe the table with a damp cloth.",
+      "examples": [
+        {
+          "text": "Wipe the table with a damp cloth.",
+          "translation": "湿った布でテーブルを拭いて。"
+        }
+      ]
     },
     {
       "word": "witness",
@@ -3137,7 +5477,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Did anyone witness the accident?"
+      "example": "Did anyone witness the accident?",
+      "examples": [
+        {
+          "text": "Did anyone witness the accident?",
+          "translation": "事故の目撃者はいましたか。"
+        }
+      ]
     },
     {
       "word": "yawn",
@@ -3145,7 +5491,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I always yawn during late meetings."
+      "example": "I always yawn during late meetings.",
+      "examples": [
+        {
+          "text": "I always yawn during late meetings.",
+          "translation": "私は夜遅くの会議では、いつもあくびが出ます。"
+        }
+      ]
     },
     {
       "word": "ache",
@@ -3153,7 +5505,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "My feet ache after the long walk."
+      "example": "My feet ache after the long walk.",
+      "examples": [
+        {
+          "text": "My feet ache after the long walk.",
+          "translation": "長い散歩の後、足が痛い。"
+        }
+      ]
     },
     {
       "word": "activate",
@@ -3161,7 +5519,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Press this button to activate the alarm."
+      "example": "Press this button to activate the alarm.",
+      "examples": [
+        {
+          "text": "Press this button to activate the alarm.",
+          "translation": "このボタンを押すとアラームが有効になります。"
+        }
+      ]
     },
     {
       "word": "arise",
@@ -3169,7 +5533,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "New questions may arise during the discussion."
+      "example": "New questions may arise during the discussion.",
+      "examples": [
+        {
+          "text": "New questions may arise during the discussion.",
+          "translation": "議論の中で新しい疑問が生じるかもしれない。"
+        }
+      ]
     },
     {
       "word": "await",
@@ -3177,7 +5547,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We await your reply."
+      "example": "We await your reply.",
+      "examples": [
+        {
+          "text": "We await your reply.",
+          "translation": "私たちはあなたの返事を待っています。"
+        }
+      ]
     },
     {
       "word": "bind",
@@ -3185,7 +5561,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Bind the sticks together with string."
+      "example": "Bind the sticks together with string.",
+      "examples": [
+        {
+          "text": "Bind the sticks together with string.",
+          "translation": "棒を紐で結んでおく。"
+        }
+      ]
     },
     {
       "word": "board",
@@ -3193,7 +5575,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will board the plane soon."
+      "example": "We will board the plane soon.",
+      "examples": [
+        {
+          "text": "We will board the plane soon.",
+          "translation": "私たちはすぐに飛行機に乗ります。"
+        }
+      ]
     },
     {
       "word": "border",
@@ -3201,7 +5589,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Flower beds border the path."
+      "example": "Flower beds border the path.",
+      "examples": [
+        {
+          "text": "Flower beds border the path.",
+          "translation": "道の両側には花壇が並んでいます。"
+        }
+      ]
     },
     {
       "word": "breed",
@@ -3209,7 +5603,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "These birds breed near the lake."
+      "example": "These birds breed near the lake.",
+      "examples": [
+        {
+          "text": "These birds breed near the lake.",
+          "translation": "これらの鳥は湖の近くで繁殖する。"
+        }
+      ]
     },
     {
       "word": "browse",
@@ -3217,7 +5617,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I like to browse the shelves here."
+      "example": "I like to browse the shelves here.",
+      "examples": [
+        {
+          "text": "I like to browse the shelves here.",
+          "translation": "ここで棚を見るのが好きだ。"
+        }
+      ]
     },
     {
       "word": "calm",
@@ -3225,7 +5631,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Music helps calm the baby."
+      "example": "Music helps calm the baby.",
+      "examples": [
+        {
+          "text": "Music helps calm the baby.",
+          "translation": "音楽は赤ちゃんを落ち着かせる。"
+        }
+      ]
     },
     {
       "word": "cast",
@@ -3233,7 +5645,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The fisherman will cast his net again."
+      "example": "The fisherman will cast his net again.",
+      "examples": [
+        {
+          "text": "The fisherman will cast his net again.",
+          "translation": "漁師はまた網を投げる。"
+        }
+      ]
     },
     {
       "word": "check",
@@ -3241,7 +5659,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please check the address before leaving."
+      "example": "Please check the address before leaving.",
+      "examples": [
+        {
+          "text": "Please check the address before leaving.",
+          "translation": "出発前に住所を確認してください。"
+        }
+      ]
     },
     {
       "word": "clip",
@@ -3249,7 +5673,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Clip the papers together."
+      "example": "Clip the papers together.",
+      "examples": [
+        {
+          "text": "Clip the papers together.",
+          "translation": "書類をクリップでまとめてください。"
+        }
+      ]
     },
     {
       "word": "comb",
@@ -3257,7 +5687,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I comb my hair after washing it."
+      "example": "I comb my hair after washing it.",
+      "examples": [
+        {
+          "text": "I comb my hair after washing it.",
+          "translation": "私は洗った髪を梳く。"
+        }
+      ]
     },
     {
       "word": "copy",
@@ -3265,7 +5701,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please copy this sentence into your notebook."
+      "example": "Please copy this sentence into your notebook.",
+      "examples": [
+        {
+          "text": "Please copy this sentence into your notebook.",
+          "translation": "この文をノートにコピーしてください。"
+        }
+      ]
     },
     {
       "word": "crown",
@@ -3273,7 +5715,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They will crown the new king tomorrow."
+      "example": "They will crown the new king tomorrow.",
+      "examples": [
+        {
+          "text": "They will crown the new king tomorrow.",
+          "translation": "明日新しい王が戴冠する"
+        }
+      ]
     },
     {
       "word": "curl",
@@ -3281,7 +5729,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The dry leaves begin to curl."
+      "example": "The dry leaves begin to curl.",
+      "examples": [
+        {
+          "text": "The dry leaves begin to curl.",
+          "translation": "乾いた葉が巻き始める。"
+        }
+      ]
     },
     {
       "word": "cycle",
@@ -3289,7 +5743,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We cycle to the beach on Sundays."
+      "example": "We cycle to the beach on Sundays.",
+      "examples": [
+        {
+          "text": "We cycle to the beach on Sundays.",
+          "translation": "日曜日にはビーチに自転車で行く。"
+        }
+      ]
     },
     {
       "word": "dash",
@@ -3297,7 +5757,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I had to dash to catch the bus."
+      "example": "I had to dash to catch the bus.",
+      "examples": [
+        {
+          "text": "I had to dash to catch the bus.",
+          "translation": "バスに乗るために急いで行かなければならなかった。"
+        }
+      ]
     },
     {
       "word": "defeat",
@@ -3305,7 +5771,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Our team hopes to defeat the champions."
+      "example": "Our team hopes to defeat the champions.",
+      "examples": [
+        {
+          "text": "Our team hopes to defeat the champions.",
+          "translation": "我々のチームはチャンピオンを打ち負かすことを望んでいる。"
+        }
+      ]
     },
     {
       "word": "desert",
@@ -3313,7 +5785,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "A loyal friend will not desert you."
+      "example": "A loyal friend will not desert you.",
+      "examples": [
+        {
+          "text": "A loyal friend will not desert you.",
+          "translation": "忠実な友人はあなたを捨てない。"
+        }
+      ]
     },
     {
       "word": "differ",
@@ -3321,7 +5799,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Our opinions differ on this issue."
+      "example": "Our opinions differ on this issue.",
+      "examples": [
+        {
+          "text": "Our opinions differ on this issue.",
+          "translation": "この問題については私たちの意見が分かれている。"
+        }
+      ]
     },
     {
       "word": "dim",
@@ -3329,7 +5813,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please dim the lights for the film."
+      "example": "Please dim the lights for the film.",
+      "examples": [
+        {
+          "text": "Please dim the lights for the film.",
+          "translation": "映画のためにライトを暗くしてください。"
+        }
+      ]
     },
     {
       "word": "double",
@@ -3337,7 +5827,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You can double the recipe for eight people."
+      "example": "You can double the recipe for eight people.",
+      "examples": [
+        {
+          "text": "You can double the recipe for eight people.",
+          "translation": "8人分を作るなら、レシピの分量を2倍にできます。"
+        }
+      ]
     },
     {
       "word": "drown",
@@ -3345,7 +5841,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The flood threatened to drown the trapped animals."
+      "example": "The flood threatened to drown the trapped animals.",
+      "examples": [
+        {
+          "text": "The flood threatened to drown the trapped animals.",
+          "translation": "洪水は捕獲された動物を溺死させる恐れがあった。"
+        }
+      ]
     },
     {
       "word": "dust",
@@ -3353,7 +5855,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I dust the shelves every week."
+      "example": "I dust the shelves every week.",
+      "examples": [
+        {
+          "text": "I dust the shelves every week.",
+          "translation": "毎週棚を掃除する"
+        }
+      ]
     },
     {
       "word": "elbow",
@@ -3361,7 +5869,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "He tried to elbow his way through the crowd."
+      "example": "He tried to elbow his way through the crowd.",
+      "examples": [
+        {
+          "text": "He tried to elbow his way through the crowd.",
+          "translation": "彼は人々の中を肘で抜けようとした。"
+        }
+      ]
     },
     {
       "word": "empty",
@@ -3369,7 +5883,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please empty the bin."
+      "example": "Please empty the bin.",
+      "examples": [
+        {
+          "text": "Please empty the bin.",
+          "translation": "ごみ箱を空にしてください。"
+        }
+      ]
     },
     {
       "word": "encounter",
@@ -3377,7 +5897,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You may encounter deer along this trail."
+      "example": "You may encounter deer along this trail.",
+      "examples": [
+        {
+          "text": "You may encounter deer along this trail.",
+          "translation": "この道を通って鹿に出会うこともある。"
+        }
+      ]
     },
     {
       "word": "equip",
@@ -3385,7 +5911,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will equip the room with new computers."
+      "example": "We will equip the room with new computers.",
+      "examples": [
+        {
+          "text": "We will equip the room with new computers.",
+          "translation": "私たちは新しいコンピュータを部屋に設置する。"
+        }
+      ]
     },
     {
       "word": "explode",
@@ -3393,7 +5925,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The fireworks explode above the river."
+      "example": "The fireworks explode above the river.",
+      "examples": [
+        {
+          "text": "The fireworks explode above the river.",
+          "translation": "花火が川の上で爆発する。"
+        }
+      ]
     },
     {
       "word": "fancy",
@@ -3401,7 +5939,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Do you fancy a cup of tea?"
+      "example": "Do you fancy a cup of tea?",
+      "examples": [
+        {
+          "text": "Do you fancy a cup of tea?",
+          "translation": "お茶はいかがですか。"
+        }
+      ]
     },
     {
       "word": "filter",
@@ -3409,7 +5953,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "This device can filter the water."
+      "example": "This device can filter the water.",
+      "examples": [
+        {
+          "text": "This device can filter the water.",
+          "translation": "この装置は水をろ過できる。"
+        }
+      ]
     },
     {
       "word": "flap",
@@ -3417,7 +5967,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The flags flap in the wind."
+      "example": "The flags flap in the wind.",
+      "examples": [
+        {
+          "text": "The flags flap in the wind.",
+          "translation": "風に旗が揺れる。"
+        }
+      ]
     },
     {
       "word": "flee",
@@ -3425,7 +5981,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The rabbits flee when they hear us."
+      "example": "The rabbits flee when they hear us.",
+      "examples": [
+        {
+          "text": "The rabbits flee when they hear us.",
+          "translation": "ウサギは私たちの声を聞いて逃げる。"
+        }
+      ]
     },
     {
       "word": "flicker",
@@ -3433,7 +5995,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The candles flicker in the breeze."
+      "example": "The candles flicker in the breeze.",
+      "examples": [
+        {
+          "text": "The candles flicker in the breeze.",
+          "translation": "ろうそくは風の中で揺れる。"
+        }
+      ]
     },
     {
       "word": "flow",
@@ -3441,7 +6009,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Small streams flow into the lake."
+      "example": "Small streams flow into the lake.",
+      "examples": [
+        {
+          "text": "Small streams flow into the lake.",
+          "translation": "小さな川が湖に流れ込んでいる。"
+        }
+      ]
     },
     {
       "word": "flush",
@@ -3449,7 +6023,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Her cheeks flush when she feels embarrassed."
+      "example": "Her cheeks flush when she feels embarrassed.",
+      "examples": [
+        {
+          "text": "Her cheeks flush when she feels embarrassed.",
+          "translation": "彼女は恥ずかしいと、頬が赤くなります。"
+        }
+      ]
     },
     {
       "word": "frame",
@@ -3457,7 +6037,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I want to frame this photograph."
+      "example": "I want to frame this photograph.",
+      "examples": [
+        {
+          "text": "I want to frame this photograph.",
+          "translation": "この写真をフレームにしたい。"
+        }
+      ]
     },
     {
       "word": "fund",
@@ -3465,7 +6051,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The town will fund the new playground."
+      "example": "The town will fund the new playground.",
+      "examples": [
+        {
+          "text": "The town will fund the new playground.",
+          "translation": "新しい遊び場は市が資金を出す。"
+        }
+      ]
     },
     {
       "word": "glue",
@@ -3473,7 +6065,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Glue the two pieces together."
+      "example": "Glue the two pieces together.",
+      "examples": [
+        {
+          "text": "Glue the two pieces together.",
+          "translation": "二つの部分を接着して"
+        }
+      ]
     },
     {
       "word": "grind",
@@ -3481,7 +6079,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Grind the coffee beans just before brewing."
+      "example": "Grind the coffee beans just before brewing.",
+      "examples": [
+        {
+          "text": "Grind the coffee beans just before brewing.",
+          "translation": "コーヒー豆を醸造する直前に研磨する。"
+        }
+      ]
     },
     {
       "word": "grip",
@@ -3489,7 +6093,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Grip the handle firmly."
+      "example": "Grip the handle firmly.",
+      "examples": [
+        {
+          "text": "Grip the handle firmly.",
+          "translation": "ハンドルをしっかり握れ。"
+        }
+      ]
     },
     {
       "word": "hand",
@@ -3497,7 +6107,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please hand me the towel."
+      "example": "Please hand me the towel.",
+      "examples": [
+        {
+          "text": "Please hand me the towel.",
+          "translation": "タオルを渡してください。"
+        }
+      ]
     },
     {
       "word": "hire",
@@ -3505,7 +6121,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We need to hire another teacher."
+      "example": "We need to hire another teacher.",
+      "examples": [
+        {
+          "text": "We need to hire another teacher.",
+          "translation": "教師を別に雇う必要がある。"
+        }
+      ]
     },
     {
       "word": "import",
@@ -3513,7 +6135,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They import coffee from Brazil."
+      "example": "They import coffee from Brazil.",
+      "examples": [
+        {
+          "text": "They import coffee from Brazil.",
+          "translation": "彼らはブラジルからコーヒーを輸入している。"
+        }
+      ]
     },
     {
       "word": "inject",
@@ -3521,7 +6149,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The nurse will inject the medicine slowly."
+      "example": "The nurse will inject the medicine slowly.",
+      "examples": [
+        {
+          "text": "The nurse will inject the medicine slowly.",
+          "translation": "看護師はゆっくりと薬を注射する。"
+        }
+      ]
     },
     {
       "word": "install",
@@ -3529,7 +6163,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They will install a new oven tomorrow."
+      "example": "They will install a new oven tomorrow.",
+      "examples": [
+        {
+          "text": "They will install a new oven tomorrow.",
+          "translation": "明日新しいオーブンを設置する。"
+        }
+      ]
     },
     {
       "word": "invest",
@@ -3537,7 +6177,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The company will invest in better equipment."
+      "example": "The company will invest in better equipment.",
+      "examples": [
+        {
+          "text": "The company will invest in better equipment.",
+          "translation": "会社はより良い装置に投資する。"
+        }
+      ]
     },
     {
       "word": "jam",
@@ -3545,7 +6191,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't jam too many papers into the drawer."
+      "example": "Don't jam too many papers into the drawer.",
+      "examples": [
+        {
+          "text": "Don't jam too many papers into the drawer.",
+          "translation": "引き出しにあまり紙を詰め込まないでください。"
+        }
+      ]
     },
     {
       "word": "level",
@@ -3553,7 +6205,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We need to level the ground first."
+      "example": "We need to level the ground first.",
+      "examples": [
+        {
+          "text": "We need to level the ground first.",
+          "translation": "まずは地面を平らにする必要がある"
+        }
+      ]
     },
     {
       "word": "loosen",
@@ -3561,7 +6219,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Loosen the knot a little."
+      "example": "Loosen the knot a little.",
+      "examples": [
+        {
+          "text": "Loosen the knot a little.",
+          "translation": "結び目を少し緩めて"
+        }
+      ]
     },
     {
       "word": "mask",
@@ -3569,7 +6233,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The loud music could mask the alarm."
+      "example": "The loud music could mask the alarm.",
+      "examples": [
+        {
+          "text": "The loud music could mask the alarm.",
+          "translation": "音が大きい音楽は警報を隠すかもしれない。"
+        }
+      ]
     },
     {
       "word": "matter",
@@ -3577,7 +6247,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Your opinions matter to us."
+      "example": "Your opinions matter to us.",
+      "examples": [
+        {
+          "text": "Your opinions matter to us.",
+          "translation": "あなたの意見は重要です。"
+        }
+      ]
     },
     {
       "word": "misunderstand",
@@ -3585,7 +6261,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "It is easy to misunderstand a short message."
+      "example": "It is easy to misunderstand a short message.",
+      "examples": [
+        {
+          "text": "It is easy to misunderstand a short message.",
+          "translation": "短いメッセージは誤解されやすい。"
+        }
+      ]
     },
     {
       "word": "nail",
@@ -3593,7 +6275,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Nail the board to the wooden frame."
+      "example": "Nail the board to the wooden frame.",
+      "examples": [
+        {
+          "text": "Nail the board to the wooden frame.",
+          "translation": "板を木の枠に釘付けにしておけ。"
+        }
+      ]
     },
     {
       "word": "nest",
@@ -3601,7 +6289,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Swallows nest under our roof."
+      "example": "Swallows nest under our roof.",
+      "examples": [
+        {
+          "text": "Swallows nest under our roof.",
+          "translation": "ツバメが私たちの家の屋根の下に巣を作ります。"
+        }
+      ]
     },
     {
       "word": "nurse",
@@ -3609,7 +6303,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She helped nurse the injured bird."
+      "example": "She helped nurse the injured bird.",
+      "examples": [
+        {
+          "text": "She helped nurse the injured bird.",
+          "translation": "彼女は怪我した鳥の看護を手伝った。"
+        }
+      ]
     },
     {
       "word": "object",
@@ -3617,7 +6317,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I object to the extra charge."
+      "example": "I object to the extra charge.",
+      "examples": [
+        {
+          "text": "I object to the extra charge.",
+          "translation": "追加料金に反対します。"
+        }
+      ]
     },
     {
       "word": "omit",
@@ -3625,7 +6331,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You may omit the optional questions."
+      "example": "You may omit the optional questions.",
+      "examples": [
+        {
+          "text": "You may omit the optional questions.",
+          "translation": "選択肢の質問は省略してください。"
+        }
+      ]
     },
     {
       "word": "overturn",
@@ -3633,7 +6345,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Strong waves could overturn the boat."
+      "example": "Strong waves could overturn the boat.",
+      "examples": [
+        {
+          "text": "Strong waves could overturn the boat.",
+          "translation": "強い波が船を転覆させるかもしれない。"
+        }
+      ]
     },
     {
       "word": "paddle",
@@ -3641,7 +6359,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We paddle quietly across the lake."
+      "example": "We paddle quietly across the lake.",
+      "examples": [
+        {
+          "text": "We paddle quietly across the lake.",
+          "translation": "私たちは静かに湖を渡る。"
+        }
+      ]
     },
     {
       "word": "pedal",
@@ -3649,7 +6373,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "You must pedal harder going uphill."
+      "example": "You must pedal harder going uphill.",
+      "examples": [
+        {
+          "text": "You must pedal harder going uphill.",
+          "translation": "上り坂に行くときは、もっと強くペダルを踏む必要がある。"
+        }
+      ]
     },
     {
       "word": "pin",
@@ -3657,7 +6387,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Pin the notice to the board."
+      "example": "Pin the notice to the board.",
+      "examples": [
+        {
+          "text": "Pin the notice to the board.",
+          "translation": "お知らせを掲示板にピンで留めてください。"
+        }
+      ]
     },
     {
       "word": "pipe",
@@ -3665,7 +6401,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "They pipe water from the reservoir."
+      "example": "They pipe water from the reservoir.",
+      "examples": [
+        {
+          "text": "They pipe water from the reservoir.",
+          "translation": "貯水池から水を送っている。"
+        }
+      ]
     },
     {
       "word": "plan",
@@ -3673,7 +6415,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We plan to visit Kyoto in April."
+      "example": "We plan to visit Kyoto in April.",
+      "examples": [
+        {
+          "text": "We plan to visit Kyoto in April.",
+          "translation": "私たちは4月に京都を訪れる予定です。"
+        }
+      ]
     },
     {
       "word": "plug",
@@ -3681,7 +6429,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Plug the cable into your computer."
+      "example": "Plug the cable into your computer.",
+      "examples": [
+        {
+          "text": "Plug the cable into your computer.",
+          "translation": "ケーブルをコンピュータに接続してください。"
+        }
+      ]
     },
     {
       "word": "poke",
@@ -3689,7 +6443,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't poke the sleeping dog."
+      "example": "Don't poke the sleeping dog.",
+      "examples": [
+        {
+          "text": "Don't poke the sleeping dog.",
+          "translation": "眠っている犬をつつかないでください。"
+        }
+      ]
     },
     {
       "word": "pose",
@@ -3697,7 +6457,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The family will pose for a photograph."
+      "example": "The family will pose for a photograph.",
+      "examples": [
+        {
+          "text": "The family will pose for a photograph.",
+          "translation": "家族は写真を撮る。"
+        }
+      ]
     },
     {
       "word": "prick",
@@ -3705,7 +6471,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "A sharp thorn can prick your finger."
+      "example": "A sharp thorn can prick your finger.",
+      "examples": [
+        {
+          "text": "A sharp thorn can prick your finger.",
+          "translation": "鋭い棘は指を刺すことができる。"
+        }
+      ]
     },
     {
       "word": "protest",
@@ -3713,7 +6485,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Residents plan to protest against the closure."
+      "example": "Residents plan to protest against the closure.",
+      "examples": [
+        {
+          "text": "Residents plan to protest against the closure.",
+          "translation": "住民は閉鎖に抗議する予定だ。"
+        }
+      ]
     },
     {
       "word": "race",
@@ -3721,7 +6499,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The children race across the field."
+      "example": "The children race across the field.",
+      "examples": [
+        {
+          "text": "The children race across the field.",
+          "translation": "子どもたちは野原を走って競争しています。"
+        }
+      ]
     },
     {
       "word": "rank",
@@ -3729,7 +6513,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please rank these options by importance."
+      "example": "Please rank these options by importance.",
+      "examples": [
+        {
+          "text": "Please rank these options by importance.",
+          "translation": "重要度に従ってオプションをランク付けしてください。"
+        }
+      ]
     },
     {
       "word": "recharge",
@@ -3737,7 +6527,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I need to recharge the battery."
+      "example": "I need to recharge the battery.",
+      "examples": [
+        {
+          "text": "I need to recharge the battery.",
+          "translation": "バッテリーを充電しないと"
+        }
+      ]
     },
     {
       "word": "recite",
@@ -3745,7 +6541,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She can recite the poem from memory."
+      "example": "She can recite the poem from memory.",
+      "examples": [
+        {
+          "text": "She can recite the poem from memory.",
+          "translation": "彼女はその詩を暗記して朗読できる。"
+        }
+      ]
     },
     {
       "word": "resist",
@@ -3753,7 +6555,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I cannot resist fresh bread."
+      "example": "I cannot resist fresh bread.",
+      "examples": [
+        {
+          "text": "I cannot resist fresh bread.",
+          "translation": "私は新鮮なパンに耐えられない。"
+        }
+      ]
     },
     {
       "word": "return",
@@ -3761,7 +6569,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We will return before sunset."
+      "example": "We will return before sunset.",
+      "examples": [
+        {
+          "text": "We will return before sunset.",
+          "translation": "日没前に戻る"
+        }
+      ]
     },
     {
       "word": "revise",
@@ -3769,7 +6583,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please revise the final paragraph."
+      "example": "Please revise the final paragraph.",
+      "examples": [
+        {
+          "text": "Please revise the final paragraph.",
+          "translation": "最後の段落を訂正してください。"
+        }
+      ]
     },
     {
       "word": "rip",
@@ -3777,7 +6597,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Be careful not to rip the bag."
+      "example": "Be careful not to rip the bag.",
+      "examples": [
+        {
+          "text": "Be careful not to rip the bag.",
+          "translation": "袋を破らないように気をつけて。"
+        }
+      ]
     },
     {
       "word": "rock",
@@ -3785,7 +6611,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The waves gently rock the boat."
+      "example": "The waves gently rock the boat.",
+      "examples": [
+        {
+          "text": "The waves gently rock the boat.",
+          "translation": "波は船をゆっくりと揺らす。"
+        }
+      ]
     },
     {
       "word": "rule",
@@ -3793,7 +6625,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The king will rule the country."
+      "example": "The king will rule the country.",
+      "examples": [
+        {
+          "text": "The king will rule the country.",
+          "translation": "国王が国を統治する。"
+        }
+      ]
     },
     {
       "word": "scrape",
@@ -3801,7 +6639,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I don't want to scrape my knee again."
+      "example": "I don't want to scrape my knee again.",
+      "examples": [
+        {
+          "text": "I don't want to scrape my knee again.",
+          "translation": "もうひざを傷つけたくない"
+        }
+      ]
     },
     {
       "word": "screw",
@@ -3809,7 +6653,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Screw the bracket to the wall."
+      "example": "Screw the bracket to the wall.",
+      "examples": [
+        {
+          "text": "Screw the bracket to the wall.",
+          "translation": "金具をねじで壁に固定してください。"
+        }
+      ]
     },
     {
       "word": "shiver",
@@ -3817,7 +6667,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I shiver in the cold wind."
+      "example": "I shiver in the cold wind.",
+      "examples": [
+        {
+          "text": "I shiver in the cold wind.",
+          "translation": "寒い風に震えてる"
+        }
+      ]
     },
     {
       "word": "shrink",
@@ -3825,7 +6681,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "This shirt may shrink in hot water."
+      "example": "This shirt may shrink in hot water.",
+      "examples": [
+        {
+          "text": "This shirt may shrink in hot water.",
+          "translation": "このシャツは熱い水で縮むかもしれない。"
+        }
+      ]
     },
     {
       "word": "signal",
@@ -3833,7 +6695,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Raise your hand to signal for help."
+      "example": "Raise your hand to signal for help.",
+      "examples": [
+        {
+          "text": "Raise your hand to signal for help.",
+          "translation": "助けを求めるために手を上げて"
+        }
+      ]
     },
     {
       "word": "slam",
@@ -3841,7 +6709,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please don't slam the door."
+      "example": "Please don't slam the door.",
+      "examples": [
+        {
+          "text": "Please don't slam the door.",
+          "translation": "ドアをバタンと閉めないでください。"
+        }
+      ]
     },
     {
       "word": "smile",
@@ -3849,7 +6723,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Your letters always make me smile."
+      "example": "Your letters always make me smile.",
+      "examples": [
+        {
+          "text": "Your letters always make me smile.",
+          "translation": "あなたの手紙はいつも私を笑わせる。"
+        }
+      ]
     },
     {
       "word": "sniff",
@@ -3857,7 +6737,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The dogs sniff the ground."
+      "example": "The dogs sniff the ground.",
+      "examples": [
+        {
+          "text": "The dogs sniff the ground.",
+          "translation": "犬は地面を嗅ぎ回る。"
+        }
+      ]
     },
     {
       "word": "snore",
@@ -3865,7 +6751,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I sometimes snore when I am tired."
+      "example": "I sometimes snore when I am tired.",
+      "examples": [
+        {
+          "text": "I sometimes snore when I am tired.",
+          "translation": "私は疲れたときにいびきをする。"
+        }
+      ]
     },
     {
       "word": "sow",
@@ -3873,7 +6765,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We sow carrot seeds in spring."
+      "example": "We sow carrot seeds in spring.",
+      "examples": [
+        {
+          "text": "We sow carrot seeds in spring.",
+          "translation": "春にニンジンの種を播く。"
+        }
+      ]
     },
     {
       "word": "splash",
@@ -3881,7 +6779,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Don't splash water on my book."
+      "example": "Don't splash water on my book.",
+      "examples": [
+        {
+          "text": "Don't splash water on my book.",
+          "translation": "私の本に水をかけないで。"
+        }
+      ]
     },
     {
       "word": "spring",
@@ -3889,7 +6793,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The cat can spring onto the wall."
+      "example": "The cat can spring onto the wall.",
+      "examples": [
+        {
+          "text": "The cat can spring onto the wall.",
+          "translation": "猫は壁に飛び込むことができる。"
+        }
+      ]
     },
     {
       "word": "stamp",
@@ -3897,7 +6807,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The dancers stamp their feet in rhythm."
+      "example": "The dancers stamp their feet in rhythm.",
+      "examples": [
+        {
+          "text": "The dancers stamp their feet in rhythm.",
+          "translation": "踊り手はリズムに合わせて足を踏みつける。"
+        }
+      ]
     },
     {
       "word": "steer",
@@ -3905,7 +6821,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Steer the boat toward the shore."
+      "example": "Steer the boat toward the shore.",
+      "examples": [
+        {
+          "text": "Steer the boat toward the shore.",
+          "translation": "岸に向かって船を舵をつけろ。"
+        }
+      ]
     },
     {
       "word": "stroll",
@@ -3913,7 +6835,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "We stroll through the park after dinner."
+      "example": "We stroll through the park after dinner.",
+      "examples": [
+        {
+          "text": "We stroll through the park after dinner.",
+          "translation": "夕食の後、公園を散歩する。"
+        }
+      ]
     },
     {
       "word": "suit",
@@ -3921,7 +6849,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "That blue shirt will suit you."
+      "example": "That blue shirt will suit you.",
+      "examples": [
+        {
+          "text": "That blue shirt will suit you.",
+          "translation": "あの青いシャツはあなたに似合うでしょう。"
+        }
+      ]
     },
     {
       "word": "tap",
@@ -3929,7 +6863,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Tap the screen twice to open it."
+      "example": "Tap the screen twice to open it.",
+      "examples": [
+        {
+          "text": "Tap the screen twice to open it.",
+          "translation": "スクリーンを二度タップして開きます。"
+        }
+      ]
     },
     {
       "word": "thaw",
@@ -3937,7 +6877,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The snow will thaw in the sunshine."
+      "example": "The snow will thaw in the sunshine.",
+      "examples": [
+        {
+          "text": "The snow will thaw in the sunshine.",
+          "translation": "雪は日光で溶ける。"
+        }
+      ]
     },
     {
       "word": "tip",
@@ -3945,7 +6891,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Tip the bottle gently to pour."
+      "example": "Tip the bottle gently to pour.",
+      "examples": [
+        {
+          "text": "Tip the bottle gently to pour.",
+          "translation": "瓶をゆっくり傾けて注ぐ。"
+        }
+      ]
     },
     {
       "word": "toast",
@@ -3953,7 +6905,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "I toast my bread until golden."
+      "example": "I toast my bread until golden.",
+      "examples": [
+        {
+          "text": "I toast my bread until golden.",
+          "translation": "私はパンを金色になるまで焼く。"
+        }
+      ]
     },
     {
       "word": "tow",
@@ -3961,7 +6919,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The truck will tow our broken car."
+      "example": "The truck will tow our broken car.",
+      "examples": [
+        {
+          "text": "The truck will tow our broken car.",
+          "translation": "トラックは我々の壊れた車を牽引する。"
+        }
+      ]
     },
     {
       "word": "trap",
@@ -3969,7 +6933,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "The rescuers need to trap the injured cat."
+      "example": "The rescuers need to trap the injured cat.",
+      "examples": [
+        {
+          "text": "The rescuers need to trap the injured cat.",
+          "translation": "救助者は怪我した猫を捕まえなければならない。"
+        }
+      ]
     },
     {
       "word": "twist",
@@ -3977,7 +6947,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Twist the threads together to make a cord."
+      "example": "Twist the threads together to make a cord.",
+      "examples": [
+        {
+          "text": "Twist the threads together to make a cord.",
+          "translation": "糸をひねって紐を作る。"
+        }
+      ]
     },
     {
       "word": "untie",
@@ -3985,7 +6961,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Please untie the ribbon carefully."
+      "example": "Please untie the ribbon carefully.",
+      "examples": [
+        {
+          "text": "Please untie the ribbon carefully.",
+          "translation": "リボンを慎重に解いてください。"
+        }
+      ]
     },
     {
       "word": "wag",
@@ -3993,7 +6975,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Dogs often wag their tails when happy."
+      "example": "Dogs often wag their tails when happy.",
+      "examples": [
+        {
+          "text": "Dogs often wag their tails when happy.",
+          "translation": "犬は幸せなときにしばしば尾を振る。"
+        }
+      ]
     },
     {
       "word": "wink",
@@ -4001,7 +6989,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "She would wink at me after each joke."
+      "example": "She would wink at me after each joke.",
+      "examples": [
+        {
+          "text": "She would wink at me after each joke.",
+          "translation": "彼女はジョークの後に私にウィンクした。"
+        }
+      ]
     },
     {
       "word": "zip",
@@ -4009,7 +7003,13 @@
       "tags": [
         "動詞"
       ],
-      "example": "Zip your jacket before going outside."
+      "example": "Zip your jacket before going outside.",
+      "examples": [
+        {
+          "text": "Zip your jacket before going outside.",
+          "translation": "外に出る前にジャケットのファスナーを閉めてください。"
+        }
+      ]
     }
   ]
 }

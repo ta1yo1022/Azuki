@@ -151,8 +151,11 @@ describe("owner isolation and atomic D1 imports", () => {
     expect(deck.wordCount).toBe(1390);
     expect(db.prepare('SELECT count(*) AS n FROM words WHERE deck_id=?').get(deck.id)?.n).toBe(1390);
     const word=db.prepare('SELECT * FROM words WHERE deck_id=? ORDER BY ordinal LIMIT 1').get(deck.id) as any;
-    const edited=await call(`/decks/${deck.id}/words/${word.id}`,"PATCH",{word:word.word,meaning:'編集した意味',example:word.example,expectedWord:word.word,expectedMeaning:word.meaning,expectedExample:word.example});
+    const examples=JSON.parse(word.examples_json);
+    expect(examples[0].translation).toMatch(/[ぁ-んァ-ン一-龥]/);
+    const edited=await call(`/decks/${deck.id}/words/${word.id}`,"PATCH",{word:word.word,meaning:'編集した意味',examples,expectedWord:word.word,expectedMeaning:word.meaning,expectedExample:word.example,expectedExamples:examples});
     expect(edited.status).toBe(200);
+    expect((await edited.json() as any).word.examples).toEqual(examples);
   });
   it("forks standard books with server-owned attribution and validates limits before writing", async () => {
     const id="azuki-cefrj-a1-1-v1";
