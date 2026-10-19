@@ -207,3 +207,8 @@
  .landing-footer nav > span { flex-basis:100%; }
 }
 @media(prefers-reduced-motion:reduce) { .landing *, .landing *::before, .landing *::after { transition:none!important; animation:none!important; } }
+
+.landing-product-stage { grid-template-columns:minmax(0,1fr); min-height:520px; padding:42px; }
+.landing-product-stage .landing-card-stack { transform:none; margin-top:0; }
+.landing-product-stage .landing-card-scene { height:440px; }
+@media(max-width:800px) { .landing-product-stage { padding:32px 16px; } .landing-product-stage .landing-card-scene { height:380px; } }

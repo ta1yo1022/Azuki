@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   ArrowRight, ArrowUpRight, BookOpenText, Check,
-  ChevronLeft, ChevronRight, FileJson, Globe, Layers,
+  FileJson, Globe, Layers,
   RotateCw,
 } from "lucide-react";
 import "./landing.css";
@@ -27,13 +27,8 @@ function LandingBrand() {
   return <span className="brand"><img src="/favicon.svg" alt="" /><span>azuki</span></span>;
 }
 function PreviewCard() {
-  const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
-  const word = previewWords[index];
-  function move(direction: number) {
-    setRevealed(false);
-    setIndex((current) => (current + direction + previewWords.length) % previewWords.length);
-  }
+  const word = previewWords[0];
   return <div className="landing-card-scene">
     <div className="landing-card-orbit" aria-hidden="true" />
     <div className="landing-card-annotation" aria-hidden="true">
@@ -41,15 +36,13 @@ function PreviewCard() {
       <svg width="74" height="48" viewBox="0 0 74 48" fill="none"><path d="M4 5C20 1 56 6 53 35M43 27L53 39L64 29" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
     </div>
     <div className="landing-card-stack">
-      <div className="landing-card-sheet sheet-back" aria-hidden="true" />
-      <div className="landing-card-sheet sheet-middle" aria-hidden="true" />
       <button
         className={`landing-preview-card ${revealed ? "is-revealed" : ""}`}
         onClick={() => setRevealed((value) => !value)}
         aria-label={revealed ? `${word.word}：${word.meaning}。タップして日本語に戻る` : `${word.meaning}の英語を確認する`}
         aria-pressed={revealed}
       >
-        <span className="landing-card-inner" key={index}>
+        <span className="landing-card-inner">
           <span className="landing-card-side landing-card-front" aria-hidden={revealed}>
             <span className="landing-card-top"><span>日本語</span><BookOpenText size={21} strokeWidth={1.5} /></span>
             <span className="landing-card-prompt">{word.meaning}</span>
@@ -67,11 +60,7 @@ function PreviewCard() {
         </span>
       </button>
     </div>
-    <div className="landing-preview-controls">
-      <button aria-label="前のサンプルカード" onClick={() => move(-1)}><ChevronLeft size={18} /></button>
-      <span aria-live="polite"><strong>{String(index + 1).padStart(2, "0")}</strong><span> / 03</span></span>
-      <button aria-label="次のサンプルカード" onClick={() => move(1)}><ChevronRight size={18} /></button>
-    </div>
+
   </div>;
 }
 export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
@@ -109,18 +98,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
           </div>
         </div>
         <div className="landing-product-stage">
-          <div className="landing-stage-caption"><span>YOUR WORDS, YOUR WAY.</span><span>まずは、一枚めくってみる。</span></div>
-          <div className="landing-mini-book" aria-hidden="true">
-            <span className="landing-mini-label">MY WORDBOOK / 01</span>
-            <h2>旅先で出会う、<br />新しいことば。</h2>
-            <span className="landing-mini-tag">旅行・ホテル</span>
-            <div><strong>reservation</strong><span>予約</span></div>
-            <div><strong>destination</strong><span>目的地</span></div>
-            <div><strong>discover</strong><span>発見する</span></div>
-            <small>覚えたい単語を、自分の一冊に。</small>
-          </div>
           <PreviewCard />
-          <div className="landing-stage-note"><Layers size={18} /><span>読む。めくる。覚える。</span><span>スマホでも、パソコンでも。</span></div>
         </div>
       </section>
       <section className="landing-about" id="about" aria-labelledby="about-title">
