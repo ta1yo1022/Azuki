@@ -21,7 +21,7 @@ it('logs in before creating a shortcut',async()=>{
  await act(async()=>container.querySelector('button')!.click());expect(mocks.login).toHaveBeenCalledOnce();expect(mocks.add).toHaveBeenCalledWith('standard-a1');
 });
 it('links to the original, and lets an unavailable shortcut be removed',async()=>{
- mocks.list.mockResolvedValue([{id:'original',deck:{title:'旅行のことば',wordCount:500},createdAt:''},{id:'hidden',deck:null,createdAt:''}]);
+ mocks.list.mockResolvedValue([{id:'original',deck:{id:'original',title:'旅行のことば',wordCount:500,textbookTags:[]},createdAt:''},{id:'hidden',deck:null,createdAt:''}]);
  await act(async()=>root.render(<MemoryRouter><Favorites owner="alice"/></MemoryRouter>));
  expect(container.querySelector('a[href="/shared/original"]')).toBeTruthy();expect(container.querySelector('a[href="/shared/hidden"]')).toBeNull();
  await act(async()=>container.querySelector<HTMLButtonElement>('[aria-label="開けない単語帳をお気に入りから外す"]')!.click());

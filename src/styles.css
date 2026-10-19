@@ -3316,10 +3316,9 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .favorites-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
 .favorites-heading h2 { display:flex; align-items:center; gap:10px; font-size:24px; }
 .favorites-heading a { color:#a22d33; font-weight:700; }
-.favorites-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:16px; margin-top:20px; }
-.favorite-card { display:flex; align-items:flex-start; gap:12px; padding:24px; background:#fffaf3; border:1px solid #e8d5c5; border-radius:22px; }
-.favorite-card>a,.favorite-card>div { flex:1; min-width:0; }
-.favorite-card a { color:inherit; text-decoration:none; }
-.favorite-card h3 { margin:12px 0; overflow-wrap:anywhere; }
-.favorite-card .icon-button { flex-shrink:0; }
+.favorites-grid { margin-top:20px; }
+.favorite-card { display:flex; flex-direction:column; min-width:0; gap:12px; }
+.favorite-card > .deck-card { flex:1; }
+.favorite-remove { align-self:flex-end; display:inline-flex; align-items:center; gap:6px; font-size:12px; padding:6px 2px; }
+.favorite-unavailable { min-height:354px; padding:28px; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; background:var(--paper); }
 .favorite-action { display:flex; flex-direction:column; align-items:flex-start; }
