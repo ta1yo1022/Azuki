@@ -3310,7 +3310,7 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .word-examples-heading > span { color:#625247; }
 .word-example-edit-heading strong { color:#7c2228; }
 
-.study-sentence { display: block; font-size: clamp(1.5rem, 3.5vw, 2.6rem); font-weight: 750; line-height: 1.65; overflow-wrap: anywhere; text-align: left; width: 100%; }
+.study-sentence { display: block; font-size: clamp(1.5rem, 3.5vw, 2.6rem); font-weight: 750; line-height: 1.65; overflow-wrap: anywhere; text-align: center; width: 100%; }
 
 .favorites-section { margin: 0 0 32px; padding-top: 24px; border-top: 1px solid var(--border, #e8d5c5); }
 .favorites-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
