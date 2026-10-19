@@ -230,3 +230,7 @@
 .landing-product-stage .landing-card-back .landing-card-top,.landing-product-stage .landing-card-back .landing-card-answer,.landing-product-stage .landing-card-back .landing-card-example,.landing-product-stage .landing-card-back .landing-card-bottom { color:#fffaf3; border-color:#ffffff40; }
 @media(max-width:800px) { .landing-product-stage { min-height:0; padding:32px 12px; } .landing-product-stage .landing-card-scene { height:380px; } .landing-product-stage::before { width:290px; height:310px; } .landing-product-stage .landing-card-orbit { width:310px; height:340px; } .landing-product-stage .landing-card-annotation { top:-5px; left:calc(50% - 38px); width:180px; } }
 .landing-product-stage .landing-card-annotation { width:auto; white-space:nowrap; }
+
+.landing-hero { padding-top:32px; }
+.landing-product-stage { margin-top:0; margin-bottom:56px; }
+@media(max-width:800px) { .landing-hero { padding-top:20px; } .landing-product-stage { margin-top:0; margin-bottom:36px; } }
