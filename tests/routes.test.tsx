@@ -108,13 +108,24 @@ describe("URL navigation", () => {
       expect(container.querySelector("h1")?.textContent).toBe("日常のことば");
     }
   });
+  it("opens example cards from both personal and public decks", async () => {
+    for (const path of ["/demo/decks/demo-deck", "/shared/demo-deck"]) {
+      await act(async () => root.unmount());
+      root = createRoot(container);
+      await mount(path);
+      await click("例文カードで学習");
+      expect(currentURL).toBe(`${path}/study?mode=examples`);
+      expect(container.textContent).toContain("例文カード学習");
+      expect((container.querySelector('[aria-label="カードの向き"]') as unknown as {value:string})?.value).toBe("en-ja");
+    }
+  });
   it("opens a study deep link directly, and restores details through Back and Forward", async () => {
     await mount("/demo/decks/demo-deck/?q=curious");
     await settle(280);
     expect(container.querySelector("h1")?.textContent).toBe("日常のことば");
     expect(container.querySelector<HTMLInputElement>('[aria-label="単語・意味を検索"]')?.value).toBe("curious");
     await click("カードで学習");
-    expect(currentURL).toBe("/demo/decks/demo-deck/study?q=curious");
+    expect(currentURL).toBe("/demo/decks/demo-deck/study?q=curious&mode=words");
     expect(container.querySelector(".study-page")).toBeTruthy();
     expect(container.querySelector(".sidebar")).toBeNull();
     await move(-1);

@@ -398,7 +398,8 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
   if (studying && deck) {
     return (
       <StudyPage
-        key={deck.id}
+        key={`${deck.id}-${new URLSearchParams(location.search).get("mode")}`}
+        mode={new URLSearchParams(location.search).get("mode") === "examples" ? "examples" : "words"}
         deck={deck}
         reader={publicRepository}
         onClose={() => navigate(detailPath + location.search)}
@@ -454,9 +455,10 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
             </div>
             <div className="owner-deck-actions">
               <button className="button secondary" onClick={() => navigate(`${detailPath}/book${location.search}`)}>単語帳で学習</button>
+              <button className="button secondary" onClick={() => navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)), mode:"examples"})}`)}>例文カードで学習</button>
               <button
                 className="button primary"
-                onClick={() => navigate(`${detailPath}/study${location.search}`)}
+                onClick={() => navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)), mode:"words"})}`)}
               >
                 <Layers size={17} />
                 カードで学習

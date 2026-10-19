@@ -10,6 +10,8 @@ import { wordExamples, type Deck, type Word, type WordPage } from "../../shared/
 
 import { readStudyPreferences, saveStudyPreferences } from "../lib/studyPreferences";
 
+type StudyCard = Word & { sentence?: { text: string; translation: string } };
+
 type WordReader = {
   words: (id: string, query: string, cursor: number) => Promise<WordPage>;
 };
@@ -18,12 +20,15 @@ export function StudyPage({
   deck,
   reader,
   onClose,
+  mode = "words",
 }: {
+  mode?: "words" | "examples";
   deck: Deck;
   reader: WordReader;
   onClose: () => void;
 }) {
-  const [preferences] = useState(readStudyPreferences);
+  const examplesMode = mode === "examples";
+  const [preferences] = useState(() => { const saved = readStudyPreferences(); return {...saved, direction: examplesMode ? saved.exampleDirection ?? "en-ja" as const : saved.direction}; });
   const [order, setOrder] = useState(preferences.order);
   const [direction, setDirection] = useState(preferences.direction);
   const [started, setStarted] = useState(preferences.skipSetup);
@@ -32,7 +37,7 @@ export function StudyPage({
   const [storageNote, setStorageNote] = useState("");
   const setupHeading = useRef<HTMLHeadingElement>(null);
   function applySettings() {
-    setStorageNote(saveStudyPreferences(draft) ? "" : "このブラウザに設定を保存できませんでした。今回の学習には適用しています。");
+    setStorageNote(saveStudyPreferences(examplesMode ? {...readStudyPreferences(), order:draft.order, skipSetup:draft.skipSetup, exampleDirection:draft.direction} : draft) ? "" : "このブラウザに設定を保存できませんでした。今回の学習には適用しています。");
     setOrder(draft.order);
     setDirection(draft.direction);
     setRevealed(false);
@@ -42,7 +47,7 @@ export function StudyPage({
   const card = useRef<HTMLButtonElement>(null);
   const requestVersion = useRef(0);
   const busy = useRef(false);
-  const [words, setWords] = useState<Word[]>([]);
+  const [words, setWords] = useState<StudyCard[]>([]);
   const [nextCursor, setNextCursor] = useState<number | null>(null);
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -66,9 +71,9 @@ export function StudyPage({
       try {
         let page = await reader.words(deck.id, "", cursor);
         if (version !== requestVersion.current) return;
-        if (order === "shuffle") {
-          // Shuffle the whole book, including words beyond the first API page.
-          const all: Word[] = [];
+        if (order === "shuffle" || examplesMode) {
+          // Load the whole book for global shuffling or to collect translated sentences.
+          const all: StudyCard[] = [];
           const seen = new Set<string>();
           let pageCursor = cursor;
           while (true) {
@@ -76,13 +81,23 @@ export function StudyPage({
                 (page.nextCursor !== null && page.nextCursor <= pageCursor)) {
               throw new Error("単語を読み込めませんでした。単語帳を開き直してください。");
             }
-            for (const item of page.words) { seen.add(item.id); all.push(item); }
+            for (const item of page.words) {
+              seen.add(item.id);
+              if (examplesMode) {
+                wordExamples(item).forEach((sentence, i) => {
+                  if (sentence.translation?.trim()) all.push({
+                    ...item, id: `${item.id}:example:${i}`,
+                    sentence: {text: sentence.text, translation: sentence.translation},
+                  });
+                });
+              } else all.push(item);
+            }
             if (page.nextCursor === null) break;
             pageCursor = page.nextCursor;
             page = await reader.words(deck.id, "", pageCursor);
             if (version !== requestVersion.current) return;
           }
-          for (let i = all.length - 1; i > 0; i--) {
+          for (let i = order === "shuffle" ? all.length - 1 : 0; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [all[i], all[j]] = [all[j], all[i]];
           }
@@ -90,7 +105,7 @@ export function StudyPage({
         }
         if (version !== requestVersion.current) return;
         if (
-          !page.words.length ||
+          (!page.words.length && !examplesMode) ||
           (page.nextCursor !== null && page.nextCursor <= cursor)
         ) {
           throw new Error(
@@ -120,7 +135,7 @@ export function StudyPage({
         }
       }
     },
-    [deck.id, reader, order],
+    [deck.id, reader, order, examplesMode],
   );
 
   useEffect(() => {
@@ -193,7 +208,7 @@ export function StudyPage({
           単語一覧に戻る
         </button>
         <div>
-          <span className="eyebrow">カード学習</span>
+          <span className="eyebrow">{examplesMode ? "例文カード学習" : "カード学習"}</span>
           <h1 id="study-title">{deck.title}</h1>
         </div>
       </header>
@@ -206,7 +221,7 @@ export function StudyPage({
         {settingsOpen ? (
           <section className="study-setup" aria-labelledby="study-setup-title">
             <h2 id="study-setup-title" ref={setupHeading} tabIndex={-1}>学習をはじめる前に</h2>
-            <p>出題順とカードの向きを選んでください。</p>
+            <p>{examplesMode ? "英文と日本語訳を1枚ずつめくって練習します。日本語訳のある例文が対象です。" : "出題順とカードの向きを選んでください。"}</p>
             <div className="study-settings" role="group" aria-label="カードの設定">
               <label>出題順
                 <select aria-label="出題順" value={draft.order} onChange={e => setDraft({...draft, order:e.target.value as typeof order})}>
@@ -227,7 +242,7 @@ export function StudyPage({
           </section>
         ) : loading ? (
           <div className="study-message" role="status">
-            <p>{order === "shuffle" ? "全ての単語をシャッフルしています…" : "カードを準備しています…"}</p>
+            <p>{order === "shuffle" ? "カードをシャッフルしています…" : "カードを準備しています…"}</p>
           </div>
         ) : error ? (
           <div className="study-message">
@@ -246,7 +261,7 @@ export function StudyPage({
             </span>
             <span className="eyebrow">学習終了</span>
             <h3>最後までめくりました。</h3>
-            <p>{words.length}語の学習、おつかれさまでした。</p>
+            <p>{words.length}{examplesMode ? "例文" : "語"}の学習、おつかれさまでした。</p>
             <div className="study-complete-actions">
               <button
                 className="button primary"
@@ -261,13 +276,15 @@ export function StudyPage({
               </button>
             </div>
           </div>
+        ) : !word ? (
+          <div className="study-message"><h2>日本語訳付きの例文がありません</h2><p>マイライブラリの「例文を追加・編集」から、例文と日本語訳を登録してください。</p><button className="button secondary" onClick={onClose}>単語一覧に戻る</button></div>
         ) : (
           word && (
             <>
               <div className="study-progress-label">
-                <span>カードで学習</span>
+                <span>{examplesMode ? "例文で学習" : "カードで学習"}</span>
                 <span role="status">
-                  <strong>{index + 1}</strong> / {total} 語
+                  <strong>{index + 1}</strong> / {total} {examplesMode ? "例文" : "語"}
                 </span>
               </div>
               <progress
@@ -292,7 +309,9 @@ export function StudyPage({
                   </span>
                   <span className="study-card-scroll">
                     <span className="study-card-body">
-                      {revealed ? (
+                      {examplesMode && word.sentence ? (
+                        <span className="study-sentence" lang={(direction === "ja-en") !== revealed ? "ja" : "en"}>{(direction === "ja-en") !== revealed ? word.sentence.translation : word.sentence.text}</span>
+                      ) : revealed ? (
                         <>
                           {direction === "ja-en" ? (
                             <span className="study-word" lang="en">{word.word}</span>
@@ -310,7 +329,7 @@ export function StudyPage({
                           {direction === "ja-en" ? word.meaning : word.word}
                         </span>
                       )}
-                      {((revealed && direction === "en-ja") || (!revealed && deck.standard)) && word.tags.length > 0 && (
+                      {!examplesMode && ((revealed && direction === "en-ja") || (!revealed && deck.standard)) && word.tags.length > 0 && (
                         <span className="study-tags">
                           {word.tags.map((tag) => (
                             <span className="tag" key={tag}>
@@ -336,10 +355,10 @@ export function StudyPage({
                   onClick={previous}
                 >
                   <ArrowLeft size={18} />
-                  前の単語
+                  {examplesMode ? "前の例文" : "前の単語"}
                 </button>
                 <button className="button primary" onClick={next}>
-                  {isLast ? "学習を終える" : "次の単語"}
+                  {isLast ? "学習を終える" : examplesMode ? "次の例文" : "次の単語"}
                   <ArrowRight size={18} />
                 </button>
               </div>

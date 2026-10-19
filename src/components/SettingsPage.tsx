@@ -27,6 +27,7 @@ export function SettingsPage({ onClose, onTutorial, demo = false }: { demo?: boo
           <label>カードの向き<select aria-label="カードの向き" value={draft.direction} onChange={e => setDraft({...draft, direction: e.target.value as typeof draft.direction})}>
             <option value="ja-en">日本語 → 英語</option><option value="en-ja">英語 → 日本語</option>
           </select></label>
+        <label>例文カードの向き<select aria-label="例文カードの向き" value={draft.exampleDirection ?? "en-ja"} onChange={e => setDraft({...draft, exampleDirection:e.target.value as "ja-en" | "en-ja"})}><option value="en-ja">英語 → 日本語</option><option value="ja-en">日本語 → 英語</option></select></label>
         </div>
         <label className="study-skip-setup"><input type="checkbox" checked={draft.skipSetup} onChange={e => setDraft({...draft, skipSetup:e.target.checked})} />学習開始前の設定画面を表示しない</label>
         <p className="study-setup-note">チェックを外すと、学習開始前に設定を選べます。設定はこのブラウザに保存されます。</p>

@@ -136,3 +136,40 @@ it('shows every saved English example on the answer while keeping Japanese trans
  await mount();await click('タップして英語を見る');
  expect(face()).toContain('The captain refused.');expect(face()).toContain('The mage refused.');expect(face()).not.toContain('船長は拒否した。');
 });
+
+async function mountExamples() {
+ await act(async()=>root.render(<StudyPage mode="examples" deck={deck} reader={reader} onClose={()=>{}} />));
+ if(container.querySelector('.study-setup')) await click('学習をはじめる');
+}
+it('studies each translated example separately, fetching later pages and hiding the answer until flipped', async()=>{
+ const first={...words[0],examples:[{text:'The captain refused.',translation:'船長は拒否した。'},{text:'The mage refused.',translation:'魔法使いは拒否した。'},{text:'No translation.'}]};
+ reader.words.mockImplementation(async(_id,_query,cursor)=>cursor===0?{words:[first],nextCursor:50}:{words:[{...words[50],examples:[{text:'We arrived.',translation:'私たちは到着した。'}]}],nextCursor:null});
+ await mountExamples();
+ expect(reader.words.mock.calls.map(c=>c[2])).toEqual([0,50]);
+ expect(container.querySelector('progress')?.max).toBe(3);
+ expect(face()).toContain('The captain refused.');expect(face()).not.toContain('船長は拒否した。');expect(face()).not.toContain(first.meaning);
+ await click('タップして日本語を見る');expect(face()).toContain('船長は拒否した。');expect(face()).not.toContain('The captain refused.');
+ await click('次の例文');expect(face()).toContain('The mage refused.');
+ await click('次の例文');expect(face()).toContain('We arrived.');
+ await click('前の例文');expect(face()).toContain('The mage refused.');
+ await click('次の例文');await click('学習を終える');expect(container.textContent).toContain('3例文の学習');
+});
+it('shows an actionable empty state for untranslated examples',async()=>{
+ reader.words.mockResolvedValue({words:[words[0]],nextCursor:null});await mountExamples();
+ expect(container.textContent).toContain('日本語訳付きの例文がありません');expect(container.querySelector('.study-card')).toBeNull();
+});
+it('keeps example direction separate from word direction and supports Japanese first',async()=>{
+ localStorage.setItem('azuki.study-preferences.v1',JSON.stringify({order:'ordered',direction:'ja-en',exampleDirection:'ja-en',skipSetup:false}));
+ reader.words.mockResolvedValue({words:[{...words[0],examples:[{text:'We arrived.',translation:'私たちは到着した。'}]}],nextCursor:null});
+ await mountExamples();expect(face()).toContain('私たちは到着した。');expect(face()).not.toContain('We arrived.');
+ await click('タップして英語を見る');expect(face()).toContain('We arrived.');expect(face()).not.toContain('私たちは到着した。');
+ expect(JSON.parse(localStorage.getItem('azuki.study-preferences.v1')!).direction).toBe('ja-en');
+});
+it('shuffles individual examples without dropping or repeating them',async()=>{
+ localStorage.setItem('azuki.study-preferences.v1',JSON.stringify({order:'shuffle',direction:'ja-en',skipSetup:true}));
+ vi.spyOn(Math,'random').mockReturnValue(0);
+ reader.words.mockResolvedValue({words:[{...words[0],examples:[{text:'First.',translation:'一。'},{text:'Second.',translation:'二。'},{text:'Third.',translation:'三。'}]}],nextCursor:null});
+ await mountExamples();const seen=[];
+ for(let i=0;i<3;i++){seen.push(container.querySelector('.study-sentence')?.textContent);if(i<2)await click('次の例文');}
+ expect(seen).not.toEqual(['First.','Second.','Third.']);expect([...seen].sort()).toEqual(['First.','Second.','Third.'].sort());
+});
