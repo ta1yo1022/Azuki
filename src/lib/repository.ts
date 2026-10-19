@@ -95,7 +95,7 @@ export const demoRepository: Repository = {
       store.decks.length >= LIMITS.decks ||
       total + input.words.length > LIMITS.userWords
     )
-      throw new Error("1人20冊・合計2,000語まで登録できます。");
+      throw new Error("1人20冊・合計15,000語まで登録できます。");
     const today = store.importDay === day ? store.dailyWords : 0;
     if (today + input.words.length > LIMITS.dailyWords)
       throw new Error("1日の登録上限（5,000語）に達しました。削除した分も当日分に含まれます。日本時間9時にリセットされます。");

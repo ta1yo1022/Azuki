@@ -2,7 +2,7 @@ export const LIMITS = {
   bytes: 512 * 1024,
   importWords: 500,
   forkWords: 5000,
-  userWords: 2000,
+  userWords: 15000,
   decks: 20,
   dailyWords: 5000,
 };

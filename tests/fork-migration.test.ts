@@ -40,3 +40,24 @@ it('keeps existing over-limit books editable while rejecting additional words af
     expect(db.prepare("SELECT word_count FROM users WHERE id='owner'").get()?.word_count).toBe(2000);
   } finally {db.close();}
 });
+
+it('raises storage to 15,000 words, preserves existing data and enforces insert/update boundaries',()=>{
+ const db=new DatabaseSync(':memory:');
+ try {
+  for(const file of readdirSync('migrations').filter(f=>f.endsWith('.sql')&&f<'0015_user_word_limit_15000.sql').sort())db.exec(readFileSync(`migrations/${file}`,'utf8'));
+  db.exec("INSERT INTO users(id) VALUES ('owner'); INSERT INTO decks(id,owner_id,title,word_count,created_at,updated_at,data_bytes) VALUES ('existing','owner','保存済み',2000,'now','now',100)");
+  const tables=['decks','words','users','app_usage'];const before=tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all());
+  db.exec(readFileSync('migrations/0015_user_word_limit_15000.sql','utf8'));
+  expect(tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all())).toEqual(before);
+  const resetDay=()=>db.exec("UPDATE users SET daily_words=0; UPDATE app_usage SET daily_words=0");
+  resetDay();db.exec("UPDATE decks SET word_count=5000 WHERE id='existing'");
+  for(const id of ['second','third']){resetDay();db.prepare("INSERT INTO decks(id,owner_id,title,word_count,created_at,updated_at) VALUES (?,'owner','追加',5000,'now','now')").run(id);}
+  expect(db.prepare("SELECT word_count FROM users WHERE id='owner'").get()?.word_count).toBe(15000);
+  resetDay();
+  expect(()=>db.exec("INSERT INTO decks(id,owner_id,title,word_count,created_at,updated_at) VALUES ('extra','owner','追加',1,'now','now')")).toThrow('AZUKI_WORD_LIMIT');
+  db.exec("UPDATE decks SET word_count=4999 WHERE id='existing'");
+  db.exec("INSERT INTO decks(id,owner_id,title,word_count,created_at,updated_at) VALUES ('extra','owner','追加',1,'now','now')");
+  expect(()=>db.exec("UPDATE decks SET word_count=5000 WHERE id='existing'")).toThrow('AZUKI_WORD_LIMIT');
+  expect(db.prepare('PRAGMA foreign_key_check').all()).toEqual([]);
+ } finally {db.close();}
+});

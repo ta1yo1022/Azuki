@@ -283,7 +283,7 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
             error: message.includes("AZUKI_DECK_LIMIT")
               ? "単語帳の上限（20冊）に達しました。不要な単語帳を削除してから保存してください。"
               : message.includes("AZUKI_WORD_LIMIT")
-                ? "保存できる単語数（合計2,000語）を超えます。不要な単語帳を削除してから保存してください。"
+                ? "保存できる単語数（合計15,000語）を超えます。不要な単語帳を削除してから保存してください。"
                 : message.includes("AZUKI_DAILY_LIMIT")
                   ? "1日の登録上限（5,000語）を超えます。削除した分も当日分に含まれます。日本時間9時にリセットされます。"
                   : message.includes("AZUKI_APP_DAILY_LIMIT")
