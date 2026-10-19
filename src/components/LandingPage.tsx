@@ -30,10 +30,6 @@ function PreviewCard() {
   const [revealed, setRevealed] = useState(false);
   const word = previewWords[0];
   return <div className="landing-card-scene">
-    <div className="landing-card-annotation" aria-hidden="true">
-      タップして答えを確認
-      <svg width="74" height="48" viewBox="0 0 74 48" fill="none"><path d="M4 5C20 1 56 6 53 35M43 27L53 39L64 29" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
-    </div>
     <div className="landing-card-stack">
       <button
         className={`landing-preview-card ${revealed ? "is-revealed" : ""}`}
