@@ -73,7 +73,7 @@ function PublicLayout({ children }: { children: ReactNode }) {
       <main id="public-main" className="public-main">
         {children}
       </main>
-      <footer className="public-footer"><Link to="/privacy">プライバシーポリシー</Link>{" · "}<Link to="/terms">利用規約</Link>{" · "}
+      <footer className="public-footer"><Link to="/privacy">プライバシーポリシー</Link>{" · "}<Link to="/terms">利用規約</Link>{" · "}<Link to="/copyright">著作権・権利侵害への対応</Link>{" · "}
         <a href="https://github.com/ta1yo1022/Azuki" target="_blank" rel="noreferrer">GitHub・PR受付中</a>{" · "}Azuki · 英単語帳アプリ
       </footer>
     </div>

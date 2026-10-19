@@ -134,6 +134,7 @@ export function ShareDialog({
             </div>
           )}
           <div className="share-visibility-actions">
+            {!isPublic && <p className="share-copyright-note">公開する権利のある内容だけを掲載してください。教材名の入力やAIによる編集は、転載の許可を意味しません。<Link to="/copyright" target="_blank" rel="noreferrer">著作権・権利侵害への対応を確認 ↗</Link></p>}
             {isPublic && (
               <p>
                 非公開に戻すと、検索結果と共有リンクから閲覧できなくなります。すでに他のユーザーが保存したコピーは残ります。

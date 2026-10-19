@@ -18,6 +18,9 @@ it('disables publishing unchanged copies but still allows an existing public cop
  const change=vi.fn();
  await act(async()=>root.render(<MemoryRouter><ShareDialog deck={deck} demo={false} onClose={()=>{}} onVisibility={change}/></MemoryRouter>));
  expect(button('派生版として公開').disabled).toBe(true);
+ expect(container.textContent).toContain('公開する権利のある内容だけを掲載してください');
+ expect(container.querySelector('a[href="/copyright"]')?.getAttribute('target')).toBe('_blank');
+ expect(change).not.toHaveBeenCalled();
  expect(container.querySelector('a')?.getAttribute('href')).toBe('/shared/source');
  await act(async()=>root.render(<MemoryRouter><ShareDialog deck={{...deck,visibility:'public'}} demo={false} onClose={()=>{}} onVisibility={change}/></MemoryRouter>));
  await act(async()=>button('非公開に戻す').click());expect(change).toHaveBeenCalledWith('private');

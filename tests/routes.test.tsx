@@ -318,3 +318,16 @@ it('shows the tutorial after login, remembers dismissal, and replays it from set
   expect(container.querySelector('.tutorial-overlay')).toBeNull();
   expect(currentURL).toBe('/library');
 });
+
+it('opens the copyright policy without login and links it from terms and public footers',async()=>{
+ await mount('/terms');
+ const link=container.querySelector<HTMLAnchorElement>('a[href="/copyright"]')!;
+ expect(link).toBeTruthy();await act(async()=>link.click());await settle();
+ expect(currentURL).toBe('/copyright');
+ expect(container.querySelector('h1')?.textContent).toBe('著作権・権利侵害への対応');
+ expect(container.textContent).toContain('公開されていることは、利用許諾を保証しません');
+ expect(container.querySelector('a[href="mailto:support@volta.jp"]')).toBeTruthy();
+ expect(mocks.login).not.toHaveBeenCalled();
+ await move('/explore');expect(container.querySelector('footer a[href="/copyright"]')).toBeTruthy();
+ await move('/');expect(container.querySelector('footer a[href="/copyright"]')).toBeTruthy();
+});
