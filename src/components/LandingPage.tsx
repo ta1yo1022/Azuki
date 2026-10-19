@@ -83,9 +83,6 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
     </header>
     <main id="landing-main">
       <section className="landing-hero landing-container" id="start" aria-labelledby="landing-title">
-        <div className="landing-product-stage">
-          <PreviewCard />
-        </div>
         <div className="landing-hero-copy">
           <h1 id="landing-title">自分の単語帳で、<br /><span>英語を覚える。</span></h1>
           <p className="landing-lead">覚えたい単語を登録して、カードで練習。<br />公開単語帳も、自分用に保存できます。</p>
@@ -99,6 +96,9 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
             {!canSignIn && <span className="landing-login-note">Googleログインは準備中です。</span>}
             {error && <p role="alert" className="error-box landing-login-error">{error}</p>}
           </div>
+        </div>
+        <div className="landing-product-stage">
+          <PreviewCard />
         </div>
       </section>
       <section className="landing-about" id="about" aria-labelledby="about-title">
