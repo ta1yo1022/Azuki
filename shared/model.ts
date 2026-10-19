@@ -1,6 +1,6 @@
 export const LIMITS = {
   bytes: 512 * 1024,
-  importWords: 500,
+  importWords: 5000,
   forkWords: 5000,
   userWords: 15000,
   examplesPerWord: 10,

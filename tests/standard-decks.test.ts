@@ -51,7 +51,7 @@ it('pages beyond 500 without omissions, caches the downloaded file, and searches
   await expect(standardWords(book.id,'',0,controller.signal)).rejects.toThrow();
 });
 it('does not relax the user import limit for standard books', () => {
-  expect(()=>parseDeck(JSON.stringify({title:'import',words:Array.from({length:501},(_,i)=>({word:`word${i}`,meaning:'単語',tags:[]}))}))).toThrow('500');
+  expect(()=>parseDeck(JSON.stringify({title:'import',words:Array.from({length:5001},(_,i)=>({word:`word${i}`,meaning:'単語',tags:[]}))}))).toThrow('5000');
 });
 
 it('keeps every translated standard book within the fork JSON limit without losing sentence pairs',async()=>{

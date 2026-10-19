@@ -15,3 +15,9 @@ it('retains word validation and limits', () => {
   expect(() => parseImportWords(JSON.stringify({ words: [...words, ...words] }))).toThrow('重複');
   expect(() => parseImportWords(' '.repeat(512 * 1024 + 1))).toThrow('512KB');
 });
+
+it('accepts 5,000 words and rejects a larger book',()=>{
+ const input=Array.from({length:5000},(_,i)=>({word:`word-${i}`,meaning:'意味'}));
+ expect(parseImportWords(JSON.stringify(input))).toHaveLength(5000);
+ expect(()=>parseImportWords(JSON.stringify([...input,{word:'extra',meaning:'追加'}]))).toThrow('5000');
+});

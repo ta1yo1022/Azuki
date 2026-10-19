@@ -174,7 +174,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
                 >
                   ファイルを選ぶ
                 </button>
-                <small>.json ／ 512KB・500語まで</small>
+                <small>.json ／ 512KB・5,000語まで</small>
                 <input
                   ref={file}
                   type="file"

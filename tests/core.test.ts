@@ -84,7 +84,7 @@ describe("JSON import boundary", () => {
     expect(() =>
       parseDeck(JSON.stringify({ ...sample(), schemaVersion: 2 })),
     ).toThrow("バージョン");
-    expect(() => parseDeck(JSON.stringify(sample(501)))).toThrow("500");
+    expect(() => parseDeck(JSON.stringify(sample(5001)))).toThrow("5000");
   });
 });
 describe("owner isolation and atomic D1 imports", () => {
@@ -122,6 +122,15 @@ describe("owner isolation and atomic D1 imports", () => {
       ALLOWED_ORIGINS: "https://azuki.test",
       ALLOW_IMPORTS: "true",
     };
+  });
+  it("imports 5,000 words into one book atomically and rejects 5,001",async()=>{
+    const response=await call('/decks','POST',sample(5000));
+    expect(response.status).toBe(201);
+    const {deck}=await response.json() as any;
+    expect(deck.wordCount).toBe(5000);
+    expect(db.prepare('SELECT count(*) n FROM words WHERE deck_id=?').get(deck.id)?.n).toBe(5000);
+    expect((await call('/decks','POST',sample(5001), 'bob')).status).toBe(400);
+    expect(db.prepare("SELECT word_count,daily_words FROM users WHERE id='alice'").get()).toEqual({word_count:5000,daily_words:5000});
   });
   it("bookmarks references without copying words, isolates owners, and hides unavailable content", async () => {
     const source=(await (await call('/decks','POST',sample())).json() as any).deck;
