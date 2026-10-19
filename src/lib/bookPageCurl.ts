@@ -89,7 +89,7 @@ export class BookPageCurl {
 
 import {wordExamples,type Word} from '../../shared/model';
 /** Adjacent pages use textContent only: vocabulary is never interpreted as HTML. */
-export function bookLeafSnapshot(words:Word[],page:number,hideMeanings:boolean):HTMLElement {
+export function bookLeafSnapshot(words:Word[],page:number,hideMeanings:boolean,hideEnglish=false):HTMLElement {
   const node=(tag:string,className:string,text?:string)=>{
     const element=document.createElement(tag);element.className=className;
     if(text!==undefined)element.textContent=text;
@@ -102,7 +102,7 @@ export function bookLeafSnapshot(words:Word[],page:number,hideMeanings:boolean):
   for(const word of words) {
     const entry=node('li','book-entry');
     const label=node('div','book-entry-word');
-    append(label,node('small','',String(word.ordinal+1).padStart(3,'0')),node('h2','',word.word));
+    append(label,node('small','',String(word.ordinal+1).padStart(3,'0')),node('h2',hideEnglish?'book-english-content is-blurred':'',word.word));
     if(word.tags.length) append(label,node('p','',word.tags.join(' · ')));
     const meaning=node('div','book-entry-meaning');
     const text=node('div',`book-meaning-content${hideMeanings?' is-blurred':''}`);
@@ -122,7 +122,7 @@ export function bookLeafSnapshot(words:Word[],page:number,hideMeanings:boolean):
       examples.forEach((sentence,index)=>{
         const item=node('li','');
         if(examples.length>1)append(item,node('span','word-example-number',`例文 ${index+1}`));
-        append(item,node('p','',sentence.text));
+        append(item,node('p',hideEnglish?'book-english-content is-blurred':'',sentence.text));
         if(sentence.translation)append(item,node('p',`word-example-translation${hideMeanings?' is-blurred':''}`,sentence.translation));
         append(items,item);
       });

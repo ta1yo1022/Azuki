@@ -237,3 +237,28 @@ it('turns with arrow keys from navigation buttons and the window, but keeps edit
  await act(async()=>container.querySelector('input')!.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true,cancelable:true})));
  expect(container.querySelector('output')?.textContent).toContain('bookPage=1');
 });
+
+it('jumps to an entered page and back to the cover while retaining other URL options',async()=>{
+ const reader={words:vi.fn(async(_id:string,_q:string,cursor:number)=>({words:words.slice(cursor,cursor+50),nextCursor:null}))};
+ await act(async()=>root.render(<MemoryRouter initialEntries={['/book?bookPage=1&q=keep']}><BookStudyPage deck={deck} reader={reader} onClose={()=>{}}/><Location/></MemoryRouter>));
+ const enter=async(value:string)=>{await act(async()=>{const input=container.querySelector<HTMLInputElement>('#book-page-input')!;Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value')!.set!.call(input,value);input.dispatchEvent(new Event('input',{bubbles:true}));});await act(async()=>container.querySelector('form')!.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true})));};
+ await enter('15');
+ expect(container.querySelector('output')?.textContent).toContain('bookPage=15');
+ expect(container.querySelector('output')?.textContent).toContain('q=keep');
+ expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-56');
+ await enter('18');expect(container.querySelector('output')?.textContent).toContain('bookPage=15');
+ await enter('0');expect(container.querySelector('.book-cover-leaf')).toBeTruthy();
+});
+
+it('blurs English words and sentences together without hiding Japanese or changing content',async()=>{
+ await act(async()=>root.render(<MemoryRouter initialEntries={['/book?bookPage=1']}><BookStudyPage deck={deck} reader={{words:async()=>({words:words.slice(0,8),nextCursor:null})}} onClose={()=>{}}/></MemoryRouter>));
+ const english=container.querySelectorAll<HTMLInputElement>('.book-study-toggle input')[1];
+ await act(async()=>english.click());
+ expect(container.querySelector('.book-entry-word h2')?.classList.contains('is-blurred')).toBe(true);
+ expect(container.querySelector('.book-entry-example p[lang="en"]')?.classList.contains('is-blurred')).toBe(true);
+ expect(container.querySelector('.word-example-translation')?.classList.contains('is-blurred')).toBe(false);
+ await act(async()=>container.querySelector<HTMLButtonElement>('button[aria-label="word-0の例文1の英語を表示"]')!.click());
+ expect(container.querySelector('.book-entry-word h2')?.classList.contains('is-blurred')).toBe(false);
+ expect(container.querySelector('.book-entry-example p[lang="en"]')?.classList.contains('is-blurred')).toBe(false);
+ expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-0');
+});

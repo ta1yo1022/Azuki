@@ -3384,3 +3384,10 @@ a.deck-card, a.nav-item { text-decoration: none; }
 @media (max-width: 800px) { .sidebar-mobile-settings { display: inline-flex; align-items: center; margin-left: 4px; } }
 .word-example-answer { position: relative; }
 .book-entry-example .word-example-translation.is-blurred { filter: blur(6px); opacity: .65; user-select: none; -webkit-user-select: none; pointer-events: none; }
+.book-english-answer { position: relative; }
+.book-english-content.is-blurred { filter: blur(6px); opacity: .65; user-select: none; -webkit-user-select: none; pointer-events: none; }
+.book-study-tools { flex-wrap: wrap; }
+.book-page-jump { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px; font-size:13px; }
+.book-page-jump input { width:66px; min-height:36px; padding:6px 8px; border:1px solid var(--border); border-radius:8px; background:var(--paper); color:var(--text); font:inherit; }
+.book-page-jump .text-button { min-height:36px; }
+@media(max-width:640px) { .book-pagination { flex-wrap:wrap; } .book-page-jump { order:3; width:100%; } }

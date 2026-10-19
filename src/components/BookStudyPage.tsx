@@ -44,6 +44,10 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
   const [retry, setRetry] = useState(0);
   useStudyTracking(deck,"book",!isCover&&!loading&&!error&&words.length>0,demo);
   const [hideMeanings, setHideMeanings] = useState(false);
+  const [hideEnglish, setHideEnglish] = useState(false);
+  const [englishRevealed, setEnglishRevealed] = useState<Set<string>>(new Set());
+  const [pageInput,setPageInput] = useState(String(page));
+  useEffect(()=>{setPageInput(String(page));setEnglishRevealed(new Set());},[page]);
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
   const [controlsVisible, setControlsVisible] = useState(true);
   const pageCache = useRef(new Map<number, Word[]>());
@@ -110,7 +114,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
           return leaf;
         }
         if(number<0)return bookLeafSnapshot([],0,false);
-        return (!isCover && current[number-page]) || bookLeafSnapshot(pageCache.current.get(number)||[],number<=total?number:0,hideRef.current);
+        return (!isCover && current[number-page]) || bookLeafSnapshot(pageCache.current.get(number)||[],number<=total?number:0,hideRef.current,hideEnglish);
       });
       curl.current=new BookPageCurl(spread,sources,wide,direction,startY-spread.getBoundingClientRect().top,turned=>{
         // Keep the finished paper visible until React commits the new page.
@@ -236,7 +240,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
     <header className={`book-study-header${controlsVisible ? "" : " is-hidden"}`} inert={!controlsVisible} aria-hidden={!controlsVisible}>
       <button className="back-button" onClick={onClose}><ArrowLeft size={18} />単語一覧に戻る</button>
       <div className="book-study-title"><div><h1 ref={heading} tabIndex={-1}>{deck.title}</h1></div>
-        <div className="book-study-tools"><button className="text-button book-controls-toggle" aria-controls="book-pagination" aria-expanded={controlsVisible} onClick={()=>{setControlsVisible(value=>!value);if(controlsVisible)document.querySelector<HTMLElement>(".book-leaf-content")?.focus();}}>{controlsVisible ? '操作を隠す' : '操作を表示'}</button><label className="book-study-toggle"><input type="checkbox" checked={hideMeanings} onChange={e=>{setHideMeanings(e.target.checked);setRevealed(new Set());}} />意味を隠す</label></div>
+        <div className="book-study-tools"><button className="text-button book-controls-toggle" aria-controls="book-pagination" aria-expanded={controlsVisible} onClick={()=>{setControlsVisible(value=>!value);if(controlsVisible)document.querySelector<HTMLElement>(".book-leaf-content")?.focus();}}>{controlsVisible ? '操作を隠す' : '操作を表示'}</button><label className="book-study-toggle"><input type="checkbox" checked={hideMeanings} onChange={e=>{setHideMeanings(e.target.checked);setRevealed(new Set());}} />意味を隠す</label><label className="book-study-toggle"><input type="checkbox" checked={hideEnglish} onChange={e=>{setHideEnglish(e.target.checked);setEnglishRevealed(new Set());}} />英語を隠す</label></div>
       </div>
       <p className="book-study-caption">{hideMeanings ? '意味か例文の日本語訳を押すと、その単語の日本語をまとめて確認できます。' : '英単語・意味・例文を、まとめて読めます。タップで操作を隠し、左右のスワイプでページをめくれます。'}</p>
     </header>
@@ -249,19 +253,21 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
         Array.from({length:Math.min(visiblePages,total-page+1)}, (_, leaf) => <section className="book-leaf" key={`${page}-${leaf}`} aria-label={`${page+leaf}ページ`}>
         <div className="book-leaf-content" tabIndex={0} aria-label={`${page+leaf}ページの本文`}><ol className="book-entries" start={(page+leaf-1)*PAGE_SIZE+1}>{visibleWords.slice(leaf*PAGE_SIZE,(leaf+1)*PAGE_SIZE).map(word => {
           const visible = !hideMeanings || revealed.has(word.id);
+          const englishVisible = !hideEnglish || englishRevealed.has(word.id);
+          const toggleEnglish = () => {if(suppressTap.current){suppressTap.current=false;return;}setEnglishRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});};
           const toggleAnswer = () => {if(suppressTap.current){suppressTap.current=false;return;}setRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});};
           return <li className="book-entry" key={word.id}>
-            <div className="book-entry-word"><small>{String(word.ordinal+1).padStart(3,'0')}</small><h2 lang="en">{word.word}</h2>{!!word.tags.length && <p>{word.tags.join(' · ')}</p>}</div>
+            <div className="book-entry-word"><small>{String(word.ordinal+1).padStart(3,'0')}</small><div className="book-english-answer"><h2 lang="en" className={englishVisible?undefined:'book-english-content is-blurred'} aria-hidden={!englishVisible||undefined}>{word.word}</h2>{hideEnglish&&<button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={englishVisible} aria-label={`${word.word}の英語を${englishVisible?'隠す':'表示'}`} onClick={event=>{event.stopPropagation();toggleEnglish();}}><span className="sr-only">英語を{englishVisible?'隠す':'表示'}</span></button>}</div>{!!word.tags.length && <p>{word.tags.join(' · ')}</p>}</div>
             <div className="book-entry-meaning">
               <div className={`book-meaning-content${visible ? '' : ' is-blurred'}`} aria-hidden={!visible}><p className="book-primary-meaning">{word.meaning}</p>{!!word.otherMeanings?.length && <div className="book-other-meanings"><small>その他の意味</small><ul>{word.otherMeanings.map(meaning=><li key={meaning}>{meaning}</li>)}</ul></div>}{word.usageNote && <p className="book-usage-note">{word.usageNote}</p>}</div>
               {hideMeanings && <button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={visible} aria-label={`${word.word}の意味を${visible ? '隠す' : '表示'}`} onClick={event=>{event.stopPropagation();toggleAnswer();}}><span className="sr-only">{visible ? '意味を隠す' : '意味を表示'}</span></button>}
             </div>
-            <div className="book-entry-example"><span className="book-mobile-label">例文</span><WordExamples word={word} blurTranslations={!visible} onToggleTranslation={hideMeanings ? toggleAnswer : undefined}/></div>
+            <div className="book-entry-example"><span className="book-mobile-label">例文</span><WordExamples word={word} blurEnglish={!englishVisible} onToggleEnglish={hideEnglish ? toggleEnglish : undefined} blurTranslations={!visible} onToggleTranslation={hideMeanings ? toggleAnswer : undefined}/></div>
           </li>;
         })}</ol></div><div className="book-page-number">{page+leaf}</div></section>)}
     </section>
     {isCover && error && <div role="alert" className="book-cover-error"><p>{error}</p><button className="button secondary" onClick={()=>setRetry(n=>n+1)}>もう一度読み込む</button></div>}
     <div hidden ref={coverSource} aria-hidden="true"><BookCover deck={deck}/></div>
-    <nav id="book-pagination" className={`book-pagination${controlsVisible ? "" : " is-hidden"}`} inert={!controlsVisible} aria-hidden={!controlsVisible} aria-label="単語帳のページ移動"><button className="button secondary" disabled={isCover || loading} onClick={()=>animateTurn(previousPage)}><ArrowLeft size={18} />{previousPage===0?"表紙に戻る":"前のページ"}</button><span aria-live="polite">{isCover?"表紙":<>{page}{wide && page<total ? `–${page+1}` : ""} / {total} ページ</>}</span><button className="button primary" disabled={nextPage>total || loading} onClick={()=>animateTurn(nextPage)}>{isCover?"本を開く":"次のページ"}<ArrowRight size={18} /></button></nav>
+    <nav id="book-pagination" className={`book-pagination${controlsVisible ? "" : " is-hidden"}`} inert={!controlsVisible} aria-hidden={!controlsVisible} aria-label="単語帳のページ移動"><button className="button secondary" disabled={isCover || loading} onClick={()=>animateTurn(previousPage)}><ArrowLeft size={18} />{previousPage===0?"表紙に戻る":"前のページ"}</button><form className="book-page-jump" onSubmit={event=>{event.preventDefault();const target=Number(pageInput);if(!Number.isInteger(target)||target<0||target>total||flipLocked.current)return;turn(target);}}><label htmlFor="book-page-input">ページ</label><input id="book-page-input" aria-label="移動先のページ" type="number" min={0} max={total} required value={pageInput} onChange={event=>setPageInput(event.target.value)}/><span>/ {total}</span><button type="submit" className="text-button" disabled={loading}>移動</button><span className="sr-only" aria-live="polite">{isCover?'表紙':`${page}ページ`}</span></form><button className="button primary" disabled={nextPage>total || loading} onClick={()=>animateTurn(nextPage)}>{isCover?"本を開く":"次のページ"}<ArrowRight size={18} /></button></nav>
   </main>;
 }
