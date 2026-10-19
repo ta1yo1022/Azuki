@@ -1,3 +1,4 @@
+import { Favorites } from "./components/Favorites";
 import { BookStudyPage } from "./components/BookStudyPage";
 import { ForkDialog } from "./components/ForkDialog";
 import { Tutorial } from "./components/Tutorial";
@@ -529,6 +530,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 <Globe size={17} />
                 公開単語帳を探す
               </Link>
+              {!demo && user && <Favorites key={user.uid} owner={user.uid} />}
               <div className="library-toolbar" data-tour="search">
                 <div className="search-field">
                   <Search size={18} />

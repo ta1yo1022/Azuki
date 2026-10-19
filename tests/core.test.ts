@@ -123,6 +123,29 @@ describe("owner isolation and atomic D1 imports", () => {
       ALLOW_IMPORTS: "true",
     };
   });
+  it("bookmarks references without copying words, isolates owners, and hides unavailable content", async () => {
+    const source=(await (await call('/decks','POST',sample())).json() as any).deck;
+    expect((await call(`/favorites/${source.id}`,'PUT',undefined,'bob')).status).toBe(404);
+    await call(`/decks/${source.id}/visibility`,'PATCH',{visibility:'public'});
+    expect((await call('/favorites/azuki-cefrj-a1-1-v1','PUT',undefined,'bob')).status).toBe(200);
+    await call(`/favorites/${source.id}`,'PUT',undefined,'bob');
+    await call(`/favorites/${source.id}`,'PUT',undefined,'bob');
+    const list=await (await call('/favorites','GET',undefined,'bob')).json() as any;
+    expect(list.favorites).toHaveLength(2);
+    expect((await (await call('/favorites')).json() as any).favorites).toEqual([]);
+    expect((await (await call('/decks','GET',undefined,'bob')).json() as any).decks).toEqual([]);
+    expect(db.prepare('SELECT count(*) n FROM words').get()?.n).toBe(2);
+    await call(`/decks/${source.id}/visibility`,'PATCH',{visibility:'private'});
+    const hidden=await (await call('/favorites','GET',undefined,'bob')).json() as any;
+    expect(hidden.favorites.find((f:any)=>f.id===source.id).deck).toBeNull();
+    expect(JSON.stringify(hidden)).not.toContain(source.title);
+    await call(`/favorites/${source.id}`,'DELETE');
+    expect((await (await call('/favorites','GET',undefined,'bob')).json() as any).favorites).toHaveLength(2);
+    await call(`/favorites/${source.id}`,'DELETE',undefined,'bob');
+    expect((await (await call('/favorites','GET',undefined,'bob')).json() as any).favorites).toHaveLength(1);
+    expect((await call('/favorites/missing','PUT')).status).toBe(404);
+    expect((await call('/favorites','GET',undefined,'invalid')).status).toBe(401);
+  });
   it("forks edited JSON atomically with trusted lineage and supports multiple forks", async () => {
     const source=(await (await call("/decks","POST",sample())).json() as any).deck;
     expect((await call(`/decks/${source.id}/fork`,"POST",sample(),"bob")).status).toBe(404);

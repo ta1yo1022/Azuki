@@ -1,3 +1,4 @@
+import { favoritesRoute } from './favorites';
 import { ensureDefaultEmailPreference, emailAdminRoute, preferencesRoute, processEmailQueue, unsubscribeRoute } from './email';
 import { standardDeck } from "../shared/standardDecks";
 import { LIMITS, parseDeck, ValidationError, type Deck } from "../shared/model";
@@ -88,6 +89,7 @@ async function route(
   if (url.pathname.startsWith("/api/admin/") || /^\/api\/decks\/[^/]+\/report$/.test(url.pathname)) return reportsRoute(request, env, identity);
   if (uid === OFFICIAL_OWNER_ID)
     return json({ error: "このアカウントでは操作できません。" }, 403);
+  if (url.pathname === "/api/favorites" || url.pathname.startsWith("/api/favorites/")) return favoritesRoute(request, env, uid);
   if (url.pathname === "/api/decks" && request.method === "GET") {
     await ensureDefaultEmailPreference(env, identity);
     const result = await env.DB.prepare(

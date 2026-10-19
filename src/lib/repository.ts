@@ -281,3 +281,10 @@ export const emailRepository = {
   create: (id:string,subject:string,body:string) => request<{id:string}>('/admin/emails',{method:'POST',body:JSON.stringify({id,subject,body})}),
   action: (id:string,action:'start'|'test'|'cancel') => request<{ok:boolean}>(`/admin/emails/${id}/${action}`,{method:'POST',body:JSON.stringify({confirm:action==='start'?'send-to-subscribers':undefined})}),
 };
+
+export type Favorite = {id:string;createdAt:string;deck:Deck|null};
+export const favoritesRepository = {
+  list: async () => (await request<{favorites:Favorite[]}>("/favorites")).favorites,
+  add: async (id:string) => { await request(`/favorites/${encodeURIComponent(id)}`,{method:"PUT"}); },
+  remove: async (id:string) => { await request(`/favorites/${encodeURIComponent(id)}`,{method:"DELETE"}); },
+};

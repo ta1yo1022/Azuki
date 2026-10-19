@@ -1,3 +1,4 @@
+import { FavoriteButton } from "./Favorites";
 import { BookStudyPage } from "./BookStudyPage";
 import { PublicDeckCard } from "./PublicDeckCard";
 import { ForkDialog } from "./ForkDialog";
@@ -463,9 +464,10 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
                 <Layers size={17} />
                 カードで学習
               </button>
+              <FavoriteButton key={id} id={id} userId={user?.uid} />
               <button className="button secondary" onClick={() => void save()} disabled={saving || !authReady || !auth}>
                 <BookmarkPlus size={17} />
-                {saving ? "追加しています…" : "マイライブラリに追加"}
+                {saving ? "追加しています…" : "コピーして編集"}
               </button>
               <button className="button secondary" onClick={()=>setForkOpen(true)}>JSONを編集してフォーク</button>
               <button className="button secondary" onClick={() => void copy()}>
@@ -484,7 +486,8 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
           <DeckCredit deck={deck} />
           <DeckLineage deck={deck} />
           <DeckVariants deck={deck} />
-          <p className="public-save-note">{deck.standard ? "標準単語帳はそのまま学習できます。「マイライブラリに追加」では非公開コピーを保存し、個人の保存上限に含まれます。" : "保存すると、自分専用の非公開コピーになります。元の単語帳の変更は反映されません。保存したままのコピーは再公開できません。"}</p>
+          <p className="public-save-note">お気に入りは元の単語帳へのショートカットです。コピーせずに使え、元の更新も反映されます。</p>
+          <p className="public-save-note">{deck.standard ? "標準単語帳はそのまま学習できます。「コピーして編集」では非公開コピーを保存し、個人の保存上限に含まれます。" : "保存すると、自分専用の非公開コピーになります。元の単語帳の変更は反映されません。保存したままのコピーは再公開できません。"}</p>
           {deck.contentSource==='cefrj' && <p className="public-save-note">コピーには代表的な意味と例文が含まれます。その他の意味・用法注記は元の単語帳で確認できます。</p>}
           {saveError && <p role="alert" className="error-box">{saveError}</p>}
           {copyError && (

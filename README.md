@@ -93,3 +93,5 @@ Azukiの独自コードと開発ドキュメントは **[MIT License](LICENSE)**
 公開サービスの利用には [利用規約](https://azuki.mame-app.com/terms) と [プライバシーポリシー](https://azuki.mame-app.com/privacy) が適用されます。ユーザーが登録した非公開データはこのリポジトリに含まれません。
 
 運営：Volta Technologies · お問い合わせ：support@volta.jp
+
+公開単語帳は、お気に入りとしてマイライブラリに登録できます。単語を複製せず、元の単語帳へのショートカットを保存するため、個人の保存上限には含まれません。編集するときは「コピーして編集」を使います。
