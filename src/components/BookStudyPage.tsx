@@ -238,7 +238,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
       <div className="book-study-title"><div><h1 ref={heading} tabIndex={-1}>{deck.title}</h1></div>
         <div className="book-study-tools"><button className="text-button book-controls-toggle" aria-controls="book-pagination" aria-expanded={controlsVisible} onClick={()=>{setControlsVisible(value=>!value);if(controlsVisible)document.querySelector<HTMLElement>(".book-leaf-content")?.focus();}}>{controlsVisible ? '操作を隠す' : '操作を表示'}</button><label className="book-study-toggle"><input type="checkbox" checked={hideMeanings} onChange={e=>{setHideMeanings(e.target.checked);setRevealed(new Set());}} />意味を隠す</label></div>
       </div>
-      <p className="book-study-caption">{hideMeanings ? '意味の欄を押すと、1語ずつ答えを確認できます。' : '英単語・意味・例文を、まとめて読めます。タップで操作を隠し、左右のスワイプでページをめくれます。'}</p>
+      <p className="book-study-caption">{hideMeanings ? '意味か例文の日本語訳を押すと、その単語の日本語をまとめて確認できます。' : '英単語・意味・例文を、まとめて読めます。タップで操作を隠し、左右のスワイプでページをめくれます。'}</p>
     </header>
     <section ref={spreadRef} className={`book-spread${isCover?" is-cover":""}`} aria-label={isCover?"単語帳の表紙":`${page}ページ目の単語`} aria-busy={loading}
       onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp}
@@ -249,13 +249,14 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
         Array.from({length:Math.min(visiblePages,total-page+1)}, (_, leaf) => <section className="book-leaf" key={`${page}-${leaf}`} aria-label={`${page+leaf}ページ`}>
         <div className="book-leaf-content" tabIndex={0} aria-label={`${page+leaf}ページの本文`}><ol className="book-entries" start={(page+leaf-1)*PAGE_SIZE+1}>{visibleWords.slice(leaf*PAGE_SIZE,(leaf+1)*PAGE_SIZE).map(word => {
           const visible = !hideMeanings || revealed.has(word.id);
+          const toggleAnswer = () => {if(suppressTap.current){suppressTap.current=false;return;}setRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});};
           return <li className="book-entry" key={word.id}>
             <div className="book-entry-word"><small>{String(word.ordinal+1).padStart(3,'0')}</small><h2 lang="en">{word.word}</h2>{!!word.tags.length && <p>{word.tags.join(' · ')}</p>}</div>
             <div className="book-entry-meaning">
               <div className={`book-meaning-content${visible ? '' : ' is-blurred'}`} aria-hidden={!visible}><p className="book-primary-meaning">{word.meaning}</p>{!!word.otherMeanings?.length && <div className="book-other-meanings"><small>その他の意味</small><ul>{word.otherMeanings.map(meaning=><li key={meaning}>{meaning}</li>)}</ul></div>}{word.usageNote && <p className="book-usage-note">{word.usageNote}</p>}</div>
-              {hideMeanings && <button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={visible} aria-label={`${word.word}の意味を${visible ? '隠す' : '表示'}`} onClick={event=>{event.stopPropagation();if(suppressTap.current){suppressTap.current=false;return;}setRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});}}><span className="sr-only">{visible ? '意味を隠す' : '意味を表示'}</span></button>}
+              {hideMeanings && <button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={visible} aria-label={`${word.word}の意味を${visible ? '隠す' : '表示'}`} onClick={event=>{event.stopPropagation();toggleAnswer();}}><span className="sr-only">{visible ? '意味を隠す' : '意味を表示'}</span></button>}
             </div>
-            <div className="book-entry-example"><span className="book-mobile-label">例文</span><WordExamples word={word} translations={!hideMeanings||revealed.has(word.id)}/></div>
+            <div className="book-entry-example"><span className="book-mobile-label">例文</span><WordExamples word={word} blurTranslations={!visible} onToggleTranslation={hideMeanings ? toggleAnswer : undefined}/></div>
           </li>;
         })}</ol></div><div className="book-page-number">{page+leaf}</div></section>)}
     </section>

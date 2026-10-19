@@ -123,7 +123,7 @@ export function bookLeafSnapshot(words:Word[],page:number,hideMeanings:boolean):
         const item=node('li','');
         if(examples.length>1)append(item,node('span','word-example-number',`例文 ${index+1}`));
         append(item,node('p','',sentence.text));
-        if(!hideMeanings&&sentence.translation)append(item,node('p','word-example-translation',sentence.translation));
+        if(sentence.translation)append(item,node('p',`word-example-translation${hideMeanings?' is-blurred':''}`,sentence.translation));
         append(items,item);
       });
       append(example,items);

@@ -10,7 +10,7 @@ let container:HTMLDivElement,root:Root;
 beforeEach(()=>{vi.spyOn(window,'matchMedia').mockReturnValue({matches:true,addEventListener:vi.fn(),removeEventListener:vi.fn()} as unknown as MediaQueryList);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);vi.spyOn(window,'scrollTo').mockImplementation(()=>{});container=document.createElement('div');document.body.appendChild(container);root=createRoot(container);});
 afterEach(async()=>{await act(async()=>root.unmount());container.remove();vi.restoreAllMocks();vi.unstubAllGlobals();});
 const deck:Deck={id:'source',schemaVersion:1,title:'単語帳',description:'',textbookTags:[],visibility:'public',wordCount:65,createdAt:'',updatedAt:''};
-const words:Word[]=Array.from({length:65},(_,i)=>({id:`w${i}`,ordinal:i,word:`word-${i}`,meaning:`意味${i}`,otherMeanings:[`別の意味${i}`],example:`Example ${i}.`,tags:['名詞']}));
+const words:Word[]=Array.from({length:65},(_,i)=>({id:`w${i}`,ordinal:i,word:`word-${i}`,meaning:`意味${i}`,otherMeanings:[`別の意味${i}`],example:`Example ${i}.`,examples:[{text:`Example ${i}.`,translation:`例文の訳${i}`}],tags:['名詞']}));
 function Location(){return <output>{useLocation().search}</output>;}
 const button=(text:string)=>[...container.querySelectorAll('button')].find(b=>b.textContent?.includes(text))!;
 it('opens a deep-linked page beyond the API first 50 and supports last-page and back navigation',async()=>{
@@ -34,9 +34,15 @@ it('conceals primary and additional meanings, reveals individually, and resets o
  expect(container.querySelectorAll('.book-meaning-content:not(.is-blurred) .book-primary-meaning')).toHaveLength(0);
  expect(container.querySelectorAll('.book-meaning-content:not(.is-blurred) .book-other-meanings')).toHaveLength(0);
  expect(container.querySelector('.book-entry-example')?.textContent).toContain('Example 0.');
+ expect(container.querySelector('.word-example-translation')?.textContent).toBe('例文の訳0');
+ expect(container.querySelector('.word-example-translation')?.classList.contains('is-blurred')).toBe(true);
  await act(async()=>button('意味を表示').click());
  expect(container.querySelectorAll('.book-meaning-content:not(.is-blurred) .book-primary-meaning')).toHaveLength(1);
  expect(container.querySelector('.book-other-meanings')?.textContent).toContain('別の意味0');
+ expect(container.querySelector('.word-example-translation')?.classList.contains('is-blurred')).toBe(false);
+ await act(async()=>container.querySelector<HTMLButtonElement>('button[aria-label="word-0の例文1の日本語訳を隠す"]')!.click());
+ expect(container.querySelector('.book-meaning-content')?.classList.contains('is-blurred')).toBe(true);
+ expect(container.querySelector('.word-example-translation')?.classList.contains('is-blurred')).toBe(true);
  await act(async()=>button('次のページ').click());
  expect(container.querySelectorAll('.book-meaning-content:not(.is-blurred) .book-primary-meaning')).toHaveLength(0);
 });
@@ -99,7 +105,7 @@ it('can swipe starting on blurred meaning without revealing it or blocking verti
  const reader={words:vi.fn(async(_id:string,_q:string,cursor:number)=>({words:words.slice(cursor,cursor+50),nextCursor:null}))};
  await act(async()=>root.render(<MemoryRouter initialEntries={["/book?bookPage=1"]}><BookStudyPage deck={deck} reader={reader} onClose={()=>{}}/><Location/></MemoryRouter>));
  await act(async()=>container.querySelector<HTMLInputElement>('input')!.click());
- expect(container.querySelectorAll('.is-blurred')).toHaveLength(8);
+ expect(container.querySelectorAll('.book-meaning-content.is-blurred')).toHaveLength(8);
  expect(container.querySelector('.book-meaning-content')?.getAttribute('aria-hidden')).toBe('true');
  const answer=container.querySelector<HTMLButtonElement>('.book-meaning-reveal')!;
  await act(async()=>{
@@ -109,7 +115,7 @@ it('can swipe starting on blurred meaning without revealing it or blocking verti
   answer.click();
  });
  expect(container.querySelector('output')?.textContent).toContain('bookPage=3');
- expect(container.querySelectorAll('.is-blurred')).toHaveLength(8);
+ expect(container.querySelectorAll('.book-meaning-content.is-blurred')).toHaveLength(8);
  const next=container.querySelector<HTMLButtonElement>('.book-meaning-reveal')!;
  await act(async()=>{
   touchEvent(next,'touchstart',200,100);
@@ -119,7 +125,7 @@ it('can swipe starting on blurred meaning without revealing it or blocking verti
  });
  expect(container.querySelector('output')?.textContent).toContain('bookPage=3');
  await act(async()=>{touchEvent(next,'touchstart',200,100);touchEvent(next,'touchend',200,100);next.click();});
- expect(container.querySelectorAll('.is-blurred')).toHaveLength(7);
+ expect(container.querySelectorAll('.book-meaning-content.is-blurred')).toHaveLength(7);
  expect(container.querySelector('.book-meaning-content')?.getAttribute('aria-hidden')).toBe('false');
 });
 
@@ -218,7 +224,7 @@ it('shows all examples and translations, and hides translations along with meani
  await act(async()=>root.render(<MemoryRouter initialEntries={['/book?bookPage=1']}><BookStudyPage deck={{...deck,wordCount:1}} reader={{words:async()=>({words:[first],nextCursor:null})}} onClose={()=>{}}/></MemoryRouter>));
  expect(container.querySelector('.book-entry-example')?.textContent).toContain('The mage refused.');expect(container.querySelector('.book-entry-example')?.textContent).toContain('魔法使いは拒否した。');
  await act(async()=>container.querySelector<HTMLInputElement>('.book-study-toggle input')!.click());
- expect(container.querySelector('.book-entry-example')?.textContent).toContain('The captain refused.');expect(container.querySelector('.book-entry-example')?.textContent).not.toContain('船長は拒否した。');
+ expect(container.querySelector('.book-entry-example')?.textContent).toContain('The captain refused.');expect(container.querySelector('.book-entry-example')?.textContent).toContain('船長は拒否した。');expect(container.querySelectorAll('.word-example-translation.is-blurred')).toHaveLength(2);
 });
 
 it('turns with arrow keys from navigation buttons and the window, but keeps editing keys',async()=>{
