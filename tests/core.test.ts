@@ -544,26 +544,18 @@ describe("owner isolation and atomic D1 imports", () => {
     expect(db.prepare("SELECT byte_count FROM app_usage").get()).toEqual(db.prepare("SELECT sum(data_bytes) AS byte_count FROM decks").get());
     expect(db.prepare("SELECT count(*) AS count FROM words w JOIN decks d ON d.id=w.deck_id WHERE d.owner_id=? AND length(trim(w.example))>0").get(OFFICIAL_OWNER_ID)?.count).toBe(2500);
   });
-  it("rolls back the entire editorial update when a later book exceeds the global daily budget", () => {
+  it("allows editorial updates and content growth beyond the former daily caps while enforcing storage", async () => {
     db.exec(originalOfficialSeed);
-    db.exec("UPDATE app_usage SET daily_words=9100");
-    const snapshot = () => ["decks", "words", "users", "app_usage", "textbook_tags", "deck_textbook_tags"]
-      .map(table => db.prepare(`SELECT * FROM ${table} ORDER BY rowid`).all());
-    const before = snapshot();
-    db.exec("BEGIN");
-    expect(() => db.exec(officialSeed)).toThrow("AZUKI_APP_DAILY_LIMIT");
-    expect(db.prepare("SELECT count(*) AS count FROM decks WHERE official_revision=3").get()?.count).toBe(2);
-    db.exec("ROLLBACK");
-    expect(snapshot()).toEqual(before);
-  });
-  it("enforces storage and ordinary-user daily limits for content updates", async () => {
-    db.exec(originalOfficialSeed);
+    db.exec("UPDATE app_usage SET daily_words=10000");
+    expect(()=>db.exec(officialSeed)).not.toThrow();
     db.exec("UPDATE app_usage SET byte_count=104857600");
-    expect(() => db.exec(officialSeed)).toThrow("AZUKI_APP_STORAGE_LIMIT");
+    const {deck}=await (await call('/decks','POST',sample())).json() as any;
+    // Imports are rolled back when storage is exhausted.
+    expect(deck).toBeUndefined();
     db.exec("UPDATE app_usage SET byte_count=(SELECT sum(data_bytes) FROM decks)");
-    const { deck } = await (await call("/decks", "POST", sample())).json() as any;
-    db.exec("UPDATE users SET daily_words=5000 WHERE id='alice'");
-    expect(() => db.prepare("UPDATE decks SET word_count=3 WHERE id=?").run(deck.id)).toThrow("AZUKI_DAILY_LIMIT");
+    const saved=(await (await call('/decks','POST',sample())).json() as any).deck;
+    db.exec("UPDATE users SET daily_words=50000 WHERE id='alice'");
+    expect(()=>db.prepare('UPDATE decks SET word_count=3 WHERE id=?').run(saved.id)).not.toThrow();
   });
   it("retains attribution through saved copies and deletion without transferring official status", async () => {
     db.exec(officialSeed);
@@ -657,9 +649,7 @@ describe("owner isolation and atomic D1 imports", () => {
   it.each([
     "UPDATE users SET deck_count=20 WHERE id='bob'",
     "UPDATE users SET word_count=14999 WHERE id='bob'",
-    "UPDATE users SET daily_words=4999,import_day=date('now') WHERE id='bob'",
     "UPDATE app_usage SET word_count=99999",
-    "UPDATE app_usage SET daily_words=9999,import_day=date('now')",
     "UPDATE app_usage SET byte_count=104857600",
   ])("rolls back a save that exceeds quota: %s", async (limit) => {
     const original = await published();
@@ -884,28 +874,18 @@ describe("owner isolation and atomic D1 imports", () => {
     ).json()) as any;
     expect(wildcard.words).toHaveLength(0);
   });
-  it("enforces daily limits atomically and deletes words/unused textbook tags", async () => {
-    db.exec("INSERT INTO users(id,daily_words,import_day) VALUES ('alice',4000,date('now'))");
-    const first = (await (
-      await call("/decks", "POST", sample(500))
-    ).json()) as any;
-    expect((await call("/decks", "POST", sample(500))).status).toBe(201);
-    expect((await call("/decks", "POST", sample(1))).status).toBe(429);
-    expect(db.prepare("SELECT COUNT(*) AS n FROM decks").get()?.n).toBe(2);
-    await call(`/decks/${first.deck.id}`, "DELETE");
-    expect(db.prepare("SELECT COUNT(*) AS n FROM words").get()?.n).toBe(500);
-    expect(
-      db.prepare("SELECT word_count FROM app_usage").get()?.word_count,
-    ).toBe(500);
-    const remaining = ((await (await call("/decks")).json()) as any).decks[0];
-    await call(`/decks/${remaining.id}`, "DELETE");
-    expect(db.prepare("SELECT COUNT(*) AS n FROM textbook_tags").get()?.n).toBe(
-      0,
-    );
-    expect(
-      db.prepare("SELECT word_count FROM app_usage").get()?.word_count,
-    ).toBe(0);
-    expect((await call("/decks", "POST", sample(1))).status).toBe(429);
+  it("permits repeated imports and reimports after deletion beyond all former daily caps",async()=>{
+    db.exec("INSERT INTO users(id,daily_words,import_day) VALUES ('alice',50000,date('now'))");
+    db.exec("UPDATE app_usage SET daily_words=100000,import_day=date('now')");
+    for(let i=0;i<4;i++) {
+      const response=await call('/decks','POST',sample(5000));expect(response.status).toBe(201);
+      const {deck}=await response.json() as any;
+      expect((await call(`/decks/${deck.id}`,'DELETE')).status).toBe(200);
+    }
+    expect(db.prepare('SELECT count(*) n FROM words').get()?.n).toBe(0);
+    expect(db.prepare('SELECT count(*) n FROM textbook_tags').get()?.n).toBe(0);
+    expect(db.prepare("SELECT word_count,deck_count,daily_words FROM users WHERE id='alice'").get()).toEqual({word_count:0,deck_count:0,daily_words:70000});
+    expect(db.prepare('SELECT word_count FROM app_usage').get()?.word_count).toBe(0);
   });
   it("allows another 500-word save after 502 words were registered and deleted, and allows all five 500-word books", async () => {
     db.exec(officialSeed);
@@ -922,7 +902,7 @@ describe("owner isolation and atomic D1 imports", () => {
     await call("/decks","POST",sample(1));
     db.exec("UPDATE users SET daily_words=5000 WHERE id='alice'");
     let response=await call("/decks","POST",sample(1));
-    expect(await response.json()).toMatchObject({code:"AZUKI_DAILY_LIMIT",error:expect.stringContaining("削除した分")});
+    expect(response.status).toBe(201);
     db.exec("UPDATE users SET daily_words=1,word_count=15000 WHERE id='alice'");
     response=await call("/decks","POST",sample(1));
     expect(await response.json()).toMatchObject({code:"AZUKI_WORD_LIMIT",error:expect.stringContaining("合計15,000語")});

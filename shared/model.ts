@@ -5,7 +5,6 @@ export const LIMITS = {
   userWords: 15000,
   examplesPerWord: 10,
   decks: 20,
-  dailyWords: 5000,
 };
 export type TextbookTag = { name: string; edition?: string; chapter?: string };
 export type OfficialLevel = "beginner" | "intermediate" | "advanced";
