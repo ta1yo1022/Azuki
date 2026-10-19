@@ -159,8 +159,8 @@ describe("URL navigation", () => {
     await mount(currentURL);
     expect(container.querySelector(".study-page")).toBeTruthy();
     await click("学習をはじめる");
-    expect(container.querySelector(".study-card")?.textContent).toContain("好奇心の強い");
-    expect(container.querySelector(".study-card")?.textContent).not.toContain("curious");
+    expect(container.querySelector('.study-card-face[aria-hidden="false"]')?.textContent).toContain("好奇心の強い");
+    expect(container.querySelector('.study-card-face[aria-hidden="false"]')?.textContent).not.toContain("curious");
   });
   it("restores public search from URL and history, and opens public study directly", async () => {
     await mount("/explore?q=教科書");

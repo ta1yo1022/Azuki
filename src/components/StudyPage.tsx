@@ -293,18 +293,22 @@ export function StudyPage({
                 aria-describedby="study-keyboard-hint"
                 onClick={() => setRevealed((value) => !value)}
               >
+                <span className="study-card-rotor" key={word.id}>
+                  {[false,true].map(faceRevealed => (
                 <span
-                  className="study-card-face"
-                  key={`${word.id}-${revealed}`}
+                  className={`study-card-face ${faceRevealed ? "study-card-back" : "study-card-front"}`}
+                  aria-hidden={revealed !== faceRevealed}
+                  inert={revealed !== faceRevealed}
+                  key={String(faceRevealed)}
                 >
                   <span className="eyebrow">
-                    {(direction === "ja-en") !== revealed ? "日本語" : "ENGLISH"}
+                    {(direction === "ja-en") !== faceRevealed ? "日本語" : "ENGLISH"}
                   </span>
                   <span className="study-card-scroll">
                     <span className="study-card-body">
                       {examplesMode && word.sentence ? (
-                        <span className="study-sentence" lang={(direction === "ja-en") !== revealed ? "ja" : "en"}>{(direction === "ja-en") !== revealed ? word.sentence.translation : word.sentence.text}</span>
-                      ) : revealed ? (
+                        <span className="study-sentence" lang={(direction === "ja-en") !== faceRevealed ? "ja" : "en"}>{(direction === "ja-en") !== faceRevealed ? word.sentence.translation : word.sentence.text}</span>
+                      ) : faceRevealed ? (
                         <>
                           {direction === "ja-en" ? (
                             <span className="study-word" lang="en">{word.word}</span>
@@ -322,7 +326,7 @@ export function StudyPage({
                           {direction === "ja-en" ? word.meaning : word.word}
                         </span>
                       )}
-                      {!examplesMode && ((revealed && direction === "en-ja") || (!revealed && deck.standard)) && word.tags.length > 0 && (
+                      {!examplesMode && ((faceRevealed && direction === "en-ja") || (!faceRevealed && deck.standard)) && word.tags.length > 0 && (
                         <span className="study-tags">
                           {word.tags.map((tag) => (
                             <span className="tag" key={tag}>
@@ -335,10 +339,12 @@ export function StudyPage({
                   </span>
                   <span className="study-flip-hint">
                     <RotateCw size={16} />
-                    {revealed
+                    {faceRevealed
                       ? (direction === "ja-en" ? "タップして日本語に戻す" : "タップして英語に戻す")
                       : (direction === "ja-en" ? "タップして英語を見る" : "タップして日本語を見る")}
                   </span>
+                </span>
+                  ))}
                 </span>
               </button>
               <div className="study-navigation">

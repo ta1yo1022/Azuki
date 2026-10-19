@@ -23,7 +23,7 @@ async function choose(label: string, value: string) {
   await click('設定を保存');
   await mount();
 }
-const face = () => container.querySelector('.study-card')?.textContent ?? '';
+const face = () => container.querySelector('.study-card-face[aria-hidden="false"]')?.textContent ?? '';
 beforeEach(() => {
   localStorage.clear();
   vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true);
@@ -172,6 +172,6 @@ it('shuffles individual examples without dropping or repeating them',async()=>{
  vi.spyOn(Math,'random').mockReturnValue(0);
  reader.words.mockResolvedValue({words:[{...words[0],examples:[{text:'First.',translation:'一。'},{text:'Second.',translation:'二。'},{text:'Third.',translation:'三。'}]}],nextCursor:null});
  await mountExamples();const seen=[];
- for(let i=0;i<3;i++){seen.push(container.querySelector('.study-sentence')?.textContent);if(i<2)await click('次の例文');}
+ for(let i=0;i<3;i++){seen.push(container.querySelector('.study-card-face[aria-hidden="false"] .study-sentence')?.textContent);if(i<2)await click('次の例文');}
  expect(seen).not.toEqual(['First.','Second.','Third.']);expect([...seen].sort()).toEqual(['First.','Second.','Third.'].sort());
 });
