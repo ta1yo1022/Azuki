@@ -286,3 +286,8 @@ export const favoritesRepository = {
   add: async (id:string) => { await request(`/favorites/${encodeURIComponent(id)}`,{method:"PUT"}); },
   remove: async (id:string) => { await request(`/favorites/${encodeURIComponent(id)}`,{method:"DELETE"}); },
 };
+
+export const studyRepository = {
+  summary: () => request<import('../../shared/studyStats').StudySummary>('/study'),
+  record: (events:import('../../shared/studyStats').StudyEvent[]) => request('/study',{method:'POST',body:JSON.stringify({events}),keepalive:true}),
+};

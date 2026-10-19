@@ -331,3 +331,12 @@ it('opens the copyright policy without login and links it from terms and public 
  await move('/explore');expect(container.querySelector('footer a[href="/copyright"]')).toBeTruthy();
  await move('/');expect(container.querySelector('footer a[href="/copyright"]')).toBeTruthy();
 });
+
+it('opens learning statistics from the demo library and returns to the library',async()=>{
+ await mount('/demo');const link=container.querySelector<HTMLAnchorElement>('a[href="/demo/stats"]')!;
+ expect(link).toBeTruthy();await act(async()=>link.click());await settle();
+ expect(currentURL).toBe('/demo/stats');expect(container.querySelector('h1')?.textContent).toBe('学習統計');
+ expect(container.textContent).toContain('このブラウザだけに保存');
+ const back=container.querySelector<HTMLAnchorElement>('a[href="/demo"]')!;await act(async()=>back.click());await settle();
+ expect(currentURL).toBe('/demo');
+});

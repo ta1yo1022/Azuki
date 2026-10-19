@@ -37,7 +37,7 @@ export function AzukiRoutes() {
       <RouteScroll />
       <Routes>
         <Route path="/" element={<Home />} />
-        {["library", "demo"].flatMap((base) => ["", "/settings", "/import", "/decks/:deckId", "/decks/:deckId/study", "/decks/:deckId/book", "/decks/:deckId/share"].map((path) =>
+        {["library", "demo"].flatMap((base) => ["", "/settings", "/stats", "/import", "/decks/:deckId", "/decks/:deckId/study", "/decks/:deckId/book", "/decks/:deckId/share"].map((path) =>
           <Route key={base + path} path={`/${base}${path}`} element={<App key={base} demo={base === "demo"} />} />
         ))}
         <Route path="/guide/create" element={<CreateGuide />} />

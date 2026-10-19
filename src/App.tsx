@@ -1,3 +1,5 @@
+import { BarChart3 } from "lucide-react";
+import { StudyStatsPage } from "./components/StudyStatsPage";
 import { Favorites } from "./components/Favorites";
 import { BookStudyPage } from "./components/BookStudyPage";
 import { ForkDialog } from "./components/ForkDialog";
@@ -335,13 +337,15 @@ export default function App({ demo = false }: { demo?: boolean }) {
       </>
     </div>
   );
+  if (location.pathname === `${base}/stats`) return <StudyStatsPage demo={demo} userId={user?.uid} />;
   if (location.pathname === `${base}/settings`) return <SettingsPage demo={demo} onClose={() => navigate(base)} onTutorial={() => navigate(`${base}?tutorial=1`)} />;
 
-  if (bookMode && selected) return <BookStudyPage key={selected.id} deck={selected} reader={repository} onClose={() => navigate(detailPath + location.search)} />;
+  if (bookMode && selected) return <BookStudyPage key={selected.id} demo={demo} deck={selected} reader={repository} onClose={() => navigate(detailPath + location.search)} />;
   if (studying && selected) {
     return (
       <StudyPage
         key={`${selected.id}-${new URLSearchParams(location.search).get("mode")}`}
+        demo={demo}
         mode={new URLSearchParams(location.search).get("mode") === "examples" ? "examples" : "words"}
         deck={selected}
         reader={repository}
@@ -381,6 +385,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
             <FileJson size={19} />
             <span>JSONから追加</span>
           </button>
+          <Link className="nav-item" to={`${base}/stats`}><BarChart3 size={19}/><span>学習統計</span></Link>
           <Link data-tour="explore" className="nav-item" to="/explore">
             <Globe size={19} />
             <span>公開単語帳を探す</span>
@@ -502,6 +507,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
           )}
           {!selected ? (
             <>
+              <Link className="text-button stats-library-link" to={`${base}/stats`}>学習統計を見る →</Link>
               <div className="page-heading">
                 <div>
 

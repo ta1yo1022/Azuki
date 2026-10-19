@@ -1,3 +1,4 @@
+import { useStudyTracking } from "../lib/studyTracking";
 import { WordExamples } from './WordExamples';
 import { useLayoutEffect, useEffect, useRef, useState, type PointerEvent } from 'react';
 import { useSearchParams } from 'react-router-dom';
@@ -8,8 +9,9 @@ import {BookCover} from './BookCover';
 import {BookPageCurl, bookLeafSnapshot} from '../lib/bookPageCurl';
 
 const PAGE_SIZE = 4;
-export function BookStudyPage({deck, reader, onClose}: {
+export function BookStudyPage({deck, reader, onClose, demo=false}: {
   deck: Deck;
+  demo?: boolean;
   reader: {words: (id: string, query: string, cursor: number, signal?: AbortSignal) => Promise<WordPage>};
   onClose: () => void;
 }) {
@@ -39,6 +41,7 @@ export function BookStudyPage({deck, reader, onClose}: {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [retry, setRetry] = useState(0);
+  useStudyTracking(deck,"book",!isCover&&!loading&&!error&&words.length>0,demo);
   const [hideMeanings, setHideMeanings] = useState(false);
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
   const [controlsVisible, setControlsVisible] = useState(true);

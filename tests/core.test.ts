@@ -123,6 +123,22 @@ describe("owner isolation and atomic D1 imports", () => {
       ALLOW_IMPORTS: "true",
     };
   });
+  it("stores learning idempotently with Japanese dates and owner isolation",async()=>{
+    const end=Date.now()-1000,event={id:'event-1',sessionId:'session-1',deckId:'azuki-cefrj-a1-1-v1',mode:'examples',start:end-15000,end};
+    expect((await call('/study','POST',{events:[event]})).status).toBe(200);
+    await call('/study','POST',{events:[event]});
+    const summary=await (await call('/study')).json() as any;
+    expect(summary.totalMilliseconds).toBe(15000);expect(summary.totalSessions).toBe(1);expect(summary.decks[0].title).toContain('CEFR-J A1');
+    expect((await (await call('/study','GET',undefined,'bob')).json() as any).totalMilliseconds).toBe(0);
+    expect((await call('/study','POST',{events:[{...event,id:'invalid',start:end-60001}]})).status).toBe(400);
+    expect((await call('/study','POST',{events:[{...event,id:'future',start:end+100000,end:end+110000}]})).status).toBe(400);
+    expect((await call('/study','POST',{events:[{...event,id:null}]})).status).toBe(400);
+    const own=(await (await call('/decks','POST',sample())).json() as any).deck;
+    await call('/study','POST',{events:[{...event,id:'private',deckId:own.id}]},'bob');
+    expect((await (await call('/study','GET',undefined,'bob')).json() as any).decks).toEqual([]);
+    expect((await call('/study','GET',undefined,'invalid')).status).toBe(401);
+    expect(db.prepare('SELECT count(*) n FROM words WHERE deck_id=?').get(event.deckId)?.n).toBe(0);
+  });
   it("imports 5,000 words into one book atomically and rejects 5,001",async()=>{
     const response=await call('/decks','POST',sample(5000));
     expect(response.status).toBe(201);

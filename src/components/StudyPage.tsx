@@ -1,3 +1,4 @@
+import { useStudyTracking } from "../lib/studyTracking";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -21,8 +22,10 @@ export function StudyPage({
   reader,
   onClose,
   mode = "words",
+  demo = false,
 }: {
   mode?: "words" | "examples";
+  demo?: boolean;
   deck: Deck;
   reader: WordReader;
   onClose: () => void;
@@ -54,6 +57,7 @@ export function StudyPage({
   const [completed, setCompleted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  useStudyTracking(deck,mode,started&&!settingsOpen&&!completed&&!loading&&!error&&words.length>0,demo);
 
   const loadPage = useCallback(
     async (cursor: number, advance = false) => {
