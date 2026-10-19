@@ -12,7 +12,7 @@ function Contact({ disclosure = false }: { disclosure?: boolean }) {
   </>;
 }
 export function LegalLinks() {
-  return <nav className="legal-links" aria-label="サービスに関する情報"><Link to="/privacy">プライバシーポリシー</Link><Link to="/terms">利用規約</Link><Link to="/copyright">著作権・権利侵害への対応</Link><a href="https://github.com/ta1yo1022/Azuki" target="_blank" rel="noreferrer">GitHub</a><a href="https://github.com/ta1yo1022/Azuki/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">PR・改善提案を歓迎</a></nav>;
+  return <nav className="legal-links" aria-label="サービスに関する情報"><Link to="/privacy">プライバシーポリシー</Link><Link to="/terms">利用規約</Link><Link to="/copyright">著作権・権利侵害への対応</Link><a href="https://github.com/ta1yo1022/Azuki" target="_blank" rel="noreferrer">GitHub</a></nav>;
 }
 export function LegalPage({ kind }: { kind: "privacy" | "terms" | "copyright" }) {
   const title = kind === "privacy" ? "プライバシーポリシー" : kind === "terms" ? "利用規約" : "著作権・権利侵害への対応";
