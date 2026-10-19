@@ -3,17 +3,38 @@ export const LIMITS = {
   importWords: 500,
   forkWords: 5000,
   userWords: 15000,
+  examplesPerWord: 10,
   decks: 20,
   dailyWords: 5000,
 };
 export type TextbookTag = { name: string; edition?: string; chapter?: string };
 export type OfficialLevel = "beginner" | "intermediate" | "advanced";
+export type WordExample = { text: string; translation?: string };
 export type WordInput = {
   word: string;
   meaning: string;
   example?: string;
+  examples?: WordExample[];
   tags: string[];
 };
+/** The legacy example remains the first sentence for existing clients and static books. */
+export function wordExamples(word: Pick<WordInput, 'example' | 'examples'>): WordExample[] {
+  return word.examples?.length ? word.examples : word.example ? [{text:word.example}] : [];
+}
+export function parseWordExamples(value: unknown, label = '例文'): WordExample[] {
+  if (!Array.isArray(value) || value.length > LIMITS.examplesPerWord)
+    throw new ValidationError(`${label}は${LIMITS.examplesPerWord}件以内にしてください。`);
+  const seen = new Set<string>();
+  return value.map((item, i) => {
+    if (!object(item)) throw new ValidationError(`${label}${i+1}の形式を確認してください。`);
+    const text = string(item.text, `${label}${i+1}の英文`, 1000);
+    const translation = string(item.translation, `${label}${i+1}の日本語訳`, 1000, true);
+    const key = text.normalize('NFKC').replace(/\s+/gu,' ');
+    if (seen.has(key)) throw new ValidationError(`${label}に同じ英文が含まれています。`);
+    seen.add(key);
+    return {text,...(translation ? {translation} : {})};
+  });
+}
 export type DeckInput = {
   schemaVersion: 1;
   title: string;
@@ -92,7 +113,8 @@ export function parseDeck(raw: string, options: { maxWords?: number; allowExampl
       throw new ValidationError(`${i + 1}語目の形式を確認してください。`);
     const word = string(item.word, `${i + 1}語目の英単語`, 120);
     const meaning = string(item.meaning, `${i + 1}語目の意味`, 1000);
-    const example = string(item.example, `${i + 1}語目の例文`, 1000, true);
+    const examples = item.examples === undefined ? undefined : parseWordExamples(item.examples, `${i+1}語目の例文`);
+    const example = examples === undefined ? string(item.example, `${i + 1}語目の例文`, 1000, true) : examples[0]?.text ?? '';
     const tags = item.tags ?? [];
     if (!Array.isArray(tags) || tags.length > 5)
       throw new ValidationError(
@@ -104,7 +126,7 @@ export function parseDeck(raw: string, options: { maxWords?: number; allowExampl
     const key = JSON.stringify([
       word.normalize("NFKC").toLowerCase(),
       meaning.normalize("NFKC"),
-      ...(options.allowExampleVariants ? [example.normalize("NFKC"), normalizedTags.join("\u0000")] : []),
+      ...(options.allowExampleVariants ? [example.normalize("NFKC"), JSON.stringify(examples ?? []), normalizedTags.join("\u0000")] : []),
     ]);
     if (seen.has(key))
       throw new ValidationError(
@@ -115,6 +137,7 @@ export function parseDeck(raw: string, options: { maxWords?: number; allowExampl
       word,
       meaning,
       ...(example ? { example } : {}),
+      ...(examples?.length ? { examples } : {}),
       tags: normalizedTags,
     };
   });

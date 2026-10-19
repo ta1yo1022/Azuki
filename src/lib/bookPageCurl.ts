@@ -87,7 +87,7 @@ export class BookPageCurl {
   }
 }
 
-import type {Word} from '../../shared/model';
+import {wordExamples,type Word} from '../../shared/model';
 /** Adjacent pages use textContent only: vocabulary is never interpreted as HTML. */
 export function bookLeafSnapshot(words:Word[],page:number,hideMeanings:boolean):HTMLElement {
   const node=(tag:string,className:string,text?:string)=>{
@@ -115,7 +115,19 @@ export function bookLeafSnapshot(words:Word[],page:number,hideMeanings:boolean):
     if(word.usageNote)append(text,node('p','book-usage-note',word.usageNote));
     append(meaning,text);
     const example=node('div','book-entry-example');
-    append(example,node('span','book-mobile-label','例文'),node('p','',word.example||'例文はまだ登録されていません。'));
+    append(example,node('span','book-mobile-label','例文'));
+    const examples=wordExamples(word);
+    if(examples.length) {
+      const items=node('ol','word-examples');
+      examples.forEach((sentence,index)=>{
+        const item=node('li','');
+        if(examples.length>1)append(item,node('span','word-example-number',`例文 ${index+1}`));
+        append(item,node('p','',sentence.text));
+        if(!hideMeanings&&sentence.translation)append(item,node('p','word-example-translation',sentence.translation));
+        append(items,item);
+      });
+      append(example,items);
+    } else append(example,node('p','','例文はまだ登録されていません。'));
     append(entry,label,meaning,example);append(list,entry);
   }
   append(content,list);append(leaf,content,node('div','book-page-number',page>0?String(page):''));

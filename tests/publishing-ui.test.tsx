@@ -40,9 +40,9 @@ it('keeps the editor open on failure and only reports successful saves',async()=
  const word:Word={id:'word',ordinal:0,word:'trip',meaning:'旅行',example:'A trip.',tags:[]};
  const saved=vi.fn(); const edit=vi.spyOn(cloudRepository,'editWord').mockRejectedValueOnce(new Error('保存エラー')).mockResolvedValueOnce({deck,word});
  await act(async()=>root.render(<WordEditor deck={{...deck,visibility:'public'}} word={word} onSaved={saved}/>));
- await act(async()=>button('単語・意味・例文を編集').click());expect(container.textContent).toContain('非公開になります');
+ await act(async()=>button('例文を追加・編集').click());expect(container.textContent).toContain('非公開になります');
  await act(async()=>container.querySelector('form')!.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true})));
  expect(saved).not.toHaveBeenCalled();expect(container.textContent).toContain('保存エラー');
  await act(async()=>container.querySelector('form')!.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true})));
- expect(edit).toHaveBeenCalledTimes(2);expect(saved).toHaveBeenCalledWith(deck);
+ expect(edit).toHaveBeenCalledTimes(2);expect(saved).toHaveBeenCalledWith(deck,word);
 });

@@ -6,7 +6,7 @@ import {
   RotateCcw,
   RotateCw,
 } from "lucide-react";
-import type { Deck, Word, WordPage } from "../../shared/model";
+import { wordExamples, type Deck, type Word, type WordPage } from "../../shared/model";
 
 import { readStudyPreferences, saveStudyPreferences } from "../lib/studyPreferences";
 
@@ -300,12 +300,10 @@ export function StudyPage({
                             <span className="study-answer-word" lang="en">{word.word}</span>
                             <span className="study-meaning" lang="ja">{word.meaning}</span>
                           </>}
-                          {word.example && (
-                            <span className="study-example">
-                              <span className="eyebrow">例文</span>
-                              <span>{word.example}</span>
-                            </span>
-                          )}
+                          {wordExamples(word).map((example,i)=><span className="study-example" key={i}>
+                            <span className="eyebrow">例文{wordExamples(word).length>1?` ${i+1}`:''}</span>
+                            <span lang="en">{example.text}</span>
+                          </span>)}
                         </>
                       ) : (
                         <span className={direction === "ja-en" ? "study-meaning study-question-ja" : "study-word"} lang={direction === "ja-en" ? "ja" : "en"}>

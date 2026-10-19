@@ -37,6 +37,7 @@ import { SettingsPage } from "./components/SettingsPage";
 import { StudyPage } from "./components/StudyPage";
 import { LandingPage } from "./components/LandingPage";
 import { DeckLineage } from "./components/DeckLineage";
+import { WordExamples } from "./components/WordExamples";
 import { WordEditor } from "./components/WordEditor";
 import { DeckCredit } from "./components/DeckCredit";
 import { LIMITS, type Deck, type DeckInput, type Word } from "../shared/model";
@@ -196,7 +197,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
       clearTimeout(timer);
       generation.current++;
     };
-  }, [selected, wordSearch, repository, reload, studying]);
+  }, [selected?.id, wordSearch, repository, reload, studying, ownerKey]);
   useEffect(() => {
     if (confirmDelete) confirm.current?.showModal();
   }, [confirmDelete]);
@@ -787,7 +788,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
               <div className="word-list">
                 <div className="word-list-head">
                   <span>WORD / MEANING</span>
-                  <span>タップして例文を表示</span>
+                  <span>タップして例文を表示・編集</span>
                 </div>
                 {words.map((word) => (
                   <details className="word-item" key={word.id}>
@@ -808,8 +809,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     </summary>
                     <div className="word-detail">
                       <span className="eyebrow">例文</span>
-                      <p>{word.example || "例文はまだ登録されていません。"}</p>
-                      {!demo && <WordEditor deck={selected} word={word} onSaved={deck => { setDecks(prev => prev.map(d => d.id === deck.id ? deck : d)); setReload(n => n+1); }} />}
+                      <WordExamples word={word}/>
+                      <WordEditor deck={selected} word={word} repository={repository} onSaved={(deck,savedWord) => { setDecks(prev => prev.map(d => d.id === deck.id ? deck : d)); setWords(prev=>prev.map(w=>w.id===savedWord.id?savedWord:w)); }} />
                     </div>
                   </details>
                 ))}

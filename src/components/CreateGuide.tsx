@@ -119,7 +119,7 @@ export function CreateGuide() {
       </section>
       <section id="own-examples" aria-labelledby="own-examples-title">
         <span className="eyebrow">自分で作る</span><h2 id="own-examples-title">オリジナルの単語と例文を登録する</h2>
-        <p>覚えたい英単語に、自分の経験や身近な場面を使った英文を付けて登録できます。下のJSONをひな形にしてください。</p>
+        <p>マイライブラリで単語帳を開き、単語の行 →「例文を追加・編集」から、英文と日本語訳を直接入力できます。「例文を追加」で1語につき最大10件まで登録できます。JSONの編集は不要です。</p><p>単語をまとめて新規登録するときは、下のJSONもひな形として使えます。</p>
         <ol className="guide-example-steps">
           <li><strong>英単語・意味・例文を用意する</strong><p><code>word</code>に英単語、<code>meaning</code>に覚えたい日本語の意味、<code>example</code>にその意味で使う英語の例文を入れます。たとえば「discover／発見する」なら、「学校の近くで小さなカフェを見つけた」という場面を英文にします。</p></li>
           <li><strong>JSONをコピーして書き換える</strong><p>下のひな形をコピーし、作成画面の「JSONを貼り付け」に貼ります。単語・意味・例文の文字列を書き換えてください。単語を増やす場合は、1語分のオブジェクトをカンマで区切って追加します。</p></li>

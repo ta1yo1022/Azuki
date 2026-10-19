@@ -287,6 +287,42 @@ describe("owner isolation and atomic D1 imports", () => {
     const w = words[0];
     return call(`/decks/${id}/words/${w.id}`, "PATCH", {word:w.word, meaning:w.meaning, example:w.example, ...changes, expectedWord:w.word,expectedMeaning:w.meaning,expectedExample:w.example}, who);
   }
+  it("round-trips multiple examples through imports, public copies, forks and in-place edits",async()=>{
+    const examples=[{text:'The captain refused to leave.',translation:'船長は立ち去ることを拒んだ。'},{text:'She refused the invitation.'}];
+    const input={title:'例文のある単語帳',words:[{word:'refuse',meaning:'拒否する',examples,tags:['動詞']},{word:'stay',meaning:'とどまる',examples:[{text:'Stay here.'},{text:'We stayed at home.'}],tags:[]}]};
+    const created=await call('/decks','POST',input);expect(created.status).toBe(201);const {deck}=await created.json() as any;
+    const page=await (await call(`/decks/${deck.id}/words`)).json() as any;
+    expect(page.words[0]).toMatchObject({example:examples[0].text,examples});
+    await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'public'});
+    const copied=await (await call(`/decks/${deck.id}/save`,'POST',undefined,'bob')).json() as any;
+    expect((await (await call(`/decks/${copied.deck.id}/words`,'GET',undefined,'bob')).json() as any).words[0].examples).toEqual(examples);
+    const forked=await call(`/decks/${deck.id}/fork`,'POST',input,'bob');expect(forked.status).toBe(201);
+    expect((await (await call(`/decks/${(await forked.json() as any).deck.id}/words`,'GET',undefined,'bob')).json() as any).words[1].examples).toEqual(input.words[1].examples);
+    const old=page.words[0],next=[...examples,{text:'I refuse to give up.',translation:'諦めない。'}];
+    const edit={word:old.word,meaning:old.meaning,examples:next,expectedWord:old.word,expectedMeaning:old.meaning,expectedExample:old.example,expectedExamples:examples};
+    expect((await call(`/decks/${deck.id}/words/${old.id}`,'PATCH',edit)).status).toBe(200);
+    const latest=await (await call(`/decks/${deck.id}/words`)).json() as any;
+    expect(latest.words[0].examples).toEqual(next);expect(latest.words[1].examples).toEqual(input.words[1].examples);
+    expect((await call(`/decks/${deck.id}/words/${old.id}`,'PATCH',edit)).status).toBe(409);
+    expect((await call(`/decks/${deck.id}/words/${old.id}`,'PATCH',edit,'bob')).status).toBe(404);
+    expect(db.prepare('SELECT visibility,word_count FROM decks WHERE id=?').get(deck.id)).toEqual({visibility:'private',word_count:2});
+    expect(db.prepare("SELECT word_count FROM users WHERE id='alice'").get()?.word_count).toBe(2);
+  });
+  it('preserves legacy examples and allows deleting every example without changing word quotas',async()=>{
+    const deck=await published(1);const old=(await (await call(`/decks/${deck.id}/words`)).json() as any).words[0];
+    const edit={word:old.word,meaning:old.meaning,examples:[],expectedWord:old.word,expectedMeaning:old.meaning,expectedExample:old.example,expectedExamples:[{text:old.example}]};
+    expect((await call(`/decks/${deck.id}/words/${old.id}`,'PATCH',edit)).status).toBe(200);
+    const latest=(await (await call(`/decks/${deck.id}/words`)).json() as any).words[0];
+    expect(latest.example).toBe('');expect(latest.examples).toBeUndefined();
+    expect(db.prepare("SELECT word_count FROM users WHERE id='alice'").get()?.word_count).toBe(1);
+  });
+  it('counts translations and added examples in storage limits and rolls the whole edit back',async()=>{
+    const deck=await published(1);const old=(await (await call(`/decks/${deck.id}/words`)).json() as any).words[0];
+    const before=db.prepare('SELECT * FROM words WHERE id=?').get(old.id);
+    db.exec('UPDATE app_usage SET byte_count=104857600');
+    const response=await call(`/decks/${deck.id}/words/${old.id}`,'PATCH',{word:old.word,meaning:old.meaning,examples:[{text:old.example},{text:'Another sentence.',translation:'別の例文です。'}],expectedWord:old.word,expectedMeaning:old.meaning,expectedExample:old.example});
+    expect(response.status).toBe(429);expect(db.prepare('SELECT * FROM words WHERE id=?').get(old.id)).toEqual(before);
+  });
   it("blocks unchanged copies even after metadata changes or source withdrawal", async () => {
     const original = await published();
     const {deck:copy} = await (await call(`/decks/${original.id}/save`,"POST",undefined,"bob")).json() as any;

@@ -130,3 +130,9 @@ it('tolerates unavailable storage and reports failure on the settings page', asy
   await click('設定を保存');
   expect(container.querySelector('[role="alert"]')?.textContent).toContain('設定を保存できませんでした');
 });
+
+it('shows every saved English example on the answer while keeping Japanese translations off the card',async()=>{
+ reader.words.mockResolvedValue({words:[{...words[0],examples:[{text:'The captain refused.',translation:'船長は拒否した。'},{text:'The mage refused.',translation:'魔法使いは拒否した。'}]}],nextCursor:null});
+ await mount();await click('タップして英語を見る');
+ expect(face()).toContain('The captain refused.');expect(face()).toContain('The mage refused.');expect(face()).not.toContain('船長は拒否した。');
+});

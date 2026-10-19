@@ -212,3 +212,11 @@ it.each([390,1000])('opens with a cover and turns to the first words and back at
   expect(container.querySelectorAll('.book-entry')).toHaveLength(0);
  } finally {vi.useRealTimers();}
 });
+
+it('shows all examples and translations, and hides translations along with meanings',async()=>{
+ const first={...words[0],examples:[{text:'The captain refused.',translation:'船長は拒否した。'},{text:'The mage refused.',translation:'魔法使いは拒否した。'}]};
+ await act(async()=>root.render(<MemoryRouter initialEntries={['/book?bookPage=1']}><BookStudyPage deck={{...deck,wordCount:1}} reader={{words:async()=>({words:[first],nextCursor:null})}} onClose={()=>{}}/></MemoryRouter>));
+ expect(container.querySelector('.book-entry-example')?.textContent).toContain('The mage refused.');expect(container.querySelector('.book-entry-example')?.textContent).toContain('魔法使いは拒否した。');
+ await act(async()=>container.querySelector<HTMLInputElement>('.book-study-toggle input')!.click());
+ expect(container.querySelector('.book-entry-example')?.textContent).toContain('The captain refused.');expect(container.querySelector('.book-entry-example')?.textContent).not.toContain('船長は拒否した。');
+});

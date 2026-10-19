@@ -29,7 +29,7 @@ export function ForkDialog({deck,onClose,onSave,reader=publicRepository}:{deck:D
         if(controller.signal.aborted)return;
         if(all.length!==deck.wordCount)throw new Error("単語帳が更新されました。開き直してください。");
         setWords(all);
-        setRaw(JSON.stringify(all.map(({word,meaning,example,tags})=>({word,meaning,example:example??"",tags})),null,2));
+        setRaw(JSON.stringify(all.map(({word,meaning,example,examples,tags})=>({word,meaning,example:example??"",...(examples ? {examples} : {}),tags})),null,2));
       } catch(e) {if(!controller.signal.aborted)setError((e as Error).message);}
       finally {if(!controller.signal.aborted)setLoading(false);}
     })();

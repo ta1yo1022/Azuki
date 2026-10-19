@@ -3,7 +3,7 @@ import { standardDeck } from "../shared/standardDecks";
 import { LIMITS, parseDeck, ValidationError, type Deck } from "../shared/model";
 import { verifyFirebaseIdentity, type VerifiedIdentity } from "./auth";
 import { reportsRoute } from "./reports";
-import { deckSelect, deckResult, type DeckRow, readWords } from "./decks";
+import { wordResult, type StoredWord, deckSelect, deckResult, type DeckRow, readWords } from "./decks";
 import { publicRoute } from "./public";
 import { savePublicDeck } from "./save";
 import { contentHash } from "../shared/content";
@@ -115,8 +115,8 @@ async function route(
       else {
         const row = await env.DB.prepare("SELECT * FROM decks WHERE id=? AND (visibility='public' OR owner_id=?)").bind(forkPath[1],uid).first<DeckRow>();
         if (!row) return json({error:"コピー元の単語帳が見つからないか、公開されていません。"},404);
-        const words = await env.DB.prepare("SELECT word,meaning,example FROM words WHERE deck_id=?").bind(row.id).all<{word:string;meaning:string;example:string}>();
-        source={id:row.id,title:row.title,hash:await contentHash(words.results),root:row.root_deck_id || row.id,contentSource:row.content_source,standard:false};
+        const words = await env.DB.prepare("SELECT id,ordinal,word,meaning,example,tags,examples_json FROM words WHERE deck_id=?").bind(row.id).all<StoredWord>();
+        source={id:row.id,title:row.title,hash:await contentHash(words.results.map(wordResult)),root:row.root_deck_id || row.id,contentSource:row.content_source,standard:false};
       }
     }
     const id = crypto.randomUUID();
@@ -130,33 +130,11 @@ async function route(
          WHERE ?='' OR ?=1 OR EXISTS(SELECT 1 FROM decks WHERE id=? AND (visibility='public' OR owner_id=?))`,
       ).bind(id,uid,data.title,data.description,data.words.length,now,now,dataBytes,await contentHash(data.words),source?.id ?? null,source?.title ?? "",source?.hash ?? "",source?.root ?? null,source?.contentSource ?? "",source ? 1 : 0,source?.id ?? "",source?.standard ? 1 : 0,source?.id ?? "",uid),
     ];
-    if (source) {
-      // JSON batches keep full-book forks within D1's statement and bind limits.
-      for(let offset=0;offset<data.words.length;offset+=250) {
-        const chunk=data.words.slice(offset,offset+250).map((word,i)=>({...word,id:crypto.randomUUID(),ordinal:offset+i}));
-        statements.push(env.DB.prepare(`INSERT INTO words(id,deck_id,ordinal,word,meaning,example,tags)
-          SELECT json_extract(value,'$.id'),?,json_extract(value,'$.ordinal'),json_extract(value,'$.word'),json_extract(value,'$.meaning'),COALESCE(json_extract(value,'$.example'),''),json_extract(value,'$.tags') FROM json_each(?)`).bind(id,JSON.stringify(chunk)));
-      }
-    } else {
-    // D1 Free permits 50 queries per invocation and 100 bound parameters/query.
-    for (let offset = 0; offset < data.words.length; offset += 14) {
-      const chunk = data.words.slice(offset, offset + 14);
-      statements.push(
-        env.DB.prepare(
-          `INSERT INTO words(id,deck_id,ordinal,word,meaning,example,tags) VALUES ${chunk.map(() => "(?,?,?,?,?,?,?)").join(",")}`,
-        ).bind(
-          ...chunk.flatMap((w, i) => [
-            crypto.randomUUID(),
-            id,
-            offset + i,
-            w.word,
-            w.meaning,
-            w.example ?? "",
-            JSON.stringify(w.tags),
-          ]),
-        ),
-      );
-    }
+    // JSON batches keep imports and full-book forks within D1's statement and bind limits.
+    for(let offset=0;offset<data.words.length;offset+=250) {
+      const chunk=data.words.slice(offset,offset+250).map((word,i)=>({...word,id:crypto.randomUUID(),ordinal:offset+i}));
+      statements.push(env.DB.prepare(`INSERT INTO words(id,deck_id,ordinal,word,meaning,example,tags,examples_json)
+        SELECT json_extract(value,'$.id'),?,json_extract(value,'$.ordinal'),json_extract(value,'$.word'),json_extract(value,'$.meaning'),COALESCE(json_extract(value,'$.example'),''),json_extract(value,'$.tags'),COALESCE(json_extract(value,'$.examples'),'[]') FROM json_each(?)`).bind(id,JSON.stringify(chunk)));
     }
     if (data.textbookTags.length) {
       statements.push(
@@ -207,7 +185,7 @@ async function route(
   const savePath = /^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/save$/.exec(url.pathname);
   if (savePath && request.method === "POST") return savePublicDeck(env, uid, savePath[1]);
   const wordEdit = /^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})$/.exec(url.pathname);
-  if (wordEdit && request.method === "PATCH") return editWord(env, uid, wordEdit[1], wordEdit[2], await limitedBody(request, 8192));
+  if (wordEdit && request.method === "PATCH") return editWord(env, uid, wordEdit[1], wordEdit[2], await limitedBody(request, LIMITS.bytes));
   const path = /^\/api\/decks\/([a-zA-Z0-9-]+)(\/words|\/visibility)?$/.exec(
     url.pathname,
   );

@@ -4,6 +4,9 @@ import { auth } from "./firebase";
 import { samples } from "./samples";
 import {
   LIMITS,
+  parseDeck,
+  wordExamples,
+  type WordExample,
   type Deck,
   type DeckInput,
   type DeckPage,
@@ -14,7 +17,7 @@ export class PublishConflict extends Error {
   constructor(message: string, public existingDeckId?: string) { super(message); }
 }
 export interface Repository {
-  editWord?(id: string, old: Word, value: {word:string;meaning:string;example:string}): Promise<{deck:Deck;word:Word}>;
+  editWord?(id: string, old: Word, value: {word:string;meaning:string;examples:WordExample[]}): Promise<{deck:Deck;word:Word}>;
   list(): Promise<Deck[]>;
   create(input: DeckInput): Promise<Deck>;
   words(id: string, q: string, cursor: number): Promise<WordPage>;
@@ -81,6 +84,18 @@ function local(): LocalStore {
   return store;
 }
 export const demoRepository: Repository = {
+  async editWord(id,old,value) {
+    const store=local(), deck=store.decks.find(d=>d.id===id), list=store.words[id];
+    const index=list?.findIndex(w=>w.id===old.id) ?? -1;
+    if(!deck||index<0)throw new Error('単語が見つかりません。');
+    const current=list[index];
+    if(current.word!==old.word||current.meaning!==old.meaning||JSON.stringify(wordExamples(current))!==JSON.stringify(wordExamples(old)))throw new Error('この単語は更新されています。画面を読み込み直してください。');
+    const next={...current,...value,example:value.examples[0]?.text??''};
+    const parsed=parseDeck(JSON.stringify({...deck,words:list.map(w=>w.id===old.id?next:w)}),{maxWords:LIMITS.forkWords,allowExampleVariants:true});
+    const word={...current,...parsed.words[index],example:parsed.words[index].example??'',examples:parsed.words[index].examples??[]};
+    list[index]=word;deck.updatedAt=new Date().toISOString();save(store);
+    return {deck,word};
+  },
   async visibility() {
     throw new Error("共有するにはGoogleログイン後に単語帳を登録してください。");
   },
@@ -180,7 +195,7 @@ async function request<T>(
   return result;
 }
 export const cloudRepository: Repository = {
-  editWord: (id, old, value) => request(`/decks/${encodeURIComponent(id)}/words/${encodeURIComponent(old.id)}`, { method: "PATCH", body: JSON.stringify({...value, expectedWord: old.word, expectedMeaning: old.meaning, expectedExample: old.example ?? ""}) }),
+  editWord: (id, old, value) => request(`/decks/${encodeURIComponent(id)}/words/${encodeURIComponent(old.id)}`, { method: "PATCH", body: JSON.stringify({...value, expectedWord: old.word, expectedMeaning: old.meaning, expectedExample: old.example ?? "", expectedExamples: wordExamples(old)}) }),
   visibility: async (id, visibility) =>
     (
       await request<{ deck: Deck }>(
@@ -221,7 +236,7 @@ export const publicRepository = {
         words.push(...page.words);cursor=page.nextCursor;
       }
       if(words.length!==standard.wordCount)throw new Error('単語帳が更新されました。開き直してください。');
-      const input:DeckInput={schemaVersion:1,title:standard.title,description:standard.description,textbookTags:standard.textbookTags,words:words.map(({word,meaning,example,tags})=>({word,meaning,example,tags}))};
+      const input:DeckInput={schemaVersion:1,title:standard.title,description:standard.description,textbookTags:standard.textbookTags,words:words.map(({word,meaning,example,examples,tags})=>({word,meaning,example,...(examples ? {examples} : {}),tags}))};
       return (await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/fork`,{method:'POST',body:JSON.stringify(input)})).deck;
     }
     return (await request<{ deck: Deck; alreadySaved: boolean }>(

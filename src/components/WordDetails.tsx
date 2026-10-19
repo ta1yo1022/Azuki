@@ -1,3 +1,4 @@
+import { WordExamples } from './WordExamples';
 import type { Word } from '../../shared/model';
 
 /** The public detail view can show extra senses without adding them to cards. */
@@ -10,7 +11,7 @@ export function WordDetails({ word }: { word: Word }) {
     </section>}
     <section aria-label={edited ? '代表的な意味の例文' : '例文'}>
       <span className="eyebrow">{edited ? 'この意味の例文' : '例文'}</span>
-      <p lang={word.example ? 'en' : 'ja'}>{word.example || '例文はまだ登録されていません。'}</p>
+      <WordExamples word={word}/>
     </section>
     {!!word.otherMeanings?.length && <section className="word-other-senses" aria-label="その他の意味">
       <span className="eyebrow">その他の意味</span>

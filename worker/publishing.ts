@@ -1,7 +1,7 @@
 import {standardDecks} from "../shared/standardDecks";
-import { LIMITS, parseDeck, ValidationError, type Word } from "../shared/model";
+import { LIMITS, parseDeck, wordExamples, ValidationError, type Word } from "../shared/model";
 import { contentHash } from "../shared/content";
-import { deckResult, deckSelect, type DeckRow } from "./decks";
+import { wordResult, type StoredWord, deckResult, deckSelect, type DeckRow } from "./decks";
 import type { Env } from "./index";
 
 export async function setVisibility(env: Env, uid: string, row: DeckRow, visibility: "public" | "private") {
@@ -39,22 +39,24 @@ export async function editWord(env: Env, uid: string, id: string, wordId: string
   try { input = JSON.parse(raw); } catch { throw new ValidationError("編集内容を確認してください。"); }
   if (!input || typeof input !== "object") throw new ValidationError("編集内容を確認してください。");
   const data = parseDeck(JSON.stringify({ title: row.title, words: [input] })).words[0];
-  const result = await env.DB.prepare("SELECT id,ordinal,word,meaning,example,tags FROM words WHERE deck_id=? ORDER BY ordinal").bind(id).all<Omit<Word,"tags"> & { tags: string }>();
+  const result = await env.DB.prepare("SELECT id,ordinal,word,meaning,example,tags,examples_json FROM words WHERE deck_id=? ORDER BY ordinal").bind(id).all<StoredWord>();
   const old = result.results.find(w => w.id === wordId);
   if (!old) return Response.json({ error: "単語が見つかりません。" }, { status: 404 });
-  if (input.expectedWord !== old.word || input.expectedMeaning !== old.meaning || input.expectedExample !== old.example)
+  const previous = wordResult(old);
+  const expectedExamples = input.expectedExamples ?? (input.expectedExample ? [{text:input.expectedExample}] : []);
+  if (input.expectedWord !== old.word || input.expectedMeaning !== old.meaning || input.expectedExample !== old.example || JSON.stringify(expectedExamples) !== JSON.stringify(wordExamples(previous)))
     return Response.json({ error: "この単語は更新されています。画面を読み込み直してください。" }, { status: 409 });
-  if (data.word === old.word && data.meaning === old.meaning && (data.example ?? "") === old.example) return Response.json({ deck: deckResult(row), word: {...old, tags: JSON.parse(old.tags)} });
-  const words = result.results.map(w => w.id === wordId ? { ...data, tags: JSON.parse(old.tags) } : { word: w.word, meaning: w.meaning, example: w.example, tags: JSON.parse(w.tags) });
+  if (data.word === old.word && data.meaning === old.meaning && JSON.stringify(wordExamples(data)) === JSON.stringify(wordExamples(previous))) return Response.json({ deck: deckResult(row), word: previous });
+  const words = result.results.map(w => w.id === wordId ? { ...data, tags: previous.tags } : wordResult(w));
   const parsed = parseDeck(JSON.stringify({ title: row.title, description: row.description, textbookTags: JSON.parse(row.textbook_tags), words }), {maxWords:LIMITS.forkWords,allowExampleVariants:true});
   const hash = await contentHash(parsed.words);
   const bytes = new TextEncoder().encode(JSON.stringify(parsed)).length;
   const now = new Date().toISOString();
   const changes = await env.DB.batch([
-    env.DB.prepare("UPDATE words SET word=?,meaning=?,example=? WHERE id=? AND deck_id=? AND EXISTS(SELECT 1 FROM decks WHERE id=? AND owner_id=? AND content_hash=?)").bind(data.word, data.meaning, data.example ?? "", wordId, id, id, uid, row.content_hash),
+    env.DB.prepare("UPDATE words SET word=?,meaning=?,example=?,examples_json=? WHERE id=? AND deck_id=? AND EXISTS(SELECT 1 FROM decks WHERE id=? AND owner_id=? AND content_hash=?)").bind(data.word, data.meaning, data.example ?? "", JSON.stringify(data.examples ?? []), wordId, id, id, uid, row.content_hash),
     env.DB.prepare("UPDATE decks SET content_hash=?,data_bytes=?,visibility='private',updated_at=? WHERE id=? AND owner_id=? AND content_hash=?").bind(hash, bytes, now, id, uid, row.content_hash),
   ]);
   if (!changes[0].meta.changes) return Response.json({ error: "内容が更新されました。画面を読み込み直してください。" }, { status: 409 });
   const updated = await env.DB.prepare(`${deckSelect} WHERE d.id=? AND d.owner_id=?`).bind(id, uid).first<DeckRow>();
-  return Response.json({ deck: deckResult(updated!), word: { ...old, ...data, tags: JSON.parse(old.tags) } });
+  return Response.json({ deck: deckResult(updated!), word: { ...previous, ...data, example:data.example ?? '', examples:data.examples ?? [], tags:previous.tags } });
 }

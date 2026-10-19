@@ -1,3 +1,4 @@
+import { WordExamples } from './WordExamples';
 import { useLayoutEffect, useEffect, useRef, useState, type PointerEvent } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, BookOpenText } from 'lucide-react';
@@ -251,7 +252,7 @@ export function BookStudyPage({deck, reader, onClose}: {
               <div className={`book-meaning-content${visible ? '' : ' is-blurred'}`} aria-hidden={!visible}><p className="book-primary-meaning">{word.meaning}</p>{!!word.otherMeanings?.length && <div className="book-other-meanings"><small>その他の意味</small><ul>{word.otherMeanings.map(meaning=><li key={meaning}>{meaning}</li>)}</ul></div>}{word.usageNote && <p className="book-usage-note">{word.usageNote}</p>}</div>
               {hideMeanings && <button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={visible} aria-label={`${word.word}の意味を${visible ? '隠す' : '表示'}`} onClick={event=>{event.stopPropagation();if(suppressTap.current){suppressTap.current=false;return;}setRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});}}><span className="sr-only">{visible ? '意味を隠す' : '意味を表示'}</span></button>}
             </div>
-            <div className="book-entry-example"><span className="book-mobile-label">例文</span><p lang={word.example ? 'en' : 'ja'}>{word.example || '例文はまだ登録されていません。'}</p></div>
+            <div className="book-entry-example"><span className="book-mobile-label">例文</span><WordExamples word={word} translations={!hideMeanings||revealed.has(word.id)}/></div>
           </li>;
         })}</ol></div><div className="book-page-number">{page+leaf}</div></section>)}
     </section>

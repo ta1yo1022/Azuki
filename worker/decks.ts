@@ -1,5 +1,5 @@
 import { standardDeck } from "../shared/standardDecks";
-import { ValidationError, type Deck, type TextbookTag } from "../shared/model";
+import { ValidationError, type Deck, type TextbookTag, type Word } from "../shared/model";
 import { OFFICIAL_OWNER_ID } from "./official";
 export type DeckRow = {
   id: string;
@@ -52,6 +52,12 @@ export function searchQuery(url: URL): string {
 }
 export const likePattern = (q: string) => `%${q.replace(/[\\%_]/g, "\\$&")}%`;
 
+export type StoredWord = Omit<Word, 'tags' | 'examples'> & {tags:string;examples_json:string};
+export function wordResult({tags,examples_json,...word}:StoredWord): Word {
+  const examples = JSON.parse(examples_json);
+  return {...word,tags:JSON.parse(tags),...(examples.length ? {examples} : {})};
+}
+
 export async function readWords(
   db: D1Database,
   id: string,
@@ -67,7 +73,7 @@ export async function readWords(
   const access = ownerId ? "d.owner_id=?" : "d.visibility='public'";
   const result = await db
     .prepare(
-      `SELECT w.id,w.ordinal,w.word,w.meaning,w.example,w.tags FROM words w
+      `SELECT w.id,w.ordinal,w.word,w.meaning,w.example,w.tags,w.examples_json FROM words w
      JOIN decks d ON d.id=w.deck_id
      WHERE w.deck_id=? AND ${access} AND w.ordinal>=?
        AND (?='' OR w.word LIKE ? ESCAPE '\\' OR w.meaning LIKE ? ESCAPE '\\')
@@ -81,18 +87,11 @@ export async function readWords(
       pattern,
       pattern,
     )
-    .all<{
-      id: string;
-      ordinal: number;
-      word: string;
-      meaning: string;
-      example: string;
-      tags: string;
-    }>();
+    .all<StoredWord>();
   return Response.json({
     words: result.results
       .slice(0, 50)
-      .map((w) => ({ ...w, tags: JSON.parse(w.tags) })),
+      .map(wordResult),
     nextCursor: result.results.length > 50 ? result.results[50].ordinal : null,
   });
 }
