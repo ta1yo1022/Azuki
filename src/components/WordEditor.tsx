@@ -21,7 +21,6 @@ export function WordEditor({deck,word,onSaved,repository=cloudRepository}:{deck:
     } catch(cause){setError(cause instanceof Error?cause.message:'保存できませんでした。');}
     finally{setBusy(false);}
   }}>
-    <div className="word-editor-heading"><span aria-hidden="true"><Pencil size={18}/></span><h3>単語と例文を編集</h3></div>
     <fieldset disabled={busy} className="word-editor-fields">
       <div className="word-editor-vocabulary"><label>英単語<input required maxLength={120} value={value.word} onChange={e=>setValue({...value,word:e.target.value})}/></label><label>意味<textarea required maxLength={1000} rows={2} value={value.meaning} onChange={e=>setValue({...value,meaning:e.target.value})}/></label></div>
       <div className="word-examples-heading"><h3>例文</h3><span>{examples.length} / {LIMITS.examplesPerWord}件</span></div>
