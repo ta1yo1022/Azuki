@@ -72,6 +72,8 @@ it('does not turn cards when arrow keys are used on settings', async () => {
   expect(face()).toContain('日本語-0');
   await act(async () => container.querySelector('.study-card')!.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true})));
   expect(face()).toContain('日本語-1');
+  await act(async () => window.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true})));
+  expect(face()).toContain('日本語-0');
 });
 it('discards partial shuffled content on failure and retries the whole book', async () => {
   await mount();

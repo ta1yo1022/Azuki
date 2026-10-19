@@ -220,3 +220,14 @@ it('shows all examples and translations, and hides translations along with meani
  await act(async()=>container.querySelector<HTMLInputElement>('.book-study-toggle input')!.click());
  expect(container.querySelector('.book-entry-example')?.textContent).toContain('The captain refused.');expect(container.querySelector('.book-entry-example')?.textContent).not.toContain('船長は拒否した。');
 });
+
+it('turns with arrow keys from navigation buttons and the window, but keeps editing keys',async()=>{
+ const reader={words:vi.fn(async(_id:string,_q:string,cursor:number)=>({words:words.slice(cursor,cursor+50),nextCursor:null}))};
+ await act(async()=>root.render(<MemoryRouter initialEntries={['/book?bookPage=1']}><BookStudyPage deck={deck} reader={reader} onClose={()=>{}}/><Location/></MemoryRouter>));
+ await act(async()=>button('次のページ').dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true,cancelable:true})));
+ expect(container.querySelector('output')?.textContent).toContain('bookPage=3');
+ await act(async()=>window.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowLeft',cancelable:true})));
+ expect(container.querySelector('output')?.textContent).toContain('bookPage=1');
+ await act(async()=>container.querySelector('input')!.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true,cancelable:true})));
+ expect(container.querySelector('output')?.textContent).toContain('bookPage=1');
+});

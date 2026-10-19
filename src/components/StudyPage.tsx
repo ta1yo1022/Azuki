@@ -1,3 +1,4 @@
+import { useStudyArrows } from '../lib/useStudyArrows';
 import { useStudyTracking } from "../lib/studyTracking";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
@@ -176,6 +177,8 @@ export function StudyPage({
     }
   }
 
+  useStudyArrows(started && !settingsOpen && !completed && !loading && !error, previous, next);
+
   return (
     <div
       className={`study-page${!settingsOpen && !loading && !error && !completed && word ? " study-session" : ""}`}
@@ -186,21 +189,7 @@ export function StudyPage({
           else onClose();
           return;
         }
-        if (
-          settingsOpen ||
-          (event.target instanceof HTMLElement && event.target.closest("select, input, textarea")) ||
-          event.altKey ||
-          event.ctrlKey ||
-          event.metaKey ||
-          completed ||
-          loading ||
-          error
-        )
-          return;
-        if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-          event.preventDefault();
-          if (!event.repeat) event.key === "ArrowLeft" ? previous() : next();
-        }
+
       }}
     >
       <a className="skip-link" href="#study-main">

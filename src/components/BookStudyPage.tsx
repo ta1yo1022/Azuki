@@ -1,3 +1,4 @@
+import { useStudyArrows } from '../lib/useStudyArrows';
 import { useStudyTracking } from "../lib/studyTracking";
 import { WordExamples } from './WordExamples';
 import { useLayoutEffect, useEffect, useRef, useState, type PointerEvent } from 'react';
@@ -224,14 +225,13 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
     dragPage(dx,0,(spreadRef.current?.getBoundingClientRect().bottom||0)-2);
     finishPage(dx,true);
   }
+  useStudyArrows(!loading && !error, () => { if (page > 0) animateTurn(previousPage); }, () => { if (nextPage <= total) animateTurn(nextPage); });
   const cachedPages=Array.from({length:Math.min(visiblePages,total-page+1)},(_,i)=>pageCache.current.get(page+i));
   const visibleWords=cachedPages.every(Boolean)?cachedPages.flat() as Word[]:words;
   return <main className={`book-study${wide ? " book-study-wide" : ""}`} onKeyDown={event=>{
     if (interactive(event.target)) return;
     if (event.key === 'Escape') setControlsVisible(true);
     if ((event.key === 'Enter' || event.key === ' ') && event.target instanceof Element && event.target.classList.contains('book-leaf-content')) {event.preventDefault();setControlsVisible(value=>!value);}
-    if (event.key === 'ArrowRight' && !loading && nextPage<=total) {event.preventDefault();animateTurn(nextPage);}
-    if (event.key === 'ArrowLeft' && !loading && page>0) {event.preventDefault();animateTurn(previousPage);}
   }}>
     <header className={`book-study-header${controlsVisible ? "" : " is-hidden"}`} inert={!controlsVisible} aria-hidden={!controlsVisible}>
       <button className="back-button" onClick={onClose}><ArrowLeft size={18} />単語一覧に戻る</button>
