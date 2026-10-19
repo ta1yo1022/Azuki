@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Plus, Trash2, Pencil } from "lucide-react";
 import { LIMITS, wordExamples, type Deck, type Word, type WordExample } from "../../shared/model";
+import { WordExamples } from "./WordExamples";
 import { cloudRepository, type Repository } from "../lib/repository";
 type ExampleDraft = WordExample & {key:string};
 const drafts = (word:Word):ExampleDraft[] => wordExamples(word).map(example=>({...example,key:crypto.randomUUID()}));
@@ -10,7 +11,7 @@ export function WordEditor({deck,word,onSaved,repository=cloudRepository}:{deck:
   const [examples,setExamples]=useState<ExampleDraft[]>(()=>drafts(word));
   const [busy,setBusy]=useState(false),[error,setError]=useState('');
   function update(key:string,change:Partial<WordExample>){setExamples(previous=>previous.map(example=>example.key===key?{...example,...change}:example));}
-  if(!editing)return <button type="button" className="text-button word-edit-trigger" onClick={()=>{setValue({word:word.word,meaning:word.meaning});setExamples(drafts(word));setError('');setEditing(true);}}><Pencil size={15}/>例文を追加・編集</button>;
+  if(!editing)return <div className="word-editor-readonly"><span className="eyebrow">例文</span><WordExamples word={word}/><button type="button" className="text-button word-edit-trigger" onClick={()=>{setValue({word:word.word,meaning:word.meaning});setExamples(drafts(word));setError('');setEditing(true);}}><Pencil size={15}/>例文を追加・編集</button></div>;
   return <form className="word-edit-form" aria-label={`${word.word}を編集`} onSubmit={async event=>{
     event.preventDefault();if(busy)return;setBusy(true);setError('');
     try {
@@ -20,6 +21,7 @@ export function WordEditor({deck,word,onSaved,repository=cloudRepository}:{deck:
     } catch(cause){setError(cause instanceof Error?cause.message:'保存できませんでした。');}
     finally{setBusy(false);}
   }}>
+    <div className="word-editor-heading"><span aria-hidden="true"><Pencil size={18}/></span><h3>単語と例文を編集</h3></div>
     <fieldset disabled={busy} className="word-editor-fields">
       <div className="word-editor-vocabulary"><label>英単語<input required maxLength={120} value={value.word} onChange={e=>setValue({...value,word:e.target.value})}/></label><label>意味<textarea required maxLength={1000} rows={2} value={value.meaning} onChange={e=>setValue({...value,meaning:e.target.value})}/></label></div>
       <div className="word-examples-heading"><h3>例文</h3><span>{examples.length} / {LIMITS.examplesPerWord}件</span></div>
@@ -33,7 +35,7 @@ export function WordEditor({deck,word,onSaved,repository=cloudRepository}:{deck:
       <p className="muted">1語につき最大{LIMITS.examplesPerWord}件。例文を増やしても保存語数は増えません。</p>
       {deck.visibility==='public'&&<p>編集を保存すると非公開になります。内容を確認してから、再び公開できます。</p>}
       {error&&<p role="alert" className="error-box">{error}</p>}
-      <div className="word-editor-actions"><button type="submit" className="button primary">{busy?'保存しています…':'変更を保存'}</button><button type="button" className="button secondary" onClick={()=>setEditing(false)}>キャンセル</button></div>
+      <div className="word-editor-actions"><button type="button" className="button secondary" onClick={()=>setEditing(false)}>キャンセル</button><button type="submit" className="button primary">{busy?'保存しています…':'変更を保存'}</button></div>
     </fieldset>
   </form>;
 }

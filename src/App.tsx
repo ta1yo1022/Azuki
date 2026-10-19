@@ -37,7 +37,6 @@ import { SettingsPage } from "./components/SettingsPage";
 import { StudyPage } from "./components/StudyPage";
 import { LandingPage } from "./components/LandingPage";
 import { DeckLineage } from "./components/DeckLineage";
-import { WordExamples } from "./components/WordExamples";
 import { WordEditor } from "./components/WordEditor";
 import { DeckCredit } from "./components/DeckCredit";
 import { LIMITS, type Deck, type DeckInput, type Word } from "../shared/model";
@@ -808,8 +807,6 @@ export default function App({ demo = false }: { demo?: boolean }) {
                       <ChevronDown className="word-expand" size={17} />
                     </summary>
                     <div className="word-detail">
-                      <span className="eyebrow">例文</span>
-                      <WordExamples word={word}/>
                       <WordEditor deck={selected} word={word} repository={repository} onSaved={(deck,savedWord) => { setDecks(prev => prev.map(d => d.id === deck.id ? deck : d)); setWords(prev=>prev.map(w=>w.id===savedWord.id?savedWord:w)); }} />
                     </div>
                   </details>
