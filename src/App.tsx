@@ -401,32 +401,6 @@ export default function App({ demo = false }: { demo?: boolean }) {
           </Link>
           <Link className="profile-settings-link sidebar-mobile-settings" to={`${base}/settings`} aria-label="設定を開く"><ProfileAvatar name={displayName} photoURL={photoURL} initial={avatarInitial} small /></Link>
         </nav>
-        <div className="sidebar-tags">
-          <div className="sidebar-section-label">教材タグ</div>
-          <div className="sidebar-tag-scroll" tabIndex={0} role="region" aria-label="教材タグ一覧">
-          {textbookNames.length ? (
-            textbookNames.map((name) => (
-              <button
-                key={name}
-                className={`nav-item textbook-nav ${filter === name ? "active" : ""}`}
-                onClick={() => navigate(`${base}?tag=${encodeURIComponent(name)}`)}
-              >
-                <Tag size={15} />
-                <span>{name}</span>
-                <small>
-                  {
-                    decks.filter((d) =>
-                      d.textbookTags.some((t) => t.name === name),
-                    ).length
-                  }
-                </small>
-              </button>
-            ))
-          ) : (
-            <p className="sidebar-empty">教材タグはまだありません</p>
-          )}
-          </div>
-        </div>
         <div className="sidebar-bottom">
           <div className="storage-note">
             <span>
