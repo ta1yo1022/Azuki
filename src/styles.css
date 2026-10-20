@@ -3460,7 +3460,7 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .detail-heading:has(> .owner-deck-actions){flex-direction:column;align-items:stretch;gap:20px}
 .detail-heading > .owner-deck-actions{width:100%;align-self:stretch;justify-content:flex-start;flex-shrink:1;padding-top:15px}
 .deck-settings-fields{border:0;padding:0;margin:24px 0;display:grid;gap:18px;min-width:0}
-.deck-settings-fields label{display:grid;gap:8px;font-size:13px;font-weight:600;min-width:0}
+.deck-settings-fields label{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;min-width:0}
 .deck-settings-fields input,.deck-settings-fields textarea,.deck-settings-fields select{width:100%;border:1px solid var(--border);border-radius:10px;padding:12px;background:white;color:var(--text);font:inherit;box-sizing:border-box}
 .deck-settings-tags-heading,.deck-settings-footer{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .deck-settings-tag{border:1px solid var(--border);border-radius:14px;padding:14px;display:grid;gap:12px}

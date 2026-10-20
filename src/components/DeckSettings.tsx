@@ -18,7 +18,7 @@ export function DeckSettings({deck,save,onSaved,renderTrigger}:{renderTrigger?:(
   <dialog ref={dialog} className="deck-settings-dialog" aria-labelledby="deck-settings-title" onCancel={event=>{if(busy)event.preventDefault();}}>
    <form onSubmit={event=>{event.preventDefault();void submit();}}>
     <div className="deck-settings-heading"><h2 id="deck-settings-title">単語帳の設定</h2><button type="button" disabled={busy} className="icon-button" aria-label="設定を閉じる" onClick={()=>dialog.current?.close()}><X size={20}/></button></div>
-    <fieldset className="deck-settings-fields" disabled={busy}>
+    <fieldset className="deck-settings-fields import-classification" disabled={busy}>
      <DeckMetadataFields prefix="deck-settings" value={metadata} onChange={setMetadata}/>
      <ThemePicker value={values.theme} onChange={theme=>setValues({...values,theme})} disabled={busy}/>
     </fieldset>
