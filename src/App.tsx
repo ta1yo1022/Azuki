@@ -392,6 +392,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
         </nav>
         <div className="sidebar-tags">
           <div className="sidebar-section-label">教材タグ</div>
+          <div className="sidebar-tag-scroll" tabIndex={0} role="region" aria-label="教材タグ一覧">
           {textbookNames.length ? (
             textbookNames.map((name) => (
               <button
@@ -413,6 +414,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
           ) : (
             <p className="sidebar-empty">教材タグはまだありません</p>
           )}
+          </div>
         </div>
         <div className="sidebar-bottom">
           <div className="storage-note">

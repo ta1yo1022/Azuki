@@ -3085,7 +3085,7 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .settings-page .study-setup { margin:0 auto; padding:clamp(20px,3vw,28px); }
 @media(min-width:801px) {
   .topbar .profile-settings-link { display:none; }
-  .sidebar { overflow-y:auto; }
+  .sidebar { overflow:hidden; }
 }
 
 .cookie-banner { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); z-index:100; width:min(960px,calc(100% - 32px)); max-height:calc(100dvh - 32px); overflow:auto; display:flex; align-items:center; gap:24px; padding:24px; background:var(--paper); border:1px solid var(--border); border-radius:20px; box-shadow:0 8px 40px #34231c33; }
@@ -3419,3 +3419,20 @@ a.deck-card, a.nav-item { text-decoration: none; }
 @media(prefers-reduced-motion:reduce) { .word-audio-spinner { animation:none; } }
 
 .audio-quota small{display:block;margin-top:8px;font-size:11px;line-height:1.6;color:var(--muted)}
+
+@media(min-width:801px){
+ .sidebar{height:100dvh;overflow:hidden}
+ .sidebar > .brand-home,.sidebar > .sidebar-section-label,.sidebar > nav,.sidebar-bottom{flex-shrink:0}
+ .sidebar-tags{display:flex;flex-direction:column;flex:1 1 0;min-height:0;overflow:hidden;margin-top:24px}
+ .sidebar-tags > .sidebar-section-label{flex-shrink:0}
+ .sidebar-tag-scroll{min-height:0;overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#ccb7a7 transparent}
+ .sidebar-tag-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:8px}
+ .sidebar-bottom{padding-top:16px}
+}
+@media(min-width:801px) and (max-height:800px){
+ .sidebar{padding-top:20px;padding-bottom:12px}
+ .sidebar .brand-home{margin-bottom:24px}
+ .sidebar-tags{margin-top:16px}
+ .sidebar-bottom{padding-top:10px}
+ .sidebar-bottom .storage-note{padding-top:10px;padding-bottom:12px}
+}
