@@ -156,6 +156,26 @@ describe("owner isolation and atomic D1 imports", () => {
     expect((await call('/public'+path,'POST')).status).toBe(404);
     expect(run).toHaveBeenCalledTimes(1);
   });
+  it('shares the authenticated public/private quota and blocks anonymous new generation',async()=>{
+    const {run}=audioMock();
+    const deck=(await (await call('/decks','POST',sample())).json() as any).deck;
+    const words=db.prepare('SELECT id FROM words WHERE deck_id=? ORDER BY ordinal').all(deck.id) as any[];
+    const path=(i:number)=>`/decks/${deck.id}/words/${words[i].id}/audio`;
+    await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'public'});
+    expect((await call('/public'+path(0),'POST',undefined,'')).status).toBe(401);
+    expect(run).not.toHaveBeenCalled();
+    expect((await call('/public'+path(0),'POST')).status).toBe(200);
+    expect((await (await call('/audio/quota')).json() as any).remaining).toBe(99);
+    expect((await (await call('/audio/quota','GET',undefined,'bob')).json() as any).remaining).toBe(100);
+    const day=new Date().toISOString().slice(0,10);
+    db.prepare('UPDATE audio_generation_limits SET amount=100 WHERE day=? AND scope<>?').run(day,'global');
+    expect((await call(path(1),'POST')).status).toBe(429);
+    expect((await (await call('/audio/quota')).json() as any).remaining).toBe(0);
+    expect((await call('/public'+path(0),'POST',undefined,'')).status).toBe(200);
+    await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'private'});
+    expect((await call('/public'+path(0),'POST')).status).toBe(404);
+    expect((await call('/audio/quota','GET',undefined,'')).status).toBe(401);
+  });
   it('keeps cached audio working at the generation limit and never stores failed audio',async()=>{
     const {run,objects}=audioMock();env.AUDIO_DAILY_GENERATION_LIMIT='1';
     const deck=(await (await call('/decks','POST',sample())).json() as any).deck;

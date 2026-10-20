@@ -17,11 +17,11 @@ export function playWordAudio(deckId:string,wordId:string,isPublic:boolean,notif
   try{
    await ready;
    const headers=new Headers();
-   if(!isPublic){const user=auth?.currentUser;if(!user)throw new Error('Googleアカウントでログインしてください。');headers.set('Authorization',`Bearer ${await user.getIdToken()}`);}
+   const user=auth?.currentUser;if(user)headers.set('Authorization',`Bearer ${await user.getIdToken()}`);else if(!isPublic)throw new Error('Googleアカウントでログインしてください。');
    let response:Response|undefined;
    for(let attempt=0;attempt<30;attempt++){
     response=await fetch(`${base}/api/${isPublic?'public/':''}decks/${encodeURIComponent(deckId)}/words/${encodeURIComponent(wordId)}/audio`,{method:'POST',headers,signal:active.controller.signal,cache:'no-store'});
-    if(response.status!==202)break;
+    if(response.status!==202){window.dispatchEvent(new Event('azuki-audio-quota'));break;}
     await new Promise<void>((resolve,reject)=>{const signal=active.controller.signal;const cancel=()=>{clearTimeout(timer);reject(new DOMException('Aborted','AbortError'));};const timer=setTimeout(()=>{signal.removeEventListener('abort',cancel);resolve();},1000);if(signal.aborted)cancel();else signal.addEventListener('abort',cancel,{once:true});});
    }
    if(!response||response.status===202)throw new Error('音声を準備しています。少し待ってからもう一度お試しください。');

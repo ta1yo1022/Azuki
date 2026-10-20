@@ -1,3 +1,4 @@
+import { AudioQuota } from "./components/AudioQuota";
 import { WordAudioButton } from "./components/WordAudioButton";
 import { BarChart3 } from "lucide-react";
 import { StudyStatsPage, StudyStatsSummary } from "./components/StudyStatsPage";
@@ -488,6 +489,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     <span className="separator">/</span>{" "}
                     <strong>{totalWords.toLocaleString()}</strong> 語
                   </p>
+                  <AudioQuota userId={user?.uid} />
                 </div>
                 <button
                   className="button primary"

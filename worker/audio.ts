@@ -9,6 +9,14 @@ export async function audioKey(text:string){
  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(AUDIO_VERSION+'\0'+text));
  return 'words/google-wavenet/en-US-Wavenet-F/v1/'+Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('')+'.audio';
 }
+export async function wordAudioQuota(request:Request,env:Env,uid:string){
+ if(request.method!=='GET')return error('この操作は利用できません。',405);
+ const day=new Date().toISOString().slice(0,10);
+ const scope=await audioKey('user:'+uid);
+ const row=await env.DB.prepare('SELECT amount FROM audio_generation_limits WHERE scope=? AND day=?').bind(scope,day).first<{amount:number}>();
+ const used=row?.amount??0;
+ return Response.json({limit:100,used,remaining:Math.max(0,100-used),resetsAt:new Date(Date.parse(day+'T00:00:00Z')+86400000).toISOString()},{headers:{'Cache-Control':'private, no-store'}});
+}
 async function sourceWord(env:Env,deckId:string,wordId:string,uid?:string){
  const standard=standardDeck(deckId);
  if(standard){
@@ -41,10 +49,10 @@ async function audioBytes(result:unknown):Promise<{data:ArrayBuffer;contentType:
  throw new Error('Invalid audio format');
 }
 function audioResponse(body:ReadableStream|ArrayBuffer,contentType='audio/mpeg'){return new Response(body,{headers:{'Content-Type':contentType,'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});}
-export async function wordAudio(request:Request,env:Env,deckId:string,wordId:string,uid?:string){
+export async function wordAudio(request:Request,env:Env,deckId:string,wordId:string,uid?:string,publicOnly=false){
  if(request.method!=='POST')return error('この操作は利用できません。',405);
  // Resolve the actual stored word first, even when a shared audio object is already cached.
- const word=await sourceWord(env,deckId,wordId,uid);
+ const word=await sourceWord(env,deckId,wordId,publicOnly?undefined:uid);
  if(!word)return error('この単語は読み上げられません。',404);
  const text=word.normalize('NFKC').trim().replace(/\s+/g,' ');
  if(!/[A-Za-z]/.test(text)||text.length>120)return error('英単語の読み上げに対応しています。',400);
@@ -52,6 +60,7 @@ export async function wordAudio(request:Request,env:Env,deckId:string,wordId:str
  const key=await audioKey(text);
  const cached=await env.AUDIO.get(key);
  if(cached)return audioResponse(cached.body,cached.httpMetadata?.contentType);
+ if(!uid)return error('新しい音声の生成にはGoogleログインが必要です。生成済みの音声はそのまま再生できます。',401);
  const now=Date.now();
  const lock=await env.DB.prepare(`INSERT INTO audio_generation_locks(audio_key,expires_at) VALUES(?,?) ON CONFLICT(audio_key) DO UPDATE SET expires_at=excluded.expires_at WHERE expires_at<? RETURNING audio_key`).bind(key,now+90000,now).first();
  if(!lock)return Response.json({pending:true},{status:202,headers:{'Retry-After':'1','Cache-Control':'no-store'}});

@@ -1,4 +1,4 @@
-import { wordAudio, cleanupWordAudio } from './audio';
+import { wordAudio, wordAudioQuota, cleanupWordAudio } from './audio';
 import { studyRoute } from './study';
 import { favoritesRoute } from './favorites';
 import { ensureDefaultEmailPreference, emailAdminRoute, preferencesRoute, processEmailQueue, unsubscribeRoute } from './email';
@@ -63,7 +63,12 @@ async function route(
   if (url.pathname === "/api/health" && request.method === "GET")
     return json({ ok: true });
   const publicAudio=/^\/api\/public\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})\/audio$/.exec(url.pathname);
-  if(publicAudio)return wordAudio(request,env,publicAudio[1],publicAudio[2]);
+  if(publicAudio){
+    let audioUid:string|undefined;
+    const token=/^Bearer ([^\s]+)$/.exec(request.headers.get('authorization')??'');
+    if(token){try{const identity=await verify(token[1],env.FIREBASE_PROJECT_ID);audioUid=typeof identity==='string'?identity:identity.uid;}catch{return json({error:'もう一度ログインしてください。'},401);}}
+    return wordAudio(request,env,publicAudio[1],publicAudio[2],audioUid,true);
+  }
   if (url.pathname.startsWith("/api/public/")) return publicRoute(request, env);
   if (
     !env.FIREBASE_PROJECT_ID ||
@@ -99,6 +104,7 @@ async function route(
     return json({ error: "このアカウントでは操作できません。" }, 403);
   const privateAudio=/^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})\/audio$/.exec(url.pathname);
   if(privateAudio)return wordAudio(request,env,privateAudio[1],privateAudio[2],uid);
+  if (url.pathname === "/api/audio/quota") return wordAudioQuota(request,env,uid);
   if (url.pathname === "/api/study") return studyRoute(request, env, uid);
   if (url.pathname === "/api/favorites" || url.pathname.startsWith("/api/favorites/")) return favoritesRoute(request, env, uid);
   if (url.pathname === "/api/decks" && request.method === "GET") {
