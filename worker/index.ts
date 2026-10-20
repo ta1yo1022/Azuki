@@ -1,3 +1,4 @@
+import { isDeckTheme } from '../shared/deckThemes';
 import { wordAudio, wordAudioQuota, cleanupWordAudio } from './audio';
 import { studyRoute } from './study';
 import { favoritesRoute } from './favorites';
@@ -149,6 +150,7 @@ async function route(
          WHERE ?='' OR ?=1 OR EXISTS(SELECT 1 FROM decks WHERE id=? AND (visibility='public' OR owner_id=?))`,
       ).bind(id,uid,data.title,data.description,data.words.length,now,now,dataBytes,await contentHash(data.words),source?.id ?? null,source?.title ?? "",source?.hash ?? "",source?.root ?? null,source?.contentSource ?? "",source ? 1 : 0,source?.id ?? "",source?.standard ? 1 : 0,source?.id ?? "",uid),
     ];
+    if(data.theme)statements.push(env.DB.prepare('UPDATE decks SET theme=? WHERE id=? AND owner_id=?').bind(data.theme,id,uid));
     // JSON batches keep imports and full-book forks within D1's statement and bind limits.
     for(let offset=0;offset<data.words.length;offset+=250) {
       const chunk=data.words.slice(offset,offset+250).map((word,i)=>({...word,id:crypto.randomUUID(),ordinal:offset+i}));
@@ -190,6 +192,7 @@ async function route(
           schemaVersion: 1,
           id,
           title: data.title,
+          ...(data.theme?{theme:data.theme}:{}),
           description: data.description,
           textbookTags: data.textbookTags,
           visibility: "private",
@@ -205,7 +208,7 @@ async function route(
   if (savePath && request.method === "POST") return savePublicDeck(env, uid, savePath[1]);
   const wordEdit = /^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})$/.exec(url.pathname);
   if (wordEdit && request.method === "PATCH") return editWord(env, uid, wordEdit[1], wordEdit[2], await limitedBody(request, LIMITS.bytes));
-  const path = /^\/api\/decks\/([a-zA-Z0-9-]+)(\/words|\/visibility)?$/.exec(
+  const path = /^\/api\/decks\/([a-zA-Z0-9-]+)(\/words|\/visibility|\/theme)?$/.exec(
     url.pathname,
   );
   if (path) {
@@ -216,6 +219,12 @@ async function route(
       .bind(path[1], uid)
       .first<DeckRow>();
     if (!row) return json({ error: "単語帳が見つかりません。" }, 404);
+    if(path[2]==='/theme'&&request.method==='PATCH'){
+      let data:unknown;try{data=JSON.parse(await limitedBody(request,1024));}catch{throw new ValidationError('色の形式を確認してください。');}
+      if(!data||typeof data!=='object'||!('theme' in data)||!isDeckTheme(data.theme))throw new ValidationError('単語帳の色を選択してください。');
+      await env.DB.prepare('UPDATE decks SET theme=?,updated_at=? WHERE id=? AND owner_id=?').bind(data.theme,new Date().toISOString(),row.id,uid).run();
+      return json({deck:deckResult({...row,theme:data.theme})});
+    }
     if (path[2] === "/words" && request.method === "GET")
       return readWords(env.DB, row.id, url, uid);
     if (path[2] === "/visibility" && request.method === "PATCH") {

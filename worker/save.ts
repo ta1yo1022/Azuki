@@ -24,8 +24,8 @@ export async function savePublicDeck(env: Env, uid: string, sourceId: string) {
     // Copy in SQL so a 500-word deck fits comfortably within D1 Free's query limits.
     await env.DB.batch([
       env.DB.prepare("INSERT OR IGNORE INTO users(id) VALUES (?)").bind(uid),
-      env.DB.prepare(`INSERT INTO decks(id,owner_id,title,description,visibility,word_count,created_at,updated_at,data_bytes,source_deck_id,content_source,source_title,source_hash,content_hash,root_deck_id)
-        SELECT ?,?,title,description,'private',word_count,?,?,data_bytes,id,content_source,title,content_hash,content_hash,COALESCE(root_deck_id,id)
+      env.DB.prepare(`INSERT INTO decks(id,owner_id,title,description,visibility,word_count,created_at,updated_at,data_bytes,source_deck_id,content_source,source_title,source_hash,content_hash,root_deck_id,theme)
+        SELECT ?,?,title,description,'private',word_count,?,?,data_bytes,id,content_source,title,content_hash,content_hash,COALESCE(root_deck_id,id),theme
         FROM decks WHERE id=? AND visibility='public'`).bind(id, uid, now, now, sourceId),
       env.DB.prepare(`INSERT INTO words(id,deck_id,ordinal,word,meaning,example,tags,examples_json)
         SELECT ? || '-' || w.ordinal,?,w.ordinal,w.word,w.meaning,w.example,w.tags,w.examples_json

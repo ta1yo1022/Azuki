@@ -1,3 +1,4 @@
+import { isDeckTheme } from '../shared/deckThemes';
 import { standardDeck } from "../shared/standardDecks";
 import { ValidationError, type Deck, type TextbookTag, type Word } from "../shared/model";
 import { OFFICIAL_OWNER_ID } from "./official";
@@ -13,6 +14,7 @@ export type DeckRow = {
   variant_count: number;
   content_source: string;
   official_level: string;
+  theme?: string;
   title: string;
   description: string;
   visibility: "private" | "public";
@@ -31,6 +33,7 @@ export function deckResult(row: DeckRow): Deck {
     schemaVersion: 1,
     id: row.id,
     title: row.title,
+    ...(isDeckTheme(row.theme)?{theme:row.theme}:{}),
     description: row.description,
     visibility: row.visibility,
     wordCount: row.word_count,

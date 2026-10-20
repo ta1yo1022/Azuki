@@ -43,7 +43,7 @@ export function ForkDialog({deck,onClose,onSave,reader=publicRepository}:{deck:D
     try {
       if(new TextEncoder().encode(raw).length>LIMITS.bytes)throw new Error("JSONは512KB以内にしてください。");
       let value:unknown;try {value=JSON.parse(raw);} catch {throw new Error("JSONの形式を確認してください。");}
-      setPreview(parseDeck(JSON.stringify({schemaVersion:1,title,description,textbookTags:deck.textbookTags,words:value}),{maxWords:LIMITS.forkWords,allowExampleVariants:true}));
+      setPreview(parseDeck(JSON.stringify({schemaVersion:1,title,description,theme:deck.theme,textbookTags:deck.textbookTags,words:value}),{maxWords:LIMITS.forkWords,allowExampleVariants:true}));
     } catch(e){setError((e as Error).message);}
   }
   async function submit() {

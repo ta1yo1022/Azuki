@@ -1,3 +1,4 @@
+import { isDeckTheme, type DeckTheme } from './deckThemes.ts';
 export const LIMITS = {
   bytes: 512 * 1024,
   importWords: 5000,
@@ -35,6 +36,7 @@ export function parseWordExamples(value: unknown, label = '例文'): WordExample
   });
 }
 export type DeckInput = {
+  theme?: DeckTheme;
   schemaVersion: 1;
   title: string;
   description: string;
@@ -163,7 +165,8 @@ export function parseDeck(raw: string, options: { maxWords?: number; allowExampl
         ) === i,
     );
   // Ownership, visibility, official status, level, and source metadata are never imported.
-  return { schemaVersion: 1, title, description, textbookTags, words };
+  if(data.theme!==undefined&&!isDeckTheme(data.theme))throw new ValidationError('単語帳の色を選択してください。');
+  return { schemaVersion: 1, title, description, textbookTags, words, ...(isDeckTheme(data.theme)?{theme:data.theme}:{}) };
 }
 export const EXAMPLE_JSON = JSON.stringify(
   {

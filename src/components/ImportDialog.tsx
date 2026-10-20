@@ -1,3 +1,5 @@
+import { ThemePicker } from './ThemePicker';
+import type { DeckTheme } from '../../shared/deckThemes';
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -35,6 +37,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
   const [textbookName, setTextbookName] = useState("");
   const [edition, setEdition] = useState("");
   const [title, setTitle] = useState("");
+  const [theme,setTheme]=useState<DeckTheme>('azuki');
   const [description, setDescription] = useState("");
   function showPreview(text: string) {
     setPreview({ schemaVersion: 1, title: "", description: "", textbookTags: [], words: parseImportWords(text) });
@@ -79,7 +82,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
       if (category === "textbook" && !textbookName.trim()) throw new Error("教材名を入力してください。");
       const textbookTags = category === "textbook" ? [{ name: textbookName.trim(), edition: edition.trim() }]
         : category ? [{ name: category }] : [];
-      await onImport(parseDeck(JSON.stringify({ ...preview, title: category === "textbook" ? textbookName.trim() : title, description, textbookTags })));
+      await onImport(parseDeck(JSON.stringify({ ...preview, theme, title: category === "textbook" ? textbookName.trim() : title, description, textbookTags })));
       onClose();
     } catch (e) {
       setError((e as Error).message);
@@ -222,6 +225,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
               <div><strong>単語を読み込みました</strong>{name && <span>{name}</span>}</div>
               <span className="import-word-count">{preview.words.length}<small>語</small></span>
             </div>
+            <ThemePicker value={theme} onChange={setTheme} disabled={busy} />
             <fieldset className="import-classification" disabled={busy}>
               <legend className="visually-hidden">単語帳の設定</legend>
               {category !== "textbook" && <div className="import-field">

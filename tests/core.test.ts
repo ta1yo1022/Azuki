@@ -123,6 +123,19 @@ describe("owner isolation and atomic D1 imports", () => {
       ALLOW_IMPORTS: "true",
     };
   });
+  it('persists deck themes, validates choices, and restricts edits to the owner',async()=>{
+    const created=await call('/decks','POST',{...sample(),theme:'blue'});
+    expect(created.status).toBe(201);
+    const deck=(await created.json() as any).deck;expect(deck.theme).toBe('blue');
+    expect((await (await call(`/decks/${deck.id}`)).json() as any).deck.theme).toBe('blue');
+    expect((await call(`/decks/${deck.id}/theme`,'PATCH',{theme:'green'},'bob')).status).toBe(404);
+    expect((await call(`/decks/${deck.id}/theme`,'PATCH',{theme:'evil'})).status).toBe(400);
+    const edited=await call(`/decks/${deck.id}/theme`,'PATCH',{theme:'purple'});expect(edited.status).toBe(200);expect((await edited.json() as any).deck.theme).toBe('purple');
+    await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'public'});
+    expect((await (await call(`/public/decks/${deck.id}`)).json() as any).deck.theme).toBe('purple');
+    const copied=await call(`/decks/${deck.id}/save`,'POST',undefined,'bob');expect(copied.status).toBe(201);expect((await copied.json() as any).deck.theme).toBe('purple');
+    expect((await call('/decks','POST',{...sample(),theme:'<script>'})).status).toBe(400);
+  });
   function audioMock(){
     const objects=new Map<string,ArrayBuffer>();
     const types=new Map<string,string>();

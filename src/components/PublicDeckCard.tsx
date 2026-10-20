@@ -1,3 +1,4 @@
+import { deckThemeStyle } from '../../shared/deckThemes';
 import { Link } from "react-router-dom";
 import { BookOpenText, Globe, Tag } from "lucide-react";
 import type { Deck } from "../../shared/model";
@@ -6,7 +7,8 @@ import { OfficialBadge, OfficialLevelBadge } from "./DeckCredit";
 export function PublicDeckCard({deck, index, heading = "h2"}: {deck: Deck; index: number; heading?: "h2" | "h3"}) {
   const Heading = heading;
   return (<Link
-            className={`deck-card palette-${index % 3}${deck.isOfficial ? " official-deck-card" : ""}`}
+            style={deckThemeStyle(deck.theme) as React.CSSProperties}
+            className={`deck-card palette-${index % 3}${deck.theme?" themed-deck":""}${deck.isOfficial ? " official-deck-card" : ""}`}
             to={`/shared/${encodeURIComponent(deck.id)}`}
           >
             <div className="deck-cover">
