@@ -1,3 +1,4 @@
+import { DeckMetadataFields } from './DeckMetadataFields';
 import { ThemePicker } from './ThemePicker';
 import type { DeckTheme } from '../../shared/deckThemes';
 import { Link, useLocation, useSearchParams } from "react-router-dom";
@@ -228,33 +229,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
             <ThemePicker value={theme} onChange={setTheme} disabled={busy} />
             <fieldset className="import-classification" disabled={busy}>
               <legend className="visually-hidden">単語帳の設定</legend>
-              {category !== "textbook" && <div className="import-field">
-                <label htmlFor="import-title-input">単語帳の名前 <small className="field-required">必須</small></label>
-                <input id="import-title-input" value={title} maxLength={80} required placeholder="例：旅先で使う英単語" onChange={(e) => setTitle(e.target.value)} />
-              </div>}
-              <div className="import-field">
-                <label htmlFor="import-category">カテゴリ <small>任意</small></label>
-                <select id="import-category" value={category} onChange={(e) => setCategory(e.target.value)}>
-                  <option value="">カテゴリを選ぶ</option>
-                  <option value="textbook">教材</option>
-                  {["日常生活", "旅行", "仕事", "試験対策", "食事・カフェ", "その他"].map((name) => <option key={name} value={name}>{name}</option>)}
-                </select>
-              </div>
-              {category === "textbook" && <div className="import-textbook-fields">
-                <div className="import-field">
-                  <label htmlFor="import-textbook-name">教材名 <small className="field-required">必須</small></label>
-                  <input id="import-textbook-name" value={textbookName} maxLength={80} placeholder="例：英単語ターゲット1900" onChange={(e) => setTextbookName(e.target.value)} required />
-                </div>
-                <div className="import-field">
-                  <label htmlFor="import-textbook-edition">版 <small>任意</small></label>
-                  <input id="import-textbook-edition" value={edition} maxLength={40} placeholder="例：第6版" onChange={(e) => setEdition(e.target.value)} />
-                </div>
-                <small className="import-textbook-hint">教材名を単語帳のタイトルに使います。</small>
-              </div>}
-              <div className="import-field">
-                <label htmlFor="import-description">説明 <small>任意</small></label>
-                <textarea id="import-description" value={description} maxLength={240} rows={2} placeholder="覚えたい場面や、学習する範囲など" onChange={(e) => setDescription(e.target.value)} />
-              </div>
+              <DeckMetadataFields prefix="import" value={{title,description,category,textbookName,edition}} onChange={value=>{setTitle(value.title);setDescription(value.description);setCategory(value.category);setTextbookName(value.textbookName);setEdition(value.edition);}} />
             </fieldset>
             <div className="import-preview-heading"><h3>単語のプレビュー</h3><span>{preview.words.length > 5 ? "先頭の5語" : `${preview.words.length}語`}</span></div>
             <div className="preview-words">

@@ -1,28 +1,25 @@
+import { DeckMetadataFields, DECK_CATEGORIES, type MetadataFields } from './DeckMetadataFields';
 import { useRef, useState, type ReactNode } from 'react';
-import { Settings2, X, Plus, Trash2 } from 'lucide-react';
+import { Settings2, X } from 'lucide-react';
 import { ThemePicker } from './ThemePicker';
 import type { Deck } from '../../shared/model';
 import type { DeckSettingsInput } from '../lib/repository';
 export function DeckSettings({deck,save,onSaved,renderTrigger}:{renderTrigger?:(open:()=>void)=>ReactNode;deck:Deck;save:(id:string,values:DeckSettingsInput)=>Promise<Deck>;onSaved:(deck:Deck)=>void}){
  const dialog=useRef<HTMLDialogElement>(null);
+ function fields():MetadataFields{const tag=deck.textbookTags[0];return {title:deck.title,description:deck.description,category:tag?(DECK_CATEGORIES.includes(tag.name)&&!tag.edition&&!tag.chapter?tag.name:'textbook'):'',textbookName:tag?.name??'',edition:tag?.edition??''};}
+ const [metadata,setMetadata]=useState<MetadataFields>(fields);
  const [busy,setBusy]=useState(false),[error,setError]=useState('');
  const [values,setValues]=useState<DeckSettingsInput>({title:deck.title,description:deck.description,textbookTags:deck.textbookTags,theme:deck.theme});
- function open(){setError('');setValues({title:deck.title,description:deck.description,textbookTags:deck.textbookTags,theme:deck.theme});dialog.current?.showModal();}
- async function submit(){if(busy)return;setBusy(true);setError('');try{onSaved(await save(deck.id,values));dialog.current?.close();}catch(e){setError(e instanceof Error?e.message:'保存できませんでした。');}finally{setBusy(false);}}
- function tagField(index:number,key:'name'|'edition'|'chapter',text:string){setValues(prev=>({...prev,textbookTags:prev.textbookTags.map((tag,i)=>i===index?{...tag,[key]:text}:tag)}));}
+ function open(){setError('');setMetadata(fields());setValues({title:deck.title,description:deck.description,textbookTags:deck.textbookTags,theme:deck.theme});dialog.current?.showModal();}
+ async function submit(){if(busy)return;setBusy(true);setError('');try{if(metadata.category==='textbook'&&!metadata.textbookName.trim())throw new Error('教材名を入力してください。');onSaved(await save(deck.id,{...values,title:metadata.category==='textbook'?metadata.textbookName.trim():metadata.title,description:metadata.description,textbookTags:metadata.category==='textbook'?[{name:metadata.textbookName.trim(),edition:metadata.edition.trim()}]:metadata.category?[{name:metadata.category}]:[]}));dialog.current?.close();}catch(e){setError(e instanceof Error?e.message:'保存できませんでした。');}finally{setBusy(false);}}
+
  return <>
   {renderTrigger?renderTrigger(open):<button className="button secondary" onClick={open}><Settings2 size={17}/>単語帳の設定</button>}
   <dialog ref={dialog} className="deck-settings-dialog" aria-labelledby="deck-settings-title" onCancel={event=>{if(busy)event.preventDefault();}}>
    <form onSubmit={event=>{event.preventDefault();void submit();}}>
     <div className="deck-settings-heading"><h2 id="deck-settings-title">単語帳の設定</h2><button type="button" disabled={busy} className="icon-button" aria-label="設定を閉じる" onClick={()=>dialog.current?.close()}><X size={20}/></button></div>
     <fieldset className="deck-settings-fields" disabled={busy}>
-     <label>単語帳の名前<input required maxLength={80} value={values.title} onChange={e=>setValues({...values,title:e.target.value})}/></label>
-     <label>説明<textarea rows={3} maxLength={240} value={values.description} onChange={e=>setValues({...values,description:e.target.value})}/></label>
-     <div className="deck-settings-tags-heading"><strong>教材タグ</strong><button type="button" className="text-button" disabled={values.textbookTags.length>=6} onClick={()=>setValues({...values,textbookTags:[...values.textbookTags,{name:''}]})}><Plus size={15}/>追加</button></div>
-     {values.textbookTags.map((tag,index)=><div className="deck-settings-tag" key={index}>
-      <label>教材名<input required maxLength={80} value={tag.name} onChange={e=>tagField(index,'name',e.target.value)}/></label>
-      <div><label>版<input maxLength={40} value={tag.edition??''} onChange={e=>tagField(index,'edition',e.target.value)}/></label><label>章・範囲<input maxLength={40} value={tag.chapter??''} onChange={e=>tagField(index,'chapter',e.target.value)}/></label><button type="button" className="icon-button" aria-label={`教材タグ${index+1}を削除`} onClick={()=>setValues({...values,textbookTags:values.textbookTags.filter((_,i)=>i!==index)})}><Trash2 size={17}/></button></div>
-     </div>)}
+     <DeckMetadataFields prefix="deck-settings" value={metadata} onChange={setMetadata}/>
      <ThemePicker value={values.theme} onChange={theme=>setValues({...values,theme})} disabled={busy}/>
     </fieldset>
     {error&&<p className="error-box" role="alert">{error}</p>}

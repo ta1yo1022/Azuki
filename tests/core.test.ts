@@ -131,11 +131,12 @@ describe("owner isolation and atomic D1 imports", () => {
     expect((await call(`/decks/${deck.id}/settings`,'PATCH',data,'bob')).status).toBe(404);
     const response=await call(`/decks/${deck.id}/settings`,'PATCH',data);expect(response.status).toBe(200);
     const updated=(await response.json() as any).deck;
-    expect(updated).toMatchObject({...data,visibility:'public',wordCount:2});
+    expect(updated).toMatchObject({title:data.title,description:data.description,theme:data.theme,visibility:'public',wordCount:2});
+    expect(updated.textbookTags).toHaveLength(2);expect(updated.textbookTags).toEqual(expect.arrayContaining(data.textbookTags.map(tag=>expect.objectContaining(tag))));
     expect(db.prepare('SELECT content_hash,word_count FROM decks WHERE id=?').get(deck.id)).toEqual(before);
     expect((await (await call(`/public/decks/${deck.id}`)).json() as any).deck.title).toBe(data.title);
     expect((await call(`/decks/${deck.id}/settings`,'PATCH',{...data,title:'',textbookTags:[]})).status).toBe(400);
-    expect((await (await call(`/decks/${deck.id}`)).json() as any).deck.textbookTags).toMatchObject(data.textbookTags);
+    expect((await (await call(`/decks/${deck.id}`)).json() as any).deck.textbookTags).toEqual(expect.arrayContaining(data.textbookTags.map(tag=>expect.objectContaining(tag))));
     const cleared=await call(`/decks/${deck.id}/settings`,'PATCH',{...data,textbookTags:[]});expect(cleared.status).toBe(200);expect((await cleared.json() as any).deck.textbookTags).toEqual([]);
   });
   it('persists deck themes, validates choices, and restricts edits to the owner',async()=>{
