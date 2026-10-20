@@ -187,5 +187,9 @@ it('opens details from an underlined target without flipping or advancing the ex
  expect(face()).toContain('The captain refused.');expect(face()).not.toContain('船長は拒否した。');
  await act(async()=>window.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true})));
  expect(container.textContent).not.toContain('学習完了');
- await click('閉じる');expect(container.querySelector('dialog')).toBeNull();expect(face()).toContain('The captain refused.');
+ const dialog=container.querySelector('dialog')!;
+ vi.spyOn(dialog,'getBoundingClientRect').mockReturnValue({left:20,right:300,top:100,bottom:600} as DOMRect);
+ await act(async()=>dialog.dispatchEvent(new MouseEvent('click',{clientX:30,clientY:120,bubbles:true})));expect(dialog.open).toBe(true);
+ await act(async()=>dialog.dispatchEvent(new MouseEvent('click',{clientX:10,clientY:80,bubbles:true})));
+ expect(container.querySelector('dialog')).toBeNull();expect(face()).toContain('The captain refused.');
 });
