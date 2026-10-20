@@ -6,7 +6,7 @@ import {WordAudioButton} from '../src/components/WordAudioButton';
 const mocks=vi.hoisted(()=>({play:vi.fn(),stop:vi.fn()}));
 vi.mock('../src/lib/wordAudio',()=>({playWordAudio:mocks.play,stopWordAudio:mocks.stop}));
 let root:Root,container:HTMLDivElement;
-beforeEach(()=>{vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);mocks.play.mockReset().mockImplementation((_deck,_word,_public,notify)=>{notify('playing');return 3;});mocks.stop.mockReset();container=document.createElement('div');document.body.append(container);root=createRoot(container);});
+beforeEach(()=>{vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);mocks.play.mockReset().mockImplementation((_deck,_word,_public,notify)=>{notify('playing');return 3;});mocks.stop.mockReset();container=document.createElement('div');document.body.appendChild(container);root=createRoot(container);});
 afterEach(async()=>{await act(async()=>root.unmount());container.remove();vi.unstubAllGlobals();});
 it('plays the source word from an example card without triggering its parent',async()=>{
  const flip=vi.fn();await act(async()=>root.render(<div onClick={flip}><WordAudioButton deckId="deck" wordId="word:example:2" word="hello" isPublic/></div>));
