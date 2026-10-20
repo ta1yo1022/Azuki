@@ -3478,3 +3478,11 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .offer-form{max-width:500px}.offer-form label{display:block;margin:16px 0 8px;font-weight:700}.offer-form>div{display:flex;gap:12px;align-items:center}.offer-form input{min-width:0;flex:1;border:1px solid var(--border);border-radius:12px;padding:14px;background:var(--paper);color:var(--text);font:inherit}.offer-form .button{flex-shrink:0}
 
 .plan-feedback{margin:20px 0;color:var(--accent)}.plan-feedback>p{margin:0 0 14px;line-height:1.7}.plan-feedback>.button{max-width:100%;white-space:normal}
+
+@media(min-width:801px){
+ .sidebar-bottom{padding-top:6px}
+ .sidebar-bottom .storage-note{padding:6px 12px 8px}
+ .sidebar-bottom .storage-note p{margin:6px 0}
+ .sidebar-bottom .audio-quota-caption{margin:2px 12px 6px;line-height:1.4}
+ .sidebar-bottom .profile{padding-top:12px}
+}
