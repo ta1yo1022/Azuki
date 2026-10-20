@@ -3486,3 +3486,5 @@ a.deck-card, a.nav-item { text-decoration: none; }
  .sidebar-bottom .audio-quota-caption{margin:2px 12px 6px;line-height:1.4}
  .sidebar-bottom .profile{padding-top:12px}
 }
+
+.study-target-word{display:inline;padding:0;border:0;border-radius:0;background:none;color:inherit;font:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:underline;text-decoration-thickness:.06em;text-underline-offset:.16em;cursor:pointer}.study-target-word:hover{text-decoration-thickness:.1em}.study-target-word:focus-visible{outline:2px solid currentColor;outline-offset:4px;border-radius:3px}.study-word-dialog{width:min(620px,calc(100% - 32px));max-height:85dvh;overflow:auto}.study-word-dialog .dialog-header{align-items:center;gap:20px}.study-word-dialog h2{overflow-wrap:anywhere}.study-detail-meaning{font-size:20px;line-height:1.7}.study-card[role=button]{cursor:pointer;font:inherit}

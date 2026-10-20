@@ -11,7 +11,7 @@ const words: Word[] = Array.from({ length: 53 }, (_, i) => ({ id: `w${i}`, ordin
 const deck: Deck = { id: "book", schemaVersion: 1, title: "テスト", description: "", textbookTags: [], visibility: "public", wordCount: 53, createdAt: "", updatedAt: "" };
 const reader = { words: vi.fn<(id: string, query: string, cursor: number) => Promise<WordPage>>() };
 async function mount(start = true) { await act(async () => root.render(<StudyPage deck={deck} reader={reader} onClose={() => {}} />)); if(start && container.querySelector(".study-setup")) await click("学習をはじめる"); }
-function button(text: string) { return [...container.querySelectorAll('button')].find(b => b.textContent?.includes(text))!; }
+function button(text: string) { return [...container.querySelectorAll<HTMLElement>('button,[role=button]')].find(b => b.textContent?.includes(text))!; }
 async function click(text: string) { await act(async () => button(text).click()); }
 async function choose(label: string, value: string) {
   await act(async () => root.render(<MemoryRouter><SettingsPage onClose={() => {}} /></MemoryRouter>));
@@ -174,4 +174,18 @@ it('shuffles individual examples without dropping or repeating them',async()=>{
  await mountExamples();const seen=[];
  for(let i=0;i<3;i++){seen.push(container.querySelector('.study-card-face[aria-hidden="false"] .study-sentence')?.textContent);if(i<2)await click('次の例文');}
  expect(seen).not.toEqual(['First.','Second.','Third.']);expect([...seen].sort()).toEqual(['First.','Second.','Third.'].sort());
+});
+it('opens details from an underlined target without flipping or advancing the example card',async()=>{
+ reader.words.mockResolvedValue({words:[{...words[0],word:'refuse',meaning:'拒否する',examples:[{text:'The captain refused.',translation:'船長は拒否した。'}]}],nextCursor:null});
+ await mountExamples();
+ const target=container.querySelector<HTMLButtonElement>('.study-card-face[aria-hidden="false"] .study-target-word')!;
+ expect(target.textContent).toBe('refused');
+ await act(async()=>target.click());
+ expect(container.querySelector('dialog')?.open).toBe(true);
+ expect(container.querySelector('dialog')?.textContent).toContain('拒否する');
+ expect(container.querySelector('dialog')?.textContent).toContain('別の意味-0');
+ expect(face()).toContain('The captain refused.');expect(face()).not.toContain('船長は拒否した。');
+ await act(async()=>window.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true})));
+ expect(container.textContent).not.toContain('学習完了');
+ await click('閉じる');expect(container.querySelector('dialog')).toBeNull();expect(face()).toContain('The captain refused.');
 });

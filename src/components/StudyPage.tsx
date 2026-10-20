@@ -1,3 +1,5 @@
+import { WordDetails } from './WordDetails';
+import { exampleWordParts } from '../lib/exampleWord';
 import { WordAudioButton } from "./WordAudioButton";
 import { useStudyArrows } from '../lib/useStudyArrows';
 import { useStudyTracking } from "../lib/studyTracking";
@@ -49,7 +51,10 @@ export function StudyPage({
     setStarted(true);
     setSettingsOpen(false);
   }
-  const card = useRef<HTMLButtonElement>(null);
+  const card = useRef<HTMLDivElement>(null);
+  const [detailWord,setDetailWord]=useState<Word|null>(null);
+  const detailDialog=useRef<HTMLDialogElement>(null);
+  useEffect(()=>{if(detailWord){detailDialog.current?.showModal();}else{detailDialog.current?.close();}},[detailWord]);
   const requestVersion = useRef(0);
   const busy = useRef(false);
   const [words, setWords] = useState<StudyCard[]>([]);
@@ -178,7 +183,7 @@ export function StudyPage({
     }
   }
 
-  useStudyArrows(started && !settingsOpen && !completed && !loading && !error, previous, next);
+  useStudyArrows(started && !detailWord && !settingsOpen && !completed && !loading && !error, previous, next);
 
   return (
     <div
@@ -186,6 +191,7 @@ export function StudyPage({
       onKeyDown={(event) => {
         if (event.key === "Escape") {
           event.preventDefault();
+          if(detailWord){setDetailWord(null);return;}
           if (settingsOpen && started) setSettingsOpen(false);
           else onClose();
           return;
@@ -287,8 +293,11 @@ export function StudyPage({
                 max={total}
                 aria-label="カードの位置"
               />
-              <button
+              <div
                 ref={card}
+                role="button"
+                tabIndex={0}
+                onKeyDown={event=>{if(event.target===event.currentTarget&&(event.key==='Enter'||event.key===' ')){event.preventDefault();setRevealed(value=>!value);}}}
                 className={`study-card ${revealed ? "is-revealed" : ""}`}
                 aria-pressed={revealed}
                 aria-describedby="study-keyboard-hint"
@@ -308,7 +317,7 @@ export function StudyPage({
                   <span className="study-card-scroll">
                     <span className="study-card-body">
                       {examplesMode && word.sentence ? (
-                        <span className="study-sentence" lang={(direction === "ja-en") !== faceRevealed ? "ja" : "en"}>{(direction === "ja-en") !== faceRevealed ? word.sentence.translation : word.sentence.text}</span>
+                        <span className="study-sentence" lang={(direction === "ja-en") !== faceRevealed ? "ja" : "en"}>{(direction === "ja-en") !== faceRevealed ? word.sentence.translation : exampleWordParts(word.sentence.text,word.word).map((part,i)=>part.match?<button type="button" key={i} className="study-target-word" aria-label={`${word.word}の詳細を開く`} onClick={event=>{event.stopPropagation();setDetailWord({...word,id:word.id.split(':example:')[0]});}}>{part.text}</button>:part.text)}</span>
                       ) : faceRevealed ? (
                         <>
                           {direction === "ja-en" ? (
@@ -347,7 +356,7 @@ export function StudyPage({
                 </span>
                   ))}
                 </span>
-              </button>
+              </div>
               <div className="study-navigation">
                 <button
                   className="button secondary"
@@ -369,6 +378,7 @@ export function StudyPage({
           )
         )}
       </main>
+      {detailWord&&<dialog ref={detailDialog} className="study-word-dialog" aria-labelledby="study-word-detail-title" onCancel={event=>{event.preventDefault();setDetailWord(null);}} onClose={()=>{setDetailWord(null);card.current?.focus({preventScroll:true});}}><div className="dialog-inner"><div className="dialog-header"><h2 id="study-word-detail-title">{detailWord.word}</h2><button type="button" className="text-button" onClick={()=>{detailDialog.current?.close();setDetailWord(null);}}>閉じる</button></div><p className="study-detail-meaning" lang="ja">{detailWord.meaning}</p>{!demo&&<WordAudioButton deckId={deck.id} wordId={detailWord.id} word={detailWord.word} isPublic={deck.visibility==='public'}/>}<WordDetails word={detailWord} deckId={demo?undefined:deck.id} isPublic={deck.visibility==='public'}/></div></dialog>}
     </div>
   );
 }
