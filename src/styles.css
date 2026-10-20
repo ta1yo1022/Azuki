@@ -3476,3 +3476,5 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .word-audio-error a{display:block;margin-top:8px;color:var(--accent);text-decoration:underline;font-weight:700}
 
 .offer-form{max-width:500px}.offer-form label{display:block;margin:16px 0 8px;font-weight:700}.offer-form>div{display:flex;gap:12px;align-items:center}.offer-form input{min-width:0;flex:1;border:1px solid var(--border);border-radius:12px;padding:14px;background:var(--paper);color:var(--text);font:inherit}.offer-form .button{flex-shrink:0}
+
+.plan-feedback{margin:20px 0;color:var(--accent)}.plan-feedback>p{margin:0 0 14px;line-height:1.7}.plan-feedback>.button{max-width:100%;white-space:normal}
