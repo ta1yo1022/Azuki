@@ -7,6 +7,7 @@ import { Brand } from './Brand';
 export function PlansPage(){
  const {status,error,loading,refresh}=useBilling();
  const [consent,setConsent]=useState(false);
+ const [offerCode,setOfferCode]=useState('');
  const [toast,setToast]=useState('');
  useEffect(()=>{if(!toast)return;const timer=setTimeout(()=>setToast(''),4500);return()=>clearTimeout(timer);},[toast]);
  const [busy,setBusy]=useState(false),[message,setMessage]=useState('');
@@ -17,14 +18,14 @@ export function PlansPage(){
   synced.current=true;setBusy(true);
   billingRequest<BillingStatus>('refresh','POST').then(()=>{setToast('契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}).catch(e=>setMessage(e.message)).finally(()=>setBusy(false));
  },[params,status]);
- async function action(kind:'checkout'|'portal'|'refresh'){
+ async function action(kind:'checkout'|'portal'|'refresh'|'redeem'){
   if(busy)return;setBusy(true);setMessage('');
   try{
    if(!auth?.currentUser)await googleSignIn();
    if(kind==='checkout'&&!consent)throw new Error('利用規約と毎月の自動更新をご確認ください。');
-   const data=await billingRequest<{url?:string}>(kind,'POST',kind==='checkout'?{acceptTerms:true}:undefined);
+   const data=await billingRequest<{url?:string}>(kind,'POST',kind==='checkout'?{acceptTerms:true}:kind==='redeem'?{code:offerCode}:undefined);
    if(data.url){const url=new URL(data.url);if(url.protocol!=='https:'||!(url.hostname==='checkout.stripe.com'||url.hostname==='billing.stripe.com'))throw new Error('決済画面のURLを確認できませんでした。');window.location.assign(url.href);}
-   else{setToast('契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}
+   else{if(kind==='redeem')setOfferCode('');setToast(kind==='redeem'?'1か月無料オファーを適用しました。':'契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}
   }catch(e){setMessage(e instanceof Error?e.message:'処理できませんでした。');}finally{setBusy(false);}
  }
  return <div className="plans-page"><header><Brand/><Link className="text-button" to="/library"><ArrowLeft size={17}/>ライブラリへ</Link></header><main>
@@ -36,6 +37,8 @@ export function PlansPage(){
    {loading?<p role="status">契約状況を確認しています…</p>:status?.pro?<p className="plan-active"><Check/>Proをご利用中です</p>:<button className="button primary" disabled={busy||!status?.checkoutAvailable||!consent} onClick={()=>void action('checkout')}>{busy?'準備しています…':status?.checkoutAvailable?'月額480円でProを始める':'販売開始の準備中です'}</button>}
    <p className="plan-conditions">毎月自動更新。契約管理から解約できます。解約予約後も、支払済みの期間終了まで利用できます。</p>
   </section></div>
+  {status?.offerExpiresAt&&status.offerExpiresAt>Date.now()/1000&&<section className="plan-management"><h2>1か月無料オファーをご利用中です</h2><p>{new Date(status.offerExpiresAt*1000).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'})}までProを利用できます。カード登録・自動課金はありません。期間終了後は無料プランへ戻ります。</p></section>}
+  {!status?.pro&&!status?.offerRedeemed&&status?.enabled&&<section className="plan-management"><h2>オファーコードをお持ちの方</h2><p>カード登録不要で1か月Proを利用できます。1アカウント1回限り。終了後は自動課金されず、無料プランへ戻ります。</p><form className="offer-form" onSubmit={event=>{event.preventDefault();void action('redeem');}}><label htmlFor="offer-code">オファーコード</label><div><input id="offer-code" value={offerCode} onChange={event=>setOfferCode(event.target.value)} maxLength={64} autoComplete="off" spellCheck={false}/><button className="button secondary" disabled={busy||loading||!offerCode.trim()}>適用する</button></div></form></section>}
   {status?.status&&<section className="plan-management"><h2>契約の管理</h2><p>{status.cancelAtPeriodEnd?'解約予約済みです。':status.pro?'契約は有効です。':'お支払い・契約状況をご確認ください。'}{status.periodEnd?` 現在の契約期間：${new Date(status.periodEnd*1000).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'})}まで。`:''}</p><button className="button secondary" disabled={busy} onClick={()=>void action('portal')}>契約・支払い方法を管理</button></section>}
   <p className="plan-note">音声枠は日本時間9時にリセットします。生成済み音声は枠に含まれません。Proも不正利用や過度な連続生成を防ぐため、一時的に制限する場合があります。保存語数など、その他の上限は変わりません。</p>
   {(error||message)&&<p className="error-box" role="status">{message||error}</p>}

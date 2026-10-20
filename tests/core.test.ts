@@ -1,4 +1,5 @@
 import { sqliteD1 } from './helpers/sqliteD1';
+import { oneMonthLater } from '../worker/billing';
 import Stripe from 'stripe';
 import { afterEach, vi, beforeEach, describe, expect, it } from "vitest";
 import { DatabaseSync } from "node:sqlite";
@@ -146,6 +147,38 @@ describe("owner isolation and atomic D1 imports", () => {
   function grantPro(uid='alice',status='active',mode=0,end=Math.floor(Date.now()/1000)+86400){
     db.prepare('INSERT OR REPLACE INTO billing_subscriptions(subscription_id,customer_id,user_id,livemode,price_id,status,period_end,cancel_at_period_end,updated_at) VALUES(?,?,?,?,?,?,?,?,?)').run('sub_'+uid,'cus_'+uid,uid,mode,'price_azuki',status,end,1,new Date().toISOString());
   }
+  it('redeems the common offer once, enforces expiry and isolates accounts and modes without Stripe calls',async()=>{
+    enableBilling();const network=vi.spyOn(globalThis,'fetch');
+    expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH'})).status).toBe(403);
+    expect((await call('/billing/redeem','POST',{code:'bad'},'admin')).status).toBe(400);
+    const responses=await Promise.all([call('/billing/redeem','POST',{code:' azuki1month '},'admin'),call('/billing/redeem','POST',{code:'AZUKI1MONTH'},'admin')]);
+    expect(responses.filter(r=>r.status===200)).toHaveLength(1);
+    const info=await (await call('/billing/status','GET',undefined,'admin')).json() as any;
+    expect(info).toMatchObject({pro:true,offerRedeemed:true,status:null});expect(info.offerExpiresAt).toBeGreaterThan(Date.now()/1000+27*86400);
+    expect((await call('/billing/book','GET',undefined,'admin')).status).toBe(200);
+    expect((await (await call('/billing/status')).json() as any).pro).toBe(false);
+    env.STRIPE_SECRET_KEY='sk_live_other';expect((await (await call('/billing/status','GET',undefined,'admin')).json() as any).pro).toBe(false);env.STRIPE_SECRET_KEY='sk_test_azuki';
+    db.prepare('UPDATE pro_offer_redemptions SET expires_at=?').run(Math.floor(Date.now()/1000)-1);
+    expect((await call('/billing/book','GET',undefined,'admin')).status).toBe(402);
+    expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH'},'admin')).status).toBe(409);
+    expect(network).not.toHaveBeenCalled();
+  });
+  it('rejects disabled offers, paid subscribers and pending checkout sessions',async()=>{
+    enableBilling();db.prepare('UPDATE pro_offers SET active=0').run();
+    expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH'},'admin')).status).toBe(400);
+    db.prepare('UPDATE pro_offers SET active=1,ends_at=1').run();expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH'},'admin')).status).toBe(400);
+    db.prepare('UPDATE pro_offers SET ends_at=NULL').run();grantPro('admin');
+    expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH'},'admin')).status).toBe(409);
+    db.prepare('DELETE FROM billing_subscriptions').run();
+    db.prepare('INSERT INTO billing_checkouts(user_id,livemode,attempt_id,expires_at) VALUES(?,?,?,?)').run('admin',0,'attempt',Date.now()+60000);
+    expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH'},'admin')).status).toBe(409);
+  });
+  it('uses a calendar month with Japan month-end and leap-year handling',()=>{
+    const end=(date:string)=>new Date(oneMonthLater(Date.parse(date)/1000)*1000).toISOString();
+    expect(end('2026-01-31T12:00:00+09:00')).toBe('2026-02-28T03:00:00.000Z');
+    expect(end('2028-01-31T12:00:00+09:00')).toBe('2028-02-29T03:00:00.000Z');
+    expect(end('2026-10-20T21:00:00+09:00')).toBe('2026-11-20T12:00:00.000Z');
+  });
   it('enforces separate free generation quotas, cached playback, and Pro unlimited generation',async()=>{
     const {run}=audioMock();enableBilling();
     const input={...sample(11),words:sample(11).words.map(word=>({...word,examples:Array.from({length:6},(_,i)=>({text:`This is example ${i} for ${word.word}.`,translation:'日本語'}))}))};

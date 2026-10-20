@@ -139,3 +139,7 @@ Webhookは`POST /api/billing/webhook`です。`checkout.session.completed`、`ch
 テストは`AZUKI_STRIPE_SMOKE=1 npx vitest run tests/stripe-integration.test.ts`で実行できます。実際のStripeテストAPIでCheckout・税込480円・二重申込防止・テスト課金・通知反映・解約・Portalを確認し、作成したテスト顧客と契約は終了時に削除します。sk_live_では実行できません。通常のテストとCIではこの外部接続テストをスキップします。ローカルWebhookはStripe CLIの`stripe listen --forward-to http://localhost:8787/api/billing/webhook`で転送します。秘密鍵をコマンド履歴に直接書かないでください。
 
 音声生成は保存された単語・例文番号からサーバーで本文を解決し、本文の持ち込みは受け付けません。失敗した生成は個人枠を戻します。Proでも不正な連続生成を防ぐため1分に新規30件、全体の安全上限を設けています。R2の既存音声の再生には個人枠を適用しません。
+
+### 1か月無料オファー
+
+共通コード `AZUKI1MONTH` をプラン画面で適用できます。Googleの確認済みアカウントごとに1回のみ、適用から日本時間で暦上の1か月（翌月に同日がない場合は月末）Proを付与します。Stripeの顧客・契約・請求は作成せず、期限で権限が失効します。既存有料契約・決済手続き中は適用できません。テストと本番の権限は分離します。配布を停止する場合は `pro_offers.active=0` に更新します。停止は新規適用のみを止め、付与済み期間には影響しません。利用期限の記録は再利用防止のため保持します。

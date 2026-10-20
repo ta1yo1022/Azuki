@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
-export type BillingStatus={enabled:boolean;pro:boolean;testMode:boolean;monthlyPrice:number;status:string|null;periodEnd:number|null;cancelAtPeriodEnd:boolean;checkoutAvailable:boolean};
+export type BillingStatus={offerExpiresAt?:number|null;offerRedeemed?:boolean;enabled:boolean;pro:boolean;testMode:boolean;monthlyPrice:number;status:string|null;periodEnd:number|null;cancelAtPeriodEnd:boolean;checkoutAvailable:boolean};
 const base=(import.meta.env.VITE_API_BASE_URL??'').replace(/\/$/,'');
 export async function billingRequest<T>(path:string,method='GET',body?:unknown):Promise<T>{
  const user=auth?.currentUser;

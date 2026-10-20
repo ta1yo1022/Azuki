@@ -12,11 +12,13 @@ export function stripeClient(env:Env){
 export async function hasPro(env:Env,uid?:string){
  if(!uid||!billingEnabled(env))return false;
  const row=await env.DB.prepare(`SELECT subscription_id FROM billing_subscriptions WHERE user_id=? AND livemode=? AND price_id=? AND status='active' AND period_end>? LIMIT 1`).bind(uid,billingLive(env),env.STRIPE_PRICE_ID??'',Math.floor(Date.now()/1000)).first();
- return Boolean(row);
+ if(row)return true;
+ return Boolean(await env.DB.prepare('SELECT user_id FROM pro_offer_redemptions WHERE user_id=? AND livemode=? AND expires_at>?').bind(uid,billingLive(env),Math.floor(Date.now()/1000)).first());
 }
 export async function subscriptionInfo(env:Env,uid?:string){
  const row=uid?await env.DB.prepare(`SELECT status,period_end,cancel_at_period_end FROM billing_subscriptions WHERE user_id=? AND livemode=? AND price_id=? ORDER BY CASE WHEN status='active' THEN 0 ELSE 1 END,period_end DESC LIMIT 1`).bind(uid,billingLive(env),env.STRIPE_PRICE_ID??'').first<{status:string;period_end:number;cancel_at_period_end:number}>():null;
- return {enabled:billingEnabled(env),pro:await hasPro(env,uid),testMode:billingEnabled(env)&&billingLive(env)===0,monthlyPrice:480,currency:'jpy',status:row?.status??null,periodEnd:row?.period_end??null,cancelAtPeriodEnd:Boolean(row?.cancel_at_period_end),checkoutAvailable:billingEnabled(env)&&Boolean(env.STRIPE_SECRET_KEY&&env.STRIPE_PRICE_ID&&env.STRIPE_WEBHOOK_SECRET)};
+ const offer=uid?await env.DB.prepare('SELECT expires_at FROM pro_offer_redemptions WHERE user_id=? AND livemode=?').bind(uid,billingLive(env)).first<{expires_at:number}>():null;
+ return {offerExpiresAt:offer?.expires_at??null,offerRedeemed:Boolean(offer),enabled:billingEnabled(env),pro:await hasPro(env,uid),testMode:billingEnabled(env)&&billingLive(env)===0,monthlyPrice:480,currency:'jpy',status:row?.status??null,periodEnd:row?.period_end??null,cancelAtPeriodEnd:Boolean(row?.cancel_at_period_end),checkoutAvailable:billingEnabled(env)&&Boolean(env.STRIPE_SECRET_KEY&&env.STRIPE_PRICE_ID&&env.STRIPE_WEBHOOK_SECRET)};
 }
 function customerId(value:string|{id:string}|null){return typeof value==='string'?value:value?.id;}
 // All lifecycle events reconcile from Stripe's latest state, serialized per customer.
@@ -82,6 +84,23 @@ export async function billingRoute(request:Request,env:Env,identity:VerifiedIden
   const allowed=await env.DB.prepare(`INSERT INTO billing_rate_limits(user_id,minute,amount) VALUES(?,?,1) ON CONFLICT(user_id,minute) DO UPDATE SET amount=amount+1 WHERE amount<12 RETURNING amount`).bind(uid,minute).first();
   if(!allowed)return result({error:'契約の確認が続いています。1分ほど待って再試行してください。'},429);
  }
+ if(path==='/api/billing/redeem'&&request.method==='POST'){
+  if(!identity.emailVerified)return result({error:'確認済みのGoogleアカウントでログインしてください。'},403);
+  let body:unknown;try{body=JSON.parse(await limitedBody(request,1024));}catch{return result({error:'コードを確認してください。'},400);}
+  const raw=body&&typeof body==='object'&&'code' in body?body.code:null;
+  if(typeof raw!=='string'||raw.length>64)return result({error:'コードを確認してください。'},400);
+  const code=raw.normalize('NFKC').trim().toUpperCase(),mode=billingLive(env),now=Math.floor(Date.now()/1000);
+  const existing=await env.DB.prepare('SELECT user_id FROM pro_offer_redemptions WHERE user_id=? AND livemode=?').bind(uid,mode).first();
+  if(existing)return result({error:'このアカウントは1か月無料オファーを利用済みです。'},409);
+  const paid=await env.DB.prepare("SELECT subscription_id FROM billing_subscriptions WHERE user_id=? AND livemode=? AND status NOT IN ('canceled','incomplete_expired') LIMIT 1").bind(uid,mode).first();
+  if(paid)return result({error:'有料契約がある場合は利用できません。契約状況をご確認ください。'},409);
+  const checkout=await env.DB.prepare('SELECT user_id FROM billing_checkouts WHERE user_id=? AND livemode=? AND expires_at>?').bind(uid,mode,Date.now()).first();
+  if(checkout)return result({error:'決済手続き中です。決済画面の有効期限が切れてから再試行してください。'},409);
+  const expiresAt=oneMonthLater(now);
+  const grant=await env.DB.prepare(`INSERT INTO pro_offer_redemptions(user_id,livemode,code,redeemed_at,expires_at) SELECT ?,?,code,?,? FROM pro_offers WHERE code=? AND active=1 AND starts_at<=? AND (ends_at IS NULL OR ends_at>?) AND NOT EXISTS(SELECT 1 FROM billing_checkouts WHERE user_id=? AND livemode=? AND expires_at>?) AND NOT EXISTS(SELECT 1 FROM billing_subscriptions WHERE user_id=? AND livemode=? AND status NOT IN ('canceled','incomplete_expired')) ON CONFLICT(user_id,livemode) DO NOTHING RETURNING expires_at`).bind(uid,mode,now,expiresAt,code,now,now,uid,mode,Date.now(),uid,mode).first();
+  if(!grant)return result({error:'コードが無効・期限切れ、または利用済みです。'},400);
+  return result(await subscriptionInfo(env,uid));
+ }
  if(path==='/api/billing/refresh'&&request.method==='POST'){
   const row=await env.DB.prepare('SELECT customer_id FROM billing_customers WHERE user_id=? AND livemode=?').bind(uid,billingLive(env)).first<{customer_id:string}>();
   if(row)await syncCustomer(env,row.customer_id);
@@ -98,7 +117,7 @@ export async function billingRoute(request:Request,env:Env,identity:VerifiedIden
   if(!consent||typeof consent!=='object'||!('acceptTerms' in consent)||consent.acceptTerms!==true)return result({error:'利用規約と自動更新への同意が必要です。'},400);
   const client=stripeClient(env),customer=await getCustomer(env,identity);
   await syncCustomer(env,customer);
-  if(await hasPro(env,uid))return result({error:'すでにProをご利用中です。契約管理から確認してください。'},409);
+  if(await hasPro(env,uid))return result({error:'すでにProをご利用中です。無料オファーの場合は期間終了後にお申込みください。'},409);
   const subs=await client.subscriptions.list({customer,status:'all',limit:100});
   if(subs.has_more||subs.data.some(subscription=>!['canceled','incomplete_expired'].includes(subscription.status)))return result({error:'既存の契約があります。契約管理からお支払い状況を確認してください。'},409);
   const price=await client.prices.retrieve(env.STRIPE_PRICE_ID);
@@ -111,7 +130,7 @@ export async function billingRoute(request:Request,env:Env,identity:VerifiedIden
    if(session.status==='open'&&session.url)return result({url:session.url});
    if(session.status==='complete')return result({error:'お支払いを確認しています。契約状況を更新してください。'},409);
   }
-  const reserved=await env.DB.prepare(`INSERT INTO billing_checkouts(user_id,livemode,attempt_id,expires_at) VALUES(?,?,?,?) ON CONFLICT(user_id,livemode) DO UPDATE SET attempt_id=excluded.attempt_id,session_id='',checkout_url='',expires_at=excluded.expires_at WHERE expires_at<=? RETURNING attempt_id`).bind(uid,mode,attempt,now+120000,now).first();
+  const reserved=await env.DB.prepare(`INSERT INTO billing_checkouts(user_id,livemode,attempt_id,expires_at) SELECT ?,?,?,? WHERE NOT EXISTS(SELECT 1 FROM pro_offer_redemptions WHERE user_id=? AND livemode=? AND expires_at>?) ON CONFLICT(user_id,livemode) DO UPDATE SET attempt_id=excluded.attempt_id,session_id='',checkout_url='',expires_at=excluded.expires_at WHERE expires_at<=? RETURNING attempt_id`).bind(uid,mode,attempt,now+120000,uid,mode,Math.floor(now/1000),now).first();
   if(!reserved)return result({error:'決済画面を準備しています。少し待って再試行してください。'},409);
   try{
    const origin=appOrigin(request,env);
@@ -127,4 +146,13 @@ export async function billingRoute(request:Request,env:Env,identity:VerifiedIden
 export async function cleanupBilling(env:Env){
  const old=new Date(Date.now()-7*86400000).toISOString().slice(0,10);
  await env.DB.batch([env.DB.prepare('DELETE FROM billing_rate_limits WHERE minute<?').bind(old),env.DB.prepare('DELETE FROM billing_checkouts WHERE expires_at<?').bind(Date.now()-86400000),env.DB.prepare('DELETE FROM billing_sync_locks WHERE expires_at<?').bind(Date.now())]);
+}
+
+// A calendar month in Japan, clamped to the last day of the next month.
+export function oneMonthLater(seconds:number){
+ const japan=new Date(seconds*1000+9*3600000),day=japan.getUTCDate();
+ japan.setUTCDate(1);japan.setUTCMonth(japan.getUTCMonth()+1);
+ const last=new Date(Date.UTC(japan.getUTCFullYear(),japan.getUTCMonth()+1,0)).getUTCDate();
+ japan.setUTCDate(Math.min(day,last));
+ return Math.floor((japan.getTime()-9*3600000)/1000);
 }

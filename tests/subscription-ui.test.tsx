@@ -24,3 +24,12 @@ it('does not mount book content for a free account and never fails open on verif
  mocks.error='確認できません';await act(async()=>render());expect(container.querySelector('[data-book]')).toBeNull();
  mocks.error='';mocks.status.pro=true;await act(async()=>render());expect(container.querySelector('[data-book]')).toBeTruthy();
 });
+it('redeems an offer without the paid subscription consent checkbox',async()=>{
+ await act(async()=>root.render(<MemoryRouter><PlansPage/></MemoryRouter>));
+ const input=container.querySelector<HTMLInputElement>('#offer-code')!;
+ await act(async()=>{const setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value')!.set!;setter.call(input,'AZUKI1MONTH');input.dispatchEvent(new Event('input',{bubbles:true}));});
+ await act(async()=>container.querySelector('form')!.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true})));
+ expect(mocks.request).toHaveBeenCalledWith('redeem','POST',{code:'AZUKI1MONTH'});
+ expect(container.querySelector('.toast')?.textContent).toContain('1か月無料オファーを適用しました');
+ expect(container.textContent).toContain('自動課金されず');
+});
