@@ -11,6 +11,7 @@ export function pageMetadata(pathname:string,deck?:MetadataDeck):PageMetadata {
   '/explore':['公開単語帳を探す — Azuki','CEFR-Jやテーマ別の英単語帳、みんなが公開した単語帳を検索。ログインせずにカード学習を試せます。本型の学習はProで利用できます。'],
   '/guide/create':['オリジナル英単語帳の作り方 — Azuki','AIで作った単語・意味・例文をJSONでまとめて登録。Azukiで自分の例文に編集して、単語帳を作る方法を紹介します。'],
   '/privacy':['プライバシーポリシー — Azuki','英単語帳アプリAzukiにおける個人情報、Cookie、アクセス解析などの取り扱いについて。'],
+  '/commerce':['特定商取引法に基づく表記 — Azuki','Azuki Proの販売者情報、月額料金、支払い・提供時期、解約・返金条件について。'],
   '/terms':['利用規約 — Azuki','英単語帳アプリAzukiの利用条件、単語帳の公開・コピー・権利について。'],
   '/copyright':['著作権・権利侵害への対応 — Azuki','Azukiでの著作権の尊重、単語帳の公開時の注意、権利侵害の申告と対応について。'],
  };

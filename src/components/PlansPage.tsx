@@ -1,19 +1,21 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { ArrowLeft, Check, Crown } from 'lucide-react';
+import { ArrowLeft, Check, Crown, ShieldCheck } from 'lucide-react';
 import { auth, googleSignIn } from '../lib/firebase';
 import { billingRequest, useBilling, type BillingStatus } from '../lib/billing';
 import { Brand } from './Brand';
 export function PlansPage(){
  const {status,error,loading,refresh}=useBilling();
  const [consent,setConsent]=useState(false);
+ const [toast,setToast]=useState('');
+ useEffect(()=>{if(!toast)return;const timer=setTimeout(()=>setToast(''),4500);return()=>clearTimeout(timer);},[toast]);
  const [busy,setBusy]=useState(false),[message,setMessage]=useState('');
  const [params]=useSearchParams();const synced=useRef(false);
  useEffect(()=>{document.title='Azuki Pro — 月額480円';},[]);
  useEffect(()=>{
   if(params.get('checkout')!=='success'||!auth?.currentUser||synced.current)return;
   synced.current=true;setBusy(true);
-  billingRequest<BillingStatus>('refresh','POST').then(()=>{setMessage('契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}).catch(e=>setMessage(e.message)).finally(()=>setBusy(false));
+  billingRequest<BillingStatus>('refresh','POST').then(()=>{setToast('契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}).catch(e=>setMessage(e.message)).finally(()=>setBusy(false));
  },[params,status]);
  async function action(kind:'checkout'|'portal'|'refresh'){
   if(busy)return;setBusy(true);setMessage('');
@@ -22,7 +24,7 @@ export function PlansPage(){
    if(kind==='checkout'&&!consent)throw new Error('利用規約と毎月の自動更新をご確認ください。');
    const data=await billingRequest<{url?:string}>(kind,'POST',kind==='checkout'?{acceptTerms:true}:undefined);
    if(data.url){const url=new URL(data.url);if(url.protocol!=='https:'||!(url.hostname==='checkout.stripe.com'||url.hostname==='billing.stripe.com'))throw new Error('決済画面のURLを確認できませんでした。');window.location.assign(url.href);}
-   else{setMessage('契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}
+   else{setToast('契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}
   }catch(e){setMessage(e instanceof Error?e.message:'処理できませんでした。');}finally{setBusy(false);}
  }
  return <div className="plans-page"><header><Brand/><Link className="text-button" to="/library"><ArrowLeft size={17}/>ライブラリへ</Link></header><main>
@@ -38,8 +40,8 @@ export function PlansPage(){
   <p className="plan-note">音声枠は日本時間9時にリセットします。生成済み音声は枠に含まれません。Proも不正利用や過度な連続生成を防ぐため、一時的に制限する場合があります。保存語数など、その他の上限は変わりません。</p>
   {(error||message)&&<p className="error-box" role="status">{message||error}</p>}
   <button className="text-button" disabled={busy||loading} onClick={()=>void action('refresh')}>契約状況を更新</button>
-  <footer><Link to="/terms">利用規約</Link><Link to="/privacy">プライバシーポリシー</Link></footer>
- </main></div>;
+  <footer><Link to="/commerce">特定商取引法に基づく表記</Link><Link to="/terms">利用規約</Link><Link to="/privacy">プライバシーポリシー</Link></footer>
+ </main>{toast&&<div className="toast plans-toast" role="status"><ShieldCheck size={18}/>{toast}</div>}</div>;
 }
 export function ProBookGate({children,onClose}:{children:React.ReactNode;onClose:()=>void}){
  const {status,error,loading,refresh}=useBilling();

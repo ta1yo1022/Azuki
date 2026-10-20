@@ -48,6 +48,7 @@ export function AzukiRoutes() {
         <Route path="/admin/reports" element={<AdminReports />} />
         <Route path="/plans" element={<PlansPage />} />
         <Route path="/privacy" element={<LegalPage kind="privacy" />} />
+        <Route path="/commerce" element={<LegalPage kind="commerce" />} />
         <Route path="/terms" element={<LegalPage kind="terms" />} />
         <Route path="/copyright" element={<LegalPage kind="copyright" />} />
         <Route path="/explore" element={<PublicLibrary />} />
