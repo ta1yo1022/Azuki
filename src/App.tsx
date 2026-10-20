@@ -427,6 +427,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
               />
             </div>
           </div>
+          <AudioQuota userId={user?.uid} />
           <div className="profile">
             <Link to={`${base}/settings`} data-tour="profile" className="profile-settings-link" aria-label="設定を開く">
             <ProfileAvatar
