@@ -1,8 +1,10 @@
+import { deckThemeStyle } from '../../shared/deckThemes';
+import type { CSSProperties } from 'react';
 import type {Deck} from '../../shared/model';
 
 export function BookCover({deck}:{deck:Deck}) {
   const level=deck.cefrLevel || (deck.isOfficial && deck.officialLevel ? {beginner:'初級',intermediate:'中級',advanced:'上級'}[deck.officialLevel] : '');
-  return <div className="book-cover">
+  return <div className={`book-cover${deck.theme?" themed-book-cover":""}`} style={deckThemeStyle(deck.theme) as CSSProperties}>
     <div className="book-cover-brand">azuki<small>ENGLISH WORDBOOK</small></div>
     <div className="book-cover-main">
       <p className="book-cover-edition">{deck.isOfficial?'Azuki運営 発行':deck.visibility==='public'?'公開単語帳':'わたしの単語帳'}</p>

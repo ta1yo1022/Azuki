@@ -3451,3 +3451,8 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .deck-settings-dialog{width:min(620px,calc(100vw - 32px));max-height:calc(100dvh - 48px);overflow:auto;padding:28px;border:1px solid var(--border);border-radius:22px;background:var(--paper);color:var(--text)}
 .deck-settings-dialog::backdrop{background:#2e211b66;backdrop-filter:blur(3px)}
 .deck-settings-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}.deck-settings-heading h2{font-size:24px;margin:0}.deck-settings-dialog > p{font-size:13px;margin:12px 0 24px}
+
+.book-cover-main{margin:auto 0 0;padding:32px 0}
+.themed-book-cover{background:linear-gradient(90deg,#00000018 0,transparent 28px),var(--deck-ink);color:var(--deck-paper)}
+.themed-book-cover h2{color:var(--deck-paper)}
+.themed-book-cover .book-cover-tags span,.themed-book-cover .book-cover-bottom{border-color:color-mix(in srgb,var(--deck-paper) 35%,transparent)}
