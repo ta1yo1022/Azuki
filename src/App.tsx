@@ -1,4 +1,4 @@
-import { ThemePicker } from './components/ThemePicker';
+import { DeckSettings } from './components/DeckSettings';
 import { deckThemeStyle } from '../shared/deckThemes';
 import { AudioQuota } from "./components/AudioQuota";
 import { WordAudioButton } from "./components/WordAudioButton";
@@ -715,7 +715,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     ))}
                   </div>
                 </div>
-                {repository.theme && <ThemePicker value={selected.theme} onChange={theme=>{void repository.theme!(selected.id,theme).then(updated=>setDecks(prev=>prev.map(deck=>deck.id===updated.id?updated:deck))).catch(e=>setError(errorMessage(e)));}} />}
+
                 <div className="owner-deck-actions">
                   <button className="button secondary" onClick={() => navigate(`${detailPath}/book${location.search}`)}>単語帳で学習</button>
               <button className="button secondary" onClick={() => navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)), mode:"examples"})}`)}>例文カードで学習</button>
@@ -734,6 +734,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     <Share2 size={17} />
                     共有
                   </button>
+                  {repository.theme && <DeckSettings key={selected.id} deck={selected} save={repository.theme} onSaved={updated=>setDecks(prev=>prev.map(deck=>deck.id===updated.id?updated:deck))} />}
                   <button
                     className="icon-button delete-button"
                     aria-label="単語帳を削除"

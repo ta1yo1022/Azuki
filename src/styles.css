@@ -3447,3 +3447,7 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .theme-picker button span{font-family:var(--font-rounded);font-size:10px}
 .theme-picker button[aria-pressed=true]{box-shadow:0 0 0 2px var(--paper);outline:1px solid currentColor}
 .theme-picker button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.deck-settings-dialog{width:min(620px,calc(100vw - 32px));max-height:calc(100dvh - 48px);overflow:auto;padding:28px;border:1px solid var(--border);border-radius:22px;background:var(--paper);color:var(--text)}
+.deck-settings-dialog::backdrop{background:#2e211b66;backdrop-filter:blur(3px)}
+.deck-settings-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}.deck-settings-heading h2{font-size:24px;margin:0}.deck-settings-dialog > p{font-size:13px;margin:12px 0 24px}
