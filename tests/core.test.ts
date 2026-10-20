@@ -173,6 +173,35 @@ describe("owner isolation and atomic D1 imports", () => {
     db.prepare('INSERT INTO billing_checkouts(user_id,livemode,attempt_id,expires_at) VALUES(?,?,?,?)').run('admin',0,'attempt',Date.now()+60000);
     expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH'},'admin')).status).toBe(409);
   });
+  it('expires only the authenticated user checkout before applying an offer and rejects completed payments',async()=>{
+    enableBilling();
+    db.prepare('INSERT INTO billing_checkouts(user_id,livemode,attempt_id,session_id,expires_at) VALUES(?,?,?,?,?)').run('admin',0,'attempt','cs_admin',Date.now()+60000);
+    db.prepare('INSERT INTO billing_checkouts(user_id,livemode,attempt_id,session_id,expires_at) VALUES(?,?,?,?,?)').run('bob',0,'other','cs_bob',Date.now()+60000);
+    let completed=false;const calls:string[]=[];
+    const network=vi.spyOn(globalThis,'fetch').mockImplementation(async(input,options)=>{
+      const url=String(input);calls.push(url);
+      expect(url).toContain('/v1/checkout/sessions/cs_admin');
+      if(url.endsWith('/expire')){expect(options?.method).toBe('POST');return Response.json({id:'cs_admin',object:'checkout.session',status:'expired'});}
+      return Response.json({id:'cs_admin',object:'checkout.session',status:completed?'complete':'open',customer:null});
+    });
+    expect((await call('/billing/redeem','POST',{code:'wrong',cancelCheckout:true},'admin')).status).toBe(400);expect(network).not.toHaveBeenCalled();
+    completed=true;
+    expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH',cancelCheckout:true},'admin')).status).toBe(409);
+    expect(calls.some(url=>url.endsWith('/expire'))).toBe(false);
+    expect(db.prepare('SELECT count(*) AS n FROM pro_offer_redemptions').get()).toMatchObject({n:0});
+    completed=false;calls.length=0;
+    const applied=await call('/billing/redeem','POST',{code:'AZUKI1MONTH',cancelCheckout:true},'admin');
+    expect(applied.status).toBe(200);expect(await applied.json()).toMatchObject({pro:true,offerRedeemed:true});
+    expect(calls).toHaveLength(2);expect(calls[1]).toMatch(/cs_admin\/expire$/);
+    expect(db.prepare('SELECT session_id FROM billing_checkouts WHERE user_id=?').get('bob')).toMatchObject({session_id:'cs_bob'});
+  });
+  it('does not grant an offer or release checkout when expiration fails',async()=>{
+    enableBilling();db.prepare('INSERT INTO billing_checkouts(user_id,livemode,attempt_id,session_id,expires_at) VALUES(?,?,?,?,?)').run('admin',0,'attempt','cs_admin',Date.now()+60000);
+    vi.spyOn(globalThis,'fetch').mockImplementation(async(input)=>String(input).endsWith('/expire')?Response.json({error:{type:'invalid_request_error',message:'Session already completed'}},{status:400}):Response.json({id:'cs_admin',object:'checkout.session',status:'open'}));
+    expect((await call('/billing/redeem','POST',{code:'AZUKI1MONTH',cancelCheckout:true},'admin')).status).toBeGreaterThanOrEqual(400);
+    expect(db.prepare('SELECT count(*) AS n FROM pro_offer_redemptions').get()).toMatchObject({n:0});
+    expect(db.prepare('SELECT count(*) AS n FROM billing_checkouts').get()).toMatchObject({n:1});
+  });
   it('uses a calendar month with Japan month-end and leap-year handling',()=>{
     const end=(date:string)=>new Date(oneMonthLater(Date.parse(date)/1000)*1000).toISOString();
     expect(end('2026-01-31T12:00:00+09:00')).toBe('2026-02-28T03:00:00.000Z');

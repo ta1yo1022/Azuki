@@ -33,3 +33,14 @@ it('redeems an offer without the paid subscription consent checkbox',async()=>{
  expect(container.querySelector('.toast')?.textContent).toContain('1か月無料オファーを適用しました');
  expect(container.textContent).toContain('自動課金されず');
 });
+
+it('offers explicit checkout cancellation after a pending-payment error',async()=>{
+ mocks.request.mockRejectedValueOnce(new Error('決済手続き中です。決済手続きをキャンセルしてオファーを使うことができます。')).mockResolvedValue({});
+ await act(async()=>root.render(<MemoryRouter><PlansPage/></MemoryRouter>));
+ const input=container.querySelector<HTMLInputElement>('#offer-code')!;
+ await act(async()=>{Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value')!.set!.call(input,'AZUKI1MONTH');input.dispatchEvent(new Event('input',{bubbles:true}));});
+ await act(async()=>container.querySelector('form')!.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true})));
+ const cancel=Array.from(container.querySelectorAll('button')).find(button=>button.textContent==='決済手続きをキャンセルしてオファーを使う')!;
+ expect(cancel).toBeTruthy();await act(async()=>cancel.click());
+ expect(mocks.request).toHaveBeenLastCalledWith('redeem','POST',{code:'AZUKI1MONTH',cancelCheckout:true});
+});

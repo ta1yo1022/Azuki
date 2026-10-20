@@ -18,12 +18,12 @@ export function PlansPage(){
   synced.current=true;setBusy(true);
   billingRequest<BillingStatus>('refresh','POST').then(()=>{setToast('契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}).catch(e=>setMessage(e.message)).finally(()=>setBusy(false));
  },[params,status]);
- async function action(kind:'checkout'|'portal'|'refresh'|'redeem'){
+ async function action(kind:'checkout'|'portal'|'refresh'|'redeem',cancelCheckout=false){
   if(busy)return;setBusy(true);setMessage('');
   try{
    if(!auth?.currentUser)await googleSignIn();
    if(kind==='checkout'&&!consent)throw new Error('利用規約と毎月の自動更新をご確認ください。');
-   const data=await billingRequest<{url?:string}>(kind,'POST',kind==='checkout'?{acceptTerms:true}:kind==='redeem'?{code:offerCode}:undefined);
+   const data=await billingRequest<{url?:string}>(kind,'POST',kind==='checkout'?{acceptTerms:true}:kind==='redeem'?{code:offerCode,...(cancelCheckout?{cancelCheckout:true}:{})}:undefined);
    if(data.url){const url=new URL(data.url);if(url.protocol!=='https:'||!(url.hostname==='checkout.stripe.com'||url.hostname==='billing.stripe.com'))throw new Error('決済画面のURLを確認できませんでした。');window.location.assign(url.href);}
    else{if(kind==='redeem')setOfferCode('');setToast(kind==='redeem'?'1か月無料オファーを適用しました。':'契約状況を更新しました。');refresh();window.dispatchEvent(new Event('azuki-audio-quota'));}
   }catch(e){setMessage(e instanceof Error?e.message:'処理できませんでした。');}finally{setBusy(false);}
@@ -41,7 +41,7 @@ export function PlansPage(){
   {!status?.pro&&!status?.offerRedeemed&&status?.enabled&&<section className="plan-management"><h2>オファーコードをお持ちの方</h2><p>カード登録不要で1か月Proを利用できます。1アカウント1回限り。終了後は自動課金されず、無料プランへ戻ります。</p><form className="offer-form" onSubmit={event=>{event.preventDefault();void action('redeem');}}><label htmlFor="offer-code">オファーコード</label><div><input id="offer-code" value={offerCode} onChange={event=>setOfferCode(event.target.value)} maxLength={64} autoComplete="off" spellCheck={false}/><button className="button secondary" disabled={busy||loading||!offerCode.trim()}>適用する</button></div></form></section>}
   {status?.status&&<section className="plan-management"><h2>契約の管理</h2><p>{status.cancelAtPeriodEnd?'解約予約済みです。':status.pro?'契約は有効です。':'お支払い・契約状況をご確認ください。'}{status.periodEnd?` 現在の契約期間：${new Date(status.periodEnd*1000).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'})}まで。`:''}</p><button className="button secondary" disabled={busy} onClick={()=>void action('portal')}>契約・支払い方法を管理</button></section>}
   <p className="plan-note">音声枠は日本時間9時にリセットします。生成済み音声は枠に含まれません。Proも不正利用や過度な連続生成を防ぐため、一時的に制限する場合があります。保存語数など、その他の上限は変わりません。</p>
-  {(error||message)&&<p className="error-box" role="status">{message||error}</p>}
+  {(error||message)&&<div className="error-box" role="status"><p>{message||error}</p>{message.includes('決済手続き中です。')&&<button className="button secondary" disabled={busy||!offerCode.trim()} onClick={()=>void action('redeem',true)}>決済手続きをキャンセルしてオファーを使う</button>}</div>}
   <button className="text-button" disabled={busy||loading} onClick={()=>void action('refresh')}>契約状況を更新</button>
   <footer><Link to="/commerce">特定商取引法に基づく表記</Link><Link to="/terms">利用規約</Link><Link to="/privacy">プライバシーポリシー</Link></footer>
  </main>{toast&&<div className="toast plans-toast" role="status"><ShieldCheck size={18}/>{toast}</div>}</div>;

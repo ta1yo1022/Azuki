@@ -94,8 +94,24 @@ export async function billingRoute(request:Request,env:Env,identity:VerifiedIden
   if(existing)return result({error:'このアカウントは1か月無料オファーを利用済みです。'},409);
   const paid=await env.DB.prepare("SELECT subscription_id FROM billing_subscriptions WHERE user_id=? AND livemode=? AND status NOT IN ('canceled','incomplete_expired') LIMIT 1").bind(uid,mode).first();
   if(paid)return result({error:'有料契約がある場合は利用できません。契約状況をご確認ください。'},409);
-  const checkout=await env.DB.prepare('SELECT user_id FROM billing_checkouts WHERE user_id=? AND livemode=? AND expires_at>?').bind(uid,mode,Date.now()).first();
-  if(checkout)return result({error:'決済手続き中です。決済画面の有効期限が切れてから再試行してください。'},409);
+  const valid=await env.DB.prepare('SELECT code FROM pro_offers WHERE code=? AND active=1 AND starts_at<=? AND (ends_at IS NULL OR ends_at>?)').bind(code,now,now).first();
+  if(!valid)return result({error:'コードが無効・期限切れです。'},400);
+  const checkout=await env.DB.prepare('SELECT session_id FROM billing_checkouts WHERE user_id=? AND livemode=? AND expires_at>?').bind(uid,mode,Date.now()).first<{session_id:string}>();
+  if(checkout){
+   if(!body||typeof body!=='object'||!('cancelCheckout' in body)||body.cancelCheckout!==true)return result({error:'決済手続き中です。決済手続きをキャンセルしてオファーを使うことができます。'},409);
+   if(!checkout.session_id)return result({error:'決済画面を準備中です。少し待って再試行してください。'},409);
+   const client=stripeClient(env);
+   const session=await client.checkout.sessions.retrieve(checkout.session_id);
+   if(session.status==='complete'){
+    const customer=customerId(session.customer);if(customer)await syncCustomer(env,customer);
+    return result({error:'すでに決済が完了しています。契約状況を更新してご確認ください。'},409);
+   }
+   // Expire at Stripe before releasing our reservation; a payment racing with
+   // expiration makes this call fail and the offer remains unapplied.
+   if(session.status==='open'){try{await client.checkout.sessions.expire(session.id);}catch{return result({error:'決済手続きをキャンセルできませんでした。契約状況を更新してから再試行してください。'},409);}}
+   else if(session.status!=='expired')return result({error:'決済状況を確認できませんでした。もう一度お試しください。'},409);
+   await env.DB.prepare('DELETE FROM billing_checkouts WHERE user_id=? AND livemode=? AND session_id=?').bind(uid,mode,checkout.session_id).run();
+  }
   const expiresAt=oneMonthLater(now);
   const grant=await env.DB.prepare(`INSERT INTO pro_offer_redemptions(user_id,livemode,code,redeemed_at,expires_at) SELECT ?,?,code,?,? FROM pro_offers WHERE code=? AND active=1 AND starts_at<=? AND (ends_at IS NULL OR ends_at>?) AND NOT EXISTS(SELECT 1 FROM billing_checkouts WHERE user_id=? AND livemode=? AND expires_at>?) AND NOT EXISTS(SELECT 1 FROM billing_subscriptions WHERE user_id=? AND livemode=? AND status NOT IN ('canceled','incomplete_expired')) ON CONFLICT(user_id,livemode) DO NOTHING RETURNING expires_at`).bind(uid,mode,now,expiresAt,code,now,now,uid,mode,Date.now(),uid,mode).first();
   if(!grant)return result({error:'コードが無効・期限切れ、または利用済みです。'},400);
