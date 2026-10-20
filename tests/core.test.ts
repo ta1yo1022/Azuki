@@ -123,6 +123,19 @@ describe("owner isolation and atomic D1 imports", () => {
       ALLOW_IMPORTS: "true",
     };
   });
+  it('updates settings of a near-limit book without counting internal word IDs as JSON',async()=>{
+    const input={...sample(500),words:sample(500).words.map(word=>({...word,meaning:'m'.repeat(950)}))};
+    expect(new TextEncoder().encode(JSON.stringify(input)).length).toBeLessThan(512*1024);
+    const created=await call('/decks','POST',input);expect(created.status).toBe(201);
+    const deck=(await created.json() as any).deck;
+    const raw=db.prepare('SELECT id,ordinal,word,meaning,example,tags,examples_json FROM words WHERE deck_id=?').all(deck.id);
+    expect(new TextEncoder().encode(JSON.stringify(raw)).length).toBeGreaterThan(512*1024);
+    const before=db.prepare('SELECT data_bytes FROM decks WHERE id=?').get(deck.id) as {data_bytes:number};
+    const result=await call(`/decks/${deck.id}/settings`,'PATCH',{title:deck.title,description:'説明を変更',textbookTags:deck.textbookTags,theme:'blue'});
+    expect(result.status).toBe(200);expect((await result.json() as any).deck.description).toBe('説明を変更');
+    const after=db.prepare('SELECT data_bytes FROM decks WHERE id=?').get(deck.id) as {data_bytes:number};
+    expect(after.data_bytes-before.data_bytes).toBeLessThan(100);
+  });
   it('edits deck metadata and tags atomically without changing words or publication',async()=>{
     const deck=(await (await call('/decks','POST',sample())).json() as any).deck;
     await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'public'});

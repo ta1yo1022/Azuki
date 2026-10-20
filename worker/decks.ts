@@ -19,6 +19,7 @@ export type DeckRow = {
   description: string;
   visibility: "private" | "public";
   word_count: number;
+  data_bytes: number;
   created_at: string;
   updated_at: string;
   textbook_tags: string;
