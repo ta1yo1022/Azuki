@@ -26,3 +26,9 @@ it('updates metadata without duplicates and clears the previous deck when naviga
  expect(document.head.querySelector('link[rel="canonical"]')?.getAttribute('href')).toBe(SITE_ORIGIN+'/explore');
  expect(document.head.querySelector('meta[name="description"]')?.getAttribute('content')).not.toContain(deck.description);
 });
+
+it('keeps the private deck tab title owned by its screen while sharing no private data',()=>{
+ document.title='自分の単語帳 — Azuki';applyPageMetadata(pageMetadata('/library/decks/secret/book'),false);
+ expect(document.title).toBe('自分の単語帳 — Azuki');
+ expect(document.head.querySelector('meta[property="og:title"]')?.getAttribute('content')).toBe('マイライブラリ — Azuki');
+});
