@@ -1,3 +1,4 @@
+import { ActionMenu } from './components/ActionMenu';
 import { DeckSettings } from './components/DeckSettings';
 import { deckThemeStyle } from '../shared/deckThemes';
 import { AudioQuota } from "./components/AudioQuota";
@@ -23,7 +24,6 @@ import {
   FileJson,
   FolderOpen,
   Globe,
-  Layers,
   Share2,
   Library,
   LockKeyhole,
@@ -717,16 +717,12 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 </div>
 
                 <div className="owner-deck-actions">
-                  <button className="button secondary" onClick={() => navigate(`${detailPath}/book${location.search}`)}>単語帳で学習</button>
-              <button className="button secondary" onClick={() => navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)), mode:"examples"})}`)}>例文カードで学習</button>
+                  <ActionMenu label="学習する" primary items={[
+                    {label:'カードで学習',description:'単語を1つずつ覚える',onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'words'})}`)},
+                    {label:'例文カードで学習',description:'英文と日本語訳で練習する',onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples'})}`)},
+                    {label:'単語帳で学習',description:'本をめくるように、まとめて読む',onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
+                  ]}/>
                   {!demo && <button className="button secondary" onClick={()=>setForkOpen(true)}>JSONを編集してフォーク</button>}
-                  <button
-                    className="button primary"
-                    onClick={() => navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)), mode:"words"})}`)}
-                  >
-                    <Layers size={17} />
-                    カードで学習
-                  </button>
                   <button
                     className="button secondary"
                     onClick={() => navigate(`${detailPath}/share${location.search}`)}
