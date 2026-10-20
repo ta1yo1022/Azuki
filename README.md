@@ -111,3 +111,9 @@ Azukiの独自コードと開発ドキュメントは **[MIT License](LICENSE)**
 公開サービスの利用には [利用規約](https://azuki.mame-app.com/terms) と [プライバシーポリシー](https://azuki.mame-app.com/privacy) が適用されます。ユーザーが登録した非公開データはこのリポジトリに含まれません。
 
 運営：Volta Technologies · お問い合わせ：support@volta.jp
+
+### ページのメタデータ
+
+公開単語帳のタイトル・説明・語数を、Cloudflare Pages FunctionsがHTMLのtitle・description・OGP・Twitter Cardに反映します。`shared/metadata.ts`をブラウザと配信側で共有し、アプリ内で移動した場合も更新します。共有画像は`public/og-image.png`です。
+
+`/shared/:id/study`・`/shared/:id/book`の正規URLは単語帳の詳細ページです。非公開ページはnoindex、公開されていない単語帳は情報を出さず404、取得障害時は503を返します。Pages Functionsの確認には、ビルド後に`npx wrangler pages dev dist --port 8790`を利用できます。通常のViteサーバーではブラウザ側の更新のみ動作します。

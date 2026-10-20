@@ -16,6 +16,7 @@
     "src",
     "shared",
     "worker",
+    "functions",
     "tests",
     "vite.config.ts",
     "vitest.config.ts"

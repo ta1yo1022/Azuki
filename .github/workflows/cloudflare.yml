@@ -27,6 +27,8 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - name: Validate Pages metadata functions
+        run: npx wrangler pages functions build --outdir "$RUNNER_TEMP/azuki-pages-functions"
 
   deploy:
     name: Publish to Cloudflare
