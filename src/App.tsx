@@ -29,6 +29,7 @@ import {
   LogOut,
   Plus,
   Search,
+  Share2,
   ShieldCheck,
   Tag,
   Trash2,
@@ -355,9 +356,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
   function otherActions(openSettings?:()=>void){
     return <ActionMenu label="その他" items={[
       ...(!demo?[{label:'JSONを編集してフォーク',description:'単語や例文をJSONでカスタマイズ',onSelect:()=>setForkOpen(true)}]:[]),
-      {label:'共有',description:'公開設定を変更して共有する',onSelect:()=>navigate(`${detailPath}/share${location.search}`)},
       ...(selected?.visibility==='public'?[{label:'リンクをコピー',description:'この単語帳を共有する',onSelect:()=>{void navigator.clipboard.writeText(`${window.location.origin}/shared/${selected.id}`).then(()=>setToast('リンクをコピーしました')).catch(()=>setError('リンクをコピーできませんでした。'));}}]:[]),
-      ...(openSettings?[{label:'単語帳の設定',description:'表紙の色テーマを変更する',onSelect:openSettings}]:[]),
+      ...(openSettings?[{label:'単語帳の設定',description:'名前・説明・教材タグ・色を変更する',onSelect:openSettings}]:[]),
       {label:'単語帳を削除',description:'削除する前に確認します',onSelect:()=>setConfirmDelete(true)},
     ]}/>;
   }
@@ -730,7 +730,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     {label:'例文カードで学習',description:'英文と日本語訳で練習する',onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples'})}`)},
                     {label:'単語帳で学習',description:'本をめくるように、まとめて読む',onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
                   ]}/>
-                  {repository.theme ? <DeckSettings key={selected.id} deck={selected} save={repository.theme} onSaved={updated=>setDecks(prev=>prev.map(deck=>deck.id===updated.id?updated:deck))} renderTrigger={openSettings=>otherActions(openSettings)} /> : otherActions()}
+                  <button className="button secondary" onClick={()=>navigate(`${detailPath}/share${location.search}`)}><Share2 size={17}/>共有</button>
+                  {repository.settings ? <DeckSettings key={selected.id} deck={selected} save={repository.settings} onSaved={updated=>setDecks(prev=>prev.map(deck=>deck.id===updated.id?updated:deck))} renderTrigger={openSettings=>otherActions(openSettings)} /> : otherActions()}
 
                 </div>
               </div>

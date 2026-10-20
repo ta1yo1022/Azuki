@@ -1,3 +1,4 @@
+import { updateDeckSettings } from './deckSettings';
 import { isDeckTheme } from '../shared/deckThemes';
 import { wordAudio, wordAudioQuota, cleanupWordAudio } from './audio';
 import { studyRoute } from './study';
@@ -208,7 +209,7 @@ async function route(
   if (savePath && request.method === "POST") return savePublicDeck(env, uid, savePath[1]);
   const wordEdit = /^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})$/.exec(url.pathname);
   if (wordEdit && request.method === "PATCH") return editWord(env, uid, wordEdit[1], wordEdit[2], await limitedBody(request, LIMITS.bytes));
-  const path = /^\/api\/decks\/([a-zA-Z0-9-]+)(\/words|\/visibility|\/theme)?$/.exec(
+  const path = /^\/api\/decks\/([a-zA-Z0-9-]+)(\/words|\/visibility|\/theme|\/settings)?$/.exec(
     url.pathname,
   );
   if (path) {
@@ -219,6 +220,7 @@ async function route(
       .bind(path[1], uid)
       .first<DeckRow>();
     if (!row) return json({ error: "単語帳が見つかりません。" }, 404);
+    if(path[2]==='/settings'&&request.method==='PATCH')return updateDeckSettings(env,uid,row,await limitedBody(request,8192));
     if(path[2]==='/theme'&&request.method==='PATCH'){
       let data:unknown;try{data=JSON.parse(await limitedBody(request,1024));}catch{throw new ValidationError('色の形式を確認してください。');}
       if(!data||typeof data!=='object'||!('theme' in data)||!isDeckTheme(data.theme))throw new ValidationError('単語帳の色を選択してください。');

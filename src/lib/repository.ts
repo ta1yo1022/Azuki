@@ -16,7 +16,9 @@ import {
 export class PublishConflict extends Error {
   constructor(message: string, public existingDeckId?: string) { super(message); }
 }
+export type DeckSettingsInput=Pick<DeckInput,'title'|'description'|'textbookTags'|'theme'>;
 export interface Repository {
+  settings?(id:string,values:DeckSettingsInput):Promise<Deck>;
   theme?(id:string,theme:NonNullable<Deck['theme']>):Promise<Deck>;
   editWord?(id: string, old: Word, value: {word:string;meaning:string;examples:WordExample[]}): Promise<{deck:Deck;word:Word}>;
   list(): Promise<Deck[]>;
@@ -194,6 +196,7 @@ async function request<T>(
   return result;
 }
 export const cloudRepository: Repository = {
+  settings:async(id,values)=>(await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/settings`,{method:'PATCH',body:JSON.stringify(values)})).deck,
   theme:async(id,theme)=>(await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/theme`,{method:'PATCH',body:JSON.stringify({theme})})).deck,
   editWord: (id, old, value) => request(`/decks/${encodeURIComponent(id)}/words/${encodeURIComponent(old.id)}`, { method: "PATCH", body: JSON.stringify({...value, expectedWord: old.word, expectedMeaning: old.meaning, expectedExample: old.example ?? "", expectedExamples: wordExamples(old)}) }),
   visibility: async (id, visibility) =>

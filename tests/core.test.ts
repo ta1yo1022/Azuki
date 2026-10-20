@@ -123,6 +123,21 @@ describe("owner isolation and atomic D1 imports", () => {
       ALLOW_IMPORTS: "true",
     };
   });
+  it('edits deck metadata and tags atomically without changing words or publication',async()=>{
+    const deck=(await (await call('/decks','POST',sample())).json() as any).deck;
+    await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'public'});
+    const before=db.prepare('SELECT content_hash,word_count FROM decks WHERE id=?').get(deck.id);
+    const data={title:'新しい名前',description:'新しい説明',theme:'blue',textbookTags:[{name:'教材A',edition:'第2版',chapter:'1–3'},{name:'旅行'}]};
+    expect((await call(`/decks/${deck.id}/settings`,'PATCH',data,'bob')).status).toBe(404);
+    const response=await call(`/decks/${deck.id}/settings`,'PATCH',data);expect(response.status).toBe(200);
+    const updated=(await response.json() as any).deck;
+    expect(updated).toMatchObject({...data,visibility:'public',wordCount:2});
+    expect(db.prepare('SELECT content_hash,word_count FROM decks WHERE id=?').get(deck.id)).toEqual(before);
+    expect((await (await call(`/public/decks/${deck.id}`)).json() as any).deck.title).toBe(data.title);
+    expect((await call(`/decks/${deck.id}/settings`,'PATCH',{...data,title:'',textbookTags:[]})).status).toBe(400);
+    expect((await (await call(`/decks/${deck.id}`)).json() as any).deck.textbookTags).toMatchObject(data.textbookTags);
+    const cleared=await call(`/decks/${deck.id}/settings`,'PATCH',{...data,textbookTags:[]});expect(cleared.status).toBe(200);expect((await cleared.json() as any).deck.textbookTags).toEqual([]);
+  });
   it('persists deck themes, validates choices, and restricts edits to the owner',async()=>{
     const created=await call('/decks','POST',{...sample(),theme:'blue'});
     expect(created.status).toBe(201);
