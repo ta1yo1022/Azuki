@@ -120,6 +120,6 @@ Azukiの独自コードと開発ドキュメントは **[MIT License](LICENSE)**
 
 ### 英単語の音声
 
-Cloudflare Workers AIのMeloTTSで、再生を要求した英単語だけを生成します。例文の音声はまだ生成しません。生成済みMP3は非公開R2バケット`azuki-audio`へ保存し、正規化した単語とモデルバージョンのハッシュで再利用します。APIは保存された単語IDから本文を解決し、非公開単語帳は毎回所有権を確認します。R2は直接公開しません。
+Cloudflare Workers AIのMeloTTSで、再生を要求した英単語だけを生成します。例文の音声はまだ生成しません。生成済み音声（WAV／MP3）は非公開R2バケット`azuki-audio`へ保存し、正規化した単語とモデルバージョンのハッシュで再利用します。APIは保存された単語IDから本文を解決し、非公開単語帳は毎回所有権を確認します。R2は直接公開しません。
 
-API Workerに`AI`・`AUDIO`バインディング、`AUDIO_ENABLED=true`が必要です。新規環境は`npx wrangler r2 bucket create azuki-audio`でバケットを作成し、D1マイグレーションを適用してください。生成は同じ音声ごとにロックし、失敗時は保存しません。新規生成の初期上限はアカウント／匿名IPごと100件・アプリ全体3,000件／日（UTC）で、生成済み音声の再生は上限に含めません。全体上限は`AUDIO_DAILY_GENERATION_LIMIT`で変更できます。音声APIはPOSTで利用し、返却形式は`audio/mpeg`です。ローカルのWorkers AI呼び出しも実際の利用料金が発生し得ます。
+API Workerに`AI`・`AUDIO`バインディング、`AUDIO_ENABLED=true`が必要です。新規環境は`npx wrangler r2 bucket create azuki-audio`でバケットを作成し、D1マイグレーションを適用してください。生成は同じ音声ごとにロックし、失敗時は保存しません。新規生成の初期上限はアカウント／匿名IPごと100件・アプリ全体3,000件／日（UTC）で、生成済み音声の再生は上限に含めません。全体上限は`AUDIO_DAILY_GENERATION_LIMIT`で変更できます。音声APIはPOSTで利用し、返却形式は生成音声に合わせた`audio/wav`または`audio/mpeg`です。ローカルのWorkers AI呼び出しも実際の利用料金が発生し得ます。

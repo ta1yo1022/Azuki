@@ -125,10 +125,11 @@ describe("owner isolation and atomic D1 imports", () => {
   });
   function audioMock(){
     const objects=new Map<string,ArrayBuffer>();
+    const types=new Map<string,string>();
     const mp3=Uint8Array.from([73,68,51,...Array(50).fill(0)]).buffer;
     const run=vi.fn(async()=>({audio:btoa(String.fromCharCode(...new Uint8Array(mp3)))}));
     env.AI={run} as unknown as Ai;env.AUDIO_ENABLED='true';
-    env.AUDIO={get:vi.fn(async(key:string)=>objects.has(key)?{body:new Response(objects.get(key)!).body}:null),put:vi.fn(async(key:string,data:ArrayBuffer)=>{objects.set(key,data);})} as unknown as R2Bucket;
+    env.AUDIO={get:vi.fn(async(key:string)=>objects.has(key)?{body:new Response(objects.get(key)!).body,httpMetadata:{contentType:types.get(key)}}:null),put:vi.fn(async(key:string,data:ArrayBuffer,options:{httpMetadata:{contentType:string}})=>{objects.set(key,data);types.set(key,options.httpMetadata.contentType);})} as unknown as R2Bucket;
     return {objects,run};
   }
   it('generates stored words only, caches audio in R2, and checks access before every replay',async()=>{
@@ -159,6 +160,17 @@ describe("owner isolation and atomic D1 imports", () => {
     env.AUDIO_DAILY_GENERATION_LIMIT='10';run.mockResolvedValueOnce({audio:btoa('Not a valid MP3 result')});
     expect((await call(path(1),'POST')).status).toBe(503);expect(objects.size).toBe(1);
     expect((db.prepare('SELECT count(*) AS n FROM audio_generation_locks').get() as any).n).toBe(0);
+  });
+  it('accepts the actual MeloTTS WAV format and preserves its type when replaying from R2',async()=>{
+    const {run}=audioMock();const wav=new Uint8Array(76),view=new DataView(wav.buffer);
+    wav.set(new TextEncoder().encode('RIFF'),0);view.setUint32(4,68,true);wav.set(new TextEncoder().encode('WAVEfmt '),8);
+    view.setUint32(16,16,true);view.setUint16(20,1,true);view.setUint16(22,1,true);view.setUint32(24,24000,true);view.setUint32(28,48000,true);view.setUint16(32,2,true);view.setUint16(34,16,true);wav.set(new TextEncoder().encode('data'),36);view.setUint32(40,32,true);
+    run.mockResolvedValueOnce({audio:btoa(String.fromCharCode(...wav))});
+    const deck=(await (await call('/decks','POST',sample())).json() as any).deck;
+    const word=db.prepare('SELECT id FROM words WHERE deck_id=? ORDER BY ordinal').get(deck.id) as any;
+    const path=`/decks/${deck.id}/words/${word.id}/audio`;
+    for(let i=0;i<2;i++){const result=await call(path,'POST');expect(result.status).toBe(200);expect(result.headers.get('content-type')).toBe('audio/wav');expect(new Uint8Array(await result.arrayBuffer())).toEqual(wav);}
+    expect(run).toHaveBeenCalledTimes(1);
   });
   it('does not generate the same audio twice while another request is running',async()=>{
     const {run}=audioMock();let resolve!:(value:{audio:string})=>void;
