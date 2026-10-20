@@ -15,7 +15,6 @@
     "EMAIL_API_URL": "https://azuki-api.mizuno-taiyo-sub.workers.dev/api/email/unsubscribe",
     "ADMIN_EMAILS": "taiyo.mizuno.main@gmail.com",
   },
-  "ai": { "binding": "AI" },
   "r2_buckets": [{ "binding": "AUDIO", "bucket_name": "azuki-audio" }],
   "triggers": { "crons": ["*/5 * * * *"] },
   "d1_databases": [

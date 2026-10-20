@@ -2,3 +2,7 @@
 # Never put this key into VITE_ variables or commit .dev.vars.
 EMAIL_ENABLED=false
 BREVO_API_KEY=
+
+# Google Cloud Text-to-Speech (server only; enable API and billing).
+# Restrict this dedicated key to Cloud Text-to-Speech API.
+GOOGLE_TTS_API_KEY=

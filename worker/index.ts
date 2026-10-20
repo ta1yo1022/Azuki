@@ -14,7 +14,7 @@ import { editWord, setVisibility } from "./publishing";
 import { OFFICIAL_OWNER_ID } from "./official";
 export interface Env {
   DB: D1Database;
-  AI?: Ai;
+  GOOGLE_TTS_API_KEY?: string;
   AUDIO?: R2Bucket;
   AUDIO_ENABLED?: string;
   AUDIO_DAILY_GENERATION_LIMIT?: string;

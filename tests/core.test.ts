@@ -127,8 +127,14 @@ describe("owner isolation and atomic D1 imports", () => {
     const objects=new Map<string,ArrayBuffer>();
     const types=new Map<string,string>();
     const mp3=Uint8Array.from([73,68,51,...Array(50).fill(0)]).buffer;
-    const run=vi.fn(async()=>({audio:btoa(String.fromCharCode(...new Uint8Array(mp3)))}));
-    env.AI={run} as unknown as Ai;env.AUDIO_ENABLED='true';
+    const run=vi.fn(async(_request:unknown)=>({audio:btoa(String.fromCharCode(...new Uint8Array(mp3)))}));
+    env.GOOGLE_TTS_API_KEY='test-google-key';env.AUDIO_ENABLED='true';
+    vi.spyOn(globalThis,'fetch').mockImplementation(async(input,options)=>{
+      expect(String(input)).toBe('https://texttospeech.googleapis.com/v1/text:synthesize');
+      expect(new Headers(options?.headers).get('X-Goog-Api-Key')).toBe('test-google-key');
+      const result=await run(JSON.parse(String(options?.body)));
+      return Response.json({audioContent:result.audio});
+    });
     env.AUDIO={get:vi.fn(async(key:string)=>objects.has(key)?{body:new Response(objects.get(key)!).body,httpMetadata:{contentType:types.get(key)}}:null),put:vi.fn(async(key:string,data:ArrayBuffer,options:{httpMetadata:{contentType:string}})=>{objects.set(key,data);types.set(key,options.httpMetadata.contentType);})} as unknown as R2Bucket;
     return {objects,run};
   }
@@ -139,7 +145,8 @@ describe("owner isolation and atomic D1 imports", () => {
     const path=`/decks/${deck.id}/words/${word.id}/audio`;
     const first=await call(path,'POST',{text:'Never synthesize this injected text'});
     expect(first.status).toBe(200);expect(first.headers.get('content-type')).toBe('audio/mpeg');expect(objects.size).toBe(1);
-    expect(run).toHaveBeenCalledWith('@cf/myshell-ai/melotts',{prompt:'word-0',lang:'en'});
+    expect(run).toHaveBeenCalledWith({input:{text:'word-0'},voice:{languageCode:'en-US',name:'en-US-Wavenet-F'},audioConfig:{audioEncoding:'MP3'}});
+    expect([...objects.keys()][0]).toContain('words/google-wavenet/en-US-Wavenet-F/v1/');
     expect((await call(path,'POST')).status).toBe(200);expect(run).toHaveBeenCalledTimes(1);
     expect((await call(path,'POST',undefined,'bob')).status).toBe(404);
     expect((await call('/public'+path,'POST')).status).toBe(404);
@@ -161,7 +168,20 @@ describe("owner isolation and atomic D1 imports", () => {
     expect((await call(path(1),'POST')).status).toBe(503);expect(objects.size).toBe(1);
     expect((db.prepare('SELECT count(*) AS n FROM audio_generation_locks').get() as any).n).toBe(0);
   });
-  it('accepts the actual MeloTTS WAV format and preserves its type when replaying from R2',async()=>{
+  it('does not call Google without credentials or cache failed provider responses',async()=>{
+    const {run,objects}=audioMock();
+    const deck=(await (await call('/decks','POST',sample())).json() as any).deck;
+    const word=db.prepare('SELECT id FROM words WHERE deck_id=? ORDER BY ordinal').get(deck.id) as any;
+    const path=`/decks/${deck.id}/words/${word.id}/audio`;
+    delete env.GOOGLE_TTS_API_KEY;
+    expect((await call(path,'POST')).status).toBe(503);expect(run).not.toHaveBeenCalled();
+    env.GOOGLE_TTS_API_KEY='test-google-key';
+    vi.mocked(globalThis.fetch).mockResolvedValueOnce(Response.json({error:'provider detail must stay private'},{status:403}));
+    const failed=await call(path,'POST');expect(failed.status).toBe(503);
+    expect(await failed.text()).not.toContain('provider detail');expect(objects.size).toBe(0);
+    expect((await call(path,'POST')).status).toBe(200);
+  });
+  it('preserves validated audio format when replaying from R2',async()=>{
     const {run}=audioMock();const wav=new Uint8Array(76),view=new DataView(wav.buffer);
     wav.set(new TextEncoder().encode('RIFF'),0);view.setUint32(4,68,true);wav.set(new TextEncoder().encode('WAVEfmt '),8);
     view.setUint32(16,16,true);view.setUint16(20,1,true);view.setUint16(22,1,true);view.setUint32(24,24000,true);view.setUint32(28,48000,true);view.setUint16(32,2,true);view.setUint16(34,16,true);wav.set(new TextEncoder().encode('data'),36);view.setUint32(40,32,true);

@@ -1,12 +1,13 @@
 import type { Env } from './index';
 import { standardAssetPath, standardDeck } from '../shared/standardDecks';
 import type { Word } from '../shared/model';
-const MODEL='@cf/myshell-ai/melotts';
+const VOICE='en-US-Wavenet-F';
+const AUDIO_VERSION='google-wavenet-en-US-Wavenet-F-mp3-v1';
 const standardCache=new Map<string,Word[]>();
 const error=(message:string,status=503)=>Response.json({error:message},{status});
 export async function audioKey(text:string){
- const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('melotts-en-v1\0'+text));
- return 'words/en/v1/'+Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('')+'.audio';
+ const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(AUDIO_VERSION+'\0'+text));
+ return 'words/google-wavenet/en-US-Wavenet-F/v1/'+Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('')+'.audio';
 }
 async function sourceWord(env:Env,deckId:string,wordId:string,uid?:string){
  const standard=standardDeck(deckId);
@@ -47,7 +48,7 @@ export async function wordAudio(request:Request,env:Env,deckId:string,wordId:str
  if(!word)return error('この単語は読み上げられません。',404);
  const text=word.normalize('NFKC').trim().replace(/\s+/g,' ');
  if(!/[A-Za-z]/.test(text)||text.length>120)return error('英単語の読み上げに対応しています。',400);
- if(!env.AUDIO||!env.AI||env.AUDIO_ENABLED!=='true')return error('音声の準備中です。しばらくしてからお試しください。');
+ if(!env.AUDIO||!env.GOOGLE_TTS_API_KEY||env.AUDIO_ENABLED!=='true')return error('音声の準備中です。しばらくしてからお試しください。');
  const key=await audioKey(text);
  const cached=await env.AUDIO.get(key);
  if(cached)return audioResponse(cached.body,cached.httpMetadata?.contentType);
@@ -66,9 +67,16 @@ export async function wordAudio(request:Request,env:Env,deckId:string,wordId:str
   if(!await quota(scope,100)||!await quota('global',Number.isSafeInteger(configured)&&configured>0?configured:3000))return error('本日の音声生成の上限に達しました。生成済みの音声は引き続き再生できます。',429);
   await env.DB.batch([env.DB.prepare('DELETE FROM audio_generation_limits WHERE day<=?').bind(new Date(now-7*86400000).toISOString().slice(0,10)),env.DB.prepare('DELETE FROM audio_generation_locks WHERE expires_at<?').bind(now)]);
   stage="generation";
-  const generated=await env.AI.run(MODEL,{prompt:text,lang:'en'});
+  const response=await fetch('https://texttospeech.googleapis.com/v1/text:synthesize',{
+   method:'POST',headers:{'Content-Type':'application/json','X-Goog-Api-Key':env.GOOGLE_TTS_API_KEY},
+   body:JSON.stringify({input:{text},voice:{languageCode:'en-US',name:VOICE},audioConfig:{audioEncoding:'MP3'}}),
+   signal:AbortSignal.timeout(25000),
+  });
+  // Never expose provider responses: they may contain request or credential details.
+  if(!response.ok)throw new Error('Google synthesis failed');
+  const generated=await response.json() as {audioContent?:unknown};
   stage="decode";
-  const data=await audioBytes(generated);
+  const data=await audioBytes({audio:generated.audioContent});
   stage="storage";
   await env.AUDIO.put(key,data.data,{httpMetadata:{contentType:data.contentType}});
   return audioResponse(data.data,data.contentType);
