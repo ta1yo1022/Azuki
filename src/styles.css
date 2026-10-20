@@ -3501,3 +3501,16 @@ a.deck-card, a.nav-item { text-decoration: none; }
 }
 @keyframes study-detail-rise{from{transform:translateY(100%);opacity:.6}to{transform:translateY(0);opacity:1}}
 @media(prefers-reduced-motion:reduce){.study-word-dialog[open]{animation:none}}
+@media(min-width:801px){
+ .sidebar{width:260px}
+ .workspace{margin-left:260px}
+ .sidebar-bottom .storage-note{padding:10px 6px 12px}
+ .sidebar-bottom .storage-note p{margin:9px 0}
+ .sidebar-bottom .audio-quota-caption{margin:4px 6px 10px;line-height:1.6}
+ .toast:not(.plans-toast){left:calc(50% + 130px)}
+}
+@media(min-width:801px) and (max-width:1200px){
+ .sidebar{width:235px}
+ .workspace{margin-left:235px}
+ .toast:not(.plans-toast){left:calc(50% + 117.5px)}
+}
