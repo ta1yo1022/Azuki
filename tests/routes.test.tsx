@@ -134,7 +134,7 @@ describe("URL navigation", () => {
       await act(async () => root.unmount());
       root = createRoot(container);
       await mount(path);
-      if(path.startsWith("/shared/"))await click("学習する");
+      await click("学習する");
       await click("例文カードで学習");
       expect(currentURL).toBe(`${path}/study?mode=examples`);
       expect(container.textContent).toContain("日本語訳のある例文が対象です。");
@@ -147,6 +147,7 @@ describe("URL navigation", () => {
     await settle(280);
     expect(container.querySelector("h1")?.textContent).toBe("日常のことば");
     expect(container.querySelector<HTMLInputElement>('[aria-label="単語・意味を検索"]')?.value).toBe("curious");
+    await click("学習する");
     await click("カードで学習");
     expect(currentURL).toBe("/library/decks/saved-deck/study?q=curious&mode=words");
     expect(container.querySelector(".study-page")).toBeTruthy();
