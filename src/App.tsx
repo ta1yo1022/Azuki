@@ -490,7 +490,6 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     <span className="separator">/</span>{" "}
                     <strong>{totalWords.toLocaleString()}</strong> 語
                   </p>
-                  <AudioQuota userId={user?.uid} />
                 </div>
                 <button
                   className="button primary"
