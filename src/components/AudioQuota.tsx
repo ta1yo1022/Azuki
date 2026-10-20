@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Volume2 } from 'lucide-react';
 import { auth } from '../lib/firebase';
 const base=(import.meta.env.VITE_API_BASE_URL??'').replace(/\/$/,'');
 export function AudioQuota({userId}:{userId?:string}){
@@ -16,5 +17,12 @@ export function AudioQuota({userId}:{userId?:string}){
   return()=>{active=false;clearInterval(timer);window.removeEventListener('azuki-audio-quota',update);window.removeEventListener('focus',update);};
  },[userId]);
  if(!userId)return null;
- return <div className="audio-quota" role="status">{quota ? <><span>{quota.remaining===0?'本日の音声生成は上限に達しました':<>今日の音声生成：あと <strong>{quota.remaining}</strong> 語 / {quota.limit}語</>}</span><small>{quota.remaining===0?'生成済み音声は引き続き再生できます。':''}毎日9時にリセット</small></> : <span>音声生成の残り回数を確認できません</span>}</div>;
+ return <div className="storage-note audio-quota" role="status">
+  <span><Volume2 size={16} />単語音声の生成数</span>
+  {quota ? <>
+   <p>{(quota.limit-quota.remaining).toLocaleString()} / {quota.limit.toLocaleString()} 語</p>
+   <div className="usage-track" role="progressbar" aria-label="本日の単語音声の生成数" aria-valuemin={0} aria-valuemax={quota.limit} aria-valuenow={quota.limit-quota.remaining}><span style={{width:`${Math.min(100,Math.max(0,(quota.limit-quota.remaining)/quota.limit*100))}%`}} /></div>
+   <small>{quota.remaining===0?'本日の上限に達しました。生成済み音声は再生できます。':'毎日9時にリセット'}</small>
+  </> : <p>生成数を確認できません</p>}
+ </div>;
 }
