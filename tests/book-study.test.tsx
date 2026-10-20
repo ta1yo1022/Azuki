@@ -18,6 +18,7 @@ it('opens a deep-linked page beyond the API first 50 and supports last-page and 
  await act(async()=>root.render(<MemoryRouter initialEntries={['/book?bookPage=15&q=keep']}><BookStudyPage deck={deck} reader={reader} onClose={()=>{}}/><Location/></MemoryRouter>));
  expect(reader.words).toHaveBeenLastCalledWith('source','',56,expect.any(AbortSignal));
  expect(container.querySelectorAll('.book-entry')).toHaveLength(8);
+ expect(container.querySelectorAll('.book-entry-word .word-audio-button')).toHaveLength(8);
  expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-56');
  await act(async()=>button('次のページ').click());
  expect(container.querySelector('output')?.textContent).toContain('bookPage=17');

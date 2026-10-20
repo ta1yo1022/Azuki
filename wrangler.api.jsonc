@@ -7,12 +7,16 @@
     "FIREBASE_PROJECT_ID": "azuki-eed67",
     "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173,https://azuki-4ti.pages.dev,https://azuki.mame-app.com",
     "ALLOW_IMPORTS": "true",
+    "AUDIO_ENABLED": "true",
+    "AUDIO_DAILY_GENERATION_LIMIT": "3000",
     "EMAIL_ENABLED": "true",
     "EMAIL_DAILY_LIMIT": "290",
     "EMAIL_FROM": "support@volta.jp",
     "EMAIL_API_URL": "https://azuki-api.mizuno-taiyo-sub.workers.dev/api/email/unsubscribe",
     "ADMIN_EMAILS": "taiyo.mizuno.main@gmail.com",
   },
+  "ai": { "binding": "AI" },
+  "r2_buckets": [{ "binding": "AUDIO", "bucket_name": "azuki-audio" }],
   "triggers": { "crons": ["*/5 * * * *"] },
   "d1_databases": [
     {

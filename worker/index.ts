@@ -1,3 +1,4 @@
+import { wordAudio, cleanupWordAudio } from './audio';
 import { studyRoute } from './study';
 import { favoritesRoute } from './favorites';
 import { ensureDefaultEmailPreference, emailAdminRoute, preferencesRoute, processEmailQueue, unsubscribeRoute } from './email';
@@ -13,6 +14,10 @@ import { editWord, setVisibility } from "./publishing";
 import { OFFICIAL_OWNER_ID } from "./official";
 export interface Env {
   DB: D1Database;
+  AI?: Ai;
+  AUDIO?: R2Bucket;
+  AUDIO_ENABLED?: string;
+  AUDIO_DAILY_GENERATION_LIMIT?: string;
   FIREBASE_PROJECT_ID: string;
   ALLOWED_ORIGINS: string;
   ALLOW_IMPORTS: string;
@@ -57,6 +62,8 @@ async function route(
   if (url.pathname === "/api/email/unsubscribe") return unsubscribeRoute(request, env);
   if (url.pathname === "/api/health" && request.method === "GET")
     return json({ ok: true });
+  const publicAudio=/^\/api\/public\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})\/audio$/.exec(url.pathname);
+  if(publicAudio)return wordAudio(request,env,publicAudio[1],publicAudio[2]);
   if (url.pathname.startsWith("/api/public/")) return publicRoute(request, env);
   if (
     !env.FIREBASE_PROJECT_ID ||
@@ -90,6 +97,8 @@ async function route(
   if (url.pathname.startsWith("/api/admin/") || /^\/api\/decks\/[^/]+\/report$/.test(url.pathname)) return reportsRoute(request, env, identity);
   if (uid === OFFICIAL_OWNER_ID)
     return json({ error: "このアカウントでは操作できません。" }, 403);
+  const privateAudio=/^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})\/audio$/.exec(url.pathname);
+  if(privateAudio)return wordAudio(request,env,privateAudio[1],privateAudio[2],uid);
   if (url.pathname === "/api/study") return studyRoute(request, env, uid);
   if (url.pathname === "/api/favorites" || url.pathname.startsWith("/api/favorites/")) return favoritesRoute(request, env, uid);
   if (url.pathname === "/api/decks" && request.method === "GET") {
@@ -299,4 +308,4 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
     return response;
   };
 }
-export default { fetch: createHandler(), scheduled(_event: ScheduledController, env: Env, ctx: ExecutionContext) { ctx.waitUntil(processEmailQueue(env)); } };
+export default { fetch: createHandler(), scheduled(_event: ScheduledController, env: Env, ctx: ExecutionContext) { ctx.waitUntil(Promise.all([processEmailQueue(env),cleanupWordAudio(env)])); } };

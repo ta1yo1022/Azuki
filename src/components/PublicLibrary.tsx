@@ -1,3 +1,4 @@
+import { WordAudioButton } from "./WordAudioButton";
 import { ActionMenu } from "./ActionMenu";
 import { FavoriteButton } from "./Favorites";
 import { BookStudyPage } from "./BookStudyPage";
@@ -521,6 +522,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
                     <strong>{word.word}</strong>
                     <span>{word.meaning}</span>
                   </span>
+                  <WordAudioButton deckId={deck.id} wordId={word.id} word={word.word} isPublic />
                   <span className="word-tags">
                     {word.tags.map((tag) => (
                       <span key={tag}>{tag}</span>

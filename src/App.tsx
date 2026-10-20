@@ -1,3 +1,4 @@
+import { WordAudioButton } from "./components/WordAudioButton";
 import { BarChart3 } from "lucide-react";
 import { StudyStatsPage, StudyStatsSummary } from "./components/StudyStatsPage";
 import { Favorites } from "./components/Favorites";
@@ -771,6 +772,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                         <strong>{word.word}</strong>
                         <span>{word.meaning}</span>
                       </span>
+                      <WordAudioButton deckId={selected.id} wordId={word.id} word={word.word} />
                       <span className="word-tags">
                         {word.tags.map((tag) => (
                           <span key={tag}>{tag}</span>

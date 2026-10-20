@@ -1,3 +1,4 @@
+import { WordAudioButton } from "./WordAudioButton";
 import { useStudyArrows } from '../lib/useStudyArrows';
 import { useStudyTracking } from "../lib/studyTracking";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -275,7 +276,7 @@ export function StudyPage({
           word && (
             <>
               <div className="study-progress-label">
-                <span>{examplesMode ? "例文で学習" : "カードで学習"}</span>
+                <span className="study-mode-audio">{examplesMode ? "例文で学習" : "カードで学習"}{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={word.word} isPublic={deck.visibility==='public'} />}</span>
                 <span role="status">
                   <strong>{index + 1}</strong> / {total} {examplesMode ? "例文" : "語"}
                 </span>

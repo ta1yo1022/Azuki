@@ -123,6 +123,54 @@ describe("owner isolation and atomic D1 imports", () => {
       ALLOW_IMPORTS: "true",
     };
   });
+  function audioMock(){
+    const objects=new Map<string,ArrayBuffer>();
+    const mp3=Uint8Array.from([73,68,51,...Array(50).fill(0)]).buffer;
+    const run=vi.fn(async()=>({audio:btoa(String.fromCharCode(...new Uint8Array(mp3)))}));
+    env.AI={run} as unknown as Ai;env.AUDIO_ENABLED='true';
+    env.AUDIO={get:vi.fn(async(key:string)=>objects.has(key)?{body:new Response(objects.get(key)!).body}:null),put:vi.fn(async(key:string,data:ArrayBuffer)=>{objects.set(key,data);})} as unknown as R2Bucket;
+    return {objects,run};
+  }
+  it('generates stored words only, caches audio in R2, and checks access before every replay',async()=>{
+    const {run,objects}=audioMock();
+    const deck=(await (await call('/decks','POST',sample())).json() as any).deck;
+    const word=db.prepare('SELECT id FROM words WHERE deck_id=? ORDER BY ordinal').get(deck.id) as any;
+    const path=`/decks/${deck.id}/words/${word.id}/audio`;
+    const first=await call(path,'POST',{text:'Never synthesize this injected text'});
+    expect(first.status).toBe(200);expect(first.headers.get('content-type')).toBe('audio/mpeg');expect(objects.size).toBe(1);
+    expect(run).toHaveBeenCalledWith('@cf/myshell-ai/melotts',{prompt:'word-0',lang:'en'});
+    expect((await call(path,'POST')).status).toBe(200);expect(run).toHaveBeenCalledTimes(1);
+    expect((await call(path,'POST',undefined,'bob')).status).toBe(404);
+    expect((await call('/public'+path,'POST')).status).toBe(404);
+    await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'public'});
+    expect((await call('/public'+path,'POST',undefined,'')).status).toBe(200);
+    await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'private'});
+    expect((await call('/public'+path,'POST')).status).toBe(404);
+    expect(run).toHaveBeenCalledTimes(1);
+  });
+  it('keeps cached audio working at the generation limit and never stores failed audio',async()=>{
+    const {run,objects}=audioMock();env.AUDIO_DAILY_GENERATION_LIMIT='1';
+    const deck=(await (await call('/decks','POST',sample())).json() as any).deck;
+    const words=db.prepare('SELECT id FROM words WHERE deck_id=? ORDER BY ordinal').all(deck.id) as any[];
+    const path=(i:number)=>`/decks/${deck.id}/words/${words[i].id}/audio`;
+    expect((await call(path(0),'POST')).status).toBe(200);
+    expect((await call(path(1),'POST')).status).toBe(429);
+    expect((await call(path(0),'POST')).status).toBe(200);expect(run).toHaveBeenCalledTimes(1);
+    env.AUDIO_DAILY_GENERATION_LIMIT='10';run.mockResolvedValueOnce({audio:btoa('Not a valid MP3 result')});
+    expect((await call(path(1),'POST')).status).toBe(503);expect(objects.size).toBe(1);
+    expect((db.prepare('SELECT count(*) AS n FROM audio_generation_locks').get() as any).n).toBe(0);
+  });
+  it('does not generate the same audio twice while another request is running',async()=>{
+    const {run}=audioMock();let resolve!:(value:{audio:string})=>void;
+    run.mockImplementationOnce(()=>new Promise(done=>{resolve=done;}));
+    const deck=(await (await call('/decks','POST',sample())).json() as any).deck;
+    const word=db.prepare('SELECT id FROM words WHERE deck_id=? ORDER BY ordinal').get(deck.id) as any;
+    const path=`/decks/${deck.id}/words/${word.id}/audio`;
+    const pending=call(path,'POST');await vi.waitFor(()=>expect(run).toHaveBeenCalledTimes(1));
+    expect((await call(path,'POST')).status).toBe(202);
+    resolve({audio:btoa('ID3'+String.fromCharCode(...Array(50).fill(0)))});expect((await pending).status).toBe(200);
+    expect((await call(path,'POST')).status).toBe(200);expect(run).toHaveBeenCalledTimes(1);
+  });
   it("stores learning idempotently with Japanese dates and owner isolation",async()=>{
     const end=Date.now()-1000,event={id:'event-1',sessionId:'session-1',deckId:'azuki-cefrj-a1-1-v1',mode:'examples',start:end-15000,end};
     expect((await call('/study','POST',{events:[event]})).status).toBe(200);
