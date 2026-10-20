@@ -3456,3 +3456,6 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .themed-book-cover{background:linear-gradient(90deg,#00000018 0,transparent 28px),var(--deck-ink);color:var(--deck-paper)}
 .themed-book-cover h2{color:var(--deck-paper)}
 .themed-book-cover .book-cover-tags span,.themed-book-cover .book-cover-bottom{border-color:color-mix(in srgb,var(--deck-paper) 35%,transparent)}
+
+.detail-heading:has(> .owner-deck-actions){flex-direction:column;align-items:stretch;gap:20px}
+.detail-heading > .owner-deck-actions{width:100%;align-self:stretch;justify-content:flex-start;flex-shrink:1;padding-top:15px}
