@@ -7,7 +7,8 @@ export function pageMetadata(pathname:string,deck?:MetadataDeck):PageMetadata {
  const shared=/^\/shared\/([a-zA-Z0-9-]{1,80})(?:\/(study|book))?$/.exec(path);
  let title='Azuki | 自分の単語帳で英語を覚える',description=SITE_DESCRIPTION,robots='index, follow',canonical=path;
  const pages:Record<string,[string,string]>={
-  '/explore':['公開単語帳を探す — Azuki','CEFR-Jやテーマ別の英単語帳、みんなが公開した単語帳を検索。ログインせずにカード・例文・本型の単語帳で学習できます。'],
+  '/plans':['Azuki Pro — 月額480円','月額480円（税込）。単語・例文音声の新規生成の個人上限を解除し、本型の単語帳で学習できます。'],
+  '/explore':['公開単語帳を探す — Azuki','CEFR-Jやテーマ別の英単語帳、みんなが公開した単語帳を検索。ログインせずにカード学習を試せます。本型の学習はProで利用できます。'],
   '/guide/create':['オリジナル英単語帳の作り方 — Azuki','AIで作った単語・意味・例文をJSONでまとめて登録。Azukiで自分の例文に編集して、単語帳を作る方法を紹介します。'],
   '/privacy':['プライバシーポリシー — Azuki','英単語帳アプリAzukiにおける個人情報、Cookie、アクセス解析などの取り扱いについて。'],
   '/terms':['利用規約 — Azuki','英単語帳アプリAzukiの利用条件、単語帳の公開・コピー・権利について。'],

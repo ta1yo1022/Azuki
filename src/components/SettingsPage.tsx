@@ -18,6 +18,7 @@ export function SettingsPage({ onClose, onTutorial, demo = false }: { demo?: boo
       <h1>設定</h1>
     </header>
     <main className="study-content">
+      {!demo&&<section className="study-setup"><h2>利用プラン</h2><p>Proの内容や契約状況を確認できます。</p><Link className="button secondary" to="/plans">プラン・契約を確認</Link></section>}
       <section className="study-setup" aria-labelledby="settings-title">
         <h2 id="settings-title">カード学習</h2>
         <p>次回の学習で使う設定を選んでください。</p>

@@ -122,4 +122,20 @@ Azukiの独自コードと開発ドキュメントは **[MIT License](LICENSE)**
 
 Google Cloud Text-to-SpeechのWaveNet（`en-US-Wavenet-F`）で、再生を要求した英単語だけを生成します。例文の音声はまだ生成しません。生成済み音声（WAV／MP3）は非公開R2バケット`azuki-audio`へ保存し、正規化した単語とモデルバージョンのハッシュで再利用します。APIは保存された単語IDから本文を解決し、非公開単語帳は毎回所有権を確認します。R2は直接公開しません。
 
-API Workerに`AUDIO`バインディング、`AUDIO_ENABLED=true`とSecret `GOOGLE_TTS_API_KEY`が必要です。Google Cloudで課金とCloud Text-to-Speech APIを有効にし、専用キーのAPI制限をCloud Text-to-Speech APIにしてください。ローカルは`.dev.vars`へ設定、本番は`npx wrangler secret put GOOGLE_TTS_API_KEY --config wrangler.api.jsonc`で登録します。キーを`VITE_`変数やGitへ保存しないでください。旧MeloTTSとはR2の保存先を分けており、切り替え後の初回再生でWaveNet音声を生成します。新規環境は`npx wrangler r2 bucket create azuki-audio`でバケットを作成し、D1マイグレーションを適用してください。生成は同じ音声ごとにロックし、失敗時は保存しません。新規生成の初期上限はアカウントごと100件・アプリ全体3,000件／日（UTC）で、生成済み音声の再生は上限に含めません。新規生成はログイン必須で、公開・非公開の両経路で同じアカウントの枠を使用します。残り件数はマイライブラリに表示し、日本時間9時にリセットします。全体上限は`AUDIO_DAILY_GENERATION_LIMIT`で変更できます。音声APIはPOSTで利用し、返却形式は生成音声に合わせた`audio/wav`または`audio/mpeg`です。ローカルでもGoogleの音声生成を呼び出すため、無料枠を超えると利用料金が発生します。
+API Workerに`AUDIO`バインディング、`AUDIO_ENABLED=true`とSecret `GOOGLE_TTS_API_KEY`が必要です。Google Cloudで課金とCloud Text-to-Speech APIを有効にし、専用キーのAPI制限をCloud Text-to-Speech APIにしてください。ローカルは`.dev.vars`へ設定、本番は`npx wrangler secret put GOOGLE_TTS_API_KEY --config wrangler.api.jsonc`で登録します。キーを`VITE_`変数やGitへ保存しないでください。旧MeloTTSとはR2の保存先を分けており、切り替え後の初回再生でWaveNet音声を生成します。新規環境は`npx wrangler r2 bucket create azuki-audio`でバケットを作成し、D1マイグレーションを適用してください。生成は同じ音声ごとにロックし、失敗時は保存しません。新規生成の初期上限は販売開始前はアカウントごと単語100件、販売開始後は無料で単語10件・例文5件／日（UTC、日本時間9時リセット）。Proでは個人の1日上限なし。アプリ全体の安全上限は3,000件／日で、生成済み音声の再生は上限に含めません。新規生成はログイン必須で、公開・非公開の両経路で同じアカウントの枠を使用します。残り件数はマイライブラリに表示し、日本時間9時にリセットします。全体上限は`AUDIO_DAILY_GENERATION_LIMIT`で変更できます。音声APIはPOSTで利用し、返却形式は生成音声に合わせた`audio/wav`または`audio/mpeg`です。ローカルでもGoogleの音声生成を呼び出すため、無料枠を超えると利用料金が発生します。
+
+### Azuki Pro（Stripe）
+
+月額480円（税込）の月額プランのみです。販売開始後の無料枠は新規生成が単語10個・例文5個／日で、生成済みの再生は枠に含めません。Proは新規生成の個人上限なし、本型学習が利用できます。フォルダ・例文のAI作成などは有料機能に含めていません。
+
+`BILLING_ENABLED=false`の間は販売を開始せず、既存の単語100件／日と本型学習を維持します。Stripeの本番審査・販売者情報・特商法表記を確認するまで、本番はfalseのままにしてください。
+
+ローカルの`.dev.vars`には`STRIPE_SECRET_KEY`（sk_test_）、`STRIPE_WEBHOOK_SECRET`（whsec_）、`STRIPE_PRICE_ID`、任意の`STRIPE_PORTAL_CONFIG_ID`を設定します。本番のシークレットはWorker Secretsへ登録し、価格ID・ポータル設定ID・`BILLING_ENABLED`はWorkerの設定へ登録します。価格はJPY480・月額・税込み（inclusive）であることをサーバーで検証します。フロントから送られた価格やユーザーIDは採用しません。
+
+Webhookは`POST /api/billing/webhook`です。`checkout.session.completed`、`checkout.session.async_payment_succeeded`、`customer.subscription.created/updated/deleted`、`invoice.paid/payment_failed/payment_action_required`を有効にします。未加工の本文の署名と時刻を検証し、顧客ごとのロックでStripeの最新契約を再取得します。重複・順不同の通知でも古い状態へ戻さず、失敗時は503でStripeに再送させます。サーバーが対応付けた顧客・設定した価格・環境が一致し、有効期間内のactive契約だけをProとします。test/liveの契約はDBでも分離します。
+
+決済成功のURLやクライアント側の保存値ではProにしません。価格画面からサーバーで更新確認でき、カード変更・解約はStripe Customer Portalへ移動します。解約予約は支払済み期間まで有効、契約終了・past_due等では無料へ戻ります。保存済み単語帳を解約時に削除しません。
+
+テストは`AZUKI_STRIPE_SMOKE=1 npx vitest run tests/stripe-integration.test.ts`で実行できます。実際のStripeテストAPIでCheckout・税込480円・二重申込防止・テスト課金・通知反映・解約・Portalを確認し、作成したテスト顧客と契約は終了時に削除します。sk_live_では実行できません。通常のテストとCIではこの外部接続テストをスキップします。ローカルWebhookはStripe CLIの`stripe listen --forward-to http://localhost:8787/api/billing/webhook`で転送します。秘密鍵をコマンド履歴に直接書かないでください。
+
+音声生成は保存された単語・例文番号からサーバーで本文を解決し、本文の持ち込みは受け付けません。失敗した生成は個人枠を戻します。Proでも不正な連続生成を防ぐため1分に新規30件、全体の安全上限を設けています。R2の既存音声の再生には個人枠を適用しません。

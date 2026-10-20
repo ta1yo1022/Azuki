@@ -1,3 +1,5 @@
+import { sqliteD1 } from './helpers/sqliteD1';
+import Stripe from 'stripe';
 import { afterEach, vi, beforeEach, describe, expect, it } from "vitest";
 import { DatabaseSync } from "node:sqlite";
 import { readFileSync, readdirSync } from "node:fs";
@@ -21,47 +23,7 @@ const sample = (n = 2) => ({
     tags: ["名詞"],
   })),
 });
-function sqliteD1(db: DatabaseSync): D1Database {
-  function prepare(sql: string) {
-    const entry = {
-      sql,
-      values: [] as (string | number | null)[],
-      bind(...values: (string | number | null)[]) {
-        if (values.length > 100) throw new Error("D1 parameter limit");
-        entry.values = values;
-        return entry;
-      },
-      async first() {
-        return db.prepare(sql).get(...entry.values) ?? null;
-      },
-      async all() {
-        return { success: true, results: db.prepare(sql).all(...entry.values) };
-      },
-      execute() {
-        return { success: true, meta: db.prepare(sql).run(...entry.values) };
-      },
-      async run() { return entry.execute(); },
-    };
-    return entry;
-  }
-  return {
-    prepare,
-    async batch(entries: ReturnType<typeof prepare>[]) {
-      if (entries.length > 50) throw new Error("D1 query limit");
-      db.exec("BEGIN");
-      try {
-        const results = [];
-        // D1 serializes transactions; do not yield mid-transaction on this connection.
-        for (const entry of entries) results.push(entry.execute());
-        db.exec("COMMIT");
-        return results;
-      } catch (e) {
-        db.exec("ROLLBACK");
-        throw e;
-      }
-    },
-  } as unknown as D1Database;
-}
+
 describe("JSON import boundary", () => {
   it("normalizes input and ignores forged ownership and public status", () => {
     const data = parseDeck(
@@ -180,6 +142,67 @@ describe("owner isolation and atomic D1 imports", () => {
     env.AUDIO={get:vi.fn(async(key:string)=>objects.has(key)?{body:new Response(objects.get(key)!).body,httpMetadata:{contentType:types.get(key)}}:null),put:vi.fn(async(key:string,data:ArrayBuffer,options:{httpMetadata:{contentType:string}})=>{objects.set(key,data);types.set(key,options.httpMetadata.contentType);})} as unknown as R2Bucket;
     return {objects,run};
   }
+  function enableBilling(){env.BILLING_ENABLED='true';env.STRIPE_SECRET_KEY='sk_test_azuki';env.STRIPE_PRICE_ID='price_azuki';env.STRIPE_WEBHOOK_SECRET='whsec_azuki';}
+  function grantPro(uid='alice',status='active',mode=0,end=Math.floor(Date.now()/1000)+86400){
+    db.prepare('INSERT OR REPLACE INTO billing_subscriptions(subscription_id,customer_id,user_id,livemode,price_id,status,period_end,cancel_at_period_end,updated_at) VALUES(?,?,?,?,?,?,?,?,?)').run('sub_'+uid,'cus_'+uid,uid,mode,'price_azuki',status,end,1,new Date().toISOString());
+  }
+  it('enforces separate free generation quotas, cached playback, and Pro unlimited generation',async()=>{
+    const {run}=audioMock();enableBilling();
+    const input={...sample(11),words:sample(11).words.map(word=>({...word,examples:Array.from({length:6},(_,i)=>({text:`This is example ${i} for ${word.word}.`,translation:'日本語'}))}))};
+    const deck=(await (await call('/decks','POST',input)).json() as any).deck;
+    const words=db.prepare('SELECT id FROM words WHERE deck_id=? ORDER BY ordinal').all(deck.id) as any[];
+    const path=(i:number)=>`/decks/${deck.id}/words/${words[i].id}/audio`;
+    for(let i=0;i<10;i++)expect((await call(path(i),'POST')).status).toBe(200);
+    expect((await call(path(10),'POST')).status).toBe(429);
+    for(let i=0;i<5;i++)expect((await call(path(0)+`?example=${i}`,'POST',{text:'Never synthesize injected text'})).status).toBe(200);
+    expect((await call(path(0)+'?example=5','POST')).status).toBe(429);
+    expect(run).toHaveBeenCalledWith(expect.objectContaining({input:{text:'This is example 0 for word-0.'}}));
+    expect((await call(path(0),'POST')).status).toBe(200);expect((await call(path(0)+'?example=0','POST')).status).toBe(200);
+    const usage=await (await call('/audio/quota')).json() as any;
+    expect(usage.word).toEqual({used:10,limit:10,remaining:0});expect(usage.example).toEqual({used:5,limit:5,remaining:0});
+    grantPro();
+    expect((await call(path(10),'POST')).status).toBe(200);expect((await call(path(0)+'?example=5','POST')).status).toBe(200);
+    const pro=await (await call('/audio/quota')).json() as any;expect(pro.word.limit).toBeNull();expect(pro.example.limit).toBeNull();
+    expect((await call(path(0)+'?example=10','POST')).status).toBe(400);
+    expect((await call('/public'+path(0)+'?example=0','POST',undefined,'bob')).status).toBe(404);
+  });
+  it('applies quota atomically to concurrent generation requests',async()=>{
+    audioMock();enableBilling();
+    const deck=(await (await call('/decks','POST',sample(11))).json() as any).deck;
+    const words=db.prepare('SELECT id FROM words WHERE deck_id=?').all(deck.id) as any[];
+    const results=await Promise.all(words.map(word=>call(`/decks/${deck.id}/words/${word.id}/audio`,'POST')));
+    expect(results.filter(response=>response.status===200)).toHaveLength(10);expect(results.filter(response=>response.status===429)).toHaveLength(1);
+    expect((await (await call('/audio/quota')).json() as any).word.used).toBe(10);
+  });
+  it('gates book study by paid status, period, price and environment',async()=>{
+    enableBilling();
+    expect((await call('/billing/book')).status).toBe(402);
+    grantPro();expect((await call('/billing/book')).status).toBe(200);
+    expect((await (await call('/billing/status')).json() as any)).toMatchObject({pro:true,cancelAtPeriodEnd:true});
+    grantPro('alice','past_due');expect((await call('/billing/book')).status).toBe(402);
+    grantPro('alice','active',1);expect((await call('/billing/book')).status).toBe(402);
+    grantPro('alice','active',0,Math.floor(Date.now()/1000)-1);expect((await call('/billing/book')).status).toBe(402);
+    grantPro();env.STRIPE_PRICE_ID='another_price';expect((await call('/billing/book')).status).toBe(402);
+    expect((await call('/billing/book','GET',undefined,'bob')).status).toBe(402);
+    expect((await call('/billing/book','GET',undefined,'')).status).toBe(401);
+  });
+  it('verifies webhook signatures and reconciles duplicate or delayed notifications from Stripe',async()=>{
+    enableBilling();
+    db.prepare('INSERT INTO billing_customers(user_id,livemode,customer_id,created_at) VALUES(?,?,?,?)').run('alice',0,'cus_alice',new Date().toISOString());
+    let status='active';
+    const fetch=vi.spyOn(globalThis,'fetch').mockImplementation(async input=>{
+      expect(String(input)).toContain('api.stripe.com/v1/subscriptions');
+      return Response.json({object:'list',has_more:false,data:[{id:'sub_alice',customer:'cus_alice',livemode:false,status,cancel_at_period_end:true,items:{data:[{price:{id:'price_azuki'},current_period_end:Math.floor(Date.now()/1000)+86400}]}}]});
+    });
+    const event=JSON.stringify({id:'evt_test',object:'event',type:'customer.subscription.updated',livemode:false,data:{object:{customer:'cus_alice',status:'untrusted_old_status'}}});
+    const stripe=new Stripe('sk_test_azuki');
+    const signature=await stripe.webhooks.generateTestHeaderStringAsync({payload:event,secret:env.STRIPE_WEBHOOK_SECRET!,cryptoProvider:Stripe.createSubtleCryptoProvider()});
+    const send=(sig:string)=>handle(new Request('https://api.test/api/billing/webhook',{method:'POST',headers:{'stripe-signature':sig,'Content-Type':'application/json'},body:event}),env);
+    expect((await send('invalid')).status).toBe(400);expect(fetch).not.toHaveBeenCalled();
+    expect((await send(signature)).status).toBe(200);expect((await (await call('/billing/status')).json() as any).pro).toBe(true);
+    expect((await send(signature)).status).toBe(200);
+    status='canceled';expect((await send(signature)).status).toBe(200);expect((await (await call('/billing/status')).json() as any).pro).toBe(false);
+  });
   it('generates stored words only, caches audio in R2, and checks access before every replay',async()=>{
     const {run,objects}=audioMock();
     const deck=(await (await call('/decks','POST',sample())).json() as any).deck;

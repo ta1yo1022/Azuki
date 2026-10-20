@@ -1,3 +1,4 @@
+import { PlansPage } from './components/PlansPage';
 import { EmailDesignPreview } from './components/EmailComposer';
 import { AdminEmails } from './components/AdminEmails';
 import { AdminReports } from "./components/AdminReports";
@@ -45,6 +46,7 @@ export function AzukiRoutes() {
         {import.meta.env.DEV && <Route path="/dev/email-preview" element={<EmailDesignPreview />} />}
         <Route path="/admin/emails" element={<AdminEmails />} />
         <Route path="/admin/reports" element={<AdminReports />} />
+        <Route path="/plans" element={<PlansPage />} />
         <Route path="/privacy" element={<LegalPage kind="privacy" />} />
         <Route path="/terms" element={<LegalPage kind="terms" />} />
         <Route path="/copyright" element={<LegalPage kind="copyright" />} />

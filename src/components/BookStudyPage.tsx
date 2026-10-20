@@ -263,7 +263,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
               <div className={`book-meaning-content${visible ? '' : ' is-blurred'}`} aria-hidden={!visible}><p className="book-primary-meaning">{word.meaning}</p>{!!word.otherMeanings?.length && <div className="book-other-meanings"><small>その他の意味</small><ul>{word.otherMeanings.map(meaning=><li key={meaning}>{meaning}</li>)}</ul></div>}{word.usageNote && <p className="book-usage-note">{word.usageNote}</p>}</div>
               {hideMeanings && <button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={visible} aria-label={`${word.word}の意味を${visible ? '隠す' : '表示'}`} onClick={event=>{event.stopPropagation();toggleAnswer();}}><span className="sr-only">{visible ? '意味を隠す' : '意味を表示'}</span></button>}
             </div>
-            <div className="book-entry-example"><span className="book-mobile-label">例文</span><WordExamples word={word} blurEnglish={!englishVisible} onToggleEnglish={hideEnglish ? toggleEnglish : undefined} blurTranslations={!visible} onToggleTranslation={hideMeanings ? toggleAnswer : undefined}/></div>
+            <div className="book-entry-example"><span className="book-mobile-label">例文</span><WordExamples word={word} deckId={demo?undefined:deck.id} isPublic={deck.visibility==='public'} blurEnglish={!englishVisible} onToggleEnglish={hideEnglish ? toggleEnglish : undefined} blurTranslations={!visible} onToggleTranslation={hideMeanings ? toggleAnswer : undefined}/></div>
           </li>;
         })}</ol></div><div className="book-page-number">{page+leaf}</div></section>)}
     </section>

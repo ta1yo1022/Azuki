@@ -22,3 +22,8 @@ it('cancels playback on navigation and shows a retryable error',async()=>{
  expect(container.querySelector('button')?.getAttribute('aria-label')).toBe('helloを読み上げる');
  await act(async()=>root.render(<WordAudioButton deckId="deck" wordId="next" word="world"/>));expect(mocks.stop).toHaveBeenCalledWith(4);
 });
+it('uses a server-resolved example index when reading an example sentence',async()=>{
+ await act(async()=>root.render(<WordAudioButton deckId="deck" wordId="word:example:2" word="The sentence." exampleIndex={2} isPublic/>));
+ await act(async()=>container.querySelector('button')!.click());
+ expect(mocks.play).toHaveBeenCalledWith('deck','word',true,expect.any(Function),expect.any(Function),2);
+});

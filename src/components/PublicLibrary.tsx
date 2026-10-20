@@ -1,3 +1,4 @@
+import { ProBookGate } from './PlansPage';
 import { WordAudioButton } from "./WordAudioButton";
 import { ActionMenu } from "./ActionMenu";
 import { FavoriteButton } from "./Favorites";
@@ -392,7 +393,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
       setCopyError("アドレスバーのURLをコピーして共有してください。");
     }
   }
-  if (bookMode && deck) return <BookStudyPage key={deck.id} deck={deck} reader={publicRepository} onClose={() => navigate(detailPath + location.search)} />;
+  if (bookMode && deck) return <ProBookGate onClose={() => navigate(detailPath + location.search)}><BookStudyPage key={deck.id} deck={deck} reader={publicRepository} onClose={() => navigate(detailPath + location.search)} /></ProBookGate>;
   if (studying && deck) {
     return (
       <StudyPage
@@ -530,7 +531,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
                   </span>
                   <ChevronDown className="word-expand" size={17} />
                 </summary>
-                <WordDetails word={word} />
+                <WordDetails word={word} deckId={deck.id} />
               </details>
             ))}
           </div>

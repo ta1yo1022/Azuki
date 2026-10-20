@@ -1,3 +1,4 @@
+import { ProBookGate } from './components/PlansPage';
 import { ActionMenu } from './components/ActionMenu';
 import { DeckSettings } from './components/DeckSettings';
 import { deckThemeStyle } from '../shared/deckThemes';
@@ -340,7 +341,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
   );
   if (location.pathname === `${base}/settings`) return <SettingsPage demo={demo} onClose={() => navigate(base)} onTutorial={() => navigate(`${base}?tutorial=1`)} />;
 
-  if (bookMode && selected) return <BookStudyPage key={selected.id} demo={demo} deck={selected} reader={repository} onClose={() => navigate(detailPath + location.search)} />;
+  if (bookMode && selected) return <ProBookGate onClose={() => navigate(detailPath + location.search)}><BookStudyPage key={selected.id} demo={demo} deck={selected} reader={repository} onClose={() => navigate(detailPath + location.search)} /></ProBookGate>;
   if (studying && selected) {
     return (
       <StudyPage

@@ -5,6 +5,7 @@ import { createRoot, type Root } from "react-dom/client";
 import { MemoryRouter, useLocation, useNavigate, type NavigateFunction } from "react-router-dom";
 import { AzukiRoutes } from "../src/routes";
 
+vi.mock('../src/lib/billing',()=>({useBilling:()=>({status:{enabled:false,pro:false},loading:false,error:'',refresh:vi.fn()})}));
 const mocks = vi.hoisted(() => {
   const deck = { schemaVersion: 1, id: "demo-deck", title: "日常のことば", description: "カードで覚える", visibility: "public", wordCount: 1, textbookTags: [{name:"教科書"}], createdAt: "2026-10-05T00:00:00Z", updatedAt:"2026-10-05T00:00:00Z", isOfficial: false, officialLevel: undefined as "beginner" | "intermediate" | "advanced" | undefined };
   const owned = { ...deck, id: "saved-deck", visibility: "private" };

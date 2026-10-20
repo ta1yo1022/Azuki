@@ -1,3 +1,4 @@
+import { billingRoute, billingWebhook, subscriptionInfo, cleanupBilling } from './billing';
 import { updateDeckSettings } from './deckSettings';
 import { isDeckTheme } from '../shared/deckThemes';
 import { wordAudio, wordAudioQuota, cleanupWordAudio } from './audio';
@@ -17,6 +18,11 @@ import { OFFICIAL_OWNER_ID } from "./official";
 export interface Env {
   DB: D1Database;
   GOOGLE_TTS_API_KEY?: string;
+  BILLING_ENABLED?: string;
+  STRIPE_SECRET_KEY?: string;
+  STRIPE_WEBHOOK_SECRET?: string;
+  STRIPE_PRICE_ID?: string;
+  STRIPE_PORTAL_CONFIG_ID?: string;
   AUDIO?: R2Bucket;
   AUDIO_ENABLED?: string;
   AUDIO_DAILY_GENERATION_LIMIT?: string;
@@ -64,6 +70,8 @@ async function route(
   if (url.pathname === "/api/email/unsubscribe") return unsubscribeRoute(request, env);
   if (url.pathname === "/api/health" && request.method === "GET")
     return json({ ok: true });
+  if(url.pathname==='/api/billing/webhook')return billingWebhook(request,env);
+  if(url.pathname==='/api/billing/public'&&request.method==='GET')return json(await subscriptionInfo(env));
   const publicAudio=/^\/api\/public\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})\/audio$/.exec(url.pathname);
   if(publicAudio){
     let audioUid:string|undefined;
@@ -99,6 +107,7 @@ async function route(
       401,
     );
   }
+  if(url.pathname.startsWith('/api/billing/'))return billingRoute(request,env,identity);
   if (url.pathname === "/api/email/preferences") return preferencesRoute(request, env, identity);
   if (url.pathname === "/api/admin/emails" || url.pathname.startsWith("/api/admin/emails/")) return emailAdminRoute(request, env, identity);
   if (url.pathname.startsWith("/api/admin/") || /^\/api\/decks\/[^/]+\/report$/.test(url.pathname)) return reportsRoute(request, env, identity);
@@ -267,7 +276,7 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
       .split(",")
       .map((s) => s.trim())
       .filter(Boolean);
-    if (origin && !allowed.includes(origin) && new URL(request.url).pathname !== "/api/email/unsubscribe")
+    if (origin && !allowed.includes(origin) && !['/api/email/unsubscribe','/api/billing/webhook'].includes(new URL(request.url).pathname))
       return json({ error: "このアクセス元は許可されていません。" }, 403);
     let response: Response;
     try {
@@ -325,4 +334,4 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
     return response;
   };
 }
-export default { fetch: createHandler(), scheduled(_event: ScheduledController, env: Env, ctx: ExecutionContext) { ctx.waitUntil(Promise.all([processEmailQueue(env),cleanupWordAudio(env)])); } };
+export default { fetch: createHandler(), scheduled(_event: ScheduledController, env: Env, ctx: ExecutionContext) { ctx.waitUntil(Promise.all([processEmailQueue(env),cleanupWordAudio(env),cleanupBilling(env)])); } };

@@ -7,7 +7,7 @@ export function stopWordAudio(id?:number){
  if(!current||(id!==undefined&&current.id!==id))return;
  const active=current;current=undefined;active.controller.abort();try{active.source?.stop();}catch{/* Already ended. */}active.notify('idle');
 }
-export function playWordAudio(deckId:string,wordId:string,isPublic:boolean,notify:(state:'idle'|'loading'|'playing')=>void,onError:(message:string)=>void){
+export function playWordAudio(deckId:string,wordId:string,isPublic:boolean,notify:(state:'idle'|'loading'|'playing')=>void,onError:(message:string)=>void,exampleIndex?:number){
  stopWordAudio();
  const active={id:++serial,controller:new AbortController(),notify,source:undefined as AudioBufferSourceNode|undefined};current=active;notify('loading');
  // Unlock audio in the original user gesture, before the network request (including iOS).
@@ -20,7 +20,7 @@ export function playWordAudio(deckId:string,wordId:string,isPublic:boolean,notif
    const user=auth?.currentUser;if(user)headers.set('Authorization',`Bearer ${await user.getIdToken()}`);else if(!isPublic)throw new Error('Googleアカウントでログインしてください。');
    let response:Response|undefined;
    for(let attempt=0;attempt<30;attempt++){
-    response=await fetch(`${base}/api/${isPublic?'public/':''}decks/${encodeURIComponent(deckId)}/words/${encodeURIComponent(wordId)}/audio`,{method:'POST',headers,signal:active.controller.signal,cache:'no-store'});
+    response=await fetch(`${base}/api/${isPublic?'public/':''}decks/${encodeURIComponent(deckId)}/words/${encodeURIComponent(wordId)}/audio${exampleIndex===undefined?'':`?example=${exampleIndex}`}`,{method:'POST',headers,signal:active.controller.signal,cache:'no-store'});
     if(response.status!==202){window.dispatchEvent(new Event('azuki-audio-quota'));break;}
     await new Promise<void>((resolve,reject)=>{const signal=active.controller.signal;const cancel=()=>{clearTimeout(timer);reject(new DOMException('Aborted','AbortError'));};const timer=setTimeout(()=>{signal.removeEventListener('abort',cancel);resolve();},1000);if(signal.aborted)cancel();else signal.addEventListener('abort',cancel,{once:true});});
    }

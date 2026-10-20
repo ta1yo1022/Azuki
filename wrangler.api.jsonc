@@ -8,6 +8,7 @@
     "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173,https://azuki-4ti.pages.dev,https://azuki.mame-app.com",
     "ALLOW_IMPORTS": "true",
     "AUDIO_ENABLED": "true",
+    "BILLING_ENABLED": "false",
     "AUDIO_DAILY_GENERATION_LIMIT": "3000",
     "EMAIL_ENABLED": "true",
     "EMAIL_DAILY_LIMIT": "290",

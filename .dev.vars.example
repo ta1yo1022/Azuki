@@ -6,3 +6,10 @@ BREVO_API_KEY=
 # Google Cloud Text-to-Speech (server only; enable API and billing).
 # Restrict this dedicated key to Cloud Text-to-Speech API.
 GOOGLE_TTS_API_KEY=
+
+# Stripe: test locally first. Never expose sk_ / whsec_ in VITE_ variables.
+BILLING_ENABLED=false
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+STRIPE_PRICE_ID=
+STRIPE_PORTAL_CONFIG_ID=

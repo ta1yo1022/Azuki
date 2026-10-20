@@ -11,7 +11,7 @@ export function WordEditor({deck,word,onSaved,repository=cloudRepository}:{deck:
   const [examples,setExamples]=useState<ExampleDraft[]>(()=>drafts(word));
   const [busy,setBusy]=useState(false),[error,setError]=useState('');
   function update(key:string,change:Partial<WordExample>){setExamples(previous=>previous.map(example=>example.key===key?{...example,...change}:example));}
-  if(!editing)return <div className="word-editor-readonly"><span className="eyebrow">例文</span><WordExamples word={word}/><button type="button" className="text-button word-edit-trigger" onClick={()=>{setValue({word:word.word,meaning:word.meaning});setExamples(drafts(word));setError('');setEditing(true);}}><Pencil size={15}/>例文を追加・編集</button></div>;
+  if(!editing)return <div className="word-editor-readonly"><span className="eyebrow">例文</span><WordExamples word={word} deckId={deck.id}/><button type="button" className="text-button word-edit-trigger" onClick={()=>{setValue({word:word.word,meaning:word.meaning});setExamples(drafts(word));setError('');setEditing(true);}}><Pencil size={15}/>例文を追加・編集</button></div>;
   return <form className="word-edit-form" aria-label={`${word.word}を編集`} onSubmit={async event=>{
     event.preventDefault();if(busy)return;setBusy(true);setError('');
     try {
