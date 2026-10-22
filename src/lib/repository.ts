@@ -14,7 +14,7 @@ import {
   type WordPage,
 } from "../../shared/model";
 export class PublishConflict extends Error {
-  constructor(message: string, public existingDeckId?: string) { super(message); }
+  constructor(message: string, public existingDeckId?: string, public code?:string) { super(message); }
 }
 export type DeckSettingsInput=Pick<DeckInput,'title'|'description'|'textbookTags'|'theme'>;
 export interface Repository {
@@ -184,7 +184,7 @@ async function request<T>(
       "接続できませんでした。インターネット接続を確認して、もう一度お試しください。",
     );
   }
-  let result: T & { error?: string; existingDeckId?: string };
+  let result: T & { error?: string; existingDeckId?: string; code?:string };
   try {
     result = await response.json();
   } catch {
@@ -192,9 +192,10 @@ async function request<T>(
       "保存先に接続できませんでした。時間をおいてお試しください。",
     );
   }
-  if (!response.ok) throw new PublishConflict(result.error ?? "処理に失敗しました。", result.existingDeckId);
+  if (!response.ok) throw new PublishConflict(result.error ?? "処理に失敗しました。", result.existingDeckId,result.code);
   return result;
 }
+export { request as apiRequest };
 export const cloudRepository: Repository = {
   settings:async(id,values)=>(await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/settings`,{method:'PATCH',body:JSON.stringify(values)})).deck,
   theme:async(id,theme)=>(await request<{deck:Deck}>(`/decks/${encodeURIComponent(id)}/theme`,{method:'PATCH',body:JSON.stringify({theme})})).deck,

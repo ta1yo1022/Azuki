@@ -1,4 +1,5 @@
 import { billingRoute, billingWebhook, subscriptionInfo, cleanupBilling } from './billing';
+import { vocabularyRoute, cleanupVocabulary } from './vocabulary';
 import { updateDeckSettings } from './deckSettings';
 import { isDeckTheme } from '../shared/deckThemes';
 import { wordAudio, wordAudioQuota, cleanupWordAudio } from './audio';
@@ -17,6 +18,10 @@ import { editWord, setVisibility } from "./publishing";
 import { OFFICIAL_OWNER_ID } from "./official";
 export interface Env {
   DB: D1Database;
+  AI?: Ai;
+  DICTIONARY?: Fetcher;
+  VOCABULARY_ENABLED?: string;
+  VOCABULARY_DAILY_LIMIT?: string;
   GOOGLE_TTS_API_KEY?: string;
   BILLING_ENABLED?: string;
   STRIPE_SECRET_KEY?: string;
@@ -43,9 +48,9 @@ export async function limitedBody(
   limit = LIMITS.bytes,
 ): Promise<string> {
   if (!request.headers.get("content-type")?.includes("application/json"))
-    throw new ValidationError("JSON形式で送信してください。");
+    throw new ValidationError("送信データの形式を確認してください。");
   const reader = request.body?.getReader();
-  if (!reader) throw new ValidationError("JSONを入力してください。");
+  if (!reader) throw new ValidationError("送信するデータを入力してください。");
   const decoder = new TextDecoder();
   let bytes = 0;
   let text = "";
@@ -55,7 +60,7 @@ export async function limitedBody(
     bytes += value.byteLength;
     if (bytes > limit) {
       await reader.cancel();
-      throw new ValidationError("送信するJSONが大きすぎます。");
+      throw new ValidationError("送信するデータが大きすぎます。");
     }
     text += decoder.decode(value, { stream: true });
   }
@@ -113,6 +118,7 @@ async function route(
   if (url.pathname.startsWith("/api/admin/") || /^\/api\/decks\/[^/]+\/report$/.test(url.pathname)) return reportsRoute(request, env, identity);
   if (uid === OFFICIAL_OWNER_ID)
     return json({ error: "このアカウントでは操作できません。" }, 403);
+  if(url.pathname.startsWith('/api/vocabulary/'))return vocabularyRoute(request,env,uid);
   const privateAudio=/^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})\/audio$/.exec(url.pathname);
   if(privateAudio)return wordAudio(request,env,privateAudio[1],privateAudio[2],uid);
   if (url.pathname === "/api/audio/quota") return wordAudioQuota(request,env,uid);
@@ -334,4 +340,4 @@ export function createHandler(verify: Verify = verifyFirebaseIdentity) {
     return response;
   };
 }
-export default { fetch: createHandler(), scheduled(_event: ScheduledController, env: Env, ctx: ExecutionContext) { ctx.waitUntil(Promise.all([processEmailQueue(env),cleanupWordAudio(env),cleanupBilling(env)])); } };
+export default { fetch: createHandler(), scheduled(_event: ScheduledController, env: Env, ctx: ExecutionContext) { ctx.waitUntil(Promise.all([processEmailQueue(env),cleanupWordAudio(env),cleanupBilling(env),cleanupVocabulary(env)])); } };

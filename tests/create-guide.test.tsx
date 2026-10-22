@@ -1,4 +1,5 @@
 // @vitest-environment happy-dom
+import {encodeToon,decodeToon} from '../shared/toon';
 import {afterEach,beforeEach,it,expect,vi} from 'vitest';
 import {act} from 'react';
 import {createRoot,type Root} from 'react-dom/client';
@@ -10,17 +11,18 @@ beforeEach(()=>{vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);container=documen
 afterEach(async()=>{await act(async()=>root.unmount());container.remove();vi.unstubAllGlobals();});
 it('provides importable translated examples in both AI prompts and the manual template',async()=>{
  for(const prompt of [DECK_PROMPT,IMAGE_PROMPT]) {
-   const sample=JSON.parse(prompt.slice(prompt.indexOf('\n{')+1));
+   const sample=decodeToon(prompt.slice(prompt.lastIndexOf('\nwords[')+1)) as object;
    const parsed=parseDeck(JSON.stringify({...sample,title:'ガイドのサンプル'}));
    expect(parsed.words[0].examples?.[0].translation).toBeTruthy();
    expect(prompt).toContain('1語あたりの例文数：3件');
  }
  await act(async()=>root.render(<MemoryRouter initialEntries={['/guide/create?mode=demo']}><CreateGuide/></MemoryRouter>));
- const template=container.querySelector<HTMLTextAreaElement>('#example-json')!.value;
- const parsed=parseDeck(JSON.stringify({...JSON.parse(template),title:'自作の単語帳'}));
+ const template=container.querySelector<HTMLTextAreaElement>('#example-toon')!.value;
+ const parsed=parseDeck(JSON.stringify({...decodeToon(template) as object,title:'自作の単語帳'}));
  expect(parsed.words[0].examples).toHaveLength(2);
  expect(parsed.words.every(word=>word.examples?.every(example=>example.translation))).toBe(true);
  expect(container.querySelector('a[href="/library/import?tab=paste"]')).toBeTruthy();
+ expect(container.textContent).not.toMatch(/json/i);
  expect(container.textContent).toContain('お気に入りに登録');
  expect(container.textContent).toContain('例文カードは日本語訳付き');
 });

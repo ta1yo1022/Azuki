@@ -23,3 +23,7 @@ M PLUS Rounded 1c・NunitoはGoogle Fontsから読み込み、フォントファ
 ## 例文の翻訳に使用したモデル
 
 例文の日本語訳の下訳にはMADLAD-400-3B-MT（Apache-2.0）のローカル推論を使用しています。モデルの重みや推論エンジンはこのリポジトリ・配信アプリには同梱していません。使用版・編集と確認の範囲は [作成記録](docs/example-translations.md) を参照してください。原典の出典・利用条件は引き続き適用されます。
+
+- `content/dictionary/` の検索用英和辞書：**EJDict / CC0 1.0**。[原典・加工記録](content/dictionary/README.md)、[ライセンス](content/dictionary/LICENSE.txt)。生成例文と訳は原典の引用ではありません。
+
+- TOONの読み書き：`@toon-format/toon` 4.4.0（MIT）。[公式実装](https://github.com/toon-format/toon)、[ライセンス](public/licenses/toon-MIT.txt)。

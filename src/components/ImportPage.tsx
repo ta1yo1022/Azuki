@@ -1,33 +1,33 @@
 import { DeckMetadataFields } from './DeckMetadataFields';
 import { ThemePicker } from './ThemePicker';
+import { WordPaste,emptyWordPaste } from './WordPaste';
 import type { DeckTheme } from '../../shared/deckThemes';
-import { Link, useLocation, useSearchParams } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
+import { useRef, useState } from "react";
 import {
   Check,
   CheckCircle2,
   Code2,
-  FileJson,
+  FileText,
   LockKeyhole,
   Upload,
-  X,
+  ArrowLeft,
 } from "lucide-react";
 import {
   LIMITS,
   parseDeck,
   type DeckInput,
 } from "../../shared/model";
-import { parseImportWords, WORDS_EXAMPLE_JSON } from "../lib/importWords";
+import { parseImportWords, WORDS_EXAMPLE_TOON } from "../lib/importWords";
 type Props = {
   onClose: () => void;
   onImport: (input: DeckInput) => Promise<void>;
 };
-export function ImportDialog({ onClose, onImport }: Props) {
-  const location = useLocation();
+export function ImportPage({ onClose, onImport }: Props) {
   const [params] = useSearchParams();
-  const dialog = useRef<HTMLDialogElement>(null);
   const file = useRef<HTMLInputElement>(null);
-  const [tab, setTab] = useState<"file" | "paste">(params.get("tab") === "paste" ? "paste" : "file");
+  const [tab, setTab] = useState<"file" | "paste" | "words">(params.get("tab") === "paste" ? "paste" : params.get('tab')==='file'?'file':'words');
+  const [wordDraft,setWordDraft]=useState(emptyWordPaste);
   const [raw, setRaw] = useState("");
   const [name, setName] = useState("");
   const [preview, setPreview] = useState<DeckInput | null>(null);
@@ -43,15 +43,12 @@ export function ImportDialog({ onClose, onImport }: Props) {
   function showPreview(text: string) {
     setPreview({ schemaVersion: 1, title: "", description: "", textbookTags: [], words: parseImportWords(text) });
   }
-  useEffect(() => {
-    dialog.current?.showModal();
-  }, []);
   async function readFile(selected?: File) {
     if (!selected) return;
     setError("");
     setPreview(null);
     if (selected.size > LIMITS.bytes) {
-      setError("JSONファイルは512KB以内にしてください。");
+      setError("TOONファイルは512KB以内にしてください。");
       return;
     }
     try {
@@ -92,36 +89,13 @@ export function ImportDialog({ onClose, onImport }: Props) {
     }
   }
   return (
-    <dialog
-      ref={dialog}
-      className="import-dialog"
-      aria-labelledby="import-title"
-      onCancel={(e) => {
-        e.preventDefault();
-        if (!busy) onClose();
-      }}
-      onClick={(e) => {
-        if (e.target === dialog.current && !busy) onClose();
-      }}
-    >
-      <div className="dialog-inner">
-        <header className="dialog-header">
-          <div>
-            
-            <h2 id="import-title">単語帳を追加</h2>
-          </div>
-          <button
-            className="icon-button"
-            aria-label="閉じる"
-            disabled={busy}
-            onClick={onClose}
-          >
-            <X size={21} />
-          </button>
-        </header>
+    <section className="import-page" aria-labelledby="import-title">
+      <button className="back-button" disabled={busy} onClick={onClose}><ArrowLeft size={16}/>単語帳に戻る</button>
+      <div className="import-page-content">
+        <header className="import-page-heading"><h1 id="import-title">単語帳を作成</h1></header>
         <div className="import-steps">
           <span className={!preview ? "current" : "complete"}>
-            <i>{preview ? <Check size={13} /> : "1"}</i>JSONを選ぶ
+            <i>{preview ? <Check size={13} /> : "1"}</i>{tab==='words'?'単語を入力':'TOONを選ぶ'}
           </span>
           <span className={preview ? "current" : ""}>
             <i>2</i>内容を確認
@@ -129,14 +103,16 @@ export function ImportDialog({ onClose, onImport }: Props) {
         </div>
         {!preview ? (
           <>
-            <Link className="import-guide-link" to="/guide/create">
+            {tab!=='words'&&<Link className="import-guide-link" to="/guide/create">
               <strong>オリジナル英単語帳の作り方 →</strong>
               <span>画像や学びたい単語から、ChatGPT・Geminiで作る</span>
-            </Link>
+            </Link>}
             <div className="tabs" role="tablist" aria-label="取り込み方法">
+              <button role="tab" aria-selected={tab==='words'} className={tab==='words'?'active':''} disabled={busy} onClick={()=>setTab('words')}>単語から作成</button>
               <button
                 role="tab"
                 aria-selected={tab === "file"}
+                disabled={busy}
                 className={tab === "file" ? "active" : ""}
                 onClick={() => setTab("file")}
               >
@@ -146,14 +122,15 @@ export function ImportDialog({ onClose, onImport }: Props) {
               <button
                 role="tab"
                 aria-selected={tab === "paste"}
+                disabled={busy}
                 className={tab === "paste" ? "active" : ""}
                 onClick={() => setTab("paste")}
               >
                 <Code2 size={18} />
-                JSONを貼り付け
+                TOONを貼り付け
               </button>
             </div>
-            {tab === "file" ? (
+            {tab==='words'?<WordPaste draft={wordDraft} setDraft={setWordDraft} onBusy={setBusy} onPreview={words=>{setName('');setPreview({schemaVersion:1,title:'',description:'',textbookTags:[],words});}}/>:tab === "file" ? (
               <div
                 className={`dropzone ${drag ? "dragover" : ""}`}
                 onDragOver={(e) => {
@@ -168,9 +145,9 @@ export function ImportDialog({ onClose, onImport }: Props) {
                 }}
               >
                 <span className="upload-symbol">
-                  <FileJson size={32} strokeWidth={1.3} />
+                  <FileText size={32} strokeWidth={1.3} />
                 </span>
-                <strong>JSONファイルをここにドロップ</strong>
+                <strong>TOONファイルをここにドロップ</strong>
                 <span>または</span>
                 <button
                   className="button secondary"
@@ -178,46 +155,46 @@ export function ImportDialog({ onClose, onImport }: Props) {
                 >
                   ファイルを選ぶ
                 </button>
-                <small>.json ／ 512KB・5,000語まで</small>
+                <small>.toon ／ 512KB・5,000語まで</small>
                 <input
                   ref={file}
                   type="file"
-                  accept=".json,application/json"
-                  aria-label="JSONファイル"
+                  accept=".toon,text/toon,text/plain"
+                  aria-label="TOONファイル"
                   className="visually-hidden"
                   onChange={(e) => void readFile(e.target.files?.[0])}
                 />
               </div>
             ) : (
               <div className="paste-panel">
-                <label htmlFor="json-input">単語帳のJSON</label>
+                <label htmlFor="toon-input">単語帳のTOON</label>
                 <textarea
-                  id="json-input"
+                  id="toon-input"
                   spellCheck={false}
                   value={raw}
                   onChange={(e) => setRaw(e.target.value)}
                   placeholder={
-                    WORDS_EXAMPLE_JSON
+                    WORDS_EXAMPLE_TOON
                   }
                 />
               </div>
             )}
-            <div className="format-hint">
+            {tab!=='words'&&<div className="format-hint">
               <div>
                 <strong>はじめての方へ</strong>
-                <p>JSONには英単語・意味・例文を入れます。名前とカテゴリは次の画面で設定します。</p>
+                <p>TOONには英単語・意味・例文を入れます。名前とカテゴリは次の画面で設定します。</p>
               </div>
               <button
                 className="text-button"
                 onClick={() => {
-                  setRaw(WORDS_EXAMPLE_JSON);
+                  setRaw(WORDS_EXAMPLE_TOON);
                   setTab("paste");
                   setError("");
                 }}
               >
                 サンプルを使う
               </button>
-            </div>
+            </div>}
           </>
         ) : (
           <div className="import-preview">
@@ -258,14 +235,14 @@ export function ImportDialog({ onClose, onImport }: Props) {
             {error}
           </p>
         )}
-        <footer className="dialog-footer">
-          <button
+        {(preview||tab!=='words')&&<footer className="import-page-footer">
+          {preview&&<button
             className="button ghost"
             disabled={busy}
-            onClick={() => (preview ? setPreview(null) : onClose())}
+            onClick={() => setPreview(null)}
           >
-            {preview ? "入力に戻る" : "キャンセル"}
-          </button>
+            入力に戻る
+          </button>}
           {preview ? (
             <button
               className="button primary"
@@ -274,7 +251,7 @@ export function ImportDialog({ onClose, onImport }: Props) {
             >
               {busy ? "登録しています…" : `${preview.words.length}語を登録する`}
             </button>
-          ) : (
+          ) : tab!=='words' ? (
             <button
               className="button primary"
               disabled={!raw.trim()}
@@ -282,9 +259,9 @@ export function ImportDialog({ onClose, onImport }: Props) {
             >
               内容を確認
             </button>
-          )}
-        </footer>
+          ) : null}
+        </footer>}
       </div>
-    </dialog>
+    </section>
   );
 }

@@ -1,4 +1,5 @@
 // @vitest-environment happy-dom
+import {encodeToon,decodeToon} from '../shared/toon';
 import {afterEach,beforeEach,expect,it,vi} from 'vitest';
 import {act} from 'react';
 import {createRoot,type Root} from 'react-dom/client';
@@ -16,8 +17,8 @@ it('loads the complete book without a second range selector',async()=>{
   await act(async()=>root.render(<ForkDialog deck={deck} reader={reader} onSave={save} onClose={close}/>));
   expect(reader.words).toHaveBeenCalledTimes(11);
   expect(container.querySelector('select')).toBeNull();
-  const json=container.querySelector('.fork-json') as HTMLTextAreaElement;
-  expect(JSON.parse(json.value)).toHaveLength(501);
+  const json=container.querySelector('.fork-toon') as HTMLTextAreaElement;
+  expect(decodeToon(json.value)).toHaveLength(501);
   expect(save).not.toHaveBeenCalled();
   const button=(name:string)=>Array.from(container.querySelectorAll('button')).find(b=>b.textContent===name)!;
   await act(async()=>button('内容を確認').click());
@@ -34,9 +35,9 @@ it('keeps large translated books editable and saveable within the JSON limit',as
   const reader={words:vi.fn(async()=>({words:translated,nextCursor:null}))};
   const save=vi.fn(async(_input:DeckInput)=>{});
   await act(async()=>root.render(<ForkDialog deck={source} reader={reader} onSave={save} onClose={()=>{}}/>));
-  const json=container.querySelector('.fork-json') as HTMLTextAreaElement;
+  const json=container.querySelector('.fork-toon') as HTMLTextAreaElement;
   expect(new TextEncoder().encode(json.value).length).toBeLessThan(512*1024);
-  expect(new TextEncoder().encode(JSON.stringify(JSON.parse(json.value),null,2)).length).toBeGreaterThan(512*1024);
+  expect(new TextEncoder().encode(JSON.stringify(decodeToon(json.value),null,2)).length).toBeGreaterThan(512*1024);
   const button=(name:string)=>Array.from(container.querySelectorAll('button')).find(b=>b.textContent===name)!;
   await act(async()=>button('内容を確認').click());
   expect(container.querySelector('[aria-label="フォークの確認"]')?.textContent).toContain('1350語');

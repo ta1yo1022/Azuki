@@ -1,4 +1,5 @@
 // @vitest-environment happy-dom
+import {encodeToon,decodeToon} from '../shared/toon';
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { act } from "react";
 import { createRoot, type Root } from "react-dom/client";
@@ -117,7 +118,7 @@ describe("URL navigation", () => {
     await mount("/shared/demo-deck");
     for (const action of ["close", "cancel", "escape"]) {
       await click("その他");
-      await click("JSONを編集してフォーク");
+      await click("TOONを編集してフォーク");
       expect(container.querySelectorAll(".fork-dialog")).toHaveLength(1);
       await act(async () => {
         const dialog = container.querySelector<HTMLDialogElement>(".fork-dialog")!;
@@ -185,8 +186,11 @@ describe("URL navigation", () => {
     await mount("/?demo=1");
     expect(currentURL).toBe("/explore");
     await move("/library/import");
-    expect(container.querySelector("dialog[open]")?.textContent).toContain("単語帳を追加");
-    await click("キャンセル");
+    expect(container.querySelector(".import-page h1")?.textContent).toBe("単語帳を作成");
+    expect(container.querySelector("dialog")).toBeNull();
+    expect(container.querySelector(".library-toolbar")).toBeNull();
+    expect(container.querySelector('[aria-label="単語帳を追加"]')?.getAttribute("aria-current")).toBe("page");
+    await click("単語帳に戻る");
     expect(currentURL).toBe("/library");
     await move("/library/decks/saved-deck/share");
     expect(container.querySelector("dialog[open]")).toBeTruthy();
@@ -276,10 +280,12 @@ describe("official publisher and deck-level difficulty", () => {
   });
 });
 
-it("opens the public creation guide and returns to the library JSON paste tab", async () => {
+it("opens the public creation guide and returns to the library TOON paste tab", async () => {
   mocks.user = { uid:"guide-user", displayName:"Test", providerData:[] };
   HTMLDialogElement.prototype.showModal = function () { this.setAttribute('open', ''); };
   await mount('/library/import');
+  expect(container.querySelector('#vocabulary-input')).toBeTruthy();
+  await click('ファイルを選択');
   const guide = container.querySelector<HTMLAnchorElement>('a[href="/guide/create"]')!;
   expect(guide).toBeTruthy();
   await act(async () => guide.click()); await settle();
@@ -287,16 +293,16 @@ it("opens the public creation guide and returns to the library JSON paste tab", 
   const copy = vi.fn().mockResolvedValue(undefined);
   vi.stubGlobal('navigator', { clipboard: { writeText: copy } });
   await click('プロンプトをコピー');
-  expect(copy).toHaveBeenCalledWith(expect.stringContaining('"words": ['));
+  expect(copy).toHaveBeenCalledWith(expect.stringContaining('words[1]:'));
   expect(container.querySelector('#own-examples-title')?.textContent).toBe('オリジナルの単語と例文を登録する');
-  await click('例文付きJSONをコピー');
-  const sample = JSON.parse(copy.mock.calls.at(-1)![0]);
+  await click('例文付きTOONをコピー');
+  const sample = decodeToon(copy.mock.calls.at(-1)![0]) as any;
   expect(sample.words).toHaveLength(2);
   expect(sample.words.every((word: any) => word.word && word.meaning && word.examples?.length && word.examples.every((example: any) => example.text && example.translation))).toBe(true);
   const paste = container.querySelector<HTMLAnchorElement>('a[href="/library/import?tab=paste"]')!;
   await act(async () => paste.click()); await settle();
   expect(currentURL).toBe('/library/import?tab=paste');
-  expect(container.querySelector('#json-input')).toBeTruthy();
+  expect(container.querySelector('#toon-input')).toBeTruthy();
 });
 
 it('shows the tutorial after login, remembers dismissal, and replays it from settings', async () => {

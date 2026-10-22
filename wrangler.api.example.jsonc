@@ -2,11 +2,15 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "azuki-dev",
   "main": "worker/index.ts",
+  "ai": { "binding": "AI" },
+  "assets": { "directory": "./content/dictionary/assets", "binding": "DICTIONARY", "run_worker_first": true },
   "compatibility_date": "2026-10-05",
   "vars": {
     "FIREBASE_PROJECT_ID": "your-firebase-project-id",
     "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173",
     "ALLOW_IMPORTS": "true",
+    "VOCABULARY_ENABLED": "true",
+    "VOCABULARY_DAILY_LIMIT": "1000",
     "EMAIL_ENABLED": "false",
     "ADMIN_EMAILS": ""
   },

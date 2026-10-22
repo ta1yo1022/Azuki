@@ -87,19 +87,19 @@ function string(
 export function parseDeck(raw: string, options: { maxWords?: number; allowExampleVariants?: boolean } = {}): DeckInput {
   const maxWords = options.maxWords ?? LIMITS.importWords;
   if (new TextEncoder().encode(raw).length > LIMITS.bytes)
-    throw new ValidationError("JSONは512KB以内にしてください。");
+    throw new ValidationError("単語帳データは512KB以内にしてください。");
   let data: unknown;
   try {
     data = JSON.parse(raw);
   } catch {
     throw new ValidationError(
-      "JSONの形式を確認してください。ダブルクォートやカンマの抜けがないか確認すると解決できます。",
+      "単語帳データの形式を確認してください。",
     );
   }
   if (!object(data))
-    throw new ValidationError("titleとwordsを含むJSONを入力してください。");
+    throw new ValidationError("titleとwordsを含む単語帳データを入力してください。");
   if (data.schemaVersion !== undefined && data.schemaVersion !== 1)
-    throw new ValidationError("このJSONのバージョンには対応していません。");
+    throw new ValidationError("この単語帳データのバージョンには対応していません。");
   const title = string(data.title, "単語帳の名前", 80);
   const description = string(data.description, "説明", 240, true);
   if (!Array.isArray(data.words) || data.words.length === 0)
@@ -168,27 +168,3 @@ export function parseDeck(raw: string, options: { maxWords?: number; allowExampl
   if(data.theme!==undefined&&!isDeckTheme(data.theme))throw new ValidationError('単語帳の色を選択してください。');
   return { schemaVersion: 1, title, description, textbookTags, words, ...(isDeckTheme(data.theme)?{theme:data.theme}:{}) };
 }
-export const EXAMPLE_JSON = JSON.stringify(
-  {
-    schemaVersion: 1,
-    title: "新しい単語帳",
-    description: "今日出会った言葉を集めよう。",
-    textbookTags: [{ name: "英語の教科書", chapter: "Lesson 1" }],
-    words: [
-      {
-        word: "accomplish",
-        meaning: "達成する",
-        example: "We accomplished our goal.",
-        tags: ["動詞"],
-      },
-      {
-        word: "curious",
-        meaning: "好奇心の強い",
-        example: "Stay curious about the world.",
-        tags: ["形容詞"],
-      },
-    ],
-  },
-  null,
-  2,
-);

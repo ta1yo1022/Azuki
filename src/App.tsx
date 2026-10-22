@@ -22,7 +22,7 @@ import {
   BookOpen,
   BookOpenText,
   ChevronDown,
-  FileJson,
+  FileText,
   FolderOpen,
   Globe,
   Library,
@@ -38,7 +38,7 @@ import {
 } from "lucide-react";
 import { auth, googleSignIn } from "./lib/firebase";
 import { cloudRepository, demoRepository, publicRepository } from "./lib/repository";
-import { ImportDialog } from "./components/ImportDialog";
+import { ImportPage } from "./components/ImportPage";
 import { ShareDialog } from "./components/ShareDialog";
 import { SettingsPage } from "./components/SettingsPage";
 import { StudyPage } from "./components/StudyPage";
@@ -172,8 +172,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
     return () => clearTimeout(timer);
   }, [toast]);
   useEffect(() => {
-    if (demo || user) document.title = `${selected ? selected.title : "わたしの単語帳"} — Azuki`;
-  }, [selected, demo, user]);
+    if (demo || user) document.title = `${importing ? "単語帳を作成" : selected ? selected.title : "わたしの単語帳"} — Azuki`;
+  }, [selected, demo, user, importing]);
   useEffect(() => {
     const current = ++generation.current;
     setWords([]);
@@ -356,7 +356,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
   }
   function otherActions(openSettings?:()=>void){
     return <ActionMenu label="その他" items={[
-      ...(!demo?[{label:'JSONを編集してフォーク',description:'単語や例文をJSONでカスタマイズ',onSelect:()=>setForkOpen(true)}]:[]),
+      ...(!demo?[{label:'TOONを編集してフォーク',description:'単語や例文をTOONでカスタマイズ',onSelect:()=>setForkOpen(true)}]:[]),
       ...(selected?.visibility==='public'?[{label:'リンクをコピー',description:'この単語帳を共有する',onSelect:()=>{void navigator.clipboard.writeText(`${window.location.origin}/shared/${selected.id}`).then(()=>setToast('リンクをコピーしました')).catch(()=>setError('リンクをコピーできませんでした。'));}}]:[]),
       ...(openSettings?[{label:'単語帳の設定',description:'名前・説明・教材タグ・色を変更する',onSelect:openSettings}]:[]),
       {label:'単語帳を削除',description:'削除する前に確認します',onSelect:()=>setConfirmDelete(true)},
@@ -379,7 +379,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
         <nav aria-label="メインナビゲーション">
           <button
             aria-label="わたしの単語帳"
-            className={!filter && !statsMode ? "nav-item active" : "nav-item"}
+            className={!filter && !statsMode && !importing ? "nav-item active" : "nav-item"}
             onClick={() => navigate(base)}
           >
             <Library size={19} />
@@ -387,12 +387,13 @@ export default function App({ demo = false }: { demo?: boolean }) {
             <span className="nav-count">{decks.length}</span>
           </button>
           <button
-            aria-label="JSONから追加"
-            className="nav-item"
+            aria-label="単語帳を追加"
+            aria-current={importing ? "page" : undefined}
+            className={importing ? "nav-item active" : "nav-item"}
             onClick={() => navigate(`${base}/import`)}
           >
-            <FileJson size={19} />
-            <span>JSONから追加</span>
+            <FileText size={19} />
+            <span>単語帳を追加</span>
           </button>
           <Link className={statsMode ? "nav-item active" : "nav-item"} aria-current={statsMode ? "page" : undefined} to={`${base}/stats`}><BarChart3 size={19}/><span>学習統計</span></Link>
           <Link data-tour="explore" className="nav-item" to="/explore">
@@ -451,7 +452,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
             )}
           </div>
         )}
-        <main id="main" className="main-content">
+        <main id="main" className={`main-content${importing ? " import-main" : ""}`}>
           {error && (
             <div role="alert" className="error-box error-with-action">
               <span>{error}</span>
@@ -463,7 +464,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
               </button>
             </div>
           )}
-          {statsMode ? <StudyStatsPage embedded demo={demo} userId={user?.uid} /> : !selected ? (
+          {importing ? <ImportPage onClose={() => navigate(base)} onImport={importDeck} /> : statsMode ? <StudyStatsPage embedded demo={demo} userId={user?.uid} /> : !selected ? (
             <>
               <StudyStatsSummary demo={demo} userId={user?.uid} />
               <div className="page-heading">
@@ -625,9 +626,9 @@ export default function App({ demo = false }: { demo?: boolean }) {
                       <Plus size={25} strokeWidth={1.4} />
                     </span>
                     <strong>新しい単語帳をつくる</strong>
-                    <span>JSONからまとめて登録</span>
+                    <span>単語を貼り付けて登録</span>
                     <span className="add-card-caption">
-                      <FileJson size={15} />
+                      <FileText size={15} />
                       ファイル選択・貼り付け
                     </span>
                   </button>
@@ -643,7 +644,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   <p>
                     {decks.length
                       ? "別の名前や教材タグで検索してみてください。"
-                      : "英単語と意味をまとめたJSONから追加できます。"}
+                      : "TOONで単語をまとめて登録できます。Proなら意味・例文も自動で作れます。"}
                   </p>
                   <button
                     className="button secondary"
@@ -816,12 +817,6 @@ export default function App({ demo = false }: { demo?: boolean }) {
           demo={demo}
           onClose={() => navigate(detailPath + location.search)}
           onVisibility={changeVisibility}
-        />
-      )}
-      {importing && (
-        <ImportDialog
-          onClose={() => navigate(base)}
-          onImport={importDeck}
         />
       )}
       {toast && (

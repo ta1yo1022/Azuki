@@ -9,7 +9,7 @@ export function pageMetadata(pathname:string,deck?:MetadataDeck):PageMetadata {
  const pages:Record<string,[string,string]>={
   '/plans':['Azuki Pro — 月額480円','月額480円（税込）。単語・例文音声の新規生成の個人上限を解除し、本型の単語帳で学習できます。'],
   '/explore':['公開単語帳を探す — Azuki','CEFR-Jやテーマ別の英単語帳、みんなが公開した単語帳を検索。ログインせずにカード学習を試せます。本型の学習はProで利用できます。'],
-  '/guide/create':['オリジナル英単語帳の作り方 — Azuki','AIで作った単語・意味・例文をJSONでまとめて登録。Azukiで自分の例文に編集して、単語帳を作る方法を紹介します。'],
+  '/guide/create':['オリジナル英単語帳の作り方 — Azuki','AIで作った単語・意味・例文をTOONでまとめて登録。Azukiで自分の例文に編集して、単語帳を作る方法を紹介します。'],
   '/privacy':['プライバシーポリシー — Azuki','英単語帳アプリAzukiにおける個人情報、Cookie、アクセス解析などの取り扱いについて。'],
   '/commerce':['特定商取引法に基づく表記 — Azuki','Azuki Proの販売者情報、月額料金、支払い・提供時期、解約・返金条件について。'],
   '/terms':['利用規約 — Azuki','英単語帳アプリAzukiの利用条件、単語帳の公開・コピー・権利について。'],
@@ -27,7 +27,7 @@ export function pageMetadata(pathname:string,deck?:MetadataDeck):PageMetadata {
   }
  }else if(path!=='/'){
   robots='noindex, nofollow';
-  title=path.includes('/stats')?'学習統計 — Azuki':path.includes('/settings')?'設定 — Azuki':path.startsWith('/library')?'マイライブラリ — Azuki':'Azuki';
+  title=path==='/library/import'?'単語帳を作成 — Azuki':path.includes('/stats')?'学習統計 — Azuki':path.includes('/settings')?'設定 — Azuki':path.startsWith('/library')?'マイライブラリ — Azuki':'Azuki';
  }
  return {title,description,url:SITE_ORIGIN+canonical,image:SITE_ORIGIN+'/og-image.png',robots,type:'website'};
 }

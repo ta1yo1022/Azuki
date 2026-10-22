@@ -11,7 +11,7 @@ it('uses the public deck metadata for sharing and normalizes study URLs',()=>{
 });
 it('does not expose missing or private deck metadata',()=>{
  for(const data of [undefined,{...deck,visibility:'private'}]){const meta=pageMetadata('/shared/travel',data);expect(meta.title).not.toContain(deck.title);expect(meta.description).not.toContain(deck.description);expect(meta.robots).toContain('noindex');}
- for(const path of ['/library','/library/decks/secret','/admin/emails','/library/stats'])expect(pageMetadata(path).robots).toBe('noindex, nofollow');
+ for(const path of ['/library','/library/import','/library/decks/secret','/admin/emails','/library/stats'])expect(pageMetadata(path).robots).toBe('noindex, nofollow');
 });
 it('escapes untrusted HTML in shared titles and descriptions',()=>{
  const markup=metadataMarkup(pageMetadata('/shared/test',{...deck,title:'<script>" & bad</script>',description:'"><img src=x onerror=bad>'}));

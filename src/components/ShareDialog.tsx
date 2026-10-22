@@ -84,7 +84,7 @@ export function ShareDialog({
           <LockKeyhole size={24} />
           <h3>共有にはGoogleログインが必要です</h3>
           <p>
-            お試しモードの単語帳は、この端末だけに保存されています。Googleログイン後にJSONを登録すると、共有できるようになります。
+            お試しモードの単語帳は、この端末だけに保存されています。Googleログイン後にTOONを登録すると、共有できるようになります。
           </p>
         </div>
       ) : (
