@@ -16,7 +16,7 @@ import {
 export class PublishConflict extends Error {
   constructor(message: string, public existingDeckId?: string, public code?:string) { super(message); }
 }
-export type DeckSettingsInput=Pick<DeckInput,'title'|'description'|'textbookTags'|'theme'>;
+export type DeckSettingsInput=Pick<DeckInput,'title'|'description'|'textbookTags'|'theme'|'language'|'meaningLanguage'>;
 export interface Repository {
   settings?(id:string,values:DeckSettingsInput):Promise<Deck>;
   theme?(id:string,theme:NonNullable<Deck['theme']>):Promise<Deck>;
@@ -247,9 +247,9 @@ export const publicRepository = {
     `/decks/${encodeURIComponent(id)}/save`, { method: "POST" },
   )).deck;
   },
-  list: (q: string, cursor: string | null = null, signal?: AbortSignal) =>
+  list: (q: string, cursor: string | null = null, signal?: AbortSignal, language?:string) =>
     request<DeckPage>(
-      `/public/decks?q=${encodeURIComponent(q)}${cursor ? `&cursor=${encodeURIComponent(cursor)}` : ""}`,
+      `/public/decks?q=${encodeURIComponent(q)}${language?`&language=${encodeURIComponent(language)}`:""}${cursor ? `&cursor=${encodeURIComponent(cursor)}` : ""}`,
       { signal },
       true,
     ),

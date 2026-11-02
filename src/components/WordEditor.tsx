@@ -11,7 +11,7 @@ export function WordEditor({deck,word,onSaved,repository=cloudRepository}:{deck:
   const [examples,setExamples]=useState<ExampleDraft[]>(()=>drafts(word));
   const [busy,setBusy]=useState(false),[error,setError]=useState('');
   function update(key:string,change:Partial<WordExample>){setExamples(previous=>previous.map(example=>example.key===key?{...example,...change}:example));}
-  if(!editing)return <div className="word-editor-readonly"><span className="eyebrow">例文</span><WordExamples word={word} deckId={deck.id}/><button type="button" className="text-button word-edit-trigger" onClick={()=>{setValue({word:word.word,meaning:word.meaning});setExamples(drafts(word));setError('');setEditing(true);}}><Pencil size={15}/>例文を追加・編集</button></div>;
+  if(!editing)return <div className="word-editor-readonly"><span className="eyebrow">例文</span><WordExamples language={deck.language} meaningLanguage={deck.meaningLanguage} word={word} deckId={deck.id}/><button type="button" className="text-button word-edit-trigger" onClick={()=>{setValue({word:word.word,meaning:word.meaning});setExamples(drafts(word));setError('');setEditing(true);}}><Pencil size={15}/>例文を追加・編集</button></div>;
   return <form className="word-edit-form" aria-label={`${word.word}を編集`} onSubmit={async event=>{
     event.preventDefault();if(busy)return;setBusy(true);setError('');
     try {
@@ -22,13 +22,13 @@ export function WordEditor({deck,word,onSaved,repository=cloudRepository}:{deck:
     finally{setBusy(false);}
   }}>
     <fieldset disabled={busy} className="word-editor-fields">
-      <div className="word-editor-vocabulary"><label>英単語<textarea required maxLength={120} rows={2} lang="en" value={value.word} onChange={e=>setValue({...value,word:e.target.value})}/></label><label>意味<textarea required maxLength={1000} rows={2} value={value.meaning} onChange={e=>setValue({...value,meaning:e.target.value})}/></label></div>
+      <div className="word-editor-vocabulary"><label>単語<textarea required maxLength={120} rows={2} lang={deck.language??'en'} value={value.word} onChange={e=>setValue({...value,word:e.target.value})}/></label><label>意味<textarea required maxLength={1000} rows={2} value={value.meaning} onChange={e=>setValue({...value,meaning:e.target.value})}/></label></div>
       <div className="word-examples-heading"><h3>例文</h3><span>{examples.length} / {LIMITS.examplesPerWord}件</span></div>
       {examples.length===0&&<p className="muted">例文を追加して、覚えたい場面の英文を残せます。</p>}
       <div className="word-example-edit-list">{examples.map((example,index)=><section className="word-example-edit" key={example.key} aria-label={`例文${index+1}`}>
         <div className="word-example-edit-heading"><strong>例文 {index+1}</strong><button type="button" className="text-button" aria-label={`例文${index+1}を削除`} onClick={()=>setExamples(previous=>previous.filter(item=>item.key!==example.key))}><Trash2 size={15}/>削除</button></div>
-        <label>英文 {index+1}<textarea required maxLength={1000} rows={3} lang="en" value={example.text} onChange={e=>update(example.key,{text:e.target.value})} placeholder="The captain refused to leave the spaceship."/></label>
-        <label>日本語訳 {index+1}（任意）<textarea maxLength={1000} rows={2} lang="ja" value={example.translation??''} onChange={e=>update(example.key,{translation:e.target.value})} placeholder="船長は宇宙船を離れることを拒んだ。"/></label>
+        <label>例文 {index+1}<textarea required maxLength={1000} rows={3} lang={deck.language??'en'} value={example.text} onChange={e=>update(example.key,{text:e.target.value})} placeholder="The captain refused to leave the spaceship."/></label>
+        <label>訳 {index+1}（任意）<textarea maxLength={1000} rows={2} lang={deck.meaningLanguage??'ja'} value={example.translation??''} onChange={e=>update(example.key,{translation:e.target.value})} placeholder="船長は宇宙船を離れることを拒んだ。"/></label>
       </section>)}</div>
       <button type="button" className="button secondary add-word-example" disabled={examples.length>=LIMITS.examplesPerWord} onClick={()=>setExamples(previous=>[...previous,{key:crypto.randomUUID(),text:''}])}><Plus size={17}/>例文を追加</button>
       <p className="muted">1語につき最大{LIMITS.examplesPerWord}件。例文を増やしても保存語数は増えません。</p>

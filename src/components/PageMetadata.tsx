@@ -1,3 +1,5 @@
+import {useSiteLanguage} from '../lib/siteLanguage';
+import {landingTitles,landingText} from './landingTranslations';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { pageMetadata, metadataTags, type PageMetadata as Metadata } from '../../shared/metadata';
@@ -14,11 +16,12 @@ export function applyPageMetadata(meta:Metadata,updateTitle=true){
 }
 export function PageMetadata(){
  const {pathname}=useLocation();
+ const {language}=useSiteLanguage();
  useEffect(()=>{
-  const controller=new AbortController();applyPageMetadata(pageMetadata(pathname),!pathname.startsWith("/library/decks/"));
+  const controller=new AbortController();applyPageMetadata(pathname==='/'?{...pageMetadata(pathname),title:landingTitles[language],description:landingText(language,'覚えたい単語を登録して、カードで練習。')}:pageMetadata(pathname),!pathname.startsWith("/library/decks/"));
   const match=/^\/shared\/([a-zA-Z0-9-]{1,80})(?:\/(?:study|book))?\/?$/.exec(pathname);
   if(match)void publicRepository.get(match[1],controller.signal).then(deck=>{if(!controller.signal.aborted)applyPageMetadata(pageMetadata(pathname,deck));}).catch(()=>{});
   return()=>controller.abort();
- },[pathname]);
+ },[pathname,language]);
  return null;
 }

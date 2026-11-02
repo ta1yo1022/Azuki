@@ -1,3 +1,4 @@
+import {isLanguage,type Language} from './languages.ts';
 import { isDeckTheme, type DeckTheme } from './deckThemes.ts';
 export const LIMITS = {
   bytes: 512 * 1024,
@@ -27,16 +28,18 @@ export function parseWordExamples(value: unknown, label = '例文'): WordExample
   const seen = new Set<string>();
   return value.map((item, i) => {
     if (!object(item)) throw new ValidationError(`${label}${i+1}の形式を確認してください。`);
-    const text = string(item.text, `${label}${i+1}の英文`, 1000);
-    const translation = string(item.translation, `${label}${i+1}の日本語訳`, 1000, true);
+    const text = string(item.text, `${label}${i+1}の文`, 1000);
+    const translation = string(item.translation, `${label}${i+1}の訳`, 1000, true);
     const key = text.normalize('NFKC').replace(/\s+/gu,' ');
-    if (seen.has(key)) throw new ValidationError(`${label}に同じ英文が含まれています。`);
+    if (seen.has(key)) throw new ValidationError(`${label}に同じ例文が含まれています。`);
     seen.add(key);
     return {text,...(translation ? {translation} : {})};
   });
 }
 export type DeckInput = {
   theme?: DeckTheme;
+  language?: Language;
+  meaningLanguage?: Language;
   schemaVersion: 1;
   title: string;
   description: string;
@@ -100,6 +103,8 @@ export function parseDeck(raw: string, options: { maxWords?: number; allowExampl
     throw new ValidationError("titleとwordsを含む単語帳データを入力してください。");
   if (data.schemaVersion !== undefined && data.schemaVersion !== 1)
     throw new ValidationError("この単語帳データのバージョンには対応していません。");
+  if(data.language!==undefined&&!isLanguage(data.language))throw new ValidationError('学習する言語を選択してください。');
+  if(data.meaningLanguage!==undefined&&!isLanguage(data.meaningLanguage))throw new ValidationError('意味・訳の言語を選択してください。');
   const title = string(data.title, "単語帳の名前", 80);
   const description = string(data.description, "説明", 240, true);
   if (!Array.isArray(data.words) || data.words.length === 0)
@@ -112,7 +117,7 @@ export function parseDeck(raw: string, options: { maxWords?: number; allowExampl
   const words = data.words.map((item, i): WordInput => {
     if (!object(item))
       throw new ValidationError(`${i + 1}語目の形式を確認してください。`);
-    const word = string(item.word, `${i + 1}語目の英単語`, 120);
+    const word = string(item.word, `${i + 1}語目の単語`, 120);
     const meaning = string(item.meaning, `${i + 1}語目の意味`, 1000);
     const examples = item.examples === undefined ? undefined : parseWordExamples(item.examples, `${i+1}語目の例文`);
     const example = examples === undefined ? string(item.example, `${i + 1}語目の例文`, 1000, true) : examples[0]?.text ?? '';
@@ -166,5 +171,5 @@ export function parseDeck(raw: string, options: { maxWords?: number; allowExampl
     );
   // Ownership, visibility, official status, level, and source metadata are never imported.
   if(data.theme!==undefined&&!isDeckTheme(data.theme))throw new ValidationError('単語帳の色を選択してください。');
-  return { schemaVersion: 1, title, description, textbookTags, words, ...(isDeckTheme(data.theme)?{theme:data.theme}:{}) };
+  return { schemaVersion: 1, title, description, textbookTags, words, ...(data.language?{language:data.language}:{}),...(data.meaningLanguage?{meaningLanguage:data.meaningLanguage}:{}), ...(isDeckTheme(data.theme)?{theme:data.theme}:{}) };
 }

@@ -1,3 +1,4 @@
+import {LANGUAGES,languageName} from '../../shared/languages';
 import { ProBookGate } from './PlansPage';
 import { WordAudioButton } from "./WordAudioButton";
 import { ActionMenu } from "./ActionMenu";
@@ -81,6 +82,7 @@ function PublicLayout({ children }: { children: ReactNode }) {
 }
 
 function Discover() {
+  const [language,setLanguage]=useQueryValue("language");
   const [query, setQuery] = useQueryValue("q");
   const [decks, setDecks] = useState<Deck[]>([]);
   const [next, setNext] = useState<string | null>(null);
@@ -110,7 +112,7 @@ function Discover() {
     const timer = setTimeout(
       () => {
         publicRepository
-          .list(q, null, controller.signal)
+          .list(q, null, controller.signal,language||undefined)
           .then((page) => {
             if (current !== generation.current) return;
             setDecks(page.decks);
@@ -131,7 +133,7 @@ function Discover() {
       controller.abort();
       generation.current++;
     };
-  }, [query, retry]);
+  }, [query, retry,language]);
   useEffect(() => {
     document.title = "公開単語帳を探す — Azuki";
   }, []);
@@ -141,7 +143,7 @@ function Discover() {
     setLoading(true);
     setError("");
     try {
-      const page = await publicRepository.list(query.trim(), next);
+      const page = await publicRepository.list(query.trim(), next,undefined,language||undefined);
       if (current !== generation.current) return;
       setDecks((prev) => [...prev, ...page.decks]);
       setNext(page.nextCursor);
@@ -181,7 +183,8 @@ function Discover() {
           </button>
         )}
       </div>
-      <StandardLibrary query={query} />
+      <label className="language-filter">学習する言語<select aria-label="公開単語帳の言語" value={language} onChange={e=>setLanguage(e.target.value)}><option value="">すべての言語</option>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{item.name}</option>)}</select></label>
+      {(!language||language==='en')&&<StandardLibrary query={query} />}
       <div className="public-results-label">
         <span>
           {query.trim()
@@ -429,7 +432,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
           <div className="detail-heading public-detail-heading">
             <div>
               
-              <h1>{deck.title}</h1>
+              <h1>{deck.title}</h1><span className="deck-language-badge">{languageName(deck.language??'en')} → {languageName(deck.meaningLanguage??'ja')}</span>
               <p>{deck.description}</p>
               <div className="detail-tags">
                 {deck.isOfficial && <OfficialBadge />}
@@ -455,7 +458,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
             <div className="owner-deck-actions public-deck-actions">
               <ActionMenu label="学習する" primary items={[
                 {label:"カードで学習",description:"単語を1つずつ覚える",onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:"words"})}`)},
-                {label:"例文カードで学習",description:"英文と日本語訳で練習する",onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:"examples"})}`)},
+                {label:"例文カードで学習",description:"例文と訳で練習する",onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:"examples"})}`)},
                 {label:"単語帳で学習",description:"本をめくるように、まとめて読む",onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
               ]}/>
               <FavoriteButton key={id} id={id} userId={user?.uid} />
@@ -491,7 +494,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
               <Search size={18} />
               <SearchInput
                 aria-label="公開単語帳の単語・意味を検索"
-                placeholder="英単語・意味で検索"
+                placeholder="単語・意味で検索"
                 maxLength={100}
                 value={query}
                 onValueChange={setQuery}
@@ -531,7 +534,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
                   </span>
                   <ChevronDown className="word-expand" size={17} />
                 </summary>
-                <WordDetails word={word} deckId={deck.id} />
+                <WordDetails language={deck.language} meaningLanguage={deck.meaningLanguage} word={word} deckId={deck.id} />
               </details>
             ))}
           </div>

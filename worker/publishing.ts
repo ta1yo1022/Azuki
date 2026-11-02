@@ -48,7 +48,7 @@ export async function editWord(env: Env, uid: string, id: string, wordId: string
     return Response.json({ error: "この単語は更新されています。画面を読み込み直してください。" }, { status: 409 });
   if (data.word === old.word && data.meaning === old.meaning && JSON.stringify(wordExamples(data)) === JSON.stringify(wordExamples(previous))) return Response.json({ deck: deckResult(row), word: previous });
   const words = result.results.map(w => w.id === wordId ? { ...data, tags: previous.tags } : wordResult(w));
-  const parsed = parseDeck(JSON.stringify({ title: row.title, description: row.description, textbookTags: JSON.parse(row.textbook_tags), words }), {maxWords:LIMITS.forkWords,allowExampleVariants:true});
+  const parsed = parseDeck(JSON.stringify({ language:row.language,meaningLanguage:row.meaning_language,title: row.title, description: row.description, textbookTags: JSON.parse(row.textbook_tags), words }), {maxWords:LIMITS.forkWords,allowExampleVariants:true});
   const hash = await contentHash(parsed.words);
   const bytes = new TextEncoder().encode(JSON.stringify(parsed)).length;
   const now = new Date().toISOString();

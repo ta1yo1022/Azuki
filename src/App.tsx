@@ -1,3 +1,4 @@
+import {LANGUAGES,languageName} from '../shared/languages';
 import { ProBookGate } from './components/PlansPage';
 import { ActionMenu } from './components/ActionMenu';
 import { DeckSettings } from './components/DeckSettings';
@@ -107,6 +108,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
   const [error, setError] = useState("");
   const [signingIn, setSigningIn] = useState(false);
   const [search, setSearch] = useQueryValue("q");
+  const [language,setLanguage]=useQueryValue("language");
   const [filter, setFilter] = useQueryValue("tag");
   const [sort, setSort] = useQueryValue("sort", "newest");
   const selected = decks.find((deck) => deck.id === deckId) ?? null;
@@ -218,7 +220,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
       decks
         .filter(
           (d) =>
-            (!filter || d.textbookTags.some((t) => t.name === filter)) &&
+            (!language||(d.language??'en')===language) && (!filter || d.textbookTags.some((t) => t.name === filter)) &&
             `${d.title} ${d.description} ${d.textbookTags.map((t) => `${t.name} ${t.edition ?? ""} ${t.chapter ?? ""}`).join(" ")}`
               .toLocaleLowerCase()
               .includes(search.toLocaleLowerCase()),
@@ -228,7 +230,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
             ? a.title.localeCompare(b.title, "ja")
             : b.createdAt.localeCompare(a.createdAt),
         ),
-    [decks, filter, search, sort],
+    [decks, filter, search, sort,language],
   );
   const displayName = demo
     ? "お試しユーザー"
@@ -495,7 +497,9 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 <Globe size={17} />
                 公開単語帳を探す
               </Link>
-              {!demo && user && <Favorites key={user.uid} owner={user.uid} />}
+              <label className="language-filter">学習する言語<select aria-label="自分の単語帳の言語" value={language} onChange={e=>setLanguage(e.target.value)}><option value="">すべての言語</option>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{item.name}</option>)}</select></label>
+              {!demo && user && <Favorites key={user.uid} owner={user.uid} language={language} />}
+
               <div className="library-toolbar" data-tour="search">
                 <div className="search-field">
                   <Search size={18} />
@@ -587,7 +591,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                           <span className="cover-monogram">Aa</span>
                         </span>
                       </div>
-                      <div className="deck-meta">
+                      <div className="deck-meta"><span className="deck-language-badge">{languageName(deck.language??'en')} → {languageName(deck.meaningLanguage??'ja')}</span>
                         <span className="deck-tags">
                           {deck.textbookTags.length ? (
                             <>
@@ -669,7 +673,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
               <div className="detail-heading">
                 <div>
                   
-                  <h1>{selected.title}</h1>
+                  <h1>{selected.title}</h1><span className="deck-language-badge">{languageName(selected.language??'en')} → {languageName(selected.meaningLanguage??'ja')}</span>
                   <p>{selected.description}</p>
                   <DeckCredit deck={selected} />
                   <DeckLineage deck={selected} />
@@ -703,7 +707,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 <div className="owner-deck-actions">
                   <ActionMenu label="学習する" primary items={[
                     {label:'カードで学習',description:'単語を1つずつ覚える',onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'words'})}`)},
-                    {label:'例文カードで学習',description:'英文と日本語訳で練習する',onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples'})}`)},
+                    {label:'例文カードで学習',description:'例文と訳で練習する',onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples'})}`)},
                     {label:'単語帳で学習',description:'本をめくるように、まとめて読む',onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
                   ]}/>
                   <button className="button secondary" onClick={()=>navigate(`${detailPath}/share${location.search}`)}><Share2 size={17}/>共有</button>
@@ -716,7 +720,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   <Search size={18} />
                   <SearchInput
                     aria-label="単語・意味を検索"
-                    placeholder="英単語・意味で検索"
+                    placeholder="単語・意味で検索"
                     maxLength={100}
                     value={wordSearch}
                     onValueChange={setWordSearch}

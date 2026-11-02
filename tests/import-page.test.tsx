@@ -32,3 +32,9 @@ it('shows a standalone page and keeps the draft available after a failed save',a
  await click('1語を登録する');expect(container.querySelector('[role="alert"]')?.textContent).toContain('保存できませんでした。');expect(close).not.toHaveBeenCalled();
  expect((container.querySelector('#import-title-input') as HTMLInputElement).value).toBe('旅の単語');await click('1語を登録する');expect(close).toHaveBeenCalledOnce();
 });
+
+it('saves a Chinese word with Thai meanings and the chosen language pair',async()=>{
+ await input('textarea',encodeToon([{word:'学习',meaning:'เรียน',examples:[{text:'我每天学习中文。',translation:'ฉันเรียนภาษาจีนทุกวัน'}]}]));await click('内容を確認');
+ await input('#import-language','zh');await input('#import-meaning-language','th');await input('#import-title-input','中国語の勉強');await click('1語を登録する');
+ expect(save.mock.calls[0][0]).toMatchObject({language:'zh',meaningLanguage:'th',words:[{word:'学习',meaning:'เรียน'}]});
+});

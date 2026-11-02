@@ -1,9 +1,11 @@
+import {LANGUAGES,type Language} from '../../shared/languages';
 export const DECK_CATEGORIES=['日常生活','旅行','仕事','試験対策','食事・カフェ','その他'];
-export type MetadataFields={title:string;description:string;category:string;textbookName:string;edition:string};
+export type MetadataFields={title:string;description:string;category:string;textbookName:string;edition:string;language?:Language;meaningLanguage?:Language};
 export function DeckMetadataFields({value,onChange,prefix}:{value:MetadataFields;onChange:(value:MetadataFields)=>void;prefix:string}){
  const field=(key:keyof MetadataFields,text:string)=>onChange({...value,[key]:text});
  return <>
-  {value.category!=='textbook'&&<div className="import-field"><label htmlFor={`${prefix}-title-input`}>単語帳の名前 <small className="field-required">必須</small></label><input id={`${prefix}-title-input`} required maxLength={80} value={value.title} onChange={e=>field('title',e.target.value)} placeholder="例：旅先で使う英単語"/></div>}
+  <div className="deck-language-fields"><div className="import-field"><label htmlFor={`${prefix}-language`}>学習する言語</label><select id={`${prefix}-language`} value={value.language??'en'} onChange={e=>field('language',e.target.value)}>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{item.name}</option>)}</select></div><div className="import-field"><label htmlFor={`${prefix}-meaning-language`}>意味・訳の言語</label><select id={`${prefix}-meaning-language`} value={value.meaningLanguage??'ja'} onChange={e=>field('meaningLanguage',e.target.value)}>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{item.name}</option>)}</select></div></div>
+  {value.category!=='textbook'&&<div className="import-field"><label htmlFor={`${prefix}-title-input`}>単語帳の名前 <small className="field-required">必須</small></label><input id={`${prefix}-title-input`} required maxLength={80} value={value.title} onChange={e=>field('title',e.target.value)} placeholder="例：旅先で使う単語"/></div>}
   <div className="import-field"><label htmlFor={`${prefix}-category`}>カテゴリ <small>任意</small></label><select id={`${prefix}-category`} value={value.category} onChange={e=>field('category',e.target.value)}><option value="">カテゴリを選ぶ</option><option value="textbook">教材</option>{DECK_CATEGORIES.map(name=><option key={name} value={name}>{name}</option>)}</select></div>
   {value.category==='textbook'&&<div className="import-textbook-fields">
    <div className="import-field"><label htmlFor={`${prefix}-textbook-name`}>教材名 <small className="field-required">必須</small></label><input id={`${prefix}-textbook-name`} required maxLength={80} value={value.textbookName} onChange={e=>field('textbookName',e.target.value)} placeholder="例：英単語ターゲット1900"/></div>

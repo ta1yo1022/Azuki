@@ -1,3 +1,6 @@
+import {SiteLanguageSelect} from './SiteLanguageSelect';
+import {useSiteLanguage} from '../lib/siteLanguage';
+import {landingText} from './landingTranslations';
 import { EmailPreferences } from './EmailPreferences';
 import { AdminLink } from "./AdminReports";
 import { CookieControls } from "./CookieControls";
@@ -8,6 +11,8 @@ import { ArrowLeft } from "lucide-react";
 import { readStudyPreferences, saveStudyPreferences } from "../lib/studyPreferences";
 
 export function SettingsPage({ onClose, onTutorial, demo = false }: { demo?: boolean; onClose: () => void; onTutorial?: () => void }) {
+  const {language}=useSiteLanguage();
+  const t=(text:string)=>landingText(language,text);
   const [draft, setDraft] = useState(readStudyPreferences);
   const [message, setMessage] = useState("");
   const [failed, setFailed] = useState(false);
@@ -17,7 +22,8 @@ export function SettingsPage({ onClose, onTutorial, demo = false }: { demo?: boo
       <button className="text-button study-back" onClick={onClose}><ArrowLeft size={20} />ライブラリに戻る</button>
       <h1>設定</h1>
     </header>
-    <main className="study-content">
+<main className="study-content">
+      <section className="study-setup" aria-labelledby="site-language-title"><h2 id="site-language-title">{t('トップページの表示言語')}</h2><SiteLanguageSelect/><p>{t('設定はこのブラウザに保存されます。アプリ内の画面は日本語です。')}</p></section>
       {!demo&&<section className="study-setup"><h2>利用プラン</h2><p>Proの内容や契約状況を確認できます。</p><Link className="button secondary" to="/plans">プラン・契約を確認</Link></section>}
       <section className="study-setup" aria-labelledby="settings-title">
         <h2 id="settings-title">カード学習</h2>

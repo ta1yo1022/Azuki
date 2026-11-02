@@ -1,3 +1,4 @@
+import {isLanguage} from '../shared/languages';
 import {standardDeck, standardDecks, standardAssetPath} from "../shared/standardDecks";
 import type {Word} from "../shared/model";
 import { ValidationError } from "../shared/model";
@@ -47,12 +48,15 @@ export async function publicRoute(
     );
   if (url.pathname === "/api/public/decks") {
     const q = searchQuery(url);
+    const language=url.searchParams.get('language')??'';
+    if(language&&!isLanguage(language))throw new ValidationError('言語の指定を確認してください。');
     const pattern = likePattern(q);
     const cursor = parseCursor(url.searchParams.get("cursor"));
     const clauses = [`d.id NOT IN (${standardDecks.map(() => "?").join(",")})`, "d.visibility='public'", "d.id IN (SELECT id FROM public_families WHERE family_rank=1)"];
     const params: string[] = standardDecks.map(d=>d.id);
+    if(language){clauses.push('d.language=?');params.push(language);}
     if (q) {
-      clauses.push(`EXISTS (SELECT 1 FROM decks member WHERE member.visibility='public' AND COALESCE(member.root_deck_id,member.id)=COALESCE(d.root_deck_id,d.id) AND (member.title LIKE ? ESCAPE '\\' OR member.description LIKE ? ESCAPE '\\' OR EXISTS (
+      clauses.push(`EXISTS (SELECT 1 FROM decks member WHERE member.visibility='public' AND member.language=d.language AND COALESCE(member.root_deck_id,member.id)=COALESCE(d.root_deck_id,d.id) AND (member.title LIKE ? ESCAPE '\\' OR member.description LIKE ? ESCAPE '\\' OR EXISTS (
         SELECT 1 FROM deck_textbook_tags dt JOIN textbook_tags t ON t.id=dt.tag_id
         WHERE dt.deck_id=member.id AND (t.name LIKE ? ESCAPE '\\' OR t.edition LIKE ? ESCAPE '\\' OR t.chapter LIKE ? ESCAPE '\\')
       )))`);

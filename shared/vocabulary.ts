@@ -1,3 +1,4 @@
+import type {Language} from './languages';
 import {decodeToon} from './toon';
 export const EXAMPLE_WEEKLY_LIMIT=500;
 export const EXAMPLE_BATCH_LIMIT=20;
@@ -12,16 +13,16 @@ export function vocabularyWeek(now=Date.now()){
  const start=Date.UTC(jst.getUTCFullYear(),jst.getUTCMonth(),jst.getUTCDate()-day)-9*3600000;
  return {start:new Date(start).toISOString(),resetsAt:new Date(start+7*86400000).toISOString()};
 }
-export function vocabularyTerm(value:unknown){
+export function vocabularyTerm(value:unknown,language:Language='en'){
  if(typeof value!=='string')throw new Error('単語は文字列で入力してください。');
  const term=normalizeTerm(value);
- if(!/^[a-z][a-z0-9 ./'-]{0,99}$/.test(term))throw new Error('英単語・英語のフレーズを100文字以内で入力してください。');
+ if(!term||term.length>100||!/[\p{L}\p{N}]/u.test(term)||/[^\p{L}\p{M}\p{N} ./'’ʼ\-]/u.test(term))throw new Error('単語・フレーズを100文字以内で入力してください。');
  return term;
 }
-export function parseVocabulary(text:string){
+export function parseVocabulary(text:string,language:Language='en'){
  if(text.length>30000)throw new Error('単語のTOONは30,000文字以内にしてください。');
  let data:unknown;try{data=decodeToon(text);}catch{throw new Error('TOONの形式を確認してください。例：words[3]: agree,curious,improve');}
  const values=Array.isArray(data)?data:data&&typeof data==='object'&&'words' in data?(data as {words:unknown}).words:null;
  if(!Array.isArray(values)||!values.length||values.length>500)throw new Error('TOONの配列に1〜500語を入力してください。');
- return [...new Set(values.map(value=>vocabularyTerm(value&&typeof value==='object'&&!Array.isArray(value)?value.word:value)))];
+ return [...new Set(values.map(value=>vocabularyTerm(value&&typeof value==='object'&&!Array.isArray(value)?value.word:value,language)))];
 }

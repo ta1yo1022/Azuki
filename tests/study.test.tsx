@@ -114,7 +114,7 @@ it('shows setup before fetching, remembers skipped setup, and can restore it fro
   expect(container.querySelector('.study-card')).not.toBeNull();
   expect(button('設定')).toBeUndefined();
   await act(async () => root.render(<MemoryRouter><SettingsPage onClose={() => {}} /></MemoryRouter>));
-  expect(container.querySelector('select')?.value).toBe('shuffle');
+  expect((container.querySelector('select[aria-label="出題順"]') as unknown as HTMLSelectElement)?.value).toBe('shuffle');
   await act(async()=>container.querySelector<HTMLInputElement>('input[type="checkbox"]')!.click());
   await click('設定を保存');
   await act(async()=>root.unmount());root=createRoot(container);
@@ -158,7 +158,7 @@ it('studies each translated example separately, fetching later pages and hiding 
 });
 it('shows an actionable empty state for untranslated examples',async()=>{
  reader.words.mockResolvedValue({words:[words[0]],nextCursor:null});await mountExamples();
- expect(container.textContent).toContain('日本語訳付きの例文がありません');expect(container.querySelector('.study-card')).toBeNull();
+ expect(container.textContent).toContain('訳付きの例文がありません');expect(container.querySelector('.study-card')).toBeNull();
 });
 it('keeps example direction separate from word direction and supports Japanese first',async()=>{
  localStorage.setItem('azuki.study-preferences.v1',JSON.stringify({order:'ordered',direction:'ja-en',exampleDirection:'ja-en',skipSetup:false}));

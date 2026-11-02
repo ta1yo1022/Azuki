@@ -29,7 +29,7 @@ export function FavoriteButton({id,userId}:{id:string;userId?:string}) {
   return <div className="favorite-action"><button className="button secondary" aria-pressed={saved} disabled={busy||(!ready&&!error)} onClick={()=>void toggle()}><Star size={17} fill={saved?'currentColor':'none'}/>{busy?'更新しています…':saved?'お気に入り登録済み':'お気に入りに登録'}</button>{error&&<p role="alert" className="error-box">{error} <button onClick={()=>void toggle()} disabled={busy}>再試行</button></p>}</div>;
 }
 
-export function Favorites({owner}:{owner:string}){
+export function Favorites({owner,language}:{owner:string;language?:string}){
   const [items,setItems]=useState<Favorite[]>([]),[error,setError]=useState(''),[loading,setLoading]=useState(true),[busy,setBusy]=useState(''),[retry,setRetry]=useState(0);
   useEffect(()=>{
     let active=true;setItems([]);setLoading(true);setError('');
@@ -37,7 +37,8 @@ export function Favorites({owner}:{owner:string}){
     return()=>{active=false;};
   },[owner,retry]);
   async function remove(id:string){setBusy(id);setError('');try{await favoritesRepository.remove(id);setItems(prev=>prev.filter(item=>item.id!==id));}catch(e){setError(e instanceof Error?e.message:'解除できませんでした。');}finally{setBusy('');}}
-  return <section className="favorites-section" aria-labelledby="favorites-heading"><div className="favorites-heading"><h2 id="favorites-heading"><Star size={20}/>お気に入り</h2><Link to="/explore">公開単語帳を探す →</Link></div><p className="muted">コピーせず、元の単語帳を開きます。保存上限には含まれません。</p>{loading?<p>お気に入りを読み込んでいます…</p>:items.length?<div className="deck-grid favorites-grid">{items.map((item,index)=><article className="favorite-card" key={item.id}>
+  const visibleItems=items.filter(item=>!language||item.deck&&(item.deck.language??'en')===language);
+  return <section className="favorites-section" aria-labelledby="favorites-heading"><div className="favorites-heading"><h2 id="favorites-heading"><Star size={20}/>お気に入り</h2><Link to="/explore">公開単語帳を探す →</Link></div><p className="muted">コピーせず、元の単語帳を開きます。保存上限には含まれません。</p>{loading?<p>お気に入りを読み込んでいます…</p>:visibleItems.length?<div className="deck-grid favorites-grid">{visibleItems.map((item,index)=><article className="favorite-card" key={item.id}>
     {item.deck?<PublicDeckCard deck={item.deck} index={index} heading="h3"/>:<div className="deck-card favorite-unavailable"><Star size={24}/><h3>この単語帳は現在開けません</h3><p className="muted">非公開または削除されています。</p></div>}
     <button className="text-button favorite-remove" aria-label={`${item.deck?.title??'開けない単語帳'}をお気に入りから外す`} disabled={Boolean(busy)} onClick={()=>void remove(item.id)}><X size={16}/>お気に入りから外す</button>
   </article>)}</div>:<p className="muted">気になる公開単語帳を、お気に入りに登録できます。</p>}{error&&<p role="alert" className="error-box">{error} <button onClick={()=>setRetry(n=>n+1)}>再読み込み</button></p>}</section>;

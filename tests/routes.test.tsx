@@ -65,6 +65,7 @@ async function click(label: string) { await act(async () => { button(label).clic
 async function move(target: string | number) { await act(async () => { if (typeof target === "number") await navigate(target); else await navigate(target); }); await settle(); }
 beforeEach(() => {
   vi.stubGlobal("IS_REACT_ACT_ENVIRONMENT", true);
+  localStorage.setItem('azuki.site-language.v1','ja');
   mocks.user = null;
   mocks.deck.isOfficial = false;
   mocks.deck.officialLevel = undefined;
@@ -139,7 +140,7 @@ describe("URL navigation", () => {
       await click("学習する");
       await click("例文カードで学習");
       expect(currentURL).toBe(`${path}/study?mode=examples`);
-      expect(container.textContent).toContain("日本語訳のある例文が対象です。");
+      expect(container.textContent).toContain("訳のある例文が対象です。");
       expect((container.querySelector('[aria-label="カードの向き"]') as unknown as {value:string})?.value).toBe("en-ja");
     }
   });
@@ -171,14 +172,14 @@ describe("URL navigation", () => {
     mocks.user = { uid:"navigation-user", displayName:"Test", providerData:[] };localStorage.setItem("azuki.tutorial.v1.navigation-user","done");
     await mount("/explore?q=教科書");
     await settle(400);
-    expect(mocks.list).toHaveBeenLastCalledWith("教科書", null, expect.any(AbortSignal));
+    expect(mocks.list).toHaveBeenLastCalledWith("教科書", null, expect.any(AbortSignal),undefined);
     await move("/shared/demo-deck/study");
     expect(container.querySelector(".study-page")).toBeTruthy();
     await move(-1);
     expect(container.querySelector<HTMLInputElement>('[aria-label="公開単語帳を検索"]')?.value).toBe("教科書");
     await move("/library?tag=教科書&sort=name&q=ことば");
     expect(container.querySelector<HTMLInputElement>('[aria-label="単語帳を検索"]')?.value).toBe("ことば");
-    expect(container.querySelector("select")?.value).toBe("name");
+    expect((container.querySelector(".library-toolbar select") as unknown as HTMLSelectElement)?.value).toBe("name");
     expect([...container.querySelectorAll("a.deck-card")].filter(card => !card.closest(".standard-library"))).toHaveLength(1);
   });
   it("routes import and share settings, redirects legacy demo links, and handles missing pages", async () => {
@@ -364,4 +365,13 @@ it('redirects retired trial URLs to public discovery without login',async()=>{
   await mount(path);expect(currentURL).toBe('/explore');expect(container.querySelector('.demo-banner')).toBeNull();
  }
  await move('/');expect(container.querySelector('a[href="/demo"]')).toBeNull();expect(container.textContent).not.toContain('お試しモード');
+});
+
+it('filters public and owned books by language and restores the filter from the URL',async()=>{
+ mocks.user={uid:'language-user',displayName:'Test',providerData:[]};localStorage.setItem('azuki.tutorial.v1.language-user','done');
+ await mount('/explore?language=th');expect(mocks.list).toHaveBeenLastCalledWith('',null,expect.any(AbortSignal),'th');
+ expect(container.querySelector('.standard-library')).toBeNull();expect((container.querySelector('[aria-label="公開単語帳の言語"]') as unknown as HTMLSelectElement)?.value).toBe('th');
+ await move('/explore?language=en');expect(container.querySelector('.standard-library')).toBeTruthy();
+ await move('/library?language=zh');expect(container.querySelector('a.deck-card')).toBeNull();
+ await move('/library?language=en');expect(container.querySelector('a.deck-card')).toBeTruthy();
 });

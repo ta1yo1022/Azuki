@@ -1,3 +1,4 @@
+import {LANGUAGES,type Language} from '../../shared/languages';
 import { DeckMetadataFields } from './DeckMetadataFields';
 import { ThemePicker } from './ThemePicker';
 import { WordPaste,emptyWordPaste } from './WordPaste';
@@ -38,6 +39,8 @@ export function ImportPage({ onClose, onImport }: Props) {
   const [textbookName, setTextbookName] = useState("");
   const [edition, setEdition] = useState("");
   const [title, setTitle] = useState("");
+  const [language,setLanguage]=useState<Language>('en');
+  const [meaningLanguage,setMeaningLanguage]=useState<Language>('ja');
   const [theme,setTheme]=useState<DeckTheme>('azuki');
   const [description, setDescription] = useState("");
   function showPreview(text: string) {
@@ -80,7 +83,7 @@ export function ImportPage({ onClose, onImport }: Props) {
       if (category === "textbook" && !textbookName.trim()) throw new Error("教材名を入力してください。");
       const textbookTags = category === "textbook" ? [{ name: textbookName.trim(), edition: edition.trim() }]
         : category ? [{ name: category }] : [];
-      await onImport(parseDeck(JSON.stringify({ ...preview, theme, title: category === "textbook" ? textbookName.trim() : title, description, textbookTags })));
+      await onImport(parseDeck(JSON.stringify({ ...preview, theme, language,meaningLanguage,title: category === "textbook" ? textbookName.trim() : title, description, textbookTags })));
       onClose();
     } catch (e) {
       setError((e as Error).message);
@@ -130,7 +133,8 @@ export function ImportPage({ onClose, onImport }: Props) {
                 TOONを貼り付け
               </button>
             </div>
-            {tab==='words'?<WordPaste draft={wordDraft} setDraft={setWordDraft} onBusy={setBusy} onPreview={words=>{setName('');setPreview({schemaVersion:1,title:'',description:'',textbookTags:[],words});}}/>:tab === "file" ? (
+            <div className="deck-language-fields"><label>学習する言語<select aria-label="学習する言語" disabled={busy} value={language} onChange={e=>{setLanguage(e.target.value as Language);setWordDraft(old=>({...old,rows:old.rows.map(row=>({...row,generated:false}))}));}}>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{item.name}</option>)}</select></label><label>意味・訳の言語<select aria-label="意味・訳の言語" disabled={busy} value={meaningLanguage} onChange={e=>{setMeaningLanguage(e.target.value as Language);setWordDraft(old=>({...old,rows:old.rows.map(row=>({...row,generated:false}))}));}}>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{item.name}</option>)}</select></label></div>
+            {tab==='words'?<WordPaste language={language} meaningLanguage={meaningLanguage} draft={wordDraft} setDraft={setWordDraft} onBusy={setBusy} onPreview={words=>{setName('');setPreview({schemaVersion:1,title:'',description:'',textbookTags:[],words});}}/>:tab === "file" ? (
               <div
                 className={`dropzone ${drag ? "dragover" : ""}`}
                 onDragOver={(e) => {
@@ -206,7 +210,7 @@ export function ImportPage({ onClose, onImport }: Props) {
             <ThemePicker value={theme} onChange={setTheme} disabled={busy} />
             <fieldset className="import-classification" disabled={busy}>
               <legend className="visually-hidden">単語帳の設定</legend>
-              <DeckMetadataFields prefix="import" value={{title,description,category,textbookName,edition}} onChange={value=>{setTitle(value.title);setDescription(value.description);setCategory(value.category);setTextbookName(value.textbookName);setEdition(value.edition);}} />
+              <DeckMetadataFields prefix="import" value={{title,description,category,textbookName,edition,language,meaningLanguage}} onChange={value=>{setLanguage(value.language??'en');setMeaningLanguage(value.meaningLanguage??'ja');setTitle(value.title);setDescription(value.description);setCategory(value.category);setTextbookName(value.textbookName);setEdition(value.edition);}} />
             </fieldset>
             <div className="import-preview-heading"><h3>単語のプレビュー</h3><span>{preview.words.length > 5 ? "先頭の5語" : `${preview.words.length}語`}</span></div>
             <div className="preview-words">

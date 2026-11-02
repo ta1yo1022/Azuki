@@ -1,15 +1,17 @@
+import {isLanguage,type Language} from '../shared/languages';
 import { billingEnabled, hasPro } from './billing';
 import { wordExamples } from '../shared/model';
 import type { Env } from './index';
 import { standardAssetPath, standardDeck } from '../shared/standardDecks';
 import type { Word } from '../shared/model';
-const VOICE='en-US-Wavenet-F';
+const VOICES={en:{languageCode:'en-US',name:'en-US-Wavenet-F'},ja:{languageCode:'ja-JP',name:'ja-JP-Wavenet-A'},th:{languageCode:'th-TH',name:'th-TH-Standard-A'},zh:{languageCode:'cmn-CN',name:'cmn-CN-Wavenet-A'}} as const;
 const AUDIO_VERSION='google-wavenet-en-US-Wavenet-F-mp3-v1';
 const standardCache=new Map<string,Word[]>();
 const error=(message:string,status=503)=>Response.json({error:message},{status});
-export async function audioKey(text:string,kind:'word'|'example'='word'){
- const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode((kind==='example'?'example:':'')+AUDIO_VERSION+'\0'+text));
- return (kind==='example'?'examples':'words')+'/google-wavenet/en-US-Wavenet-F/v1/'+Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('')+'.audio';
+export async function audioKey(text:string,kind:'word'|'example'='word',language:Language='en'){
+ const version=language==='en'?AUDIO_VERSION:`google-${VOICES[language].name}-mp3-v1`;
+ const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode((kind==='example'?'example:':'')+version+'\0'+text));
+ return (kind==='example'?'examples':'words')+`/google-wavenet/${VOICES[language].name}/v1/`+Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('')+'.audio';
 }
 export async function wordAudioQuota(request:Request,env:Env,uid:string){
  if(request.method!=='GET')return error('この操作は利用できません。',405);
@@ -65,12 +67,14 @@ export async function wordAudio(request:Request,env:Env,deckId:string,wordId:str
  if(example!==null&&!/^[0-9]$/.test(example))return error('例文の指定を確認してください。',400);
  const kind=example===null?'word':'example';
  // Resolve the actual stored word first, even when a shared audio object is already cached.
+ const languageRow=standardDeck(deckId)?null:await env.DB.prepare("SELECT language FROM decks WHERE id=? AND (visibility='public' OR owner_id=?)").bind(deckId,publicOnly?'':uid??'').first<{language:string}>();
+ const language:Language=isLanguage(languageRow?.language)?languageRow.language:'en';
  const word=await sourceWord(env,deckId,wordId,publicOnly?undefined:uid,example===null?undefined:Number(example));
  if(!word)return error('この音声は読み上げられません。',404);
  const text=word.normalize('NFKC').trim().replace(/\s+/g,' ');
- if(!/[A-Za-z]/.test(text)||text.length>(kind==='word'?120:1000))return error('英単語の読み上げに対応しています。',400);
+ if(!/[\p{L}\p{N}]/u.test(text)||text.length>(kind==='word'?120:1000))return error('この単語は読み上げられません。',400);
  if(!env.AUDIO||!env.GOOGLE_TTS_API_KEY||env.AUDIO_ENABLED!=='true')return error('音声の準備中です。しばらくしてからお試しください。');
- const key=await audioKey(text,kind);
+ const key=await audioKey(text,kind,language);
  const cached=await env.AUDIO.get(key);
  if(cached)return audioResponse(cached.body,cached.httpMetadata?.contentType);
  if(!uid)return error('新しい音声の生成にはGoogleログインが必要です。生成済みの音声はそのまま再生できます。',401);
@@ -97,7 +101,7 @@ export async function wordAudio(request:Request,env:Env,deckId:string,wordId:str
   stage="generation";
   const response=await fetch('https://texttospeech.googleapis.com/v1/text:synthesize',{
    method:'POST',headers:{'Content-Type':'application/json','X-Goog-Api-Key':env.GOOGLE_TTS_API_KEY},
-   body:JSON.stringify({input:{text},voice:{languageCode:'en-US',name:VOICE},audioConfig:{audioEncoding:'MP3'}}),
+   body:JSON.stringify({input:{text},voice:VOICES[language],audioConfig:{audioEncoding:'MP3'}}),
    signal:AbortSignal.timeout(25000),
   });
   // Never expose provider responses: they may contain request or credential details.

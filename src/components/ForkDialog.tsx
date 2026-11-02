@@ -42,7 +42,7 @@ export function ForkDialog({deck,onClose,onSave,reader=publicRepository}:{deck:D
     try {
       if(new TextEncoder().encode(raw).length>LIMITS.bytes)throw new Error("TOONは512KB以内にしてください。");
       let value:unknown;try {value=decodeToon(raw);} catch {throw new Error("TOONの形式を確認してください。");}
-      setPreview(parseDeck(JSON.stringify({schemaVersion:1,title,description,theme:deck.theme,textbookTags:deck.textbookTags,words:value}),{maxWords:LIMITS.forkWords,allowExampleVariants:true}));
+      setPreview(parseDeck(JSON.stringify({schemaVersion:1,language:deck.language,meaningLanguage:deck.meaningLanguage,title,description,theme:deck.theme,textbookTags:deck.textbookTags,words:value}),{maxWords:LIMITS.forkWords,allowExampleVariants:true}));
     } catch(e){setError((e as Error).message);}
   }
   async function submit() {

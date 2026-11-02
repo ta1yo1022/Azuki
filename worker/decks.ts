@@ -1,3 +1,4 @@
+import {isLanguage} from '../shared/languages';
 import { isDeckTheme } from '../shared/deckThemes';
 import { standardDeck } from "../shared/standardDecks";
 import { ValidationError, type Deck, type TextbookTag, type Word } from "../shared/model";
@@ -15,6 +16,8 @@ export type DeckRow = {
   content_source: string;
   official_level: string;
   theme?: string;
+  language?:string;
+  meaning_language?:string;
   title: string;
   description: string;
   visibility: "private" | "public";
@@ -34,6 +37,8 @@ export function deckResult(row: DeckRow): Deck {
     schemaVersion: 1,
     id: row.id,
     title: row.title,
+    language:isLanguage(row.language)?row.language:'en',
+    meaningLanguage:isLanguage(row.meaning_language)?row.meaning_language:'ja',
     ...(isDeckTheme(row.theme)?{theme:row.theme}:{}),
     description: row.description,
     visibility: row.visibility,

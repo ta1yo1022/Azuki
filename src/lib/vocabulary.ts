@@ -1,11 +1,12 @@
+import type {Language} from '../../shared/languages';
 import { useEffect,useState } from 'react';
 import { apiRequest } from './repository';
 import { auth } from './firebase';
 import type { VocabularySelection,VocabularyExample,VocabularyQuota } from '../../shared/vocabulary';
 export const vocabularyRepository={
  quota:()=>apiRequest<VocabularyQuota>('/vocabulary/quota'),
- generate:async(requestId:string,words:VocabularySelection[])=>{
-  try{return await apiRequest<{examples:VocabularyExample[];failed:string[];quota:VocabularyQuota}>('/vocabulary/examples',{method:'POST',body:JSON.stringify({requestId,words})});}
+ generate:async(requestId:string,words:VocabularySelection[],language:Language='en',meaningLanguage:Language='ja')=>{
+  try{return await apiRequest<{examples:VocabularyExample[];failed:string[];quota:VocabularyQuota}>('/vocabulary/examples',{method:'POST',body:JSON.stringify({requestId,words,language,meaningLanguage})});}
   finally{window.dispatchEvent(new Event('azuki-vocabulary-quota'));}
  },
 };

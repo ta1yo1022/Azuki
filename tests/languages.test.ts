@@ -1,0 +1,60 @@
+import {afterEach,beforeEach,expect,it,vi} from 'vitest';
+import {DatabaseSync} from 'node:sqlite';
+import {readdirSync,readFileSync} from 'node:fs';
+import {sqliteD1} from './helpers/sqliteD1';
+import {createHandler,type Env} from '../worker';
+import {parseDeck} from '../shared/model';
+import {parseVocabulary} from '../shared/vocabulary';
+import {exampleWordParts} from '../shared/exampleWord';
+import {audioKey} from '../worker/audio';
+import {encodeToon} from '../shared/toon';
+let db:DatabaseSync,env:Env;
+const handle=createHandler(async token=>{if(['alice','bob'].includes(token))return token;throw Error();});
+const call=(path:string,method='GET',data?:unknown,user='alice')=>handle(new Request('https://api.test/api'+path,{method,headers:{Authorization:'Bearer '+user,'Content-Type':'application/json'},...(data?{body:JSON.stringify(data)}:{})}),env);
+const sample={title:'タイ語の挨拶',language:'th',meaningLanguage:'zh',words:[{word:'สวัสดี',meaning:'你好',examples:[{text:'สวัสดีครับ',translation:'你好。'}],tags:[]}]};
+beforeEach(()=>{db=new DatabaseSync(':memory:');for(const file of readdirSync(new URL('../migrations/',import.meta.url)).filter(file=>file.endsWith('.sql')).sort())db.exec(readFileSync(new URL('../migrations/'+file,import.meta.url),'utf8'));env={DB:sqliteD1(db),FIREBASE_PROJECT_ID:'test',ALLOWED_ORIGINS:'https://azuki.test',ALLOW_IMPORTS:'true'};});
+afterEach(()=>{db.close();vi.restoreAllMocks();});
+it('accepts Thai tone marks, Chinese and Japanese terms and validates language codes',()=>{
+ expect(parseVocabulary('words[3]: สวัสดี,ขอบคุณ,เรียน','th')).toHaveLength(3);
+ expect(parseVocabulary('words[2]: 学习,謝謝','zh')).toEqual(['学习','謝謝']);
+ expect(parseDeck(JSON.stringify(sample))).toMatchObject({language:'th',meaningLanguage:'zh'});
+ expect(()=>parseDeck(JSON.stringify({...sample,language:'invalid'}))).toThrow('言語');
+ expect(exampleWordParts('ฉันเรียนภาษาไทย','เรียน').some(part=>part.match)).toBe(true);
+ expect(exampleWordParts('我每天学习中文。','学习').some(part=>part.match)).toBe(true);
+});
+it('stores, searches, copies and edits a language pair without changing words',async()=>{
+ const created=await call('/decks','POST',sample);expect(created.status).toBe(201);const {deck}=await created.json() as any;
+ expect(deck).toMatchObject({language:'th',meaningLanguage:'zh'});
+ await call(`/decks/${deck.id}/visibility`,'PATCH',{visibility:'public'});
+ const th=await (await call('/public/decks?language=th')).json() as any;expect(th.decks.map((d:any)=>d.id)).toContain(deck.id);
+ const en=await (await call('/public/decks?language=en')).json() as any;expect(en.decks.map((d:any)=>d.id)).not.toContain(deck.id);
+ expect((await call('/public/decks?language=xxx')).status).toBe(400);
+ const saved=await call(`/decks/${deck.id}/save`,'POST',undefined,'bob');expect(saved.status).toBe(201);expect((await saved.json() as any).deck).toMatchObject({language:'th',meaningLanguage:'zh'});
+ const changed=await call(`/decks/${deck.id}/settings`,'PATCH',{...sample,language:'zh',meaningLanguage:'th'});expect(changed.status).toBe(200);expect((await changed.json() as any).deck).toMatchObject({language:'zh',meaningLanguage:'th'});
+ expect((await (await call(`/decks/${deck.id}/words`)).json() as any).words[0].word).toBe('สวัสดี');
+ const legacy=await (await call('/decks','POST',{title:'既存形式',words:[{word:'book',meaning:'本'}]})).json() as any;expect(legacy.deck).toMatchObject({language:'en',meaningLanguage:'ja'});
+});
+it('generates Thai examples with Chinese meanings and binds retry IDs to the language pair',async()=>{
+ env.BILLING_ENABLED='true';env.VOCABULARY_ENABLED='true';env.DICTIONARY={fetch:vi.fn()} as any;
+ db.prepare('INSERT OR IGNORE INTO users(id) VALUES(?)').run('alice');db.prepare('INSERT INTO pro_offer_redemptions VALUES(?,0,?,?,?)').run('alice','AZUKI1MONTH',Math.floor(Date.now()/1000),Math.floor(Date.now()/1000)+86400);
+ env.AI={run:vi.fn(async()=>({response:encodeToon({items:[{index:0,meaning:'学习',text:'ฉันเรียนภาษาไทย',translation:'我学习泰语。'}]})}))} as any;
+ const data={requestId:crypto.randomUUID(),language:'th',meaningLanguage:'zh',words:[{term:'เรียน'}]};
+ const response=await call('/vocabulary/examples','POST',data);expect(response.status).toBe(200);expect((await response.json() as any).examples[0]).toMatchObject({term:'เรียน',meaning:'学习'});
+ expect(JSON.stringify(vi.mocked(env.AI!.run).mock.calls)).toContain('Thai');expect(env.DICTIONARY!.fetch).not.toHaveBeenCalled();
+ expect((await call('/vocabulary/examples','POST',{...data,meaningLanguage:'ja'})).status).toBe(409);
+});
+it('separates audio objects by language while preserving the English cache',async()=>{
+ expect(await audioKey('book')).toBe(await audioKey('book','word','en'));
+ expect(await audioKey('你好','word','zh')).not.toBe(await audioKey('你好','word','ja'));
+ expect(await audioKey('สวัสดี','word','th')).toContain('th-TH-Standard-A');
+});
+it.each([['th','th-TH-Standard-A'],['zh','cmn-CN-Wavenet-A'],['ja','ja-JP-Wavenet-A']])('reads %s with its own voice and shares the daily word quota',async(language,voice)=>{
+ env.GOOGLE_TTS_API_KEY='test';env.AUDIO_ENABLED='true';env.BILLING_ENABLED='true';
+ const objects=new Map<string,ArrayBuffer>();env.AUDIO={get:vi.fn(async(key:string)=>objects.has(key)?{body:new Response(objects.get(key)!).body,httpMetadata:{contentType:'audio/mpeg'}}:null),put:vi.fn(async(key:string,bytes:ArrayBuffer)=>{objects.set(key,bytes);})} as any;
+ const fetcher=vi.spyOn(globalThis,'fetch').mockResolvedValue(Response.json({audioContent:btoa(String.fromCharCode(0x49,0x44,0x33,...Array(30).fill(0)))}));
+ const {deck}=await (await call('/decks','POST',{...sample,language})).json() as any;const {words}=await (await call(`/decks/${deck.id}/words`)).json() as any;
+ expect((await call(`/decks/${deck.id}/words/${words[0].id}/audio`,'POST')).status).toBe(200);
+ expect(JSON.parse(String(fetcher.mock.calls[0][1]?.body)).voice.name).toBe(voice);
+ expect((await (await call('/audio/quota')).json() as any).used).toBe(1);
+ expect((await call(`/decks/${deck.id}/words/${words[0].id}/audio`,'POST')).status).toBe(200);expect(fetcher).toHaveBeenCalledTimes(1);
+});

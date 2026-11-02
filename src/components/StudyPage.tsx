@@ -1,3 +1,4 @@
+import {languageName} from '../../shared/languages';
 import { WordDetails } from './WordDetails';
 import { exampleWordParts } from '../lib/exampleWord';
 import { WordAudioButton } from "./WordAudioButton";
@@ -221,7 +222,7 @@ export function StudyPage({
         {settingsOpen ? (
           <section className="study-setup" aria-labelledby="study-setup-title">
             <h2 id="study-setup-title" ref={setupHeading} tabIndex={-1}>学習をはじめる前に</h2>
-            <p>{examplesMode ? "英文と日本語訳を1枚ずつめくって練習します。日本語訳のある例文が対象です。" : "出題順とカードの向きを選んでください。"}</p>
+            <p>{examplesMode ? "例文と訳を1枚ずつめくって練習します。訳のある例文が対象です。" : "出題順とカードの向きを選んでください。"}</p>
             <div className="study-settings" role="group" aria-label="カードの設定">
               <label>出題順
                 <select aria-label="出題順" value={draft.order} onChange={e => setDraft({...draft, order:e.target.value as typeof order})}>
@@ -230,7 +231,7 @@ export function StudyPage({
               </label>
               <label>カードの向き
                 <select aria-label="カードの向き" value={draft.direction} onChange={e => setDraft({...draft, direction:e.target.value as typeof direction})}>
-                  <option value="ja-en">日本語 → 英語</option><option value="en-ja">英語 → 日本語</option>
+                  <option value="ja-en">{languageName(deck.meaningLanguage??'ja')} → {languageName(deck.language??'en')}</option><option value="en-ja">{languageName(deck.language??'en')} → {languageName(deck.meaningLanguage??'ja')}</option>
                 </select>
               </label>
             </div>
@@ -277,7 +278,7 @@ export function StudyPage({
             </div>
           </div>
         ) : !word ? (
-          <div className="study-message"><h2>日本語訳付きの例文がありません</h2><p>マイライブラリの「例文を追加・編集」から、例文と日本語訳を登録してください。</p><button className="button secondary" onClick={onClose}>単語一覧に戻る</button></div>
+          <div className="study-message"><h2>訳付きの例文がありません</h2><p>マイライブラリの「例文を追加・編集」から、例文と訳を登録してください。</p><button className="button secondary" onClick={onClose}>単語一覧に戻る</button></div>
         ) : (
           word && (
             <>
@@ -312,27 +313,27 @@ export function StudyPage({
                   key={String(faceRevealed)}
                 >
                   <span className="eyebrow">
-                    {(direction === "ja-en") !== faceRevealed ? "日本語" : "ENGLISH"}
+                    {(direction === "ja-en") !== faceRevealed ? languageName(deck.meaningLanguage??'ja') : languageName(deck.language??'en')}
                   </span>
                   <span className="study-card-scroll">
                     <span className="study-card-body">
                       {examplesMode && word.sentence ? (
-                        <span className="study-sentence" lang={(direction === "ja-en") !== faceRevealed ? "ja" : "en"}>{(direction === "ja-en") !== faceRevealed ? word.sentence.translation : exampleWordParts(word.sentence.text,word.word).map((part,i)=>part.match?<button type="button" key={i} className="study-target-word" aria-label={`${word.word}の詳細を開く`} onClick={event=>{event.stopPropagation();setDetailWord({...word,id:word.id.split(':example:')[0]});}}>{part.text}</button>:part.text)}</span>
+                        <span className="study-sentence" lang={(direction === "ja-en") !== faceRevealed ? (deck.meaningLanguage??'ja') : (deck.language??'en')}>{(direction === "ja-en") !== faceRevealed ? word.sentence.translation : exampleWordParts(word.sentence.text,word.word).map((part,i)=>part.match?<button type="button" key={i} className="study-target-word" aria-label={`${word.word}の詳細を開く`} onClick={event=>{event.stopPropagation();setDetailWord({...word,id:word.id.split(':example:')[0]});}}>{part.text}</button>:part.text)}</span>
                       ) : faceRevealed ? (
                         <>
                           {direction === "ja-en" ? (
-                            <span className="study-word" lang="en">{word.word}</span>
+                            <span className="study-word" lang={deck.language??'en'}>{word.word}</span>
                           ) : <>
-                            <span className="study-answer-word" lang="en">{word.word}</span>
-                            <span className="study-meaning" lang="ja">{word.meaning}</span>
+                            <span className="study-answer-word" lang={deck.language??'en'}>{word.word}</span>
+                            <span className="study-meaning" lang={deck.meaningLanguage??'ja'}>{word.meaning}</span>
                           </>}
                           {wordExamples(word).map((example,i)=><span className="study-example" key={i}>
                             <span className="eyebrow">例文{wordExamples(word).length>1?` ${i+1}`:''}</span>
-                            <span lang="en">{example.text}</span>
+                            <span lang={deck.language??'en'}>{example.text}</span>
                           </span>)}
                         </>
                       ) : (
-                        <span className={direction === "ja-en" ? "study-meaning study-question-ja" : "study-word"} lang={direction === "ja-en" ? "ja" : "en"}>
+                        <span className={direction === "ja-en" ? "study-meaning study-question-ja" : "study-word"} lang={direction === "ja-en" ? (deck.meaningLanguage??'ja') : (deck.language??'en')}>
                           {direction === "ja-en" ? word.meaning : word.word}
                         </span>
                       )}
@@ -350,8 +351,8 @@ export function StudyPage({
                   <span className="study-flip-hint">
                     <RotateCw size={16} />
                     {faceRevealed
-                      ? (direction === "ja-en" ? "タップして日本語に戻す" : "タップして英語に戻す")
-                      : (direction === "ja-en" ? "タップして英語を見る" : "タップして日本語を見る")}
+                      ? (direction === "ja-en" ? `タップして${languageName(deck.meaningLanguage??'ja')}に戻す` : `タップして${languageName(deck.language??'en')}に戻す`)
+                      : (direction === "ja-en" ? `タップして${languageName(deck.language??'en')}を見る` : `タップして${languageName(deck.meaningLanguage??'ja')}を見る`)}
                   </span>
                 </span>
                   ))}
@@ -378,7 +379,7 @@ export function StudyPage({
           )
         )}
       </main>
-      {detailWord&&<dialog ref={detailDialog} className="study-word-dialog" aria-labelledby="study-word-detail-title" onClick={event=>{if(event.target!==event.currentTarget)return;const bounds=event.currentTarget.getBoundingClientRect();if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom){event.currentTarget.close();setDetailWord(null);}}} onCancel={event=>{event.preventDefault();setDetailWord(null);}} onClose={()=>{setDetailWord(null);card.current?.focus({preventScroll:true});}}><div className="dialog-inner"><div className="dialog-header"><h2 id="study-word-detail-title">{detailWord.word}</h2><button type="button" className="text-button" onClick={()=>{detailDialog.current?.close();setDetailWord(null);}}>閉じる</button></div>{detailWord.otherMeanings===undefined&&<p className="study-detail-meaning" lang="ja">{detailWord.meaning}</p>}{!demo&&<WordAudioButton deckId={deck.id} wordId={detailWord.id} word={detailWord.word} isPublic={deck.visibility==='public'}/>}<WordDetails word={detailWord} deckId={demo?undefined:deck.id} isPublic={deck.visibility==='public'}/></div></dialog>}
+      {detailWord&&<dialog ref={detailDialog} className="study-word-dialog" aria-labelledby="study-word-detail-title" onClick={event=>{if(event.target!==event.currentTarget)return;const bounds=event.currentTarget.getBoundingClientRect();if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom){event.currentTarget.close();setDetailWord(null);}}} onCancel={event=>{event.preventDefault();setDetailWord(null);}} onClose={()=>{setDetailWord(null);card.current?.focus({preventScroll:true});}}><div className="dialog-inner"><div className="dialog-header"><h2 id="study-word-detail-title">{detailWord.word}</h2><button type="button" className="text-button" onClick={()=>{detailDialog.current?.close();setDetailWord(null);}}>閉じる</button></div>{detailWord.otherMeanings===undefined&&<p className="study-detail-meaning" lang={deck.meaningLanguage??'ja'}>{detailWord.meaning}</p>}{!demo&&<WordAudioButton deckId={deck.id} wordId={detailWord.id} word={detailWord.word} isPublic={deck.visibility==='public'}/>}<WordDetails language={deck.language} meaningLanguage={deck.meaningLanguage} word={detailWord} deckId={demo?undefined:deck.id} isPublic={deck.visibility==='public'}/></div></dialog>}
     </div>
   );
 }

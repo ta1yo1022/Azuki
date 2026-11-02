@@ -1,5 +1,10 @@
 const irregular:Record<string,string[]>={be:['am','is','are','was','were','been','being'],have:['has','had','having'],do:['does','did','done','doing'],go:['goes','went','gone','going'],say:['says','said'],make:['made','making'],take:['took','taken','taking'],get:['gets','got','gotten','getting'],see:['saw','seen','seeing'],come:['came','coming'],run:['ran','running'],write:['wrote','written','writing'],read:['reads','reading'],eat:['ate','eaten','eating'],buy:['bought'],think:['thought'],know:['knew','known'],give:['gave','given','giving'],find:['found'],leave:['left','leaving'],feel:['felt'],bring:['brought'],teach:['taught'],speak:['spoke','spoken'],tell:['told'],meet:['met'],understand:['understood']};
 export function exampleWordParts(sentence:string,headword:string){
+ if(/[\p{Script=Han}\p{Script=Thai}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(headword)){
+  const parts:{text:string;match:boolean}[]=[];let offset=0,index=0;
+  while((index=sentence.indexOf(headword,offset))>=0){if(index>offset)parts.push({text:sentence.slice(offset,index),match:false});parts.push({text:sentence.slice(index,index+headword.length),match:true});offset=index+headword.length;}
+  if(offset<sentence.length)parts.push({text:sentence.slice(offset),match:false});return parts;
+ }
  const forms=new Set<string>();
  const exact=headword.split('/').map(word=>word.trim()).filter(Boolean);
  for(const raw of headword.split('/')){

@@ -166,6 +166,7 @@ async function route(
          WHERE ?='' OR ?=1 OR EXISTS(SELECT 1 FROM decks WHERE id=? AND (visibility='public' OR owner_id=?))`,
       ).bind(id,uid,data.title,data.description,data.words.length,now,now,dataBytes,await contentHash(data.words),source?.id ?? null,source?.title ?? "",source?.hash ?? "",source?.root ?? null,source?.contentSource ?? "",source ? 1 : 0,source?.id ?? "",source?.standard ? 1 : 0,source?.id ?? "",uid),
     ];
+    statements.push(env.DB.prepare('UPDATE decks SET language=?,meaning_language=? WHERE id=? AND owner_id=?').bind(data.language??'en',data.meaningLanguage??'ja',id,uid));
     if(data.theme)statements.push(env.DB.prepare('UPDATE decks SET theme=? WHERE id=? AND owner_id=?').bind(data.theme,id,uid));
     // JSON batches keep imports and full-book forks within D1's statement and bind limits.
     for(let offset=0;offset<data.words.length;offset+=250) {
@@ -211,6 +212,7 @@ async function route(
           ...(data.theme?{theme:data.theme}:{}),
           description: data.description,
           textbookTags: data.textbookTags,
+          language:data.language??'en',meaningLanguage:data.meaningLanguage??'ja',
           visibility: "private",
           wordCount: data.words.length,
           createdAt: now,

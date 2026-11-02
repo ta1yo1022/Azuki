@@ -1,3 +1,4 @@
+import {languageName} from '../../shared/languages';
 import { deckThemeStyle } from '../../shared/deckThemes';
 import { Link } from "react-router-dom";
 import { BookOpenText, Globe, Tag } from "lucide-react";
@@ -30,7 +31,7 @@ export function PublicDeckCard({deck, index, heading = "h2"}: {deck: Deck; index
                 <span className="cover-monogram">Aa</span>
               </span>
             </div>
-            <div className="deck-meta">
+            <div className="deck-meta"><span className="deck-language-badge">{languageName(deck.language??'en')} → {languageName(deck.meaningLanguage??'ja')}</span>
               <span className="deck-tags">
                 <Tag size={13} />
                 {deck.textbookTags.map((t) => t.name).join("・") ||
