@@ -2,6 +2,11 @@ import type {Language} from '../../shared/languages';
 type Translations=Record<string,readonly [string,string,string]>;
 // English, Thai and Chinese; Japanese source text remains the default copy.
 const copy:Translations={
+'Cookieの利用について':['Cookies','การใช้คุกกี้','Cookie 使用说明'],
+'Azukiは、使われ方を把握してサービスを改善するため、Google Analyticsを利用します。許可するとCookieを使い、閲覧情報や端末情報などをGoogleに送信します。許可しなくても単語帳を利用できます。':['Azuki uses Google Analytics to understand usage and improve the service. If you allow cookies, browsing and device information will be sent to Google. You can use wordbooks without allowing analytics.','Azuki ใช้ Google Analytics เพื่อทำความเข้าใจการใช้งานและปรับปรุงบริการ หากคุณอนุญาต เราจะใช้คุกกี้และส่งข้อมูลการเข้าชมและอุปกรณ์ไปยัง Google คุณยังใช้ชุดคำศัพท์ได้แม้ไม่อนุญาต','Azuki 使用 Google Analytics 了解使用情况并改进服务。允许后，我们会使用 Cookie 并将浏览及设备信息发送给 Google。不允许分析也可以使用词本。'],
+'詳しくはプライバシーポリシーへ':['Read our privacy policy','อ่านนโยบายความเป็นส่วนตัว','查看隐私政策'],
+'許可しない':['Decline','ไม่อนุญาต','不允许'],
+'許可する':['Allow','อนุญาต','允许'],
 '日本語':['Meaning','ความหมาย','释义'],
 'タップして英語を見る':['Tap to see the word','แตะเพื่อดูคำศัพท์','点击查看单词'],
 '英語・例文':['Word & example','คำศัพท์และตัวอย่าง','单词与例句'],
