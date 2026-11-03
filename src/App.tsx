@@ -1,4 +1,6 @@
-import {LANGUAGES,languageName} from '../shared/languages';
+import {languageName} from './lib/i18n';
+import {useI18n,messageText,locale} from './lib/i18n';
+import {LANGUAGES} from '../shared/languages';
 import { ProBookGate } from './components/PlansPage';
 import { ActionMenu } from './components/ActionMenu';
 import { DeckSettings } from './components/DeckSettings';
@@ -49,13 +51,13 @@ import { WordEditor } from "./components/WordEditor";
 import { DeckCredit } from "./components/DeckCredit";
 import { LIMITS, type Deck, type DeckInput, type Word } from "../shared/model";
 const formatDate = (value: string) =>
-  new Intl.DateTimeFormat("ja-JP", { month: "numeric", day: "numeric" }).format(
+  new Intl.DateTimeFormat(locale(), { month: "numeric", day: "numeric" }).format(
     new Date(value),
   );
 const errorMessage = (e: unknown) =>
   e instanceof Error
     ? e.message
-    : "処理できませんでした。もう一度お試しください。";
+    : messageText("処理できませんでした。もう一度お試しください。");
 function ProfileAvatar({
   name,
   photoURL,
@@ -67,12 +69,13 @@ function ProfileAvatar({
   initial: string;
   small?: boolean;
 }) {
+ const t=useI18n();
   const [failedURL, setFailedURL] = useState<string | null>(null);
   return (
     <span
       className={small ? "small-avatar" : "avatar"}
       role="img"
-      aria-label={`${name}のアイコン`}
+      aria-label={t("{0}のアイコン", name)}
     >
       {photoURL && failedURL !== photoURL ? (
         <img
@@ -88,6 +91,7 @@ function ProfileAvatar({
   );
 }
 export default function App({ demo = false }: { demo?: boolean }) {
+ const t=useI18n();
   const navigate = useNavigate();
   const location = useLocation();
   const { deckId } = useParams();
@@ -138,7 +142,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
       },
       () => {
         setError(
-          "ログイン状態を確認できませんでした。再読み込みしてください。",
+          messageText("ログイン状態を確認できませんでした。再読み込みしてください。"),
         );
         setAuthReady(true);
       },
@@ -174,7 +178,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
     return () => clearTimeout(timer);
   }, [toast]);
   useEffect(() => {
-    if (demo || user) document.title = `${importing ? "単語帳を作成" : selected ? selected.title : "わたしの単語帳"} — Azuki`;
+    if (demo || user) document.title = `${importing ? t("単語帳を作成") : selected ? selected.title : t("わたしの単語帳")} — Azuki`;
   }, [selected, demo, user, importing]);
   useEffect(() => {
     const current = ++generation.current;
@@ -233,8 +237,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
     [decks, filter, search, sort,language],
   );
   const displayName = demo
-    ? "お試しユーザー"
-    : user?.displayName || "マイアカウント";
+    ? t("お試しユーザー")
+    : user?.displayName || t("マイアカウント");
   const photoURL = demo
     ? null
     : user?.providerData.find((profile) => profile.providerId === "google.com")
@@ -251,10 +255,10 @@ export default function App({ demo = false }: { demo?: boolean }) {
       if (code !== "auth/popup-closed-by-user")
         setError(
           code === "auth/unauthorized-domain"
-            ? "このサイトでのGoogleログインは準備中です。お試しモードをご利用ください。"
+            ? messageText("このサイトでのGoogleログインは準備中です。お試しモードをご利用ください。")
             : code === "auth/popup-blocked"
-              ? "ポップアップがブロックされました。許可してもう一度お試しください。"
-              : "Googleログインに接続できませんでした。時間をおいてお試しください。",
+              ? messageText("ポップアップがブロックされました。許可してもう一度お試しください。")
+              : messageText("Googleログインに接続できませんでした。時間をおいてお試しください。"),
         );
     } finally {
       setSigningIn(false);
@@ -265,7 +269,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
       try {
         await signOut(auth);
       } catch {
-        setError("ログアウトできませんでした。もう一度お試しください。");
+        setError(messageText("ログアウトできませんでした。もう一度お試しください。"));
         return;
       }
     }
@@ -276,7 +280,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
   async function importDeck(input: DeckInput) {
     const deck = await repository.create(input);
     setDecks((prev) => [deck, ...prev]);
-    setToast(`「${deck.title}」に${deck.wordCount}語を登録しました`);
+    setToast(messageText("「{0}」に{1}語を登録しました", deck.title, deck.wordCount));
   }
   async function moreWords() {
     if (!selected || next === null || wordsLoading) return;
@@ -303,8 +307,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
     );
     setToast(
       visibility === "public"
-        ? "単語帳を公開しました"
-        : "単語帳を非公開に戻しました",
+        ? messageText("単語帳を公開しました")
+        : messageText("単語帳を非公開に戻しました"),
     );
   }
   async function removeDeck() {
@@ -315,7 +319,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
       setDecks((prev) => prev.filter((d) => d.id !== selected.id));
       navigate(base, { replace: true });
       setConfirmDelete(false);
-      setToast("単語帳を削除しました");
+      setToast(messageText("単語帳を削除しました"));
     } catch (e) {
       setError(errorMessage(e));
       setConfirmDelete(false);
@@ -326,7 +330,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
   if (!authReady) return <LoadingScreen />;
   if (!demo && user && location.pathname === "/") return <Navigate to="/library" replace />;
   if (!demo && !user) return (
-    <LandingPage canSignIn={!!auth} signingIn={signingIn} error={error}
+    <LandingPage canSignIn={!!auth} signingIn={signingIn} error={t(error)}
       onLogin={() => void login()} />
   );
   if (deckId && !selected && (loading || loadedOwner !== ownerKey)) return <LoadingScreen message="単語帳を読み込んでいます…" />;
@@ -334,10 +338,10 @@ export default function App({ demo = false }: { demo?: boolean }) {
     <div className="full-loading">
       <Brand />
       <>
-        <h1>{error ? "単語帳を読み込めません" : "単語帳が見つかりません"}</h1>
-        <p role={error ? "alert" : undefined}>{error || "削除されたか、このアカウントには保存されていません。"}</p>
-        {error && <button className="button secondary" onClick={() => setReload((n) => n + 1)}>もう一度読み込む</button>}
-        <Link className="text-button" to={base}>単語帳の一覧に戻る</Link>
+        <h1>{error ? t("単語帳を読み込めません") : t("単語帳が見つかりません")}</h1>
+        <p role={error ? "alert" : undefined}>{error || t("削除されたか、このアカウントには保存されていません。")}</p>
+        {error && <button className="button secondary" onClick={() => setReload((n) => n + 1)}>{t("もう一度読み込む")}</button>}
+        <Link className="text-button" to={base}>{t("単語帳の一覧に戻る")}</Link>
       </>
     </div>
   );
@@ -357,60 +361,56 @@ export default function App({ demo = false }: { demo?: boolean }) {
     );
   }
   function otherActions(openSettings?:()=>void){
-    return <ActionMenu label="その他" items={[
-      ...(!demo?[{label:'TOONを編集してフォーク',description:'単語や例文をTOONでカスタマイズ',onSelect:()=>setForkOpen(true)}]:[]),
-      ...(selected?.visibility==='public'?[{label:'リンクをコピー',description:'この単語帳を共有する',onSelect:()=>{void navigator.clipboard.writeText(`${window.location.origin}/shared/${selected.id}`).then(()=>setToast('リンクをコピーしました')).catch(()=>setError('リンクをコピーできませんでした。'));}}]:[]),
-      ...(openSettings?[{label:'単語帳の設定',description:'名前・説明・教材タグ・色を変更する',onSelect:openSettings}]:[]),
-      {label:'単語帳を削除',description:'削除する前に確認します',onSelect:()=>setConfirmDelete(true)},
+    return <ActionMenu label={t("その他")} items={[
+      ...(!demo?[{label:t("TOONを編集してフォーク"),description:t("単語や例文をTOONでカスタマイズ"),onSelect:()=>setForkOpen(true)}]:[]),
+      ...(selected?.visibility==='public'?[{label:t("リンクをコピー"),description:t("この単語帳を共有する"),onSelect:()=>{void navigator.clipboard.writeText(`${window.location.origin}/shared/${selected.id}`).then(()=>setToast(messageText("リンクをコピーしました"))).catch(()=>setError(messageText("リンクをコピーできませんでした。")));}}]:[]),
+      ...(openSettings?[{label:t("単語帳の設定"),description:t("名前・説明・教材タグ・色を変更する"),onSelect:openSettings}]:[]),
+      {label:t("単語帳を削除"),description:t("削除する前に確認します"),onSelect:()=>setConfirmDelete(true)},
     ]}/>;
   }
   return (
     <div className="app-shell">
-      <a className="skip-link" href="#main">
-        本文に移動
-      </a>
+      <a className="skip-link" href="#main"> {t("本文に移動")} </a>
       <aside className="sidebar">
         <button
           className="brand-home"
-          aria-label="単語帳の一覧に戻る"
+          aria-label={t("単語帳の一覧に戻る")}
           onClick={() => navigate(base)}
         >
           <Brand />
         </button>
-        <div className="sidebar-section-label">ライブラリ</div>
-        <nav aria-label="メインナビゲーション">
+        <div className="sidebar-section-label">{t("ライブラリ")}</div>
+        <nav aria-label={t("メインナビゲーション")}>
           <button
-            aria-label="わたしの単語帳"
+            aria-label={t("わたしの単語帳")}
             className={!filter && !statsMode && !importing ? "nav-item active" : "nav-item"}
             onClick={() => navigate(base)}
           >
             <Library size={19} />
-            <span>わたしの単語帳</span>
+            <span>{t("わたしの単語帳")}</span>
             <span className="nav-count">{decks.length}</span>
           </button>
           <button
-            aria-label="単語帳を追加"
+            aria-label={t("単語帳を追加")}
             aria-current={importing ? "page" : undefined}
             className={importing ? "nav-item active" : "nav-item"}
             onClick={() => navigate(`${base}/import`)}
           >
             <FileText size={19} />
-            <span>単語帳を追加</span>
+            <span>{t("単語帳を追加")}</span>
           </button>
-          <Link className={statsMode ? "nav-item active" : "nav-item"} aria-current={statsMode ? "page" : undefined} to={`${base}/stats`}><BarChart3 size={19}/><span>学習統計</span></Link>
+          <Link className={statsMode ? "nav-item active" : "nav-item"} aria-current={statsMode ? "page" : undefined} to={`${base}/stats`}><BarChart3 size={19}/><span>{t("学習統計")}</span></Link>
           <Link data-tour="explore" className="nav-item" to="/explore">
             <Globe size={19} />
-            <span>公開単語帳を探す</span>
+            <span>{t("公開単語帳を探す")}</span>
           </Link>
-          <Link className="profile-settings-link sidebar-mobile-settings" to={`${base}/settings`} aria-label="設定を開く"><ProfileAvatar name={displayName} photoURL={photoURL} initial={avatarInitial} small /></Link>
+          <Link className="profile-settings-link sidebar-mobile-settings" to={`${base}/settings`} aria-label={t("設定を開く")}><ProfileAvatar name={displayName} photoURL={photoURL} initial={avatarInitial} small /></Link>
         </nav>
         <div className="sidebar-bottom">
           <div className="storage-note">
             <span>
-              <ShieldCheck size={16} />
-              保存できる単語数
-            </span>
-            <p>{totalWords.toLocaleString()} / {LIMITS.userWords.toLocaleString()} 語</p>
+              <ShieldCheck size={16} /> {t("保存できる単語数")} </span>
+            <p>{totalWords.toLocaleString()} / {LIMITS.userWords.toLocaleString()} {t("語")}</p>
             <div className="usage-track">
               <span
                 style={{ width: `${Math.min(100, Math.max((totalWords / LIMITS.userWords) * 100, 1))}%` }}
@@ -419,7 +419,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
           </div>
           <AudioQuota userId={user?.uid} />
           <div className="profile">
-            <Link to={`${base}/settings`} data-tour="profile" className="profile-settings-link" aria-label="設定を開く">
+            <Link to={`${base}/settings`} data-tour="profile" className="profile-settings-link" aria-label={t("設定を開く")}>
             <ProfileAvatar
               name={displayName}
               photoURL={photoURL}
@@ -428,11 +428,11 @@ export default function App({ demo = false }: { demo?: boolean }) {
             </Link>
             <div>
               <strong>{displayName}</strong>
-              <span>{demo ? "この端末に保存" : "Googleアカウント"}</span>
+              <span>{demo ? t("この端末に保存") : t("Googleアカウント")}</span>
             </div>
             <button
               className="icon-button"
-              aria-label={demo ? "お試しモードを終了" : "ログアウト"}
+              aria-label={demo ? t("お試しモードを終了") : t("ログアウト")}
               onClick={() => void logout()}
             >
               <LogOut size={17} />
@@ -444,26 +444,20 @@ export default function App({ demo = false }: { demo?: boolean }) {
         {demo && (
           <div className="demo-banner">
             <span>
-              <span className="demo-dot" />
-              サンプル入りのお試しモードです。変更はこの端末にのみ保存されます。
-            </span>
+              <span className="demo-dot" /> {t("サンプル入りのお試しモードです。変更はこの端末にのみ保存されます。")} </span>
             {auth && (
-              <button onClick={() => void login()} disabled={signingIn}>
-                Googleでログイン
-              </button>
+              <button onClick={() => void login()} disabled={signingIn}> {t("Googleでログイン")} </button>
             )}
           </div>
         )}
         <main id="main" className={`main-content${importing ? " import-main" : ""}`}>
           {error && (
             <div role="alert" className="error-box error-with-action">
-              <span>{error}</span>
+              <span>{t(error)}</span>
               <button
                 className="text-button"
                 onClick={() => setReload((n) => n + 1)}
-              >
-                再読み込み
-              </button>
+              > {t("再読み込み")} </button>
             </div>
           )}
           {importing ? <ImportPage onClose={() => navigate(base)} onImport={importDeck} /> : statsMode ? <StudyStatsPage embedded demo={demo} userId={user?.uid} /> : !selected ? (
@@ -472,40 +466,33 @@ export default function App({ demo = false }: { demo?: boolean }) {
               <div className="page-heading">
                 <div>
 
-                  <h1>
-                    わたしの単語帳
-                  </h1>
+                  <h1> {t("わたしの単語帳")} </h1>
                   <p>
-                    <strong>{decks.length}</strong> 冊の単語帳{" "}
+                    <strong>{decks.length}</strong> {t("冊の単語帳")}{" "}
                     <span className="separator">/</span>{" "}
-                    <strong>{totalWords.toLocaleString()}</strong> 語
-                  </p>
+                    <strong>{totalWords.toLocaleString()}</strong> {t("語")} </p>
                 </div>
                 <button
                   className="button primary"
                   data-tour="add"
                   onClick={() => navigate(`${base}/import`)}
                 >
-                  <Plus size={18} />
-                  単語帳を追加
-                </button>
+                  <Plus size={18} /> {t("単語帳を追加")} </button>
               </div>
               <Link
                 data-tour="explore" className="text-button mobile-only discover-mobile"
                 to="/explore"
               >
-                <Globe size={17} />
-                公開単語帳を探す
-              </Link>
-              <label className="language-filter">学習する言語<select aria-label="自分の単語帳の言語" value={language} onChange={e=>setLanguage(e.target.value)}><option value="">すべての言語</option>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{item.name}</option>)}</select></label>
+                <Globe size={17} /> {t("公開単語帳を探す")} </Link>
+              <label className="language-filter">{t("学習する言語")}<select aria-label={t("自分の単語帳の言語")} value={language} onChange={e=>setLanguage(e.target.value)}><option value="">{t("すべての言語")}</option>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{t(item.name)}</option>)}</select></label>
               {!demo && user && <Favorites key={user.uid} owner={user.uid} language={language} />}
 
               <div className="library-toolbar" data-tour="search">
                 <div className="search-field">
                   <Search size={18} />
                   <SearchInput
-                    aria-label="単語帳を検索"
-                    placeholder="単語帳・教材タグを検索"
+                    aria-label={t("単語帳を検索")}
+                    placeholder={t("単語帳・教材タグを検索")}
                     maxLength={100}
                     value={search}
                     onValueChange={setSearch}
@@ -513,7 +500,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   {search && (
                     <button
                       className="clear-search"
-                      aria-label="検索をクリア"
+                      aria-label={t("検索をクリア")}
                       onClick={() => setSearch("")}
                     >
                       <X size={15} />
@@ -521,13 +508,13 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   )}
                 </div>
                 <label className="sort-select">
-                  <span className="visually-hidden">並び順</span>
+                  <span className="visually-hidden">{t("並び順")}</span>
                   <select
                     value={sort}
                     onChange={(e) => setSort(e.target.value)}
                   >
-                    <option value="newest">追加した順</option>
-                    <option value="name">名前順</option>
+                    <option value="newest">{t("追加した順")}</option>
+                    <option value="name">{t("名前順")}</option>
                   </select>
                   <ChevronDown size={15} />
                 </label>
@@ -536,8 +523,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 <button
                   className={!filter ? "filter-chip selected" : "filter-chip"}
                   onClick={() => setFilter("")}
-                >
-                  すべて<span>{decks.length}</span>
+                > {t("すべて")}<span>{decks.length}</span>
                 </button>
                 {textbookNames.map((name) => (
                   <button
@@ -554,7 +540,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
               {loading ? (
                 <div className="empty-state">
                   <BookOpen size={32} />
-                  <h2>単語帳を読み込んでいます…</h2>
+                  <h2>{t("単語帳を読み込んでいます…")}</h2>
                 </div>
               ) : filtered.length ? (
                 <div className="deck-grid">
@@ -570,8 +556,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
                           <BookOpenText size={20} strokeWidth={1.5} />
                           <span>
                             {deck.id.startsWith("sample-")
-                              ? "サンプル"
-                              : "自分の単語帳"}
+                              ? t("サンプル")
+                              : t("自分の単語帳")}
                           </span>
                           <span className="cover-index">
                             {String(index + 1).padStart(2, "0")}
@@ -580,7 +566,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                         <div className="cover-title">
                           <h2>{deck.title}</h2>
                           <p>
-                            {deck.description || "説明はありません"}
+                            {deck.description || t("説明はありません")}
                           </p>
                         </div>
                         <span className="cover-bottom">
@@ -591,7 +577,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                           <span className="cover-monogram">Aa</span>
                         </span>
                       </div>
-                      <div className="deck-meta"><span className="deck-language-badge">{languageName(deck.language??'en')} → {languageName(deck.meaningLanguage??'ja')}</span>
+                      <div className="deck-meta"><span className="deck-language-badge">{t(languageName(deck.language??'en'))} → {t(languageName(deck.meaningLanguage??'ja'))}</span>
                         <span className="deck-tags">
                           {deck.textbookTags.length ? (
                             <>
@@ -605,7 +591,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                               )}
                             </>
                           ) : (
-                            <span>教材タグなし</span>
+                            <span>{t("教材タグなし")}</span>
                           )}
                         </span>
                         <div>
@@ -615,9 +601,9 @@ export default function App({ demo = false }: { demo?: boolean }) {
                             ) : (
                               <LockKeyhole size={12} />
                             )}
-                            {deck.visibility === "public" ? "公開" : "非公開"}
+                            {deck.visibility === "public" ? t("公開") : t("非公開")}
                           </span>
-                          <span>{formatDate(deck.createdAt)} 追加</span>
+                          <span>{formatDate(deck.createdAt)} {t("追加")}</span>
                         </div>
                       </div>
                     </Link>
@@ -629,12 +615,10 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     <span className="add-circle">
                       <Plus size={25} strokeWidth={1.4} />
                     </span>
-                    <strong>新しい単語帳をつくる</strong>
-                    <span>単語を貼り付けて登録</span>
+                    <strong>{t("新しい単語帳をつくる")}</strong>
+                    <span>{t("単語を貼り付けて登録")}</span>
                     <span className="add-card-caption">
-                      <FileText size={15} />
-                      ファイル選択・貼り付け
-                    </span>
+                      <FileText size={15} /> {t("ファイル選択・貼り付け")} </span>
                   </button>
                 </div>
               ) : (
@@ -642,13 +626,13 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   <FolderOpen size={38} strokeWidth={1.2} />
                   <h2>
                     {decks.length
-                      ? "単語帳が見つかりません"
-                      : "最初の単語帳をつくりましょう"}
+                      ? t("単語帳が見つかりません")
+                      : t("最初の単語帳をつくりましょう")}
                   </h2>
                   <p>
                     {decks.length
-                      ? "別の名前や教材タグで検索してみてください。"
-                      : "TOONで単語をまとめて登録できます。Proなら意味・例文も自動で作れます。"}
+                      ? t("別の名前や教材タグで検索してみてください。")
+                      : t("TOONで単語をまとめて登録できます。Proなら意味・例文も自動で作れます。")}
                   </p>
                   <button
                     className="button secondary"
@@ -658,7 +642,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                         : navigate(`${base}/import`)
                     }
                   >
-                    {decks.length ? "検索条件をクリア" : "単語帳を追加"}
+                    {decks.length ? t("検索条件をクリア") : t("単語帳を追加")}
                   </button>
                 </div>
               )}
@@ -667,13 +651,11 @@ export default function App({ demo = false }: { demo?: boolean }) {
           ) : (
             <>
               <button className="back-button" onClick={() => navigate(base)}>
-                <ArrowLeft size={16} />
-                単語帳に戻る
-              </button>
+                <ArrowLeft size={16} /> {t("単語帳に戻る")} </button>
               <div className="detail-heading">
                 <div>
                   
-                  <h1>{selected.title}</h1><span className="deck-language-badge">{languageName(selected.language??'en')} → {languageName(selected.meaningLanguage??'ja')}</span>
+                  <h1>{selected.title}</h1><span className="deck-language-badge">{t(languageName(selected.language??'en'))} → {t(languageName(selected.meaningLanguage??'ja'))}</span>
                   <p>{selected.description}</p>
                   <DeckCredit deck={selected} />
                   <DeckLineage deck={selected} />
@@ -690,9 +672,9 @@ export default function App({ demo = false }: { demo?: boolean }) {
                       ) : (
                         <LockKeyhole size={12} />
                       )}
-                      {selected.visibility === "public" ? "公開" : "非公開"}
+                      {selected.visibility === "public" ? t("公開") : t("非公開")}
                     </span>
-                    <span>{selected.wordCount} 語</span>
+                    <span>{selected.wordCount} {t("語")}</span>
                     {selected.textbookTags.map((t, i) => (
                       <span className="tag" key={i}>
                         <Tag size={12} />
@@ -705,12 +687,12 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 </div>
 
                 <div className="owner-deck-actions">
-                  <ActionMenu label="学習する" primary items={[
-                    {label:'カードで学習',description:'単語を1つずつ覚える',onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'words'})}`)},
-                    {label:'例文カードで学習',description:'例文と訳で練習する',onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples'})}`)},
-                    {label:'単語帳で学習',description:'本をめくるように、まとめて読む',onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
+                  <ActionMenu label={t("学習する")} primary items={[
+                    {label:t("カードで学習"),description:t("単語を1つずつ覚える"),onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'words'})}`)},
+                    {label:t("例文カードで学習"),description:t("例文と訳で練習する"),onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples'})}`)},
+                    {label:t("単語帳で学習"),description:t("本をめくるように、まとめて読む"),onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
                   ]}/>
-                  <button className="button secondary" onClick={()=>navigate(`${detailPath}/share${location.search}`)}><Share2 size={17}/>共有</button>
+                  <button className="button secondary" onClick={()=>navigate(`${detailPath}/share${location.search}`)}><Share2 size={17}/>{t("共有")}</button>
                   {repository.settings ? <DeckSettings key={selected.id} deck={selected} save={repository.settings} onSaved={updated=>setDecks(prev=>prev.map(deck=>deck.id===updated.id?updated:deck))} renderTrigger={openSettings=>otherActions(openSettings)} /> : otherActions()}
 
                 </div>
@@ -719,8 +701,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 <div className="search-field">
                   <Search size={18} />
                   <SearchInput
-                    aria-label="単語・意味を検索"
-                    placeholder="単語・意味で検索"
+                    aria-label={t("単語・意味を検索")}
+                    placeholder={t("単語・意味で検索")}
                     maxLength={100}
                     value={wordSearch}
                     onValueChange={setWordSearch}
@@ -728,19 +710,19 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   {wordSearch && (
                     <button
                       className="clear-search"
-                      aria-label="単語の検索をクリア"
+                      aria-label={t("単語の検索をクリア")}
                       onClick={() => setWordSearch("")}
                     >
                       <X size={15} />
                     </button>
                   )}
                 </div>
-                <span className="result-count">{words.length} 語を表示</span>
+                <span className="result-count">{words.length} {t("語を表示")}</span>
               </div>
               <div className="word-list">
                 <div className="word-list-head">
                   <span>WORD / MEANING</span>
-                  <span>タップして例文を表示・編集</span>
+                  <span>{t("タップして例文を表示・編集")}</span>
                 </div>
                 {words.map((word) => (
                   <details className="word-item" key={word.id}>
@@ -767,26 +749,22 @@ export default function App({ demo = false }: { demo?: boolean }) {
                 ))}
               </div>
               {wordsLoading && (
-                <p className="loading-note" role="status">
-                  単語を読み込んでいます…
-                </p>
+                <p className="loading-note" role="status"> {t("単語を読み込んでいます…")} </p>
               )}
               {wordError && (
                 <div className="error-box" role="alert">
-                  {wordError}
+                  {t(wordError)}
                   <button
                     className="text-button"
                     onClick={() => setReload((n) => n + 1)}
-                  >
-                    再読み込み
-                  </button>
+                  > {t("再読み込み")} </button>
                 </div>
               )}
               {!wordsLoading && !wordError && words.length === 0 && (
                 <div className="empty-state">
                   <Search size={28} />
-                  <h2>単語が見つかりません</h2>
-                  <p>別の英単語や意味で検索してみてください。</p>
+                  <h2>{t("単語が見つかりません")}</h2>
+                  <p>{t("別の英単語や意味で検索してみてください。")}</p>
                 </div>
               )}
               {next !== null && (
@@ -795,9 +773,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     className="button secondary"
                     disabled={wordsLoading}
                     onClick={() => void moreWords()}
-                  >
-                    続きを表示
-                  </button>
+                  > {t("続きを表示")} </button>
                 </div>
               )}
             </>
@@ -826,7 +802,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
       {toast && (
         <div className="toast" role="status">
           <ShieldCheck size={18} />
-          {toast}
+          {t(toast)}
         </div>
       )}
       {confirmDelete && (
@@ -839,25 +815,21 @@ export default function App({ demo = false }: { demo?: boolean }) {
             if (!deleting) setConfirmDelete(false);
           }}
         >
-          <h2 id="delete-title">この単語帳を削除しますか？</h2>
+          <h2 id="delete-title">{t("この単語帳を削除しますか？")}</h2>
           <p>
-            「{selected?.title}
-            」と登録された単語が削除されます。この操作は取り消せません。
-          </p>
+            「{selected?.title} {t("」と登録された単語が削除されます。この操作は取り消せません。")} </p>
           <div className="confirm-actions">
             <button
               className="button secondary"
               disabled={deleting}
               onClick={() => setConfirmDelete(false)}
-            >
-              キャンセル
-            </button>
+            > {t("キャンセル")} </button>
             <button
               className="button danger"
               disabled={deleting}
               onClick={() => void removeDeck()}
             >
-              {deleting ? "削除しています…" : "削除する"}
+              {deleting ? t("削除しています…") : t("削除する")}
             </button>
           </div>
         </dialog>

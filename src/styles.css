@@ -3599,3 +3599,17 @@ a.deck-card, a.nav-item { text-decoration: none; }
 }
 
 .site-language-control{max-width:100%;}.site-language-label{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);}.site-language-label select{min-width:100px;max-width:230px;padding:10px 38px 10px 12px;appearance:none;border:1px solid var(--border);border-radius:12px;background:#fffaf4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b625c' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") right 14px center/16px no-repeat;color:var(--text);font:inherit;}.site-language-control p{font-size:12px;max-width:300px;line-height:1.7;}.landing-header nav{flex-wrap:wrap;justify-content:flex-end;gap:18px;}.landing-header .site-language-label select{max-width:185px;}.landing[lang=th]{line-height:1.8;}.landing[lang=en] h1{letter-spacing:-.03em;}@media(max-width:700px){.landing-header{align-items:flex-start;}.landing-header nav{gap:8px;}.landing-header .site-language-label svg{display:none;}.landing-header .site-language-label select{max-width:125px;min-width:90px;font-size:12px;}.landing-header .landing-nav-explore{font-size:11px;max-width:160px;}}@media(forced-colors:active){.site-language-label select{appearance:auto;background-image:none;}}
+
+/* Interface translations may be longer than Japanese labels. */
+html[lang="th"] body { line-height:1.8; }
+html:not([lang="ja"]) .nav-item { white-space:normal; }
+.plans-page footer { flex-wrap:wrap; }
+@media(max-width:700px){
+ .public-header .site-language-control,.plans-page>header .site-language-control{flex:0 0 44px;width:44px;}
+ .public-header .site-language-label,.plans-page>header .site-language-label{position:relative;width:44px;height:44px;}
+ .public-header .site-language-label>svg,.plans-page>header .site-language-label>svg{position:absolute;left:13px;top:13px;width:18px;height:18px;pointer-events:none;}
+ .public-header .site-language-label select,.plans-page>header .site-language-label select{width:44px;min-width:44px;max-width:44px;height:44px;padding:0;color:transparent;background-image:none;}
+ .public-header .site-language-label option,.plans-page>header .site-language-label option{color:var(--text);}
+ .public-header nav{flex-wrap:wrap;}
+ .plans-page>header{gap:12px;flex-wrap:wrap;}
+}

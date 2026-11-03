@@ -1,3 +1,4 @@
+import {useI18n,messageText} from '../lib/i18n';
 import { useEffect, useRef, useState } from "react";
 import { Check, Copy, ExternalLink, Globe, LockKeyhole, X } from "lucide-react";
 import type { Deck } from "../../shared/model";
@@ -16,6 +17,7 @@ export function ShareDialog({
   onClose: () => void;
   onVisibility: (visibility: Deck["visibility"]) => Promise<void>;
 }) {
+ const t=useI18n();
   const ref = useRef<HTMLDialogElement>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -35,7 +37,7 @@ export function ShareDialog({
     try {
       await onVisibility(isPublic ? "private" : "public");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "設定を変更できませんでした。");
+      setError(e instanceof Error ? e.message : messageText("設定を変更できませんでした。"));
       if (e instanceof PublishConflict) setExistingDeckId(e.existingDeckId);
     } finally {
       setBusy(false);
@@ -48,7 +50,7 @@ export function ShareDialog({
       setCopied(true);
     } catch {
       setError(
-        "コピーできませんでした。下のリンクを選択してコピーしてください。",
+        messageText("コピーできませんでした。下のリンクを選択してコピーしてください。"),
       );
     }
   }
@@ -65,11 +67,11 @@ export function ShareDialog({
       <div className="dialog-header">
         <div>
           
-          <h2 id="share-title">単語帳を共有</h2>
+          <h2 id="share-title">{t("単語帳を共有")}</h2>
         </div>
         <button
           className="icon-button"
-          aria-label="共有画面を閉じる"
+          aria-label={t("共有画面を閉じる")}
           disabled={busy}
           onClick={onClose}
         >
@@ -78,34 +80,30 @@ export function ShareDialog({
       </div>
       <p className="share-deck-title">{deck.title}</p>
       <DeckLineage deck={deck} />
-      {deck.sourceDeck && <p className="share-copy-note">{deck.unchangedCopy ? "保存したままのコピーは再公開できません。単語・意味・例文を編集すると派生版として公開できます。タイトルやタグだけの変更は対象になりません。" : "コピー元を表示した派生版として公開します。同じ内容が公開されている場合は、そちらをご案内します。"}</p>}
+      {deck.sourceDeck && <p className="share-copy-note">{deck.unchangedCopy ? t("保存したままのコピーは再公開できません。単語・意味・例文を編集すると派生版として公開できます。タイトルやタグだけの変更は対象になりません。") : t("コピー元を表示した派生版として公開します。同じ内容が公開されている場合は、そちらをご案内します。")}</p>}
       {demo ? (
         <div className="share-explanation">
           <LockKeyhole size={24} />
-          <h3>共有にはGoogleログインが必要です</h3>
-          <p>
-            お試しモードの単語帳は、この端末だけに保存されています。Googleログイン後にTOONを登録すると、共有できるようになります。
-          </p>
+          <h3>{t("共有にはGoogleログインが必要です")}</h3>
+          <p> {t("お試しモードの単語帳は、この端末だけに保存されています。Googleログイン後にTOONを登録すると、共有できるようになります。")} </p>
         </div>
       ) : (
         <>
           <div className={`share-explanation ${isPublic ? "is-public" : ""}`}>
             {isPublic ? <Globe size={24} /> : <LockKeyhole size={24} />}
             <h3>
-              {isPublic ? "この単語帳は公開中です" : "この単語帳は非公開です"}
+              {isPublic ? t("この単語帳は公開中です") : t("この単語帳は非公開です")}
             </h3>
             <p>
               {isPublic
-                ? "ログインなしで閲覧できます。検索ではコピーや派生版を元の単語帳とまとめて表示します。他のユーザーは自分の単語帳にコピーを保存できます。"
-                : "現在はあなただけが閲覧できます。公開すると、単語・意味・例文・教材タグを誰でも閲覧でき、他のユーザーはコピーを保存できます。"}
+                ? t("ログインなしで閲覧できます。検索ではコピーや派生版を元の単語帳とまとめて表示します。他のユーザーは自分の単語帳にコピーを保存できます。")
+                : t("現在はあなただけが閲覧できます。公開すると、単語・意味・例文・教材タグを誰でも閲覧でき、他のユーザーはコピーを保存できます。")}
             </p>
-            <p className="muted">
-              Googleアカウントの名前やメールアドレスは表示されません。
-            </p>
+            <p className="muted"> {t("Googleアカウントの名前やメールアドレスは表示されません。")} </p>
           </div>
           {isPublic && (
             <div className="share-link-section">
-              <label htmlFor="share-link">共有リンク</label>
+              <label htmlFor="share-link">{t("共有リンク")}</label>
               <input
                 id="share-link"
                 className="share-link-input"
@@ -120,25 +118,22 @@ export function ShareDialog({
                   disabled={busy}
                 >
                   {copied ? <Check size={17} /> : <Copy size={17} />}{" "}
-                  {copied ? "コピーしました" : "リンクをコピー"}
+                  {copied ? t("コピーしました") : t("リンクをコピー")}
                 </button>
                 <a
                   className="text-button"
                   href={url}
                   target="_blank"
                   rel="noreferrer"
-                >
-                  共有ページを開く <ExternalLink size={15} />
+                > {t("共有ページを開く")} <ExternalLink size={15} />
                 </a>
               </div>
             </div>
           )}
           <div className="share-visibility-actions">
-            {!isPublic && <p className="share-copyright-note">公開する権利のある内容だけを掲載してください。教材名の入力やAIによる編集は、転載の許可を意味しません。<Link to="/copyright" target="_blank" rel="noreferrer">著作権・権利侵害への対応を確認 ↗</Link></p>}
+            {!isPublic && <p className="share-copyright-note">{t("公開する権利のある内容だけを掲載してください。教材名の入力やAIによる編集は、転載の許可を意味しません。")}<Link to="/copyright" target="_blank" rel="noreferrer">{t("著作権・権利侵害への対応を確認 ↗")}</Link></p>}
             {isPublic && (
-              <p>
-                非公開に戻すと、検索結果と共有リンクから閲覧できなくなります。すでに他のユーザーが保存したコピーは残ります。
-              </p>
+              <p> {t("非公開に戻すと、検索結果と共有リンクから閲覧できなくなります。すでに他のユーザーが保存したコピーは残ります。")} </p>
             )}
             <button
               className={`button ${isPublic ? "secondary" : "primary"}`}
@@ -147,22 +142,22 @@ export function ShareDialog({
             >
               {isPublic ? <LockKeyhole size={17} /> : <Globe size={17} />}
               {busy
-                ? "変更しています…"
+                ? t("変更しています…")
                 : isPublic
-                  ? "非公開に戻す"
-                  : deck.sourceDeck ? "派生版として公開" : "公開して共有する"}
+                  ? t("非公開に戻す")
+                  : deck.sourceDeck ? t("派生版として公開") : t("公開して共有する")}
             </button>
           </div>
         </>
       )}
       {error && (
         <p role="alert" className="error-box">
-          {error}
+          {t(error)}
         </p>
       )}
-      {existingDeckId && <Link className="text-button" to={`/shared/${encodeURIComponent(existingDeckId)}`}>公開中の単語帳を見る</Link>}
+      {existingDeckId && <Link className="text-button" to={`/shared/${encodeURIComponent(existingDeckId)}`}>{t("公開中の単語帳を見る")}</Link>}
       <span role="status" className="visually-hidden">
-        {copied ? "共有リンクをコピーしました" : ""}
+        {copied ? t("共有リンクをコピーしました") : ""}
       </span>
     </dialog>
   );

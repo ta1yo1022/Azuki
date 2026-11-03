@@ -1,4 +1,6 @@
-import {languageName} from '../../shared/languages';
+import {languageName} from '../lib/i18n';
+import {useI18n,messageText} from '../lib/i18n';
+
 import { WordDetails } from './WordDetails';
 import { exampleWordParts } from '../lib/exampleWord';
 import { WordAudioButton } from "./WordAudioButton";
@@ -35,6 +37,7 @@ export function StudyPage({
   reader: WordReader;
   onClose: () => void;
 }) {
+ const t=useI18n();
   const examplesMode = mode === "examples";
   const [preferences] = useState(() => { const saved = readStudyPreferences(); return {...saved, direction: examplesMode ? saved.exampleDirection ?? "en-ja" as const : saved.direction}; });
   const [order, setOrder] = useState(preferences.order);
@@ -45,7 +48,7 @@ export function StudyPage({
   const [storageNote, setStorageNote] = useState("");
   const setupHeading = useRef<HTMLHeadingElement>(null);
   function applySettings() {
-    setStorageNote(saveStudyPreferences(examplesMode ? {...readStudyPreferences(), order:draft.order, skipSetup:draft.skipSetup, exampleDirection:draft.direction} : draft) ? "" : "このブラウザに設定を保存できませんでした。今回の学習には適用しています。");
+    setStorageNote(saveStudyPreferences(examplesMode ? {...readStudyPreferences(), order:draft.order, skipSetup:draft.skipSetup, exampleDirection:draft.direction} : draft) ? "" : t("このブラウザに設定を保存できませんでした。今回の学習には適用しています。"));
     setOrder(draft.order);
     setDirection(draft.direction);
     setRevealed(false);
@@ -91,7 +94,7 @@ export function StudyPage({
           while (true) {
             if (!page.words.length || page.words.some(w => seen.has(w.id)) ||
                 (page.nextCursor !== null && page.nextCursor <= pageCursor)) {
-              throw new Error("単語を読み込めませんでした。単語帳を開き直してください。");
+              throw new Error(messageText("単語を読み込めませんでした。単語帳を開き直してください。"));
             }
             for (const item of page.words) {
               seen.add(item.id);
@@ -121,7 +124,7 @@ export function StudyPage({
           (page.nextCursor !== null && page.nextCursor <= cursor)
         ) {
           throw new Error(
-            "単語を読み込めませんでした。単語帳を開き直してください。",
+            messageText("単語を読み込めませんでした。単語帳を開き直してください。"),
           );
         }
         setWords((previous) =>
@@ -138,7 +141,7 @@ export function StudyPage({
         setError(
           cause instanceof Error
             ? cause.message
-            : "単語を読み込めませんでした。",
+            : messageText("単語を読み込めませんでした。"),
         );
       } finally {
         if (version === requestVersion.current) {
@@ -200,14 +203,10 @@ export function StudyPage({
 
       }}
     >
-      <a className="skip-link" href="#study-main">
-        カードに移動
-      </a>
+      <a className="skip-link" href="#study-main"> {t("カードに移動")} </a>
       <header className="study-header">
         <button className="text-button study-back" onClick={onClose}>
-          <ArrowLeft size={18} />
-          単語一覧に戻る
-        </button>
+          <ArrowLeft size={18} /> {t("単語一覧に戻る")} </button>
         <div>
           
           <h1 id="study-title">{deck.title}</h1>
@@ -221,39 +220,35 @@ export function StudyPage({
         {storageNote && <p role="status" className="study-storage-note">{storageNote}</p>}
         {settingsOpen ? (
           <section className="study-setup" aria-labelledby="study-setup-title">
-            <h2 id="study-setup-title" ref={setupHeading} tabIndex={-1}>学習をはじめる前に</h2>
-            <p>{examplesMode ? "例文と訳を1枚ずつめくって練習します。訳のある例文が対象です。" : "出題順とカードの向きを選んでください。"}</p>
-            <div className="study-settings" role="group" aria-label="カードの設定">
-              <label>出題順
-                <select aria-label="出題順" value={draft.order} onChange={e => setDraft({...draft, order:e.target.value as typeof order})}>
-                  <option value="ordered">順番どおり</option><option value="shuffle">シャッフル</option>
+            <h2 id="study-setup-title" ref={setupHeading} tabIndex={-1}>{t("学習をはじめる前に")}</h2>
+            <p>{examplesMode ? t("例文と訳を1枚ずつめくって練習します。訳のある例文が対象です。") : t("出題順とカードの向きを選んでください。")}</p>
+            <div className="study-settings" role="group" aria-label={t("カードの設定")}>
+              <label>{t("出題順")} <select aria-label={t("出題順")} value={draft.order} onChange={e => setDraft({...draft, order:e.target.value as typeof order})}>
+                  <option value="ordered">{t("順番どおり")}</option><option value="shuffle">{t("シャッフル")}</option>
                 </select>
               </label>
-              <label>カードの向き
-                <select aria-label="カードの向き" value={draft.direction} onChange={e => setDraft({...draft, direction:e.target.value as typeof direction})}>
-                  <option value="ja-en">{languageName(deck.meaningLanguage??'ja')} → {languageName(deck.language??'en')}</option><option value="en-ja">{languageName(deck.language??'en')} → {languageName(deck.meaningLanguage??'ja')}</option>
+              <label>{t("カードの向き")} <select aria-label={t("カードの向き")} value={draft.direction} onChange={e => setDraft({...draft, direction:e.target.value as typeof direction})}>
+                  <option value="ja-en">{t(languageName(deck.meaningLanguage??'ja'))} → {t(languageName(deck.language??'en'))}</option><option value="en-ja">{t(languageName(deck.language??'en'))} → {t(languageName(deck.meaningLanguage??'ja'))}</option>
                 </select>
               </label>
             </div>
-            <label className="study-skip-setup"><input type="checkbox" checked={draft.skipSetup} onChange={e => setDraft({...draft, skipSetup:e.target.checked})} />次回からこの画面を表示しない</label>
-            <p className="study-setup-note">設定はこのブラウザに保存されます。ライブラリのプロフィールアイコンから変更できます。チェックを外すと、開始前の画面が再び表示されます。</p>
+            <label className="study-skip-setup"><input type="checkbox" checked={draft.skipSetup} onChange={e => setDraft({...draft, skipSetup:e.target.checked})} />{t("次回からこの画面を表示しない")}</label>
+            <p className="study-setup-note">{t("設定はこのブラウザに保存されます。ライブラリのプロフィールアイコンから変更できます。チェックを外すと、開始前の画面が再び表示されます。")}</p>
             <div className="study-setup-actions">
-              <button className="button primary" onClick={applySettings}>学習をはじめる<ArrowRight size={17} /></button>
+              <button className="button primary" onClick={applySettings}>{t("学習をはじめる")}<ArrowRight size={17} /></button>
             </div>
           </section>
         ) : loading ? (
           <div className="study-message" role="status">
-            <p>{order === "shuffle" ? "カードをシャッフルしています…" : "カードを準備しています…"}</p>
+            <p>{order === "shuffle" ? t("カードをシャッフルしています…") : t("カードを準備しています…")}</p>
           </div>
         ) : error ? (
           <div className="study-message">
-            <p role="alert">{error}</p>
+            <p role="alert">{t(error)}</p>
             <button
               className="button secondary"
               onClick={() => void loadPage(0)}
-            >
-              最初から読み直す
-            </button>
+            > {t("最初から読み直す")} </button>
           </div>
         ) : completed ? (
           <div className="study-complete">
@@ -261,38 +256,34 @@ export function StudyPage({
               <Check size={30} />
             </span>
             
-            <h3>最後までめくりました。</h3>
-            <p>{words.length}{examplesMode ? "例文" : "語"}の学習、おつかれさまでした。</p>
+            <h3>{t("最後までめくりました。")}</h3>
+            <p>{words.length}{examplesMode ? t("例文") : t("語")}{t("の学習、おつかれさまでした。")}</p>
             <div className="study-complete-actions">
               <button
                 className="button primary"
                 autoFocus
                 onClick={() => void loadPage(0)}
               >
-                <RotateCcw size={17} />
-                もう一度はじめる
-              </button>
-              <button className="button secondary" onClick={onClose}>
-                一覧に戻る
-              </button>
+                <RotateCcw size={17} /> {t("もう一度はじめる")} </button>
+              <button className="button secondary" onClick={onClose}> {t("一覧に戻る")} </button>
             </div>
           </div>
         ) : !word ? (
-          <div className="study-message"><h2>訳付きの例文がありません</h2><p>マイライブラリの「例文を追加・編集」から、例文と訳を登録してください。</p><button className="button secondary" onClick={onClose}>単語一覧に戻る</button></div>
+          <div className="study-message"><h2>{t("訳付きの例文がありません")}</h2><p>{t("マイライブラリの「例文を追加・編集」から、例文と訳を登録してください。")}</p><button className="button secondary" onClick={onClose}>{t("単語一覧に戻る")}</button></div>
         ) : (
           word && (
             <>
               <div className="study-progress-label">
-                <span className="study-mode-audio">{examplesMode ? "例文で学習" : "カードで学習"}{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={examplesMode?word.sentence!.text:word.word} exampleIndex={examplesMode?Number(word.id.split(':example:')[1]):undefined} isPublic={deck.visibility==='public'} />}</span>
+                <span className="study-mode-audio">{examplesMode ? t("例文で学習") : t("カードで学習")}{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={examplesMode?word.sentence!.text:word.word} exampleIndex={examplesMode?Number(word.id.split(':example:')[1]):undefined} isPublic={deck.visibility==='public'} />}</span>
                 <span role="status">
-                  <strong>{index + 1}</strong> / {total} {examplesMode ? "例文" : "語"}
+                  <strong>{index + 1}</strong> / {total} {examplesMode ? t("例文") : t("語")}
                 </span>
               </div>
               <progress
                 className="study-progress"
                 value={index + 1}
                 max={total}
-                aria-label="カードの位置"
+                aria-label={t("カードの位置")}
               />
               <div
                 ref={card}
@@ -313,12 +304,12 @@ export function StudyPage({
                   key={String(faceRevealed)}
                 >
                   <span className="eyebrow">
-                    {(direction === "ja-en") !== faceRevealed ? languageName(deck.meaningLanguage??'ja') : languageName(deck.language??'en')}
+                    {(direction === "ja-en") !== faceRevealed ? t(languageName(deck.meaningLanguage??'ja')) : t(languageName(deck.language??'en'))}
                   </span>
                   <span className="study-card-scroll">
                     <span className="study-card-body">
                       {examplesMode && word.sentence ? (
-                        <span className="study-sentence" lang={(direction === "ja-en") !== faceRevealed ? (deck.meaningLanguage??'ja') : (deck.language??'en')}>{(direction === "ja-en") !== faceRevealed ? word.sentence.translation : exampleWordParts(word.sentence.text,word.word).map((part,i)=>part.match?<button type="button" key={i} className="study-target-word" aria-label={`${word.word}の詳細を開く`} onClick={event=>{event.stopPropagation();setDetailWord({...word,id:word.id.split(':example:')[0]});}}>{part.text}</button>:part.text)}</span>
+                        <span className="study-sentence" lang={(direction === "ja-en") !== faceRevealed ? (deck.meaningLanguage??'ja') : (deck.language??'en')}>{(direction === "ja-en") !== faceRevealed ? word.sentence.translation : exampleWordParts(word.sentence.text,word.word).map((part,i)=>part.match?<button type="button" key={i} className="study-target-word" aria-label={t("{0}の詳細を開く", word.word)} onClick={event=>{event.stopPropagation();setDetailWord({...word,id:word.id.split(':example:')[0]});}}>{part.text}</button>:part.text)}</span>
                       ) : faceRevealed ? (
                         <>
                           {direction === "ja-en" ? (
@@ -328,7 +319,7 @@ export function StudyPage({
                             <span className="study-meaning" lang={deck.meaningLanguage??'ja'}>{word.meaning}</span>
                           </>}
                           {wordExamples(word).map((example,i)=><span className="study-example" key={i}>
-                            <span className="eyebrow">例文{wordExamples(word).length>1?` ${i+1}`:''}</span>
+                            <span className="eyebrow">{t("例文")}{wordExamples(word).length>1?` ${i+1}`:''}</span>
                             <span lang={deck.language??'en'}>{example.text}</span>
                           </span>)}
                         </>
@@ -351,8 +342,8 @@ export function StudyPage({
                   <span className="study-flip-hint">
                     <RotateCw size={16} />
                     {faceRevealed
-                      ? (direction === "ja-en" ? `タップして${languageName(deck.meaningLanguage??'ja')}に戻す` : `タップして${languageName(deck.language??'en')}に戻す`)
-                      : (direction === "ja-en" ? `タップして${languageName(deck.language??'en')}を見る` : `タップして${languageName(deck.meaningLanguage??'ja')}を見る`)}
+                      ? (direction === "ja-en" ? t("タップして{0}に戻す", t(languageName(deck.meaningLanguage??'ja'))) : t("タップして{0}に戻す", t(languageName(deck.language??'en'))))
+                      : (direction === "ja-en" ? t("タップして{0}を見る", t(languageName(deck.language??'en'))) : t("タップして{0}を見る", t(languageName(deck.meaningLanguage??'ja'))))}
                   </span>
                 </span>
                   ))}
@@ -365,21 +356,19 @@ export function StudyPage({
                   onClick={previous}
                 >
                   <ArrowLeft size={18} />
-                  {examplesMode ? "前の例文" : "前の単語"}
+                  {examplesMode ? t("前の例文") : t("前の単語")}
                 </button>
                 <button className="button primary" onClick={next}>
-                  {isLast ? "学習を終える" : examplesMode ? "次の例文" : "次の単語"}
+                  {isLast ? t("学習を終える") : examplesMode ? t("次の例文") : t("次の単語")}
                   <ArrowRight size={18} />
                 </button>
               </div>
-              <p id="study-keyboard-hint" className="study-keyboard-hint">
-                ← → で移動 · カード上で Enter / Space でめくる
-              </p>
+              <p id="study-keyboard-hint" className="study-keyboard-hint"> {t("← → で移動 · カード上で Enter / Space でめくる")} </p>
             </>
           )
         )}
       </main>
-      {detailWord&&<dialog ref={detailDialog} className="study-word-dialog" aria-labelledby="study-word-detail-title" onClick={event=>{if(event.target!==event.currentTarget)return;const bounds=event.currentTarget.getBoundingClientRect();if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom){event.currentTarget.close();setDetailWord(null);}}} onCancel={event=>{event.preventDefault();setDetailWord(null);}} onClose={()=>{setDetailWord(null);card.current?.focus({preventScroll:true});}}><div className="dialog-inner"><div className="dialog-header"><h2 id="study-word-detail-title">{detailWord.word}</h2><button type="button" className="text-button" onClick={()=>{detailDialog.current?.close();setDetailWord(null);}}>閉じる</button></div>{detailWord.otherMeanings===undefined&&<p className="study-detail-meaning" lang={deck.meaningLanguage??'ja'}>{detailWord.meaning}</p>}{!demo&&<WordAudioButton deckId={deck.id} wordId={detailWord.id} word={detailWord.word} isPublic={deck.visibility==='public'}/>}<WordDetails language={deck.language} meaningLanguage={deck.meaningLanguage} word={detailWord} deckId={demo?undefined:deck.id} isPublic={deck.visibility==='public'}/></div></dialog>}
+      {detailWord&&<dialog ref={detailDialog} className="study-word-dialog" aria-labelledby="study-word-detail-title" onClick={event=>{if(event.target!==event.currentTarget)return;const bounds=event.currentTarget.getBoundingClientRect();if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom){event.currentTarget.close();setDetailWord(null);}}} onCancel={event=>{event.preventDefault();setDetailWord(null);}} onClose={()=>{setDetailWord(null);card.current?.focus({preventScroll:true});}}><div className="dialog-inner"><div className="dialog-header"><h2 id="study-word-detail-title">{detailWord.word}</h2><button type="button" className="text-button" onClick={()=>{detailDialog.current?.close();setDetailWord(null);}}>{t("閉じる")}</button></div>{detailWord.otherMeanings===undefined&&<p className="study-detail-meaning" lang={deck.meaningLanguage??'ja'}>{detailWord.meaning}</p>}{!demo&&<WordAudioButton deckId={deck.id} wordId={detailWord.id} word={detailWord.word} isPublic={deck.visibility==='public'}/>}<WordDetails language={deck.language} meaningLanguage={deck.meaningLanguage} word={detailWord} deckId={demo?undefined:deck.id} isPublic={deck.visibility==='public'}/></div></dialog>}
     </div>
   );
 }

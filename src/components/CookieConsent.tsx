@@ -1,13 +1,11 @@
-import {useSiteLanguage} from '../lib/siteLanguage';
-import {landingText} from './landingTranslations';
+import {useI18n} from '../lib/i18n';
 import { Link, useLocation } from "react-router-dom";
 import { saveCookieChoice, useCookieChoice } from "../lib/cookieConsent";
 
 export function CookieConsent() {
+ const t=useI18n();
   const choice = useCookieChoice();
   const { pathname } = useLocation();
-  const {language}=useSiteLanguage();
-  const t=(text:string)=>landingText(pathname==='/'?language:'ja',text);
   const showBanner = !choice && !["/privacy", "/terms"].includes(pathname);
   return <>
     {showBanner && <section className="cookie-banner" aria-labelledby="cookie-title">

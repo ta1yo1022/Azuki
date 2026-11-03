@@ -1,3 +1,4 @@
+import {useI18n} from '../lib/i18n';
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ArrowRight, X } from "lucide-react";
 import { Brand } from "./Brand";
@@ -18,6 +19,7 @@ const steps = [
 ];
 
 export function Tutorial({ owner, replay = false, onFinish }: { owner: string; replay?: boolean; onFinish: () => void }) {
+ const t=useI18n();
   const [open, setOpen] = useState(() => replay || !hasSeen(owner));
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState("forward");
@@ -97,16 +99,16 @@ export function Tutorial({ owner, replay = false, onFinish }: { owner: string; r
   return <dialog className="tutorial-overlay" ref={dialog} aria-labelledby="tutorial-title" aria-describedby="tutorial-description" onCancel={e => { e.preventDefault(); finish(); }}>
     {rect ? <div className="tutorial-spotlight" style={rect} aria-hidden="true" /> : <div className="tutorial-shade" aria-hidden="true" />}
     <section className={`tutorial-panel ${!current.target ? "tutorial-welcome" : ""}`} ref={panel}>
-      <div className="tutorial-top"><Brand /><button className="icon-button" aria-label="チュートリアルを閉じる" onClick={finish}><X size={20} /></button></div>
+      <div className="tutorial-top"><Brand /><button className="icon-button" aria-label={t("チュートリアルを閉じる")} onClick={finish}><X size={20} /></button></div>
       <p className="tutorial-count" aria-live="polite">{step + 1} / {steps.length}</p>
       <div key={step} className={`tutorial-copy tutorial-copy-${direction}`}>
-      <h2 id="tutorial-title" tabIndex={-1} ref={title}>{current.title}</h2>
-      <p id="tutorial-description">{current.text}</p>
+      <h2 id="tutorial-title" tabIndex={-1} ref={title}>{t(current.title)}</h2>
+      <p id="tutorial-description">{t(current.text)}</p>
       </div>
       <div className="tutorial-actions">
-        <button className="text-button" onClick={finish}>スキップ</button>
-        <div>{step > 0 && <button className="button secondary" onClick={() => changeStep(step - 1)}>戻る</button>}
-          <button className="button primary" onClick={() => step === steps.length - 1 ? finish() : changeStep(step + 1)}>{step === steps.length - 1 ? "はじめる" : "次へ"}<ArrowRight size={16} /></button></div>
+        <button className="text-button" onClick={finish}>{t("スキップ")}</button>
+        <div>{step > 0 && <button className="button secondary" onClick={() => changeStep(step - 1)}>{t("戻る")}</button>}
+          <button className="button primary" onClick={() => step === steps.length - 1 ? finish() : changeStep(step + 1)}>{step === steps.length - 1 ? t("はじめる") : t("次へ")}<ArrowRight size={16} /></button></div>
       </div>
     </section>
   </dialog>;

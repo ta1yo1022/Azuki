@@ -67,7 +67,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
   const {language}=useSiteLanguage();
   const t=(text:string)=>landingText(language,text);
   const { hash } = useLocation();
-  useEffect(() => {const previous=document.documentElement.lang;document.documentElement.lang=language;document.title=landingTitles[language];return()=>{document.documentElement.lang=previous;};}, [language]);
+  useEffect(() => {document.documentElement.lang=language;document.title=landingTitles[language];}, [language]);
   useEffect(() => {
     if (!hash) return;
     const frame = requestAnimationFrame(() => document.getElementById(hash.slice(1))?.scrollIntoView());

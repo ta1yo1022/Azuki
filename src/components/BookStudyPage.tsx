@@ -1,4 +1,6 @@
-import {languageName} from '../../shared/languages';
+import {languageName} from '../lib/i18n';
+import {useI18n,messageText} from '../lib/i18n';
+
 import { WordAudioButton } from "./WordAudioButton";
 import { useStudyArrows } from '../lib/useStudyArrows';
 import { useStudyTracking } from "../lib/studyTracking";
@@ -18,6 +20,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
   reader: {words: (id: string, query: string, cursor: number, signal?: AbortSignal) => Promise<WordPage>};
   onClose: () => void;
 }) {
+ const t=useI18n();
   const [wide, setWide] = useState(() => window.matchMedia('(min-width: 900px)').matches);
   useEffect(() => {
     const media = window.matchMedia('(min-width: 900px)');
@@ -112,7 +115,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
         if(number===0)return coverSnapshot();
         if(number===-1 && wide) {
           const leaf=document.createElement('section');leaf.className='book-leaf book-cover-endpaper';
-          const label=document.createElement('span');label.appendChild(document.createTextNode('一枚ずつ、'));label.appendChild(document.createElement('br'));label.appendChild(document.createTextNode('自分のペースで。'));leaf.appendChild(label);
+          const label=document.createElement('span');label.appendChild(document.createTextNode(t("一枚ずつ、")));label.appendChild(document.createElement('br'));label.appendChild(document.createTextNode(t("自分のペースで。")));leaf.appendChild(label);
           return leaf;
         }
         if(number<0)return bookLeafSnapshot([],0,false);
@@ -204,7 +207,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
   }, [loading,error,page,total,visiblePages,setParams]);
   const heading = useRef<HTMLHeadingElement>(null);
   useLayoutEffect(() => {
-    document.title = `${deck.title} — 単語帳で学習 — Azuki`;
+    document.title = t("{0} — 単語帳で学習 — Azuki", deck.title);
     const controller = new AbortController();
     setError(''); setRevealed(new Set());
     const bodyPage=Math.max(1,page);
@@ -213,10 +216,10 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
     setLoading(true);setWords([]);
     reader.words(deck.id, '', (Math.max(1,page) - 1) * PAGE_SIZE, controller.signal).then(result => {
       if (controller.signal.aborted) return;
-      if (!result.words.length) throw new Error('このページの単語が見つかりません。単語帳を開き直してください。');
+      if (!result.words.length) throw new Error(messageText("このページの単語が見つかりません。単語帳を開き直してください。"));
       cacheWords(Math.max(1,page),result.words);
       setWords(result.words.slice(0, PAGE_SIZE * visiblePages));
-    }).catch(e => { if (!controller.signal.aborted) setError(e instanceof Error ? e.message : '単語を読み込めませんでした。'); })
+    }).catch(e => { if (!controller.signal.aborted) setError(e instanceof Error ? e.message : messageText("単語を読み込めませんでした。")); })
       .finally(() => { if (!controller.signal.aborted) setLoading(false); });
     return () => controller.abort();
   }, [deck.id, deck.title, reader, page, retry, visiblePages]);
@@ -240,36 +243,36 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
     if ((event.key === 'Enter' || event.key === ' ') && event.target instanceof Element && event.target.classList.contains('book-leaf-content')) {event.preventDefault();setControlsVisible(value=>!value);}
   }}>
     <header className={`book-study-header${controlsVisible ? "" : " is-hidden"}`} inert={!controlsVisible} aria-hidden={!controlsVisible}>
-      <button className="back-button" onClick={onClose}><ArrowLeft size={18} />単語一覧に戻る</button>
+      <button className="back-button" onClick={onClose}><ArrowLeft size={18} />{t("単語一覧に戻る")}</button>
       <div className="book-study-title"><div><h1 ref={heading} tabIndex={-1}>{deck.title}</h1></div>
-        <div className="book-study-tools"><button className="text-button book-controls-toggle" aria-controls="book-pagination" aria-expanded={controlsVisible} onClick={()=>{setControlsVisible(value=>!value);if(controlsVisible)document.querySelector<HTMLElement>(".book-leaf-content")?.focus();}}>{controlsVisible ? '操作を隠す' : '操作を表示'}</button><label className="book-study-toggle"><input type="checkbox" checked={hideMeanings} onChange={e=>{setHideMeanings(e.target.checked);setRevealed(new Set());}} />意味を隠す</label><label className="book-study-toggle"><input type="checkbox" checked={hideEnglish} onChange={e=>{setHideEnglish(e.target.checked);setEnglishRevealed(new Set());}} />{languageName(deck.language??'en')}を隠す</label></div>
+        <div className="book-study-tools"><button className="text-button book-controls-toggle" aria-controls="book-pagination" aria-expanded={controlsVisible} onClick={()=>{setControlsVisible(value=>!value);if(controlsVisible)document.querySelector<HTMLElement>(".book-leaf-content")?.focus();}}>{controlsVisible ? t("操作を隠す") : t("操作を表示")}</button><label className="book-study-toggle"><input type="checkbox" checked={hideMeanings} onChange={e=>{setHideMeanings(e.target.checked);setRevealed(new Set());}} />{t("意味を隠す")}</label><label className="book-study-toggle"><input type="checkbox" checked={hideEnglish} onChange={e=>{setHideEnglish(e.target.checked);setEnglishRevealed(new Set());}} />{t(languageName(deck.language??'en'))}{t("を隠す")}</label></div>
       </div>
-      <p className="book-study-caption">{hideMeanings ? '意味か例文の訳を押すと、その単語の意味と訳をまとめて確認できます。' : '単語・意味・例文を、まとめて読めます。タップで操作を隠し、左右のスワイプでページをめくれます。'}</p>
+      <p className="book-study-caption">{hideMeanings ? t("意味か例文の訳を押すと、その単語の意味と訳をまとめて確認できます。") : t("単語・意味・例文を、まとめて読めます。タップで操作を隠し、左右のスワイプでページをめくれます。")}</p>
     </header>
-    <section ref={spreadRef} className={`book-spread${isCover?" is-cover":""}`} aria-label={isCover?"単語帳の表紙":`${page}ページ目の単語`} aria-busy={loading}
+    <section ref={spreadRef} className={`book-spread${isCover?" is-cover":""}`} aria-label={isCover?t("単語帳の表紙"):t("{0}ページ目の単語", page)} aria-busy={loading}
       onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp}
       onPointerCancel={()=>{gesture.current=null;suppressTap.current=true;finishPage(0,false);}}
       onClick={event=>{if (suppressTap.current) {suppressTap.current=false;return;} if (!interactive(event.target) && !window.getSelection()?.toString()) setControlsVisible(value=>!value);}}>
 
-      {isCover ? <>{wide && <section className="book-leaf book-cover-endpaper" aria-hidden="true"><span>一枚ずつ、<br/>自分のペースで。</span></section>}<section className="book-leaf book-cover-leaf"><BookCover deck={deck}/></section></> : loading ? <p role="status" className="book-study-message">単語を読み込んでいます…</p> : error ? <div className="book-study-message" role="alert"><p>{error}</p><button className="button secondary" onClick={()=>setRetry(n=>n+1)}>もう一度読み込む</button></div> :
-        Array.from({length:Math.min(visiblePages,total-page+1)}, (_, leaf) => <section className="book-leaf" key={`${page}-${leaf}`} aria-label={`${page+leaf}ページ`}>
-        <div className="book-leaf-content" tabIndex={0} aria-label={`${page+leaf}ページの本文`}><ol className="book-entries" start={(page+leaf-1)*PAGE_SIZE+1}>{visibleWords.slice(leaf*PAGE_SIZE,(leaf+1)*PAGE_SIZE).map(word => {
+      {isCover ? <>{wide && <section className="book-leaf book-cover-endpaper" aria-hidden="true"><span>{t("一枚ずつ、")}<br/>{t("自分のペースで。")}</span></section>}<section className="book-leaf book-cover-leaf"><BookCover deck={deck}/></section></> : loading ? <p role="status" className="book-study-message">{t("単語を読み込んでいます…")}</p> : error ? <div className="book-study-message" role="alert"><p>{t(error)}</p><button className="button secondary" onClick={()=>setRetry(n=>n+1)}>{t("もう一度読み込む")}</button></div> :
+        Array.from({length:Math.min(visiblePages,total-page+1)}, (_, leaf) => <section className="book-leaf" key={`${page}-${leaf}`} aria-label={t("{0}ページ", page+leaf)}>
+        <div className="book-leaf-content" tabIndex={0} aria-label={t("{0}ページの本文", page+leaf)}><ol className="book-entries" start={(page+leaf-1)*PAGE_SIZE+1}>{visibleWords.slice(leaf*PAGE_SIZE,(leaf+1)*PAGE_SIZE).map(word => {
           const visible = !hideMeanings || revealed.has(word.id);
           const englishVisible = !hideEnglish || englishRevealed.has(word.id);
           const toggleEnglish = () => {if(suppressTap.current){suppressTap.current=false;return;}setEnglishRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});};
           const toggleAnswer = () => {if(suppressTap.current){suppressTap.current=false;return;}setRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});};
           return <li className="book-entry" key={word.id}>
-            <div className="book-entry-word"><small>{String(word.ordinal+1).padStart(3,'0')}</small>{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={word.word} isPublic={deck.visibility==='public'} />}<div className="book-english-answer"><h2 lang={deck.language??'en'} className={englishVisible?undefined:'book-english-content is-blurred'} aria-hidden={!englishVisible||undefined}>{word.word}</h2>{hideEnglish&&<button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={englishVisible} aria-label={`${word.word}の${languageName(deck.language??'en')}を${englishVisible?'隠す':'表示'}`} onClick={event=>{event.stopPropagation();toggleEnglish();}}><span className="sr-only">{languageName(deck.language??'en')}を{englishVisible?'隠す':'表示'}</span></button>}</div>{!!word.tags.length && <p>{word.tags.join(' · ')}</p>}</div>
+            <div className="book-entry-word"><small>{String(word.ordinal+1).padStart(3,'0')}</small>{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={word.word} isPublic={deck.visibility==='public'} />}<div className="book-english-answer"><h2 lang={deck.language??'en'} className={englishVisible?undefined:'book-english-content is-blurred'} aria-hidden={!englishVisible||undefined}>{word.word}</h2>{hideEnglish&&<button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={englishVisible} aria-label={t("{0}の{1}を{2}", word.word, t(languageName(deck.language??'en')), englishVisible?t("隠す"):t("表示"))} onClick={event=>{event.stopPropagation();toggleEnglish();}}><span className="sr-only">{t(languageName(deck.language??'en'))}{t("を")}{englishVisible?t("隠す"):t("表示")}</span></button>}</div>{!!word.tags.length && <p>{word.tags.join(' · ')}</p>}</div>
             <div className="book-entry-meaning">
-              <div className={`book-meaning-content${visible ? '' : ' is-blurred'}`} aria-hidden={!visible}><p className="book-primary-meaning">{word.meaning}</p>{!!word.otherMeanings?.length && <div className="book-other-meanings"><small>その他の意味</small><ul>{word.otherMeanings.map(meaning=><li key={meaning}>{meaning}</li>)}</ul></div>}{word.usageNote && <p className="book-usage-note">{word.usageNote}</p>}</div>
-              {hideMeanings && <button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={visible} aria-label={`${word.word}の意味を${visible ? '隠す' : '表示'}`} onClick={event=>{event.stopPropagation();toggleAnswer();}}><span className="sr-only">{visible ? '意味を隠す' : '意味を表示'}</span></button>}
+              <div className={`book-meaning-content${visible ? '' : ' is-blurred'}`} aria-hidden={!visible}><p className="book-primary-meaning">{word.meaning}</p>{!!word.otherMeanings?.length && <div className="book-other-meanings"><small>{t("その他の意味")}</small><ul>{word.otherMeanings.map(meaning=><li key={meaning}>{meaning}</li>)}</ul></div>}{word.usageNote && <p className="book-usage-note">{word.usageNote}</p>}</div>
+              {hideMeanings && <button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={visible} aria-label={t("{0}の意味を{1}", word.word, visible ? t("隠す") : t("表示"))} onClick={event=>{event.stopPropagation();toggleAnswer();}}><span className="sr-only">{visible ? t("意味を隠す") : t("意味を表示")}</span></button>}
             </div>
-            <div className="book-entry-example"><span className="book-mobile-label">例文</span><WordExamples language={deck.language} meaningLanguage={deck.meaningLanguage} word={word} deckId={demo?undefined:deck.id} isPublic={deck.visibility==='public'} blurEnglish={!englishVisible} onToggleEnglish={hideEnglish ? toggleEnglish : undefined} blurTranslations={!visible} onToggleTranslation={hideMeanings ? toggleAnswer : undefined}/></div>
+            <div className="book-entry-example"><span className="book-mobile-label">{t("例文")}</span><WordExamples language={deck.language} meaningLanguage={deck.meaningLanguage} word={word} deckId={demo?undefined:deck.id} isPublic={deck.visibility==='public'} blurEnglish={!englishVisible} onToggleEnglish={hideEnglish ? toggleEnglish : undefined} blurTranslations={!visible} onToggleTranslation={hideMeanings ? toggleAnswer : undefined}/></div>
           </li>;
         })}</ol></div><div className="book-page-number">{page+leaf}</div></section>)}
     </section>
-    {isCover && error && <div role="alert" className="book-cover-error"><p>{error}</p><button className="button secondary" onClick={()=>setRetry(n=>n+1)}>もう一度読み込む</button></div>}
+    {isCover && error && <div role="alert" className="book-cover-error"><p>{t(error)}</p><button className="button secondary" onClick={()=>setRetry(n=>n+1)}>{t("もう一度読み込む")}</button></div>}
     <div hidden ref={coverSource} aria-hidden="true"><BookCover deck={deck}/></div>
-    <nav id="book-pagination" className={`book-pagination${controlsVisible ? "" : " is-hidden"}`} inert={!controlsVisible} aria-hidden={!controlsVisible} aria-label="単語帳のページ移動"><button className="button secondary" disabled={isCover || loading} onClick={()=>animateTurn(previousPage)}><ArrowLeft size={18} />{previousPage===0?"表紙に戻る":"前のページ"}</button><form className="book-page-jump" onSubmit={event=>{event.preventDefault();const target=Number(pageInput);if(!Number.isInteger(target)||target<0||target>total||flipLocked.current)return;turn(target);}}><label htmlFor="book-page-input">ページ</label><input id="book-page-input" aria-label="移動先のページ" type="number" min={0} max={total} required value={pageInput} onChange={event=>setPageInput(event.target.value)}/><span>/ {total}</span><button type="submit" className="text-button" disabled={loading}>移動</button><span className="sr-only" aria-live="polite">{isCover?'表紙':`${page}ページ`}</span></form><button className="button primary" disabled={nextPage>total || loading} onClick={()=>animateTurn(nextPage)}>{isCover?"本を開く":"次のページ"}<ArrowRight size={18} /></button></nav>
+    <nav id="book-pagination" className={`book-pagination${controlsVisible ? "" : " is-hidden"}`} inert={!controlsVisible} aria-hidden={!controlsVisible} aria-label={t("単語帳のページ移動")}><button className="button secondary" disabled={isCover || loading} onClick={()=>animateTurn(previousPage)}><ArrowLeft size={18} />{previousPage===0?t("表紙に戻る"):t("前のページ")}</button><form className="book-page-jump" onSubmit={event=>{event.preventDefault();const target=Number(pageInput);if(!Number.isInteger(target)||target<0||target>total||flipLocked.current)return;turn(target);}}><label htmlFor="book-page-input">{t("ページ")}</label><input id="book-page-input" aria-label={t("移動先のページ")} type="number" min={0} max={total} required value={pageInput} onChange={event=>setPageInput(event.target.value)}/><span>/ {total}</span><button type="submit" className="text-button" disabled={loading}>{t("移動")}</button><span className="sr-only" aria-live="polite">{isCover?t("表紙"):t("{0}ページ", page)}</span></form><button className="button primary" disabled={nextPage>total || loading} onClick={()=>animateTurn(nextPage)}>{isCover?t("本を開く"):t("次のページ")}<ArrowRight size={18} /></button></nav>
   </main>;
 }

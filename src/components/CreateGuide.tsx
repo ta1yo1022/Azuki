@@ -1,3 +1,6 @@
+import {useSiteLanguage} from '../lib/siteLanguage';
+import {localizedGuidePrompt} from '../lib/guidePrompts';
+import {useI18n,messageText} from '../lib/i18n';
 import {encodeToon} from '../../shared/toon';
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
@@ -61,88 +64,90 @@ const EXAMPLE_TOON = encodeToon({ words: [
 ] });
 
 export function CreateGuide() {
+ const t=useI18n();
+ const {language}=useSiteLanguage();
   const importPath = "/library/import";
   const [method, setMethod] = useState<"words" | "image">("words");
-  const [drafts, setDrafts] = useState({ words: DECK_PROMPT, image: IMAGE_PROMPT });
+  const [drafts, setDrafts] = useState(()=>({ words: localizedGuidePrompt(language,'words',DECK_PROMPT,EXAMPLE_TOON), image: localizedGuidePrompt(language,'image',IMAGE_PROMPT,EXAMPLE_TOON) }));
   const prompt = drafts[method];
   const [message, setMessage] = useState("");
   const exampleInput = useRef<HTMLTextAreaElement>(null);
   const [exampleMessage, setExampleMessage] = useState("");
   const input = useRef<HTMLTextAreaElement>(null);
-  useEffect(() => { document.title = "オリジナル英単語帳の作り方 — Azuki"; }, []);
+  useEffect(() => { document.title = t("オリジナル英単語帳の作り方 — Azuki"); }, [t]);
   async function copy() {
     try {
       await navigator.clipboard.writeText(prompt);
-      setMessage("プロンプトをコピーしました。");
+      setMessage(messageText("プロンプトをコピーしました。"));
     } catch {
       input.current?.focus(); input.current?.select();
-      setMessage("自動でコピーできませんでした。選択された文章をコピーしてください。");
+      setMessage(messageText("自動でコピーできませんでした。選択された文章をコピーしてください。"));
     }
   }
   async function copyExample() {
     try {
       await navigator.clipboard.writeText(EXAMPLE_TOON);
-      setExampleMessage("例文付きTOONをコピーしました。自分の単語と例文に書き換えて使えます。");
+      setExampleMessage(messageText("例文付きTOONをコピーしました。自分の単語と例文に書き換えて使えます。"));
     } catch {
       exampleInput.current?.focus(); exampleInput.current?.select();
-      setExampleMessage("選択されたTOONをコピーしてください。");
+      setExampleMessage(messageText("選択されたTOONをコピーしてください。"));
     }
   }
   return <div className="create-guide">
-    <header className="guide-header"><Link to="/" aria-label="Azukiのホームへ"><Brand /></Link><Link className="text-button" to={importPath}><ArrowLeft size={16} />作成画面に戻る</Link></header>
+    <header className="guide-header"><Link to="/" aria-label={t("Azukiのホームへ")}><Brand /></Link><Link className="text-button" to={importPath}><ArrowLeft size={16} />{t("作成画面に戻る")}</Link></header>
     <main>
-      <h1>オリジナル英単語帳の作り方</h1>
-      <p className="guide-intro">ChatGPTやGeminiで単語帳のデータを作り、Azukiに貼り付けて登録できます。例文の場面・件数も指定でき、英文と日本語訳を一緒に作れます。単語帳の名前とカテゴリは、登録画面で設定します。</p>
-      <a className="text-button" href="#own-examples">自分で考えた単語・例文を登録する →</a>
+      <h1>{t("オリジナル英単語帳の作り方")}</h1>
+      <p className="guide-intro">{t("ChatGPTやGeminiで単語帳のデータを作り、Azukiに貼り付けて登録できます。例文の場面・件数も指定でき、英文と日本語訳を一緒に作れます。単語帳の名前とカテゴリは、登録画面で設定します。")}</p>
+      <a className="text-button" href="#own-examples">{t("自分で考えた単語・例文を登録する →")}</a>
       <section aria-labelledby="guide-step-1">
-        <span className="eyebrow">STEP 01</span><h2 id="guide-step-1">プロンプトをコピーする</h2>
-        <div className="guide-methods" role="group" aria-label="単語帳の作り方">
-          <button className={method === "image" ? "selected" : ""} aria-pressed={method === "image"} onClick={() => { setMethod("image"); setMessage(""); }}><strong>画像から作る</strong><span>ノートや単語一覧の写真から</span></button>
-          <button className={method === "words" ? "selected" : ""} aria-pressed={method === "words"} onClick={() => { setMethod("words"); setMessage(""); }}><strong>学びたい単語から作る</strong><span>単語を指定、またはテーマから選ぶ</span></button>
+        <span className="eyebrow">STEP 01</span><h2 id="guide-step-1">{t("プロンプトをコピーする")}</h2>
+        <div className="guide-methods" role="group" aria-label={t("単語帳の作り方")}>
+          <button className={method === "image" ? "selected" : ""} aria-pressed={method === "image"} onClick={() => { setMethod("image"); setMessage(""); }}><strong>{t("画像から作る")}</strong><span>{t("ノートや単語一覧の写真から")}</span></button>
+          <button className={method === "words" ? "selected" : ""} aria-pressed={method === "words"} onClick={() => { setMethod("words"); setMessage(""); }}><strong>{t("学びたい単語から作る")}</strong><span>{t("単語を指定、またはテーマから選ぶ")}</span></button>
         </div>
-        <p>例文は1語につき1〜10件。「例文の場面」を学校生活や好きな物語などに変えると、自分になじみのある英文を作れます。</p>
-        <p>{method === "image" ? "ノートや単語一覧の写真を用意し、下の「読み取る範囲」を書き換えてください。画像はChatGPTやGeminiのチャットに添付します。" : "下の「覚えたい英単語」を自分の単語に書き換えてください。「テーマ：仕事のメール」「単語数：30語」のように指定して、単語を選んでもらうこともできます。"}</p>
-        <label htmlFor="deck-prompt">AIに渡すプロンプト（編集できます）</label>
+        <p>{t("例文は1語につき1〜10件。「例文の場面」を学校生活や好きな物語などに変えると、自分になじみのある英文を作れます。")}</p>
+        <p>{method === "image" ? t("ノートや単語一覧の写真を用意し、下の「読み取る範囲」を書き換えてください。画像はChatGPTやGeminiのチャットに添付します。") : t("下の「覚えたい英単語」を自分の単語に書き換えてください。「テーマ：仕事のメール」「単語数：30語」のように指定して、単語を選んでもらうこともできます。")}</p>
+        <label htmlFor="deck-prompt">{t("AIに渡すプロンプト（編集できます）")}</label>
         <textarea id="deck-prompt" ref={input} value={prompt} onChange={e => { setDrafts({...drafts, [method]: e.target.value}); setMessage(""); }} spellCheck={false} />
-        <button className="button primary" disabled={!prompt.trim()} onClick={() => void copy()}><Copy size={17} />プロンプトをコピー</button>
-        {message && <p role="status">{message}</p>}
+        <button className="button primary" disabled={!prompt.trim()} onClick={() => void copy()}><Copy size={17} />{t("プロンプトをコピー")}</button>
+        {message && <p role="status">{t(message)}</p>}
       </section>
       <section aria-labelledby="guide-step-2">
-        <span className="eyebrow">STEP 02</span><h2 id="guide-step-2">ChatGPTやGeminiに送る</h2>
-        <p>{method === "image" ? "チャットに画像を添付し、コピーしたプロンプトを貼り付けて一緒に送信してください。画像を読み取れるチャットを使います。" : "コピーしたプロンプトをチャットに貼り付けて送信してください。"}回答が完成したら、TOON全体をコピーします。</p>
-        {method === "image" && <p>読み取り漏れや綴りの間違いがないか、元の画像と見比べてください。文字が読みにくいときは、明るい場所で撮り直すか、範囲を分けて送ります。</p>}
-        <div className="guide-ai-links"><a className="button secondary" href="https://chatgpt.com/" target="_blank" rel="noreferrer">ChatGPTを開く ↗</a><a className="button secondary" href="https://gemini.google.com/" target="_blank" rel="noreferrer">Geminiを開く ↗</a></div>
-        <p>回答に説明文や「```toon」が付いている場合は、それらを除き、wordsで始まるTOON全体をコピーします。</p>
+        <span className="eyebrow">STEP 02</span><h2 id="guide-step-2">{t("ChatGPTやGeminiに送る")}</h2>
+        <p>{method === "image" ? t("チャットに画像を添付し、コピーしたプロンプトを貼り付けて一緒に送信してください。画像を読み取れるチャットを使います。") : t("コピーしたプロンプトをチャットに貼り付けて送信してください。")}{t("回答が完成したら、TOON全体をコピーします。")}</p>
+        {method === "image" && <p>{t("読み取り漏れや綴りの間違いがないか、元の画像と見比べてください。文字が読みにくいときは、明るい場所で撮り直すか、範囲を分けて送ります。")}</p>}
+        <div className="guide-ai-links"><a className="button secondary" href="https://chatgpt.com/" target="_blank" rel="noreferrer">{t("ChatGPTを開く ↗")}</a><a className="button secondary" href="https://gemini.google.com/" target="_blank" rel="noreferrer">{t("Geminiを開く ↗")}</a></div>
+        <p>{t("回答に説明文や「```toon」が付いている場合は、それらを除き、wordsで始まるTOON全体をコピーします。")}</p>
       </section>
       <section aria-labelledby="guide-step-3">
-        <span className="eyebrow">STEP 03</span><h2 id="guide-step-3">Azukiに貼り付けて登録する</h2>
-        <p>作成画面の「TOONを貼り付け」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版を入力できます。教材名がそのまま単語帳のタイトルになります。</p>
-        <p>AIが作った意味や例文には誤りが含まれることがあります。登録後も単語一覧から確認・編集できます。新しい単語帳は非公開で保存されます。</p>
-        <Link className="button primary" to={`${importPath}?tab=paste`}>TOONを貼り付ける<ArrowRight size={17} /></Link>
+        <span className="eyebrow">STEP 03</span><h2 id="guide-step-3">{t("Azukiに貼り付けて登録する")}</h2>
+        <p>{t("作成画面の「TOONを貼り付け」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版を入力できます。教材名がそのまま単語帳のタイトルになります。")}</p>
+        <p>{t("AIが作った意味や例文には誤りが含まれることがあります。登録後も単語一覧から確認・編集できます。新しい単語帳は非公開で保存されます。")}</p>
+        <Link className="button primary" to={`${importPath}?tab=paste`}>{t("TOONを貼り付ける")}<ArrowRight size={17} /></Link>
       </section>
       <section id="own-examples" aria-labelledby="own-examples-title">
-        <h2 id="own-examples-title">オリジナルの単語と例文を登録する</h2>
-        <p>マイライブラリで単語帳を開き、単語の行 →「例文を追加・編集」から、英文と日本語訳を直接入力できます。「例文を追加」で1語につき最大10件まで登録できます。TOONの編集は不要です。</p><p>単語をまとめて新規登録するときは、下のTOONもひな形として使えます。</p>
+        <h2 id="own-examples-title">{t("オリジナルの単語と例文を登録する")}</h2>
+        <p>{t("マイライブラリで単語帳を開き、単語の行 →「例文を追加・編集」から、英文と日本語訳を直接入力できます。「例文を追加」で1語につき最大10件まで登録できます。TOONの編集は不要です。")}</p><p>{t("単語をまとめて新規登録するときは、下のTOONもひな形として使えます。")}</p>
         <ol className="guide-example-steps">
-          <li><strong>英単語・意味・例文を用意する</strong><p><code>word</code>に英単語、<code>meaning</code>に覚えたい日本語の意味、<code>examples</code>に例文を並べます。各例文の<code>text</code>に英文、<code>translation</code>に日本語訳を入れます。たとえば「discover／発見する」なら、「学校の近くで小さなカフェを見つけた」という場面を英文にします。</p></li>
-          <li><strong>TOONをコピーして書き換える</strong><p>下のひな形をコピーし、作成画面の「TOONを貼り付け」に貼ります。単語・意味・例文の文字列を書き換えてください。単語を増やす場合は、ひな形と同じ字下げで項目を追加し、配列の[N]の件数も更新します。</p></li>
-          <li><strong>確認して保存する</strong><p>「内容を確認」を押し、単語帳の名前とカテゴリを設定して登録します。保存後は単語一覧の行をタップすると例文を確認できます。「学習する」から、単語カード・例文カード・本型の単語帳を選べます。例文カードは日本語訳付きの例文が対象で、英語→日本語・日本語→英語のどちらでも練習できます。</p></li>
+          <li><strong>{t("英単語・意味・例文を用意する")}</strong><p><code>word</code>{t("に英単語、")}<code>meaning</code>{t("に覚えたい日本語の意味、")}<code>examples</code>{t("に例文を並べます。各例文の")}<code>text</code>{t("に英文、")}<code>translation</code>{t("に日本語訳を入れます。たとえば「discover／発見する」なら、「学校の近くで小さなカフェを見つけた」という場面を英文にします。")}</p></li>
+          <li><strong>{t("TOONをコピーして書き換える")}</strong><p>{t("下のひな形をコピーし、作成画面の「TOONを貼り付け」に貼ります。単語・意味・例文の文字列を書き換えてください。単語を増やす場合は、ひな形と同じ字下げで項目を追加し、配列の[N]の件数も更新します。")}</p></li>
+          <li><strong>{t("確認して保存する")}</strong><p>{t("「内容を確認」を押し、単語帳の名前とカテゴリを設定して登録します。保存後は単語一覧の行をタップすると例文を確認できます。「学習する」から、単語カード・例文カード・本型の単語帳を選べます。例文カードは日本語訳付きの例文が対象で、英語→日本語・日本語→英語のどちらでも練習できます。")}</p></li>
         </ol>
-        <label htmlFor="example-toon">例文付きTOONのひな形</label>
+        <label htmlFor="example-toon">{t("例文付きTOONのひな形")}</label>
         <textarea id="example-toon" ref={exampleInput} value={EXAMPLE_TOON} readOnly spellCheck={false} />
-        <div className="guide-ai-links"><button className="button secondary" onClick={() => void copyExample()}><Copy size={17} />例文付きTOONをコピー</button><Link className="button primary" to={`${importPath}?tab=paste`}>作成画面で登録する<ArrowRight size={17} /></Link></div>
-        {exampleMessage && <p role="status">{exampleMessage}</p>}
-        <p>従来の<code>example</code>に英文を1つ入れる形式も使えます。複数の例文や日本語訳を登録する場合は、上の<code>examples</code>形式を使ってください。</p>
-        <p>例文は英語で入力します。英文が不安なときは、AIに「この単語をこの意味で使えているか、文法も確認して」と頼み、内容を確認してから登録してください。</p>
+        <div className="guide-ai-links"><button className="button secondary" onClick={() => void copyExample()}><Copy size={17} />{t("例文付きTOONをコピー")}</button><Link className="button primary" to={`${importPath}?tab=paste`}>{t("作成画面で登録する")}<ArrowRight size={17} /></Link></div>
+        {exampleMessage && <p role="status">{t(exampleMessage)}</p>}
+        <p>{t("従来の")}<code>example</code>{t("に英文を1つ入れる形式も使えます。複数の例文や日本語訳を登録する場合は、上の")}<code>examples</code>{t("形式を使ってください。")}</p>
+        <p>{t("例文は英語で入力します。英文が不安なときは、AIに「この単語をこの意味で使えているか、文法も確認して」と頼み、内容を確認してから登録してください。")}</p>
       </section>
       <section aria-labelledby="fork-guide-title">
-        <h2 id="fork-guide-title">気になる単語帳を、自分の例文に変える</h2>
-        <p>公開単語帳の「その他」→「コピーして編集」で、自分用の非公開コピーを保存できます。マイライブラリで単語を開き、「例文を追加・編集」から英文・日本語訳を変更してください。</p>
-        <p>AIでまとめて書き換える場合は、「その他」→「TOONを編集してフォーク」を選びます。TOONを外部AIに渡し、「英単語と意味は変えず、例文を好きな場面に書き換え、日本語訳も付けて」と頼めます。出力されたTOON全体をフォーク画面に貼り、内容を確認して保存します。</p>
-        <p>コピーやフォークは自分用のデータとして保存され、元の更新は自動反映されません。編集せず学習するなら「お気に入りに登録」で、保存枠を使わずマイライブラリから開けます。</p>
-        <Link className="button secondary" to="/explore">公開単語帳を探す<ArrowRight size={17}/></Link>
+        <h2 id="fork-guide-title">{t("気になる単語帳を、自分の例文に変える")}</h2>
+        <p>{t("公開単語帳の「その他」→「コピーして編集」で、自分用の非公開コピーを保存できます。マイライブラリで単語を開き、「例文を追加・編集」から英文・日本語訳を変更してください。")}</p>
+        <p>{t("AIでまとめて書き換える場合は、「その他」→「TOONを編集してフォーク」を選びます。TOONを外部AIに渡し、「英単語と意味は変えず、例文を好きな場面に書き換え、日本語訳も付けて」と頼めます。出力されたTOON全体をフォーク画面に貼り、内容を確認して保存します。")}</p>
+        <p>{t("コピーやフォークは自分用のデータとして保存され、元の更新は自動反映されません。編集せず学習するなら「お気に入りに登録」で、保存枠を使わずマイライブラリから開けます。")}</p>
+        <Link className="button secondary" to="/explore">{t("公開単語帳を探す")}<ArrowRight size={17}/></Link>
       </section>
-      <aside className="guide-trouble"><h2>うまく登録できないとき</h2><p>回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとTOONをAIに送り、「このエラーを直して、TOON全体を出力して」と頼めます。</p><p>通常の新規登録は1冊5,000語・512KBまでです。例文を増やして上限を超えた場合は、単語数や例文数を減らしてください。個人の保存上限は20冊・合計15,000語です。保存上限のエラーが出た場合は、単語帳を減らすなど、表示された案内に従ってください。</p></aside>
+      <aside className="guide-trouble"><h2>{t("うまく登録できないとき")}</h2><p>{t("回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとTOONをAIに送り、「このエラーを直して、TOON全体を出力して」と頼めます。")}</p><p>{t("通常の新規登録は1冊5,000語・512KBまでです。例文を増やして上限を超えた場合は、単語数や例文数を減らしてください。個人の保存上限は20冊・合計15,000語です。保存上限のエラーが出た場合は、単語帳を減らすなど、表示された案内に従ってください。")}</p></aside>
     </main>
   </div>;
 }

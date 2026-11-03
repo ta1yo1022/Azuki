@@ -1,7 +1,9 @@
+import {useI18n} from '../lib/i18n';
 import { useEffect, useId, useRef, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 export type ActionItem = {label:string;description?:string;disabled?:boolean;onSelect:()=>void};
 export function ActionMenu({label,primary=false,items}:{label:string;primary?:boolean;items:ActionItem[]}) {
+ const t=useI18n();
   const [open,setOpen]=useState(false),id=useId();
   const root=useRef<HTMLDivElement>(null),trigger=useRef<HTMLButtonElement>(null);
   useEffect(()=>{
@@ -13,7 +15,7 @@ export function ActionMenu({label,primary=false,items}:{label:string;primary?:bo
     return()=>{document.removeEventListener('pointerdown',outside);document.removeEventListener('keydown',escape);document.removeEventListener('focusin',blur);};
   },[open]);
   return <div className="deck-action-menu" ref={root}>
-    <button ref={trigger} className={`button ${primary?'primary':'secondary'}`} aria-expanded={open} aria-controls={id} onClick={()=>setOpen(value=>!value)}>{label}<ChevronDown size={17}/></button>
-    {open&&<div className="deck-action-options" id={id} role="group" aria-label={label}>{items.map(item=><button key={item.label} disabled={item.disabled} onClick={()=>{setOpen(false);trigger.current?.focus();item.onSelect();}}><strong>{item.label}</strong>{item.description&&<span>{item.description}</span>}</button>)}</div>}
+    <button ref={trigger} className={`button ${primary?'primary':'secondary'}`} aria-expanded={open} aria-controls={id} onClick={()=>setOpen(value=>!value)}>{t(label)}<ChevronDown size={17}/></button>
+    {open&&<div className="deck-action-options" id={id} role="group" aria-label={t(label)}>{items.map(item=><button key={t(item.label)} disabled={item.disabled} onClick={()=>{setOpen(false);trigger.current?.focus();item.onSelect();}}><strong>{t(item.label)}</strong>{item.description&&<span>{t(item.description)}</span>}</button>)}</div>}
   </div>;
 }

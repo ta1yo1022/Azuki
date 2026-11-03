@@ -1,9 +1,11 @@
+import {useI18n} from '../lib/i18n';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useCookieChoice } from "../lib/cookieConsent";
 import { trackPage, resetAnalyticsPage } from "../lib/analytics";
 
 export function PageAnalytics() {
+ const t=useI18n();
   const choice = useCookieChoice();
   const { pathname } = useLocation();
   useEffect(() => {

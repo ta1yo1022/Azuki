@@ -1,3 +1,4 @@
+import {useI18n} from '../lib/i18n';
 import { useEffect, useState } from 'react';
 import { Volume2 } from 'lucide-react';
 import { auth } from '../lib/firebase';
@@ -5,6 +6,7 @@ const base=(import.meta.env.VITE_API_BASE_URL??'').replace(/\/$/,'');
 type Usage={used:number;limit:number|null;remaining:number|null};
 type Quota={word:Usage;example:Usage;pro:boolean;enabled:boolean};
 export function AudioQuota({userId}:{userId?:string}){
+ const t=useI18n();
  const [quota,setQuota]=useState<Quota|null>(null);
  useEffect(()=>{
   let active=true;
@@ -19,7 +21,7 @@ export function AudioQuota({userId}:{userId?:string}){
  },[userId]);
  if(!userId)return null;
  return <div className="sidebar-audio-usage">{(['word','example'] as const).map(kind=>{
- const usage=quota?.[kind],label=kind==='word'?'単語音声の生成数':'例文音声の生成数';
- return <div className="storage-note audio-quota" role="status" key={kind}><span><Volume2 size={16}/>{label}</span>{usage?<><p>{usage.used.toLocaleString()} / {usage.limit===null?'無制限':usage.limit.toLocaleString()} 個</p>{usage.limit!==null&&<div className="usage-track" role="progressbar" aria-label={label} aria-valuemin={0} aria-valuemax={usage.limit} aria-valuenow={Math.min(usage.limit,usage.used)}><span style={{width:`${Math.min(100,usage.used/usage.limit*100)}%`}}/></div>}{usage.remaining===0&&<small>本日の新規生成は上限に達しました</small>}</>:<p>生成数を確認できません</p>}</div>;
- })}<small className="audio-quota-caption">生成済み音声の再生は枠に含みません。毎日9時にリセット。</small></div>;
+ const usage=quota?.[kind],label=kind==='word'?t("単語音声の生成数"):t("例文音声の生成数");
+ return <div className="storage-note audio-quota" role="status" key={kind}><span><Volume2 size={16}/>{label}</span>{usage?<><p>{usage.used.toLocaleString()} / {usage.limit===null?t("無制限"):usage.limit.toLocaleString()} {t("個")}</p>{usage.limit!==null&&<div className="usage-track" role="progressbar" aria-label={label} aria-valuemin={0} aria-valuemax={usage.limit} aria-valuenow={Math.min(usage.limit,usage.used)}><span style={{width:`${Math.min(100,usage.used/usage.limit*100)}%`}}/></div>}{usage.remaining===0&&<small>{t("本日の新規生成は上限に達しました")}</small>}</>:<p>{t("生成数を確認できません")}</p>}</div>;
+ })}<small className="audio-quota-caption">{t("生成済み音声の再生は枠に含みません。毎日9時にリセット。")}</small></div>;
 }

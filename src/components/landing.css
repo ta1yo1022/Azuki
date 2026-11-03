@@ -241,3 +241,25 @@
 .landing-product-stage .landing-card-annotation { left:auto; right:0; top:8px; font-size:10px; }
 @media(max-width:1000px) and (min-width:801px) { .landing-product-stage { padding:36px; gap:24px; } .landing-card-copy p br { display:none; } }
 @media(max-width:800px) { .landing-product-stage { display:flex; flex-direction:column; padding:32px 20px; gap:24px; } .landing-card-copy { width:100%; max-width:490px; } .landing-card-copy p { font-size:13px; } .landing-card-copy p br { display:none; } .landing-product-stage .landing-card-scene { width:100%; } .landing-product-stage .landing-card-annotation { top:-4px; right:8px; } }
+
+/* Keep the mobile navigation on one line; language names live in the picker. */
+@media (max-width:700px) {
+ .landing .landing-header { align-items:center; gap:8px; border-radius:24px; }
+ .landing .landing-header .landing-brand-link { flex-shrink:0; }
+ .landing .landing-header nav { flex-wrap:nowrap; gap:8px; min-width:0; }
+ .landing .landing-header .landing-nav-explore { white-space:nowrap; padding:10px; font-size:11px; }
+ .landing .landing-header .landing-nav-explore > svg { display:none; }
+ .landing .landing-header .site-language-control { flex:0 0 44px; width:44px; }
+ .landing .landing-header .site-language-label { position:relative; width:44px; height:44px; }
+ .landing .landing-header .site-language-label > svg { display:block; position:absolute; left:13px; top:13px; width:18px; height:18px; pointer-events:none; color:var(--landing-red); }
+ .landing .landing-header .site-language-label select { width:44px; min-width:44px; max-width:44px; height:44px; padding:0; color:transparent; background-image:none; cursor:pointer; }
+ .landing .landing-header .site-language-label select option { color:var(--text); }
+ .landing .landing-header .site-language-control p { position:absolute; right:18px; max-width:260px; background:#fffaf4; padding:12px; z-index:10; }
+}
+@media (max-width:380px) {
+ .landing .landing-header { padding-inline:10px; }
+ .landing .landing-header .brand { font-size:25px; }
+ .landing .landing-header .brand img { width:25px; height:25px; }
+ .landing .landing-header nav { gap:6px; }
+ .landing .landing-header .landing-nav-explore { font-size:10px; padding-inline:8px; }
+}

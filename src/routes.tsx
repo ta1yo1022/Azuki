@@ -1,3 +1,4 @@
+import {useI18n,InterfaceLanguage} from './lib/i18n';
 import { PlansPage } from './components/PlansPage';
 import { EmailDesignPreview } from './components/EmailComposer';
 import { AdminEmails } from './components/AdminEmails';
@@ -10,32 +11,36 @@ import { CreateGuide } from "./components/CreateGuide";
 import { PublicLibrary } from "./components/PublicLibrary";
 
 function Home() {
+ const t=useI18n();
   const { search } = useLocation();
   return new URLSearchParams(search).get("demo") === "1"
     ? <Navigate to="/explore" replace />
     : <App />;
 }
 function RouteScroll() {
+ const t=useI18n();
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   return null;
 }
 function NotFound() {
-  useEffect(() => { document.title = "ページが見つかりません — Azuki"; }, []);
+ const t=useI18n();
+  useEffect(() => { document.title = t("ページが見つかりません — Azuki"); }, [t]);
   return <main className="full-loading">
-    <h1>ページが見つかりません</h1>
-    <p>URLを確認するか、ライブラリから開き直してください。</p>
-    <Link className="button primary" to="/library">マイライブラリへ</Link>
-    <Link className="text-button" to="/explore">公開単語帳を探す</Link>
+    <h1>{t("ページが見つかりません")}</h1>
+    <p>{t("URLを確認するか、ライブラリから開き直してください。")}</p>
+    <Link className="button primary" to="/library">{t("マイライブラリへ")}</Link>
+    <Link className="text-button" to="/explore">{t("公開単語帳を探す")}</Link>
   </main>;
 }
 export function AzukiRoutes() {
+ const t=useI18n();
   const location = useLocation();
   if (location.pathname.length > 1 && location.pathname.endsWith("/")) {
     return <Navigate to={location.pathname.replace(/\/+$/, "") + location.search + location.hash} replace />;
   }
   return <>
-      <RouteScroll />
+      <InterfaceLanguage/><RouteScroll />
       <Routes>
         <Route path="/" element={<Home />} />
         {["library"].flatMap((base) => ["", "/settings", "/stats", "/import", "/decks/:deckId", "/decks/:deckId/study", "/decks/:deckId/book", "/decks/:deckId/share"].map((path) =>

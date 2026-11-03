@@ -1,3 +1,4 @@
+import {useI18n} from '../lib/i18n';
 import { useEffect, useRef, useState, type ComponentProps } from "react";
 
 type Props = Omit<ComponentProps<"input">, "value" | "defaultValue" | "onChange" | "onCompositionStart" | "onCompositionEnd"> & {
@@ -7,6 +8,7 @@ type Props = Omit<ComponentProps<"input">, "value" | "defaultValue" | "onChange"
 
 /** Keep IME composition local: URL navigation must wait for committed text. */
 export function SearchInput({ value, onValueChange, ...props }: Props) {
+ const t=useI18n();
   const [draft, setDraft] = useState(value);
   const composing = useRef(false);
   useEffect(() => {
