@@ -38,3 +38,21 @@ it('saves a Chinese word with Thai meanings and the chosen language pair',async(
  await input('#import-language','zh');await input('#import-meaning-language','th');await input('#import-title-input','中国語の勉強');await click('1語を登録する');
  expect(save.mock.calls[0][0]).toMatchObject({language:'zh',meaningLanguage:'th',words:[{word:'学习',meaning:'เรียน'}]});
 });
+
+it('shows sample translations in the review and preserves them through registration',async()=>{
+ await click('サンプルを使う');await click('内容を確認');
+ expect(container.textContent).toContain('こんにちは、お元気ですか？');expect(container.textContent).toContain('私は電車で旅行するのが好きです。');
+ await input('#import-title-input','サンプル');await click('2語を登録する');
+ expect(save.mock.calls[0][0].words[0].examples[0].translation).toBe('こんにちは、お元気ですか？');
+});
+it('accepts the guide template from the initial creation tab and saves every translated example',async()=>{
+ const {CreateGuide}=await import('../src/components/CreateGuide');
+ await act(async()=>root.render(<MemoryRouter><CreateGuide/></MemoryRouter>));
+ const template=container.querySelector<HTMLTextAreaElement>('#example-toon')!.value;
+ await act(async()=>root.unmount());root=createRoot(container);
+ await act(async()=>root.render(<MemoryRouter initialEntries={['/library/import']}><ImportPage onClose={close} onImport={save}/></MemoryRouter>));
+ await input('#vocabulary-input',template);await click('TOONを読み込む');
+ expect(container.textContent).toContain('私は学校の近くで小さなカフェを見つけました。');expect(container.textContent).toContain('探検家は隠された扉を発見しました。');
+ await input('#import-title-input','ガイドから登録');await click('2語を登録する');
+ expect(save.mock.calls[0][0].words[0].examples).toHaveLength(2);expect(save.mock.calls[0][0].words.every((word:any)=>word.examples.every((example:any)=>example.translation))).toBe(true);
+});

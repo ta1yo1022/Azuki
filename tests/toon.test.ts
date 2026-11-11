@@ -18,3 +18,25 @@ it('materializes prototype-looking keys without changing object prototypes',()=>
  const result=decodeToon('__proto__:\n  azukiPolluted: true\nconstructor: harmless') as Record<string,unknown>;
  expect(Object.hasOwn(result,'__proto__')).toBe(true);expect(({} as any).azukiPolluted).toBeUndefined();
 });
+
+it('keeps every translated example when the creation entry receives complete TOON',async()=>{
+ const {readCreationToon,WORDS_EXAMPLE_TOON}=await import('../src/lib/importWords');
+ const {DECK_PROMPT,IMAGE_PROMPT}=await import('../src/components/CreateGuide');
+ for(const raw of [WORDS_EXAMPLE_TOON,...[DECK_PROMPT,IMAGE_PROMPT].map(prompt=>prompt.slice(prompt.lastIndexOf('\nwords[')+1))]){
+  const result=readCreationToon(raw);expect(result.kind).toBe('complete');
+  if(result.kind==='complete'){expect(result.words.every(word=>word.examples?.every(example=>example.translation))).toBe(true);expect(result.words[0].meaning).toBeTruthy();}
+ }
+ const input={words:[{word:'book',meaning:'本',examples:[{text:'I read a book.',translation:'私は本を読みます。'},{text:'This book is new.',translation:'この本は新しいです。'}],tags:['noun']}]};
+ const result=readCreationToon(encodeToon(input));expect(result.kind).toBe('complete');if(result.kind==='complete')expect(result.words[0]).toMatchObject(input.words[0]);
+});
+it('applies the right size limit to completed TOON and rejects incomplete content instead of dropping it',async()=>{
+ const {readCreationToon}=await import('../src/lib/importWords');
+ const words=Array.from({length:501},(_,i)=>({word:`word${i}`,meaning:`意味${i}`,examples:[{text:'Example.',translation:'例文です。'}]}));
+ const result=readCreationToon(encodeToon({words}));expect(result.kind).toBe('complete');if(result.kind==='complete')expect(result.words).toHaveLength(501);
+ expect(readCreationToon('words[2]: book,travel')).toEqual({kind:'terms',terms:['book','travel']});
+ expect(()=>readCreationToon(encodeToon({words:[{word:'book',examples:[{text:'A book.',translation:'本です。'}]}]}))).toThrow('意味');
+});
+it('preserves translations in a flat TOON table using legacy example and translation columns',()=>{
+ const raw='words[1]{word,meaning,example,translation}:\n  book,本,I read a book.,私は本を読みます。';
+ expect(parseImportWords(raw)[0].examples).toEqual([{text:'I read a book.',translation:'私は本を読みます。'}]);
+});

@@ -43,3 +43,10 @@ it('uses a table with paging and preserves edits from every page when saving',as
  await act(async()=>container.querySelector<HTMLButtonElement>('[aria-label="word-50を除外"]')!.click());
  expect((container.querySelector('[aria-label="編集するページ"]') as unknown as HTMLSelectElement).value).toBe('1');expect(container.querySelectorAll('tbody tr')).toHaveLength(25);
 });
+
+it('imports completed TOON without generation or losing meanings, tags, spelling and multiple translations',async()=>{
+ const {encodeToon}=await import('../shared/toon');mocks.quota.pro=false;
+ const word={word:'Book',meaning:'本',examples:[{text:'Read a book.',translation:'本を読んで。'},{text:'A new book.',translation:'新しい本。'}],tags:['名詞']};
+ await render();await input('#vocabulary-input',encodeToon({words:[word]}));await click('TOONを読み込む');
+ expect(preview).toHaveBeenCalledOnce();expect(preview.mock.calls[0][0][0]).toMatchObject(word);expect(mocks.generate).not.toHaveBeenCalled();
+});

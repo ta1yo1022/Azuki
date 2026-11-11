@@ -18,6 +18,7 @@ import {
 import {
   LIMITS,
   parseDeck,
+  wordExamples,
   type DeckInput,
 } from "../../shared/model";
 import { parseImportWords, WORDS_EXAMPLE_TOON } from "../lib/importWords";
@@ -187,6 +188,7 @@ export function ImportPage({ onClose, onImport }: Props) {
                 className="text-button"
                 onClick={() => {
                   setRaw(WORDS_EXAMPLE_TOON);
+                  setName("");
                   setTab("paste");
                   setError("");
                 }}
@@ -215,6 +217,7 @@ export function ImportPage({ onClose, onImport }: Props) {
                 <div className="preview-word" key={i}>
                   <strong>{w.word}</strong>
                   <span>{w.meaning}</span>
+                  {wordExamples(w).length>0&&<div className="import-example-preview"><small>{t("例文")}</small>{wordExamples(w).map((example,index)=><div key={index}><p lang={language}>{example.text}</p>{example.translation?<p lang={meaningLanguage} className="muted">{example.translation}</p>:<p className="muted">{t("訳は未入力です")}</p>}</div>)}</div>}
                 </div>
               ))}
               {preview.words.length > 5 && (

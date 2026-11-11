@@ -3613,3 +3613,7 @@ html:not([lang="ja"]) .nav-item { white-space:normal; }
  .public-header nav{flex-wrap:wrap;}
  .plans-page>header{gap:12px;flex-wrap:wrap;}
 }
+.import-example-preview{grid-column:1/-1;min-width:0;border-top:1px solid var(--border);padding-top:8px;}
+.import-example-preview>small{font-weight:700;color:var(--muted);}
+.import-example-preview p{margin:4px 0;white-space:pre-wrap;overflow-wrap:anywhere;}
+.import-example-preview>div+div{margin-top:12px;}
