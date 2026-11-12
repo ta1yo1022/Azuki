@@ -1,3 +1,6 @@
+import {useLearningProgress} from '../lib/learningProgress';
+import {RecallButtons,LearningSaveStatus} from './RecallButtons';
+import {baseWordId,shuffleLearning,type LearningPosition} from '../../shared/learning';
 import {languageName} from '../lib/i18n';
 import {useI18n,messageText} from '../lib/i18n';
 
@@ -39,9 +42,26 @@ export function StudyPage({
 }) {
  const t=useI18n();
   const examplesMode = mode === "examples";
+  const progress=useLearningProgress(deck.id,demo);
+  const [weakOnly,setWeakOnly]=useState(false);
+  const [seed,setSeed]=useState(()=>Math.floor(Math.random()*4294967296));
+  const [progressBoot,setProgressBoot]=useState(false);
+  const restoredScope=useRef('');
+  const resume=useRef<LearningPosition|undefined>(undefined);
+  const [resumed,setResumed]=useState(false);
   const [preferences] = useState(() => { const saved = readStudyPreferences(); return {...saved, direction: examplesMode ? saved.exampleDirection ?? "en-ja" as const : saved.direction}; });
   const [order, setOrder] = useState(preferences.order);
   const [direction, setDirection] = useState(preferences.direction);
+  useEffect(()=>{
+    if(!progress.ready){setProgressBoot(false);return;}
+    if(restoredScope.current===progress.scope)return;
+    restoredScope.current=progress.scope;
+    const saved=progress.position(mode);
+    if(saved&&saved.order===preferences.order){resume.current=saved;setWeakOnly(saved.weakOnly);setSeed(saved.seed);}
+    else {resume.current=undefined;setWeakOnly(false);setSeed(Math.floor(Math.random()*4294967296));}
+    setResumed(false);
+    setProgressBoot(true);
+  },[progress.ready,progress.scope,mode]);
   const [started, setStarted] = useState(preferences.skipSetup);
   const [settingsOpen, setSettingsOpen] = useState(!preferences.skipSetup);
   const [draft, setDraft] = useState(preferences);
@@ -49,6 +69,7 @@ export function StudyPage({
   const setupHeading = useRef<HTMLHeadingElement>(null);
   function applySettings() {
     setStorageNote(saveStudyPreferences(examplesMode ? {...readStudyPreferences(), order:draft.order, skipSetup:draft.skipSetup, exampleDirection:draft.direction} : draft) ? "" : t("このブラウザに設定を保存できませんでした。今回の学習には適用しています。"));
+    if(draft.order!==order){resume.current=undefined;setResumed(false);}
     setOrder(draft.order);
     setDirection(draft.direction);
     setRevealed(false);
@@ -60,6 +81,7 @@ export function StudyPage({
   const detailDialog=useRef<HTMLDialogElement>(null);
   useEffect(()=>{if(detailWord){detailDialog.current?.showModal();}else{detailDialog.current?.close();}},[detailWord]);
   const requestVersion = useRef(0);
+  const loadedScope=useRef('');
   const busy = useRef(false);
   const [words, setWords] = useState<StudyCard[]>([]);
   const [nextCursor, setNextCursor] = useState<number | null>(null);
@@ -73,6 +95,7 @@ export function StudyPage({
   const loadPage = useCallback(
     async (cursor: number, advance = false) => {
       const version = ++requestVersion.current;
+      loadedScope.current='';
       busy.current = true;
       setLoading(true);
       setError("");
@@ -86,7 +109,7 @@ export function StudyPage({
       try {
         let page = await reader.words(deck.id, "", cursor);
         if (version !== requestVersion.current) return;
-        if (order === "shuffle" || examplesMode) {
+        if (order === "shuffle" || examplesMode || weakOnly || !!resume.current&&resume.current.ordinal>=50) {
           // Load the whole book for global shuffling or to collect translated sentences.
           const all: StudyCard[] = [];
           const seen = new Set<string>();
@@ -112,24 +135,28 @@ export function StudyPage({
             page = await reader.words(deck.id, "", pageCursor);
             if (version !== requestVersion.current) return;
           }
-          for (let i = order === "shuffle" ? all.length - 1 : 0; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [all[i], all[j]] = [all[j], all[i]];
-          }
-          page = { words: all, nextCursor: null };
+          const selected=weakOnly?all.filter(item=>progress.ratings.get(baseWordId(item.id))==='weak'):all;
+          page = { words: order==='shuffle'?shuffleLearning(selected,seed):selected, nextCursor: null };
         }
         if (version !== requestVersion.current) return;
         if (
-          (!page.words.length && !examplesMode) ||
+          (!page.words.length && !examplesMode && !weakOnly) ||
           (page.nextCursor !== null && page.nextCursor <= cursor)
         ) {
           throw new Error(
             messageText("単語を読み込めませんでした。単語帳を開き直してください。"),
           );
         }
+        loadedScope.current=progress.scope;
         setWords((previous) =>
           cursor === 0 ? page.words : [...previous, ...page.words],
         );
+        if(cursor===0&&resume.current){
+          const saved=resume.current;
+          const target=page.words.findIndex(item=>item.id===saved.wordId);
+          setIndex(target>=0?target:0);setCompleted(saved.completed&&target>=0);setResumed(target>=0);
+          resume.current=undefined;
+        }
         setNextCursor(page.nextCursor);
         if (advance) setIndex((previous) => previous + 1);
       } catch (cause) {
@@ -150,21 +177,27 @@ export function StudyPage({
         }
       }
     },
-    [deck.id, reader, order, examplesMode],
+    [deck.id, reader, order, examplesMode, weakOnly, seed,progress.scope],
   );
 
   useEffect(() => {
-    if (!started) return;
+    if (!started||!progressBoot||!progress.ready) return;
     void loadPage(0);
     return () => {
       requestVersion.current++;
     };
-  }, [loadPage, started]);
+  }, [loadPage, started,progressBoot,progress.ready]);
 
   const word = words[index];
   const total =
     nextCursor === null ? words.length : Math.max(deck.wordCount, words.length);
   const isLast = index === words.length - 1 && nextCursor === null;
+  useEffect(()=>{
+    if(!progressBoot||!progress.ready||loadedScope.current!==progress.scope||!word||loading||settingsOpen||!started||error)return;
+    progress.savePosition({mode,wordId:word.id,ordinal:word.ordinal,page:0,order,seed,weakOnly,completed});
+  },[progressBoot,progress.ready,word?.id,loading,settingsOpen,started,error,completed,mode,order,seed,weakOnly,progress.savePosition]);
+  function restart(){resume.current=undefined;setResumed(false);if(order==='shuffle')setSeed(Math.floor(Math.random()*4294967296));else void loadPage(0);}
+  function changeFilter(value:boolean){resume.current=undefined;setResumed(false);setWeakOnly(value);}
   useEffect(() => {
     if (settingsOpen) setupHeading.current?.focus({ preventScroll: true });
     else if (!loading) card.current?.focus({ preventScroll: true });
@@ -217,6 +250,9 @@ export function StudyPage({
         className="study-content"
         aria-labelledby="study-title"
       >
+        <div className="study-review-tools"><label><input type="checkbox" checked={weakOnly} disabled={!progress.ready||loading&&!settingsOpen} onChange={event=>changeFilter(event.target.checked)}/>{t('苦手な単語だけ')}</label>{started&&!settingsOpen&&<button className="text-button" onClick={restart}>{t('最初から学習')}</button>}</div>
+        <LearningSaveStatus progress={progress}/>
+        {resumed&&<p className="learning-resumed" role="status">{t('前回の続きから再開しました')}</p>}
         {storageNote && <p role="status" className="study-storage-note">{storageNote}</p>}
         {settingsOpen ? (
           <section className="study-setup" aria-labelledby="study-setup-title">
@@ -238,7 +274,7 @@ export function StudyPage({
               <button className="button primary" onClick={applySettings}>{t("学習をはじめる")}<ArrowRight size={17} /></button>
             </div>
           </section>
-        ) : loading ? (
+        ) : loading || !progressBoot || !progress.ready ? (
           <div className="study-message" role="status">
             <p>{order === "shuffle" ? t("カードをシャッフルしています…") : t("カードを準備しています…")}</p>
           </div>
@@ -247,7 +283,7 @@ export function StudyPage({
             <p role="alert">{t(error)}</p>
             <button
               className="button secondary"
-              onClick={() => void loadPage(0)}
+              onClick={restart}
             > {t("最初から読み直す")} </button>
           </div>
         ) : completed ? (
@@ -262,13 +298,13 @@ export function StudyPage({
               <button
                 className="button primary"
                 autoFocus
-                onClick={() => void loadPage(0)}
+                onClick={restart}
               >
                 <RotateCcw size={17} /> {t("もう一度はじめる")} </button>
               <button className="button secondary" onClick={onClose}> {t("一覧に戻る")} </button>
             </div>
           </div>
-        ) : !word ? (
+        ) : !words.length&&weakOnly ? <section className="study-message"><h2>{t('苦手な単語はありません')}</h2><p>{t('「まだ苦手」にした単語がここに集まります。')}</p><button className="button secondary" onClick={()=>changeFilter(false)}>{t('すべての単語で学習')}</button></section> : !word ? (
           <div className="study-message"><h2>{t("訳付きの例文がありません")}</h2><p>{t("マイライブラリの「例文を追加・編集」から、例文と訳を登録してください。")}</p><button className="button secondary" onClick={onClose}>{t("単語一覧に戻る")}</button></div>
         ) : (
           word && (
@@ -349,6 +385,7 @@ export function StudyPage({
                   ))}
                 </span>
               </div>
+              <RecallButtons wordId={word.id} progress={progress}/>
               <div className="study-navigation">
                 <button
                   className="button secondary"

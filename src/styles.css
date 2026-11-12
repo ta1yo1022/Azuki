@@ -3617,3 +3617,14 @@ html:not([lang="ja"]) .nav-item { white-space:normal; }
 .import-example-preview>small{font-weight:700;color:var(--muted);}
 .import-example-preview p{margin:4px 0;white-space:pre-wrap;overflow-wrap:anywhere;}
 .import-example-preview>div+div{margin-top:12px;}
+.recall-buttons{display:flex;justify-content:center;gap:12px;margin:18px 0;flex-wrap:wrap;}
+.recall-buttons .button{min-height:44px;padding:10px 24px;}
+.recall-buttons button[aria-pressed="true"]{background:var(--accent);color:#fffaf4;border-color:var(--accent);}
+.study-review-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px;}
+.study-review-tools label{display:flex;align-items:center;gap:8px;cursor:pointer;}
+.study-review-tools input{width:18px;height:18px;accent-color:var(--accent);}
+.learning-save-status,.learning-resumed{font-size:12px;color:var(--muted);line-height:1.7;margin:8px 0 16px;}
+.learning-resumed{color:var(--accent);}
+.book-entry .recall-buttons{justify-content:flex-start;gap:6px;margin:8px 0 0;}
+.book-entry .recall-buttons .button{padding:6px 10px;min-height:36px;font-size:11px;}
+@media(max-width:600px){.recall-buttons .button{flex:1;}.book-entry .recall-buttons .button{flex:0 1 auto;}.study-review-tools{font-size:13px;}}

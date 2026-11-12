@@ -1,3 +1,5 @@
+import {useLearningProgress} from '../lib/learningProgress';
+import {RecallButtons,LearningSaveStatus} from './RecallButtons';
 import {languageName} from '../lib/i18n';
 import {useI18n,messageText} from '../lib/i18n';
 
@@ -34,6 +36,20 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
   const requested = Number(params.get('bookPage') ?? 0);
   const page = Number.isSafeInteger(requested) ? Math.min(total, Math.max(0, requested)) : 0;
   const isCover=page===0;
+  const progress=useLearningProgress(deck.id,demo);
+  const restoredScope=useRef('');
+  const [progressBoot,setProgressBoot]=useState(false);
+  const restoringPage=useRef<number|null>(null);
+  useEffect(()=>{
+    if(!progress.ready||restoredScope.current===progress.scope)return;
+    restoredScope.current=progress.scope;
+    const saved=progress.position('book');
+    if(!params.has('bookPage')&&saved){
+      const number=Math.min(total,Math.max(0,saved.page));restoringPage.current=number;
+      setParams(previous=>{const next=new URLSearchParams(previous);next.set('bookPage',String(number));return next;},{replace:true});
+    }
+    setProgressBoot(true);
+  },[progress.ready,progress.scope]);
   const nextPage=isCover?1:page+visiblePages;
   const previousPage=Math.max(0,page-visiblePages);
   const coverSource=useRef<HTMLDivElement>(null);
@@ -43,11 +59,18 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
     if(content)leaf.appendChild(content);
     return leaf;
   }
+  const loadedPage=useRef(-1);
   const [words, setWords] = useState<Word[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [retry, setRetry] = useState(0);
   useStudyTracking(deck,"book",!isCover&&!loading&&!error&&words.length>0,demo);
+  useEffect(()=>{
+    if(!progressBoot||!progress.ready||loadedPage.current!==page||loading||error)return;
+    if(restoringPage.current!==null&&restoringPage.current!==page)return;
+    restoringPage.current=null;
+    progress.savePosition({mode:'book',wordId:'',ordinal:Math.min(deck.wordCount-1,Math.max(0,(page-1)*PAGE_SIZE)),page,order:'ordered',seed:0,weakOnly:false,completed:false});
+  },[progressBoot,progress.ready,loading,error,page,deck.wordCount,progress.savePosition]);
   const [hideMeanings, setHideMeanings] = useState(false);
   const [hideEnglish, setHideEnglish] = useState(false);
   const [englishRevealed, setEnglishRevealed] = useState<Set<string>>(new Set());
@@ -209,15 +232,17 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
   useLayoutEffect(() => {
     document.title = t("{0} — 単語帳で学習 — Azuki", deck.title);
     const controller = new AbortController();
+    loadedPage.current=-1;
     setError(''); setRevealed(new Set());
     const bodyPage=Math.max(1,page);
     const cached=Array.from({length:Math.min(visiblePages,total-bodyPage+1)},(_,i)=>pageCache.current.get(bodyPage+i));
-    if(cached.every(Boolean) && retry===0) {setWords(cached.flat() as Word[]);setLoading(false);return ()=>controller.abort();}
+    if(cached.every(Boolean) && retry===0) {loadedPage.current=page;setWords(cached.flat() as Word[]);setLoading(false);return ()=>controller.abort();}
     setLoading(true);setWords([]);
     reader.words(deck.id, '', (Math.max(1,page) - 1) * PAGE_SIZE, controller.signal).then(result => {
       if (controller.signal.aborted) return;
       if (!result.words.length) throw new Error(messageText("このページの単語が見つかりません。単語帳を開き直してください。"));
       cacheWords(Math.max(1,page),result.words);
+      loadedPage.current=page;
       setWords(result.words.slice(0, PAGE_SIZE * visiblePages));
     }).catch(e => { if (!controller.signal.aborted) setError(e instanceof Error ? e.message : messageText("単語を読み込めませんでした。")); })
       .finally(() => { if (!controller.signal.aborted) setLoading(false); });
@@ -247,6 +272,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
       <div className="book-study-title"><div><h1 ref={heading} tabIndex={-1}>{deck.title}</h1></div>
         <div className="book-study-tools"><button className="text-button book-controls-toggle" aria-controls="book-pagination" aria-expanded={controlsVisible} onClick={()=>{setControlsVisible(value=>!value);if(controlsVisible)document.querySelector<HTMLElement>(".book-leaf-content")?.focus();}}>{controlsVisible ? t("操作を隠す") : t("操作を表示")}</button><label className="book-study-toggle"><input type="checkbox" checked={hideMeanings} onChange={e=>{setHideMeanings(e.target.checked);setRevealed(new Set());}} />{t("意味を隠す")}</label><label className="book-study-toggle"><input type="checkbox" checked={hideEnglish} onChange={e=>{setHideEnglish(e.target.checked);setEnglishRevealed(new Set());}} />{t(languageName(deck.language??'en'))}{t("を隠す")}</label></div>
       </div>
+      <LearningSaveStatus progress={progress}/>
       <p className="book-study-caption">{hideMeanings ? t("意味か例文の訳を押すと、その単語の意味と訳をまとめて確認できます。") : t("単語・意味・例文を、まとめて読めます。タップで操作を隠し、左右のスワイプでページをめくれます。")}</p>
     </header>
     <section ref={spreadRef} className={`book-spread${isCover?" is-cover":""}`} aria-label={isCover?t("単語帳の表紙"):t("{0}ページ目の単語", page)} aria-busy={loading}
@@ -262,7 +288,7 @@ export function BookStudyPage({deck, reader, onClose, demo=false}: {
           const toggleEnglish = () => {if(suppressTap.current){suppressTap.current=false;return;}setEnglishRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});};
           const toggleAnswer = () => {if(suppressTap.current){suppressTap.current=false;return;}setRevealed(previous=>{const next=new Set(previous);if(next.has(word.id))next.delete(word.id);else next.add(word.id);return next;});};
           return <li className="book-entry" key={word.id}>
-            <div className="book-entry-word"><small>{String(word.ordinal+1).padStart(3,'0')}</small>{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={word.word} isPublic={deck.visibility==='public'} />}<div className="book-english-answer"><h2 lang={deck.language??'en'} className={englishVisible?undefined:'book-english-content is-blurred'} aria-hidden={!englishVisible||undefined}>{word.word}</h2>{hideEnglish&&<button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={englishVisible} aria-label={t("{0}の{1}を{2}", word.word, t(languageName(deck.language??'en')), englishVisible?t("隠す"):t("表示"))} onClick={event=>{event.stopPropagation();toggleEnglish();}}><span className="sr-only">{t(languageName(deck.language??'en'))}{t("を")}{englishVisible?t("隠す"):t("表示")}</span></button>}</div>{!!word.tags.length && <p>{word.tags.join(' · ')}</p>}</div>
+            <div className="book-entry-word"><small>{String(word.ordinal+1).padStart(3,'0')}</small>{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={word.word} isPublic={deck.visibility==='public'} />}<div className="book-english-answer"><h2 lang={deck.language??'en'} className={englishVisible?undefined:'book-english-content is-blurred'} aria-hidden={!englishVisible||undefined}>{word.word}</h2>{hideEnglish&&<button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={englishVisible} aria-label={t("{0}の{1}を{2}", word.word, t(languageName(deck.language??'en')), englishVisible?t("隠す"):t("表示"))} onClick={event=>{event.stopPropagation();toggleEnglish();}}><span className="sr-only">{t(languageName(deck.language??'en'))}{t("を")}{englishVisible?t("隠す"):t("表示")}</span></button>}</div>{!!word.tags.length && <p>{word.tags.join(' · ')}</p>}<RecallButtons wordId={word.id} progress={progress}/></div>
             <div className="book-entry-meaning">
               <div className={`book-meaning-content${visible ? '' : ' is-blurred'}`} aria-hidden={!visible}><p className="book-primary-meaning">{word.meaning}</p>{!!word.otherMeanings?.length && <div className="book-other-meanings"><small>{t("その他の意味")}</small><ul>{word.otherMeanings.map(meaning=><li key={meaning}>{meaning}</li>)}</ul></div>}{word.usageNote && <p className="book-usage-note">{word.usageNote}</p>}</div>
               {hideMeanings && <button type="button" data-book-answer className="book-meaning-reveal" aria-expanded={visible} aria-label={t("{0}の意味を{1}", word.word, visible ? t("隠す") : t("表示"))} onClick={event=>{event.stopPropagation();toggleAnswer();}}><span className="sr-only">{visible ? t("意味を隠す") : t("意味を表示")}</span></button>}

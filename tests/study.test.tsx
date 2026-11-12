@@ -36,9 +36,9 @@ it('defaults to Japanese first, hides the English answer and example, and applie
   expect(face()).toContain('日本語-0'); expect(face()).not.toContain('english-0'); expect(face()).not.toContain('An example');
   await click('タップして英語を見る'); expect(face()).toContain('english-0'); expect(face()).toContain('An example for word 0.'); expect(face()).not.toContain('日本語-0'); expect(face()).not.toContain('別の意味');
   await click('次の単語'); expect(face()).toContain('日本語-1'); expect(face()).not.toContain('english-1');
-  await choose('カードの向き','en-ja'); expect(face()).toContain('english-0'); expect(face()).not.toContain('日本語-0');
-  await click('タップして日本語を見る'); expect(face()).toContain('日本語-0');
-  await choose('カードの向き','ja-en'); expect(face()).toContain('日本語-0'); expect(face()).not.toContain('english-0');
+  await choose('カードの向き','en-ja'); expect(face()).toContain('english-1'); expect(face()).not.toContain('日本語-0');
+  await click('タップして日本語を見る'); expect(face()).toContain('日本語-1');
+  await choose('カードの向き','ja-en'); expect(face()).toContain('日本語-1'); expect(face()).not.toContain('english-1');
   expect(reader.words).toHaveBeenCalledTimes(3);
 });
 it('loads ordered pages lazily and moves backwards through the same sequence', async () => {
@@ -105,7 +105,7 @@ it('shows setup before fetching, remembers skipped setup, and can restore it fro
     const order=container.querySelector('select')!;
     order.value='shuffle';order.dispatchEvent(new Event('change',{bubbles:true}));
   });
-  await act(async()=>container.querySelector<HTMLInputElement>('input[type="checkbox"]')!.click());
+  await act(async()=>container.querySelector<HTMLInputElement>('.study-skip-setup input')!.click());
   await click('学習をはじめる');
   expect(container.querySelectorAll('select')).toHaveLength(0);
   await act(async()=>root.unmount());root=createRoot(container);
@@ -115,7 +115,7 @@ it('shows setup before fetching, remembers skipped setup, and can restore it fro
   expect(button('設定')).toBeUndefined();
   await act(async () => root.render(<MemoryRouter><SettingsPage onClose={() => {}} /></MemoryRouter>));
   expect((container.querySelector('select[aria-label="出題順"]') as unknown as HTMLSelectElement)?.value).toBe('shuffle');
-  await act(async()=>container.querySelector<HTMLInputElement>('input[type="checkbox"]')!.click());
+  await act(async()=>container.querySelector<HTMLInputElement>('.study-skip-setup input')!.click());
   await click('設定を保存');
   await act(async()=>root.unmount());root=createRoot(container);
   await mount(false);expect(container.querySelector('.study-setup')).not.toBeNull();
@@ -192,4 +192,28 @@ it('opens details from an underlined target without flipping or advancing the ex
  await act(async()=>dialog.dispatchEvent(new MouseEvent('click',{clientX:30,clientY:120,bubbles:true})));expect(dialog.open).toBe(true);
  await act(async()=>dialog.dispatchEvent(new MouseEvent('click',{clientX:10,clientY:80,bubbles:true})));
  expect(container.querySelector('dialog')).toBeNull();expect(face()).toContain('The captain refused.');
+});
+
+it('marks recall, reviews only weak words and keeps a rated card in place until the next session',async()=>{
+ await mount();await click('まだ苦手');expect(button('まだ苦手').getAttribute('aria-pressed')).toBe('true');
+ await click('次の単語');await click('覚えた');await click('次の単語');await click('まだ苦手');
+ await act(async()=>container.querySelector<HTMLInputElement>('.study-review-tools input')!.click());
+ expect(face()).toContain('日本語-0');expect(container.querySelector('.study-progress-label')?.textContent).toContain('/ 2');
+ await click('覚えた');expect(face()).toContain('日本語-0');await click('次の単語');expect(face()).toContain('日本語-2');
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-2');
+ await click('覚えた');await act(async()=>root.unmount());root=createRoot(container);await mount();expect(container.textContent).toContain('苦手な単語はありません');
+});
+it('restores the current card across a page boundary and allows explicitly restarting',async()=>{
+ await mount();for(let i=0;i<51;i++)await click('次の単語');expect(face()).toContain('日本語-51');
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-51');expect(container.textContent).toContain('前回の続きから再開しました');
+ await click('最初から学習');expect(face()).toContain('日本語-0');
+});
+it('restores a shuffled sequence and position instead of reshuffling on reopen',async()=>{
+ await choose('出題順','shuffle');const first=face();await click('次の単語');const second=face();expect(first).not.toBe(second);
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toBe(second);await click('前の単語');expect(face()).toBe(first);
+});
+it('shares recall between a word and its examples without losing per-mode position',async()=>{
+ const examples={words:async()=>({words:[{...words[0],examples:[{text:'First sentence.',translation:'最初の文。'},{text:'Second sentence.',translation:'次の文。'}]}],nextCursor:null})};
+ await act(async()=>root.render(<StudyPage key="examples" mode="examples" deck={deck} reader={examples} onClose={()=>{}}/>));await click('学習をはじめる');await click('まだ苦手');await click('次の例文');expect(button('まだ苦手').getAttribute('aria-pressed')).toBe('true');
+ await act(async()=>root.unmount());root=createRoot(container);await act(async()=>root.render(<StudyPage mode="examples" deck={deck} reader={examples} onClose={()=>{}}/>));await click('学習をはじめる');expect(face()).toContain('Second sentence.');
 });

@@ -1,3 +1,4 @@
+import {learningRoute} from './learning';
 import { billingRoute, billingWebhook, subscriptionInfo, cleanupBilling } from './billing';
 import { vocabularyRoute, cleanupVocabulary } from './vocabulary';
 import { updateDeckSettings } from './deckSettings';
@@ -122,6 +123,8 @@ async function route(
   const privateAudio=/^\/api\/decks\/([a-zA-Z0-9-]{1,80})\/words\/([a-zA-Z0-9-]{1,120})\/audio$/.exec(url.pathname);
   if(privateAudio)return wordAudio(request,env,privateAudio[1],privateAudio[2],uid);
   if (url.pathname === "/api/audio/quota") return wordAudioQuota(request,env,uid);
+  const learning=/^\/api\/learning\/([a-zA-Z0-9-]{1,80})$/.exec(url.pathname);
+  if(learning)return learningRoute(request,env,uid,learning[1]);
   if (url.pathname === "/api/study") return studyRoute(request, env, uid);
   if (url.pathname === "/api/favorites" || url.pathname.startsWith("/api/favorites/")) return favoritesRoute(request, env, uid);
   if (url.pathname === "/api/decks" && request.method === "GET") {

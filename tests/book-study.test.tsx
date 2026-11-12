@@ -7,7 +7,7 @@ import {BookStudyPage} from '../src/components/BookStudyPage';
 import {BookPageCurl} from '../src/lib/bookPageCurl';
 import type {Deck,Word} from '../shared/model';
 let container:HTMLDivElement,root:Root;
-beforeEach(()=>{vi.spyOn(window,'matchMedia').mockReturnValue({matches:true,addEventListener:vi.fn(),removeEventListener:vi.fn()} as unknown as MediaQueryList);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);vi.spyOn(window,'scrollTo').mockImplementation(()=>{});container=document.createElement('div');document.body.appendChild(container);root=createRoot(container);});
+beforeEach(()=>{localStorage.clear();vi.spyOn(window,'matchMedia').mockReturnValue({matches:true,addEventListener:vi.fn(),removeEventListener:vi.fn()} as unknown as MediaQueryList);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);vi.spyOn(window,'scrollTo').mockImplementation(()=>{});container=document.createElement('div');document.body.appendChild(container);root=createRoot(container);});
 afterEach(async()=>{await act(async()=>root.unmount());container.remove();vi.restoreAllMocks();vi.unstubAllGlobals();});
 const deck:Deck={id:'source',schemaVersion:1,title:'単語帳',description:'',textbookTags:[],visibility:'public',wordCount:65,createdAt:'',updatedAt:''};
 const words:Word[]=Array.from({length:65},(_,i)=>({id:`w${i}`,ordinal:i,word:`word-${i}`,meaning:`意味${i}`,otherMeanings:[`別の意味${i}`],example:`Example ${i}.`,examples:[{text:`Example ${i}.`,translation:`例文の訳${i}`}],tags:['名詞']}));
@@ -262,4 +262,12 @@ it('blurs English words and sentences together without hiding Japanese or changi
  expect(container.querySelector('.book-entry-word h2')?.classList.contains('is-blurred')).toBe(false);
  expect(container.querySelector('.book-entry-example p[lang="en"]')?.classList.contains('is-blurred')).toBe(false);
  expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-0');
+});
+
+it('automatically resumes a saved book page but honors an explicitly requested page',async()=>{
+ const reader={words:async(_id:string,_q:string,cursor:number)=>({words:words.slice(cursor,cursor+50),nextCursor:null})};
+ const render=async(path:string)=>act(async()=>root.render(<MemoryRouter initialEntries={[path]}><BookStudyPage deck={deck} reader={reader} onClose={()=>{}}/><Location/></MemoryRouter>));
+ await render('/book?bookPage=7');expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-24');
+ await act(async()=>root.unmount());root=createRoot(container);await render('/book');expect(container.querySelector('output')?.textContent).toContain('bookPage=7');expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-24');
+ await act(async()=>root.unmount());root=createRoot(container);await render('/book?bookPage=2');expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-4');
 });
