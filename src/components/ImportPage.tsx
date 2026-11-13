@@ -1,3 +1,5 @@
+import {ManualWords} from './ManualWords';
+import {newManualDraft} from '../lib/manualWords';
 import {useI18n,messageText} from '../lib/i18n';
 import {LANGUAGES,type Language} from '../../shared/languages';
 import { DeckMetadataFields } from './DeckMetadataFields';
@@ -30,8 +32,9 @@ export function ImportPage({ onClose, onImport }: Props) {
  const t=useI18n();
   const [params] = useSearchParams();
   const file = useRef<HTMLInputElement>(null);
-  const [tab, setTab] = useState<"file" | "paste" | "words">(params.get("tab") === "paste" ? "paste" : params.get('tab')==='file'?'file':'words');
+  const [tab, setTab] = useState<"file" | "paste" | "words" | "manual">(params.get("tab") === "paste" ? "paste" : params.get('tab')==='file'?'file':params.get('tab')==='manual'?'manual':'words');
   const [wordDraft,setWordDraft]=useState(emptyWordPaste);
+  const [manualDraft,setManualDraft]=useState(newManualDraft);
   const [raw, setRaw] = useState("");
   const [name, setName] = useState("");
   const [preview, setPreview] = useState<DeckInput | null>(null);
@@ -101,25 +104,26 @@ export function ImportPage({ onClose, onImport }: Props) {
         <header className="import-page-heading"><h1 id="import-title">{t("単語帳を作成")}</h1></header>
         <div className="import-steps">
           <span className={!preview ? "current" : "complete"}>
-            <i>{preview ? <Check size={13} /> : "1"}</i>{tab==='words'?t("単語を入力"):t("TOONを選ぶ")}
+            <i>{preview ? <Check size={13} /> : "1"}</i>{(tab==='words'||tab==='manual')?t("単語を入力"):t("TOONを選ぶ")}
           </span>
           <span className={preview ? "current" : ""}>
             <i>2</i>{t("内容を確認")} </span>
         </div>
         {!preview ? (
           <>
-            {tab!=='words'&&<Link className="import-guide-link" to="/guide/create">
+            {(tab==='paste'||tab==='file')&&<Link className="import-guide-link" to="/guide/create">
               <strong>{t("オリジナル英単語帳の作り方 →")}</strong>
               <span>{t("画像や学びたい単語から、ChatGPT・Geminiで作る")}</span>
             </Link>}
             <div className="tabs" role="tablist" aria-label={t("取り込み方法")}>
-              <button role="tab" aria-selected={tab==='words'} className={tab==='words'?'active':''} disabled={busy} onClick={()=>setTab('words')}>{t("単語から作成")}</button>
+              <button role="tab" aria-selected={tab==='words'} className={tab==='words'?'active':''} disabled={busy} onClick={()=>{setError('');setTab('words');}}>{t("単語から作成")}</button>
+              <button role="tab" aria-selected={tab==='manual'} disabled={busy} className={tab==='manual'?'active':''} onClick={()=>{setError('');setTab('manual');}}>{t('自分で入力')}</button>
               <button
                 role="tab"
                 aria-selected={tab === "file"}
                 disabled={busy}
                 className={tab === "file" ? "active" : ""}
-                onClick={() => setTab("file")}
+                onClick={() => {setError("");setTab("file");}}
               >
                 <Upload size={17} /> {t("ファイルを選択")} </button>
               <button
@@ -127,12 +131,12 @@ export function ImportPage({ onClose, onImport }: Props) {
                 aria-selected={tab === "paste"}
                 disabled={busy}
                 className={tab === "paste" ? "active" : ""}
-                onClick={() => setTab("paste")}
+                onClick={() => {setError("");setTab("paste");}}
               >
                 <Code2 size={18} /> {t("TOONを貼り付け")} </button>
             </div>
             <div className="deck-language-fields"><label>{t("学習する言語")}<select aria-label={t("学習する言語")} disabled={busy} value={language} onChange={e=>{setLanguage(e.target.value as Language);setWordDraft(old=>({...old,rows:old.rows.map(row=>({...row,generated:false}))}));}}>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{t(item.name)}</option>)}</select></label><label>{t("意味・訳の言語")}<select aria-label={t("意味・訳の言語")} disabled={busy} value={meaningLanguage} onChange={e=>{setMeaningLanguage(e.target.value as Language);setWordDraft(old=>({...old,rows:old.rows.map(row=>({...row,generated:false}))}));}}>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{t(item.name)}</option>)}</select></label></div>
-            {tab==='words'?<WordPaste language={language} meaningLanguage={meaningLanguage} draft={wordDraft} setDraft={setWordDraft} onBusy={setBusy} onPreview={words=>{setName('');setPreview({schemaVersion:1,title:'',description:'',textbookTags:[],words});}}/>:tab === "file" ? (
+            {tab==='manual'?<ManualWords draft={manualDraft} setDraft={setManualDraft} language={language} meaningLanguage={meaningLanguage} onPreview={words=>{setName('');setPreview({schemaVersion:1,title:'',description:'',textbookTags:[],words});}}/>:tab==='words'?<WordPaste language={language} meaningLanguage={meaningLanguage} draft={wordDraft} setDraft={setWordDraft} onBusy={setBusy} onPreview={words=>{setName('');setPreview({schemaVersion:1,title:'',description:'',textbookTags:[],words});}}/>:tab === "file" ? (
               <div
                 className={`dropzone ${drag ? "dragover" : ""}`}
                 onDragOver={(e) => {
@@ -179,7 +183,7 @@ export function ImportPage({ onClose, onImport }: Props) {
                 />
               </div>
             )}
-            {tab!=='words'&&<div className="format-hint">
+            {(tab==='file'||tab==='paste')&&<div className="format-hint">
               <div>
                 <strong>{t("はじめての方へ")}</strong>
                 <p>{t("TOONには英単語・意味・例文を入れます。名前とカテゴリは次の画面で設定します。")}</p>
@@ -235,7 +239,7 @@ export function ImportPage({ onClose, onImport }: Props) {
             {t(error)}
           </p>
         )}
-        {(preview||tab!=='words')&&<footer className="import-page-footer">
+        {(preview||tab==='file'||tab==='paste')&&<footer className="import-page-footer">
           {preview&&<button
             className="button ghost"
             disabled={busy}

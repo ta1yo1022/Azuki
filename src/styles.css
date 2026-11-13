@@ -12,6 +12,16 @@
   --muted: #69635d;
   --border: #e6d6c6;
   --paper: #fffaf4;
+  --review-text: #72594b;
+  --review-tint: #f1e9df;
+  --review-border: #c9b7a6;
+  --review-fill: #72594b;
+  --review-fill-hover: #5c463a;
+  --known-text: #35614b;
+  --known-tint: #eaf0e8;
+  --known-border: #b9c9b7;
+  --known-fill: #35614b;
+  --known-fill-hover: #294c3b;
   --font-rounded:
     "Nunito", "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", ui-rounded,
     sans-serif;
@@ -3398,10 +3408,8 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .study-card-rotor { display:block; position:relative; width:100%; height:100%; min-height:240px; transform-style:preserve-3d; transition:transform .48s cubic-bezier(.22,.7,.25,1); }
 .study-card.is-revealed .study-card-rotor { transform:rotateY(180deg); }
 .study-card-face { position:absolute; inset:0; padding:28px; border:1px solid #dbc2b1; border-radius:24px; background:var(--paper); box-shadow:0 5px 0 #e3cdbb80; backface-visibility:hidden; -webkit-backface-visibility:hidden; animation:none; }
-.study-card-back { transform:rotateY(180deg); background:var(--accent); border-color:var(--accent-dark); color:#fff; box-shadow:0 5px 0 #7c222840; }
-.study-card-back .eyebrow, .study-card-back .study-flip-hint, .study-card-back .study-word, .study-card-back .study-meaning, .study-card-back .study-answer-word, .study-card-back .study-sentence { color:#fff; }
-.study-card-back .study-example { border-color:#ffffff40; }
-.study-card-back .tag { background:#ffffff1f; color:#fff; border-color:#ffffff40; }
+/* Answer faces stay on the paper palette; accent is reserved for primary actions. */
+.study-card-back { transform:rotateY(180deg); background:var(--paper); border-color:#dbc2b1; color:var(--text); box-shadow:0 5px 0 #e3cdbb80; }
 @media(max-width:640px) { .study-card-face { padding:22px 18px; } }
 @media(prefers-reduced-motion:reduce) { .study-card-rotor { transition:none; } }
 
@@ -3617,14 +3625,73 @@ html:not([lang="ja"]) .nav-item { white-space:normal; }
 .import-example-preview>small{font-weight:700;color:var(--muted);}
 .import-example-preview p{margin:4px 0;white-space:pre-wrap;overflow-wrap:anywhere;}
 .import-example-preview>div+div{margin-top:12px;}
-.recall-buttons{display:flex;justify-content:center;gap:12px;margin:18px 0;flex-wrap:wrap;}
-.recall-buttons .button{min-height:44px;padding:10px 24px;}
-.recall-buttons button[aria-pressed="true"]{background:var(--accent);color:#fffaf4;border-color:var(--accent);}
+/* Recall is an explicit learning decision, with a persistent state and separate reset. */
+.recall-control{margin:16px 0;}
+.recall-current{display:flex;align-items:center;justify-content:center;gap:14px;min-height:28px;margin-bottom:10px;flex-wrap:wrap;}
+.recall-state{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--muted);}
+.recall-state>span{display:flex;}
+.recall-state-known{color:var(--known-text);}
+.recall-state-weak{color:var(--review-text);}
+.recall-clear{font-size:12px;min-height:32px;color:var(--muted);}
+.recall-buttons{display:flex;justify-content:center;gap:12px;}
+.recall-choice{display:flex;align-items:center;justify-content:center;gap:10px;flex:1;min-height:64px;padding:12px 20px;border:2px solid var(--recall-border);border-radius:18px;background:var(--recall-bg);color:var(--recall-ink);box-shadow:0 3px 0 var(--recall-border);font-weight:800;white-space:nowrap;transition:background .15s,transform .15s,box-shadow .15s;}
+.recall-choice small{display:block;margin-top:2px;font-size:11px;font-weight:500;}
+.recall-weak{--recall-ink:var(--review-text);--recall-bg:var(--paper);--recall-border:var(--review-border);--recall-fill:var(--review-fill);--recall-fill-hover:var(--review-fill-hover);}
+.recall-known{--recall-ink:var(--known-text);--recall-bg:var(--paper);--recall-border:var(--known-border);--recall-fill:var(--known-fill);--recall-fill-hover:var(--known-fill-hover);}
+.recall-choice:hover:not(:disabled){background:var(--recall-bg);box-shadow:0 4px 0 var(--recall-border);transform:translateY(-1px);}
+.recall-choice[aria-pressed="true"]{background:var(--recall-fill);color:#fff;border-color:var(--recall-fill);box-shadow:0 3px 0 var(--recall-fill-hover);}
+.recall-choice[aria-pressed="true"]:hover:not(:disabled){background:var(--recall-fill-hover);color:#fff;}
+.recall-choice:active:not(:disabled){transform:translateY(2px);box-shadow:none;}
+.recall-reveal{width:100%;min-height:64px;}
+.recall-feedback-slot{min-height:44px;margin:0 0 4px;}
+.recall-control-session + .study-navigation{margin-top:0;}
+.recall-feedback{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px;border-radius:12px;font-size:12px;line-height:1.6;background:var(--known-tint);color:var(--known-text);}
+.recall-feedback-weak{background:var(--review-tint);color:var(--review-text);}
+.recall-feedback>span{display:flex;align-items:center;gap:8px;min-width:0;overflow-wrap:anywhere;}
+.recall-feedback .text-button{flex-shrink:0;min-height:32px;color:inherit;}
 .study-review-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px;}
 .study-review-tools label{display:flex;align-items:center;gap:8px;cursor:pointer;}
 .study-review-tools input{width:18px;height:18px;accent-color:var(--accent);}
 .learning-save-status,.learning-resumed{font-size:12px;color:var(--muted);line-height:1.7;margin:8px 0 16px;}
 .learning-resumed{color:var(--accent);}
-.book-entry .recall-buttons{justify-content:flex-start;gap:6px;margin:8px 0 0;}
-.book-entry .recall-buttons .button{padding:6px 10px;min-height:36px;font-size:11px;}
-@media(max-width:600px){.recall-buttons .button{flex:1;}.book-entry .recall-buttons .button{flex:0 1 auto;}.study-review-tools{font-size:13px;}}
+.book-entry .recall-control{grid-column:1/-1;margin:4px 0 0;}
+.book-entry .recall-current{justify-content:flex-start;gap:10px;min-height:22px;margin-bottom:5px;}
+.book-entry .recall-clear{min-height:22px;}
+.book-entry .recall-buttons{justify-content:flex-start;gap:8px;flex-wrap:wrap;}
+.book-entry .recall-choice{flex:0 1 auto;padding:7px 12px;min-height:40px;font-size:11px;gap:6px;border-radius:12px;box-shadow:none;}
+.book-entry .recall-choice svg{width:15px;height:15px;}
+.book-entry .recall-state,.book-entry .recall-clear{font-size:10px;}
+@media(max-width:600px){.study-review-tools{font-size:13px;}.recall-choice{padding:12px 8px;gap:7px;font-size:14px;}.recall-feedback{font-size:11px;}}
+@media(prefers-reduced-motion:reduce){.recall-choice{transition:none;}}
+/* Action menus must fit the viewport for both personal and public wordbooks. */
+.deck-action-options{max-height:min(70dvh,480px);overflow:auto;overflow-wrap:anywhere;translate:var(--menu-shift,0px) 0;}
+@media(max-width:800px){
+ .deck-action-menu .deck-action-options{position:fixed;top:auto;bottom:calc(16px + env(safe-area-inset-bottom));left:16px;right:16px;width:auto;max-width:none;z-index:100;max-height:calc(100dvh - 48px - env(safe-area-inset-bottom));}
+}
+.import-page .manual-bulk{margin:18px 0;padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--paper);}
+.manual-bulk summary{cursor:pointer;font-weight:700;}
+.manual-bulk p,.manual-bulk small{font-size:12px;line-height:1.7;color:var(--muted);}
+.manual-bulk>label:not(.manual-header-toggle){display:block;margin:12px 0 6px;}
+.manual-bulk>textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;resize:vertical;font:inherit;}
+.manual-bulk .manual-header-toggle{display:flex;align-items:center;gap:8px;margin:12px 0;}
+.manual-bulk>small{display:block;margin-top:10px;}
+.manual-word-table{border-collapse:collapse;width:100%;min-width:760px;table-layout:fixed;font-size:13px;}
+.manual-word-table th{position:sticky;top:0;background:var(--paper);text-align:left;padding:12px;border-bottom:1px solid var(--border);z-index:1;}
+.manual-word-table th small{color:var(--muted);font-weight:400;}
+.manual-word-table th:nth-child(1){width:170px;}.manual-word-table th:nth-child(2){width:190px;}.manual-word-table th:nth-child(4){width:60px;}
+.manual-word-table td{padding:12px;vertical-align:top;border-bottom:1px solid var(--border);}
+.manual-word-table td>small{display:block;margin-bottom:5px;color:var(--muted);}
+.manual-word-table textarea{width:100%;max-width:100%;font:inherit;line-height:1.6;padding:10px;border:1px solid var(--border);border-radius:10px;resize:vertical;background:var(--paper);color:var(--text);}
+.manual-word-table textarea:focus-visible{outline:2px solid var(--accent);outline-offset:-3px;}
+.manual-example{display:grid;gap:8px;margin-bottom:16px;}.manual-example label{display:grid;gap:5px;}.manual-example .text-button{justify-self:end;}
+.manual-words>.button{margin-top:16px;}.manual-preview-action{display:flex;justify-content:flex-end;margin-top:24px;}
+@media(max-width:600px){.import-page .tabs{grid-template-columns:repeat(2,minmax(0,1fr));}.manual-preview-action>.button{width:100%;}}
+.manual-word-table td:first-child{position:sticky;left:0;background:var(--paper);z-index:1;}
+.manual-word-table th:first-child{left:0;z-index:3;}
+@media(max-width:600px){.manual-word-table th:first-child{width:120px;}.manual-word-table th:nth-child(2){width:160px;}}
+.study-review-due{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:4px;}
+.study-review-due label{display:flex;align-items:center;gap:6px;cursor:pointer;}
+.study-review-due input{width:16px;height:16px;accent-color:var(--accent);}
+.review-active-label{padding:3px 8px;border-radius:20px;background:var(--review-tint);color:var(--review-text);font-size:11px;font-weight:800;}
+.recall-next-review{font-size:11px;color:var(--muted);}
+.book-entry .recall-next-review{font-size:10px;}

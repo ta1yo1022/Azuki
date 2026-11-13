@@ -56,3 +56,19 @@ it('accepts the guide template from the initial creation tab and saves every tra
  await input('#import-title-input','ガイドから登録');await click('2語を登録する');
  expect(save.mock.calls[0][0].words[0].examples).toHaveLength(2);expect(save.mock.calls[0][0].words.every((word:any)=>word.examples.every((example:any)=>example.translation))).toBe(true);
 });
+
+it('registers manually entered words and multiple translated examples while preserving drafts across tabs and review',async()=>{
+ await act(async()=>root.unmount());root=createRoot(container);await act(async()=>root.render(<MemoryRouter initialEntries={['/library/import?tab=manual']}><ImportPage onClose={close} onImport={save}/></MemoryRouter>));
+ await input('[aria-label="1語目の単語"]','curious');await input('[aria-label="1語目の意味"]','好奇心の強い');await input('[aria-label="1語目の例文1"]','Stay curious.');await input('[aria-label="1語目の例文1の訳"]','好奇心を持ち続けて。');
+ await click('例文を追加');await input('[aria-label="1語目の例文2"]','She is curious.');await input('[aria-label="1語目の例文2の訳"]','彼女は好奇心が強い。');
+ await act(async()=>[...container.querySelectorAll<HTMLButtonElement>('[role="tab"]')].find(b=>b.textContent?.trim()==='TOONを貼り付け')!.click());
+ await act(async()=>[...container.querySelectorAll<HTMLButtonElement>('[role="tab"]')].find(b=>b.textContent?.trim()==='自分で入力')!.click());
+ expect((container.querySelector('[aria-label="1語目の例文2の訳"]') as HTMLTextAreaElement).value).toBe('彼女は好奇心が強い。');
+ await click('内容を確認');expect(container.textContent).toContain('好奇心を持ち続けて。');await click('入力に戻る');expect((container.querySelector('[aria-label="1語目の単語"]') as HTMLTextAreaElement).value).toBe('curious');await click('内容を確認');
+ await input('#import-title-input','手入力の単語帳');await click('1語を登録する');expect(save.mock.calls[0][0].words[0].examples).toHaveLength(2);expect(save.mock.calls[0][0].words[0].meaning).toBe('好奇心の強い');
+});
+it('adds spreadsheet rows to existing manual entries and saves words without requiring examples',async()=>{
+ await act(async()=>root.unmount());root=createRoot(container);await act(async()=>root.render(<MemoryRouter initialEntries={['/library/import?tab=manual']}><ImportPage onClose={close} onImport={save}/></MemoryRouter>));
+ await input('[aria-label="1語目の単語"]','book');await input('[aria-label="1語目の意味"]','本');await input('#manual-bulk-input','travel\t旅行する\tI travel by train.\t私は電車で旅行します。');await click('表の内容を追加');
+ expect((container.querySelector('[aria-label="1語目の単語"]') as HTMLTextAreaElement).value).toBe('book');expect((container.querySelector('[aria-label="2語目の単語"]') as HTMLTextAreaElement).value).toBe('travel');await click('内容を確認');await input('#import-title-input','表から作成');await click('2語を登録する');expect(save.mock.calls[0][0].words[0].examples).toBeUndefined();expect(save.mock.calls[0][0].words[1].examples[0].translation).toBe('私は電車で旅行します。');
+});

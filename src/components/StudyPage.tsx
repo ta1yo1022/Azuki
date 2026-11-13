@@ -1,6 +1,6 @@
 import {useLearningProgress} from '../lib/learningProgress';
 import {RecallButtons,LearningSaveStatus} from './RecallButtons';
-import {baseWordId,shuffleLearning,type LearningPosition} from '../../shared/learning';
+import {baseWordId,shuffleLearning,type LearningPosition,type RecallRecord,type ReviewPending,advanceReview,isReviewDue} from '../../shared/learning';
 import {languageName} from '../lib/i18n';
 import {useI18n,messageText} from '../lib/i18n';
 
@@ -44,6 +44,8 @@ export function StudyPage({
   const examplesMode = mode === "examples";
   const progress=useLearningProgress(deck.id,demo);
   const [weakOnly,setWeakOnly]=useState(false);
+  const [reviewOnly,setReviewOnly]=useState(false);
+  const [reviewState,setReviewState]=useState<{pending:ReviewPending[];activeId:string}>({pending:[],activeId:''});
   const [seed,setSeed]=useState(()=>Math.floor(Math.random()*4294967296));
   const [progressBoot,setProgressBoot]=useState(false);
   const restoredScope=useRef('');
@@ -57,8 +59,8 @@ export function StudyPage({
     if(restoredScope.current===progress.scope)return;
     restoredScope.current=progress.scope;
     const saved=progress.position(mode);
-    if(saved&&saved.order===preferences.order){resume.current=saved;setWeakOnly(saved.weakOnly);setSeed(saved.seed);}
-    else {resume.current=undefined;setWeakOnly(false);setSeed(Math.floor(Math.random()*4294967296));}
+    if(saved&&saved.order===preferences.order){resume.current=saved;setWeakOnly(saved.weakOnly);setReviewOnly(saved.reviewOnly??false);setSeed(saved.seed);}
+    else {resume.current=undefined;setWeakOnly(false);setReviewOnly(false);setSeed(Math.floor(Math.random()*4294967296));}
     setResumed(false);
     setProgressBoot(true);
   },[progress.ready,progress.scope,mode]);
@@ -90,10 +92,12 @@ export function StudyPage({
   const [completed, setCompleted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [lastRating,setLastRating]=useState<{scope:string;mode:string;wordId:string;word:string;state:'known'|'weak';previous:RecallRecord|undefined;index:number;reviewState:typeof reviewState}|null>(null);
+  const recentRating=lastRating?.scope===progress.scope&&lastRating.mode===mode?lastRating:null;
   useStudyTracking(deck,mode,started&&!settingsOpen&&!completed&&!loading&&!error&&words.length>0,demo);
 
   const loadPage = useCallback(
-    async (cursor: number, advance = false) => {
+    async (cursor: number, advanceIndex?:number) => {
       const version = ++requestVersion.current;
       loadedScope.current='';
       busy.current = true;
@@ -109,7 +113,7 @@ export function StudyPage({
       try {
         let page = await reader.words(deck.id, "", cursor);
         if (version !== requestVersion.current) return;
-        if (order === "shuffle" || examplesMode || weakOnly || !!resume.current&&resume.current.ordinal>=50) {
+        if (order === "shuffle" || examplesMode || weakOnly || reviewOnly || !!resume.current&&(resume.current.ordinal>=50||!!resume.current.reviewSession)) {
           // Load the whole book for global shuffling or to collect translated sentences.
           const all: StudyCard[] = [];
           const seen = new Set<string>();
@@ -135,12 +139,12 @@ export function StudyPage({
             page = await reader.words(deck.id, "", pageCursor);
             if (version !== requestVersion.current) return;
           }
-          const selected=weakOnly?all.filter(item=>progress.ratings.get(baseWordId(item.id))==='weak'):all;
+          const selected=reviewOnly?all.filter(item=>isReviewDue(progress.records.get(baseWordId(item.id)),Date.now())):weakOnly?all.filter(item=>progress.ratings.get(baseWordId(item.id))==='weak'):all;
           page = { words: order==='shuffle'?shuffleLearning(selected,seed):selected, nextCursor: null };
         }
         if (version !== requestVersion.current) return;
         if (
-          (!page.words.length && !examplesMode && !weakOnly) ||
+          (!page.words.length && !examplesMode && !weakOnly && !reviewOnly) ||
           (page.nextCursor !== null && page.nextCursor <= cursor)
         ) {
           throw new Error(
@@ -151,14 +155,19 @@ export function StudyPage({
         setWords((previous) =>
           cursor === 0 ? page.words : [...previous, ...page.words],
         );
-        if(cursor===0&&resume.current){
+        if(cursor===0){
           const saved=resume.current;
-          const target=page.words.findIndex(item=>item.id===saved.wordId);
-          setIndex(target>=0?target:0);setCompleted(saved.completed&&target>=0);setResumed(target>=0);
-          resume.current=undefined;
+          const target=saved?page.words.findIndex(item=>item.id===saved.wordId):-1;
+          const session=saved?.reviewSession;
+          if(session){
+            const cursorIndex=session.cursorId?page.words.findIndex(item=>item.id===session.cursorId):page.words.findIndex(item=>item.ordinal===session.cursorOrdinal);
+            setIndex(cursorIndex>=0?cursorIndex:page.words.length);
+            setReviewState({pending:session.pending.filter(p=>page.words.some(w=>w.id===p.wordId)&&progress.ratings.get(baseWordId(p.wordId))==='weak'),activeId:page.words.some(w=>w.id===session.activeId)?session.activeId:''});
+          }else{setIndex(target>=0?target:0);setReviewState({pending:[],activeId:''});}
+          setCompleted(!!saved?.completed&&target>=0);setResumed(target>=0);resume.current=undefined;
         }
         setNextCursor(page.nextCursor);
-        if (advance) setIndex((previous) => previous + 1);
+        if (advanceIndex!==undefined) setIndex(advanceIndex);
       } catch (cause) {
         if (version !== requestVersion.current) return;
         // Discard cached cards too, including when a public deck becomes private.
@@ -177,7 +186,7 @@ export function StudyPage({
         }
       }
     },
-    [deck.id, reader, order, examplesMode, weakOnly, seed,progress.scope],
+    [deck.id, reader, order, examplesMode, weakOnly,reviewOnly, seed,progress.scope],
   );
 
   useEffect(() => {
@@ -188,38 +197,54 @@ export function StudyPage({
     };
   }, [loadPage, started,progressBoot,progress.ready]);
 
-  const word = words[index];
+  const word = reviewState.activeId?words.find(w=>w.id===reviewState.activeId):words[Math.min(index,words.length-1)];
   const total =
     nextCursor === null ? words.length : Math.max(deck.wordCount, words.length);
-  const isLast = index === words.length - 1 && nextCursor === null;
+  const isLast = !reviewState.activeId&&index >= words.length - 1 && nextCursor === null;
   useEffect(()=>{
     if(!progressBoot||!progress.ready||loadedScope.current!==progress.scope||!word||loading||settingsOpen||!started||error)return;
-    progress.savePosition({mode,wordId:word.id,ordinal:word.ordinal,page:0,order,seed,weakOnly,completed});
-  },[progressBoot,progress.ready,word?.id,loading,settingsOpen,started,error,completed,mode,order,seed,weakOnly,progress.savePosition]);
-  function restart(){resume.current=undefined;setResumed(false);if(order==='shuffle')setSeed(Math.floor(Math.random()*4294967296));else void loadPage(0);}
-  function changeFilter(value:boolean){resume.current=undefined;setResumed(false);setWeakOnly(value);}
+    progress.savePosition({mode,wordId:word.id,ordinal:word.ordinal,page:0,order,seed,weakOnly,reviewOnly,completed,...(reviewState.pending.length||reviewState.activeId?{reviewSession:{...reviewState,cursorId:words[index]?.id??'',cursorOrdinal:words[index]?.ordinal??nextCursor??deck.wordCount}}:{})});
+  },[progressBoot,progress.ready,word?.id,loading,settingsOpen,started,error,completed,mode,order,seed,weakOnly,reviewOnly,reviewState,index,progress.savePosition]);
+  function restart(){setLastRating(null);resume.current=undefined;setResumed(false);if(order==='shuffle')setSeed(Math.floor(Math.random()*4294967296));else void loadPage(0);}
+  function changeFilter(value:boolean){setLastRating(null);resume.current=undefined;setResumed(false);setReviewOnly(false);setWeakOnly(value);}
   useEffect(() => {
     if (settingsOpen) setupHeading.current?.focus({ preventScroll: true });
-    else if (!loading) card.current?.focus({ preventScroll: true });
-  }, [word?.id, loading, settingsOpen]);
+    else if (!loading&&!completed) card.current?.focus({ preventScroll: true });
+  }, [word?.id, loading, settingsOpen,completed]);
 
   function previous() {
-    if (busy.current || index === 0) return;
-    setIndex((value) => Math.max(0, value - 1));
-    setRevealed(false);
+    if (busy.current || index === 0&&!reviewState.activeId) return;
+    setResumed(false);setReviewState(old=>({...old,activeId:''}));
+    setIndex(value=>Math.max(0,value-1));setRevealed(false);
   }
-  function next() {
-    if (busy.current || !word || completed || error) return;
-    setRevealed(false);
-    if (index + 1 < words.length) {
-      setIndex((value) => Math.min(value + 1, words.length - 1));
-    } else if (nextCursor !== null) {
-      void loadPage(nextCursor, true);
-    } else {
-      setCompleted(true);
-    }
+  function advance(state?:'known'|'weak') {
+    if(busy.current||!word||completed||error)return;
+    const pending=advanceReview(reviewState.pending,word.id,state);
+    const nextIndex=reviewState.activeId?index:index+1;
+    const primaryAvailable=nextIndex<words.length||nextCursor!==null;
+    const due=primaryAvailable?pending.find(item=>item.remaining===0):undefined;
+    setResumed(false);setRevealed(false);
+    setReviewState({pending:due?pending.filter(item=>item!==due):pending,activeId:due?.wordId??''});
+    if(due){setIndex(nextIndex);return;}
+    if(nextIndex<words.length)setIndex(nextIndex);
+    else if(nextCursor!==null)void loadPage(nextCursor,nextIndex);
+    else {setIndex(nextIndex);setCompleted(true);}
   }
-
+  function next(){advance();}
+  function continueReview(){
+    const [due,...pending]=reviewState.pending;if(!due)return;
+    setLastRating(null);setReviewState({pending,activeId:due.wordId});setCompleted(false);setRevealed(false);
+  }
+  function evaluate(state:'known'|'weak'){
+    if(busy.current||!word||!revealed||completed)return;
+    setLastRating({scope:progress.scope,mode,wordId:word.id,word:word.word,state,previous:progress.records.get(baseWordId(word.id)),index,reviewState});
+    progress.rate(word.id,state);advance(state);
+  }
+  function undoRating(){
+    if(!recentRating||loading||error)return;
+    progress.restoreRating(recentRating.wordId,recentRating.previous);
+    setIndex(recentRating.index);setReviewState(recentRating.reviewState);setCompleted(false);setRevealed(true);setLastRating(null);
+  }
   useStudyArrows(started && !detailWord && !settingsOpen && !completed && !loading && !error, previous, next);
 
   return (
@@ -251,7 +276,14 @@ export function StudyPage({
         aria-labelledby="study-title"
       >
         <div className="study-review-tools"><label><input type="checkbox" checked={weakOnly} disabled={!progress.ready||loading&&!settingsOpen} onChange={event=>changeFilter(event.target.checked)}/>{t('苦手な単語だけ')}</label>{started&&!settingsOpen&&<button className="text-button" onClick={restart}>{t('最初から学習')}</button>}</div>
+        <div className="study-review-due"><label><input type="checkbox" checked={reviewOnly} disabled={!progress.ready||loading&&!settingsOpen} onChange={event=>{resume.current=undefined;setLastRating(null);setResumed(false);setWeakOnly(false);setReviewOnly(event.target.checked);}}/>{t('復習の時期が来た単語だけ')} ({[...progress.records.values()].filter(r=>isReviewDue(r,Date.now())).length})</label><small>{t('復習待ち：{0}語',new Set([...reviewState.pending.map(p=>baseWordId(p.wordId)),...(reviewState.activeId?[baseWordId(reviewState.activeId)]:[])]).size)}</small></div>
         <LearningSaveStatus progress={progress}/>
+        {started&&!settingsOpen&&<div className="recall-feedback-slot">
+          {recentRating&&<div className={`recall-feedback recall-feedback-${recentRating.state}`}>
+            <span role="status" aria-atomic="true">{recentRating.state==='known'?<Check size={18} aria-hidden="true"/>:<RotateCcw size={18} aria-hidden="true"/>}{t(recentRating.state==='known'?'「{0}」を覚えたとして記録しました':'「{0}」を苦手として記録しました',recentRating.word)}</span>
+            <button type="button" className="text-button" disabled={loading||!!error} onClick={undoRating}>{t('取り消す')}</button>
+          </div>}
+        </div>}
         {resumed&&<p className="learning-resumed" role="status">{t('前回の続きから再開しました')}</p>}
         {storageNote && <p role="status" className="study-storage-note">{storageNote}</p>}
         {settingsOpen ? (
@@ -292,8 +324,9 @@ export function StudyPage({
               <Check size={30} />
             </span>
             
-            <h3>{t("最後までめくりました。")}</h3>
+            <h3>{t(reviewState.pending.length?"ひと通り学習しました。":"最後までめくりました。")}</h3>
             <p>{words.length}{examplesMode ? t("例文") : t("語")}{t("の学習、おつかれさまでした。")}</p>
+            {reviewState.pending.length>0&&<><p>{t('苦手な単語が{0}語、復習を待っています。',reviewState.pending.length)}</p><button className="button primary" onClick={continueReview}>{t('復習を続ける')}</button><button className="text-button" onClick={onClose}>{t('今日はここまで')}</button></>}
             <div className="study-complete-actions">
               <button
                 className="button primary"
@@ -304,20 +337,20 @@ export function StudyPage({
               <button className="button secondary" onClick={onClose}> {t("一覧に戻る")} </button>
             </div>
           </div>
-        ) : !words.length&&weakOnly ? <section className="study-message"><h2>{t('苦手な単語はありません')}</h2><p>{t('「まだ苦手」にした単語がここに集まります。')}</p><button className="button secondary" onClick={()=>changeFilter(false)}>{t('すべての単語で学習')}</button></section> : !word ? (
+        ) : !words.length&&reviewOnly ? <section className="study-message"><h2>{t('今の復習はありません')}</h2><p>{t('復習時期が来た単語がここに集まります。')}</p><button className="button secondary" onClick={()=>{resume.current=undefined;setReviewOnly(false);}}>{t('すべての単語で学習')}</button></section> : !words.length&&weakOnly ? <section className="study-message"><h2>{t('苦手な単語はありません')}</h2><p>{t('「まだ苦手」にした単語がここに集まります。')}</p><button className="button secondary" onClick={()=>changeFilter(false)}>{t('すべての単語で学習')}</button></section> : !word ? (
           <div className="study-message"><h2>{t("訳付きの例文がありません")}</h2><p>{t("マイライブラリの「例文を追加・編集」から、例文と訳を登録してください。")}</p><button className="button secondary" onClick={onClose}>{t("単語一覧に戻る")}</button></div>
         ) : (
           word && (
             <>
               <div className="study-progress-label">
-                <span className="study-mode-audio">{examplesMode ? t("例文で学習") : t("カードで学習")}{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={examplesMode?word.sentence!.text:word.word} exampleIndex={examplesMode?Number(word.id.split(':example:')[1]):undefined} isPublic={deck.visibility==='public'} />}</span>
+                <span className="study-mode-audio">{examplesMode ? t("例文で学習") : t("カードで学習")}{reviewState.activeId&&<span className="review-active-label">{t('復習')}</span>}{!demo&&<WordAudioButton deckId={deck.id} wordId={word.id} word={examplesMode?word.sentence!.text:word.word} exampleIndex={examplesMode?Number(word.id.split(':example:')[1]):undefined} isPublic={deck.visibility==='public'} />}</span>
                 <span role="status">
-                  <strong>{index + 1}</strong> / {total} {examplesMode ? t("例文") : t("語")}
+                  <strong>{Math.min(index + 1,total)}</strong> / {total} {examplesMode ? t("例文") : t("語")}
                 </span>
               </div>
               <progress
                 className="study-progress"
-                value={index + 1}
+                value={Math.min(index + 1,total)}
                 max={total}
                 aria-label={t("カードの位置")}
               />
@@ -385,11 +418,11 @@ export function StudyPage({
                   ))}
                 </span>
               </div>
-              <RecallButtons wordId={word.id} progress={progress}/>
+              <RecallButtons wordId={word.id} progress={progress} answerVisible={revealed} onReveal={()=>setRevealed(true)} onEvaluate={evaluate} onClear={()=>setReviewState(old=>({...old,pending:old.pending.filter(p=>baseWordId(p.wordId)!==baseWordId(word.id))}))}/>
               <div className="study-navigation">
                 <button
                   className="button secondary"
-                  disabled={index === 0}
+                  disabled={index === 0&&!reviewState.activeId}
                   onClick={previous}
                 >
                   <ArrowLeft size={18} />

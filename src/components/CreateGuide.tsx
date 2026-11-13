@@ -97,6 +97,7 @@ export function CreateGuide() {
     <header className="guide-header"><Link to="/" aria-label={t("Azukiのホームへ")}><Brand /></Link><Link className="text-button" to={importPath}><ArrowLeft size={16} />{t("作成画面に戻る")}</Link></header>
     <main>
       <h1>{t("オリジナル英単語帳の作り方")}</h1>
+      <Link className="button secondary" to="/library/import?tab=manual">{t("単語・意味・例文を直接入力して作る")}</Link>
       <p className="guide-intro">{t("ChatGPTやGeminiで単語帳のデータを作り、Azukiに貼り付けて登録できます。例文の場面・件数も指定でき、英文と日本語訳を一緒に作れます。単語帳の名前とカテゴリは、登録画面で設定します。")}</p>
       <a className="text-button" href="#own-examples">{t("自分で考えた単語・例文を登録する →")}</a>
       <section aria-labelledby="guide-step-1">

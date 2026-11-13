@@ -194,14 +194,33 @@ it('opens details from an underlined target without flipping or advancing the ex
  expect(container.querySelector('dialog')).toBeNull();expect(face()).toContain('The captain refused.');
 });
 
-it('marks recall, reviews only weak words and keeps a rated card in place until the next session',async()=>{
- await mount();await click('まだ苦手');expect(button('まだ苦手').getAttribute('aria-pressed')).toBe('true');
- await click('次の単語');await click('覚えた');await click('次の単語');await click('まだ苦手');
+async function rate(state:'まだ苦手'|'覚えた') { await click('答えを見る');await click(state); }
+it('rates only after revealing, advances immediately, and keeps weak review stable for the round',async()=>{
+ await mount();expect(button('まだ苦手')).toBeUndefined();
+ await rate('まだ苦手');expect(face()).toContain('日本語-1');expect(container.querySelector('.recall-feedback')?.textContent).toContain('「english-0」を苦手として記録しました');
+ await rate('覚えた');await rate('まだ苦手');
  await act(async()=>container.querySelector<HTMLInputElement>('.study-review-tools input')!.click());
  expect(face()).toContain('日本語-0');expect(container.querySelector('.study-progress-label')?.textContent).toContain('/ 2');
- await click('覚えた');expect(face()).toContain('日本語-0');await click('次の単語');expect(face()).toContain('日本語-2');
+ await rate('覚えた');expect(face()).toContain('日本語-2');
  await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-2');
- await click('覚えた');await act(async()=>root.unmount());root=createRoot(container);await mount();expect(container.textContent).toContain('苦手な単語はありません');
+ await rate('覚えた');await act(async()=>root.unmount());root=createRoot(container);await mount();expect(container.textContent).toContain('苦手な単語はありません');
+});
+it('undoes a rating with its position and answer, including the final card',async()=>{
+ reader.words.mockResolvedValue({words:words.slice(0,2),nextCursor:null});
+ await mount();await rate('まだ苦手');await click('取り消す');
+ expect(face()).toContain('english-0');expect(container.querySelector('.recall-state')?.textContent).toBe('未評価');
+ await click('覚えた');await rate('まだ苦手');expect(container.textContent).toContain('ひと通り学習しました');
+ await click('取り消す');expect(face()).toContain('english-1');expect(container.querySelector('.study-complete')).toBeNull();
+ expect(container.querySelector('.recall-state')?.textContent).toBe('未評価');
+ await click('覚えた');await click('取り消す');expect(face()).toContain('english-1');
+});
+it('restores an earlier rating when undoing a change and can undo across a loaded page boundary',async()=>{
+ await mount();await rate('まだ苦手');await click('前の単語');await rate('覚えた');await click('取り消す');
+ expect(button('まだ苦手').getAttribute('aria-pressed')).toBe('true');
+ await click('記録を解除');
+ for(let i=0;i<49;i++)await click('次の単語');
+ await rate('覚えた');expect(face()).toContain('日本語-50');await click('取り消す');expect(face()).toContain('english-49');
+ expect(container.querySelector('.recall-state')?.textContent).toBe('未評価');
 });
 it('restores the current card across a page boundary and allows explicitly restarting',async()=>{
  await mount();for(let i=0;i<51;i++)await click('次の単語');expect(face()).toContain('日本語-51');
@@ -214,6 +233,43 @@ it('restores a shuffled sequence and position instead of reshuffling on reopen',
 });
 it('shares recall between a word and its examples without losing per-mode position',async()=>{
  const examples={words:async()=>({words:[{...words[0],examples:[{text:'First sentence.',translation:'最初の文。'},{text:'Second sentence.',translation:'次の文。'}]}],nextCursor:null})};
- await act(async()=>root.render(<StudyPage key="examples" mode="examples" deck={deck} reader={examples} onClose={()=>{}}/>));await click('学習をはじめる');await click('まだ苦手');await click('次の例文');expect(button('まだ苦手').getAttribute('aria-pressed')).toBe('true');
+ await act(async()=>root.render(<StudyPage key="examples" mode="examples" deck={deck} reader={examples} onClose={()=>{}}/>));await click('学習をはじめる');await rate('まだ苦手');expect(face()).toContain('Second sentence.');expect(container.querySelector('.recall-state')?.textContent).toBe('苦手として記録済み');
  await act(async()=>root.unmount());root=createRoot(container);await act(async()=>root.render(<StudyPage mode="examples" deck={deck} reader={examples} onClose={()=>{}}/>));await click('学習をはじめる');expect(face()).toContain('Second sentence.');
+});
+
+it('revisits a missed card after three other cards, preserves the normal cursor, and restores a revisit on reopen',async()=>{
+ reader.words.mockResolvedValue({words:words.slice(0,6),nextCursor:null});
+ await mount();await rate('まだ苦手');expect(face()).toContain('日本語-1');
+ await click('次の単語');await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-2');
+ await click('次の単語');expect(face()).toContain('日本語-3');await click('次の単語');expect(face()).toContain('日本語-0');expect(container.querySelector('.review-active-label')?.textContent).toBe('復習');
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-0');expect(container.querySelector('.review-active-label')).not.toBeNull();
+ await rate('覚えた');expect(face()).toContain('日本語-4');
+ await click('取り消す');expect(face()).toContain('english-0');expect(container.querySelector('.recall-state-weak')).not.toBeNull();
+ await click('覚えた');expect(face()).toContain('日本語-4');expect(container.querySelector('.study-review-due')?.textContent).toContain('復習待ち：0語');
+});
+it('offers a bounded stopping point for remaining misses and increases intervals only when a review is due',async()=>{
+ reader.words.mockResolvedValue({words:words.slice(0,1),nextCursor:null});
+ await mount();await rate('まだ苦手');expect(container.querySelector('.study-complete')).not.toBeNull();expect(button('今日はここまで')).toBeDefined();
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(button('復習を続ける')).toBeDefined();
+ await click('復習を続ける');expect(face()).toContain('日本語-0');await rate('覚えた');expect(container.querySelector('.study-complete')).not.toBeNull();
+ const key='azuki.learning.v1.anonymous.book';const first=JSON.parse(localStorage.getItem(key)!).ratings[0];expect(first.review.step).toBe(0);
+ vi.spyOn(Date,'now').mockReturnValue(first.review.dueAt+1);
+ await act(async()=>container.querySelector<HTMLInputElement>('.study-review-due input')!.click());expect(face()).toContain('日本語-0');
+ await rate('覚えた');const later=JSON.parse(localStorage.getItem(key)!).ratings[0];expect(later.review.step).toBe(1);expect(later.review.dueAt).toBe(first.review.dueAt+1+3*86400000);
+ await click('取り消す');expect(JSON.parse(localStorage.getItem(key)!).ratings[0].review).toEqual(first.review);
+});
+it('retains a delayed revisit across the lazy page boundary without skipping the normal next card',async()=>{
+ await mount();for(let i=0;i<46;i++)await click('次の単語');
+ await rate('まだ苦手');expect(face()).toContain('日本語-47');
+ await click('次の単語');await click('次の単語');await click('次の単語');expect(face()).toContain('日本語-46');
+ expect(reader.words.mock.calls.map(c=>c[2])).toEqual([0]);
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-46');
+ await rate('覚えた');expect(face()).toContain('日本語-50');
+ await click('次の単語');expect(face()).toContain('日本語-51');
+});
+it('does not schedule skipped words and shows an empty due filter before their first assessment',async()=>{
+ await mount();await click('次の単語');
+ await act(async()=>container.querySelector<HTMLInputElement>('.study-review-due input')!.click());
+ expect(container.textContent).toContain('今の復習はありません');expect(container.querySelector('.study-card')).toBeNull();
+ await click('すべての単語で学習');expect(face()).toContain('日本語-0');
 });

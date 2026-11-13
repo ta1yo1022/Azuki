@@ -2,14 +2,14 @@ import {useCallback,useEffect,useRef,useState} from 'react';
 import {onAuthStateChanged} from 'firebase/auth';
 import {auth} from './firebase';
 import {apiRequest} from './repository';
-import {baseWordId,emptyLearning,mergeLearning,type LearningData,type Recall,type RecallRecord,type LearningPosition,type LearningMode} from '../../shared/learning';
+import {baseWordId,emptyLearning,scheduleRecall,validReview,validReviewSession,mergeLearning,type LearningData,type Recall,type RecallRecord,type LearningPosition,type LearningMode} from '../../shared/learning';
 type Store=LearningData&{pendingRatings:RecallRecord[];pendingPositions:LearningPosition[]};
 const empty=():Store=>({...emptyLearning(),pendingRatings:[],pendingPositions:[]});
 export const learningKey=(owner:string,deckId:string)=>`azuki.learning.v1.${owner}.${deckId}`;
 export function readLearning(key:string):Store{
  try{const value=JSON.parse(localStorage.getItem(key)??'null');if(!value||!Array.isArray(value.ratings)||!Array.isArray(value.positions)||!Array.isArray(value.pendingRatings)||!Array.isArray(value.pendingPositions))return empty();
- const ratings=(rows:RecallRecord[])=>rows.filter(r=>r&&typeof r.wordId==='string'&&['known','weak','unseen'].includes(r.state)&&Number.isSafeInteger(r.updatedAt)).slice(-15000);
- const positions=(rows:LearningPosition[])=>rows.filter(p=>p&&['words','examples','book'].includes(p.mode)&&typeof p.wordId==='string'&&Number.isSafeInteger(p.ordinal)&&p.ordinal>=0&&Number.isSafeInteger(p.page)&&p.page>=0&&['ordered','shuffle'].includes(p.order)&&Number.isSafeInteger(p.seed)&&typeof p.weakOnly==='boolean'&&typeof p.completed==='boolean'&&Number.isSafeInteger(p.updatedAt)).slice(-3);
+ const ratings=(rows:RecallRecord[])=>rows.filter(r=>r&&typeof r.wordId==='string'&&['known','weak','unseen'].includes(r.state)&&Number.isSafeInteger(r.updatedAt)&&(r.review===undefined||validReview(r.review,r.state))).slice(-15000);
+ const positions=(rows:LearningPosition[])=>rows.filter(p=>p&&['words','examples','book'].includes(p.mode)&&typeof p.wordId==='string'&&Number.isSafeInteger(p.ordinal)&&p.ordinal>=0&&Number.isSafeInteger(p.page)&&p.page>=0&&['ordered','shuffle'].includes(p.order)&&Number.isSafeInteger(p.seed)&&typeof p.weakOnly==='boolean'&&typeof p.completed==='boolean'&&Number.isSafeInteger(p.updatedAt)&&(p.reviewOnly===undefined||typeof p.reviewOnly==='boolean')&&(p.reviewSession===undefined||validReviewSession(p.reviewSession))).slice(-3);
  return {ratings:ratings(value.ratings),positions:positions(value.positions),pendingRatings:ratings(value.pendingRatings),pendingPositions:positions(value.pendingPositions)};
  }catch{return empty();}
 }
@@ -60,17 +60,22 @@ export function useLearningProgress(deckId:string,demo=false){
  const data=snapshot.key===key?snapshot.data:empty(),ready=snapshot.key===key&&snapshot.ready;
  useEffect(()=>{if(!ready||!uid)return;const timer=setTimeout(()=>void flush(),500);return()=>clearTimeout(timer);},[data,ready,uid,flush]);
  const rate=useCallback((wordId:string,state:Recall)=>change(old=>{
-  wordId=baseWordId(wordId);const previous=old.ratings.find(r=>r.wordId===wordId);const item={wordId,state,updatedAt:Math.max(Date.now(),(previous?.updatedAt??0)+1)};
+  wordId=baseWordId(wordId);const previous=old.ratings.find(r=>r.wordId===wordId);const now=Date.now(),review=scheduleRecall(previous,state,now);const item:RecallRecord={wordId,state,updatedAt:Math.max(now,(previous?.updatedAt??0)+1),...(review?{review}:{})};
+  return {...old,ratings:[...old.ratings.filter(r=>r.wordId!==wordId),item],pendingRatings:[...old.pendingRatings.filter(r=>r.wordId!==wordId),item]};
+ }),[change]);
+ const restoreRating=useCallback((wordId:string,record:RecallRecord|undefined)=>change(old=>{
+  wordId=baseWordId(wordId);const previous=old.ratings.find(r=>r.wordId===wordId);
+  const item:RecallRecord={wordId,state:record?.state??'unseen',...(record?.review?{review:record.review}:{}),updatedAt:Math.max(Date.now(),(previous?.updatedAt??0)+1)};
   return {...old,ratings:[...old.ratings.filter(r=>r.wordId!==wordId),item],pendingRatings:[...old.pendingRatings.filter(r=>r.wordId!==wordId),item]};
  }),[change]);
  const savePosition=useCallback((position:Omit<LearningPosition,'updatedAt'>)=>change(old=>{
   const previous=old.positions.find(p=>p.mode===position.mode);
-  if(previous&&Object.entries(position).every(([key,value])=>previous[key as keyof LearningPosition]===value))return old;
+  if(previous&&[...new Set([...Object.keys(previous),...Object.keys(position)])].filter(key=>key!=='updatedAt').every(key=>JSON.stringify(previous[key as keyof LearningPosition])===JSON.stringify(position[key as keyof typeof position])))return old;
   const item={...position,updatedAt:Math.max(Date.now(),(previous?.updatedAt??0)+1)};
   return {...old,positions:[...old.positions.filter(p=>p.mode!==position.mode),item],pendingPositions:[...old.pendingPositions.filter(p=>p.mode!==position.mode),item]};
  }),[change]);
  const ratings=new Map(data.ratings.map(r=>[r.wordId,r.state]));
  const position=(mode:LearningMode)=>data.positions.find(p=>p.mode===mode);
- return {scope:key,ready,ratings,position,rate,savePosition,error,syncing,cloud:!!uid,pending:data.pendingRatings.length+data.pendingPositions.length,retry:flush};
+ return {scope:key,ready,ratings,records:new Map(data.ratings.map(r=>[r.wordId,r])),position,rate,restoreRating,savePosition,error,syncing,cloud:!!uid,pending:data.pendingRatings.length+data.pendingPositions.length,retry:flush};
 }
 export type LearningProgress=ReturnType<typeof useLearningProgress>;

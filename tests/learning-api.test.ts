@@ -52,3 +52,15 @@ it('enforces the 15,000-rating cap atomically and still lets existing ratings ch
  const other='azuki-cefrj-a1-2-v1';expect((await call(other,'POST',{ratings:[{...rating(),wordId:other+'-0'}],positions:[]})).status).toBe(409);
  expect((db.prepare('SELECT count(*) n FROM learning_ratings WHERE user_id=?').get('alice') as any).n).toBe(15000);
 });
+it('syncs review schedules and bounded resume queues, whitelisting nested fields',async()=>{
+ const now=Date.now(),review={step:0,dueAt:now+86400000},reviewSession={pending:[{wordId:id+'-1',remaining:2,extra:'discard'}],activeId:wordId,cursorId:id+'-2',cursorOrdinal:2,extra:'discard'};
+ expect((await call(id,'POST',{ratings:[{...rating('known',now),review}],positions:[position({reviewOnly:true,reviewSession})]})).status).toBe(200);
+ const data=await (await call(id)).json() as any;expect(data.ratings[0].review).toEqual(review);expect(data.positions[0].reviewSession).toEqual({pending:[{wordId:id+'-1',remaining:2}],activeId:wordId,cursorId:id+'-2',cursorOrdinal:2});
+ await call(id,'POST',{ratings:[rating('unseen',now+1)],positions:[]});expect((await (await call(id)).json() as any).ratings[0].review).toBeUndefined();
+});
+it('rejects fabricated review IDs, unbounded queues and invalid review intervals',async()=>{
+ const now=Date.now();
+ for(const review of [{step:99,dueAt:now},{step:0,dueAt:now+100*86400000},{step:0,dueAt:-1}])expect((await call(id,'POST',{ratings:[{...rating('known'),review}],positions:[]})).status).toBe(400);
+ const session={pending:[{wordId:'foreign',remaining:1}],activeId:'',cursorId:wordId,cursorOrdinal:0};
+ for(const reviewSession of [session,{...session,pending:Array(9).fill({wordId,remaining:1})},{...session,pending:[{wordId,remaining:4}]}])expect((await call(id,'POST',{ratings:[],positions:[position({reviewSession})]})).status).toBe(400);
+});
