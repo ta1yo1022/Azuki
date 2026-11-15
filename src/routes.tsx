@@ -1,3 +1,4 @@
+import {ReviewSettingsPage} from './components/ReviewSettingsPage';
 import {useI18n,InterfaceLanguage} from './lib/i18n';
 import { PlansPage } from './components/PlansPage';
 import { EmailDesignPreview } from './components/EmailComposer';
@@ -51,6 +52,7 @@ export function AzukiRoutes() {
         {import.meta.env.DEV && <Route path="/dev/email-preview" element={<EmailDesignPreview />} />}
         <Route path="/admin/emails" element={<AdminEmails />} />
         <Route path="/admin/reports" element={<AdminReports />} />
+        <Route path="/settings/review" element={<ReviewSettingsPage/>}/>
         <Route path="/plans" element={<PlansPage />} />
         <Route path="/privacy" element={<LegalPage kind="privacy" />} />
         <Route path="/commerce" element={<LegalPage kind="commerce" />} />

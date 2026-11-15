@@ -1,3 +1,4 @@
+import {readStudyPreferences} from '../src/lib/studyPreferences';
 // @vitest-environment happy-dom
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
 import { act } from "react";
@@ -22,6 +23,9 @@ async function choose(label: string, value: string) {
   });
   await click('設定を保存');
   await mount();
+}
+async function target(value:'all'|'weak'|'due'){
+ await act(async()=>{const select=(container.querySelector('select[aria-label="学習対象"]') as unknown as HTMLSelectElement)!;select.value=value;select.dispatchEvent(new Event('change',{bubbles:true}));});
 }
 const face = () => container.querySelector('.study-card-face[aria-hidden="false"]')?.textContent ?? '';
 beforeEach(() => {
@@ -102,17 +106,17 @@ it('shows setup before fetching, remembers skipped setup, and can restore it fro
   expect(reader.words).not.toHaveBeenCalled();
   expect(container.querySelector('.study-card')).toBeNull();
   await act(async()=>{
-    const order=container.querySelector('select')!;
+    const order=(container.querySelector('select[aria-label="出題順"]') as unknown as HTMLSelectElement)!;
     order.value='shuffle';order.dispatchEvent(new Event('change',{bubbles:true}));
   });
   await act(async()=>container.querySelector<HTMLInputElement>('.study-skip-setup input')!.click());
   await click('学習をはじめる');
-  expect(container.querySelectorAll('select')).toHaveLength(0);
+  expect(container.querySelector('.study-setup select')).toBeNull();
   await act(async()=>root.unmount());root=createRoot(container);
   await mount(false);
   expect(container.querySelector('.study-setup')).toBeNull();
   expect(container.querySelector('.study-card')).not.toBeNull();
-  expect(button('設定')).toBeUndefined();
+  expect([...container.querySelectorAll('button')].find(b=>b.textContent?.trim()==='設定')).toBeUndefined();
   await act(async () => root.render(<MemoryRouter><SettingsPage onClose={() => {}} /></MemoryRouter>));
   expect((container.querySelector('select[aria-label="出題順"]') as unknown as HTMLSelectElement)?.value).toBe('shuffle');
   await act(async()=>container.querySelector<HTMLInputElement>('.study-skip-setup input')!.click());
@@ -127,7 +131,7 @@ it('tolerates unavailable storage and reports failure on the settings page', asy
   await click('学習をはじめる');
   expect(container.textContent).toContain('今回の学習には適用');
   expect(face()).toContain('日本語-0');
-  expect(button('設定')).toBeUndefined();
+  expect([...container.querySelectorAll('button')].find(b=>b.textContent?.trim()==='設定')).toBeUndefined();
   await act(async () => root.render(<MemoryRouter><SettingsPage onClose={() => {}} /></MemoryRouter>));
   await click('設定を保存');
   expect(container.querySelector('[role="alert"]')?.textContent).toContain('設定を保存できませんでした');
@@ -199,7 +203,7 @@ it('rates only after revealing, advances immediately, and keeps weak review stab
  await mount();expect(button('まだ苦手')).toBeUndefined();
  await rate('まだ苦手');expect(face()).toContain('日本語-1');expect(container.querySelector('.recall-feedback')?.textContent).toContain('「english-0」を苦手として記録しました');
  await rate('覚えた');await rate('まだ苦手');
- await act(async()=>container.querySelector<HTMLInputElement>('.study-review-tools input')!.click());
+ await target('weak');
  expect(face()).toContain('日本語-0');expect(container.querySelector('.study-progress-label')?.textContent).toContain('/ 2');
  await rate('覚えた');expect(face()).toContain('日本語-2');
  await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-2');
@@ -245,7 +249,7 @@ it('revisits a missed card after three other cards, preserves the normal cursor,
  await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-0');expect(container.querySelector('.review-active-label')).not.toBeNull();
  await rate('覚えた');expect(face()).toContain('日本語-4');
  await click('取り消す');expect(face()).toContain('english-0');expect(container.querySelector('.recall-state-weak')).not.toBeNull();
- await click('覚えた');expect(face()).toContain('日本語-4');expect(container.querySelector('.study-review-due')?.textContent).toContain('復習待ち：0語');
+ await click('覚えた');expect(face()).toContain('日本語-4');expect(container.querySelector('.study-review-pending')?.textContent).toContain('復習待ち：0語');
 });
 it('offers a bounded stopping point for remaining misses and increases intervals only when a review is due',async()=>{
  reader.words.mockResolvedValue({words:words.slice(0,1),nextCursor:null});
@@ -254,7 +258,7 @@ it('offers a bounded stopping point for remaining misses and increases intervals
  await click('復習を続ける');expect(face()).toContain('日本語-0');await rate('覚えた');expect(container.querySelector('.study-complete')).not.toBeNull();
  const key='azuki.learning.v1.anonymous.book';const first=JSON.parse(localStorage.getItem(key)!).ratings[0];expect(first.review.step).toBe(0);
  vi.spyOn(Date,'now').mockReturnValue(first.review.dueAt+1);
- await act(async()=>container.querySelector<HTMLInputElement>('.study-review-due input')!.click());expect(face()).toContain('日本語-0');
+ await target('due');expect(face()).toContain('日本語-0');
  await rate('覚えた');const later=JSON.parse(localStorage.getItem(key)!).ratings[0];expect(later.review.step).toBe(1);expect(later.review.dueAt).toBe(first.review.dueAt+1+3*86400000);
  await click('取り消す');expect(JSON.parse(localStorage.getItem(key)!).ratings[0].review).toEqual(first.review);
 });
@@ -269,7 +273,101 @@ it('retains a delayed revisit across the lazy page boundary without skipping the
 });
 it('does not schedule skipped words and shows an empty due filter before their first assessment',async()=>{
  await mount();await click('次の単語');
- await act(async()=>container.querySelector<HTMLInputElement>('.study-review-due input')!.click());
+ await target('due');
  expect(container.textContent).toContain('今の復習はありません');expect(container.querySelector('.study-card')).toBeNull();
  await click('すべての単語で学習');expect(face()).toContain('日本語-0');
+});
+async function toggleReviewOption(index:number){
+ const fromStudy=!!container.querySelector('.study-review-settings-link');
+ if(fromStudy)await act(async()=>root.render(<MemoryRouter><SettingsPage reviewOnly onClose={()=>{}}/></MemoryRouter>));
+ await act(async()=>container.querySelector<HTMLInputElement>(`input[name="${index===0?'repeatMissed':'useReviewSchedule'}"]`)!.click());
+ if(fromStudy){await click('設定を保存');await mount();}
+}
+async function toggleRepeat(){await toggleReviewOption(0);}
+async function toggleReviewSchedule(){await toggleReviewOption(1);}
+it('turns immediate repeats off during study, preserves recall, and queues only new misses after turning back on',async()=>{
+ reader.words.mockResolvedValue({words:words.slice(0,9),nextCursor:null});
+ await mount();await rate('まだ苦手');await toggleRepeat();
+ expect(JSON.parse(localStorage.getItem('azuki.study-preferences.v1')!).repeatMissed).toBe(false);
+ for(let i=0;i<3;i++)await click('次の単語');expect(face()).toContain('日本語-4');expect(container.querySelector('.review-active-label')).toBeNull();
+ const first=JSON.parse(localStorage.getItem('azuki.learning.v1.anonymous.book')!).ratings[0];expect(first.state).toBe('weak');expect(first.review.step).toBe(-1);
+ await toggleRepeat();await rate('まだ苦手');for(let i=0;i<3;i++)await click('次の単語');expect(face()).toContain('日本語-4');expect(container.querySelector('.review-active-label')).not.toBeNull();
+});
+it('discards saved immediate-repeat queues when disabled in preferences before reopening',async()=>{
+ await mount();await rate('まだ苦手');await act(async()=>root.unmount());root=createRoot(container);
+ localStorage.setItem('azuki.study-preferences.v1',JSON.stringify({order:'ordered',direction:'ja-en',skipSetup:true,repeatMissed:false}));
+ await mount();expect(face()).toContain('日本語-1');expect(readStudyPreferences().repeatMissed).toBe(false);
+ for(let i=0;i<3;i++)await click('次の単語');expect(face()).toContain('日本語-4');expect(container.querySelector('.review-active-label')).toBeNull();
+ expect(JSON.parse(localStorage.getItem('azuki.learning.v1.anonymous.book')!).ratings[0].state).toBe('weak');
+});
+it('keeps the current revisit visible when disabled, then returns to the next normal card',async()=>{
+ await mount();await rate('まだ苦手');for(let i=0;i<3;i++)await click('次の単語');expect(face()).toContain('日本語-0');
+ await toggleRepeat();expect(face()).toContain('日本語-0');await rate('覚えた');expect(face()).toContain('日本語-4');
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(readStudyPreferences().repeatMissed).toBe(false);
+});
+it('saves repeat preferences from both setup and the settings page for word and example cards',async()=>{
+ await mount(false);await toggleRepeat();await click('学習をはじめる');expect(readStudyPreferences().repeatMissed).toBe(false);
+ expect(JSON.parse(localStorage.getItem('azuki.study-preferences.v1')!).repeatMissed).toBe(false);
+ await act(async()=>root.render(<MemoryRouter><SettingsPage onClose={()=>{}}/></MemoryRouter>));await toggleRepeat();await click('設定を保存');
+ await mount();expect(readStudyPreferences().repeatMissed).toBe(true);
+ const exampleReader={words:async()=>({words:[{...words[0],examples:[{text:'Example.',translation:'例文。'}]}],nextCursor:null})};
+ await act(async()=>root.render(<StudyPage key="examples-repeat" mode="examples" deck={deck} reader={exampleReader} onClose={()=>{}}/>));
+ await toggleRepeat();await click('学習をはじめる');expect(JSON.parse(localStorage.getItem('azuki.study-preferences.v1')!).repeatMissed).toBe(false);
+ await rate('まだ苦手');expect(button('復習を続ける')).toBeUndefined();
+});
+
+it('allows immediate repetition with scheduled reviews disabled and does not create review dates',async()=>{
+ reader.words.mockResolvedValue({words:words.slice(0,6),nextCursor:null});
+ await mount();await toggleReviewSchedule();expect(container.querySelector<HTMLOptionElement>('select[aria-label="学習対象"] option[value="due"]')!.disabled).toBe(true);
+ await rate('まだ苦手');for(let i=0;i<3;i++)await click('次の単語');expect(face()).toContain('日本語-0');expect(container.querySelector('.review-active-label')).not.toBeNull();
+ await rate('覚えた');const record=JSON.parse(localStorage.getItem('azuki.learning.v1.anonymous.book')!).ratings[0];expect(record.state).toBe('known');expect(record.review).toBeUndefined();
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(readStudyPreferences().repeatMissed).toBe(true);expect(readStudyPreferences().useReviewSchedule).toBe(false);
+});
+it('pauses existing schedules without deleting them and allows independent settings from setup and settings',async()=>{
+ await mount();await rate('覚えた');const key='azuki.learning.v1.anonymous.book';const original=JSON.parse(localStorage.getItem(key)!).ratings[0].review;
+ await toggleReviewSchedule();await click('前の単語');expect(container.querySelector('.recall-next-review')).toBeNull();expect(JSON.parse(localStorage.getItem(key)!).ratings[0].review).toEqual(original);
+ await toggleReviewSchedule();expect(container.querySelector('.recall-next-review')).not.toBeNull();
+ await act(async()=>root.render(<MemoryRouter><SettingsPage onClose={()=>{}}/></MemoryRouter>));await toggleReviewSchedule();await toggleRepeat();await click('設定を保存');
+ await mount();expect(readStudyPreferences().repeatMissed).toBe(false);expect(readStudyPreferences().useReviewSchedule).toBe(false);
+ await act(async()=>root.unmount());root=createRoot(container);
+ localStorage.setItem('azuki.study-preferences.v1',JSON.stringify({order:'ordered',direction:'ja-en',skipSetup:false,repeatMissed:false,useReviewSchedule:false}));
+ await mount(false);await toggleReviewSchedule();await click('学習をはじめる');expect(readStudyPreferences().repeatMissed).toBe(false);expect(readStudyPreferences().useReviewSchedule).toBe(true);
+ expect(JSON.parse(localStorage.getItem('azuki.study-preferences.v1')!).useReviewSchedule).toBe(true);
+});
+it('leaves the due-only filter when scheduled reviews are turned off',async()=>{
+ await mount();await rate('まだ苦手');await target('due');expect(face()).toContain('日本語-0');
+ await toggleReviewSchedule();expect((container.querySelector('select[aria-label="学習対象"]') as unknown as HTMLSelectElement)!.value).toBe('all');expect(container.querySelector<HTMLOptionElement>('select[aria-label="学習対象"] option[value="due"]')!.disabled).toBe(true);expect(container.querySelector('.study-card')).not.toBeNull();
+});
+
+it('honours the requested study target instead of resuming a different saved filter',async()=>{
+ await mount();await rate('まだ苦手');await click('次の単語');await rate('まだ苦手');
+ await act(async()=>root.render(<StudyPage key="weak-entry" studyFilter="weak" deck={deck} reader={reader} onClose={()=>{}}/>));await click('学習をはじめる');
+ expect(face()).toContain('日本語-0');expect(container.querySelector('progress')?.max).toBe(2);
+ expect((container.querySelector('[aria-label="学習対象"]') as unknown as HTMLSelectElement)?.value).toBe('weak');
+ await rate('覚えた');expect(face()).toContain('日本語-2');
+ await act(async()=>root.render(<StudyPage key="all-entry" studyFilter="all" deck={deck} reader={reader} onClose={()=>{}}/>));await click('学習をはじめる');
+ expect(face()).toContain('日本語-0');expect(container.querySelector('progress')?.max).toBe(53);
+ expect((container.querySelector('[aria-label="学習対象"]') as unknown as HTMLSelectElement)?.value).toBe('all');
+ expect(container.querySelector('.study-review-tools input')).toBeNull();expect(container.querySelector('.study-review-due input')).toBeNull();
+});
+it('hides recall controls while preserving answer reveal, saved ratings and automatic position',async()=>{
+ await mount();await rate('まだ苦手');
+ const key='azuki.learning.v1.anonymous.book',before=JSON.parse(localStorage.getItem(key)!).ratings[0];
+ await act(async()=>root.render(<MemoryRouter><SettingsPage reviewOnly onClose={()=>{}}/></MemoryRouter>));
+ await act(async()=>container.querySelector<HTMLInputElement>('input[name="showRecall"]')!.click());
+ expect(container.querySelector<HTMLInputElement>('input[name="repeatMissed"]')!.disabled).toBe(true);
+ await click('設定を保存');await mount();expect(face()).toContain('日本語-1');
+ await click('答えを見る');expect(face()).toContain('english-1');expect(container.querySelector('.recall-choice')).toBeNull();expect(container.querySelector('.recall-current')).toBeNull();
+ for(let i=0;i<3;i++)await click('次の単語');expect(face()).toContain('日本語-4');expect(container.querySelector('.review-active-label')).toBeNull();
+ expect(JSON.parse(localStorage.getItem(key)!).ratings[0]).toEqual(before);
+ await act(async()=>root.unmount());root=createRoot(container);await mount();expect(face()).toContain('日本語-4');expect(readStudyPreferences().showRecall).toBe(false);
+ await act(async()=>root.render(<MemoryRouter><SettingsPage reviewOnly onClose={()=>{}}/></MemoryRouter>));
+ await act(async()=>container.querySelector<HTMLInputElement>('input[name="showRecall"]')!.click());expect(container.querySelector<HTMLInputElement>('input[name="repeatMissed"]')!.disabled).toBe(false);
+ await click('設定を保存');await mount();await click('答えを見る');expect(container.querySelectorAll('.recall-choice')).toHaveLength(2);expect(readStudyPreferences().repeatMissed).toBe(true);
+});
+it('saves recall visibility from example-card setup and keeps translated-card navigation usable',async()=>{
+ const examples={words:async()=>({words:[{...words[0],examples:[{text:'First sentence.',translation:'最初の文。'},{text:'Second sentence.',translation:'次の文。'}]}],nextCursor:null})};
+ await act(async()=>root.render(<StudyPage mode="examples" deck={deck} reader={examples} onClose={()=>{}}/>));
+ await act(async()=>container.querySelector<HTMLInputElement>('input[name="showRecall"]')!.click());await click('学習をはじめる');
+ expect(readStudyPreferences().showRecall).toBe(false);await click('答えを見る');expect(face()).toContain('最初の文。');expect(container.querySelector('.recall-choice')).toBeNull();await click('次の例文');expect(face()).toContain('Second sentence.');
 });

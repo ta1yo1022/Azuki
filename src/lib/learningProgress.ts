@@ -1,3 +1,4 @@
+import {readStudyPreferences} from './studyPreferences';
 import {useCallback,useEffect,useRef,useState} from 'react';
 import {onAuthStateChanged} from 'firebase/auth';
 import {auth} from './firebase';
@@ -59,8 +60,8 @@ export function useLearningProgress(deckId:string,demo=false){
  },[key,uid,deckId,change,flush]);
  const data=snapshot.key===key?snapshot.data:empty(),ready=snapshot.key===key&&snapshot.ready;
  useEffect(()=>{if(!ready||!uid)return;const timer=setTimeout(()=>void flush(),500);return()=>clearTimeout(timer);},[data,ready,uid,flush]);
- const rate=useCallback((wordId:string,state:Recall)=>change(old=>{
-  wordId=baseWordId(wordId);const previous=old.ratings.find(r=>r.wordId===wordId);const now=Date.now(),review=scheduleRecall(previous,state,now);const item:RecallRecord={wordId,state,updatedAt:Math.max(now,(previous?.updatedAt??0)+1),...(review?{review}:{})};
+ const rate=useCallback((wordId:string,state:Recall,useSchedule=readStudyPreferences().useReviewSchedule)=>change(old=>{
+  wordId=baseWordId(wordId);const previous=old.ratings.find(r=>r.wordId===wordId);const now=Date.now(),review=useSchedule?scheduleRecall(previous,state,now):previous?.state===state?previous.review:undefined;const item:RecallRecord={wordId,state,updatedAt:Math.max(now,(previous?.updatedAt??0)+1),...(review?{review}:{})};
   return {...old,ratings:[...old.ratings.filter(r=>r.wordId!==wordId),item],pendingRatings:[...old.pendingRatings.filter(r=>r.wordId!==wordId),item]};
  }),[change]);
  const restoreRating=useCallback((wordId:string,record:RecallRecord|undefined)=>change(old=>{

@@ -139,7 +139,7 @@ describe("URL navigation", () => {
       await mount(path);
       await click("学習する");
       await click("例文カードで学習");
-      expect(currentURL).toBe(`${path}/study?mode=examples`);
+      expect(currentURL).toBe(`${path}/study?mode=examples&filter=all`);
       expect(container.textContent).toContain("訳のある例文が対象です。");
       expect((container.querySelector('[aria-label="カードの向き"]') as unknown as {value:string})?.value).toBe("en-ja");
     }
@@ -152,7 +152,7 @@ describe("URL navigation", () => {
     expect(container.querySelector<HTMLInputElement>('[aria-label="単語・意味を検索"]')?.value).toBe("curious");
     await click("学習する");
     await click("カードで学習");
-    expect(currentURL).toBe("/library/decks/saved-deck/study?q=curious&mode=words");
+    expect(currentURL).toBe("/library/decks/saved-deck/study?q=curious&mode=words&filter=all");
     expect(container.querySelector(".study-page")).toBeTruthy();
     expect(container.querySelector(".sidebar")).toBeNull();
     await move(-1);
@@ -374,4 +374,32 @@ it('filters public and owned books by language and restores the filter from the 
  await move('/explore?language=en');expect(container.querySelector('.standard-library')).toBeTruthy();
  await move('/library?language=zh');expect(container.querySelector('a.deck-card')).toBeNull();
  await move('/library?language=en');expect(container.querySelector('a.deck-card')).toBeTruthy();
+});
+it('opens review settings on a separate page and returns to public study without setup',async()=>{
+ localStorage.setItem('azuki.study-preferences.v1',JSON.stringify({order:'ordered',direction:'ja-en',skipSetup:false,repeatMissed:true,useReviewSchedule:true}));
+ await mount('/shared/demo-deck/study?q=keep');await settle(280);await click('学習をはじめる');
+ expect(container.querySelector('.study-review-settings')).toBeNull();expect(container.querySelector('.study-repeat-toggle')).toBeNull();
+ await click('復習の設定');expect(currentURL).toContain('/settings/review?returnTo=');expect(container.querySelector('h1')?.textContent).toBe('復習の設定');
+ await act(async()=>container.querySelector<HTMLInputElement>('input[name="repeatMissed"]')!.click());
+ await click('設定を保存');await settle(280);expect(currentURL).toBe('/shared/demo-deck/study?q=keep');expect(container.querySelector('.study-setup')).toBeNull();expect(container.querySelector('.study-card')).not.toBeNull();
+ expect(JSON.parse(localStorage.getItem('azuki.study-preferences.v1')!).repeatMissed).toBe(false);
+});
+it('does not navigate to external or non-study destinations from review settings',async()=>{
+ await mount('/settings/review?returnTo=https%3A%2F%2Fevil.example');await click('学習に戻る');expect(currentURL).toBe('/library');
+ await move('/settings/review?returnTo=%2F%2Fevil.example%2Fstudy');await click('学習に戻る');expect(currentURL).toBe('/library');
+});
+
+it('places weak-only review below flashcards for personal and public decks and opens that target',async()=>{
+ mocks.user={uid:'weak-entry-user',displayName:'Test',providerData:[]};localStorage.setItem('azuki.tutorial.v1.weak-entry-user','done');
+ localStorage.setItem('azuki.study-preferences.v1',JSON.stringify({order:'ordered',direction:'ja-en',skipSetup:true}));
+ await mount('/library');
+ for(const path of ['/library/decks/saved-deck','/shared/demo-deck']){
+  await move(path);await settle(280);await click('学習する');
+  const labels=[...container.querySelectorAll('.deck-action-options strong')].map(el=>el.textContent);
+  expect(labels.slice(0,3)).toEqual(['カードで学習','苦手な単語だけで復習','例文カードで学習']);
+  await click('苦手な単語だけで復習');expect(currentURL).toBe(path+'/study?mode=words&filter=weak');await settle(280);
+  expect((container.querySelector('[aria-label="学習対象"]') as unknown as HTMLSelectElement)?.value).toBe('weak');
+  await move(path);await settle(280);await click('学習する');await click('カードで学習');await settle(280);
+  expect(currentURL).toBe(path+'/study?mode=words&filter=all');expect((container.querySelector('[aria-label="学習対象"]') as unknown as HTMLSelectElement)?.value).toBe('all');
+ }
 });

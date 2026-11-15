@@ -1,3 +1,4 @@
+import {ReviewSettings} from './ReviewSettings';
 import {useI18n,messageText} from '../lib/i18n';
 import {SiteLanguageSelect} from './SiteLanguageSelect';
 import { EmailPreferences } from './EmailPreferences';
@@ -9,12 +10,26 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { readStudyPreferences, saveStudyPreferences } from "../lib/studyPreferences";
 
-export function SettingsPage({ onClose, onTutorial, demo = false }: { demo?: boolean; onClose: () => void; onTutorial?: () => void }) {
+export function SettingsPage({ onClose, onTutorial, onSaved,reviewOnly=false,demo = false }: { demo?: boolean; onClose: () => void; onTutorial?: () => void;onSaved?:()=>void;reviewOnly?:boolean }) {
  const t=useI18n();
   const [draft, setDraft] = useState(readStudyPreferences);
   const [message, setMessage] = useState("");
   const [failed, setFailed] = useState(false);
   useEffect(() => { document.title = t("設定 — Azuki"); }, [t]);
+  function save(){
+    const saved=saveStudyPreferences(draft);setFailed(!saved);
+    setMessage(saved?messageText('設定を保存しました。'):messageText('設定を保存できませんでした。ブラウザの保存設定を確認してください。'));
+    if(saved)onSaved?.();
+  }
+  if(reviewOnly)return <div className="study-page settings-page">
+    <header className="study-header"><button className="text-button study-back" onClick={onClose}><ArrowLeft size={20}/>{t('学習に戻る')}</button><h1>{t('復習の設定')}</h1></header>
+    <main className="study-content"><section className="study-setup" aria-label={t('復習の設定')}>
+      <ReviewSettings value={draft} onChange={value=>setDraft({...draft,...value})}/>
+      <p className="study-setup-note">{t('設定はこのブラウザに保存されます。')}</p>
+      <button className="button primary" onClick={save}>{t('設定を保存')}</button>
+      {message&&<p role={failed?'alert':'status'}>{t(message)}</p>}
+    </section></main>
+  </div>;
   return <div className="study-page settings-page">
     <header className="study-header">
       <button className="text-button study-back" onClick={onClose}><ArrowLeft size={20} />{t("ライブラリに戻る")}</button>
@@ -35,13 +50,10 @@ export function SettingsPage({ onClose, onTutorial, demo = false }: { demo?: boo
           </select></label>
         <label>{t("例文カードの向き")}<select aria-label={t("例文カードの向き")} value={draft.exampleDirection ?? "en-ja"} onChange={e => setDraft({...draft, exampleDirection:e.target.value as "ja-en" | "en-ja"})}><option value="en-ja">{t("英語 → 日本語")}</option><option value="ja-en">{t("日本語 → 英語")}</option></select></label>
         </div>
+        <h3 className="review-settings-title">{t('復習の設定')}</h3><ReviewSettings value={draft} onChange={value=>setDraft({...draft,...value})}/>
         <label className="study-skip-setup"><input type="checkbox" checked={draft.skipSetup} onChange={e => setDraft({...draft, skipSetup:e.target.checked})} />{t("学習開始前の設定画面を表示しない")}</label>
         <p className="study-setup-note">{t("チェックを外すと、学習開始前に設定を選べます。設定はこのブラウザに保存されます。")}</p>
-        <button className="button primary" onClick={() => {
-          const saved = saveStudyPreferences(draft);
-          setFailed(!saved);
-          setMessage(saved ? messageText("設定を保存しました。") : messageText("設定を保存できませんでした。ブラウザの保存設定を確認してください。"));
-        }}>{t("設定を保存")}</button>
+        <button className="button primary" onClick={save}>{t("設定を保存")}</button>
         {message && <p role={failed ? "alert" : "status"}>{t(message)}</p>}
       </section>
       {onTutorial && <section className="study-setup" aria-labelledby="tutorial-settings-title"><h2 id="tutorial-settings-title">{t("Azukiの使い方")}</h2><p>{t("画面の案内を見ながら、単語帳の追加や学習の始め方を確認できます。")}</p><button className="button secondary" onClick={onTutorial}>{t("チュートリアルを見る")}</button></section>}

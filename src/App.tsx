@@ -1,3 +1,5 @@
+import {studyFilterFromSearch} from './lib/studyFilter';
+import {studySettingsUrl} from './components/ReviewSettingsPage';
 import {languageName} from './lib/i18n';
 import {useI18n,messageText,locale} from './lib/i18n';
 import {LANGUAGES} from '../shared/languages';
@@ -351,11 +353,15 @@ export default function App({ demo = false }: { demo?: boolean }) {
   if (studying && selected) {
     return (
       <StudyPage
-        key={`${selected.id}-${new URLSearchParams(location.search).get("mode")}`}
+        key={`${selected.id}-${new URLSearchParams(location.search).get("mode")}-${studyFilterFromSearch(location.search)}`}
         demo={demo}
         mode={new URLSearchParams(location.search).get("mode") === "examples" ? "examples" : "words"}
         deck={selected}
         reader={repository}
+        studyFilter={studyFilterFromSearch(location.search)}
+        onFilterChange={filter=>{const params=new URLSearchParams(location.search);params.set("filter",filter);navigate(location.pathname+"?"+params.toString(),{state:{resumeStudy:true}});}}
+        onOpenSettings={()=>navigate(studySettingsUrl(location.pathname+location.search))}
+        resumeFromSettings={location.state?.resumeStudy===true}
         onClose={() => navigate(detailPath + location.search)}
       />
     );
@@ -688,8 +694,9 @@ export default function App({ demo = false }: { demo?: boolean }) {
 
                 <div className="owner-deck-actions">
                   <ActionMenu label={t("学習する")} primary items={[
-                    {label:t("カードで学習"),description:t("単語を1つずつ覚える"),onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'words'})}`)},
-                    {label:t("例文カードで学習"),description:t("例文と訳で練習する"),onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples'})}`)},
+                    {label:t("カードで学習"),description:t("単語を1つずつ覚える"),onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'words',filter:'all'})}`)},
+                    {label:t("苦手な単語だけで復習"),description:t("「まだ苦手」にした単語を集めて練習"),onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'words',filter:'weak'})}`)},
+                    {label:t("例文カードで学習"),description:t("例文と訳で練習する"),onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples',filter:'all'})}`)},
                     {label:t("単語帳で学習"),description:t("本をめくるように、まとめて読む"),onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
                   ]}/>
                   <button className="button secondary" onClick={()=>navigate(`${detailPath}/share${location.search}`)}><Share2 size={17}/>{t("共有")}</button>

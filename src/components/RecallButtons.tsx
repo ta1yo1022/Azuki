@@ -1,9 +1,10 @@
+import {readStudyPreferences} from '../lib/studyPreferences';
 import {Check,Circle,RotateCcw,RotateCw} from 'lucide-react';
 import {useI18n,locale} from '../lib/i18n';
 import {baseWordId} from '../../shared/learning';
 import type {LearningProgress} from '../lib/learningProgress';
-export function RecallButtons({wordId,progress,answerVisible=true,onReveal,onEvaluate,onClear}:{
- wordId:string;progress:LearningProgress;answerVisible?:boolean;onReveal?:()=>void;
+export function RecallButtons({wordId,progress,answerVisible=true,showRecall=readStudyPreferences().showRecall,useReviewSchedule=readStudyPreferences().useReviewSchedule,onReveal,onEvaluate,onClear}:{
+ wordId:string;progress:LearningProgress;answerVisible?:boolean;showRecall?:boolean;useReviewSchedule?:boolean;onReveal?:()=>void;
  onEvaluate?:(state:'known'|'weak')=>void;onClear?:()=>void;
 }){
  const t=useI18n(),state=progress.ratings.get(baseWordId(wordId))??'unseen';
@@ -12,10 +13,11 @@ export function RecallButtons({wordId,progress,answerVisible=true,onReveal,onEva
   if(onEvaluate)onEvaluate(value);
   else if(state!==value)progress.rate(wordId,value);
  }
+ if(!showRecall)return !answerVisible&&onReveal?<div className="recall-control recall-control-session"><button type="button" className="button primary recall-reveal" disabled={!progress.ready} onClick={onReveal}>{t('答えを見る')}<RotateCw size={18}/></button></div>:null;
  return <section className={`recall-control${onEvaluate?' recall-control-session':''}`} aria-label={t('覚えたかどうかを記録')}>
   <div className="recall-current">
    <span className={`recall-state recall-state-${state}`}><span aria-hidden="true">{state==='known'?<Check size={15}/>:state==='weak'?<RotateCcw size={15}/>:<Circle size={13}/>}</span>{t(state==='known'?'覚えたとして記録済み':state==='weak'?'苦手として記録済み':'未評価')}</span>
-   {state==='known'&&progress.records.get(baseWordId(wordId))?.review&&<small className="recall-next-review">{t('次の復習：{0}',new Date(progress.records.get(baseWordId(wordId))!.review!.dueAt).toLocaleDateString(locale(),{month:'short',day:'numeric'}))}</small>}
+   {useReviewSchedule&&state==='known'&&progress.records.get(baseWordId(wordId))?.review&&<small className="recall-next-review">{t('次の復習：{0}',new Date(progress.records.get(baseWordId(wordId))!.review!.dueAt).toLocaleDateString(locale(),{month:'short',day:'numeric'}))}</small>}
    {state!=='unseen'&&<button type="button" className="text-button recall-clear" disabled={!progress.ready} onClick={event=>{event.stopPropagation();progress.rate(wordId,'unseen');onClear?.();}}>{t('記録を解除')}</button>}
   </div>
   <div className="recall-buttons" role="group" aria-label={t('覚えたかどうかを記録')}>

@@ -271,3 +271,10 @@ it('automatically resumes a saved book page but honors an explicitly requested p
  await act(async()=>root.unmount());root=createRoot(container);await render('/book');expect(container.querySelector('output')?.textContent).toContain('bookPage=7');expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-24');
  await act(async()=>root.unmount());root=createRoot(container);await render('/book?bookPage=2');expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-4');
 });
+it('hides recall buttons in book mode without hiding the words or disabling page navigation',async()=>{
+ localStorage.setItem('azuki.study-preferences.v1',JSON.stringify({showRecall:false}));
+ const reader={words:async(_id:string,_q:string,cursor:number)=>({words:words.slice(cursor,cursor+50),nextCursor:null})};
+ await act(async()=>root.render(<MemoryRouter initialEntries={['/book?bookPage=1']}><BookStudyPage deck={deck} reader={reader} onClose={()=>{}}/></MemoryRouter>));
+ expect(container.querySelectorAll('.book-entry')).toHaveLength(8);expect(container.querySelector('.recall-control')).toBeNull();
+ await act(async()=>button('次のページ').click());expect(container.querySelector('.book-entry-word h2')?.textContent).toBe('word-8');
+});

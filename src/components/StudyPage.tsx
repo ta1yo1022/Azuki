@@ -1,3 +1,5 @@
+import type {StudyFilter} from '../lib/studyFilter';
+import {ReviewSettings} from './ReviewSettings';
 import {useLearningProgress} from '../lib/learningProgress';
 import {RecallButtons,LearningSaveStatus} from './RecallButtons';
 import {baseWordId,shuffleLearning,type LearningPosition,type RecallRecord,type ReviewPending,advanceReview,isReviewDue} from '../../shared/learning';
@@ -32,8 +34,9 @@ export function StudyPage({
   reader,
   onClose,
   mode = "words",
-  demo = false,
+  demo = false,onOpenSettings,resumeFromSettings=false,studyFilter,onFilterChange,
 }: {
+  onOpenSettings?:()=>void;resumeFromSettings?:boolean;studyFilter?:StudyFilter;onFilterChange?:(filter:StudyFilter)=>void;
   mode?: "words" | "examples";
   demo?: boolean;
   deck: Deck;
@@ -43,8 +46,8 @@ export function StudyPage({
  const t=useI18n();
   const examplesMode = mode === "examples";
   const progress=useLearningProgress(deck.id,demo);
-  const [weakOnly,setWeakOnly]=useState(false);
-  const [reviewOnly,setReviewOnly]=useState(false);
+  const [weakOnly,setWeakOnly]=useState(studyFilter==='weak');
+  const [reviewOnly,setReviewOnly]=useState(studyFilter==='due'&&readStudyPreferences().useReviewSchedule);
   const [reviewState,setReviewState]=useState<{pending:ReviewPending[];activeId:string}>({pending:[],activeId:''});
   const [seed,setSeed]=useState(()=>Math.floor(Math.random()*4294967296));
   const [progressBoot,setProgressBoot]=useState(false);
@@ -52,6 +55,10 @@ export function StudyPage({
   const resume=useRef<LearningPosition|undefined>(undefined);
   const [resumed,setResumed]=useState(false);
   const [preferences] = useState(() => { const saved = readStudyPreferences(); return {...saved, direction: examplesMode ? saved.exampleDirection ?? "en-ja" as const : saved.direction}; });
+  const [useReviewSchedule,setUseReviewSchedule]=useState(preferences.useReviewSchedule);
+  const [showRecall,setShowRecall]=useState(preferences.showRecall);
+  const [repeatMissed,setRepeatMissed]=useState(preferences.repeatMissed);
+  const repeatMissedRef=useRef(repeatMissed);repeatMissedRef.current=repeatMissed&&showRecall;
   const [order, setOrder] = useState(preferences.order);
   const [direction, setDirection] = useState(preferences.direction);
   useEffect(()=>{
@@ -59,19 +66,25 @@ export function StudyPage({
     if(restoredScope.current===progress.scope)return;
     restoredScope.current=progress.scope;
     const saved=progress.position(mode);
-    if(saved&&saved.order===preferences.order){resume.current=saved;setWeakOnly(saved.weakOnly);setReviewOnly(saved.reviewOnly??false);setSeed(saved.seed);}
-    else {resume.current=undefined;setWeakOnly(false);setReviewOnly(false);setSeed(Math.floor(Math.random()*4294967296));}
+    const requested=studyFilter==='due'&&!preferences.useReviewSchedule?'all':studyFilter;
+    const savedFilter=saved?.weakOnly?'weak':saved?.reviewOnly?'due':'all';
+    // A menu choice overrides a saved filter; resume only within the same target.
+    if(saved&&saved.order===preferences.order&&(!requested||requested===savedFilter)){
+      resume.current=saved;setWeakOnly(saved.weakOnly);setReviewOnly(preferences.useReviewSchedule&&(saved.reviewOnly??false));setSeed(saved.seed);
+    }else {resume.current=undefined;setWeakOnly(requested==='weak');setReviewOnly(requested==='due');setSeed(Math.floor(Math.random()*4294967296));}
     setResumed(false);
     setProgressBoot(true);
   },[progress.ready,progress.scope,mode]);
-  const [started, setStarted] = useState(preferences.skipSetup);
-  const [settingsOpen, setSettingsOpen] = useState(!preferences.skipSetup);
+  const [started, setStarted] = useState(preferences.skipSetup||resumeFromSettings);
+  const [settingsOpen, setSettingsOpen] = useState(!preferences.skipSetup&&!resumeFromSettings);
   const [draft, setDraft] = useState(preferences);
   const [storageNote, setStorageNote] = useState("");
   const setupHeading = useRef<HTMLHeadingElement>(null);
   function applySettings() {
-    setStorageNote(saveStudyPreferences(examplesMode ? {...readStudyPreferences(), order:draft.order, skipSetup:draft.skipSetup, exampleDirection:draft.direction} : draft) ? "" : t("このブラウザに設定を保存できませんでした。今回の学習には適用しています。"));
+    setStorageNote(saveStudyPreferences(examplesMode ? {...readStudyPreferences(), order:draft.order, skipSetup:draft.skipSetup,repeatMissed:draft.repeatMissed,useReviewSchedule:draft.useReviewSchedule,showRecall:draft.showRecall, exampleDirection:draft.direction} : draft) ? "" : t("このブラウザに設定を保存できませんでした。今回の学習には適用しています。"));
     if(draft.order!==order){resume.current=undefined;setResumed(false);}
+    setShowRecall(draft.showRecall);setRepeatMissed(draft.repeatMissed);setUseReviewSchedule(draft.useReviewSchedule);
+    if(!draft.useReviewSchedule&&reviewOnly){resume.current=undefined;setReviewOnly(false);}
     setOrder(draft.order);
     setDirection(draft.direction);
     setRevealed(false);
@@ -162,7 +175,7 @@ export function StudyPage({
           if(session){
             const cursorIndex=session.cursorId?page.words.findIndex(item=>item.id===session.cursorId):page.words.findIndex(item=>item.ordinal===session.cursorOrdinal);
             setIndex(cursorIndex>=0?cursorIndex:page.words.length);
-            setReviewState({pending:session.pending.filter(p=>page.words.some(w=>w.id===p.wordId)&&progress.ratings.get(baseWordId(p.wordId))==='weak'),activeId:page.words.some(w=>w.id===session.activeId)?session.activeId:''});
+            setReviewState({pending:repeatMissedRef.current?session.pending.filter(p=>page.words.some(w=>w.id===p.wordId)&&progress.ratings.get(baseWordId(p.wordId))==='weak'):[],activeId:page.words.some(w=>w.id===session.activeId)?session.activeId:''});
           }else{setIndex(target>=0?target:0);setReviewState({pending:[],activeId:''});}
           setCompleted(!!saved?.completed&&target>=0);setResumed(target>=0);resume.current=undefined;
         }
@@ -206,7 +219,10 @@ export function StudyPage({
     progress.savePosition({mode,wordId:word.id,ordinal:word.ordinal,page:0,order,seed,weakOnly,reviewOnly,completed,...(reviewState.pending.length||reviewState.activeId?{reviewSession:{...reviewState,cursorId:words[index]?.id??'',cursorOrdinal:words[index]?.ordinal??nextCursor??deck.wordCount}}:{})});
   },[progressBoot,progress.ready,word?.id,loading,settingsOpen,started,error,completed,mode,order,seed,weakOnly,reviewOnly,reviewState,index,progress.savePosition]);
   function restart(){setLastRating(null);resume.current=undefined;setResumed(false);if(order==='shuffle')setSeed(Math.floor(Math.random()*4294967296));else void loadPage(0);}
-  function changeFilter(value:boolean){setLastRating(null);resume.current=undefined;setResumed(false);setReviewOnly(false);setWeakOnly(value);}
+  function changeStudyTarget(value:StudyFilter){
+    if(onFilterChange){onFilterChange(value);return;}
+    setLastRating(null);resume.current=undefined;setResumed(false);setReviewOnly(value==='due'&&useReviewSchedule);setWeakOnly(value==='weak');
+  }
   useEffect(() => {
     if (settingsOpen) setupHeading.current?.focus({ preventScroll: true });
     else if (!loading&&!completed) card.current?.focus({ preventScroll: true });
@@ -219,7 +235,7 @@ export function StudyPage({
   }
   function advance(state?:'known'|'weak') {
     if(busy.current||!word||completed||error)return;
-    const pending=advanceReview(reviewState.pending,word.id,state);
+    const pending=repeatMissed&&showRecall?advanceReview(reviewState.pending,word.id,state):[];
     const nextIndex=reviewState.activeId?index:index+1;
     const primaryAvailable=nextIndex<words.length||nextCursor!==null;
     const due=primaryAvailable?pending.find(item=>item.remaining===0):undefined;
@@ -236,9 +252,9 @@ export function StudyPage({
     setLastRating(null);setReviewState({pending,activeId:due.wordId});setCompleted(false);setRevealed(false);
   }
   function evaluate(state:'known'|'weak'){
-    if(busy.current||!word||!revealed||completed)return;
+    if(!showRecall||busy.current||!word||!revealed||completed)return;
     setLastRating({scope:progress.scope,mode,wordId:word.id,word:word.word,state,previous:progress.records.get(baseWordId(word.id)),index,reviewState});
-    progress.rate(word.id,state);advance(state);
+    progress.rate(word.id,state,useReviewSchedule);advance(state);
   }
   function undoRating(){
     if(!recentRating||loading||error)return;
@@ -275,8 +291,9 @@ export function StudyPage({
         className="study-content"
         aria-labelledby="study-title"
       >
-        <div className="study-review-tools"><label><input type="checkbox" checked={weakOnly} disabled={!progress.ready||loading&&!settingsOpen} onChange={event=>changeFilter(event.target.checked)}/>{t('苦手な単語だけ')}</label>{started&&!settingsOpen&&<button className="text-button" onClick={restart}>{t('最初から学習')}</button>}</div>
-        <div className="study-review-due"><label><input type="checkbox" checked={reviewOnly} disabled={!progress.ready||loading&&!settingsOpen} onChange={event=>{resume.current=undefined;setLastRating(null);setResumed(false);setWeakOnly(false);setReviewOnly(event.target.checked);}}/>{t('復習の時期が来た単語だけ')} ({[...progress.records.values()].filter(r=>isReviewDue(r,Date.now())).length})</label><small>{t('復習待ち：{0}語',new Set([...reviewState.pending.map(p=>baseWordId(p.wordId)),...(reviewState.activeId?[baseWordId(reviewState.activeId)]:[])]).size)}</small></div>
+        <div className="study-review-tools"><label className="study-target-label">{t('学習対象')}<select aria-label={t('学習対象')} value={weakOnly?'weak':reviewOnly?'due':'all'} disabled={!progress.ready||loading&&!settingsOpen} onChange={event=>changeStudyTarget(event.target.value as StudyFilter)}><option value="all">{t('すべての単語')}</option><option value="weak">{t('苦手な単語だけ')}</option><option value="due" disabled={!useReviewSchedule}>{t('復習の時期が来た単語だけ')}</option></select></label>{started&&!settingsOpen&&<button className="text-button" onClick={restart}>{t('最初から学習')}</button>}</div>
+        <small className="study-review-pending">{t('復習待ち：{0}語',new Set([...reviewState.pending.map(p=>baseWordId(p.wordId)),...(reviewState.activeId?[baseWordId(reviewState.activeId)]:[])]).size)}</small>
+        {!settingsOpen&&<button type="button" className="text-button study-review-settings-link" onClick={onOpenSettings} disabled={!onOpenSettings||loading||!progress.ready}>{t('復習の設定')}<ArrowRight size={14}/></button>}
         <LearningSaveStatus progress={progress}/>
         {started&&!settingsOpen&&<div className="recall-feedback-slot">
           {recentRating&&<div className={`recall-feedback recall-feedback-${recentRating.state}`}>
@@ -300,6 +317,7 @@ export function StudyPage({
                 </select>
               </label>
             </div>
+            <h3 className="review-settings-title">{t('復習の設定')}</h3><ReviewSettings value={draft} onChange={value=>setDraft({...draft,...value})}/>
             <label className="study-skip-setup"><input type="checkbox" checked={draft.skipSetup} onChange={e => setDraft({...draft, skipSetup:e.target.checked})} />{t("次回からこの画面を表示しない")}</label>
             <p className="study-setup-note">{t("設定はこのブラウザに保存されます。ライブラリのプロフィールアイコンから変更できます。チェックを外すと、開始前の画面が再び表示されます。")}</p>
             <div className="study-setup-actions">
@@ -337,7 +355,7 @@ export function StudyPage({
               <button className="button secondary" onClick={onClose}> {t("一覧に戻る")} </button>
             </div>
           </div>
-        ) : !words.length&&reviewOnly ? <section className="study-message"><h2>{t('今の復習はありません')}</h2><p>{t('復習時期が来た単語がここに集まります。')}</p><button className="button secondary" onClick={()=>{resume.current=undefined;setReviewOnly(false);}}>{t('すべての単語で学習')}</button></section> : !words.length&&weakOnly ? <section className="study-message"><h2>{t('苦手な単語はありません')}</h2><p>{t('「まだ苦手」にした単語がここに集まります。')}</p><button className="button secondary" onClick={()=>changeFilter(false)}>{t('すべての単語で学習')}</button></section> : !word ? (
+        ) : !words.length&&reviewOnly ? <section className="study-message"><h2>{t('今の復習はありません')}</h2><p>{t('復習時期が来た単語がここに集まります。')}</p><button className="button secondary" onClick={()=>changeStudyTarget('all')}>{t('すべての単語で学習')}</button></section> : !words.length&&weakOnly ? <section className="study-message"><h2>{t('苦手な単語はありません')}</h2><p>{t('「まだ苦手」にした単語がここに集まります。')}</p><button className="button secondary" onClick={()=>changeStudyTarget('all')}>{t('すべての単語で学習')}</button></section> : !word ? (
           <div className="study-message"><h2>{t("訳付きの例文がありません")}</h2><p>{t("マイライブラリの「例文を追加・編集」から、例文と訳を登録してください。")}</p><button className="button secondary" onClick={onClose}>{t("単語一覧に戻る")}</button></div>
         ) : (
           word && (
@@ -418,7 +436,7 @@ export function StudyPage({
                   ))}
                 </span>
               </div>
-              <RecallButtons wordId={word.id} progress={progress} answerVisible={revealed} onReveal={()=>setRevealed(true)} onEvaluate={evaluate} onClear={()=>setReviewState(old=>({...old,pending:old.pending.filter(p=>baseWordId(p.wordId)!==baseWordId(word.id))}))}/>
+              <RecallButtons wordId={word.id} progress={progress} showRecall={showRecall} useReviewSchedule={useReviewSchedule} answerVisible={revealed} onReveal={()=>setRevealed(true)} onEvaluate={evaluate} onClear={()=>setReviewState(old=>({...old,pending:old.pending.filter(p=>baseWordId(p.wordId)!==baseWordId(word.id))}))}/>
               <div className="study-navigation">
                 <button
                   className="button secondary"

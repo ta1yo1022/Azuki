@@ -3695,3 +3695,13 @@ html:not([lang="ja"]) .nav-item { white-space:normal; }
 .review-active-label{padding:3px 8px;border-radius:20px;background:var(--review-tint);color:var(--review-text);font-size:11px;font-weight:800;}
 .recall-next-review{font-size:11px;color:var(--muted);}
 .book-entry .recall-next-review{font-size:10px;}
+.study-repeat-toggle{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);line-height:1.6;margin:8px 0;cursor:pointer;}
+.study-repeat-toggle input{width:18px;height:18px;flex-shrink:0;accent-color:var(--accent);}
+.study-setup .study-repeat-toggle{font-size:14px;margin:16px 0;}
+.review-settings-fields{margin:0;padding:0;border:0;min-width:0;}
+.review-settings-note{font-size:11px;line-height:1.7;color:var(--muted);margin:4px 0 8px;}
+.review-settings-title{font-size:15px;margin:20px 0 8px;}
+.study-review-settings-link{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;min-height:32px;margin:4px 0;font-size:12px;}
+.study-target-label{font-size:12px;color:var(--muted);}
+.study-target-label select{font:inherit;font-weight:700;color:var(--text);background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:7px 34px 7px 10px;max-width:min(240px,65vw);}
+.study-review-pending{font-size:11px;color:var(--muted);margin:0 0 4px;}
