@@ -40,3 +40,20 @@ it('preserves translations in a flat TOON table using legacy example and transla
  const raw='words[1]{word,meaning,example,translation}:\n  book,本,I read a book.,私は本を読みます。';
  expect(parseImportWords(raw)[0].examples).toEqual([{text:'I read a book.',translation:'私は本を読みます。'}]);
 });
+it('rejects wrong counts and repairs sentence commas while preserving all 53 items in correctly encoded TOON',()=>{
+ const words=Array.from({length:53},(_,i)=>({word:`word-${i}`,meaning:`意味${i}`,examples:[{text:i%2?'I bought a notebook. In addition, I bought a pen.':'In the case of rain, we will stay home.',translation:'例文の日本語訳です。'}]}));
+ const raw=encodeToon({words});expect(raw).toContain('words[53]');expect(()=>decodeToon(raw.replace('words[53]','words[48]'))).toThrow('TOON');
+ expect(decodeToon('examples[1]{text,translation}:\n  In the case of rain, we will stay home.,雨の場合は家にいます。')).toEqual({examples:[{text:'In the case of rain, we will stay home.',translation:'雨の場合は家にいます。'}]});
+ expect(parseImportWords(raw).map(w=>w.examples)).toEqual(words.map(w=>w.examples));expect(parseImportWords(raw)).toHaveLength(53);
+});
+
+it('repairs bilingual sentence commas through the actual import path without guessing ambiguous columns',async()=>{
+ const {readCreationToon}=await import('../src/lib/importWords');
+ for(const text of ['Mommy, can you help me?','He is very kind. In other words, he always helps others.','First, second, and third.']){
+  const raw=`words[1]:\n  - word: test\n    meaning: テスト\n    examples[1]{text,translation}:\n      ${text},これは例文です。`;
+  const result=readCreationToon(raw);expect(result.kind).toBe('complete');if(result.kind==='complete')expect(result.words[0].examples).toEqual([{text,translation:'これは例文です。'}]);
+ }
+ expect(()=>decodeToon('examples[1]{text,translation}:\n  Hello, world, a greeting')).toThrow('TOON');
+ expect(()=>decodeToon('examples[1]{text,translation}:\n  Hello,こんにちは,世界')).toThrow('TOON');
+ expect(()=>decodeToon('words[1]{word,meaning}:\n  hello,world,こんにちは')).toThrow('TOON');
+});

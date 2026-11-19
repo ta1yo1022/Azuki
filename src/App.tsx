@@ -1,3 +1,4 @@
+import {Collections} from './components/Collections';
 import {studyFilterFromSearch} from './lib/studyFilter';
 import {studySettingsUrl} from './components/ReviewSettingsPage';
 import {languageName} from './lib/i18n';
@@ -108,6 +109,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
   const [user, setUser] = useState<User | null>(null);
   const [authReady, setAuthReady] = useState(!auth);
   const [decks, setDecks] = useState<Deck[]>([]);
+  const [collectionIds,setCollectionIds]=useState<string[]|null>(null);
+  const [collectionRevision,setCollectionRevision]=useState(0);
   const [loading, setLoading] = useState(true);
   const [loadedOwner, setLoadedOwner] = useState<string | null>(null);
   const ownerKey = demo ? "demo" : user?.uid ?? "signed-out";
@@ -140,6 +143,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
         setUser(value);
         setAuthReady(true);
         setDecks([]);
+        setCollectionIds(null);
         setError("");
       },
       () => {
@@ -226,7 +230,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
       decks
         .filter(
           (d) =>
-            (!language||(d.language??'en')===language) && (!filter || d.textbookTags.some((t) => t.name === filter)) &&
+            (collectionIds===null||collectionIds.includes(d.id)) && (!language||(d.language??'en')===language) && (!filter || d.textbookTags.some((t) => t.name === filter)) &&
             `${d.title} ${d.description} ${d.textbookTags.map((t) => `${t.name} ${t.edition ?? ""} ${t.chapter ?? ""}`).join(" ")}`
               .toLocaleLowerCase()
               .includes(search.toLocaleLowerCase()),
@@ -236,7 +240,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
             ? a.title.localeCompare(b.title, "ja")
             : b.createdAt.localeCompare(a.createdAt),
         ),
-    [decks, filter, search, sort,language],
+    [decks, filter, search, sort,language,collectionIds],
   );
   const displayName = demo
     ? t("お試しユーザー")
@@ -491,7 +495,8 @@ export default function App({ demo = false }: { demo?: boolean }) {
               >
                 <Globe size={17} /> {t("公開単語帳を探す")} </Link>
               <label className="language-filter">{t("学習する言語")}<select aria-label={t("自分の単語帳の言語")} value={language} onChange={e=>setLanguage(e.target.value)}><option value="">{t("すべての言語")}</option>{LANGUAGES.map(item=><option key={item.code} value={item.code}>{t(item.name)}</option>)}</select></label>
-              {!demo && user && <Favorites key={user.uid} owner={user.uid} language={language} />}
+              {!demo && user && <Collections key={user.uid} decks={decks} revision={collectionRevision} onFilter={setCollectionIds}/>}
+              {!demo && user && <Favorites key={user.uid} owner={user.uid} language={language} collectionIds={collectionIds} onRemoved={()=>setCollectionRevision(n=>n+1)} />}
 
               <div className="library-toolbar" data-tour="search">
                 <div className="search-field">

@@ -1,3 +1,4 @@
+import {collectionsRoute} from './collections';
 import {learningRoute} from './learning';
 import { billingRoute, billingWebhook, subscriptionInfo, cleanupBilling } from './billing';
 import { vocabularyRoute, cleanupVocabulary } from './vocabulary';
@@ -126,6 +127,7 @@ async function route(
   const learning=/^\/api\/learning\/([a-zA-Z0-9-]{1,80})$/.exec(url.pathname);
   if(learning)return learningRoute(request,env,uid,learning[1]);
   if (url.pathname === "/api/study") return studyRoute(request, env, uid);
+  if(url.pathname==='/api/collections'||url.pathname.startsWith('/api/collections/'))return collectionsRoute(request,env,uid);
   if (url.pathname === "/api/favorites" || url.pathname.startsWith("/api/favorites/")) return favoritesRoute(request, env, uid);
   if (url.pathname === "/api/decks" && request.method === "GET") {
     await ensureDefaultEmailPreference(env, identity);

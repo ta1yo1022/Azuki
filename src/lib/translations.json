@@ -5933,5 +5933,130 @@
     "Your study position and past ratings are kept when hidden. In-session repeats stop.",
     "แม้ซ่อนปุ่ม ตำแหน่งการเรียนและผลเดิมยังคงอยู่ และจะหยุดการทบทวนซ้ำระหว่างเรียน",
     "隐藏后仍保留学习位置和过去的记录，并停止学习中的重复出题。"
+  ],
+  "貼り付ける前の3つの確認": [
+    "Three checks before pasting",
+    "ตรวจสอบ 3 อย่างก่อนวาง",
+    "粘贴前的三项检查"
+  ],
+  "配列の件数を合わせる": [
+    "Match array counts",
+    "ให้จำนวนรายการตรงกัน",
+    "核对数组数量"
+  ],
+  "words[48]は48語という意味です。実際に53語あるならwords[53]にします。各examples[N]も、その単語の例文数に合わせます。": [
+    "words[48] means 48 words. If there are 53, use words[53]. Each examples[N] must also match that word’s number of examples.",
+    "words[48] หมายถึง 48 คำ ถ้ามีจริง 53 คำ ให้ใช้ words[53] และ examples[N] แต่ละรายการต้องตรงกับจำนวนประโยคของคำนั้น",
+    "words[48] 表示 48 个词。如果实际有 53 个，应写 words[53]。每个 examples[N] 也要与该词的例句数一致。"
+  ],
+  "文中のカンマを引用符で囲む": [
+    "Quote fields containing commas",
+    "ใส่เครื่องหมายคำพูดครอบข้อความที่มีจุลภาค",
+    "为含逗号的字段加引号"
+  ],
+  "英文や訳に半角カンマがある場合、その文字列全体をダブルクォートで囲みます。英文と日本語訳が、必ず2列になるようにします。": [
+    "If an English sentence or translation contains a comma, enclose that entire field in double quotes. Each row must have exactly two fields: the sentence and its Japanese translation.",
+    "หากประโยคหรือคำแปลมีจุลภาค ให้ใส่เครื่องหมายคำพูดคู่ครอบข้อความทั้งช่อง แต่ละแถวต้องมีเพียง 2 ช่อง คือประโยคและคำแปลญี่ปุ่น",
+    "英文或译文含半角逗号时，用双引号包住整个字段。每行必须恰好为英文和日语译文两列。"
+  ],
+  "英文中の引用符は、下のひな形のようにバックスラッシュでエスケープします。": [
+    "Escape quotation marks within a sentence with backslashes, as shown in the template below.",
+    "ใช้แบ็กสแลชหลีกเครื่องหมายคำพูดภายในประโยค ตามแม่แบบด้านล่าง",
+    "句子中的双引号要像下方模板一样用反斜杠转义。"
+  ],
+  "字下げと出力の終わりを確認する": [
+    "Check indentation and completeness",
+    "ตรวจย่อหน้าและความครบถ้วน",
+    "检查缩进和输出是否完整"
+  ],
+  "字下げは半角スペースで、ひな形にそろえます。回答が途中で切れている場合は登録せず、少ない単語数で作り直してください。": [
+    "Use spaces for indentation and follow the template. If the response is cut off, generate fewer words and try again before importing.",
+    "ย่อหน้าด้วยช่องว่างให้ตรงกับแม่แบบ หากคำตอบถูกตัดกลาง อย่าเพิ่งนำเข้า ให้สร้างใหม่ด้วยจำนวนคำที่น้อยลง",
+    "使用半角空格缩进，并与模板保持一致。如果回答中途截断，请先减少单词数量重新生成，再导入。"
+  ],
+  "回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとTOONをAIに送り、「wordsとexamplesの実際の件数を数え直し、英文と日本語訳が2列になるよう文中のカンマと引用符を修正して、TOON全体を出力して」と頼めます。": [
+    "If the response is cut off, regenerate it with fewer words. For format errors, send the TOON and Azuki’s error to your AI and ask: “Recount the actual words and examples, fix commas and quotation marks so each example row has exactly two fields, and output the entire corrected TOON.”",
+    "หากคำตอบถูกตัดกลาง ให้สร้างใหม่ด้วยจำนวนคำที่น้อยลง เมื่อรูปแบบผิด ให้ส่ง TOON กับข้อผิดพลาดจาก Azuki ให้ AI แล้วขอให้นับ words และ examples ใหม่ แก้จุลภาคและเครื่องหมายคำพูดให้แต่ละตัวอย่างมี 2 ช่อง และส่ง TOON ที่แก้แล้วทั้งหมด",
+    "如果回答被截断，请减少单词数重新生成。格式出错时，把 TOON 和 Azuki 的错误提示发给 AI，并要求：“重新统计 words 和 examples 的实际数量，修正逗号和引号，确保每行例句恰好有英文、日语译文两列，并输出修正后的完整 TOON。”"
+  ],
+  "単語・意味・例文と訳をTOONにまとめて登録できます。作成ガイドのひな形を使い、単語と例文の件数を合わせ、文中のカンマは引用符で囲んでください。書き方の例もガイドに載せています。": [
+    "You can import words, meanings, examples and translations as TOON. Use the guide’s template, match the word and example counts, and quote fields containing commas. The guide includes examples of the correct format.",
+    "นำเข้าคำศัพท์ ความหมาย ตัวอย่างและคำแปลด้วย TOON ได้ ใช้แม่แบบในคู่มือ ให้จำนวนคำและตัวอย่างตรงกัน และใส่เครื่องหมายคำพูดครอบข้อความที่มีจุลภาค คู่มือมีตัวอย่างรูปแบบที่ถูกต้อง",
+    "可以将单词、释义、例句和译文整理成 TOON 导入。请使用指南模板，核对单词和例句数量，并为含逗号的字段加引号。指南也提供了正确写法的示例。"
+  ],
+  "コレクション": [
+    "Collections",
+    "คอลเลกชัน",
+    "收藏集"
+  ],
+  "新しく作る": [
+    "Create new",
+    "สร้างใหม่",
+    "新建"
+  ],
+  "コレクションを編集": [
+    "Edit collection",
+    "แก้ไขคอลเลกชัน",
+    "编辑收藏集"
+  ],
+  "コレクションを作成": [
+    "Create collection",
+    "สร้างคอลเลกชัน",
+    "创建收藏集"
+  ],
+  "コレクション名": [
+    "Collection name",
+    "ชื่อคอลเลกชัน",
+    "收藏集名称"
+  ],
+  "単語帳を用途別に整理できます。同じ単語帳を複数のコレクションに追加できます。": [
+    "Organize wordbooks by purpose. A wordbook can belong to multiple collections.",
+    "จัดกลุ่มสมุดคำศัพท์ตามการใช้งาน สมุดเดียวสามารถอยู่ในหลายคอลเลกชันได้",
+    "按用途整理词本。同一个词本可以加入多个收藏集。"
+  ],
+  "選択した単語帳：{0}冊": [
+    "Selected wordbooks: {0}",
+    "สมุดคำศัพท์ที่เลือก: {0} เล่ม",
+    "已选词本：{0}本"
+  ],
+  "まず単語帳を追加するか、お気に入りに登録してください。": [
+    "Add a wordbook or save a favorite first.",
+    "เพิ่มสมุดคำศัพท์หรือบันทึกรายการโปรดก่อน",
+    "请先添加词本或保存到收藏。"
+  ],
+  "コレクションを削除しますか？単語帳は削除されません。": [
+    "Delete this collection? Your wordbooks will remain.",
+    "ลบคอลเลกชันนี้หรือไม่? สมุดคำศัพท์จะไม่ถูกลบ",
+    "要删除此收藏集吗？词本将保留。"
+  ],
+  "コレクションを削除": [
+    "Delete collection",
+    "ลบคอลเลกชัน",
+    "删除收藏集"
+  ],
+  "コレクション名は1〜60文字で入力してください。": [
+    "Enter a collection name of 1–60 characters.",
+    "กรอกชื่อคอลเลกชัน 1–60 ตัวอักษร",
+    "请输入1至60个字符的收藏集名称。"
+  ],
+  "単語帳は200冊以内で選択してください。": [
+    "Select up to 200 wordbooks.",
+    "เลือกสมุดคำศัพท์ไม่เกิน 200 เล่ม",
+    "最多可选择200本词本。"
+  ],
+  "コレクションが見つかりません。": [
+    "Collection not found.",
+    "ไม่พบคอลเลกชัน",
+    "找不到收藏集。"
+  ],
+  "ライブラリにある単語帳を選択してください。": [
+    "Select wordbooks from your library.",
+    "เลือกสมุดคำศัพท์จากคลังของคุณ",
+    "请选择资料库中的词本。"
+  ],
+  "コレクションは50個、所属する単語帳は合計1,000件までです。": [
+    "You can have 50 collections and 1,000 wordbook memberships in total.",
+    "สร้างได้สูงสุด 50 คอลเลกชัน และจัดสมุดคำศัพท์เข้ากลุ่มได้รวม 1,000 รายการ",
+    "最多可创建50个收藏集，词本归属记录总计不超过1,000条。"
   ]
 }

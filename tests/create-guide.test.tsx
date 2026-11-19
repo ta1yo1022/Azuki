@@ -34,3 +34,22 @@ it('switches between the image and word prompts',async()=>{
  await click('学びたい単語から作る');
  expect(container.querySelector<HTMLTextAreaElement>('#deck-prompt')!.value).toBe(DECK_PROMPT);
 });
+it('demonstrates safely quoted comma and quotation-mark examples across every guide language',async()=>{
+ const {localizedGuidePrompt}=await import('../src/lib/guidePrompts');
+ const {readCreationToon}=await import('../src/lib/importWords');
+ await act(async()=>root.render(<MemoryRouter><CreateGuide/></MemoryRouter>));
+ const template=container.querySelector<HTMLTextAreaElement>('#example-toon')!.value;
+ for(const language of ['ja','en','th','zh'] as const){
+  for(const [kind,japanese] of [['words',DECK_PROMPT],['image',IMAGE_PROMPT]] as const){
+   const prompt=localizedGuidePrompt(language,kind,japanese,template);
+   expect(prompt).toContain('words[53]');expect(prompt).toContain('words[48]');
+   const raw=prompt.slice(prompt.lastIndexOf('\nwords[')+1);
+   const result=readCreationToon(raw);expect(result.kind).toBe('complete');
+   if(result.kind==='complete')expect(result.words[0].examples?.[0].text).toContain(',');
+  }
+ }
+ const result=readCreationToon(template);expect(result.kind).toBe('complete');
+ if(result.kind==='complete')expect(result.words[0].examples?.[1].text).toContain('"I discovered a hidden door."');
+ const inline=container.querySelector('.guide-toon-checks pre code')!.textContent!;
+ expect(decodeToon(inline)).toEqual({examples:[{text:'In the case of rain, we will stay home.',translation:'雨の場合は家にいます。'}]});
+});

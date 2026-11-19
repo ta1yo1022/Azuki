@@ -3705,3 +3705,27 @@ html:not([lang="ja"]) .nav-item { white-space:normal; }
 .study-target-label{font-size:12px;color:var(--muted);}
 .study-target-label select{font:inherit;font-weight:700;color:var(--text);background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:7px 34px 7px 10px;max-width:min(240px,65vw);}
 .study-review-pending{font-size:11px;color:var(--muted);margin:0 0 4px;}
+.guide-toon-checks{margin:20px 0;padding:18px 20px;background:#f1e9df;border-radius:16px;}
+.guide-toon-checks h3{margin:0 0 14px;font-size:17px;}
+.guide-toon-checks ol{padding-left:22px;}
+.guide-toon-checks li+li{margin-top:16px;}
+.guide-toon-checks p{margin:6px 0;}
+.guide-toon-checks pre{overflow-x:auto;max-width:100%;padding:12px;background:var(--paper);border-radius:10px;font-size:12px;line-height:1.7;}
+
+.collections-section{margin:24px 0 30px;min-width:0;}
+.collections-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.collections-heading h2{display:flex;align-items:center;gap:9px;font-size:19px;margin:0;}
+.collection-filters{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:16px;}
+.collection-filters .filter-chip{max-width:100%;overflow-wrap:anywhere;white-space:normal;}
+.collection-fields{border:0;padding:0;margin:22px 0;min-width:0;}
+.collection-fields>label{display:grid;gap:8px;margin-bottom:18px;font-weight:700;}
+.collection-fields>label input{width:100%;min-width:0;}
+.collection-book-list{max-height:38vh;overflow:auto;overscroll-behavior:contain;display:grid;gap:6px;padding:4px;}
+.collection-book-list label{display:flex;align-items:center;gap:12px;min-height:48px;padding:10px;border-radius:12px;background:var(--paper);cursor:pointer;}
+.collection-book-list label span{overflow-wrap:anywhere;min-width:0;}
+.collection-book-list input{flex:0 0 auto;width:20px;height:20px;accent-color:var(--azuki);}
+.collection-delete-confirm{padding:12px 0;}
+@media(max-width:600px){.collection-dialog{width:100%;max-width:100%;max-height:90dvh;margin:auto 0 0;border-radius:24px 24px 0 0;}.collection-book-list{max-height:35dvh;}}
+.collection-fields>label input{min-height:46px;padding:11px 14px;border:1px solid var(--border);border-radius:10px;background:#fff;color:var(--text);font:inherit;font-size:16px;box-sizing:border-box;}
+.collection-fields input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.collection-book-list input{accent-color:var(--accent);}

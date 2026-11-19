@@ -52,9 +52,9 @@ it('accepts the guide template from the initial creation tab and saves every tra
  await act(async()=>root.unmount());root=createRoot(container);
  await act(async()=>root.render(<MemoryRouter initialEntries={['/library/import']}><ImportPage onClose={close} onImport={save}/></MemoryRouter>));
  await input('#vocabulary-input',template);await click('TOONを読み込む');
- expect(container.textContent).toContain('私は学校の近くで小さなカフェを見つけました。');expect(container.textContent).toContain('探検家は隠された扉を発見しました。');
+ expect(container.textContent).toContain('私は学校の近くで小さなカフェを見つけました。');expect(container.textContent).toContain('探検家は「隠された扉を発見した」と言いました。');
  await input('#import-title-input','ガイドから登録');await click('2語を登録する');
- expect(save.mock.calls[0][0].words[0].examples).toHaveLength(2);expect(save.mock.calls[0][0].words.every((word:any)=>word.examples.every((example:any)=>example.translation))).toBe(true);
+ expect(save.mock.calls[0][0].words[0].examples).toHaveLength(2);expect(save.mock.calls[0][0].words[0].examples[1].text).toBe('The explorer said, "I discovered a hidden door."');expect(save.mock.calls[0][0].words.every((word:any)=>word.examples.every((example:any)=>example.translation))).toBe(true);
 });
 
 it('registers manually entered words and multiple translated examples while preserving drafts across tabs and review',async()=>{

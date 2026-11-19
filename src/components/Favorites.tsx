@@ -31,7 +31,7 @@ export function FavoriteButton({id,userId}:{id:string;userId?:string}) {
   return <div className="favorite-action"><button className="button secondary" aria-pressed={saved} disabled={busy||(!ready&&!error)} onClick={()=>void toggle()}><Star size={17} fill={saved?'currentColor':'none'}/>{busy?t("更新しています…"):saved?t("お気に入り登録済み"):t("お気に入りに登録")}</button>{error&&<p role="alert" className="error-box">{t(error)} <button onClick={()=>void toggle()} disabled={busy}>{t("再試行")}</button></p>}</div>;
 }
 
-export function Favorites({owner,language}:{owner:string;language?:string}){
+export function Favorites({owner,language,collectionIds,onRemoved}:{owner:string;language?:string;collectionIds?:string[]|null;onRemoved?:()=>void}){
  const t=useI18n();
   const [items,setItems]=useState<Favorite[]>([]),[error,setError]=useState(''),[loading,setLoading]=useState(true),[busy,setBusy]=useState(''),[retry,setRetry]=useState(0);
   useEffect(()=>{
@@ -39,8 +39,8 @@ export function Favorites({owner,language}:{owner:string;language?:string}){
     favoritesRepository.list().then(result=>{if(active)setItems(result);}).catch(e=>{if(active)setError(e.message);}).finally(()=>{if(active)setLoading(false);});
     return()=>{active=false;};
   },[owner,retry]);
-  async function remove(id:string){setBusy(id);setError('');try{await favoritesRepository.remove(id);setItems(prev=>prev.filter(item=>item.id!==id));}catch(e){setError(e instanceof Error?e.message:messageText("解除できませんでした。"));}finally{setBusy('');}}
-  const visibleItems=items.filter(item=>!language||item.deck&&(item.deck.language??'en')===language);
+  async function remove(id:string){setBusy(id);setError('');try{await favoritesRepository.remove(id);setItems(prev=>prev.filter(item=>item.id!==id));onRemoved?.();}catch(e){setError(e instanceof Error?e.message:messageText("解除できませんでした。"));}finally{setBusy('');}}
+  const visibleItems=items.filter(item=>(collectionIds==null||collectionIds.includes(item.id))&&(!language||item.deck&&(item.deck.language??'en')===language));
   return <section className="favorites-section" aria-labelledby="favorites-heading"><div className="favorites-heading"><h2 id="favorites-heading"><Star size={20}/>{t("お気に入り")}</h2><Link to="/explore">{t("公開単語帳を探す →")}</Link></div><p className="muted">{t("コピーせず、元の単語帳を開きます。保存上限には含まれません。")}</p>{loading?<p>{t("お気に入りを読み込んでいます…")}</p>:visibleItems.length?<div className="deck-grid favorites-grid">{visibleItems.map((item,index)=><article className="favorite-card" key={item.id}>
     {item.deck?<PublicDeckCard deck={item.deck} index={index} heading="h3"/>:<div className="deck-card favorite-unavailable"><Star size={24}/><h3>{t("この単語帳は現在開けません")}</h3><p className="muted">{t("非公開または削除されています。")}</p></div>}
     <button className="text-button favorite-remove" aria-label={t("{0}をお気に入りから外す", item.deck?.title??t("開けない単語帳"))} disabled={Boolean(busy)} onClick={()=>void remove(item.id)}><X size={16}/>{t("お気に入りから外す")}</button>

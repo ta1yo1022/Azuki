@@ -12,13 +12,18 @@ const OUTPUT_RULES = `【出力ルール】
 ・各単語に日本語の意味と、その意味で使う自然で短い英語の例文を指定数付けてください。例文には自然な日本語訳も付けてください。
 ・examplesは例文の配列です。各要素のtextに英文、translationにその英文の日本語訳を入れてください。同じ単語の例文は重複させず、場面を変えてください。
 ・以下の形式のTOONオブジェクトだけを出力してください。説明文やMarkdownのコードブロックは不要です。
-・インデントは半角スペース2個。配列の[N]には正しい件数を指定し、カンマ・改行・引用符を含む文字列はTOONの規則で引用してください。
+・インデントは半角スペース2個を1段として、ひな形と同じ字下げにしてください。タブは使わないでください。
+・words[N]のNは、最終的に出力する「- word:」の項目数と必ず一致させてください。指定数や推測で埋めないでください。たとえば実際に53語ある場合はwords[53]:です。words[48]:のまま53語を並べてはいけません。
+・各examples[N]のNは、その単語に付ける例文の件数です。wordsの件数とは別に、単語ごとに数えてください。
+・examples[N]{text,translation}:の各行は、英文と日本語訳の2列だけにしてください。英文や訳の中に半角カンマがある場合は、その列の文字列全体をダブルクォートで囲んでください。例："In the case of rain, we will stay home.",雨の場合は家にいます。
+・文字列中のダブルクォートはバックスラッシュでエスケープしてください。例文は1行ずつ出力し、文中の改行をそのまま行の区切りにしないでください。
+・出力前に、すべてのwords[N]・examples[N]の件数、各例文が2列であること、引用符の閉じ忘れ、字下げを再点検してください。修正が必要なら全文を直してから出力し、点検結果の説明は付けないでください。
 ・最上位のキーはwordsだけにしてください。単語帳の名前・説明・カテゴリ・教材名・版はAzukiの画面で設定するため、TOONには含めないでください。
 ・wordsは1〜5,000語、examplesは1語につき1〜10件。各wordは120文字以内、meaning・text・translationはそれぞれ1,000文字以内。
 ・出力全体を512KB以内に収め、途中で省略せず、最後の項目まで出力してください。
 ・下の単語は形式の例です。指定された内容に合わせて全体を作り直してください。
 
-${encodeToon({words:[{word:'discover',meaning:'発見する',examples:[{text:'We discovered a small cafe.',translation:'私たちは小さなカフェを見つけました。'}]}]})}`;
+${encodeToon({words:[{word:'discover',meaning:'発見する',examples:[{text:'At first, we discovered a small cafe.',translation:'最初に、私たちは小さなカフェを見つけました。'},{text:'She said, "We discovered a small cafe."',translation:'彼女は「小さなカフェを見つけた」と言いました。'}]}]})}`;
 
 export const DECK_PROMPT = `英単語帳アプリ「Azuki」に登録するTOONを作ってください。
 
@@ -55,8 +60,8 @@ ${OUTPUT_RULES}`;
 
 const EXAMPLE_TOON = encodeToon({ words: [
   { word: "discover", meaning: "発見する", examples: [
-    { text: "I discovered a small cafe near my school.", translation: "私は学校の近くで小さなカフェを見つけました。" },
-    { text: "The explorer discovered a hidden door.", translation: "探検家は隠された扉を発見しました。" },
+    { text: "In the morning, I discovered a small cafe near my school.", translation: "朝、私は学校の近くで小さなカフェを見つけました。" },
+    { text: 'The explorer said, "I discovered a hidden door."', translation: "探検家は「隠された扉を発見した」と言いました。" },
   ] },
   { word: "improve", meaning: "上達する", examples: [
     { text: "My English improves with practice.", translation: "私の英語は練習することで上達します。" },
@@ -124,6 +129,14 @@ export function CreateGuide() {
         <span className="eyebrow">STEP 03</span><h2 id="guide-step-3">{t("Azukiに貼り付けて登録する")}</h2>
         <p>{t("作成画面の「TOONを貼り付け」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版を入力できます。教材名がそのまま単語帳のタイトルになります。")}</p>
         <p>{t("AIが作った意味や例文には誤りが含まれることがあります。登録後も単語一覧から確認・編集できます。新しい単語帳は非公開で保存されます。")}</p>
+        <div className="guide-toon-checks" aria-labelledby="toon-checks-title">
+          <h3 id="toon-checks-title">{t('貼り付ける前の3つの確認')}</h3>
+          <ol>
+            <li><strong>{t('配列の件数を合わせる')}</strong><p>{t('words[48]は48語という意味です。実際に53語あるならwords[53]にします。各examples[N]も、その単語の例文数に合わせます。')}</p></li>
+            <li><strong>{t('文中のカンマを引用符で囲む')}</strong><p>{t('英文や訳に半角カンマがある場合、その文字列全体をダブルクォートで囲みます。英文と日本語訳が、必ず2列になるようにします。')}</p><pre><code>{'examples[1]{text,translation}:\n  "In the case of rain, we will stay home.",雨の場合は家にいます。'}</code></pre><p>{t('英文中の引用符は、下のひな形のようにバックスラッシュでエスケープします。')}</p></li>
+            <li><strong>{t('字下げと出力の終わりを確認する')}</strong><p>{t('字下げは半角スペースで、ひな形にそろえます。回答が途中で切れている場合は登録せず、少ない単語数で作り直してください。')}</p></li>
+          </ol>
+        </div>
         <Link className="button primary" to={`${importPath}?tab=paste`}>{t("TOONを貼り付ける")}<ArrowRight size={17} /></Link>
       </section>
       <section id="own-examples" aria-labelledby="own-examples-title">
@@ -148,7 +161,7 @@ export function CreateGuide() {
         <p>{t("コピーやフォークは自分用のデータとして保存され、元の更新は自動反映されません。編集せず学習するなら「お気に入りに登録」で、保存枠を使わずマイライブラリから開けます。")}</p>
         <Link className="button secondary" to="/explore">{t("公開単語帳を探す")}<ArrowRight size={17}/></Link>
       </section>
-      <aside className="guide-trouble"><h2>{t("うまく登録できないとき")}</h2><p>{t("回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとTOONをAIに送り、「このエラーを直して、TOON全体を出力して」と頼めます。")}</p><p>{t("通常の新規登録は1冊5,000語・512KBまでです。例文を増やして上限を超えた場合は、単語数や例文数を減らしてください。個人の保存上限は20冊・合計15,000語です。保存上限のエラーが出た場合は、単語帳を減らすなど、表示された案内に従ってください。")}</p></aside>
+      <aside className="guide-trouble"><h2>{t("うまく登録できないとき")}</h2><p>{t("回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとTOONをAIに送り、「wordsとexamplesの実際の件数を数え直し、英文と日本語訳が2列になるよう文中のカンマと引用符を修正して、TOON全体を出力して」と頼めます。")}</p><p>{t("通常の新規登録は1冊5,000語・512KBまでです。例文を増やして上限を超えた場合は、単語数や例文数を減らしてください。個人の保存上限は20冊・合計15,000語です。保存上限のエラーが出た場合は、単語帳を減らすなど、表示された案内に従ってください。")}</p></aside>
     </main>
   </div>;
 }
