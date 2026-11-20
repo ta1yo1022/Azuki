@@ -85,7 +85,7 @@ export function ShareDialog({
         <div className="share-explanation">
           <LockKeyhole size={24} />
           <h3>{t("共有にはGoogleログインが必要です")}</h3>
-          <p> {t("お試しモードの単語帳は、この端末だけに保存されています。Googleログイン後にTOONを登録すると、共有できるようになります。")} </p>
+          <p> {t("お試しモードの単語帳は、この端末だけに保存されています。Googleログイン後にJSONを登録すると、共有できるようになります。")} </p>
         </div>
       ) : (
         <>

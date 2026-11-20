@@ -7,7 +7,7 @@ import {parseDeck} from '../shared/model';
 import {parseVocabulary} from '../shared/vocabulary';
 import {exampleWordParts} from '../shared/exampleWord';
 import {audioKey} from '../worker/audio';
-import {encodeToon} from '../shared/toon';
+import {encodeJson} from '../shared/json';
 let db:DatabaseSync,env:Env;
 const handle=createHandler(async token=>{if(['alice','bob'].includes(token))return token;throw Error();});
 const call=(path:string,method='GET',data?:unknown,user='alice')=>handle(new Request('https://api.test/api'+path,{method,headers:{Authorization:'Bearer '+user,'Content-Type':'application/json'},...(data?{body:JSON.stringify(data)}:{})}),env);
@@ -15,8 +15,8 @@ const sample={title:'タイ語の挨拶',language:'th',meaningLanguage:'zh',word
 beforeEach(()=>{db=new DatabaseSync(':memory:');for(const file of readdirSync(new URL('../migrations/',import.meta.url)).filter(file=>file.endsWith('.sql')).sort())db.exec(readFileSync(new URL('../migrations/'+file,import.meta.url),'utf8'));env={DB:sqliteD1(db),FIREBASE_PROJECT_ID:'test',ALLOWED_ORIGINS:'https://azuki.test',ALLOW_IMPORTS:'true'};});
 afterEach(()=>{db.close();vi.restoreAllMocks();});
 it('accepts Thai tone marks, Chinese and Japanese terms and validates language codes',()=>{
- expect(parseVocabulary('words[3]: สวัสดี,ขอบคุณ,เรียน','th')).toHaveLength(3);
- expect(parseVocabulary('words[2]: 学习,謝謝','zh')).toEqual(['学习','謝謝']);
+ expect(parseVocabulary('{"words":["สวัสดี","ขอบคุณ","เรียน"]}','th')).toHaveLength(3);
+ expect(parseVocabulary('{"words":["学习","謝謝"]}','zh')).toEqual(['学习','謝謝']);
  expect(parseDeck(JSON.stringify(sample))).toMatchObject({language:'th',meaningLanguage:'zh'});
  expect(()=>parseDeck(JSON.stringify({...sample,language:'invalid'}))).toThrow('言語');
  expect(exampleWordParts('ฉันเรียนภาษาไทย','เรียน').some(part=>part.match)).toBe(true);
@@ -37,7 +37,7 @@ it('stores, searches, copies and edits a language pair without changing words',a
 it('generates Thai examples with Chinese meanings and binds retry IDs to the language pair',async()=>{
  env.BILLING_ENABLED='true';env.VOCABULARY_ENABLED='true';env.DICTIONARY={fetch:vi.fn()} as any;
  db.prepare('INSERT OR IGNORE INTO users(id) VALUES(?)').run('alice');db.prepare('INSERT INTO pro_offer_redemptions VALUES(?,0,?,?,?)').run('alice','AZUKI1MONTH',Math.floor(Date.now()/1000),Math.floor(Date.now()/1000)+86400);
- env.AI={run:vi.fn(async()=>({response:encodeToon({items:[{index:0,meaning:'学习',text:'ฉันเรียนภาษาไทย',translation:'我学习泰语。'}]})}))} as any;
+ env.AI={run:vi.fn(async()=>({response:encodeJson({items:[{index:0,meaning:'学习',text:'ฉันเรียนภาษาไทย',translation:'我学习泰语。'}]})}))} as any;
  const data={requestId:crypto.randomUUID(),language:'th',meaningLanguage:'zh',words:[{term:'เรียน'}]};
  const response=await call('/vocabulary/examples','POST',data);expect(response.status).toBe(200);expect((await response.json() as any).examples[0]).toMatchObject({term:'เรียน',meaning:'学习'});
  expect(JSON.stringify(vi.mocked(env.AI!.run).mock.calls)).toContain('Thai');expect(env.DICTIONARY!.fetch).not.toHaveBeenCalled();

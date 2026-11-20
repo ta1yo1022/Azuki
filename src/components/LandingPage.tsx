@@ -117,7 +117,7 @@ export function LandingPage({ canSignIn, signingIn, error, onLogin }: Props) {
             <p>{t("パソコンでもスマートフォンでも。")}<br />{t("Googleアカウントで単語帳を同期できます。")}</p>
           </div>
           <div className="landing-features" id="how-to">
-            <article><div className="landing-feature-top"><span>01</span><FileText size={28} strokeWidth={1.4} /></div><h3>{t("TOONからまとめて登録")}</h3><p>{t("AIで作った単語リストも、手元のTOONも。内容を確認して、名前を付ければ自分の一冊に。")}</p><Link className="landing-inline-link" to="/guide/create">{t("単語帳の作り方を見る")} <ArrowUpRight size={15} /></Link></article>
+            <article><div className="landing-feature-top"><span>01</span><FileText size={28} strokeWidth={1.4} /></div><h3>{t("JSONからまとめて登録")}</h3><p>{t("AIで作った単語リストも、手元のJSONも。内容を確認して、名前を付ければ自分の一冊に。")}</p><Link className="landing-inline-link" to="/guide/create">{t("単語帳の作り方を見る")} <ArrowUpRight size={15} /></Link></article>
             <article><div className="landing-feature-top"><span>02</span><Layers size={28} strokeWidth={1.4} /></div><h3>{t("カードをめくって練習")}</h3><p>{t("日本語を見て、英語で答える練習から。英語から日本語への切り替えもできます。")}</p><span className="landing-feature-caption">{t("順番どおりでも、シャッフルでも。")}</span></article>
             <article><div className="landing-feature-top"><span>03</span><Globe size={28} strokeWidth={1.4} /></div><h3>{t("単語帳を探して保存")}</h3><p>{t("単語帳名や教材タグで検索。気に入った単語帳を保存すると、自分用の非公開コピーになります。")}</p><Link className="landing-inline-link" to="/explore">{t("公開単語帳を探す")} <ArrowUpRight size={15} /></Link></article>
           </div>

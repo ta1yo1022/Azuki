@@ -452,7 +452,7 @@ function PublicDeck({ id, studying, bookMode }: { id: string; studying: boolean;
               <FavoriteButton key={id} id={id} userId={user?.uid} />
               <ActionMenu label={t("その他")} items={[
                 {label:t("コピーして編集"),description:t("自分用の非公開コピーを保存"),disabled:saving||!authReady||!auth,onSelect:()=>void save()},
-                {label:t("TOONを編集してフォーク"),description:t("単語や例文をTOONでカスタマイズ"),onSelect:()=>setForkOpen(true)},
+                {label:t("JSONを編集してフォーク"),description:t("単語や例文をJSONでカスタマイズ"),onSelect:()=>setForkOpen(true)},
                 {label:t("リンクをコピー"),description:t("この単語帳を共有する"),onSelect:()=>void copy()},
               ]}/>
               {(saving||copied)&&<span className="deck-action-status" role="status">{saving?t("コピーを保存しています…"):t("リンクをコピーしました")}</span>}

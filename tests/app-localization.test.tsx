@@ -41,7 +41,7 @@ it.each(['privacy','terms','copyright','commerce'] as const)('translates the ful
 it('localizes API errors with amounts, and nested validation field labels',()=>{
  expect(translate('en','本日の単語音声の新規生成は10個までです。生成済みの音声は再生できます。')).toContain('10');
  expect(translate('en','2語目の単語を入力してください。')).toBe('Enter Word 2.');
- expect(translate('zh','TOONは512KB以内にしてください。')).toBe('TOON 不能超过 512 KB。');
+ expect(translate('zh','JSONは512KB以内にしてください。')).toBe('JSON 不能超过 512 KB。');
  expect(translate('en','リンクをコピーしました')).toBe('Link copied');
 });
 it('keeps placeholder arguments literal, including user text that resembles translation keys',()=>{

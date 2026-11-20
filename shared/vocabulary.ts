@@ -1,5 +1,5 @@
 import type {Language} from './languages';
-import {decodeToon} from './toon';
+import {decodeJson} from './json';
 export const EXAMPLE_WEEKLY_LIMIT=500;
 export const EXAMPLE_BATCH_LIMIT=20;
 export type DictionaryWord={term:string;meanings:string[]};
@@ -20,9 +20,9 @@ export function vocabularyTerm(value:unknown,language:Language='en'){
  return term;
 }
 export function parseVocabulary(text:string,language:Language='en'){
- if(text.length>30000)throw new Error('単語のTOONは30,000文字以内にしてください。');
- let data:unknown;try{data=decodeToon(text);}catch{throw new Error('TOONの形式を確認してください。例：words[3]: agree,curious,improve');}
+ if(text.length>30000)throw new Error('単語のJSONは30,000文字以内にしてください。');
+ let data:unknown;try{data=decodeJson(text);}catch{throw new Error('JSONの形式を確認してください。例：{"words":["agree","curious","improve"]}');}
  const values=Array.isArray(data)?data:data&&typeof data==='object'&&'words' in data?(data as {words:unknown}).words:null;
- if(!Array.isArray(values)||!values.length||values.length>500)throw new Error('TOONの配列に1〜500語を入力してください。');
+ if(!Array.isArray(values)||!values.length||values.length>500)throw new Error('JSONの配列に1〜500語を入力してください。');
  return [...new Set(values.map(value=>vocabularyTerm(value&&typeof value==='object'&&!Array.isArray(value)?value.word:value,language)))];
 }

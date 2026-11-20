@@ -109,15 +109,15 @@
     "เพิ่มเติม",
     "更多"
   ],
-  "TOONを編集してフォーク": [
-    "Edit TOON and fork",
-    "แก้ไข TOON และสร้างฉบับแยก",
-    "编辑 TOON 并创建衍生版"
+  "JSONを編集してフォーク": [
+    "Edit JSON and fork",
+    "แก้ไข JSON และสร้างฉบับแยก",
+    "编辑 JSON 并创建衍生版"
   ],
-  "単語や例文をTOONでカスタマイズ": [
-    "Customize words and examples with TOON",
-    "ปรับแต่งคำศัพท์และตัวอย่างด้วย TOON",
-    "用 TOON 自定义单词和例句"
+  "単語や例文をJSONでカスタマイズ": [
+    "Customize words and examples with JSON",
+    "ปรับแต่งคำศัพท์และตัวอย่างด้วย JSON",
+    "用 JSON 自定义单词和例句"
   ],
   "リンクをコピー": [
     "Copy link",
@@ -339,10 +339,10 @@
     "ลองค้นหาด้วยชื่อหรือแท็กตำราอื่น",
     "试试其他名称或教材标签。"
   ],
-  "TOONで単語をまとめて登録できます。Proなら意味・例文も自動で作れます。": [
-    "Import words with TOON. Pro can generate meanings and examples.",
-    "นำเข้าคำศัพท์ด้วย TOON และใช้ Pro สร้างความหมายและตัวอย่างได้",
-    "用 TOON 批量导入单词，Pro 还可自动生成释义和例句。"
+  "JSONで単語をまとめて登録できます。Proなら意味・例文も自動で作れます。": [
+    "Import words with JSON. Pro can generate meanings and examples.",
+    "นำเข้าคำศัพท์ด้วย JSON และใช้ Pro สร้างความหมายและตัวอย่างได้",
+    "用 JSON 批量导入单词，Pro 还可自动生成释义和例句。"
   ],
   "検索条件をクリア": [
     "Clear filters",
@@ -1099,15 +1099,15 @@
     "คัดลอกอัตโนมัติไม่ได้ โปรดคัดลอกข้อความที่เลือก",
     "无法自动复制，请复制选中的文字。"
   ],
-  "例文付きTOONをコピーしました。自分の単語と例文に書き換えて使えます。": [
-    "TOON with examples copied. Replace the words and examples with your own.",
-    "คัดลอก TOON พร้อมตัวอย่างแล้ว แก้เป็นคำศัพท์และตัวอย่างของคุณได้",
-    "已复制含例句的 TOON，可替换为自己的单词和例句。"
+  "例文付きJSONをコピーしました。自分の単語と例文に書き換えて使えます。": [
+    "JSON with examples copied. Replace the words and examples with your own.",
+    "คัดลอก JSON พร้อมตัวอย่างแล้ว แก้เป็นคำศัพท์และตัวอย่างของคุณได้",
+    "已复制含例句的 JSON，可替换为自己的单词和例句。"
   ],
-  "選択されたTOONをコピーしてください。": [
-    "Copy the selected TOON.",
-    "โปรดคัดลอก TOON ที่เลือก",
-    "请复制选中的 TOON。"
+  "選択されたJSONをコピーしてください。": [
+    "Copy the selected JSON.",
+    "โปรดคัดลอก JSON ที่เลือก",
+    "请复制选中的 JSON。"
   ],
   "Azukiのホームへ": [
     "Azuki home",
@@ -1204,10 +1204,10 @@
     "วางพรอมป์ที่คัดลอกในแชตแล้วส่ง",
     "将复制的提示词粘贴到聊天中并发送。"
   ],
-  "回答が完成したら、TOON全体をコピーします。": [
-    "When the response is complete, copy all the TOON.",
-    "เมื่อคำตอบเสร็จ ให้คัดลอก TOON ทั้งหมด",
-    "回答完成后，复制完整的 TOON。"
+  "回答が完成したら、JSON全体をコピーします。": [
+    "When the response is complete, copy all the JSON.",
+    "เมื่อคำตอบเสร็จ ให้คัดลอก JSON ทั้งหมด",
+    "回答完成后，复制完整的 JSON。"
   ],
   "読み取り漏れや綴りの間違いがないか、元の画像と見比べてください。文字が読みにくいときは、明るい場所で撮り直すか、範囲を分けて送ります。": [
     "Compare with the image for omissions and spelling errors. If text is unclear, retake it in better light or split it into sections.",
@@ -1224,45 +1224,45 @@
     "เปิด Gemini ↗",
     "打开 Gemini ↗"
   ],
-  "回答に説明文や「```toon」が付いている場合は、それらを除き、wordsで始まるTOON全体をコピーします。": [
-    "Remove explanations or code fences such as ```toon and copy the complete TOON starting with words.",
-    "ลบคำอธิบายหรือกรอบโค้ด เช่น ```toon แล้วคัดลอก TOON ทั้งหมดตั้งแต่ words",
-    "去掉说明或 ```toon 等代码标记，复制以 words 开头的完整 TOON。"
+  "回答に説明文や「```json」が付いている場合は、それらを除き、wordsで始まるJSON全体をコピーします。": [
+    "Remove explanations or code fences such as ```json and copy the complete JSON starting with words.",
+    "ลบคำอธิบายหรือกรอบโค้ด เช่น ```json แล้วคัดลอก JSON ทั้งหมดตั้งแต่ words",
+    "去掉说明或 ```json 等代码标记，复制以 words 开头的完整 JSON。"
   ],
   "Azukiに貼り付けて登録する": [
     "Paste into Azuki and add",
     "วางใน Azuki แล้วเพิ่ม",
     "粘贴到 Azuki 并添加"
   ],
-  "作成画面の「TOONを貼り付け」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版を入力できます。教材名がそのまま単語帳のタイトルになります。": [
-    "Paste the content into “Paste TOON” and select “Review”. Check the words, name and category. For textbooks, enter a textbook name and edition; the textbook name becomes the title.",
-    "วางใน “วาง TOON” แล้วเลือก “ตรวจสอบ” ตรวจคำศัพท์ ชื่อ และหมวดหมู่ หากเป็นตำรา ให้ใส่ชื่อตำราและฉบับ โดยชื่อตำราจะเป็นชื่อชุดคำศัพท์",
-    "在“粘贴 TOON”中粘贴并点击“确认内容”。检查单词、名称和分类。选择教材时可填写教材名和版本，教材名将用作标题。"
+  "作成画面の「JSONを貼り付け」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版を入力できます。教材名がそのまま単語帳のタイトルになります。": [
+    "Paste the content into “Paste JSON” and select “Review”. Check the words, name and category. For textbooks, enter a textbook name and edition; the textbook name becomes the title.",
+    "วางใน “วาง JSON” แล้วเลือก “ตรวจสอบ” ตรวจคำศัพท์ ชื่อ และหมวดหมู่ หากเป็นตำรา ให้ใส่ชื่อตำราและฉบับ โดยชื่อตำราจะเป็นชื่อชุดคำศัพท์",
+    "在“粘贴 JSON”中粘贴并点击“确认内容”。检查单词、名称和分类。选择教材时可填写教材名和版本，教材名将用作标题。"
   ],
   "AIが作った意味や例文には誤りが含まれることがあります。登録後も単語一覧から確認・編集できます。新しい単語帳は非公開で保存されます。": [
     "AI meanings and examples may contain errors. Review and edit them after importing too. New wordbooks are saved privately.",
     "ความหมายและตัวอย่างจาก AI อาจผิด ตรวจและแก้ได้หลังนำเข้า ชุดคำศัพท์ใหม่บันทึกเป็นส่วนตัว",
     "AI 生成的释义和例句可能有误，导入后也可检查修改。新词本默认私密保存。"
   ],
-  "TOONを貼り付ける": [
-    "Paste TOON",
-    "วาง TOON",
-    "粘贴 TOON"
+  "JSONを貼り付ける": [
+    "Paste JSON",
+    "วาง JSON",
+    "粘贴 JSON"
   ],
   "オリジナルの単語と例文を登録する": [
     "Add original words and examples",
     "เพิ่มคำศัพท์และตัวอย่างของคุณ",
     "添加原创单词和例句"
   ],
-  "マイライブラリで単語帳を開き、単語の行 →「例文を追加・編集」から、英文と日本語訳を直接入力できます。「例文を追加」で1語につき最大10件まで登録できます。TOONの編集は不要です。": [
-    "Open a word in your library and choose “Add/edit examples” to enter sentences and translations directly. Add up to 10 examples per word without editing TOON.",
-    "เปิดคำศัพท์ในคลังแล้วเลือก “เพิ่ม/แก้ไขตัวอย่าง” เพื่อใส่ประโยคและคำแปล เพิ่มได้สูงสุด 10 ประโยคต่อคำโดยไม่ต้องแก้ TOON",
-    "在词库打开单词，选择“添加/编辑例句”，即可直接输入句子和翻译。每词最多 10 个例句，无需编辑 TOON。"
+  "マイライブラリで単語帳を開き、単語の行 →「例文を追加・編集」から、英文と日本語訳を直接入力できます。「例文を追加」で1語につき最大10件まで登録できます。JSONの編集は不要です。": [
+    "Open a word in your library and choose “Add/edit examples” to enter sentences and translations directly. Add up to 10 examples per word without editing JSON.",
+    "เปิดคำศัพท์ในคลังแล้วเลือก “เพิ่ม/แก้ไขตัวอย่าง” เพื่อใส่ประโยคและคำแปล เพิ่มได้สูงสุด 10 ประโยคต่อคำโดยไม่ต้องแก้ JSON",
+    "在词库打开单词，选择“添加/编辑例句”，即可直接输入句子和翻译。每词最多 10 个例句，无需编辑 JSON。"
   ],
-  "単語をまとめて新規登録するときは、下のTOONもひな形として使えます。": [
-    "You can also use the TOON below as a template for a new wordbook.",
-    "ใช้ TOON ด้านล่างเป็นแม่แบบสร้างชุดคำศัพท์ใหม่ได้",
-    "批量创建新词本时，也可使用下方 TOON 模板。"
+  "単語をまとめて新規登録するときは、下のJSONもひな形として使えます。": [
+    "You can also use the JSON below as a template for a new wordbook.",
+    "ใช้ JSON ด้านล่างเป็นแม่แบบสร้างชุดคำศัพท์ใหม่ได้",
+    "批量创建新词本时，也可使用下方 JSON 模板。"
   ],
   "英単語・意味・例文を用意する": [
     "Prepare words, meanings and examples",
@@ -1294,15 +1294,15 @@
     "ใส่คำแปล เช่น “discover” ใช้ประโยคเรื่องพบคาเฟ่เล็กใกล้โรงเรียนได้",
     "填写翻译。例如 discover，可写在学校附近发现小咖啡店的场景。"
   ],
-  "TOONをコピーして書き換える": [
-    "Copy and edit the TOON",
-    "คัดลอกและแก้ไข TOON",
-    "复制并修改 TOON"
+  "JSONをコピーして書き換える": [
+    "Copy and edit the JSON",
+    "คัดลอกและแก้ไข JSON",
+    "复制并修改 JSON"
   ],
-  "下のひな形をコピーし、作成画面の「TOONを貼り付け」に貼ります。単語・意味・例文の文字列を書き換えてください。単語を増やす場合は、ひな形と同じ字下げで項目を追加し、配列の[N]の件数も更新します。": [
-    "Copy the template into “Paste TOON”. Edit words, meanings and examples. When adding entries, keep the indentation and update the [N] array counts.",
-    "คัดลอกแม่แบบไปที่ “วาง TOON” แล้วแก้คำศัพท์ ความหมาย และตัวอย่าง หากเพิ่มรายการ ให้คงการย่อหน้าและปรับจำนวน [N]",
-    "将模板粘贴到“粘贴 TOON”，修改单词、释义和例句。增加条目时请保持缩进并更新数组 [N] 的数量。"
+  "下のひな形をコピーし、作成画面の「JSONを貼り付け」に貼ります。単語・意味・例文の文字列を書き換えてください。単語を増やす場合は、ひな形と同じ字下げで項目を追加し、配列の[N]の件数も更新します。": [
+    "Copy the template into “Paste JSON”. Edit words, meanings and examples. When adding entries, keep the indentation and update the [N] array counts.",
+    "คัดลอกแม่แบบไปที่ “วาง JSON” แล้วแก้คำศัพท์ ความหมาย และตัวอย่าง หากเพิ่มรายการ ให้คงการย่อหน้าและปรับจำนวน [N]",
+    "将模板粘贴到“粘贴 JSON”，修改单词、释义和例句。增加条目时请保持缩进并更新数组 [N] 的数量。"
   ],
   "確認して保存する": [
     "Review and save",
@@ -1314,15 +1314,15 @@
     "เลือก “ตรวจสอบ” ตั้งชื่อและหมวดหมู่แล้วบันทึก แตะแถวคำศัพท์เพื่อดูตัวอย่าง เมนูเรียนมีการ์ดคำศัพท์ การ์ดตัวอย่าง และแบบหนังสือ การ์ดตัวอย่างต้องมีคำแปลและสลับด้านได้",
     "点击“确认内容”，设置名称和分类后保存。点击单词行查看例句。“学习”菜单提供单词卡、例句卡和词本模式。例句卡需有翻译，可切换方向。"
   ],
-  "例文付きTOONのひな形": [
-    "TOON template with examples",
-    "แม่แบบ TOON พร้อมตัวอย่าง",
-    "含例句的 TOON 模板"
+  "例文付きJSONのひな形": [
+    "JSON template with examples",
+    "แม่แบบ JSON พร้อมตัวอย่าง",
+    "含例句的 JSON 模板"
   ],
-  "例文付きTOONをコピー": [
-    "Copy TOON with examples",
-    "คัดลอก TOON พร้อมตัวอย่าง",
-    "复制含例句的 TOON"
+  "例文付きJSONをコピー": [
+    "Copy JSON with examples",
+    "คัดลอก JSON พร้อมตัวอย่าง",
+    "复制含例句的 JSON"
   ],
   "作成画面で登録する": [
     "Open creation page",
@@ -1359,10 +1359,10 @@
     "ใช้ เพิ่มเติม → คัดลอกและแก้ไข ในชุดสาธารณะเพื่อบันทึกสำเนาส่วนตัว จากนั้นแก้ประโยคและคำแปลในคลังของคุณ",
     "在公开词本中选“更多→复制并编辑”，保存私密副本。然后在词库打开单词，通过“添加/编辑例句”修改句子和翻译。"
   ],
-  "AIでまとめて書き換える場合は、「その他」→「TOONを編集してフォーク」を選びます。TOONを外部AIに渡し、「英単語と意味は変えず、例文を好きな場面に書き換え、日本語訳も付けて」と頼めます。出力されたTOON全体をフォーク画面に貼り、内容を確認して保存します。": [
-    "For AI bulk edits, choose More → Edit TOON and fork. Ask an external AI to keep words and meanings while rewriting examples in a preferred context with translations. Paste the complete result into the fork screen, review and save.",
-    "หากแก้หลายคำด้วย AI ให้เลือก เพิ่มเติม → แก้ไข TOON และสร้างฉบับแยก ขอให้ AI คงคำและความหมาย แต่เปลี่ยนตัวอย่างตามสถานการณ์ที่ชอบพร้อมคำแปล จากนั้นวางผลทั้งหมด ตรวจสอบและบันทึก",
-    "批量用 AI 改写时，选择“更多→编辑 TOON 并创建衍生版”。让外部 AI 保持单词和释义，仅按喜欢的场景改写例句并附翻译。将完整结果粘贴到衍生版页面，确认保存。"
+  "AIでまとめて書き換える場合は、「その他」→「JSONを編集してフォーク」を選びます。JSONを外部AIに渡し、「英単語と意味は変えず、例文を好きな場面に書き換え、日本語訳も付けて」と頼めます。出力されたJSON全体をフォーク画面に貼り、内容を確認して保存します。": [
+    "For AI bulk edits, choose More → Edit JSON and fork. Ask an external AI to keep words and meanings while rewriting examples in a preferred context with translations. Paste the complete result into the fork screen, review and save.",
+    "หากแก้หลายคำด้วย AI ให้เลือก เพิ่มเติม → แก้ไข JSON และสร้างฉบับแยก ขอให้ AI คงคำและความหมาย แต่เปลี่ยนตัวอย่างตามสถานการณ์ที่ชอบพร้อมคำแปล จากนั้นวางผลทั้งหมด ตรวจสอบและบันทึก",
+    "批量用 AI 改写时，选择“更多→编辑 JSON 并创建衍生版”。让外部 AI 保持单词和释义，仅按喜欢的场景改写例句并附翻译。将完整结果粘贴到衍生版页面，确认保存。"
   ],
   "コピーやフォークは自分用のデータとして保存され、元の更新は自動反映されません。編集せず学習するなら「お気に入りに登録」で、保存枠を使わずマイライブラリから開けます。": [
     "Copies and forks are separate data; source updates do not sync. To study the original, add it to Favorites without using storage space.",
@@ -1374,10 +1374,10 @@
     "มีปัญหาในการนำเข้าหรือไม่",
     "无法导入时"
   ],
-  "回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとTOONをAIに送り、「このエラーを直して、TOON全体を出力して」と頼めます。": [
-    "If the response is cut off, reduce the word count. For format errors, ask the AI to fix the error using Azuki’s message and return the complete TOON.",
-    "หากคำตอบขาด ให้ลดจำนวนคำ หากรูปแบบผิด ให้ส่งข้อความผิดพลาดของ Azuki กับ TOON ให้ AI แก้และส่ง TOON ทั้งหมด",
-    "若回答中断，请减少单词数量。格式出错时，将 Azuki 的错误信息和 TOON 发给 AI，请其修复并输出完整 TOON。"
+  "回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとJSONをAIに送り、「このエラーを直して、JSON全体を出力して」と頼めます。": [
+    "If the response is cut off, reduce the word count. For format errors, ask the AI to fix the error using Azuki’s message and return the complete JSON.",
+    "หากคำตอบขาด ให้ลดจำนวนคำ หากรูปแบบผิด ให้ส่งข้อความผิดพลาดของ Azuki กับ JSON ให้ AI แก้และส่ง JSON ทั้งหมด",
+    "若回答中断，请减少单词数量。格式出错时，将 Azuki 的错误信息和 JSON 发给 AI，请其修复并输出完整 JSON。"
   ],
   "通常の新規登録は1冊5,000語・512KBまでです。例文を増やして上限を超えた場合は、単語数や例文数を減らしてください。個人の保存上限は20冊・合計15,000語です。保存上限のエラーが出た場合は、単語帳を減らすなど、表示された案内に従ってください。": [
     "Each new wordbook can contain up to 5,000 words and 512 KB. Reduce words or examples if too large. Personal storage is 20 wordbooks and 15,000 words total. Follow the on-screen guidance if storage is full.",
@@ -1809,15 +1809,15 @@
     "ชุดคำศัพท์ถูกอัปเดต โปรดเปิดใหม่",
     "词本已更新，请重新打开。"
   ],
-  "TOONは512KB以内にしてください。": [
-    "TOON must be 512 KB or less.",
-    "TOON ต้องไม่เกิน 512 KB",
-    "TOON 不能超过 512 KB。"
+  "JSONは512KB以内にしてください。": [
+    "JSON must be 512 KB or less.",
+    "JSON ต้องไม่เกิน 512 KB",
+    "JSON 不能超过 512 KB。"
   ],
-  "TOONの形式を確認してください。": [
-    "Check the TOON format.",
-    "โปรดตรวจรูปแบบ TOON",
-    "请检查 TOON 格式。"
+  "JSONの形式を確認してください。": [
+    "Check the JSON format.",
+    "โปรดตรวจรูปแบบ JSON",
+    "请检查 JSON 格式。"
   ],
   "単語帳をフォーク": [
     "Fork wordbook",
@@ -1854,10 +1854,10 @@
     "คำอธิบาย (ไม่บังคับ)",
     "说明（选填）"
   ],
-  "単語のTOON": [
-    "Words in TOON",
-    "คำศัพท์แบบ TOON",
-    "单词 TOON"
+  "単語のJSON": [
+    "Words in JSON",
+    "คำศัพท์แบบ JSON",
+    "单词 JSON"
   ],
   "英単語・代表的な意味・例文・単語タグを編集できます。選んだ単語帳の全語が入っています。標準単語帳の「その他の意味」と用法注記はコピーされません。": [
     "Edit words, main meanings, examples and word tags. All words are included. Additional meanings and usage notes from standard books are not copied.",
@@ -1879,10 +1879,10 @@
     "ตรวจสอบเนื้อหา",
     "确认内容"
   ],
-  "TOONファイルは512KB以内にしてください。": [
-    "TOON files must be 512 KB or less.",
-    "ไฟล์ TOON ต้องไม่เกิน 512 KB",
-    "TOON 文件不能超过 512 KB。"
+  "JSONファイルは512KB以内にしてください。": [
+    "JSON files must be 512 KB or less.",
+    "ไฟล์ JSON ต้องไม่เกิน 512 KB",
+    "JSON 文件不能超过 512 KB。"
   ],
   "ファイルを読み込めませんでした。": [
     "Could not read the file.",
@@ -1894,10 +1894,10 @@
     "ใส่คำศัพท์",
     "输入单词"
   ],
-  "TOONを選ぶ": [
-    "Choose TOON",
-    "เลือก TOON",
-    "选择 TOON"
+  "JSONを選ぶ": [
+    "Choose JSON",
+    "เลือก JSON",
+    "选择 JSON"
   ],
   "オリジナル英単語帳の作り方 →": [
     "How to create a wordbook →",
@@ -1924,15 +1924,15 @@
     "เลือกไฟล์",
     "选择文件"
   ],
-  "TOONを貼り付け": [
-    "Paste TOON",
-    "วาง TOON",
-    "粘贴 TOON"
+  "JSONを貼り付け": [
+    "Paste JSON",
+    "วาง JSON",
+    "粘贴 JSON"
   ],
-  "TOONファイルをここにドロップ": [
-    "Drop a TOON file here",
-    "วางไฟล์ TOON ที่นี่",
-    "将 TOON 文件拖放到这里"
+  "JSONファイルをここにドロップ": [
+    "Drop a JSON file here",
+    "วางไฟล์ JSON ที่นี่",
+    "将 JSON 文件拖放到这里"
   ],
   "または": [
     "or",
@@ -1949,25 +1949,25 @@
     ".toon / สูงสุด 512 KB และ 5,000 คำ",
     ".toon ／ 最多 512 KB、5,000 词"
   ],
-  "TOONファイル": [
-    "TOON file",
-    "ไฟล์ TOON",
-    "TOON 文件"
+  "JSONファイル": [
+    "JSON file",
+    "ไฟล์ JSON",
+    "JSON 文件"
   ],
-  "単語帳のTOON": [
-    "Wordbook TOON",
-    "TOON ของชุดคำศัพท์",
-    "词本 TOON"
+  "単語帳のJSON": [
+    "Wordbook JSON",
+    "JSON ของชุดคำศัพท์",
+    "词本 JSON"
   ],
   "はじめての方へ": [
     "New here?",
     "สำหรับผู้เริ่มต้น",
     "首次使用？"
   ],
-  "TOONには英単語・意味・例文を入れます。名前とカテゴリは次の画面で設定します。": [
-    "TOON contains words, meanings and examples. Set a name and category on the next screen.",
-    "TOON มีคำศัพท์ ความหมาย และตัวอย่าง ตั้งชื่อและหมวดหมู่ในหน้าถัดไป",
-    "TOON 包含单词、释义和例句，名称和分类在下一页设置。"
+  "JSONには英単語・意味・例文を入れます。名前とカテゴリは次の画面で設定します。": [
+    "JSON contains words, meanings and examples. Set a name and category on the next screen.",
+    "JSON มีคำศัพท์ ความหมาย และตัวอย่าง ตั้งชื่อและหมวดหมู่ในหน้าถัดไป",
+    "JSON 包含单词、释义和例句，名称和分类在下一页设置。"
   ],
   "サンプルを使う": [
     "Use sample",
@@ -2469,10 +2469,10 @@
     "8. เปลี่ยนแปลง ระงับและยุติ",
     "8. 变更、中断与终止"
   ],
-  "保守、障害、外部サービスの停止、災害その他の事情により、機能の変更や提供の中断・終了を行う場合があります。計画的な重要変更・終了については、可能な限り事前に案内します。大切な登録元のTOON等は、利用者自身でも保管してください。": [
-    "Features may change, pause or end due to maintenance, incidents, external service outages, disasters or other circumstances. Significant planned changes or closures are announced in advance where possible. Keep your own copies of important source TOON data.",
-    "อาจเปลี่ยน หยุดหรือยุติฟังก์ชันเมื่อบำรุงรักษา ขัดข้อง บริการภายนอกหยุด ภัยพิบัติหรือเหตุอื่น แจ้งแผนสำคัญล่วงหน้าเท่าที่ทำได้ โปรดเก็บ TOON ต้นฉบับสำคัญไว้เอง",
-    "因维护、故障、外部服务停止、灾害等可能变更中断或终止功能。计划中的重要变更终止尽可能提前告知，请自行保管重要 TOON 原始数据。"
+  "保守、障害、外部サービスの停止、災害その他の事情により、機能の変更や提供の中断・終了を行う場合があります。計画的な重要変更・終了については、可能な限り事前に案内します。大切な登録元のJSON等は、利用者自身でも保管してください。": [
+    "Features may change, pause or end due to maintenance, incidents, external service outages, disasters or other circumstances. Significant planned changes or closures are announced in advance where possible. Keep your own copies of important source JSON data.",
+    "อาจเปลี่ยน หยุดหรือยุติฟังก์ชันเมื่อบำรุงรักษา ขัดข้อง บริการภายนอกหยุด ภัยพิบัติหรือเหตุอื่น แจ้งแผนสำคัญล่วงหน้าเท่าที่ทำได้ โปรดเก็บ JSON ต้นฉบับสำคัญไว้เอง",
+    "因维护、故障、外部服务停止、灾害等可能变更中断或终止功能。计划中的重要变更终止尽可能提前告知，请自行保管重要 JSON 原始数据。"
   ],
   "9. 責任": [
     "9. Liability",
@@ -3414,10 +3414,10 @@
     "แชร์ต้องเข้าสู่ระบบ Google",
     "分享需要 Google 登录"
   ],
-  "お試しモードの単語帳は、この端末だけに保存されています。Googleログイン後にTOONを登録すると、共有できるようになります。": [
-    "Guest wordbooks are saved only on this device. Import TOON after Google sign-in to share.",
-    "ชุดทดลองเก็บเฉพาะอุปกรณ์นี้ เข้าสู่ Google แล้วนำเข้า TOON เพื่อแชร์",
-    "体验模式词本仅保存在此设备，Google 登录后登记 TOON 即可分享。"
+  "お試しモードの単語帳は、この端末だけに保存されています。Googleログイン後にJSONを登録すると、共有できるようになります。": [
+    "Guest wordbooks are saved only on this device. Import JSON after Google sign-in to share.",
+    "ชุดทดลองเก็บเฉพาะอุปกรณ์นี้ เข้าสู่ Google แล้วนำเข้า JSON เพื่อแชร์",
+    "体验模式词本仅保存在此设备，Google 登录后登记 JSON 即可分享。"
   ],
   "この単語帳は公開中です": [
     "This wordbook is public",
@@ -3859,20 +3859,20 @@
     "เพิ่มชุดคำศัพท์",
     "添加词本"
   ],
-  "ここからTOONを貼り付けて登録できます。作成画面の「オリジナル英単語帳の作り方」には、画像や学びたい単語からAIで作るためのプロンプトがあります。": [
-    "Paste TOON here to add words. The creation guide includes prompts for making wordbooks from images or words with AI.",
-    "วาง TOON ที่นี่เพื่อเพิ่มคำ คู่มือสร้างมีพรอมป์ใช้ AI จากรูปหรือคำศัพท์",
-    "从这里粘贴 TOON 登记，创建指南提供从图片或单词用 AI 制作的提示词。"
+  "ここからJSONを貼り付けて登録できます。作成画面の「オリジナル英単語帳の作り方」には、画像や学びたい単語からAIで作るためのプロンプトがあります。": [
+    "Paste JSON here to add words. The creation guide includes prompts for making wordbooks from images or words with AI.",
+    "วาง JSON ที่นี่เพื่อเพิ่มคำ คู่มือสร้างมีพรอมป์ใช้ AI จากรูปหรือคำศัพท์",
+    "从这里粘贴 JSON 登记，创建指南提供从图片或单词用 AI 制作的提示词。"
   ],
   "自分の例文も登録できます": [
     "Add your own examples too",
     "เพิ่มตัวอย่างของคุณได้ด้วย",
     "也可以添加自己的例句"
   ],
-  "英単語・日本語の意味・英語の例文をTOONにまとめて登録できます。作成ガイドの「自分で考えた単語・例文を登録する」にコピーできるひな形があります。保存後は単語の行をタップして例文を確認できます。": [
-    "Import words, meanings and examples using TOON. Find a template in the guide. After saving, tap a word row to see examples.",
-    "นำเข้าคำ ความหมายและตัวอย่างด้วย TOON มีแม่แบบในคู่มือ หลังบันทึกแตะแถวคำเพื่อดูตัวอย่าง",
-    "用 TOON 登记单词释义和例句，指南提供模板，保存后点击单词行查看例句。"
+  "英単語・日本語の意味・英語の例文をJSONにまとめて登録できます。作成ガイドの「自分で考えた単語・例文を登録する」にコピーできるひな形があります。保存後は単語の行をタップして例文を確認できます。": [
+    "Import words, meanings and examples using JSON. Find a template in the guide. After saving, tap a word row to see examples.",
+    "นำเข้าคำ ความหมายและตัวอย่างด้วย JSON มีแม่แบบในคู่มือ หลังบันทึกแตะแถวคำเพื่อดูตัวอย่าง",
+    "用 JSON 登记单词释义和例句，指南提供模板，保存后点击单词行查看例句。"
   ],
   "運営やほかの人が公開した単語帳を探せます。気に入ったものは自分のライブラリに保存できます。": [
     "Explore wordbooks published by Azuki and other learners. Save favorites to your library.",
@@ -4099,15 +4099,15 @@
     "สร้างความหมายและตัวอย่างไม่ได้",
     "无法生成释义和例句。"
   ],
-  "単語だけのTOONを500語まで登録できます。": [
-    "Add up to 500 words as word-only TOON.",
-    "เพิ่ม TOON เฉพาะคำศัพท์ได้สูงสุด 500 คำ",
-    "可登记最多 500 词的单词 TOON。"
+  "単語だけのJSONを500語まで登録できます。": [
+    "Add up to 500 words as word-only JSON.",
+    "เพิ่ม JSON เฉพาะคำศัพท์ได้สูงสุด 500 คำ",
+    "可登记最多 500 词的单词 JSON。"
   ],
-  "TOONを読み込む": [
-    "Load TOON",
-    "โหลด TOON",
-    "读取 TOON"
+  "JSONを読み込む": [
+    "Load JSON",
+    "โหลด JSON",
+    "读取 JSON"
   ],
   "語を読み込みました": [
     "words loaded",
@@ -5079,20 +5079,20 @@
     "บทตำรา",
     "教材章节"
   ],
-  "TOONの入れ子が深すぎます。字下げを確認してください。": [
-    "TOON nesting is too deep. Check indentation.",
-    "TOON ซ้อนลึกเกินไป ตรวจการย่อหน้า",
-    "TOON 嵌套过深，请检查缩进。"
+  "JSONの入れ子が深すぎます。字下げを確認してください。": [
+    "JSON nesting is too deep. Check indentation.",
+    "JSON ซ้อนลึกเกินไป ตรวจการย่อหน้า",
+    "JSON 嵌套过深，请检查缩进。"
   ],
-  "TOONの配列は5,000件以内にしてください。": [
-    "TOON arrays may contain up to 5,000 items.",
-    "อาร์เรย์ TOON ไม่เกิน 5,000 รายการ",
-    "TOON 数组最多 5,000 项。"
+  "JSONの配列は5,000件以内にしてください。": [
+    "JSON arrays may contain up to 5,000 items.",
+    "อาร์เรย์ JSON ไม่เกิน 5,000 รายการ",
+    "JSON 数组最多 5,000 项。"
   ],
-  "TOONの形式を確認してください。配列の件数・字下げ・引用符を確認してください。": [
-    "Check TOON counts, indentation and quotes.",
-    "ตรวจจำนวน การย่อหน้าและเครื่องหมายคำพูด TOON",
-    "请检查 TOON 的数量、缩进和引号。"
+  "JSONの形式を確認してください。配列の件数・字下げ・引用符を確認してください。": [
+    "Check JSON counts, indentation and quotes.",
+    "ตรวจจำนวน การย่อหน้าและเครื่องหมายคำพูด JSON",
+    "请检查 JSON 的数量、缩进和引号。"
   ],
   "ホーム": [
     "Home",
@@ -5534,10 +5534,10 @@
     "ค้นหา CEFR-J ชุดตามหัวข้อและจากชุมชน ทดลองการ์ดได้โดยไม่เข้าสู่ระบบ แบบหนังสือใช้กับ Pro",
     "查找 CEFR-J、主题和大家公开的词本，无需登录即可试学卡片，词本模式需 Pro。"
   ],
-  "AIで作った単語・意味・例文をTOONでまとめて登録。Azukiで自分の例文に編集して、単語帳を作る方法を紹介します。": [
-    "Import AI-created words, meanings and examples with TOON. Learn how to create and customize your wordbooks.",
-    "นำเข้าคำ ความหมายและตัวอย่าง AI ด้วย TOON เรียนวิธีสร้างและปรับชุดคำศัพท์",
-    "用 TOON 批量导入 AI 生成的单词释义例句，了解如何创建并编辑自己的词本。"
+  "AIで作った単語・意味・例文をJSONでまとめて登録。Azukiで自分の例文に編集して、単語帳を作る方法を紹介します。": [
+    "Import AI-created words, meanings and examples with JSON. Learn how to create and customize your wordbooks.",
+    "นำเข้าคำ ความหมายและตัวอย่าง AI ด้วย JSON เรียนวิธีสร้างและปรับชุดคำศัพท์",
+    "用 JSON 批量导入 AI 生成的单词释义例句，了解如何创建并编辑自己的词本。"
   ],
   "英単語帳アプリAzukiにおける個人情報、Cookie、アクセス解析などの取り扱いについて。": [
     "How Azuki handles personal information, cookies and analytics.",
@@ -5579,10 +5579,10 @@
     "ซ่อน {0}",
     "隐藏{0}"
   ],
-  "単語のみは500語まで。意味・例文付きのTOONは5,000語まで読み込めます。": [
-    "Up to 500 words for AI creation, or 5,000 words in TOON with meanings and examples.",
-    "คำอย่างเดียวได้ 500 คำ หรือ TOON ที่มีความหมายและตัวอย่างได้ 5,000 คำ",
-    "单词输入最多 500 词，含释义和例句的 TOON 最多 5,000 词。"
+  "単語のみは500語まで。意味・例文付きのJSONは5,000語まで読み込めます。": [
+    "Up to 500 words for AI creation, or 5,000 words in JSON with meanings and examples.",
+    "คำอย่างเดียวได้ 500 คำ หรือ JSON ที่มีความหมายและตัวอย่างได้ 5,000 คำ",
+    "单词输入最多 500 词，含释义和例句的 JSON 最多 5,000 词。"
   ],
   "訳は未入力です": [
     "No translation provided.",
@@ -5974,15 +5974,15 @@
     "ย่อหน้าด้วยช่องว่างให้ตรงกับแม่แบบ หากคำตอบถูกตัดกลาง อย่าเพิ่งนำเข้า ให้สร้างใหม่ด้วยจำนวนคำที่น้อยลง",
     "使用半角空格缩进，并与模板保持一致。如果回答中途截断，请先减少单词数量重新生成，再导入。"
   ],
-  "回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとTOONをAIに送り、「wordsとexamplesの実際の件数を数え直し、英文と日本語訳が2列になるよう文中のカンマと引用符を修正して、TOON全体を出力して」と頼めます。": [
-    "If the response is cut off, regenerate it with fewer words. For format errors, send the TOON and Azuki’s error to your AI and ask: “Recount the actual words and examples, fix commas and quotation marks so each example row has exactly two fields, and output the entire corrected TOON.”",
-    "หากคำตอบถูกตัดกลาง ให้สร้างใหม่ด้วยจำนวนคำที่น้อยลง เมื่อรูปแบบผิด ให้ส่ง TOON กับข้อผิดพลาดจาก Azuki ให้ AI แล้วขอให้นับ words และ examples ใหม่ แก้จุลภาคและเครื่องหมายคำพูดให้แต่ละตัวอย่างมี 2 ช่อง และส่ง TOON ที่แก้แล้วทั้งหมด",
-    "如果回答被截断，请减少单词数重新生成。格式出错时，把 TOON 和 Azuki 的错误提示发给 AI，并要求：“重新统计 words 和 examples 的实际数量，修正逗号和引号，确保每行例句恰好有英文、日语译文两列，并输出修正后的完整 TOON。”"
+  "回答が途中で切れていたら、単語数を減らして作り直してください。形式のエラーが出る場合は、AzukiのエラーメッセージとJSONをAIに送り、「wordsとexamplesの実際の件数を数え直し、英文と日本語訳が2列になるよう文中のカンマと引用符を修正して、JSON全体を出力して」と頼めます。": [
+    "If the response is cut off, regenerate it with fewer words. For format errors, send the JSON and Azuki’s error to your AI and ask: “Recount the actual words and examples, fix commas and quotation marks so each example row has exactly two fields, and output the entire corrected JSON.”",
+    "หากคำตอบถูกตัดกลาง ให้สร้างใหม่ด้วยจำนวนคำที่น้อยลง เมื่อรูปแบบผิด ให้ส่ง JSON กับข้อผิดพลาดจาก Azuki ให้ AI แล้วขอให้นับ words และ examples ใหม่ แก้จุลภาคและเครื่องหมายคำพูดให้แต่ละตัวอย่างมี 2 ช่อง และส่ง JSON ที่แก้แล้วทั้งหมด",
+    "如果回答被截断，请减少单词数重新生成。格式出错时，把 JSON 和 Azuki 的错误提示发给 AI，并要求：“重新统计 words 和 examples 的实际数量，修正逗号和引号，确保每行例句恰好有英文、日语译文两列，并输出修正后的完整 JSON。”"
   ],
-  "単語・意味・例文と訳をTOONにまとめて登録できます。作成ガイドのひな形を使い、単語と例文の件数を合わせ、文中のカンマは引用符で囲んでください。書き方の例もガイドに載せています。": [
-    "You can import words, meanings, examples and translations as TOON. Use the guide’s template, match the word and example counts, and quote fields containing commas. The guide includes examples of the correct format.",
-    "นำเข้าคำศัพท์ ความหมาย ตัวอย่างและคำแปลด้วย TOON ได้ ใช้แม่แบบในคู่มือ ให้จำนวนคำและตัวอย่างตรงกัน และใส่เครื่องหมายคำพูดครอบข้อความที่มีจุลภาค คู่มือมีตัวอย่างรูปแบบที่ถูกต้อง",
-    "可以将单词、释义、例句和译文整理成 TOON 导入。请使用指南模板，核对单词和例句数量，并为含逗号的字段加引号。指南也提供了正确写法的示例。"
+  "単語・意味・例文と訳をJSONにまとめて登録できます。作成ガイドのひな形を使い、単語と例文の件数を合わせ、文中のカンマは引用符で囲んでください。書き方の例もガイドに載せています。": [
+    "You can import words, meanings, examples and translations as JSON. Use the guide’s template, match the word and example counts, and quote fields containing commas. The guide includes examples of the correct format.",
+    "นำเข้าคำศัพท์ ความหมาย ตัวอย่างและคำแปลด้วย JSON ได้ ใช้แม่แบบในคู่มือ ให้จำนวนคำและตัวอย่างตรงกัน และใส่เครื่องหมายคำพูดครอบข้อความที่มีจุลภาค คู่มือมีตัวอย่างรูปแบบที่ถูกต้อง",
+    "可以将单词、释义、例句和译文整理成 JSON 导入。请使用指南模板，核对单词和例句数量，并为含逗号的字段加引号。指南也提供了正确写法的示例。"
   ],
   "コレクション": [
     "Collections",
@@ -6063,5 +6063,80 @@
     "Favorites are shortcuts to the original wordbooks. No copies are created.",
     "รายการโปรดเป็นทางลัดไปยังสมุดคำศัพท์ต้นฉบับ โดยไม่สร้างสำเนา",
     "收藏是原词本的快捷方式，不会创建副本。"
+  ],
+  "JSONで単語帳登録": [
+    "Import a wordbook with JSON",
+    "นำเข้าสมุดคำศัพท์ด้วย JSON",
+    "通过 JSON 导入词本"
+  ],
+  "JSONを貼り付けるか、ファイルを選択してください。": [
+    "Paste JSON or choose a file.",
+    "วาง JSON หรือเลือกไฟล์",
+    "粘贴 JSON 或选择文件。"
+  ],
+  "JSONの形式を確認してください。引用符・カンマ・括弧の閉じ忘れを確認してください。": [
+    "Check the JSON syntax, quotation marks, commas and closing brackets.",
+    "ตรวจสอบรูปแบบ JSON เครื่องหมายคำพูด จุลภาค และวงเล็บปิด",
+    "请检查 JSON 语法、引号、逗号和闭合括号。"
+  ],
+  "wordsとexamplesを配列にする": [
+    "Use arrays for words and examples",
+    "ใช้ words และ examples เป็นอาร์เรย์",
+    "words 和 examples 使用数组"
+  ],
+  "単語はwords配列に、例文は各単語のexamples配列に入れます。配列の件数を書く必要はありません。": [
+    "Put words in the words array and examples in each word’s examples array. No array counts are needed.",
+    "ใส่คำในอาร์เรย์ words และตัวอย่างใน examples ของแต่ละคำ ไม่ต้องระบุจำนวนรายการ",
+    "单词放入 words 数组，例句放入各词的 examples 数组，无需标注数量。"
+  ],
+  "文字列をダブルクォートで囲む": [
+    "Enclose strings in double quotes",
+    "ครอบข้อความด้วยเครื่องหมายคำพูดคู่",
+    "字符串使用双引号"
+  ],
+  "英文中のカンマはそのまま使えます。文中の引用符と改行は、ひな形のようにエスケープしてください。": [
+    "Commas inside sentences can stay as they are. Escape quotes and newlines as shown in the template.",
+    "ใช้จุลภาคในประโยคได้ตามปกติ หลีกเครื่องหมายคำพูดและขึ้นบรรทัดตามตัวอย่าง",
+    "句中的逗号可直接保留，引号和换行请按模板转义。"
+  ],
+  "括弧と区切りを確認する": [
+    "Check brackets and separators",
+    "ตรวจสอบวงเล็บและตัวคั่น",
+    "检查括号和分隔符"
+  ],
+  "最後の要素の後ろにカンマは不要です。回答が途中で切れている場合は、少ない単語数で作り直してください。": [
+    "Do not add a comma after the final item. If the response is cut off, regenerate fewer words.",
+    "ไม่ใส่จุลภาคหลังรายการสุดท้าย หากคำตอบไม่ครบให้สร้างใหม่โดยลดจำนวนคำ",
+    "最后一项后不要加逗号。如果回答被截断，请减少词数后重新生成。"
+  ],
+  "回答に説明文やコードブロックが付いている場合は、それらを除き、最初の「{」から最後の「}」までのJSON全体をコピーします。": [
+    "If the answer includes explanations or code fences, copy only the complete JSON from the first { to the final }.",
+    "หากคำตอบมีคำอธิบายหรือกรอบโค้ด ให้คัดลอกเฉพาะ JSON ทั้งหมดตั้งแต่ { แรกถึง } สุดท้าย",
+    "如回答带有说明或代码块，请仅复制从第一个 { 到最后一个 } 的完整 JSON。"
+  ],
+  "作成画面の「JSONで単語帳登録」にコピーした内容を貼り、「内容を確認」を押します。単語を確認し、単語帳の名前とカテゴリを設定して登録します。「教材」を選ぶと、教材名と版を入力できます。教材名がそのまま単語帳のタイトルになります。": [
+    "Paste into “Import a wordbook with JSON” and select “Review”. Check the words, then set a name and category. Choosing Textbook lets you enter its name and edition; its name becomes the title.",
+    "วางในแท็บนำเข้าด้วย JSON แล้วตรวจสอบ ตั้งชื่อและหมวดหมู่ หากเลือกหนังสือเรียน ให้ใส่ชื่อและฉบับ ชื่อหนังสือจะใช้เป็นชื่อสมุด",
+    "在“通过 JSON 导入词本”中粘贴并确认内容，然后设置名称和分类。选择教材时可填写教材名及版本，教材名将作为词本标题。"
+  ],
+  "下のひな形をコピーし、作成画面の「JSONで単語帳登録」に貼ります。単語・意味・例文の文字列を書き換えてください。単語を増やす場合は、words配列に同じ形のオブジェクトをカンマで区切って追加します。": [
+    "Copy the template into the JSON import tab and edit the words, meanings and examples. To add words, append objects to the words array, separated by commas.",
+    "คัดลอกแม่แบบไปยังแท็บ JSON แล้วแก้คำ ความหมาย และตัวอย่าง เพิ่มคำโดยเพิ่มออบเจ็กต์ใน words คั่นด้วยจุลภาค",
+    "将模板复制到 JSON 导入标签并修改单词、释义和例句。添加单词时，在 words 数组中以逗号分隔相同结构的对象。"
+  ],
+  "単語・意味・例文と訳をJSONにまとめて登録できます。作成ガイドのひな形を使い、wordsとexamplesを配列にし、文字列はダブルクォートで囲んでください。書き方の例もガイドに載せています。": [
+    "Import words, meanings, examples and translations as JSON. Use the guide template with words/examples arrays and double-quoted strings.",
+    "นำเข้าคำ ความหมาย ตัวอย่างและคำแปลด้วย JSON ใช้แม่แบบในคู่มือ โดย words และ examples เป็นอาร์เรย์และครอบข้อความด้วยคำพูดคู่",
+    "可以用 JSON 导入单词、释义、例句及译文。请使用指南模板，words 和 examples 使用数组，字符串使用双引号。"
+  ],
+  "形式のエラーが出る場合は、エラーメッセージとJSONをAIに送り、引用符・カンマ・括弧を修正して有効なJSON全体を出力するよう頼んでください。": [
+    "For format errors, send the error message and JSON to your AI and ask it to fix quotes, commas and brackets, then return the complete valid JSON.",
+    "หากรูปแบบผิด ให้ส่งข้อความผิดพลาดและ JSON ให้ AI แก้เครื่องหมายคำพูด จุลภาค และวงเล็บ แล้วส่ง JSON ที่ถูกต้องทั้งหมด",
+    "如出现格式错误，请将错误信息和 JSON 发给 AI，让它修正引号、逗号和括号，并输出完整有效的 JSON。"
+  ],
+  "JSONの形式を確認してください。例：{\"words\":[\"agree\",\"curious\",\"improve\"]}": [
+    "Check the JSON format. Example: {\"words\":[\"agree\",\"curious\",\"improve\"]}",
+    "ตรวจสอบรูปแบบ JSON เช่น {\"words\":[\"agree\",\"curious\",\"improve\"]}",
+    "请检查 JSON 格式，例如：{\"words\":[\"agree\",\"curious\",\"improve\"]}"
   ]
 }

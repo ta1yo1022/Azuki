@@ -13,8 +13,8 @@ afterEach(async()=>{await act(async()=>root.unmount());container.remove();vi.uns
 async function render(draft?:WordPasteDraft){await act(async()=>root.render(<StrictMode><MemoryRouter><Harness draft={draft}/></MemoryRouter></StrictMode>));}
 async function input(selector:string,value:string){await act(async()=>{const el=container.querySelector(selector) as HTMLInputElement;const prototype=el.tagName==='SELECT'?HTMLSelectElement.prototype:HTMLTextAreaElement.prototype;Object.getOwnPropertyDescriptor(prototype,'value')!.set!.call(el,value);el.dispatchEvent(new Event(el.tagName==='SELECT'?'change':'input',{bubbles:true}));});}
 async function click(label:string){await act(async()=>[...container.querySelectorAll('button')].find(el=>el.textContent?.trim()===label)!.click());}
-async function lookup(){await input('#vocabulary-input','words[1]: book');await click('TOONを読み込む');}
-it('works in StrictMode and lets Free create a book from TOON with manually edited meanings',async()=>{
+async function lookup(){await input('#vocabulary-input','{"words":["book"]}');await click('JSONを読み込む');}
+it('works in StrictMode and lets Free create a book from JSON with manually edited meanings',async()=>{
  mocks.quota.pro=false;await render();await lookup();expect(container.textContent).toContain('Proを見る');
  expect([...container.querySelectorAll('button')].find(el=>el.textContent==='この1語で単語帳を作る')?.disabled).toBe(true);
  await input('[aria-label="bookの意味"]','本');await click('この1語で単語帳を作る');expect(preview).toHaveBeenCalledWith([{word:'book',meaning:'本',tags:[]}]);expect(mocks.generate).not.toHaveBeenCalled();
@@ -22,13 +22,13 @@ it('works in StrictMode and lets Free create a book from TOON with manually edit
 it('generates meaning automatically and preserves edits to meaning, examples and translations when saving',async()=>{
  await render();await lookup();await click('1語の意味・例文を生成');expect((container.querySelector('[aria-label="bookの意味"]') as HTMLTextAreaElement).value).toBe('本');
  await input('[aria-label="bookの意味"]','本、書物');await input('[aria-label="bookの例文の日本語訳"]','私は毎日、本を読んでいます。');await click('この1語で単語帳を作る');expect(preview.mock.calls[0][0][0]).toMatchObject({meaning:'本、書物',examples:[{text:'I read a book every day.',translation:'私は毎日、本を読んでいます。'}]});
- await click('入力を変更');await click('TOONを読み込む');expect((container.querySelector('[aria-label="bookの意味"]') as HTMLTextAreaElement).value).toBe('本、書物');
+ await click('入力を変更');await click('JSONを読み込む');expect((container.querySelector('[aria-label="bookの意味"]') as HTMLTextAreaElement).value).toBe('本、書物');
 });
 it('shows the exhausted weekly quota while allowing already generated content to be edited and saved',async()=>{
  mocks.quota.remaining=0;mocks.quota.used=500;await render();await lookup();expect(container.textContent).toContain('今週の生成上限に達しました');expect([...container.querySelectorAll('button')].find(el=>el.textContent==='今週の上限に到達')?.disabled).toBe(true);await input('[aria-label="bookの意味"]','本');await click('この1語で単語帳を作る');expect(preview).toHaveBeenCalledOnce();
 });
-it('reports invalid TOON without making a generation request',async()=>{
- await render();await input('#vocabulary-input','book,agree');await click('TOONを読み込む');expect(container.querySelector('[role="alert"]')?.textContent).toContain('TOON');expect(mocks.generate).not.toHaveBeenCalled();
+it('reports invalid JSON without making a generation request',async()=>{
+ await render();await input('#vocabulary-input','book,agree');await click('JSONを読み込む');expect(container.querySelector('[role="alert"]')?.textContent).toContain('JSON');expect(mocks.generate).not.toHaveBeenCalled();
 });
 it('reuses the request ID after a network failure to avoid duplicate charging',async()=>{
  mocks.generate.mockRejectedValueOnce(new Error('network unavailable'));await render();await lookup();await click('1語の意味・例文を生成');await click('1語の意味・例文を生成');expect(mocks.generate.mock.calls[0][0]).toBe(mocks.generate.mock.calls[1][0]);expect(mocks.generate.mock.calls[1][1]).toEqual([{term:'book'}]);
@@ -44,9 +44,9 @@ it('uses a table with paging and preserves edits from every page when saving',as
  expect((container.querySelector('[aria-label="編集するページ"]') as unknown as HTMLSelectElement).value).toBe('1');expect(container.querySelectorAll('tbody tr')).toHaveLength(25);
 });
 
-it('imports completed TOON without generation or losing meanings, tags, spelling and multiple translations',async()=>{
- const {encodeToon}=await import('../shared/toon');mocks.quota.pro=false;
+it('imports completed JSON without generation or losing meanings, tags, spelling and multiple translations',async()=>{
+ const {encodeJson}=await import('../shared/json');mocks.quota.pro=false;
  const word={word:'Book',meaning:'本',examples:[{text:'Read a book.',translation:'本を読んで。'},{text:'A new book.',translation:'新しい本。'}],tags:['名詞']};
- await render();await input('#vocabulary-input',encodeToon({words:[word]}));await click('TOONを読み込む');
+ await render();await input('#vocabulary-input',encodeJson({words:[word]}));await click('JSONを読み込む');
  expect(preview).toHaveBeenCalledOnce();expect(preview.mock.calls[0][0][0]).toMatchObject(word);expect(mocks.generate).not.toHaveBeenCalled();
 });

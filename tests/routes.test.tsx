@@ -1,5 +1,5 @@
 // @vitest-environment happy-dom
-import {encodeToon,decodeToon} from '../shared/toon';
+import {encodeJson,decodeJson} from '../shared/json';
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { act } from "react";
 import { createRoot, type Root } from "react-dom/client";
@@ -119,7 +119,7 @@ describe("URL navigation", () => {
     await mount("/shared/demo-deck");
     for (const action of ["close", "cancel", "escape"]) {
       await click("その他");
-      await click("TOONを編集してフォーク");
+      await click("JSONを編集してフォーク");
       expect(container.querySelectorAll(".fork-dialog")).toHaveLength(1);
       await act(async () => {
         const dialog = container.querySelector<HTMLDialogElement>(".fork-dialog")!;
@@ -281,12 +281,12 @@ describe("official publisher and deck-level difficulty", () => {
   });
 });
 
-it("opens the public creation guide and returns to the library TOON paste tab", async () => {
+it("opens the public creation guide and returns to the library JSON paste tab", async () => {
   mocks.user = { uid:"guide-user", displayName:"Test", providerData:[] };
   HTMLDialogElement.prototype.showModal = function () { this.setAttribute('open', ''); };
   await mount('/library/import');
   expect(container.querySelector('#vocabulary-input')).toBeTruthy();
-  await click('ファイルを選択');
+  await click('JSONで単語帳登録');
   const guide = container.querySelector<HTMLAnchorElement>('a[href="/guide/create"]')!;
   expect(guide).toBeTruthy();
   await act(async () => guide.click()); await settle();
@@ -294,16 +294,16 @@ it("opens the public creation guide and returns to the library TOON paste tab", 
   const copy = vi.fn().mockResolvedValue(undefined);
   vi.stubGlobal('navigator', { clipboard: { writeText: copy } });
   await click('プロンプトをコピー');
-  expect(copy).toHaveBeenCalledWith(expect.stringContaining('words[1]:'));
+  expect(copy).toHaveBeenCalledWith(expect.stringContaining('"words": ['));
   expect(container.querySelector('#own-examples-title')?.textContent).toBe('オリジナルの単語と例文を登録する');
-  await click('例文付きTOONをコピー');
-  const sample = decodeToon(copy.mock.calls.at(-1)![0]) as any;
+  await click('例文付きJSONをコピー');
+  const sample = decodeJson(copy.mock.calls.at(-1)![0]) as any;
   expect(sample.words).toHaveLength(2);
   expect(sample.words.every((word: any) => word.word && word.meaning && word.examples?.length && word.examples.every((example: any) => example.text && example.translation))).toBe(true);
-  const paste = container.querySelector<HTMLAnchorElement>('a[href="/library/import?tab=paste"]')!;
+  const paste = container.querySelector<HTMLAnchorElement>('a[href="/library/import?tab=json"]')!;
   await act(async () => paste.click()); await settle();
-  expect(currentURL).toBe('/library/import?tab=paste');
-  expect(container.querySelector('#toon-input')).toBeTruthy();
+  expect(currentURL).toBe('/library/import?tab=json');
+  expect(container.querySelector('#json-input')).toBeTruthy();
 });
 
 it('shows the tutorial after login, remembers dismissal, and replays it from settings', async () => {

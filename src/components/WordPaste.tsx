@@ -8,7 +8,7 @@ import { EXAMPLE_BATCH_LIMIT } from '../../shared/vocabulary';
 import type { WordInput } from '../../shared/model';
 import { vocabularyRepository,useVocabularyQuota } from '../lib/vocabulary';
 import { PublishConflict } from '../lib/repository';
-import {readCreationToon} from '../lib/importWords';
+import {readCreationJson} from '../lib/importWords';
 type Row={term:string;meaning:string;text:string;translation:string;generated:boolean};
 export type WordPasteDraft={raw:string;rows:Row[]};
 export const emptyWordPaste:WordPasteDraft={raw:'',rows:[]};
@@ -22,15 +22,15 @@ export function WordPaste({draft,setDraft,onPreview,onBusy,language='en',meaning
  useEffect(()=>{mounted.current=true;return()=>{mounted.current=false;stop.current=true;};},[]);
  function working(value:boolean){setBusy(value);onBusy(value);}
  function update(index:number,value:Partial<Row>){setDraft(old=>({...old,rows:old.rows.map((row,i)=>i===index?{...row,...value}:row)}));}
- function readToon(){
+ function readJson(){
   if(busy)return;setError('');setProgress('');
   try{
-   const parsed=readCreationToon(draft.raw,language);
+   const parsed=readCreationJson(draft.raw,language);
    if(parsed.kind==='complete'){onPreview(parsed.words);return;}
    const terms=parsed.terms;
    setDraft(old=>({...old,rows:terms.map(term=>old.rows.find(row=>row.term===term)??{term,meaning:'',text:'',translation:'',generated:false})}));
    setPage(0);setEditingInput(false);
-  }catch(e){setError(e instanceof Error?e.message:messageText("TOONの形式を確認してください。"));}
+  }catch(e){setError(e instanceof Error?e.message:messageText("JSONの形式を確認してください。"));}
  }
  const missing=draft.rows.filter(row=>!row.generated);
  const count=Math.min(missing.length,quota?.remaining??0);
@@ -61,9 +61,9 @@ export function WordPaste({draft,setDraft,onPreview,onBusy,language='en',meaning
  const visibleRows=draft.rows.slice(firstRow,firstRow+pageSize);
  const canSave=draft.rows.length>0&&draft.rows.every(row=>row.meaning.trim());
  return <div className="word-paste-panel">
-  {editingInput?<><label htmlFor="vocabulary-input">{t("単語のTOON")}</label>
-  <textarea id="vocabulary-input" value={draft.raw} disabled={busy} spellCheck={false} placeholder={language==='th'?'words[3]: สวัสดี,ขอบคุณ,เรียน':language==='zh'?'words[3]: 你好,谢谢,学习':language==='ja'?'words[3]: こんにちは,ありがとう,学ぶ':'words[3]: agree,curious,improve'} onChange={event=>setDraft(old=>({...old,raw:event.target.value}))}/>
-  <div className="word-paste-input-footer"><small>{t("単語のみは500語まで。意味・例文付きのTOONは5,000語まで読み込めます。")}</small><button className="button secondary" disabled={busy||!draft.raw.trim()} onClick={readToon}>{t("TOONを読み込む")}</button></div>
+  {editingInput?<><label htmlFor="vocabulary-input">{t("単語のJSON")}</label>
+  <textarea id="vocabulary-input" value={draft.raw} disabled={busy} spellCheck={false} placeholder={JSON.stringify({words:language==='th'?['สวัสดี','ขอบคุณ','เรียน']:language==='zh'?['你好','谢谢','学习']:language==='ja'?['こんにちは','ありがとう','学ぶ']:['agree','curious','improve']},null,2)} onChange={event=>setDraft(old=>({...old,raw:event.target.value}))}/>
+  <div className="word-paste-input-footer"><small>{t("単語のみは500語まで。意味・例文付きのJSONは5,000語まで読み込めます。")}</small><button className="button secondary" disabled={busy||!draft.raw.trim()} onClick={readJson}>{t("JSONを読み込む")}</button></div>
   </>:<div className="word-paste-summary"><strong>{draft.rows.length}{t("語を読み込みました")}</strong><button className="text-button" disabled={busy} onClick={()=>setEditingInput(true)}>{t("入力を変更")}</button></div>}
   {draft.rows.length>0&&<>
    <div className="word-generation-tools">

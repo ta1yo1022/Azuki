@@ -21,7 +21,6 @@
     "prebuild": "npm run content:build"
   },
   "dependencies": {
-    "@toon-format/toon": "^4.4.0",
     "firebase": "^12.19.0",
     "jose": "^6.2.12",
     "lucide-react": "^1.52.0",

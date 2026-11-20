@@ -1,5 +1,5 @@
 import {useI18n,messageText} from '../lib/i18n';
-import {decodeToon,encodeToon} from '../../shared/toon';
+import {decodeJson,encodeJson} from '../../shared/json';
 import { useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
 import { LIMITS, parseDeck, type Deck, type DeckInput, type Word, type WordPage } from "../../shared/model";
@@ -33,7 +33,8 @@ export function ForkDialog({deck,onClose,onSave,reader=publicRepository}:{deck:D
         if(all.length!==deck.wordCount)throw new Error(messageText("単語帳が更新されました。開き直してください。"));
         setWords(all);
         const exported=all.map(({word,meaning,example,examples,tags})=>({word,meaning,...(examples?.length ? {examples} : {example:example??""}),tags}));
-        setRaw(encodeToon(exported));
+        const formatted=encodeJson(exported);
+        setRaw(new TextEncoder().encode(formatted).length>LIMITS.bytes?JSON.stringify(exported):formatted);
       } catch(e) {if(!controller.signal.aborted)setError((e as Error).message);}
       finally {if(!controller.signal.aborted)setLoading(false);}
     })();
@@ -42,8 +43,8 @@ export function ForkDialog({deck,onClose,onSave,reader=publicRepository}:{deck:D
   function validate() {
     setError("");
     try {
-      if(new TextEncoder().encode(raw).length>LIMITS.bytes)throw new Error(messageText("TOONは512KB以内にしてください。"));
-      let value:unknown;try {value=decodeToon(raw);} catch {throw new Error(messageText("TOONの形式を確認してください。"));}
+      if(new TextEncoder().encode(raw).length>LIMITS.bytes)throw new Error(messageText("JSONは512KB以内にしてください。"));
+      let value:unknown;try {value=decodeJson(raw);} catch {throw new Error(messageText("JSONの形式を確認してください。"));}
       setPreview(parseDeck(JSON.stringify({schemaVersion:1,language:deck.language,meaningLanguage:deck.meaningLanguage,title,description,theme:deck.theme,textbookTags:deck.textbookTags,words:value}),{maxWords:LIMITS.forkWords,allowExampleVariants:true}));
     } catch(e){setError((e as Error).message);}
   }
@@ -61,7 +62,7 @@ export function ForkDialog({deck,onClose,onSave,reader=publicRepository}:{deck:D
         {preview ? <section aria-label={t("フォークの確認")}><h3>{preview.title}</h3><p>{preview.words.length}{t("語を登録します。教材タグはコピー元から引き継ぎます。")}</p><p>{preview.description}</p><ul>{preview.words.slice(0,5).map((word,i)=><li key={i}>{word.word} — {word.meaning}</li>)}</ul>{preview.words.length>5 && <p className="muted">{t("ほか")}{preview.words.length-5}{t("語")}</p>}</section> : <>
           <label>{t("単語帳の名前")}<input value={title} maxLength={80} onChange={e=>setTitle(e.target.value)} /></label>
           <label>{t("説明（任意）")}<textarea value={description} maxLength={240} rows={2} onChange={e=>setDescription(e.target.value)} /></label>
-          <label>{t("単語のTOON")}<textarea className="fork-toon" value={raw} spellCheck={false} rows={14} onChange={e=>setRaw(e.target.value)} /></label>
+          <label>{t("単語のJSON")}<textarea className="fork-json" value={raw} spellCheck={false} rows={14} onChange={e=>setRaw(e.target.value)} /></label>
           <p className="muted">{t("英単語・代表的な意味・例文・単語タグを編集できます。選んだ単語帳の全語が入っています。標準単語帳の「その他の意味」と用法注記はコピーされません。")}</p>
         </>}
       </>}

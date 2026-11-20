@@ -372,7 +372,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
   }
   function otherActions(openSettings?:()=>void){
     return <ActionMenu label={t("その他")} items={[
-      ...(!demo?[{label:t("TOONを編集してフォーク"),description:t("単語や例文をTOONでカスタマイズ"),onSelect:()=>setForkOpen(true)}]:[]),
+      ...(!demo?[{label:t("JSONを編集してフォーク"),description:t("単語や例文をJSONでカスタマイズ"),onSelect:()=>setForkOpen(true)}]:[]),
       ...(selected?.visibility==='public'?[{label:t("リンクをコピー"),description:t("この単語帳を共有する"),onSelect:()=>{void navigator.clipboard.writeText(`${window.location.origin}/shared/${selected.id}`).then(()=>setToast(messageText("リンクをコピーしました"))).catch(()=>setError(messageText("リンクをコピーできませんでした。")));}}]:[]),
       ...(openSettings?[{label:t("単語帳の設定"),description:t("名前・説明・教材タグ・色を変更する"),onSelect:openSettings}]:[]),
       {label:t("単語帳を削除"),description:t("削除する前に確認します"),onSelect:()=>setConfirmDelete(true)},
@@ -643,7 +643,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                   <p>
                     {decks.length
                       ? t("別の名前や教材タグで検索してみてください。")
-                      : t("TOONで単語をまとめて登録できます。Proなら意味・例文も自動で作れます。")}
+                      : t("JSONで単語をまとめて登録できます。Proなら意味・例文も自動で作れます。")}
                   </p>
                   <button
                     className="button secondary"

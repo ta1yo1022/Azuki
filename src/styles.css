@@ -3176,7 +3176,7 @@ a.deck-card, a.nav-item { text-decoration: none; }
 .fork-body { padding: 0 32px 28px; }
 .fork-body label { display: grid; gap: 9px; margin-top: 20px; font-weight: 700; }
 .fork-body input, .fork-body textarea, .fork-body select { width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface, #fffaf4); color: var(--text); font: inherit; box-sizing: border-box; }
-.fork-body .fork-toon { font-family: monospace; font-size: 14px; line-height: 1.6; resize: vertical; }
+.fork-body .fork-json { font-family: monospace; font-size: 14px; line-height: 1.6; resize: vertical; }
 .fork-footer { border-top: 1px solid var(--border); }
 @media(max-width:600px) { .fork-header,.fork-footer {padding:20px;} .fork-body {padding:0 20px 24px;} .fork-footer {flex-wrap:wrap;} }
 
@@ -3705,12 +3705,12 @@ html:not([lang="ja"]) .nav-item { white-space:normal; }
 .study-target-label{font-size:12px;color:var(--muted);}
 .study-target-label select{font:inherit;font-weight:700;color:var(--text);background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:7px 34px 7px 10px;max-width:min(240px,65vw);}
 .study-review-pending{font-size:11px;color:var(--muted);margin:0 0 4px;}
-.guide-toon-checks{margin:20px 0;padding:18px 20px;background:#f1e9df;border-radius:16px;}
-.guide-toon-checks h3{margin:0 0 14px;font-size:17px;}
-.guide-toon-checks ol{padding-left:22px;}
-.guide-toon-checks li+li{margin-top:16px;}
-.guide-toon-checks p{margin:6px 0;}
-.guide-toon-checks pre{overflow-x:auto;max-width:100%;padding:12px;background:var(--paper);border-radius:10px;font-size:12px;line-height:1.7;}
+.guide-json-checks{margin:20px 0;padding:18px 20px;background:#f1e9df;border-radius:16px;}
+.guide-json-checks h3{margin:0 0 14px;font-size:17px;}
+.guide-json-checks ol{padding-left:22px;}
+.guide-json-checks li+li{margin-top:16px;}
+.guide-json-checks p{margin:6px 0;}
+.guide-json-checks pre{overflow-x:auto;max-width:100%;padding:12px;background:var(--paper);border-radius:10px;font-size:12px;line-height:1.7;}
 
 .collections-section{margin:24px 0 30px;min-width:0;}
 .collections-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;}
@@ -3729,3 +3729,10 @@ html:not([lang="ja"]) .nav-item { white-space:normal; }
 .collection-fields>label input{min-height:46px;padding:11px 14px;border:1px solid var(--border);border-radius:10px;background:#fff;color:var(--text);font:inherit;font-size:16px;box-sizing:border-box;}
 .collection-fields input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .collection-book-list input{accent-color:var(--accent);}
+
+.json-file-drop{min-height:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:22px;margin-top:18px;}
+.json-file-drop>div{flex:1;min-width:160px;text-align:left;display:grid;gap:6px;}
+.json-import-panel .paste-panel textarea{min-height:260px;}
+@media(max-width:600px){.json-file-drop .button{width:100%;justify-content:center;}.import-page .tabs{flex-wrap:wrap;}.import-page .tabs button{flex:1 1 140px;}}
+.import-page .json-file-drop{flex-direction:row;}
+@media(max-width:600px){.import-page .json-file-drop{justify-content:flex-start;}}
