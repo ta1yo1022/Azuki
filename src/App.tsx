@@ -12,7 +12,7 @@ import { AudioQuota } from "./components/AudioQuota";
 import { WordAudioButton } from "./components/WordAudioButton";
 import { BarChart3 } from "lucide-react";
 import { StudyStatsPage, StudyStatsSummary } from "./components/StudyStatsPage";
-import { Favorites } from "./components/Favorites";
+import { FavoriteButton,Favorites } from "./components/Favorites";
 import { BookStudyPage } from "./components/BookStudyPage";
 import { ForkDialog } from "./components/ForkDialog";
 import { Tutorial } from "./components/Tutorial";
@@ -704,6 +704,7 @@ export default function App({ demo = false }: { demo?: boolean }) {
                     {label:t("例文カードで学習"),description:t("例文と訳で練習する"),onSelect:()=>navigate(`${detailPath}/study?${new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)),mode:'examples',filter:'all'})}`)},
                     {label:t("単語帳で学習"),description:t("本をめくるように、まとめて読む"),onSelect:()=>navigate(`${detailPath}/book${location.search}`)},
                   ]}/>
+                  {!demo&&user&&<FavoriteButton key={selected.id} id={selected.id} userId={user.uid}/>}
                   <button className="button secondary" onClick={()=>navigate(`${detailPath}/share${location.search}`)}><Share2 size={17}/>{t("共有")}</button>
                   {repository.settings ? <DeckSettings key={selected.id} deck={selected} save={repository.settings} onSaved={updated=>setDecks(prev=>prev.map(deck=>deck.id===updated.id?updated:deck))} renderTrigger={openSettings=>otherActions(openSettings)} /> : otherActions()}
 

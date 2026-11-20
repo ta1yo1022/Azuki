@@ -27,3 +27,11 @@ it('links to the original, and lets an unavailable shortcut be removed',async()=
  await act(async()=>container.querySelector<HTMLButtonElement>('[aria-label="開けない単語帳をお気に入りから外す"]')!.click());
  expect(mocks.remove).toHaveBeenCalledWith('hidden');expect(container.textContent).not.toContain('現在開けません');
 });
+
+it('opens owned favorites in the private library and labels their visibility accurately',async()=>{
+ mocks.list.mockResolvedValue([{id:'mine',owned:true,deck:{id:'mine',title:'自分の本',visibility:'private',wordCount:2,textbookTags:[]},createdAt:''}]);
+ await act(async()=>root.render(<MemoryRouter><Favorites owner="alice"/></MemoryRouter>));
+ expect(container.querySelector('a[href="/library/decks/mine"]')).toBeTruthy();
+ expect(container.querySelector('a[href="/shared/mine"]')).toBeNull();
+ expect(container.textContent).toContain('非公開');expect(container.textContent).toContain('自分の単語帳');
+});

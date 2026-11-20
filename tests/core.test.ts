@@ -375,6 +375,24 @@ describe("owner isolation and atomic D1 imports", () => {
     expect((await call('/decks','POST',sample(5001), 'bob')).status).toBe(400);
     expect(db.prepare("SELECT word_count,daily_words FROM users WHERE id='alice'").get()).toEqual({word_count:5000,daily_words:5000});
   });
+  it('favorites private owned wordbooks without exposing them to other accounts',async()=>{
+    const source=(await(await call('/decks','POST',sample())).json() as any).deck;
+    expect((await call(`/favorites/${source.id}`,'PUT')).status).toBe(200);
+    expect((await call(`/favorites/${source.id}`,'PUT')).status).toBe(200);
+    const own=(await(await call('/favorites')).json() as any).favorites;
+    expect(own).toHaveLength(1);expect(own[0]).toMatchObject({owned:true,deck:{id:source.id,visibility:'private'}});
+    expect((await call(`/favorites/${source.id}`,'PUT',undefined,'bob')).status).toBe(404);
+    expect((await(await call('/favorites','GET',undefined,'bob')).json() as any).favorites).toEqual([]);
+    await call(`/decks/${source.id}/visibility`,'PATCH',{visibility:'public'});
+    await call(`/favorites/${source.id}`,'PUT',undefined,'bob');
+    expect((await(await call('/favorites','GET',undefined,'bob')).json() as any).favorites[0].owned).toBe(false);
+    await call(`/decks/${source.id}/visibility`,'PATCH',{visibility:'private'});
+    expect((await(await call('/favorites')).json() as any).favorites[0].deck.id).toBe(source.id);
+    expect((await(await call('/favorites','GET',undefined,'bob')).json() as any).favorites[0].deck).toBeNull();
+    await call(`/favorites/${source.id}`,'DELETE');
+    expect((await(await call('/decks')).json() as any).decks).toHaveLength(1);
+    expect(db.prepare('SELECT count(*) n FROM words').get()?.n).toBe(2);
+  });
   it("bookmarks references without copying words, isolates owners, and hides unavailable content", async () => {
     const source=(await (await call('/decks','POST',sample())).json() as any).deck;
     expect((await call(`/favorites/${source.id}`,'PUT',undefined,'bob')).status).toBe(404);
